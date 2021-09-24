@@ -1,0 +1,44 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "rod_of_the_winds",
+    "customModelName": "weapon_rod_of_the_winds:default",
+    "name": "Rod of the Winds",
+    "specialInfo": [
+      "You are not the man who fertiles the nature... you are not allowed to use that power. Be aware."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 0.0,
+    "enchantability": 22,
+    "damageVsEntity": 1.0,
+    "usageCount": 185,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "RodoftheWindsGlowTrigger"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:NetherSoulEssence"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "RodoftheWindsShot"
+    },
+    "onItemInUseTick": {
+      "name": "RodoftheWindsGlowTrigger"
+    },
+    "onStoppedUsing": {
+      "name": "RodoftheWindsPoison"
+    }
+  }
+}

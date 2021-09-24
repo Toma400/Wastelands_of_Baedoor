@@ -1,0 +1,26 @@
+{
+  "group": "blue_nether_brick",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "1": {
+      "item": "minecraft:nether_brick"
+    },
+    "2": {
+      "item": "minecraft:nether_brick"
+    },
+    "3": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "result": {
+    "item": "wobr:blue_nether_brick",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "red_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:sand_dust"
+    },
+    "1": {
+      "item": "wobr:sand_dust"
+    },
+    "2": {
+      "item": "wobr:sand_dust"
+    },
+    "3": {
+      "item": "wobr:sand_dust"
+    },
+    "4": {
+      "item": "minecraft:orange_dye"
+    },
+    "5": {
+      "item": "wobr:sand_dust"
+    },
+    "6": {
+      "item": "wobr:sand_dust"
+    },
+    "7": {
+      "item": "wobr:sand_dust"
+    },
+    "8": {
+      "item": "wobr:sand_dust"
+    }
+  },
+  "result": {
+    "item": "minecraft:red_sand",
+    "count": 2
+  }
+}

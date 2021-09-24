@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "wobr:bamboo_block"
+    },
+    "7": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_lamp",
+    "count": 1
+  }
+}

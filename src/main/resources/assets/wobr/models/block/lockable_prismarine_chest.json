@@ -1,0 +1,8 @@
+{
+  "parent": "wobr:custom/locked_chest_prismarine",
+  "textures": {
+    "all": "wobr:blocks/locked_chest_prismarine",
+    "particle": "wobr:blocks/locked_chest_prismarine",
+    "0": "wobr:blocks/locked_chest_prismarine"
+  }
+}

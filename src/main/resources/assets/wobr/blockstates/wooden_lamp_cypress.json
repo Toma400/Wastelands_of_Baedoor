@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/wooden_lamp_cypress"
+    },
+    "facing=east": {
+      "model": "wobr:block/wooden_lamp_cypress",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/wooden_lamp_cypress",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/wooden_lamp_cypress",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wobr:block/wooden_lamp_cypress",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wobr:block/wooden_lamp_cypress",
+      "x": 90
+    }
+  }
+}

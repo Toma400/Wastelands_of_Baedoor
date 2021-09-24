@@ -1,0 +1,24 @@
+{
+  "group": "wood_pillars",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:spruce_log"
+    },
+    "1": {
+      "item": "minecraft:spruce_log"
+    },
+    "2": {
+      "item": "minecraft:spruce_log"
+    }
+  },
+  "result": {
+    "item": "wobr:pillar_spruce",
+    "count": 3
+  }
+}

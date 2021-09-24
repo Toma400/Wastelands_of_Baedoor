@@ -1,0 +1,27 @@
+{
+  "group": "javelin_sack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:leather"
+    },
+    "3": {
+      "item": "minecraft:leather"
+    },
+    "5": {
+      "item": "minecraft:leather"
+    },
+    "7": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "wobr:javelin_sack",
+    "count": 1
+  }
+}

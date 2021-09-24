@@ -1,0 +1,41 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ayer_knife",
+    "customModelName": "Normal",
+    "name": "Ayer Knife",
+    "specialInfo": [
+      "Knife commonly used by so called \"ayer\" bandits, know for their unified fighting set"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 20,
+    "damageVsEntity": 3.0,
+    "usageCount": 110,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeCooldownCheck"
+    },
+    "onEntityHitWith": {
+      "name": "KnifeSneakAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "StandardKnifeCooldownRegeneration"
+    }
+  }
+}

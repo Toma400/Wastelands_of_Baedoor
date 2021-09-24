@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:advancement_shield_is_for_newbies"
+    },
+    "title": {
+      "translate": "advancements.shields_is_for_newbies.title"
+    },
+    "description": {
+      "translate": "advancements.shields_is_for_newbies.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shields_is_for_newbies": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:sabre_path_begin"
+}

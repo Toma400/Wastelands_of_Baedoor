@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/regular_birch_2",
+    "particle": "wobr:blocks/regular_birch_2"
+  }
+}

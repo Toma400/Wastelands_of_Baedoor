@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "wobr:blocks/pane_gray",
+    "particle": "wobr:blocks/pane_gray"
+  }
+}

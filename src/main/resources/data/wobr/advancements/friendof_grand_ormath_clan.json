@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:advancement_ormath_2"
+    },
+    "title": {
+      "translate": "advancements.friendof_grand_ormath_clan.title"
+    },
+    "description": {
+      "translate": "advancements.friendof_grand_ormath_clan.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "friendof_grand_ormath_clan": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:ormath_friend"
+}

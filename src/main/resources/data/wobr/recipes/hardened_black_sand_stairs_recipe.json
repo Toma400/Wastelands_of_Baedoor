@@ -1,0 +1,33 @@
+{
+  "group": "hardened_black_sand_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "3": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "4": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "6": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "7": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "8": {
+      "item": "wobr:hardened_black_sand"
+    }
+  },
+  "result": {
+    "item": "wobr:hardened_black_sand_stairs",
+    "count": 4
+  }
+}

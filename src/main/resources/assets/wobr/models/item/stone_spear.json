@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/weapon_stone_spear",
+  "textures": {
+    "0": "wobr:blocks/txt_stone_spear",
+    "particle": "wobr:items/stone_spear"
+  }
+}

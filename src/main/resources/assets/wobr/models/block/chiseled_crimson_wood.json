@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/chisel_crimson",
+    "up": "wobr:blocks/chisel_crimson",
+    "north": "wobr:blocks/chisel_crimson",
+    "east": "wobr:blocks/chisel_crimson",
+    "south": "wobr:blocks/chisel_crimson",
+    "west": "wobr:blocks/chisel_crimson",
+    "particle": "wobr:blocks/chisel_crimson"
+  }
+}

@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="wobr"
+version="v0.a11"
+displayName="Wastelands of Baedoor"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/wastelands-of-baedoor"
+logoFile="logo.png"
+authors="Toma400"
+description='''
+Mod adding steampunk weapons and blocks, inspired by my own fictional universe, called 'Baedoor'. Serves the purpose of upgrading some gameplay features of Minecraft, without changing vanilla gameplay.
+'''
+
+[[dependencies.wobr]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

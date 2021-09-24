@@ -1,0 +1,12 @@
+{
+  "_fv": 13,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Mode Change Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ModeCheck"
+    }
+  }
+}

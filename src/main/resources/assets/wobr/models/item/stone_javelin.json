@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/weapon_stone_javelin",
+  "textures": {
+    "0": "wobr:blocks/txt_stone_javelin",
+    "particle": "wobr:items/stone_javelin"
+  }
+}

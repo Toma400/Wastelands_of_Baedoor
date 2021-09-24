@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "wobr:warped_log"
+    },
+    "1": {
+      "tag": "wobr:warped_log"
+    },
+    "2": {
+      "tag": "wobr:warped_log"
+    },
+    "3": {
+      "tag": "wobr:warped_log"
+    },
+    "5": {
+      "tag": "wobr:warped_log"
+    },
+    "6": {
+      "tag": "wobr:warped_log"
+    },
+    "7": {
+      "tag": "wobr:warped_log"
+    },
+    "8": {
+      "tag": "wobr:warped_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_warped_wood",
+    "count": 8
+  }
+}

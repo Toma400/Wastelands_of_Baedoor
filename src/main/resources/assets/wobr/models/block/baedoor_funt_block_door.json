@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/funt_block_pillar_top",
+    "up": "wobr:blocks/funt_block_pillar_top",
+    "north": "wobr:blocks/funt_block_pillar_side",
+    "east": "wobr:blocks/funt_block_pillar_side",
+    "south": "wobr:blocks/funt_block_pillar_side",
+    "west": "wobr:blocks/funt_block_pillar_side",
+    "particle": "wobr:blocks/funt_block_pillar_top"
+  }
+}

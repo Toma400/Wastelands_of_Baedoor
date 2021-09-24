@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Hunter of Lost Woods",
+    "achievementDescription": "Creating the first weapon for hunt, you entered the new path...",
+    "achievementIcon": {
+      "value": "CUSTOM:StoneJavelin"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Reveal"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"43\" y=\"80\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}

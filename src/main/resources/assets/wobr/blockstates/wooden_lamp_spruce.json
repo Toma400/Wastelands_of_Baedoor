@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/wooden_lamp_spruce"
+    },
+    "facing=east": {
+      "model": "wobr:block/wooden_lamp_spruce",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/wooden_lamp_spruce",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/wooden_lamp_spruce",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wobr:block/wooden_lamp_spruce",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wobr:block/wooden_lamp_spruce",
+      "x": 90
+    }
+  }
+}

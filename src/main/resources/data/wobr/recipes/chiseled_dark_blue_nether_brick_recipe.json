@@ -1,0 +1,19 @@
+{
+  "group": "chiseled_blue_nether_brick",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:chiseled_blue_nether_brick"
+    },
+    "1": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "wobr:dark_chiseled_blue_nether_brick",
+    "count": 1
+  }
+}

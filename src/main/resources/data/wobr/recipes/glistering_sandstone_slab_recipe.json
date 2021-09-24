@@ -1,0 +1,22 @@
+{
+  "group": "glistering_sandstone_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "1": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "2": {
+      "item": "wobr:glistering_sandstone"
+    }
+  },
+  "result": {
+    "item": "wobr:glistering_sandstone_slab",
+    "count": 6
+  }
+}

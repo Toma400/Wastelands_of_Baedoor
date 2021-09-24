@@ -1,0 +1,36 @@
+{
+  "group": "leghold_trap",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "wobr:leghold_trap_inactive",
+    "count": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "white_sabre",
+    "customModelName": "weapon_white_sabre:default",
+    "name": "White Sabre",
+    "specialInfo": [
+      "Sabre of nothing else than wither's heart, made to live within fear its brings upon your enemies..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 20,
+    "damageVsEntity": 6.0,
+    "usageCount": 220,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SabreVariations"
+    }
+  }
+}

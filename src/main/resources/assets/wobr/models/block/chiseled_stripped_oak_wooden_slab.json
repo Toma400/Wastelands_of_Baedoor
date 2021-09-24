@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "wobr:blocks/chisel_oak_strip",
+    "top": "wobr:blocks/chisel_oak_strip",
+    "side": "wobr:blocks/regular_oak_strip"
+  }
+}

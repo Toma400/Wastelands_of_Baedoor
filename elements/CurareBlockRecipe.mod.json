@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "poison_block",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      },
+      {
+        "value": "CUSTOM:Curare"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlockofCurarePoison"
+    },
+    "name": "curare_block_recipe",
+    "namespace": "mod"
+  }
+}

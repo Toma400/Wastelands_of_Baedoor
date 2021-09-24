@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_jungle",
+    "up": "wobr:blocks/regular_jungle",
+    "north": "wobr:blocks/chisel_jungle",
+    "east": "wobr:blocks/chisel_jungle",
+    "south": "wobr:blocks/chisel_jungle",
+    "west": "wobr:blocks/chisel_jungle",
+    "particle": "wobr:blocks/regular_jungle"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/funt_block_polished",
+    "up": "wobr:blocks/funt_block_polished",
+    "north": "wobr:blocks/funt_block_avoider_shut_2",
+    "east": "wobr:blocks/funt_block_avoider_shut_2",
+    "south": "wobr:blocks/funt_block_avoider_shut_2",
+    "west": "wobr:blocks/funt_block_avoider_shut_2",
+    "particle": "wobr:blocks/funt_block_polished"
+  }
+}

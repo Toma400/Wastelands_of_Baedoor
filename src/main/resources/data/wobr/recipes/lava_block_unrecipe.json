@@ -1,0 +1,16 @@
+{
+  "group": "lava_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:lava_block"
+    }
+  },
+  "result": {
+    "item": "wobr:lava_ingot",
+    "count": 9
+  }
+}

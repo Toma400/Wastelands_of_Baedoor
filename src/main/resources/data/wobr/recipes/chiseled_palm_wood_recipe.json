@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "atum:palm_log"
+    },
+    "1": {
+      "item": "atum:palm_log"
+    },
+    "2": {
+      "item": "atum:palm_log"
+    },
+    "3": {
+      "item": "atum:palm_log"
+    },
+    "5": {
+      "item": "atum:palm_log"
+    },
+    "6": {
+      "item": "atum:palm_log"
+    },
+    "7": {
+      "item": "atum:palm_log"
+    },
+    "8": {
+      "item": "atum:palm_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_palm_wood",
+    "count": 8
+  }
+}

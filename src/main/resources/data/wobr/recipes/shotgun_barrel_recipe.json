@@ -1,0 +1,22 @@
+{
+  "group": "firearm_various_parts",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "wobr:shotgun_barrel",
+    "count": 1
+  }
+}

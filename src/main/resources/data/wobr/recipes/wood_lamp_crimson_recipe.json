@@ -1,0 +1,27 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "wobr:crimson_log"
+    },
+    "3": {
+      "tag": "wobr:crimson_log"
+    },
+    "5": {
+      "tag": "wobr:crimson_log"
+    },
+    "7": {
+      "tag": "wobr:crimson_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_crimson",
+    "count": 2
+  }
+}

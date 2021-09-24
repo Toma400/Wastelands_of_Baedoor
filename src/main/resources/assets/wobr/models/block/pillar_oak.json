@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_oak_top",
+    "up": "wobr:blocks/pillar_oak_top",
+    "north": "wobr:blocks/pillar_oak",
+    "east": "wobr:blocks/pillar_oak",
+    "south": "wobr:blocks/pillar_oak",
+    "west": "wobr:blocks/pillar_oak",
+    "particle": "wobr:blocks/pillar_oak_top"
+  }
+}

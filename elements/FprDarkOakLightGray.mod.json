@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "horizontal_glass_dark_oak",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.PLANKS#5"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkOakFramedLightGrayStainedGlass"
+    },
+    "name": "fpr_dark_oak_light_gray",
+    "namespace": "mod"
+  }
+}

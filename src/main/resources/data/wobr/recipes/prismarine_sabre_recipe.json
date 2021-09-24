@@ -1,0 +1,30 @@
+{
+  "group": "prismarine_sabre",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "3": {
+      "item": "minecraft:emerald"
+    },
+    "4": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "wobr:prismarine_sabre",
+    "count": 1
+  }
+}

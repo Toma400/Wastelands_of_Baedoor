@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "1": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "2": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "3": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "5": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "6": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "7": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    "8": {
+      "item": "minecraft:stripped_jungle_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_stripped_jungle_wood",
+    "count": 8
+  }
+}

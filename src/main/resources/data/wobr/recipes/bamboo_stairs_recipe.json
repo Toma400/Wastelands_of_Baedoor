@@ -1,0 +1,33 @@
+{
+  "group": "bamboo_block_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "4": {
+      "item": "wobr:bamboo_block"
+    },
+    "6": {
+      "item": "wobr:bamboo_block"
+    },
+    "7": {
+      "item": "wobr:bamboo_block"
+    },
+    "8": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "horizontal_glass_warped",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "TAG:wobr:fpr_warped"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WarpedFramedYellowStainedGlass"
+    },
+    "name": "fpr_warped_yellow",
+    "namespace": "mod"
+  }
+}

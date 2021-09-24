@@ -1,0 +1,16 @@
+{
+  "group": "darts",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:mushroom_poison"
+    },
+    {
+      "item": "wobr:dart_regular"
+    }
+  ],
+  "result": {
+    "item": "wobr:dart_poison",
+    "count": 1
+  }
+}

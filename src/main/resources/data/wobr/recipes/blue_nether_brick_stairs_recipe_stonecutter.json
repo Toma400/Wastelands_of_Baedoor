@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:blue_nether_brick"
+  },
+  "result": "wobr:blue_nether_brick_stairs"
+}

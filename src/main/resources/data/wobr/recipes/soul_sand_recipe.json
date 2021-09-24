@@ -1,0 +1,26 @@
+{
+  "group": "soul_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "1": {
+      "item": "wobr:black_sand"
+    },
+    "2": {
+      "item": "wobr:black_sand"
+    },
+    "3": {
+      "item": "wobr:nether_soul_essence"
+    }
+  },
+  "result": {
+    "item": "minecraft:soul_sand",
+    "count": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "guide_book_completed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:reveal"
+}

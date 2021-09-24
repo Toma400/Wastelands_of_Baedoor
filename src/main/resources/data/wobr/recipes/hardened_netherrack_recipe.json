@@ -1,0 +1,19 @@
+{
+  "group": "hardened_netherrack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherrack"
+    },
+    "1": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "wobr:hardened_netherrack",
+    "count": 1
+  }
+}

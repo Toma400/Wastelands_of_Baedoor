@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "nether_ticker",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:GlowingObsidian"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherTicker"
+    },
+    "name": "nether_ticker_recipe",
+    "namespace": "mod"
+  }
+}

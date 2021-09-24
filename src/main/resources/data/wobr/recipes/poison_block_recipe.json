@@ -1,0 +1,42 @@
+{
+  "group": "poison_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:mushroom_poison"
+    },
+    "1": {
+      "item": "wobr:mushroom_poison"
+    },
+    "2": {
+      "item": "wobr:mushroom_poison"
+    },
+    "3": {
+      "item": "wobr:mushroom_poison"
+    },
+    "4": {
+      "item": "wobr:mushroom_poison"
+    },
+    "5": {
+      "item": "wobr:mushroom_poison"
+    },
+    "6": {
+      "item": "wobr:mushroom_poison"
+    },
+    "7": {
+      "item": "wobr:mushroom_poison"
+    },
+    "8": {
+      "item": "wobr:mushroom_poison"
+    }
+  },
+  "result": {
+    "item": "wobr:blockof_mushroom_poison",
+    "count": 1
+  }
+}

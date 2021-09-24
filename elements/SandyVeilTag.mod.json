@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SandyVeil"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "sandy_veil",
+    "namespace": "forge"
+  }
+}

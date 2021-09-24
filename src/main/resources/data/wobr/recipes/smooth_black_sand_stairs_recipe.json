@@ -1,0 +1,33 @@
+{
+  "group": "smooth_black_sand_variant",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "3": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "4": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "6": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "7": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "8": {
+      "item": "wobr:smooth_black_sand"
+    }
+  },
+  "result": {
+    "item": "wobr:smooth_black_sand_stairs",
+    "count": 4
+  }
+}

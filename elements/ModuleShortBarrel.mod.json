@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GunBarrel"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "module_short_barrel",
+    "namespace": "forge"
+  }
+}

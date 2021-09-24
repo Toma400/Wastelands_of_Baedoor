@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:GlisteringSandstone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:GlisteringSandstoneSlab"
+    },
+    "name": "glistering_sandstone_slab_recipe_stonecutter",
+    "namespace": "mod"
+  }
+}

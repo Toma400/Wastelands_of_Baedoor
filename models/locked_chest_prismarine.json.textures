@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "locked_chest_prismarine"
+      },
+      "name": "default"
+    }
+  }
+}

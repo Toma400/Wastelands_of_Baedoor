@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "locked_chest",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": "Blocks.TRIPWIRE_HOOK"
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LockablePrismarineChest"
+    },
+    "name": "locked_chest_prismarine_recipe",
+    "namespace": "mod"
+  }
+}

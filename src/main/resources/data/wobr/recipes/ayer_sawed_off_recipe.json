@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:ayer_shotgun"
+  },
+  "result": "wobr:ayer_sawed_off"
+}

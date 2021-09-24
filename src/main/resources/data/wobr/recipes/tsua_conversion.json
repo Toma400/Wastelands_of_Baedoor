@@ -1,0 +1,16 @@
+{
+  "group": "tsua_flower",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:tsua"
+    }
+  },
+  "result": {
+    "item": "wobr:starof_rising_day",
+    "count": 1
+  }
+}

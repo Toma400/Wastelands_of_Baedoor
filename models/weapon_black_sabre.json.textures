@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "txt_black_sabre"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_asha_hypheria_top",
+    "up": "wobr:blocks/pillar_asha_hypheria_top",
+    "north": "wobr:blocks/pillar_asha_hypheria",
+    "east": "wobr:blocks/pillar_asha_hypheria",
+    "south": "wobr:blocks/pillar_asha_hypheria",
+    "west": "wobr:blocks/pillar_asha_hypheria",
+    "particle": "wobr:blocks/pillar_asha_hypheria_top"
+  }
+}

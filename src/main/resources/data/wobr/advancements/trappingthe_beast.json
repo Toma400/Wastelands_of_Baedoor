@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:leghold_trap_inactive"
+    },
+    "title": {
+      "translate": "advancements.trappingthe_beast.title"
+    },
+    "description": {
+      "translate": "advancements.trappingthe_beast.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "trappingthe_beast": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "item": "wobr:leghold_trap_inactive"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "wobr:hunterof_lost_woods"
+}

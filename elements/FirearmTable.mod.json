@@ -1,0 +1,113 @@
+{
+  "_fv": 13,
+  "_type": "block",
+  "definition": {
+    "texture": "firearm_table_down",
+    "textureTop": "firearm_table_up",
+    "textureLeft": "firearm_table_sides",
+    "textureFront": "firearm_table_gunned",
+    "textureRight": "firearm_table_sides",
+    "textureBack": "firearm_table_sides",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 1,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "Firearm Table",
+    "specialInfo": [
+      "Firearm table makes you able to craft firearms from different parts"
+    ],
+    "hardness": 2.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "WOOD"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "WOOD"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": true,
+    "guiBoundTo": "FirearmTableGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 11,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [
+      5
+    ],
+    "inventoryInSlotIDs": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

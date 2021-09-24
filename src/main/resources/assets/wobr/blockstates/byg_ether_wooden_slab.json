@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wobr:block/byg_ether_wooden_slab"
+    },
+    "type=top": {
+      "model": "wobr:block/byg_ether_wooden_slab_top"
+    },
+    "type=double": {
+      "model": "wobr:block/byg_ether_wooden_slab_full"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/lapis_crystal_alternate",
+    "particle": "wobr:blocks/lapis_crystal_alternate"
+  }
+}

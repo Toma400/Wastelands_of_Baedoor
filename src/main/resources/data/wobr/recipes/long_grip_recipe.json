@@ -1,0 +1,26 @@
+{
+  "group": "firearm_various_parts",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:planks"
+    },
+    "1": {
+      "item": "wobr:firearm_lock"
+    },
+    "2": {
+      "tag": "minecraft:planks"
+    },
+    "3": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "wobr:long_grip",
+    "count": 1
+  }
+}

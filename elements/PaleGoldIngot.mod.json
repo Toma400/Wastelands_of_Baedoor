@@ -1,0 +1,37 @@
+{
+  "_fv": 13,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "pale_gold_ingot",
+    "customModelName": "Normal",
+    "name": "Pale Gold Ingot",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Unfinished baedoor gold ingot product. Take it to furnace to finish its process, before it turns back into regular gold."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "PaleGoldIngotReturning"
+    }
+  }
+}

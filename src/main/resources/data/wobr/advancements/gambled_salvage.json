@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:card_heart_ace_winfleton"
+    },
+    "title": {
+      "translate": "advancements.gambled_salvage.title"
+    },
+    "description": {
+      "translate": "advancements.gambled_salvage.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gambled_salvage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:winfletons_collector"
+}

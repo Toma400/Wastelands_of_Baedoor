@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "polished_black_sand_variants",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedBlackSandStairs"
+    },
+    "name": "polished_black_sand_stairs_recipe",
+    "namespace": "mod"
+  }
+}

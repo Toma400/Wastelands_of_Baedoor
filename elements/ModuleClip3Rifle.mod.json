@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RifleClip3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "module_clip_3_rifle",
+    "namespace": "forge"
+  }
+}

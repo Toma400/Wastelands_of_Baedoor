@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "wobr:blocks/chiseled_black_sand",
+    "top": "wobr:blocks/chiseled_black_sand",
+    "side": "wobr:blocks/chiseled_black_sand_slab"
+  }
+}

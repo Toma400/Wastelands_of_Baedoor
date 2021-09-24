@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "bullets",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LargeBullet"
+    },
+    "name": "large_bullet_recipe",
+    "namespace": "mod"
+  }
+}

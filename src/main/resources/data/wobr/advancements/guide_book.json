@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:book_guide"
+    },
+    "title": {
+      "translate": "advancements.guide_book.title"
+    },
+    "description": {
+      "translate": "advancements.guide_book.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "guide_book": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:reveal"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "wobr:blocks/bamboo_block",
+    "top": "wobr:blocks/bamboo_block",
+    "side": "wobr:blocks/bamboo_block"
+  }
+}

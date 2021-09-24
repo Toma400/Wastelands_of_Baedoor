@@ -1,0 +1,26 @@
+{
+  "group": "bone_throwing_axe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:cracked_bone"
+    },
+    "1": {
+      "item": "wobr:cracked_bone"
+    },
+    "2": {
+      "item": "wobr:cracked_bone"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "wobr:bone_throwing_axe",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 13,
+  "_type": "structure",
+  "definition": {
+    "structure": "spawn_block_airship_trader",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 240,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Air",
+    "spawnHeightOffset": 3,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "End"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

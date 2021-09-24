@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "wobr:blocks/polished_black_sand",
+    "particle": "wobr:blocks/polished_black_sand"
+  }
+}

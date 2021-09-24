@@ -1,0 +1,147 @@
+{
+  "_fv": 13,
+  "_type": "mob",
+  "definition": {
+    "mobName": "Ormath Hunter",
+    "mobLabel": "",
+    "mobModelName": "ModelOrmath_Hunter",
+    "mobModelTexture": "ormath_hunter.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -12188411,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -3490131,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:StoneJavelin"
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 5,
+    "attackKnockback": 1.0,
+    "knockbackResistance": 0.5,
+    "movementSpeed": 0.32,
+    "armorBaseValue": 15.0,
+    "trackingRange": 110,
+    "health": 25,
+    "xpAmount": 3,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "mobDrop": {
+      "value": "Items.LEATHER"
+    },
+    "livingSound": {
+      "value": "CUSTOM:ormath_hunter_idle"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:ormath_hunter_hurt"
+    },
+    "deathSound": {
+      "value": "CUSTOM:ormath_hunter_death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "onMobTickUpdate": {
+      "name": "TribeAttackValue"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"248\" y=\"63\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">TribeAttackValue,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">TribeAttackValue,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityAnimal</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.5</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">10</field><field name=\"followarea\">5</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">5</field><field name=\"entity\">CUSTOM:OrmathRider</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": true,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "StoneJavelin",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 1,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_hills"
+      },
+      {
+        "value": "jungle_edge"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_jungle"
+      },
+      {
+        "value": "mutated_jungle_edge"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "bamboo_jungle_hills"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

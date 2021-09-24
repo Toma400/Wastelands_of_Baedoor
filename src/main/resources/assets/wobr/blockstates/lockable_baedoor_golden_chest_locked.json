@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/lockable_baedoor_golden_chest_locked"
+    },
+    "facing=east": {
+      "model": "wobr:block/lockable_baedoor_golden_chest_locked",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/lockable_baedoor_golden_chest_locked",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/lockable_baedoor_golden_chest_locked",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wobr:block/bamboo_block"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "wobr:blocks/regular_deadwood_strip",
+    "top": "wobr:blocks/regular_deadwood_strip",
+    "side": "wobr:blocks/regular_deadwood_strip"
+  }
+}

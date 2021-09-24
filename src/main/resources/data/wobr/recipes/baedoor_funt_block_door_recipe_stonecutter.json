@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:baedoor_funt_block_polished"
+  },
+  "result": "wobr:baedoor_funt_block_door"
+}

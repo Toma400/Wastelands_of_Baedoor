@@ -1,0 +1,106 @@
+{
+  "_fv": 13,
+  "_type": "block",
+  "definition": {
+    "texture": "leghold_trap",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "leghold_trap_not_active:default",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT_MIPPED",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 0.1,
+    "Mz": 1.0,
+    "name": "Leghold Trap",
+    "specialInfo": [
+      "Leghold trap makes you able to catch mobs inside it",
+      "§oUse §otripwire §ohook §oto §ointeract"
+    ],
+    "hardness": 1.0,
+    "resistance": 1.0,
+    "hasGravity": true,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "IRON"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": true,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "onRightClicked": {
+      "name": "LegholdTrapActivation"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

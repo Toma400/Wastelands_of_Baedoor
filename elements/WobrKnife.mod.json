@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BoneKnife"
+      },
+      {
+        "value": "CUSTOM:AyerKnife"
+      },
+      {
+        "value": "CUSTOM:WitherKnife"
+      },
+      {
+        "value": "CUSTOM:AssassinsKnife"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "wobr_knife",
+    "namespace": "mod"
+  }
+}

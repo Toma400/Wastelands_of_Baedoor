@@ -1,0 +1,12 @@
+{
+  "group": "wobr",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "minecraft:tropical_fish"
+  },
+  "result": {
+    "item": "wobr:cooked_tropical_fish"
+  }
+}

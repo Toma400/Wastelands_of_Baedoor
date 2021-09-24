@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "wobr:blocks/regular_spruce",
+    "top": "wobr:blocks/regular_spruce",
+    "side": "wobr:blocks/regular_spruce"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_acacia_strip",
+    "up": "wobr:blocks/regular_acacia_strip",
+    "north": "wobr:blocks/chisel_acacia_strip",
+    "east": "wobr:blocks/chisel_acacia_strip",
+    "south": "wobr:blocks/chisel_acacia_strip",
+    "west": "wobr:blocks/chisel_acacia_strip",
+    "particle": "wobr:blocks/regular_acacia_strip"
+  }
+}

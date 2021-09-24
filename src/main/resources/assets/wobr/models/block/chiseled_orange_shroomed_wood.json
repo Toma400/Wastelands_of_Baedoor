@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_addon_orange_stem_cut",
+    "up": "wobr:blocks/regular_addon_orange_stem_cut",
+    "north": "wobr:blocks/chisel_shrm_orange",
+    "east": "wobr:blocks/chisel_shrm_orange",
+    "south": "wobr:blocks/chisel_shrm_orange",
+    "west": "wobr:blocks/chisel_shrm_orange",
+    "particle": "wobr:blocks/regular_addon_orange_stem_cut"
+  }
+}

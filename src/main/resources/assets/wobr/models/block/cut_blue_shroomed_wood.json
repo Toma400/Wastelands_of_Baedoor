@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/regular_addon_blue_stem_cut",
+    "particle": "wobr:blocks/regular_addon_blue_stem_cut"
+  }
+}

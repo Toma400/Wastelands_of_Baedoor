@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/poison_curare_block",
+    "particle": "wobr:blocks/poison_curare_block"
+  }
+}

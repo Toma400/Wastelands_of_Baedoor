@@ -1,0 +1,16 @@
+{
+  "group": "sandy_water",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "atum:sand"
+    },
+    {
+      "item": "minecraft:potion"
+    }
+  ],
+  "result": {
+    "item": "wobr:sandy_water",
+    "count": 1
+  }
+}

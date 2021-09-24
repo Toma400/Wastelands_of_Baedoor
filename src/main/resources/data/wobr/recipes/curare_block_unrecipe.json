@@ -1,0 +1,16 @@
+{
+  "group": "curare",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:blockof_curare_poison"
+    }
+  },
+  "result": {
+    "item": "wobr:curare",
+    "count": 9
+  }
+}

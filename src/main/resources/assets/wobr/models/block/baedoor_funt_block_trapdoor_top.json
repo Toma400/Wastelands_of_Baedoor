@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "wobr:blocks/funt_block_trapdoor",
+    "particle": "wobr:blocks/funt_block_trapdoor"
+  }
+}

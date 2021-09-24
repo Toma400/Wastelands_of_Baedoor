@@ -1,0 +1,17 @@
+{
+  "_fv": 13,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc_drganie",
+    "name": "Music Disc",
+    "description": "Drganie - Inside the Hidden Forest Temple",
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "music": {
+      "value": "CUSTOM:disc_inside_forest"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

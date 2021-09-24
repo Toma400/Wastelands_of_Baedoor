@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "txt_rod_of_the_winds"
+      },
+      "name": "default"
+    }
+  }
+}

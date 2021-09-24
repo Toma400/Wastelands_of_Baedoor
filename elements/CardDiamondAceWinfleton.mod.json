@@ -1,0 +1,36 @@
+{
+  "_fv": 13,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "card_diamond_ace_winfleton",
+    "customModelName": "Normal",
+    "name": "Winfleton's Diamond Ace Card",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Part of Winfleton's Card Deck",
+      "collector's dream painted himself by known philanthropist and artist",
+      "Heim Winfleton"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

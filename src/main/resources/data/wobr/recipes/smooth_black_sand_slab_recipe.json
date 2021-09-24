@@ -1,0 +1,22 @@
+{
+  "group": "smooth_black_sand_variant",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "1": {
+      "item": "wobr:smooth_black_sand"
+    },
+    "2": {
+      "item": "wobr:smooth_black_sand"
+    }
+  },
+  "result": {
+    "item": "wobr:smooth_black_sand_slab",
+    "count": 6
+  }
+}

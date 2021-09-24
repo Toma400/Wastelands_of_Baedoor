@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_juniper_top",
+    "up": "wobr:blocks/pillar_juniper_top",
+    "north": "wobr:blocks/pillar_juniper",
+    "east": "wobr:blocks/pillar_juniper",
+    "south": "wobr:blocks/pillar_juniper",
+    "west": "wobr:blocks/pillar_juniper",
+    "particle": "wobr:blocks/pillar_juniper_top"
+  }
+}

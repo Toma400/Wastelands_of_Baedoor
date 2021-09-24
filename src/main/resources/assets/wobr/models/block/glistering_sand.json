@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/glistering_sand",
+    "particle": "wobr:blocks/glistering_sand"
+  }
+}

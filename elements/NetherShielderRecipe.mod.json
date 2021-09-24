@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "nether_shielder",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:GlowingObsidian"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherShielder"
+    },
+    "name": "nether_shielder_recipe",
+    "namespace": "mod"
+  }
+}

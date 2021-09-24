@@ -1,0 +1,36 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "stellium_sabre",
+    "customModelName": "Normal",
+    "name": "Stellium Sabre",
+    "specialInfo": [
+      "As all stellium weapons",
+      "works only in The End dimension",
+      "§6 End's Phantasm Integration"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBIntegrationsTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.5,
+    "enchantability": 17,
+    "damageVsEntity": 6.0,
+    "usageCount": 280,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "AddOnStelliumAttack"
+    },
+    "onItemInUseTick": {
+      "name": "SabreVariations"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_elephant_gun",
+  "textures": {
+    "0": "wobr:blocks/planes_elephant_gun",
+    "particle": "wobr:items/elephant_gun"
+  }
+}

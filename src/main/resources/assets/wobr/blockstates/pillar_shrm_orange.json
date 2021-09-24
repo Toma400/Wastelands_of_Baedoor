@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "wobr:block/pillar_shrm_orange"
+    },
+    "facing=north": {
+      "model": "wobr:block/pillar_shrm_orange"
+    },
+    "facing=east": {
+      "model": "wobr:block/pillar_shrm_orange",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "wobr:block/pillar_shrm_orange",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "wobr:block/pillar_shrm_orange",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "wobr:block/pillar_shrm_orange",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/nether_avoider2_top",
+    "up": "wobr:blocks/nether_avoider2_top",
+    "north": "wobr:blocks/nether_ticker_inactive",
+    "east": "wobr:blocks/nether_ticker_inactive",
+    "south": "wobr:blocks/nether_ticker_inactive",
+    "west": "wobr:blocks/nether_ticker_inactive",
+    "particle": "wobr:blocks/nether_avoider2_top"
+  }
+}

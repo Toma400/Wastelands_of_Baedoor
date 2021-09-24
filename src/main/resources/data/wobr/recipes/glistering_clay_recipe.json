@@ -1,0 +1,26 @@
+{
+  "group": "glistering_clay",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:clay"
+    },
+    "1": {
+      "item": "wobr:glistering_sand"
+    },
+    "2": {
+      "item": "wobr:glistering_sand"
+    },
+    "3": {
+      "item": "minecraft:clay"
+    }
+  },
+  "result": {
+    "item": "wobr:glistering_clay",
+    "count": 4
+  }
+}

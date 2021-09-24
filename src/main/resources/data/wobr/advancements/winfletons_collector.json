@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:card_club_ace_winfleton"
+    },
+    "title": {
+      "translate": "advancements.winfletons_collector.title"
+    },
+    "description": {
+      "translate": "advancements.winfletons_collector.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "winfletons_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:guide_book"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/wood_lamp_deadwood_top",
+    "up": "wobr:blocks/wood_lamp_deadwood_top",
+    "north": "wobr:blocks/wood_lamp_deadwood",
+    "east": "wobr:blocks/wood_lamp_deadwood",
+    "south": "wobr:blocks/wood_lamp_deadwood",
+    "west": "wobr:blocks/wood_lamp_deadwood",
+    "particle": "wobr:blocks/wood_lamp_deadwood_top"
+  }
+}

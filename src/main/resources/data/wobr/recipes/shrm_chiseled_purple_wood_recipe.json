@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "1": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "2": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "3": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "5": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "6": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "7": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    },
+    "8": {
+      "item": "shroomed:purple_hard_mushroom_stem"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_purple_shroomed_wood",
+    "count": 8
+  }
+}

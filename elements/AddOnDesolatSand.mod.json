@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "solar_dust",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GlisteringAsh"
+      },
+      {
+        "value": "CUSTOM:SandDust"
+      },
+      {
+        "value": "CUSTOM:GlisteringAsh"
+      },
+      {
+        "value": "CUSTOM:SandDust"
+      },
+      {
+        "value": "CUSTOM:DarkLapisCrystal"
+      },
+      {
+        "value": "CUSTOM:SandDust"
+      },
+      {
+        "value": "CUSTOM:GlisteringAsh"
+      },
+      {
+        "value": "CUSTOM:SandDust"
+      },
+      {
+        "value": "CUSTOM:GlisteringAsh"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkLapisCrystal"
+    },
+    "name": "add_on_desolat_sand",
+    "namespace": "mod"
+  }
+}

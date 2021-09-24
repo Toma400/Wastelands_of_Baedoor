@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_hypheria_strip",
+    "up": "wobr:blocks/regular_hypheria_strip",
+    "north": "wobr:blocks/chisel_hypheria_strip",
+    "east": "wobr:blocks/chisel_hypheria_strip",
+    "south": "wobr:blocks/chisel_hypheria_strip",
+    "west": "wobr:blocks/chisel_hypheria_strip",
+    "particle": "wobr:blocks/regular_hypheria_strip"
+  }
+}

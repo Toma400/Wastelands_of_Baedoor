@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_addon_stem_cut",
+    "up": "wobr:blocks/regular_addon_stem_cut",
+    "north": "wobr:blocks/wood_lamp_shrm_brown",
+    "east": "wobr:blocks/wood_lamp_shrm_brown",
+    "south": "wobr:blocks/wood_lamp_shrm_brown",
+    "west": "wobr:blocks/wood_lamp_shrm_brown",
+    "particle": "wobr:blocks/regular_addon_stem_cut"
+  }
+}

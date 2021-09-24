@@ -1,0 +1,22 @@
+{
+  "group": "wooden_chiseled_slab_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:chiseled_hypheria_wood"
+    },
+    "1": {
+      "item": "wobr:chiseled_hypheria_wood"
+    },
+    "2": {
+      "item": "wobr:chiseled_hypheria_wood"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_hypheria_wooden_slab",
+    "count": 6
+  }
+}

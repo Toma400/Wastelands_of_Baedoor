@@ -1,0 +1,353 @@
+{
+  "revolver_reload_1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:revolver_reload",
+        "stream": false
+      }
+    ]
+  },
+  "revolver_reload_full_1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:revolver_reload_full",
+        "stream": false
+      }
+    ]
+  },
+  "handmade_revolver_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:handmade_revolver_shot",
+        "stream": false
+      }
+    ]
+  },
+  "pepper_box_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:pepper_box_shot",
+        "stream": false
+      }
+    ]
+  },
+  "jitado_shotgun_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:jitado_shotgun_shot",
+        "stream": false
+      }
+    ]
+  },
+  "elephant_gun_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:elephant_gun_shot",
+        "stream": false
+      }
+    ]
+  },
+  "crocodile_shotgun_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:crocodile_shotgun_shot",
+        "stream": false
+      }
+    ]
+  },
+  "failed_shot_rifle": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:failed_shot_rifle",
+        "stream": false
+      }
+    ]
+  },
+  "short_revolver_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:short_revolver_shot",
+        "stream": false
+      }
+    ]
+  },
+  "disc_oneironaut": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wobr:1._oneironaut",
+        "stream": true
+      }
+    ]
+  },
+  "disc_inside_forest": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wobr:4._inside_the_hidden_forest_temple",
+        "stream": true
+      }
+    ]
+  },
+  "failed_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:failed_shot",
+        "stream": false
+      }
+    ]
+  },
+  "long_revolver_shot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:long_revolver_shot",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_shaman_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_shaman_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_shaman_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_shaman_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_shaman_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_shaman_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_shaman_trade": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_shaman_trading_sound",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_beast_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_beast_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_beast_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_beast_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_beast_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_beast_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_beast_angry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_beast_angry",
+        "stream": false
+      }
+    ]
+  },
+  "wind_spirit_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:wind_spirit_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_villager_trade": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_villager_trade",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_villager_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_villager_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_villager_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_villager_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_villager_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_villager_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_warrior_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_warrior_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_warrior_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_warrior_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_warrior_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_warrior_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_hunter_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_hunter_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_hunter_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_hunter_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_hunter_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_hunter_idle",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_rider_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_rider_death",
+        "stream": false
+      }
+    ]
+  },
+  "ormath_rider_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:ormath_rider_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "bandit_death": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:bandit_death",
+        "stream": false
+      }
+    ]
+  },
+  "bandit_hurt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:bandit_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "bandit_idle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wobr:bandit_idle",
+        "stream": false
+      }
+    ]
+  },
+  "sabre_clash": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:sabre_clash",
+        "stream": false
+      }
+    ]
+  },
+  "sabre_whoosh": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "wobr:sabre_whoosh",
+        "stream": false
+      }
+    ]
+  }
+}

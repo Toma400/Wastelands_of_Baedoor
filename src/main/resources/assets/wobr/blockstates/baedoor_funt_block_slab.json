@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wobr:block/baedoor_funt_block_slab"
+    },
+    "type=top": {
+      "model": "wobr:block/baedoor_funt_block_slab_top"
+    },
+    "type=double": {
+      "model": "wobr:block/baedoor_funt_block_slab_full"
+    }
+  }
+}

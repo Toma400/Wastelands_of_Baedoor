@@ -1,0 +1,11 @@
+{
+  "_fv": 13,
+  "_type": "tab",
+  "definition": {
+    "name": "Wastelands of Baedoor",
+    "icon": {
+      "value": "CUSTOM:AyerShotgun"
+    },
+    "showSearch": false
+  }
+}

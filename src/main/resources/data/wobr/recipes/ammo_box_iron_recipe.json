@@ -1,0 +1,27 @@
+{
+  "group": "ammo_box",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "wobr:ammo_box_iron",
+    "count": 1
+  }
+}

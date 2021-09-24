@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RustedWarhammer"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "wobr_warhammer",
+    "namespace": "forge"
+  }
+}

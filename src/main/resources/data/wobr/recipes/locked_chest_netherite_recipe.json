@@ -1,0 +1,30 @@
+{
+  "group": "locked_chest",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "wobr:fpr_netherite"
+    },
+    "3": {
+      "tag": "wobr:fpr_netherite"
+    },
+    "4": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "5": {
+      "tag": "wobr:fpr_netherite"
+    },
+    "7": {
+      "tag": "wobr:fpr_netherite"
+    }
+  },
+  "result": {
+    "item": "wobr:lockable_netherite_chest",
+    "count": 1
+  }
+}

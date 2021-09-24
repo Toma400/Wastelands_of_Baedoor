@@ -1,0 +1,35 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "iron_sabre",
+    "customModelName": "Normal",
+    "name": "Iron Sabre",
+    "specialInfo": [
+      "Sabre, being just faster and more swift alternative to sword."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.5,
+    "enchantability": 20,
+    "damageVsEntity": 3.0,
+    "usageCount": 110,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SabreVariations"
+    }
+  }
+}

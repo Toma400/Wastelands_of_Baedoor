@@ -1,0 +1,32 @@
+{
+  "group": "bamboo_block_fence_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_fence",
+    "count": 3
+  }
+}

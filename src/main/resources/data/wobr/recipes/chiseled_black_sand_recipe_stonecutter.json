@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:polished_black_sand"
+  },
+  "result": "wobr:chiseled_black_sand"
+}

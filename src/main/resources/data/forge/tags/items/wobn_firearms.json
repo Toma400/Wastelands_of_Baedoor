@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "wobr:handmade_revolver",
+    "wobr:pepper_box",
+    "wobr:short_revolver",
+    "wobr:golden_short_revolver",
+    "wobr:long_revolver",
+    "wobr:elephant_gun",
+    "wobr:jitado_shotgun",
+    "wobr:crocodile_shotgun",
+    "wobr:ammo_box_iron",
+    "wobr:ammo_box_lava",
+    "wobr:ayer_shotgun",
+    "wobr:ayer_sawed_off",
+    "wobr:windsweeper",
+    "wobr:rusty_reaper",
+    "wobr:sand_wanderer",
+    "wobr:lefs_9",
+    "wobr:enhanced_pepper_box"
+  ]
+}

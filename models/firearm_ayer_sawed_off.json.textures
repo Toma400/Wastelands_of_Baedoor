@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "planes_ayer_sawed_off",
+        "1": "planes_ayer_sawed_off_2"
+      },
+      "name": "default"
+    }
+  }
+}

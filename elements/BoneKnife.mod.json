@@ -1,0 +1,39 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "bone_knife",
+    "customModelName": "Normal",
+    "name": "Bone Knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 5.0,
+    "usageCount": 50,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrackedBone"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeCooldownCheck"
+    },
+    "onEntityHitWith": {
+      "name": "KnifeSneakAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "StandardKnifeCooldownRegeneration"
+    }
+  }
+}

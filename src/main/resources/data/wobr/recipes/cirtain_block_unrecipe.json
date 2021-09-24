@@ -1,0 +1,16 @@
+{
+  "group": "cirtain_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:cirtain_block"
+    }
+  },
+  "result": {
+    "item": "wobr:cirtain_ingot",
+    "count": 9
+  }
+}

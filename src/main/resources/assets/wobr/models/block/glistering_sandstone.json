@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/glistering_sandstone_pattern",
+    "up": "wobr:blocks/glistering_sandstone_smooth",
+    "north": "wobr:blocks/glistering_sandstone",
+    "east": "wobr:blocks/glistering_sandstone",
+    "south": "wobr:blocks/glistering_sandstone",
+    "west": "wobr:blocks/glistering_sandstone",
+    "particle": "wobr:blocks/glistering_sandstone_pattern"
+  }
+}

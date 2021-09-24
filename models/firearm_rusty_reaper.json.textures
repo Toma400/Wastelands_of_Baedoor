@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "planes_rusty_reaper"
+      },
+      "name": "default"
+    }
+  }
+}

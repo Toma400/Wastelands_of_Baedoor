@@ -1,0 +1,42 @@
+{
+  "group": "horizontal_glass_bamboo",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "1": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "2": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "3": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "4": {
+      "item": "wobr:bamboo_block"
+    },
+    "5": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "6": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "7": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "8": {
+      "item": "minecraft:pink_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_framed_pink_stained_glass",
+    "count": 8
+  }
+}

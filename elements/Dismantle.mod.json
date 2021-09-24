@@ -1,0 +1,36 @@
+{
+  "_fv": 13,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Dismantle",
+    "type": "WEAPON",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "MENDING"
+      },
+      {
+        "value": "UNBREAKING"
+      },
+      {
+        "value": "FIRE_ASPECT"
+      },
+      {
+        "value": "LOOTING"
+      },
+      {
+        "value": "KNOCKBACK"
+      },
+      {
+        "value": "SWEEPING"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "stone_spear",
+    "customModelName": "weapon_stone_spear:default",
+    "name": "Stone Spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.75,
+    "enchantability": 15,
+    "damageVsEntity": 2.0,
+    "usageCount": 122,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.COBBLESTONE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SpearRegistry"
+    }
+  }
+}

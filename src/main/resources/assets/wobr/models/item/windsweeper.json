@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_windsweeper",
+  "textures": {
+    "0": "wobr:blocks/planes_windsweeper",
+    "particle": "wobr:items/wind_sweeper"
+  }
+}

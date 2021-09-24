@@ -1,0 +1,42 @@
+{
+  "group": "ink_sack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:starof_rising_day"
+    },
+    "1": {
+      "item": "wobr:starof_rising_day"
+    },
+    "2": {
+      "item": "wobr:starof_rising_day"
+    },
+    "3": {
+      "item": "wobr:starof_rising_day"
+    },
+    "4": {
+      "item": "wobr:starof_rising_day"
+    },
+    "5": {
+      "item": "wobr:starof_rising_day"
+    },
+    "6": {
+      "item": "wobr:starof_rising_day"
+    },
+    "7": {
+      "item": "wobr:starof_rising_day"
+    },
+    "8": {
+      "item": "wobr:starof_rising_day"
+    }
+  },
+  "result": {
+    "item": "minecraft:ink_sac",
+    "count": 1
+  }
+}

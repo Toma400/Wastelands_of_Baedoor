@@ -1,0 +1,32 @@
+{
+  "group": "polished_black_sand_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:polished_black_sand"
+    },
+    "1": {
+      "item": "wobr:polished_black_sand"
+    },
+    "2": {
+      "item": "wobr:polished_black_sand"
+    },
+    "3": {
+      "item": "wobr:polished_black_sand"
+    },
+    "4": {
+      "item": "wobr:polished_black_sand"
+    },
+    "5": {
+      "item": "wobr:polished_black_sand"
+    }
+  },
+  "result": {
+    "item": "wobr:polished_black_sand_wall",
+    "count": 1
+  }
+}

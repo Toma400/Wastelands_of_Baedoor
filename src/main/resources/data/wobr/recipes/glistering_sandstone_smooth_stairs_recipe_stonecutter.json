@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:glistering_sandstone_smooth"
+  },
+  "result": "wobr:glistering_sandstone_smooth_stairs"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_dark_oak",
+    "up": "wobr:blocks/regular_dark_oak",
+    "north": "wobr:blocks/chisel_dark_oak",
+    "east": "wobr:blocks/chisel_dark_oak",
+    "south": "wobr:blocks/chisel_dark_oak",
+    "west": "wobr:blocks/chisel_dark_oak",
+    "particle": "wobr:blocks/regular_dark_oak"
+  }
+}

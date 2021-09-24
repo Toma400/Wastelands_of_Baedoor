@@ -1,0 +1,24 @@
+{
+  "group": "wood_pillars",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "tag": "wobr:crimson_log"
+    },
+    "1": {
+      "tag": "wobr:crimson_log"
+    },
+    "2": {
+      "tag": "wobr:crimson_log"
+    }
+  },
+  "result": {
+    "item": "wobr:pillar_crimson",
+    "count": 3
+  }
+}

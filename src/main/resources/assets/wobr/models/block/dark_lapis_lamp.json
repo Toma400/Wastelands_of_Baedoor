@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/dark_lapis_lamp",
+    "particle": "wobr:blocks/dark_lapis_lamp"
+  }
+}

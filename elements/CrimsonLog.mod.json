@@ -1,0 +1,12 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "name": "crimson_log",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "baedoor_gold_trapdoor",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BaedoorFuntBlockTrapdoor"
+    },
+    "name": "baedoor_funt_block_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

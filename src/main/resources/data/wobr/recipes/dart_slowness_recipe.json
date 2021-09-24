@@ -1,0 +1,16 @@
+{
+  "group": "darts",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:dart_regular"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "result": {
+    "item": "wobr:dart_slowness",
+    "count": 1
+  }
+}

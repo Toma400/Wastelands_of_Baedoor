@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/spawn_block_airship_desert",
+    "particle": "wobr:blocks/spawn_block_airship_desert"
+  }
+}

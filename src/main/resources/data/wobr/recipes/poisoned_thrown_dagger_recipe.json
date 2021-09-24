@@ -1,0 +1,16 @@
+{
+  "group": "throwing_dagger",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:mushroom_poison"
+    },
+    {
+      "item": "wobr:thrown_dagger"
+    }
+  ],
+  "result": {
+    "item": "wobr:poisoned_thrown_dagger",
+    "count": 1
+  }
+}

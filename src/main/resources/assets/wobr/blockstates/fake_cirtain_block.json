@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wobr:block/fake_cirtain_block"
+    }
+  }
+}

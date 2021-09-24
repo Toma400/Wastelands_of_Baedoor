@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_cypress_top",
+    "up": "wobr:blocks/pillar_cypress_top",
+    "north": "wobr:blocks/pillar_cypress",
+    "east": "wobr:blocks/pillar_cypress",
+    "south": "wobr:blocks/pillar_cypress",
+    "west": "wobr:blocks/pillar_cypress",
+    "particle": "wobr:blocks/pillar_cypress_top"
+  }
+}

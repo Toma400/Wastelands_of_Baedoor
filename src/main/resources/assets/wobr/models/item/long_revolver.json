@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_long_revolver",
+  "textures": {
+    "0": "wobr:blocks/planes_long_revolver",
+    "particle": "wobr:items/long_revolver"
+  }
+}

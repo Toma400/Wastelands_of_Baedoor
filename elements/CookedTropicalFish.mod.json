@@ -1,0 +1,29 @@
+{
+  "_fv": 13,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cooked_tropical_fish",
+    "customModelName": "Normal",
+    "name": "Cooked Tropical Fish",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.3,
+    "eatingSpeed": 20,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "TropicalFishRestoration"
+    }
+  }
+}

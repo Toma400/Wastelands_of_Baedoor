@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/weapon_black_sabre",
+  "textures": {
+    "0": "wobr:blocks/txt_black_sabre",
+    "particle": "wobr:items/black_sabre"
+  }
+}

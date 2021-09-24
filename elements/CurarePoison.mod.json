@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Curare Poison",
+    "effectName": "Curare Poison",
+    "icon": "curare_effect.png",
+    "color": {
+      "value": -14146267,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "CurareProcedure"
+    }
+  }
+}

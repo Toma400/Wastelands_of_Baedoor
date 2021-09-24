@@ -1,0 +1,43 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ShortRevolver"
+      },
+      {
+        "value": "CUSTOM:GoldenShotRevolver"
+      },
+      {
+        "value": "CUSTOM:LongRevolver"
+      },
+      {
+        "value": "CUSTOM:JitadoShotgun"
+      },
+      {
+        "value": "CUSTOM:CrocodileShotgun"
+      },
+      {
+        "value": "CUSTOM:Lefs9"
+      },
+      {
+        "value": "CUSTOM:Windsweeper"
+      },
+      {
+        "value": "CUSTOM:RustyReaper"
+      },
+      {
+        "value": "CUSTOM:SandWanderer"
+      },
+      {
+        "value": "CUSTOM:EnhancedPepperBox"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "wobr_firearm_scheme",
+    "namespace": "mod"
+  }
+}

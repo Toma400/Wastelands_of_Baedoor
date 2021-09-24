@@ -1,0 +1,26 @@
+{
+  "group": "alabaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diorite"
+    },
+    "1": {
+      "item": "wobr:glistering_clay"
+    },
+    "2": {
+      "item": "wobr:glistering_clay"
+    },
+    "3": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "result": {
+    "item": "atum:alabaster",
+    "count": 2
+  }
+}

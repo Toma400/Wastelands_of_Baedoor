@@ -1,0 +1,37 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "wither_knife",
+    "customModelName": "Normal",
+    "name": "Wither Knife",
+    "specialInfo": [
+      "Wither knife is strange weapon created to explore wither force... but that can backfire on you..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.85,
+    "enchantability": 20,
+    "damageVsEntity": 6.0,
+    "usageCount": 190,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeCooldownCheck"
+    },
+    "onEntityHitWith": {
+      "name": "WitherKnifeSneakAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "StandardKnifeCooldownRegeneration"
+    }
+  }
+}

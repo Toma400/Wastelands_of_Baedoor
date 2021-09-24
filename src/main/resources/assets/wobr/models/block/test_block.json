@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/fp_jungle_blue",
+    "particle": "wobr:blocks/fp_jungle_blue"
+  }
+}

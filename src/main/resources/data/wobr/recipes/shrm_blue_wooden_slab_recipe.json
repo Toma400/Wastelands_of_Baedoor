@@ -1,0 +1,22 @@
+{
+  "group": "wooden_slab_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "shroomed:blue_hard_mushroom_stem"
+    },
+    "1": {
+      "item": "shroomed:blue_hard_mushroom_stem"
+    },
+    "2": {
+      "item": "shroomed:blue_hard_mushroom_stem"
+    }
+  },
+  "result": {
+    "item": "wobr:blue_shroomed_wooden_slab",
+    "count": 6
+  }
+}

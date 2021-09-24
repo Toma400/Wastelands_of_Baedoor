@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/wood_lamp_jungle_blank",
+    "up": "wobr:blocks/regular_jungle",
+    "north": "wobr:blocks/wood_lamp_jungle_2",
+    "east": "wobr:blocks/wood_lamp_jungle_3",
+    "south": "wobr:blocks/wood_lamp_jungle_2",
+    "west": "wobr:blocks/wood_lamp_jungle_3",
+    "particle": "wobr:blocks/wood_lamp_jungle_blank"
+  }
+}

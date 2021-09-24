@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+    "title": {
+      "translate": "advancements.portable_nether_lakes.title"
+    },
+    "description": {
+      "translate": "advancements.portable_nether_lakes.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "portable_nether_lakes": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:new_technician_inthe_town"
+}

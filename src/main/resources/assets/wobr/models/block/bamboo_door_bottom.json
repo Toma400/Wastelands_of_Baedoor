@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "wobr:blocks/bamboo_bottom_door",
+    "top": "wobr:blocks/bamboo_top_door"
+  }
+}

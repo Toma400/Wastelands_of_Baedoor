@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Tribe Reputation Drop",
+    "effectName": "Tribe Reputation Drop",
+    "icon": "head_ormath_3.png",
+    "color": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": true
+  }
+}

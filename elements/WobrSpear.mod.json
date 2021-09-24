@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:StoneSpear"
+      },
+      {
+        "value": "CUSTOM:IronSpear"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "wobr_spear",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "group": "wooden_stairs_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "the_mobs_n_crops:spicewood_log"
+    },
+    "2": {
+      "item": "the_mobs_n_crops:spicewood_log"
+    },
+    "3": {
+      "item": "the_mobs_n_crops:spicewood_log"
+    }
+  },
+  "result": {
+    "item": "wobr:spicewood_wooden_stairs",
+    "count": 3
+  }
+}

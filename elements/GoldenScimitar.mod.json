@@ -1,0 +1,35 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "golden_scimitar",
+    "customModelName": "Normal",
+    "name": "Golden Scimitar",
+    "specialInfo": [
+      "Golden scimitar, used mostly by desert warrior across the universe, is fast, yet vulnerable tool to make your enemies bleed..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.7,
+    "enchantability": 22,
+    "damageVsEntity": 3.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SabreVariations"
+    }
+  }
+}

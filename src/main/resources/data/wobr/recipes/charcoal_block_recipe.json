@@ -1,0 +1,42 @@
+{
+  "group": "charcoal_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:charcoal"
+    },
+    "1": {
+      "item": "minecraft:charcoal"
+    },
+    "2": {
+      "item": "minecraft:charcoal"
+    },
+    "3": {
+      "item": "minecraft:charcoal"
+    },
+    "4": {
+      "item": "minecraft:charcoal"
+    },
+    "5": {
+      "item": "minecraft:charcoal"
+    },
+    "6": {
+      "item": "minecraft:charcoal"
+    },
+    "7": {
+      "item": "minecraft:charcoal"
+    },
+    "8": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "result": {
+    "item": "wobr:charcoal_block",
+    "count": 1
+  }
+}

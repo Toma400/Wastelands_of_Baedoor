@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/hardened_netherrack",
+    "particle": "wobr:blocks/hardened_netherrack"
+  }
+}

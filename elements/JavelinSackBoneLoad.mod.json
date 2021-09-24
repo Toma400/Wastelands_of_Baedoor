@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "javelin_sack_full",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:JavelinSack"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      },
+      {
+        "value": "CUSTOM:BoneJavelin"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JavelinSackBone"
+    },
+    "name": "javelin_sack_bone_load",
+    "namespace": "mod"
+  }
+}

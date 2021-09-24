@@ -1,0 +1,145 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 320,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "wandering_trader_gui.png",
+          "use1Xscale": false,
+          "name": "wandering_trader_gui.png",
+          "x": 65,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Buy",
+          "onClick": {
+            "name": "MerchantGUIBuy"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Buy",
+          "x": 200,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Random Card",
+          "color": {
+            "value": -4684786,
+            "falpha": 0.0
+          },
+          "name": "Random Card",
+          "x": 281,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20 Emeralds",
+          "color": {
+            "value": -4684786,
+            "falpha": 0.0
+          },
+          "name": "20 Emeralds",
+          "x": 106,
+          "y": 115
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "32card.png",
+          "use1Xscale": false,
+          "name": "32card.png",
+          "x": 294,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "32emerald.png",
+          "use1Xscale": false,
+          "name": "32emerald.png",
+          "x": 117,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantGUIRightSwitch"
+          },
+          "width": 11,
+          "height": 20,
+          "name": "»",
+          "x": 248,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "«",
+          "onClick": {
+            "name": "MerchantGUILeftSwitch"
+          },
+          "width": 10,
+          "height": 20,
+          "name": "«",
+          "x": 181,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Emeralds>",
+          "color": {
+            "value": -9285877,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Emeralds>",
+          "x": 212,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Emeralds in inventory:",
+          "color": {
+            "value": -9946353,
+            "falpha": 0.0
+          },
+          "name": "Emeralds in inventory:",
+          "x": 168,
+          "y": 174
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "MainGUINBT"
+    },
+    "onTick": {
+      "name": "EmeraldIterator"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:hardened_black_sand"
+  },
+  "result": "wobr:hardened_black_sand_stairs"
+}

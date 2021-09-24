@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:large_bullet"
+    },
+    "title": {
+      "translate": "advancements.fingers_are_my_revolvers.title"
+    },
+    "description": {
+      "translate": "advancements.fingers_are_my_revolvers.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fingers_are_my_revolvers": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:partofthe_gun"
+}

@@ -1,0 +1,16 @@
+{
+  "group": "fossils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "betterlands:archaeopteryx_limb"
+    }
+  },
+  "result": {
+    "item": "wobr:cracked_bone",
+    "count": 4
+  }
+}

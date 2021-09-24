@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "wobr:blocks/chisel_dark_oak",
+    "top": "wobr:blocks/chisel_dark_oak",
+    "side": "wobr:blocks/regular_dark_oak"
+  }
+}

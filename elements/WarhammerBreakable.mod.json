@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      }
+    ],
+    "functions": [],
+    "name": "warhammer_breakable",
+    "namespace": "forge"
+  }
+}

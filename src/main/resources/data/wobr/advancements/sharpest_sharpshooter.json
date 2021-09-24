@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:jitado_shotgun"
+    },
+    "title": {
+      "translate": "advancements.sharpest_sharpshooter.title"
+    },
+    "description": {
+      "translate": "advancements.sharpest_sharpshooter.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sharpest_sharpshooter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:partofthe_gun"
+}

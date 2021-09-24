@@ -1,0 +1,43 @@
+{
+  "_fv": 13,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "smallthrowndagger",
+    "customModelName": "Normal",
+    "name": "Throwing Dagger",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 1.0,
+    "onRangedItemUsed": {
+      "name": "ThrownDaggerInventory"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ThrownDaggerProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ThrownDaggerCollision"
+    }
+  }
+}

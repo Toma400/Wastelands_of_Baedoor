@@ -1,0 +1,16 @@
+{
+  "group": "veil_crushing",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:sandy_veil"
+    }
+  },
+  "result": {
+    "item": "wobr:sand_dust",
+    "count": 3
+  }
+}

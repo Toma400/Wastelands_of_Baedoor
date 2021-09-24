@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "wobr:blocks/funt_block_polished",
+    "pane": "wobr:blocks/funt_block_bar"
+  }
+}

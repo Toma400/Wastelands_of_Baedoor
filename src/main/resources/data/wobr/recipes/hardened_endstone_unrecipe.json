@@ -1,0 +1,16 @@
+{
+  "group": "endstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:hardened_endstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:end_stone",
+    "count": 2
+  }
+}

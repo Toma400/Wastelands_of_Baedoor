@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "1": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "2": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "3": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "5": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "6": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "7": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "8": {
+      "item": "thedesolat:darkwood_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_darkwood_wood",
+    "count": 8
+  }
+}

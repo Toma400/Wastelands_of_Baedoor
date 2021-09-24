@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:acacia_log"
+    },
+    "3": {
+      "item": "minecraft:acacia_log"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "minecraft:acacia_log"
+    },
+    "7": {
+      "item": "minecraft:acacia_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_acacia",
+    "count": 2
+  }
+}

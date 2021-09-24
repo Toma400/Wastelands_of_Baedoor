@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "planes_pepper_box",
+        "1": "planes_pepper_box_enh"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "planes_long_revolver"
+      },
+      "name": "default"
+    }
+  }
+}

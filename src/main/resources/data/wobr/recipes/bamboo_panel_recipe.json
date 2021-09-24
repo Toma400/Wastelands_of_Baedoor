@@ -1,0 +1,26 @@
+{
+  "group": "bamboo_panel",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_panel",
+    "count": 4
+  }
+}

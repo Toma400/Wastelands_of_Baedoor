@@ -1,0 +1,19 @@
+{
+  "group": "iron_key",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "wobr:iron_key",
+    "count": 1
+  }
+}

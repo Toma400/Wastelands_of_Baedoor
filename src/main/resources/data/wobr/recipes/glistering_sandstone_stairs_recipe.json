@@ -1,0 +1,33 @@
+{
+  "group": "glistering_sandstone_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "3": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "4": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "6": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "7": {
+      "item": "wobr:glistering_sandstone"
+    },
+    "8": {
+      "item": "wobr:glistering_sandstone"
+    }
+  },
+  "result": {
+    "item": "wobr:glistering_sandstone_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "group": "lapis_tower",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wobr:lapis_crystal"
+  },
+  "result": "wobr:lapis_tower"
+}

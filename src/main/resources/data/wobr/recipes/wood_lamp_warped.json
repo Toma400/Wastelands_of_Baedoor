@@ -1,0 +1,27 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "wobr:warped_log"
+    },
+    "3": {
+      "tag": "wobr:warped_log"
+    },
+    "5": {
+      "tag": "wobr:warped_log"
+    },
+    "7": {
+      "tag": "wobr:warped_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_warped",
+    "count": 2
+  }
+}

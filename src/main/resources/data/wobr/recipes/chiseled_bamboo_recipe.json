@@ -1,0 +1,39 @@
+{
+  "group": "bamboo_block_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "5": {
+      "item": "wobr:bamboo_block"
+    },
+    "6": {
+      "item": "wobr:bamboo_block"
+    },
+    "7": {
+      "item": "wobr:bamboo_block"
+    },
+    "8": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_bamboo_block",
+    "count": 8
+  }
+}

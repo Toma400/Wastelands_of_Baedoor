@@ -1,0 +1,57 @@
+{
+  "_fv": 13,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Fast Draw",
+    "type": "WEAPON",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:HandmadeRevolver"
+      },
+      {
+        "value": "CUSTOM:PepperBox"
+      },
+      {
+        "value": "CUSTOM:ShortRevolver"
+      },
+      {
+        "value": "CUSTOM:GoldenShotRevolver"
+      },
+      {
+        "value": "CUSTOM:LongRevolver"
+      },
+      {
+        "value": "CUSTOM:ElephantGun"
+      },
+      {
+        "value": "CUSTOM:JitadoShotgun"
+      },
+      {
+        "value": "CUSTOM:CrocodileShotgun"
+      },
+      {
+        "value": "CUSTOM:Lefs9"
+      },
+      {
+        "value": "CUSTOM:AyerShotgun"
+      },
+      {
+        "value": "CUSTOM:AyerSawedOff"
+      },
+      {
+        "value": "CUSTOM:Windsweeper"
+      },
+      {
+        "value": "CUSTOM:RustyReaper"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

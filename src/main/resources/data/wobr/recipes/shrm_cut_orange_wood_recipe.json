@@ -1,0 +1,42 @@
+{
+  "group": "cut_shroomwood",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "1": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "2": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "3": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "4": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "5": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "6": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "7": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "8": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    }
+  },
+  "result": {
+    "item": "wobr:cut_orange_shroomed_wood",
+    "count": 8
+  }
+}

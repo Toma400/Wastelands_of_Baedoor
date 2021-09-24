@@ -1,0 +1,26 @@
+{
+  "group": "renewable_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:sand_dust"
+    },
+    "1": {
+      "item": "wobr:sand_dust"
+    },
+    "2": {
+      "item": "wobr:sand_dust"
+    },
+    "3": {
+      "item": "wobr:sand_dust"
+    }
+  },
+  "result": {
+    "item": "minecraft:sand",
+    "count": 1
+  }
+}

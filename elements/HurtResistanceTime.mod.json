@@ -1,0 +1,7 @@
+{
+  "_fv": 13,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"116\" y=\"80\"><field name=\"trigger\">entity_pre_hurt</field></block><block type=\"entity_run_function\" x=\"157\" y=\"394\"><value name=\"function\"><block type=\"text\"><field name=\"TEXT\">wobr_hurt_time</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block><block type=\"controls_if\" x=\"167\" y=\"486\"><value name=\"IF0\"><block type=\"logic_binary_ops\"><field name=\"OP\">EQ</field><value name=\"A\"><block type=\"custom_dependency_logic\"><field name=\"NAME\">entity</field></block></value><value name=\"B\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityLiving</field><value name=\"compareTo\"><block type=\"entity_from_deps\"></block></value></block></value></block></value><statement name=\"DO0\"><block type=\"java_code\"><field name=\"CODE\">entity.hurtResistanceTime = 0;</field></block></statement></block></xml>"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "sand_wanderer",
+    "customModelName": "firearm_sandy_wanderer:default",
+    "name": "Sand Wanderer",
+    "specialInfo": [
+      "This rifle exists for all lonely souls who seek for safety in deserty lands. Used by various merchants, bandits and even soldiers, it's known as faithful friend for all who are lost."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 18,
+    "damageVsEntity": 1.0,
+    "usageCount": 415,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShotSandWanderer"
+    },
+    "onItemInInventoryTick": {
+      "name": "GuideBookAdvancement"
+    },
+    "onItemInUseTick": {
+      "name": "ReloadScoreCheck"
+    }
+  }
+}

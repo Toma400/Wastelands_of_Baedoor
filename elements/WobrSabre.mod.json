@@ -1,0 +1,40 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BrotherhoodSabre"
+      },
+      {
+        "value": "CUSTOM:PrismarineSabre"
+      },
+      {
+        "value": "CUSTOM:IronSabre"
+      },
+      {
+        "value": "CUSTOM:BlackSabre"
+      },
+      {
+        "value": "CUSTOM:HardenedIronSabre"
+      },
+      {
+        "value": "CUSTOM:WhiteSabre"
+      },
+      {
+        "value": "CUSTOM:GoldenScimitar"
+      },
+      {
+        "value": "CUSTOM:StelliumSabre"
+      },
+      {
+        "value": "CUSTOM:CrystalSabre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "wobr_sabre",
+    "namespace": "forge"
+  }
+}

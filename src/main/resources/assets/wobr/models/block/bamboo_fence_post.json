@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "wobr:blocks/bamboo_block",
+    "particle": "wobr:blocks/bamboo_block"
+  }
+}

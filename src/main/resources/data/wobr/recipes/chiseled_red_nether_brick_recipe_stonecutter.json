@@ -1,0 +1,9 @@
+{
+  "group": "wobr",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:red_nether_bricks"
+  },
+  "result": "wobr:chiseled_red_nether_brick"
+}

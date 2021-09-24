@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "wobr:blocks/bamboo_block",
+    "particle": "wobr:blocks/bamboo_block"
+  }
+}

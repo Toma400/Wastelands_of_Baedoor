@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:blockof_nether_soul_essence"
+    },
+    "title": {
+      "translate": "advancements.walking_on_cursed_land.title"
+    },
+    "description": {
+      "translate": "advancements.walking_on_cursed_land.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "walking_on_cursed_land": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:reveal"
+}

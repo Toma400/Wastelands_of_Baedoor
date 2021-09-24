@@ -1,0 +1,31 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rusted_warhammer",
+    "customModelName": "Normal",
+    "name": "Rusted Warhammer",
+    "specialInfo": [
+      "Warhammer from old days and old wars... rusted, yet still powerful."
+    ],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 0.3,
+    "enchantability": 6,
+    "damageVsEntity": 8.0,
+    "usageCount": 165,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "WarhammerRegistry"
+    }
+  }
+}

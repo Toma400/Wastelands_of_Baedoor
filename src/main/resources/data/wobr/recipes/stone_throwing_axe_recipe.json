@@ -1,0 +1,26 @@
+{
+  "group": "stone_throwing_axe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cobblestone"
+    },
+    "1": {
+      "item": "minecraft:cobblestone"
+    },
+    "2": {
+      "item": "minecraft:cobblestone"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "wobr:stone_throwing_axe",
+    "count": 1
+  }
+}

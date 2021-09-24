@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "wobr:block/pillar_cypress"
+    },
+    "facing=north": {
+      "model": "wobr:block/pillar_cypress"
+    },
+    "facing=east": {
+      "model": "wobr:block/pillar_cypress",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "wobr:block/pillar_cypress",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "wobr:block/pillar_cypress",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "wobr:block/pillar_cypress",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

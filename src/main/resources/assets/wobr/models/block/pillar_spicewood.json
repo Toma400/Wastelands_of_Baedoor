@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_spicewood_top",
+    "up": "wobr:blocks/pillar_spicewood_top",
+    "north": "wobr:blocks/pillar_spicewood",
+    "east": "wobr:blocks/pillar_spicewood",
+    "south": "wobr:blocks/pillar_spicewood",
+    "west": "wobr:blocks/pillar_spicewood",
+    "particle": "wobr:blocks/pillar_spicewood_top"
+  }
+}

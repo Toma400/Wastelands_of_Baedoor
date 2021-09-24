@@ -1,0 +1,16 @@
+{
+  "group": "mushroom_poison",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:blockof_mushroom_poison"
+    }
+  },
+  "result": {
+    "item": "wobr:mushroom_poison",
+    "count": 9
+  }
+}

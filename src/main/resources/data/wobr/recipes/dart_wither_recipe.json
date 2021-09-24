@@ -1,0 +1,25 @@
+{
+  "group": "darts",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "wobr:dart_regular"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    }
+  ],
+  "result": {
+    "item": "wobr:dart_wither",
+    "count": 1
+  }
+}

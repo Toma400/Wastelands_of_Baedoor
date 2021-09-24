@@ -1,0 +1,30 @@
+{
+  "group": "nether_avoider",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "3": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "4": {
+      "item": "wobr:glowing_obsidian"
+    },
+    "5": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "7": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "result": {
+    "item": "wobr:nether_avoider_inactive",
+    "count": 1
+  }
+}

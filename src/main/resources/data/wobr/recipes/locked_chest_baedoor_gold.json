@@ -1,0 +1,30 @@
+{
+  "group": "locked_chest",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "wobr:baedoor_funt_block"
+    },
+    "3": {
+      "item": "wobr:baedoor_funt_block"
+    },
+    "4": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "5": {
+      "item": "wobr:baedoor_funt_block"
+    },
+    "7": {
+      "item": "wobr:baedoor_funt_block"
+    }
+  },
+  "result": {
+    "item": "wobr:lockable_baedoor_golden_chest",
+    "count": 1
+  }
+}

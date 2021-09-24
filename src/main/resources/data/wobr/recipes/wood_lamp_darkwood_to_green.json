@@ -1,0 +1,16 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:wooden_lamp_darkwood"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_darkwood_2",
+    "count": 1
+  }
+}

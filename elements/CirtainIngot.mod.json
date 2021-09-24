@@ -1,0 +1,35 @@
+{
+  "_fv": 13,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "cirtain_ingot",
+    "customModelName": "Normal",
+    "name": "Cirtain Ingot",
+    "rarity": "RARE",
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Cirtain is known as a strongest metal from Baedoor universe, immune to fire, explosions or any other natural phenomenon",
+      "Its limey-yellowy ingots were carefully crafted from ores existing only in Ct'eh continent, making it one of the rarest and most precious metals ever existing"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

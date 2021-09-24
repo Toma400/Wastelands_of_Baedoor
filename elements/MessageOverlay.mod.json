@@ -1,0 +1,26 @@
+{
+  "_fv": 13,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:Message>",
+          "color": {
+            "value": -3296227,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:Message>",
+          "x": 105,
+          "y": 140
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Message_Return"
+    }
+  }
+}

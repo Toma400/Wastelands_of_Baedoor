@@ -1,0 +1,24 @@
+{
+  "group": "wood_pillars",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:ebony_log"
+    },
+    "1": {
+      "item": "byg:ebony_log"
+    },
+    "2": {
+      "item": "byg:ebony_log"
+    }
+  },
+  "result": {
+    "item": "wobr:pillar_byg_ebony",
+    "count": 3
+  }
+}

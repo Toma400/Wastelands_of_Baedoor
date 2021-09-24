@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_ayer_shotgun",
+  "textures": {
+    "0": "wobr:blocks/planes_ayer_shotgun",
+    "particle": "wobr:items/ayer_shotgun"
+  }
+}

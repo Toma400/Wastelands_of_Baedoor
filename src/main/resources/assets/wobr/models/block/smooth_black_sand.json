@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/smooth_black_sand",
+    "particle": "wobr:blocks/smooth_black_sand"
+  }
+}

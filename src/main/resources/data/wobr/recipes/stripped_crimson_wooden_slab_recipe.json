@@ -1,0 +1,22 @@
+{
+  "group": "wooden_slab_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "tag": "wobr:stripped_crimson_log"
+    },
+    "1": {
+      "tag": "wobr:stripped_crimson_log"
+    },
+    "2": {
+      "tag": "wobr:stripped_crimson_log"
+    }
+  },
+  "result": {
+    "item": "wobr:stripped_crimson_wooden_slab",
+    "count": 6
+  }
+}

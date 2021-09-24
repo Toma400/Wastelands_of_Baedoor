@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "58": "small_airship_jungle"
+      },
+      "name": "default"
+    }
+  }
+}

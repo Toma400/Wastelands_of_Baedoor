@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "nether_avoider",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": "CUSTOM:GlowingObsidian"
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherAvoiderInactive"
+    },
+    "name": "nether_avoider_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "baedoor_golden_lamp",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": "Items.PRISMARINE_CRYSTALS"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BaedoorFuntBlockLamp"
+    },
+    "name": "baedoor_funt_block_lamp_recipe",
+    "namespace": "mod"
+  }
+}

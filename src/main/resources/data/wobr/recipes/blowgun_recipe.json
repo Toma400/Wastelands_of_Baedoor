@@ -1,0 +1,24 @@
+{
+  "group": "blowgun",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bamboo"
+    },
+    "4": {
+      "item": "minecraft:bamboo"
+    },
+    "8": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "wobr:blowgun",
+    "count": 1
+  }
+}

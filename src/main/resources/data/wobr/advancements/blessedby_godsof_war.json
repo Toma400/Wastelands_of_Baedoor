@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:prismarine_sabre"
+    },
+    "title": {
+      "translate": "advancements.blessedby_godsof_war.title"
+    },
+    "description": {
+      "translate": "advancements.blessedby_godsof_war.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "blessedby_godsof_war": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:mastermindof_swordsmanship"
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "fermented_spider_eye",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Items.SPIDER_EYE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.SUGAR"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.FERMENTED_SPIDER_EYE"
+    },
+    "name": "fermented_spider_eye_red_mushroom_recipe",
+    "namespace": "mod"
+  }
+}

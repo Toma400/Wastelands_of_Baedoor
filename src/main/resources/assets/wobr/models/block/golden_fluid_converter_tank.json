@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/fluid_tank_bottom",
+    "up": "wobr:blocks/fluid_tank_top",
+    "north": "wobr:blocks/fluid_tank_empty",
+    "east": "wobr:blocks/fluid_tank_empty",
+    "south": "wobr:blocks/fluid_tank_empty",
+    "west": "wobr:blocks/fluid_tank_empty",
+    "particle": "wobr:blocks/fluid_tank_bottom"
+  }
+}

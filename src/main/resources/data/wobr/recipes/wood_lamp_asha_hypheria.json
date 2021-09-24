@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "thedesolat:asha_hypheria_log"
+    },
+    "3": {
+      "item": "thedesolat:asha_hypheria_log"
+    },
+    "4": {
+      "item": "thedesolat:block_of_syphalium"
+    },
+    "5": {
+      "item": "thedesolat:asha_hypheria_log"
+    },
+    "7": {
+      "item": "thedesolat:asha_hypheria_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_asha_hypheria",
+    "count": 2
+  }
+}

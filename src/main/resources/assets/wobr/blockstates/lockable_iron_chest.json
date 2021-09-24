@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/lockable_iron_chest"
+    },
+    "facing=east": {
+      "model": "wobr:block/lockable_iron_chest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/lockable_iron_chest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/lockable_iron_chest",
+      "y": 270
+    }
+  }
+}

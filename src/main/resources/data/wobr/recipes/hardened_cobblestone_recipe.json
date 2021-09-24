@@ -1,0 +1,19 @@
+{
+  "group": "hardened_cobblestone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cobblestone"
+    },
+    "1": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "wobr:hardened_cobblestone",
+    "count": 1
+  }
+}

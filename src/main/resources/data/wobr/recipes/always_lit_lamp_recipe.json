@@ -1,0 +1,16 @@
+{
+  "group": "always_lit",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_lamp"
+    },
+    {
+      "item": "minecraft:redstone_torch"
+    }
+  ],
+  "result": {
+    "item": "wobr:always_lit_lamp",
+    "count": 1
+  }
+}

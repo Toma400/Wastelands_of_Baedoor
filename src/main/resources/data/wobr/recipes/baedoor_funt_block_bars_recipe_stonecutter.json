@@ -1,0 +1,9 @@
+{
+  "group": "baedoor_gold_bars",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "wobr:baedoor_funt_block_polished"
+  },
+  "result": "wobr:baedoor_funt_block_bars"
+}

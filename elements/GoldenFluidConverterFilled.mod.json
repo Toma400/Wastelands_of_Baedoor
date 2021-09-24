@@ -1,0 +1,108 @@
+{
+  "_fv": 13,
+  "_type": "block",
+  "definition": {
+    "texture": "fluid_tank_bottom",
+    "textureTop": "fluid_tank_top",
+    "textureLeft": "fluid_tank_filled",
+    "textureFront": "fluid_tank_filled",
+    "textureRight": "fluid_tank_filled",
+    "textureBack": "fluid_tank_filled",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "Fluid Tank Heater",
+    "specialInfo": [
+      "§6 Ultimate integration module. Gives you ability to convert water into all supported fluids. Powered by any fuel with power 12 or greater."
+    ],
+    "hardness": 8.0,
+    "resistance": 8.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": "CUSTOM:GoldenFluidConverterTank"
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "IRON"
+    },
+    "tickRate": 20,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": "CUSTOM:GoldenFluidConverterTank"
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CAMPFIRE_COSY_SMOKE"
+    },
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 0.9,
+    "particleAmount": 4,
+    "hasInventory": true,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": true,
+    "energyInitial": 0,
+    "energyCapacity": 500,
+    "energyMaxReceive": 12,
+    "energyMaxExtract": 12,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "FluidConverterAdding"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

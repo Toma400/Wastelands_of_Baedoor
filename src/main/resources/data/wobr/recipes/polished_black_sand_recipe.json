@@ -1,0 +1,26 @@
+{
+  "group": "polished_black_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "1": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "2": {
+      "item": "wobr:hardened_black_sand"
+    },
+    "3": {
+      "item": "wobr:hardened_black_sand"
+    }
+  },
+  "result": {
+    "item": "wobr:polished_black_sand",
+    "count": 4
+  }
+}

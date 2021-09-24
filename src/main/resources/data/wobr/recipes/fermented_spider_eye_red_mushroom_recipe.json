@@ -1,0 +1,22 @@
+{
+  "group": "fermented_spider_eye",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "minecraft:fermented_spider_eye",
+    "count": 1
+  }
+}

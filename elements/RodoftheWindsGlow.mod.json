@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Rod ofthe Winds Glow",
+    "effectName": "Rod of the Winds Glow",
+    "icon": "32card.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
+  }
+}

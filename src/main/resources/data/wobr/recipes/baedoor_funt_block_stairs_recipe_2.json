@@ -1,0 +1,33 @@
+{
+  "group": "baedoor_gold_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "3": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "4": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "6": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "7": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "8": {
+      "item": "wobr:baedoor_funt_block_polished"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_funt_block_stairs",
+    "count": 4
+  }
+}

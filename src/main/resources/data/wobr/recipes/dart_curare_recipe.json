@@ -1,0 +1,16 @@
+{
+  "group": "darts",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:curare"
+    },
+    {
+      "item": "wobr:dart_regular"
+    }
+  ],
+  "result": {
+    "item": "wobr:dart_curare",
+    "count": 1
+  }
+}

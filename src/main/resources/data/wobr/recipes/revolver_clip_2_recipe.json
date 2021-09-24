@@ -1,0 +1,24 @@
+{
+  "group": "revolver_clips",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_nugget"
+    },
+    "1": {
+      "item": "minecraft:blaze_rod"
+    },
+    "2": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "wobr:revolver_clip_2",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:rodofthe_winds"
+    },
+    "title": {
+      "translate": "advancements.ormaths.title"
+    },
+    "description": {
+      "translate": "advancements.ormaths.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ormaths": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:guide_book"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_byg_ebony_top",
+    "up": "wobr:blocks/pillar_byg_ebony_top",
+    "north": "wobr:blocks/pillar_byg_ebony",
+    "east": "wobr:blocks/pillar_byg_ebony",
+    "south": "wobr:blocks/pillar_byg_ebony",
+    "west": "wobr:blocks/pillar_byg_ebony",
+    "particle": "wobr:blocks/pillar_byg_ebony_top"
+  }
+}

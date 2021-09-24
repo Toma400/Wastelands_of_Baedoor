@@ -1,0 +1,32 @@
+{
+  "group": "baedoor_gold_trapdoor",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "1": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "2": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "3": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "4": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "5": {
+      "item": "wobr:baedoor_funt_block_polished"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_funt_block_trapdoor",
+    "count": 4
+  }
+}

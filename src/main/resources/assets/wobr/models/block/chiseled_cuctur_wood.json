@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_cuctur",
+    "up": "wobr:blocks/regular_cuctur",
+    "north": "wobr:blocks/chisel_cuctur",
+    "east": "wobr:blocks/chisel_cuctur",
+    "south": "wobr:blocks/chisel_cuctur",
+    "west": "wobr:blocks/chisel_cuctur",
+    "particle": "wobr:blocks/regular_cuctur"
+  }
+}

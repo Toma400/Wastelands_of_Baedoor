@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "chiseled_black_sand_variants",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChiseledBlackSand"
+      },
+      {
+        "value": "CUSTOM:ChiseledBlackSand"
+      },
+      {
+        "value": "CUSTOM:ChiseledBlackSand"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChiseledBlackSandSlab"
+    },
+    "name": "chiseled_black_sand_slab_recipe",
+    "namespace": "mod"
+  }
+}

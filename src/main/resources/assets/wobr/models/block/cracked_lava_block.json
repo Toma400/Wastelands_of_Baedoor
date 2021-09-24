@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/cracked_lava_block",
+    "particle": "wobr:blocks/cracked_lava_block"
+  }
+}

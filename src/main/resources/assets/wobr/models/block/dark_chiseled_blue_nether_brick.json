@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wobr:blocks/dark_blue_nether_brick_chiseled",
+    "particle": "wobr:blocks/dark_blue_nether_brick_chiseled"
+  }
+}

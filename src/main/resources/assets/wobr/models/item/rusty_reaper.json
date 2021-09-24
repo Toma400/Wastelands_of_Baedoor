@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_rusty_reaper",
+  "textures": {
+    "0": "wobr:blocks/planes_rusty_reaper",
+    "particle": "wobr:items/rusty_reaper"
+  }
+}

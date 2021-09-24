@@ -1,0 +1,42 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "jitado_shotgun",
+    "customModelName": "firearm_jitado_shotgun:default",
+    "name": "Jitado Shotgun",
+    "specialInfo": [
+      "Most known shotgun of whole Baedoor universe, crafted by masterful jitado gunsmiths, keeping its recipe only for themselves",
+      "It is known for perfect accuracy and powerful shots. As a rare and pricy weapon, it's used rarely and only by richest empires of the world, having the money to commission few of them"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 1.0,
+    "usageCount": 400,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CirtainIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShotJitadoShotgun"
+    },
+    "onItemInInventoryTick": {
+      "name": "GuideBookAdvancement"
+    },
+    "onItemInUseTick": {
+      "name": "ReloadScoreCheck"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/block_of_soul_essence",
+    "up": "wobr:blocks/block_of_soul_essence_2",
+    "north": "wobr:blocks/block_of_soul_essence",
+    "east": "wobr:blocks/block_of_soul_essence",
+    "south": "wobr:blocks/block_of_soul_essence",
+    "west": "wobr:blocks/block_of_soul_essence",
+    "particle": "wobr:blocks/block_of_soul_essence"
+  }
+}

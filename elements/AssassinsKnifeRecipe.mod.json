@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "assassins_knife",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:AyerKnife"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AssassinsKnife"
+    },
+    "name": "assassins_knife_recipe",
+    "namespace": "mod"
+  }
+}

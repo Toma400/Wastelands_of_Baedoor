@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "glistering_sandstone_smooth",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:GlisteringSandstone"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:GlisteringSandstoneSmooth"
+    },
+    "name": "glistering_sandstone_smooth_recipe",
+    "namespace": "mod"
+  }
+}

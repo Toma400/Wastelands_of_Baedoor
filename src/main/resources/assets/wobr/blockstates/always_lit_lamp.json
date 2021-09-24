@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wobr:block/always_lit_lamp"
+    }
+  }
+}

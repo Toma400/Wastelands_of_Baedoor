@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "wobr:blocks/regular_addon_juniper_stripped",
+    "top": "wobr:blocks/regular_addon_juniper_stripped",
+    "side": "wobr:blocks/regular_addon_juniper_stripped"
+  }
+}

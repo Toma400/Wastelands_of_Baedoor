@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/weapon_rod_of_the_winds",
+  "textures": {
+    "0": "wobr:blocks/txt_rod_of_the_winds",
+    "particle": "wobr:items/rod_of_the_winds"
+  }
+}

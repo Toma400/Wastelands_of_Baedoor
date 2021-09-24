@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_jitado_shotgun",
+  "textures": {
+    "0": "wobr:blocks/planes_jitado_shotgun",
+    "particle": "wobr:items/jitado_shotgun"
+  }
+}

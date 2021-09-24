@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:golden_scimitar"
+    },
+    "title": {
+      "translate": "advancements.mastermindof_swordsmanship.title"
+    },
+    "description": {
+      "translate": "advancements.mastermindof_swordsmanship.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mastermindof_swordsmanship": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:sabre_path_begin"
+}

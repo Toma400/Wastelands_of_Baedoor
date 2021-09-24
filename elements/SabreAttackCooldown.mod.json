@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Sabre Defence",
+    "effectName": "Sabre Attack Cooldown",
+    "icon": "regular_dark_oak.png",
+    "color": {
+      "value": -6684724,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
+  }
+}

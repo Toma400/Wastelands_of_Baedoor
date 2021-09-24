@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "wooden_stairs_group",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HypheriaWoodenStairs"
+    },
+    "name": "byg_ether_wooden_stairs_recipe",
+    "namespace": "mod"
+  }
+}

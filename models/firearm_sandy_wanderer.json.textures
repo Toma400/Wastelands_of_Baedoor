@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "planes_sandy_wanderer",
+        "1": "planes_sandy_wanderer_2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "nylium_soul_soil",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "1": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "2": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "3": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "4": {
+      "item": "byg:nylium_soul_sand"
+    },
+    "5": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "6": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "7": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "8": {
+      "item": "wobr:nether_soul_essence"
+    }
+  },
+  "result": {
+    "item": "byg:nylium_soul_soil",
+    "count": 1
+  }
+}

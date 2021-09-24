@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "bone_throwing_axe",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CrackedBone"
+      },
+      {
+        "value": "CUSTOM:CrackedBone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CrackedBone"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BoneThrowingAxe"
+    },
+    "name": "bone_throwing_axe_recipe",
+    "namespace": "mod"
+  }
+}

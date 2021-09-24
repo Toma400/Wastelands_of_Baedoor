@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "wobr:blocks/funt_block_polished",
+    "particle": "wobr:blocks/funt_block_polished"
+  }
+}

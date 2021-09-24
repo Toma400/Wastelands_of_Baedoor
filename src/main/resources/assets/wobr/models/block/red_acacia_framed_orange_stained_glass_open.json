@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "wobr:blocks/fp_red_acacia_orange",
+    "particle": "wobr:blocks/fp_red_acacia_orange"
+  }
+}

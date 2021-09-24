@@ -1,0 +1,26 @@
+{
+  "group": "baedoor_gold_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "1": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "2": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "3": {
+      "item": "wobr:baedoor_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_funt_block_polished",
+    "count": 1
+  }
+}

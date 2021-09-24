@@ -1,0 +1,26 @@
+{
+  "group": "handmade_revolver",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:blaze_rod"
+    },
+    "2": {
+      "item": "wobr:revolver_grip"
+    },
+    "3": {
+      "item": "wobr:gun_barrel"
+    }
+  },
+  "result": {
+    "item": "wobr:handmade_revolver",
+    "count": 1
+  }
+}

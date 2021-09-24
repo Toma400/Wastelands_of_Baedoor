@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_crocodile_shotgun",
+  "textures": {
+    "0": "wobr:blocks/planes_crocodile_shotgun",
+    "particle": "wobr:items/crocodile_shotgun"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "wobr:blocks/chisel_juniper",
+    "top": "wobr:blocks/chisel_juniper",
+    "side": "wobr:blocks/regular_addon_juniper"
+  }
+}

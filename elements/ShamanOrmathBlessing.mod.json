@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Shaman Ormath Blessing",
+    "effectName": "Shaman Ormath Blessing",
+    "icon": "head_ormath_2.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "ShamanOrmathBlessingEffect"
+    }
+  }
+}

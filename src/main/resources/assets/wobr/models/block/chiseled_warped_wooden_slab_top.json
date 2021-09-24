@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "wobr:blocks/chisel_warped",
+    "top": "wobr:blocks/chisel_warped",
+    "side": "wobr:blocks/regular_warped"
+  }
+}

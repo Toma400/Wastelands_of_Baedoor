@@ -1,0 +1,30 @@
+{
+  "group": "golden_scimitar",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:gold_nugget"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:gold_ingot"
+    },
+    "7": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "wobr:golden_scimitar",
+    "count": 1
+  }
+}

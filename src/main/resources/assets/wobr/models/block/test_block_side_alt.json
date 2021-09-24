@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "wobr:blocks/cirtain_block",
+    "pane": "wobr:blocks/fp_acacia_cyan"
+  }
+}

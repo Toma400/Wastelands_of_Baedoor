@@ -1,0 +1,42 @@
+{
+  "group": "baedoor_funt_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_funt"
+    },
+    "1": {
+      "item": "wobr:baedoor_funt"
+    },
+    "2": {
+      "item": "wobr:baedoor_funt"
+    },
+    "3": {
+      "item": "wobr:baedoor_funt"
+    },
+    "4": {
+      "item": "wobr:baedoor_funt"
+    },
+    "5": {
+      "item": "wobr:baedoor_funt"
+    },
+    "6": {
+      "item": "wobr:baedoor_funt"
+    },
+    "7": {
+      "item": "wobr:baedoor_funt"
+    },
+    "8": {
+      "item": "wobr:baedoor_funt"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_funt_block",
+    "count": 1
+  }
+}

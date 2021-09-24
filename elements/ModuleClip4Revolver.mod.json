@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RevolverClip4"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "module_clip_4_revolver",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "crocodile_shotgun",
+    "customModelName": "firearm_crocodile_shotgun:default",
+    "name": "Crocodile Shotgun",
+    "specialInfo": [
+      "Intriguing shotgun, crafted mostly by intermediate gunsmiths",
+      "Its primary role is to fight animals, but it can be used even as a clumsy alternative for rifle, if needed"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 1.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShotCrocodileShotgun"
+    },
+    "onItemInInventoryTick": {
+      "name": "GuideBookAdvancement"
+    },
+    "onItemInUseTick": {
+      "name": "ReloadScoreCheck"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "1": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "2": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "3": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "5": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "6": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "7": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "8": {
+      "item": "byg:stripped_cypress_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_stripped_byg_cypress_wood",
+    "count": 8
+  }
+}

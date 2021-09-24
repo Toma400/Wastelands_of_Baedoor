@@ -1,0 +1,42 @@
+{
+  "group": "horizontal_glass_acacia",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "1": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "2": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "3": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "4": {
+      "item": "minecraft:acacia_planks"
+    },
+    "5": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "6": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "7": {
+      "item": "minecraft:white_stained_glass_pane"
+    },
+    "8": {
+      "item": "minecraft:white_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "wobr:acacia_framed_white_stained_glass",
+    "count": 8
+  }
+}

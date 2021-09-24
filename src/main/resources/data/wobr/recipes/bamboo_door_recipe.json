@@ -1,0 +1,33 @@
+{
+  "group": "bamboo_door",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "4": {
+      "item": "wobr:bamboo_block"
+    },
+    "5": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_door",
+    "count": 3
+  }
+}

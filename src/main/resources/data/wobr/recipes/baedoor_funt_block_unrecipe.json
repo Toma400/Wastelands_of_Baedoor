@@ -1,0 +1,16 @@
+{
+  "group": "baedoor_funt",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_funt_block"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_funt",
+    "count": 9
+  }
+}

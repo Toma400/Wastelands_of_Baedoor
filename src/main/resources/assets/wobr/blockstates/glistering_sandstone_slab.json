@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wobr:block/glistering_sandstone_slab"
+    },
+    "type=top": {
+      "model": "wobr:block/glistering_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "wobr:block/glistering_sandstone_slab_full"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "veil_crushing",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:vulcanic_veil"
+    }
+  },
+  "result": {
+    "item": "wobr:ash_dust",
+    "count": 3
+  }
+}

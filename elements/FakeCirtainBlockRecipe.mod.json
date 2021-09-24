@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "fake_cirtain",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#11"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "Items.DYE#11"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "Items.DYE#11"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "Items.DYE#11"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FakeCirtainBlock"
+    },
+    "name": "fake_cirtain_block_recipe",
+    "namespace": "mod"
+  }
+}

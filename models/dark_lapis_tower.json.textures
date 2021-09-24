@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "dark_lapis_crystal"
+      },
+      "name": "default"
+    }
+  }
+}

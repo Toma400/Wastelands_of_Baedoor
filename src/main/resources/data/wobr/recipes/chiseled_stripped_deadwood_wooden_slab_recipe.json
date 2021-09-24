@@ -1,0 +1,22 @@
+{
+  "group": "wooden_chiseled_slab_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:chiseled_stripped_deadwood_wood"
+    },
+    "1": {
+      "item": "wobr:chiseled_stripped_deadwood_wood"
+    },
+    "2": {
+      "item": "wobr:chiseled_stripped_deadwood_wood"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_stripped_deadwood_wooden_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "wooden_chiseled_group",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChiseledBirchWood"
+    },
+    "name": "chiseled_birch_wood_recipe",
+    "namespace": "mod"
+  }
+}

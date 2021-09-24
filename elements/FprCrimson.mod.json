@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.DYE#5"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fpr_crimson",
+    "namespace": "mod"
+  }
+}

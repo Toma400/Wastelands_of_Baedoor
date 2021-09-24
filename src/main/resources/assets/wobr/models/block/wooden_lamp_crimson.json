@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_crimson_2",
+    "up": "wobr:blocks/regular_crimson_2",
+    "north": "wobr:blocks/wood_lamp_crimson",
+    "east": "wobr:blocks/wood_lamp_crimson",
+    "south": "wobr:blocks/wood_lamp_crimson",
+    "west": "wobr:blocks/wood_lamp_crimson",
+    "particle": "wobr:blocks/regular_crimson_2"
+  }
+}

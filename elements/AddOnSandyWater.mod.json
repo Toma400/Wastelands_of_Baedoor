@@ -1,0 +1,30 @@
+{
+  "_fv": 13,
+  "_type": "fluid",
+  "definition": {
+    "name": "AddOnSandyWater",
+    "textureStill": "sandy_water",
+    "textureFlowing": "sandy_water",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1500,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:WoBIntegrationsTab"
+    },
+    "frequencyOnChunks": 0,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onNeighbourChanges": {
+      "name": "AddOnSandyWaterGen"
+    },
+    "onTickUpdate": {
+      "name": "AddOnSandyWaterGen"
+    },
+    "onEntityCollides": {
+      "name": "AddOnSandyWaterWalk"
+    }
+  }
+}

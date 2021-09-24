@@ -1,0 +1,43 @@
+{
+  "_fv": 13,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "stone_javelin",
+    "customModelName": "weapon_stone_javelin:default",
+    "name": "Stone Javelin",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 4,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 1.0,
+    "onRangedItemUsed": {
+      "name": "JavelinInventory"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ThrownDaggerProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "StoneJavelinCollision"
+    }
+  }
+}

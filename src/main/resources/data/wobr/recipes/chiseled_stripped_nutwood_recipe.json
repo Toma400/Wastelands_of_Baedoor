@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "1": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "2": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "3": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "5": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "6": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "7": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    },
+    "8": {
+      "item": "the_mobs_n_crops:stripped_nutwood_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_stripped_nutwood_wood",
+    "count": 8
+  }
+}

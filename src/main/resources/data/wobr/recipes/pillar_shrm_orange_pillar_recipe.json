@@ -1,0 +1,24 @@
+{
+  "group": "wood_pillars",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "1": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "2": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    }
+  },
+  "result": {
+    "item": "wobr:pillar_shrm_orange",
+    "count": 3
+  }
+}

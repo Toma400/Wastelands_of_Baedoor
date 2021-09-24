@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "scheme",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "CUSTOM:BlackSand"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedPepperBoxScheme"
+    },
+    "name": "enhanced_pepper_box_scheme_recipe",
+    "namespace": "mod"
+  }
+}

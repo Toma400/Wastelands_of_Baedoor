@@ -1,0 +1,287 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "onTakenFromSlot": {
+            "name": "FirearmTableOutputClearing"
+          },
+          "name": "Slot #1",
+          "x": 181,
+          "y": 70
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "onTakenFromSlot": {
+            "name": "FirearmTableOutputClearing"
+          },
+          "name": "Slot #2",
+          "x": 204,
+          "y": 45
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "onTakenFromSlot": {
+            "name": "FirearmTableOutputClearing"
+          },
+          "name": "Slot #3",
+          "x": 204,
+          "y": 94
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "onTakenFromSlot": {
+            "name": "FirearmTableOutputClearing"
+          },
+          "name": "Slot #4",
+          "x": 227,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "onTakenFromSlot": {
+            "name": "FirearmTableResetting"
+          },
+          "name": "Slot #5",
+          "x": 204,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "2.png",
+          "use1Xscale": false,
+          "name": "2.png",
+          "x": 205,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grey_barrel.png",
+          "use1Xscale": false,
+          "name": "grey_barrel.png",
+          "x": 228,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grey_clip.png",
+          "use1Xscale": false,
+          "name": "grey_clip.png",
+          "x": 205,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grey_grip.png",
+          "use1Xscale": false,
+          "name": "grey_grip.png",
+          "x": 182,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme.png",
+          "use1Xscale": false,
+          "name": "scheme.png",
+          "x": 208,
+          "y": 97
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "name": "Slot #6",
+          "x": 133,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "name": "Slot #7",
+          "x": 133,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "name": "Slot #8",
+          "x": 275,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GunAddOnTableReset"
+          },
+          "name": "Slot #9",
+          "x": 275,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "table_gun_reverted.png",
+          "use1Xscale": false,
+          "name": "table_gun_reverted.png",
+          "x": 237,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "table_gun.png",
+          "use1Xscale": false,
+          "name": "table_gun.png",
+          "x": 157,
+          "y": 50
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_storage.png",
+          "use1Xscale": false,
+          "name": "scheme_storage.png",
+          "x": 269,
+          "y": 34
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_storage_2.png",
+          "use1Xscale": false,
+          "name": "scheme_storage_2.png",
+          "x": 129,
+          "y": 34
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 1,
+          "y": 247
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "GunAddOnTableUsed"
+    },
+    "onClosed": {
+      "name": "GunAddOnTableClosed"
+    }
+  }
+}

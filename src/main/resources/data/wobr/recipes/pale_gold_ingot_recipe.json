@@ -1,0 +1,26 @@
+{
+  "group": "pale_gold_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:glistering_ash"
+    },
+    "1": {
+      "item": "minecraft:gold_ingot"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    },
+    "3": {
+      "item": "wobr:glistering_ash"
+    }
+  },
+  "result": {
+    "item": "wobr:pale_gold_ingot",
+    "count": 1
+  }
+}

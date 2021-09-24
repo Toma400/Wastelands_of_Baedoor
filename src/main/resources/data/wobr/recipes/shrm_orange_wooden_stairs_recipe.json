@@ -1,0 +1,23 @@
+{
+  "group": "wooden_stairs_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "2": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    },
+    "3": {
+      "item": "shroomed:orange_hard_mushroom_stem"
+    }
+  },
+  "result": {
+    "item": "wobr:orange_shroomed_wooden_stairs",
+    "count": 3
+  }
+}

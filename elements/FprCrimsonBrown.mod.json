@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "horizontal_glass_crimson",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "TAG:wobr:fpr_crimson"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrimsonFramedBrownStainedGlass"
+    },
+    "name": "fpr_crimson_brown",
+    "namespace": "mod"
+  }
+}

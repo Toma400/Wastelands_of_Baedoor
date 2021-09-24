@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_addon_nutwood",
+    "up": "wobr:blocks/regular_addon_nutwood",
+    "north": "wobr:blocks/wood_lamp_nutwood",
+    "east": "wobr:blocks/wood_lamp_nutwood",
+    "south": "wobr:blocks/wood_lamp_nutwood",
+    "west": "wobr:blocks/wood_lamp_nutwood",
+    "particle": "wobr:blocks/regular_addon_nutwood"
+  }
+}

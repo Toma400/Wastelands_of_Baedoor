@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "baedoor_gold_ingot",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:PaleGoldIngot"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:BaedoorGoldIngot"
+    },
+    "name": "baedoor_gold_ingot_smelter_recipe",
+    "namespace": "mod"
+  }
+}

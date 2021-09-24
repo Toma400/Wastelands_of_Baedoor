@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wobr:blocks/sandy_veil_plant",
+    "particle": "wobr:blocks/sandy_veil_plant"
+  }
+}

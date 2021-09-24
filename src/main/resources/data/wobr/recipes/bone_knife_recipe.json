@@ -1,0 +1,20 @@
+{
+  "group": "bone_knife",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:cracked_bone"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "wobr:bone_knife",
+    "count": 1
+  }
+}

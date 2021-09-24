@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:ChiseledBlueNetherBrick"
+      }
+    ],
+    "functions": [],
+    "name": "be_nyl_sand",
+    "namespace": "forge"
+  }
+}

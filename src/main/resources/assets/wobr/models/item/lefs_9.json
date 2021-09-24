@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_lefs9_revolver",
+  "textures": {
+    "0": "wobr:blocks/planes_lefs9_revolver",
+    "particle": "wobr:items/lefs_9_revolver"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "group": "bamboo_block_variants",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:jungle_log"
+    },
+    "3": {
+      "item": "minecraft:jungle_log"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "minecraft:jungle_log"
+    },
+    "7": {
+      "item": "minecraft:jungle_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wood_lamp_jungle",
+    "count": 2
+  }
+}

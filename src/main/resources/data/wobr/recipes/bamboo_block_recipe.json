@@ -1,0 +1,42 @@
+{
+  "group": "bamboo_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bamboo"
+    },
+    "1": {
+      "item": "minecraft:bamboo"
+    },
+    "2": {
+      "item": "minecraft:bamboo"
+    },
+    "3": {
+      "item": "minecraft:bamboo"
+    },
+    "4": {
+      "item": "minecraft:bamboo"
+    },
+    "5": {
+      "item": "minecraft:bamboo"
+    },
+    "6": {
+      "item": "minecraft:bamboo"
+    },
+    "7": {
+      "item": "minecraft:bamboo"
+    },
+    "8": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_block",
+    "count": 1
+  }
+}

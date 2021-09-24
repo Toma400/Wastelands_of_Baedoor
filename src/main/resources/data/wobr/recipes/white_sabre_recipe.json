@@ -1,0 +1,30 @@
+{
+  "group": "white_sabre",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    },
+    "4": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "6": {
+      "item": "minecraft:nether_star"
+    },
+    "7": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "wobr:white_sabre",
+    "count": 1
+  }
+}

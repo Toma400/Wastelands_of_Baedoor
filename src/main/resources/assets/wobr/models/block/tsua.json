@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wobr:blocks/tsua_flower_alternate",
+    "particle": "wobr:blocks/tsua_flower_alternate"
+  }
+}

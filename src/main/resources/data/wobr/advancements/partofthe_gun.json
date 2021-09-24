@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:lefs_9"
+    },
+    "title": {
+      "translate": "advancements.partofthe_gun.title"
+    },
+    "description": {
+      "translate": "advancements.partofthe_gun.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "partofthe_gun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "wobr:firearm_lock",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:reveal"
+}

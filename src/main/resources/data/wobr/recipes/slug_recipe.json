@@ -1,0 +1,27 @@
+{
+  "group": "bullets",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:gunpowder"
+    },
+    "5": {
+      "item": "minecraft:gunpowder"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "wobr:slug",
+    "count": 2
+  }
+}

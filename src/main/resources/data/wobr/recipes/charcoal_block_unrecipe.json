@@ -1,0 +1,16 @@
+{
+  "group": "charcoal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:charcoal_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:charcoal",
+    "count": 9
+  }
+}

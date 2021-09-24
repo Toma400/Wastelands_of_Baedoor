@@ -1,0 +1,23 @@
+{
+  "group": "wooden_stairs_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "2": {
+      "item": "thedesolat:darkwood_log"
+    },
+    "3": {
+      "item": "thedesolat:darkwood_log"
+    }
+  },
+  "result": {
+    "item": "wobr:darkwood_wooden_stairs",
+    "count": 3
+  }
+}

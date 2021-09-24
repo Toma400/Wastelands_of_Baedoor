@@ -1,0 +1,42 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "elephant_gun",
+    "customModelName": "firearm_elephant_gun:default",
+    "name": "Elephant Gun",
+    "specialInfo": [
+      "Keht's classic firearm, used to hunt elephants on Khacari island",
+      "After conquering WesternWald by Baedoor Empire, Elephant Gun became liked alternative to other rifles, giving good quality for pretty low price of craft"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 1.0,
+    "usageCount": 350,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShotElephantGun"
+    },
+    "onItemInInventoryTick": {
+      "name": "GuideBookAdvancement"
+    },
+    "onItemInUseTick": {
+      "name": "ReloadScoreCheck"
+    }
+  }
+}

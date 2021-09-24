@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_addon_spicewood",
+    "up": "wobr:blocks/regular_addon_spicewood",
+    "north": "wobr:blocks/chisel_spicewood",
+    "east": "wobr:blocks/chisel_spicewood",
+    "south": "wobr:blocks/chisel_spicewood",
+    "west": "wobr:blocks/chisel_spicewood",
+    "particle": "wobr:blocks/regular_addon_spicewood"
+  }
+}

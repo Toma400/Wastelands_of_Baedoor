@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "wobr:handmade_revolver",
+    "wobr:pepper_box",
+    "wobr:elephant_gun",
+    "wobr:ayer_shotgun",
+    "wobr:ayer_sawed_off"
+  ]
+}

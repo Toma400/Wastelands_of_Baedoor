@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "end_stone",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:GlisteringClay"
+    },
+    "smeltingReturnStack": {
+      "value": "Blocks.END_STONE"
+    },
+    "name": "renewable_end_stone",
+    "namespace": "mod"
+  }
+}

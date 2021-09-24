@@ -1,0 +1,42 @@
+{
+  "group": "block_of_nether_soul_essence",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "1": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "2": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "3": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "4": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "5": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "6": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "7": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "8": {
+      "item": "wobr:nether_soul_essence"
+    }
+  },
+  "result": {
+    "item": "wobr:blockof_nether_soul_essence",
+    "count": 1
+  }
+}

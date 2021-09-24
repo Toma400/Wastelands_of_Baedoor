@@ -1,0 +1,43 @@
+{
+  "_fv": 13,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "iron_throwing_axe",
+    "customModelName": "Normal",
+    "name": "Iron Throwing Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "stackSize": 8,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 1.0,
+    "onRangedItemUsed": {
+      "name": "ThrowingAxeInventory"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ThrownDaggerProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "IronThrowingAxeCollision"
+    }
+  }
+}

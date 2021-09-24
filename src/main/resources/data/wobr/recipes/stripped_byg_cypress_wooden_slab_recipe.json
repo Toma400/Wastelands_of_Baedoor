@@ -1,0 +1,22 @@
+{
+  "group": "wooden_slab_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "1": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "2": {
+      "item": "byg:stripped_cypress_log"
+    }
+  },
+  "result": {
+    "item": "wobr:stripped_byg_cypress_wooden_slab",
+    "count": 6
+  }
+}

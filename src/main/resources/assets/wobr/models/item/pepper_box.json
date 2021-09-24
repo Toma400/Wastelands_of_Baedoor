@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_pepper_box",
+  "textures": {
+    "0": "wobr:blocks/planes_pepper_box",
+    "particle": "wobr:items/pepper_box"
+  }
+}

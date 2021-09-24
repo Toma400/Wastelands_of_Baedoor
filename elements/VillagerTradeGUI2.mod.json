@@ -1,0 +1,320 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ormath_trading_background.png",
+          "use1Xscale": false,
+          "name": "ormath_trading_background.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 241,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baedoor_funt_2.png",
+          "use1Xscale": false,
+          "name": "baedoor_funt_2.png",
+          "x": 253,
+          "y": 77
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "->",
+          "onClick": {
+            "name": "OrmathTrade3"
+          },
+          "width": 23,
+          "height": 20,
+          "name": "->",
+          "x": 202,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_honey_bottle.png",
+          "use1Xscale": false,
+          "name": "trade_honey_bottle.png",
+          "x": 168,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "8",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "8",
+          "x": 156,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_wheat.png",
+          "use1Xscale": false,
+          "name": "trade_wheat.png",
+          "x": 168,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "32",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "32",
+          "x": 153,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "->",
+          "onClick": {
+            "name": "OrmathTrade4"
+          },
+          "width": 23,
+          "height": 20,
+          "name": "->",
+          "x": 202,
+          "y": 99
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baedoor_funt_2.png",
+          "use1Xscale": false,
+          "name": "baedoor_funt_2.png",
+          "x": 253,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 241,
+          "y": 104
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_clay_ball.png",
+          "use1Xscale": false,
+          "name": "trade_clay_ball.png",
+          "x": 253,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "32",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "32",
+          "x": 239,
+          "y": 127
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "->",
+          "onClick": {
+            "name": "OrmathTrade5"
+          },
+          "width": 23,
+          "height": 20,
+          "name": "->",
+          "x": 202,
+          "y": 122
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baedoor_funt_2.png",
+          "use1Xscale": false,
+          "name": "baedoor_funt_2.png",
+          "x": 168,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 162,
+          "y": 127
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_jungle.png",
+          "use1Xscale": false,
+          "name": "trade_jungle.png",
+          "x": 253,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "4",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "4",
+          "x": 242,
+          "y": 149
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "->",
+          "onClick": {
+            "name": "OrmathTrade6"
+          },
+          "width": 23,
+          "height": 20,
+          "name": "->",
+          "x": 202,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baedoor_funt_2.png",
+          "use1Xscale": false,
+          "name": "baedoor_funt_2.png",
+          "x": 168,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 162,
+          "y": 149
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Ormath_Reputation>",
+          "color": {
+            "value": -9347962,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Ormath_Reputation>",
+          "x": 204,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Coins>",
+          "color": {
+            "value": -6057201,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Coins>",
+          "x": 204,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Reputation",
+          "color": {
+            "value": -7572572,
+            "falpha": 0.0
+          },
+          "name": "Reputation",
+          "x": 188,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Coins",
+          "color": {
+            "value": -6057201,
+            "falpha": 0.0
+          },
+          "name": "Coins",
+          "x": 201,
+          "y": 46
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CoinIterator"
+    }
+  }
+}

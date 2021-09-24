@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "wobr:blocks/regular_darkwood_strip",
+    "top": "wobr:blocks/regular_darkwood_strip",
+    "side": "wobr:blocks/regular_darkwood_strip"
+  }
+}

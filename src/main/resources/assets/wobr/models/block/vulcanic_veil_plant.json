@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wobr:blocks/vulcanic_veil_plant",
+    "particle": "wobr:blocks/vulcanic_veil_plant"
+  }
+}

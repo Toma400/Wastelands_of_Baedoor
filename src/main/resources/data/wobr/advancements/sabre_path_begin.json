@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:hardened_iron_sabre"
+    },
+    "title": {
+      "translate": "advancements.sabre_path_begin.title"
+    },
+    "description": {
+      "translate": "advancements.sabre_path_begin.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sabre_path_begin": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "wobr:reveal"
+}

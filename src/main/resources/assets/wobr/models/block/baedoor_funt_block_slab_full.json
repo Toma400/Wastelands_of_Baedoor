@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "wobr:blocks/funt_block_polished",
+    "top": "wobr:blocks/funt_block_polished",
+    "side": "wobr:blocks/funt_block_polished"
+  }
+}

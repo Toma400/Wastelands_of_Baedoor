@@ -1,0 +1,35 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "black_sabre",
+    "customModelName": "weapon_black_sabre:default",
+    "name": "Black Sabre",
+    "specialInfo": [
+      "This sabre is beautiful and powerful, but everything what's great comes with a price..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.7,
+    "enchantability": 14,
+    "damageVsEntity": 12.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.SKULL#1"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SabreVariations"
+    }
+  }
+}

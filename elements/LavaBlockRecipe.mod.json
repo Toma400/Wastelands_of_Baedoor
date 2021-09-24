@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "lava_block",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:LavaIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LavaBlock"
+    },
+    "name": "lava_block_recipe",
+    "namespace": "mod"
+  }
+}

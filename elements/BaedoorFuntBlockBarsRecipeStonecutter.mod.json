@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "baedoor_gold_bars",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:BaedoorFuntBlockPolished"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:BaedoorFuntBlockBars"
+    },
+    "name": "baedoor_funt_block_bars_recipe_stonecutter",
+    "namespace": "mod"
+  }
+}

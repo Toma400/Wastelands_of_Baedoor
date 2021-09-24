@@ -1,0 +1,20 @@
+{
+  "group": "chiseled_black_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:polished_black_sand_slab"
+    },
+    "1": {
+      "item": "wobr:polished_black_sand_slab"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_black_sand",
+    "count": 1
+  }
+}

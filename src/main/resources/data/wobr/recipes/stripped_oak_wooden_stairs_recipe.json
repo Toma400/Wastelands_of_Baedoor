@@ -1,0 +1,23 @@
+{
+  "group": "wooden_stairs_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:stripped_oak_log"
+    },
+    "2": {
+      "item": "minecraft:stripped_oak_log"
+    },
+    "3": {
+      "item": "minecraft:stripped_oak_log"
+    }
+  },
+  "result": {
+    "item": "wobr:stripped_oak_wooden_stairs",
+    "count": 3
+  }
+}

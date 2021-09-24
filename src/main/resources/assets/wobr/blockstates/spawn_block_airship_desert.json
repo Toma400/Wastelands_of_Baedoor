@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wobr:block/spawn_block_airship_desert"
+    }
+  }
+}

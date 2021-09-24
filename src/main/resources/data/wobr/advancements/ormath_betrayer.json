@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:poisoned_thrown_dagger"
+    },
+    "title": {
+      "translate": "advancements.ormath_betrayer.title"
+    },
+    "description": {
+      "translate": "advancements.ormath_betrayer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ormath_betrayer": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:ormaths"
+}

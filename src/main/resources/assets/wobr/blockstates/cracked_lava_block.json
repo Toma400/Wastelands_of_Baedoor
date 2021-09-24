@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wobr:block/cracked_lava_block"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:vulcanic_veil"
+    },
+    "title": {
+      "translate": "advancements.against_spiritsof_nature.title"
+    },
+    "description": {
+      "translate": "advancements.against_spiritsof_nature.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "against_spiritsof_nature": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:ormath_betrayer"
+}

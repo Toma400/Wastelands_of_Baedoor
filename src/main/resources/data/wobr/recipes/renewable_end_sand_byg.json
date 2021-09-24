@@ -1,0 +1,26 @@
+{
+  "group": "byg_sands",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:glistering_ash"
+    },
+    "1": {
+      "item": "wobr:sand_dust"
+    },
+    "2": {
+      "item": "wobr:sand_dust"
+    },
+    "3": {
+      "item": "wobr:glistering_ash"
+    }
+  },
+  "result": {
+    "item": "byg:end_sand",
+    "count": 1
+  }
+}

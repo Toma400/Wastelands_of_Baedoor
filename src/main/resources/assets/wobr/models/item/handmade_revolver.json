@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/firearm_handmade_revolver",
+  "textures": {
+    "0": "wobr:blocks/planes_handmade_revolver",
+    "particle": "wobr:items/handmade_revolver"
+  }
+}

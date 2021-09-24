@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "wobr:blocks/smooth_black_sand",
+    "top": "wobr:blocks/smooth_black_sand",
+    "side": "wobr:blocks/smooth_black_sand"
+  }
+}

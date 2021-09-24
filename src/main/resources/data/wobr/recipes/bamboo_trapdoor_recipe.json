@@ -1,0 +1,32 @@
+{
+  "group": "bamboo_trapdoor",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    },
+    "1": {
+      "item": "wobr:bamboo_block"
+    },
+    "2": {
+      "item": "wobr:bamboo_block"
+    },
+    "3": {
+      "item": "wobr:bamboo_block"
+    },
+    "4": {
+      "item": "wobr:bamboo_block"
+    },
+    "5": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "wobr:bamboo_trapdoor",
+    "count": 2
+  }
+}

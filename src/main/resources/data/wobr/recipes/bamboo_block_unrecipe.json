@@ -1,0 +1,16 @@
+{
+  "group": "bamboo",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:bamboo_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:bamboo",
+    "count": 9
+  }
+}

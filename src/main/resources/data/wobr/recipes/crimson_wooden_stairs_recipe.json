@@ -1,0 +1,23 @@
+{
+  "group": "wooden_stairs_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "tag": "wobr:crimson_log"
+    },
+    "2": {
+      "tag": "wobr:crimson_log"
+    },
+    "3": {
+      "tag": "wobr:crimson_log"
+    }
+  },
+  "result": {
+    "item": "wobr:crimson_wooden_stairs",
+    "count": 3
+  }
+}

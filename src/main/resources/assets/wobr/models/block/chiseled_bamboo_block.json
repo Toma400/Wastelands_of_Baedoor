@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/bamboo_block",
+    "up": "wobr:blocks/bamboo_block",
+    "north": "wobr:blocks/chisel_bamboo",
+    "east": "wobr:blocks/chisel_bamboo",
+    "south": "wobr:blocks/chisel_bamboo",
+    "west": "wobr:blocks/chisel_bamboo",
+    "particle": "wobr:blocks/bamboo_block"
+  }
+}

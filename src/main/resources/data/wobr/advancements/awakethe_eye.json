@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:nether_avoider"
+    },
+    "title": {
+      "translate": "advancements.awakethe_eye.title"
+    },
+    "description": {
+      "translate": "advancements.awakethe_eye.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "awakethe_eye": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "wobr:guide_book"
+}

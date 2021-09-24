@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "wobr:dart_regular",
+    "wobr:dart_curare",
+    "wobr:dart_poison",
+    "wobr:dart_wither",
+    "wobr:dart_slowness"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "wobr:blocks/blue_nether_bricks",
+    "top": "wobr:blocks/blue_nether_bricks",
+    "side": "wobr:blocks/blue_nether_bricks"
+  }
+}

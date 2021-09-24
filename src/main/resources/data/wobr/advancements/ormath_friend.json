@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "wobr:advancement_ormath"
+    },
+    "title": {
+      "translate": "advancements.ormath_friend.title"
+    },
+    "description": {
+      "translate": "advancements.ormath_friend.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ormath_friend": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "wobr:ormaths"
+}

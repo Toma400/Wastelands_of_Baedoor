@@ -1,0 +1,24 @@
+{
+  "group": "wood_pillars",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "the_mobs_n_crops:nutwood_log"
+    },
+    "1": {
+      "item": "the_mobs_n_crops:nutwood_log"
+    },
+    "2": {
+      "item": "the_mobs_n_crops:nutwood_log"
+    }
+  },
+  "result": {
+    "item": "wobr:pillar_nutwood",
+    "count": 3
+  }
+}

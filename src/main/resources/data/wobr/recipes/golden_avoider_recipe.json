@@ -1,0 +1,16 @@
+{
+  "group": "avoider_variants",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    {
+      "item": "wobr:nether_avoider_inactive"
+    }
+  ],
+  "result": {
+    "item": "wobr:golden_avoider_inactive",
+    "count": 1
+  }
+}
