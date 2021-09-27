@@ -58,8 +58,8 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((ForgeHooks.getBurnTime(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) >= 8)
-				&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(Items.LAVA_BUCKET, (int) (1)).getItem()))) {
+				&& (!(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == new ItemStack(Items.LAVA_BUCKET, (int) (1)).getItem())))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				int _amount = (int) (ForgeHooks
@@ -125,6 +125,7 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 					}
 					{
 						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
 						$_dependencies.put("x", x);
 						$_dependencies.put("y", y);
 						$_dependencies.put("z", z);
