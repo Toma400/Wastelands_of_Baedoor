@@ -7,18 +7,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.WhiteSabreItem;
-import net.mcreator.wobr.item.StelliumSabreItem;
 import net.mcreator.wobr.item.PrismarineSabreItem;
 import net.mcreator.wobr.item.IronSabreItem;
 import net.mcreator.wobr.item.HardenedIronSabreItem;
 import net.mcreator.wobr.item.GoldenScimitarItem;
-import net.mcreator.wobr.item.CrystalSabreItem;
 import net.mcreator.wobr.item.BrotherhoodSabreItem;
 import net.mcreator.wobr.item.BlackSabreItem;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
-import java.util.HashMap;
 import java.util.Collection;
 
 @WobrModElements.ModElement.Tag
@@ -45,9 +42,7 @@ public class SabreVariationsProcedure extends WobrModElements.ModElement {
 			(itemstack).getOrCreateTag().putDouble("Sabre_Harm", 1);
 			if (((((itemstack).getItem() == new ItemStack(BrotherhoodSabreItem.block, (int) (1)).getItem())
 					|| ((itemstack).getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem()))
-					|| ((((itemstack).getItem() == new ItemStack(CrystalSabreItem.block, (int) (1)).getItem())
-							|| ((itemstack).getItem() == new ItemStack(StelliumSabreItem.block, (int) (1)).getItem()))
-							|| ((itemstack).getItem() == new ItemStack(GoldenScimitarItem.block, (int) (1)).getItem())))) {
+					|| ((itemstack).getItem() == new ItemStack(GoldenScimitarItem.block, (int) (1)).getItem()))) {
 				(itemstack).getOrCreateTag().putDouble("Sabre_Cooldown", 15);
 				(itemstack).getOrCreateTag().putDouble("Sabre_Checker", 255);
 			} else if (((((itemstack).getItem() == new ItemStack(PrismarineSabreItem.block, (int) (1)).getItem())
@@ -79,12 +74,6 @@ public class SabreVariationsProcedure extends WobrModElements.ModElement {
 			}.check(entity)))) {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 40, (int) 1, (false), (false)));
-			}
-		} else if (((itemstack).getItem() == new ItemStack(StelliumSabreItem.block, (int) (1)).getItem())) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				AddOnStelliumBehaviourProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}
