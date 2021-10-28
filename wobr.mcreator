@@ -1199,15 +1199,6 @@
       "registry_name": "always_lit_lamp"
     },
     {
-      "name": "AirshipBandit",
-      "type": "structure",
-      "sortid": 711,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "airship_bandit"
-    },
-    {
       "name": "BirchWoodenStairs",
       "type": "block",
       "sortid": 105,
@@ -20195,6 +20186,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "merchant_gui_4"
+    },
+    {
+      "name": "AirshipBanditLootTable",
+      "type": "loottable",
+      "sortid": 1783,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_bandit_loot_table"
     }
   ],
   "variable_elements": [

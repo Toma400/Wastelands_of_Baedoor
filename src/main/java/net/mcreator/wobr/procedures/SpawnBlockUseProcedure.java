@@ -76,7 +76,7 @@ public class SpawnBlockUseProcedure extends WobrModElements.ModElement {
 				.getBlock())) {
 			if (!world.getWorld().isRemote) {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-						.getTemplateDefaulted(new ResourceLocation("wobr", "large_airship_thief"));
+						.getTemplateDefaulted(new ResourceLocation("wobr", "airship_bandit"));
 				if (template != null) {
 					template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y + 10), (int) z),
 							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
