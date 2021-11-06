@@ -9,7 +9,7 @@
         "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
@@ -72,7 +72,7 @@
             "item": {
               "value": "CUSTOM:ShortRevolverScheme"
             },
-            "weight": 20,
+            "weight": 50,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -86,7 +86,7 @@
             "item": {
               "value": "CUSTOM:LongRevolverScheme"
             },
-            "weight": 10,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -98,18 +98,18 @@
         ]
       },
       {
-        "minrolls": 1,
+        "minrolls": 0,
         "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
-        "hasbonusrolls": false,
+        "hasbonusrolls": true,
         "entries": [
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:PepperBox"
             },
-            "weight": 75,
+            "weight": 70,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -125,6 +125,20 @@
             },
             "weight": 25,
             "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:AyerShotgun"
+            },
+            "weight": 10,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

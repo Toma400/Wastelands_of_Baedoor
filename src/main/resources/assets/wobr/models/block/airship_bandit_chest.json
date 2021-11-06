@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/chest_block_airship_bandit",
+    "up": "wobr:blocks/chest_block_airship_bandit",
+    "north": "wobr:blocks/chest_block_airship_bandit",
+    "east": "wobr:blocks/chest_block_airship_bandit",
+    "south": "wobr:blocks/chest_block_airship_bandit",
+    "west": "wobr:blocks/chest_block_airship_bandit",
+    "particle": "wobr:blocks/chest_block_airship_bandit"
+  }
+}

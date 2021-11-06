@@ -79,21 +79,6 @@ public class BanditDespawningEntity extends WobrModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("badlands")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("wooded_badlands_plateau")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("badlands_plateau")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("eroded_badlands")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("modified_wooded_badlands_plateau")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("modified_badlands_plateau")))
-				biomeCriteria = true;
-			if (!biomeCriteria)
-				continue;
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 1, 1, 1));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
