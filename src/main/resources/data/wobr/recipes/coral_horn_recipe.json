@@ -1,0 +1,42 @@
+{
+  "group": "coral_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:horn_coral"
+    },
+    "1": {
+      "item": "minecraft:horn_coral"
+    },
+    "2": {
+      "item": "minecraft:horn_coral"
+    },
+    "3": {
+      "item": "minecraft:horn_coral"
+    },
+    "4": {
+      "item": "minecraft:horn_coral"
+    },
+    "5": {
+      "item": "minecraft:horn_coral"
+    },
+    "6": {
+      "item": "minecraft:horn_coral"
+    },
+    "7": {
+      "item": "minecraft:horn_coral"
+    },
+    "8": {
+      "item": "minecraft:horn_coral"
+    }
+  },
+  "result": {
+    "item": "minecraft:horn_coral_block",
+    "count": 1
+  }
+}

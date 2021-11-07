@@ -1,0 +1,42 @@
+{
+  "group": "coral_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:tube_coral"
+    },
+    "1": {
+      "item": "minecraft:tube_coral"
+    },
+    "2": {
+      "item": "minecraft:tube_coral"
+    },
+    "3": {
+      "item": "minecraft:tube_coral"
+    },
+    "4": {
+      "item": "minecraft:tube_coral"
+    },
+    "5": {
+      "item": "minecraft:tube_coral"
+    },
+    "6": {
+      "item": "minecraft:tube_coral"
+    },
+    "7": {
+      "item": "minecraft:tube_coral"
+    },
+    "8": {
+      "item": "minecraft:tube_coral"
+    }
+  },
+  "result": {
+    "item": "minecraft:tube_coral_block",
+    "count": 1
+  }
+}
