@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood"
+    },
+    "facing=east": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wobr:block/chiseled_byg_mangrove_wood",
+      "x": 90
+    }
+  }
+}

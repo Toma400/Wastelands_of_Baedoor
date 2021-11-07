@@ -37,7 +37,7 @@ import java.io.Console;
 @WobrModElements.ModElement.Tag
 public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 	public WarhammerStuntProcedure(WobrModElements instance) {
-		super(instance, 1597);
+		super(instance, 1666);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -37,7 +37,7 @@ public class AyerSawedOffItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ayer_sawed_off")
 	public static final Item block = null;
 	public AyerSawedOffItem(WobrModElements instance) {
-		super(instance, 38);
+		super(instance, 39);
 	}
 
 	@Override

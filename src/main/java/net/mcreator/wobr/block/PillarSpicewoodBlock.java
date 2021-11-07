@@ -37,7 +37,7 @@ public class PillarSpicewoodBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_spicewood")
 	public static final Block block = null;
 	public PillarSpicewoodBlock(WobrModElements instance) {
-		super(instance, 620);
+		super(instance, 684);
 	}
 
 	@Override

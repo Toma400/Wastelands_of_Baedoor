@@ -10,7 +10,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class MerchantDataMergeProcedure extends WobrModElements.ModElement {
 	public MerchantDataMergeProcedure(WobrModElements instance) {
-		super(instance, 1403);
+		super(instance, 1471);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

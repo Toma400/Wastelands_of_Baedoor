@@ -20,7 +20,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class CurareAttackParalyseProcedure extends WobrModElements.ModElement {
 	public CurareAttackParalyseProcedure(WobrModElements instance) {
-		super(instance, 1290);
+		super(instance, 1358);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

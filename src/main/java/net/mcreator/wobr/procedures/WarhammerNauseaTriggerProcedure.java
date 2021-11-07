@@ -15,7 +15,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class WarhammerNauseaTriggerProcedure extends WobrModElements.ModElement {
 	public WarhammerNauseaTriggerProcedure(WobrModElements instance) {
-		super(instance, 1602);
+		super(instance, 1671);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

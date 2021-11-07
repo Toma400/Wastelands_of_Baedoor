@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TestFeaturesSwitchProcedure extends WobrModElements.ModElement {
 	public TestFeaturesSwitchProcedure(WobrModElements instance) {
-		super(instance, 1221);
+		super(instance, 1289);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

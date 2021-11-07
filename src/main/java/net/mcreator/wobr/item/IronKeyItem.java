@@ -16,7 +16,7 @@ public class IronKeyItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:iron_key")
 	public static final Item block = null;
 	public IronKeyItem(WobrModElements instance) {
-		super(instance, 235);
+		super(instance, 238);
 	}
 
 	@Override

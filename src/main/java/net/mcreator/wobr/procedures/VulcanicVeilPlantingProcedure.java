@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class VulcanicVeilPlantingProcedure extends WobrModElements.ModElement {
 	public VulcanicVeilPlantingProcedure(WobrModElements instance) {
-		super(instance, 680);
+		super(instance, 749);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

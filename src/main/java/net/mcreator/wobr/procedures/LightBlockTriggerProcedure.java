@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class LightBlockTriggerProcedure extends WobrModElements.ModElement {
 	public LightBlockTriggerProcedure(WobrModElements instance) {
-		super(instance, 1165);
+		super(instance, 1233);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

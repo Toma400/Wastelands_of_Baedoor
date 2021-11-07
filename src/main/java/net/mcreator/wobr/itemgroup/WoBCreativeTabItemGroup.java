@@ -13,7 +13,7 @@ import net.mcreator.wobr.WobrModElements;
 @WobrModElements.ModElement.Tag
 public class WoBCreativeTabItemGroup extends WobrModElements.ModElement {
 	public WoBCreativeTabItemGroup(WobrModElements instance) {
-		super(instance, 660);
+		super(instance, 729);
 	}
 
 	@Override

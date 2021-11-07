@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class AvoiderOverlayOverlay extends WobrModElements.ModElement {
 	public AvoiderOverlayOverlay(WobrModElements instance) {
-		super(instance, 1470);
+		super(instance, 1538);
 	}
 
 	@Override

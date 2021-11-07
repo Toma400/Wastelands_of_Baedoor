@@ -28,7 +28,7 @@ public class QuickDrawEnchantment extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:quick_draw")
 	public static final Enchantment enchantment = null;
 	public QuickDrawEnchantment(WobrModElements instance) {
-		super(instance, 1387);
+		super(instance, 1455);
 	}
 
 	@Override

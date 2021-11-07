@@ -37,7 +37,7 @@ public class PillarBYGEtherBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_ether")
 	public static final Block block = null;
 	public PillarBYGEtherBlock(WobrModElements instance) {
-		super(instance, 613);
+		super(instance, 672);
 	}
 
 	@Override

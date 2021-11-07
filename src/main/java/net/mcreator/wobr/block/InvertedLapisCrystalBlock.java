@@ -33,7 +33,7 @@ public class InvertedLapisCrystalBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:inverted_lapis_crystal")
 	public static final Block block = null;
 	public InvertedLapisCrystalBlock(WobrModElements instance) {
-		super(instance, 876);
+		super(instance, 944);
 	}
 
 	@Override

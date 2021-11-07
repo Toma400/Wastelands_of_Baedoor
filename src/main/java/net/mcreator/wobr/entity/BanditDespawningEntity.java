@@ -62,7 +62,7 @@ import java.util.HashMap;
 public class BanditDespawningEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public BanditDespawningEntity(WobrModElements instance) {
-		super(instance, 463);
+		super(instance, 466);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

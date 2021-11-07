@@ -27,7 +27,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 	public LootTablesAdditionalProcedure(WobrModElements instance) {
-		super(instance, 1315);
+		super(instance, 1383);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

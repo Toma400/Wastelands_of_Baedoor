@@ -25,7 +25,7 @@ public class WarhammerNauseaTriggeredPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warhammer_nausea_triggered")
 	public static final Effect potion = null;
 	public WarhammerNauseaTriggeredPotion(WobrModElements instance) {
-		super(instance, 1603);
+		super(instance, 1672);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

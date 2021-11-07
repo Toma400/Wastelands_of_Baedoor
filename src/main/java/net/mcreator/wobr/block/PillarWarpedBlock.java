@@ -30,7 +30,7 @@ public class PillarWarpedBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_warped")
 	public static final Block block = null;
 	public PillarWarpedBlock(WobrModElements instance) {
-		super(instance, 160);
+		super(instance, 162);
 	}
 
 	@Override

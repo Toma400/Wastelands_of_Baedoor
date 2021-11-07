@@ -22,7 +22,7 @@ public class SandyWaterItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sandy_water")
 	public static final Item block = null;
 	public SandyWaterItem(WobrModElements instance) {
-		super(instance, 259);
+		super(instance, 262);
 	}
 
 	@Override

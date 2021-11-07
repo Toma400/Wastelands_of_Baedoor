@@ -24,7 +24,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement {
 	public ReloadEnhancedPepperBoxProcedure(WobrModElements instance) {
-		super(instance, 1756);
+		super(instance, 1820);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

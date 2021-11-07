@@ -17,7 +17,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ExperienceGUIProcedure extends WobrModElements.ModElement {
 	public ExperienceGUIProcedure(WobrModElements instance) {
-		super(instance, 1228);
+		super(instance, 1296);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -26,7 +26,7 @@ public class FakeCirtainBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:fake_cirtain_block")
 	public static final Block block = null;
 	public FakeCirtainBlockBlock(WobrModElements instance) {
-		super(instance, 54);
+		super(instance, 55);
 	}
 
 	@Override

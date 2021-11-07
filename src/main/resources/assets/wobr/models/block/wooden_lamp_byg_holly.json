@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_holly",
+    "up": "wobr:blocks/regular_byg_holly",
+    "north": "wobr:blocks/wood_lamp_byg_holly",
+    "east": "wobr:blocks/wood_lamp_byg_holly",
+    "south": "wobr:blocks/wood_lamp_byg_holly",
+    "west": "wobr:blocks/wood_lamp_byg_holly",
+    "particle": "wobr:blocks/regular_byg_holly"
+  }
+}

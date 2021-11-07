@@ -34,7 +34,7 @@ public class CucturWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cuctur_wooden_slab")
 	public static final Block block = null;
 	public CucturWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 592);
+		super(instance, 649);
 	}
 
 	@Override

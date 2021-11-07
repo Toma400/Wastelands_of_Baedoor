@@ -40,7 +40,7 @@ public class WindShieldBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wind_shield")
 	public static final Block block = null;
 	public WindShieldBlock(WobrModElements instance) {
-		super(instance, 1286);
+		super(instance, 1354);
 	}
 
 	@Override

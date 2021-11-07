@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ShamanIronGolemCrackingProcedure extends WobrModElements.ModElement {
 	public ShamanIronGolemCrackingProcedure(WobrModElements instance) {
-		super(instance, 1326);
+		super(instance, 1394);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

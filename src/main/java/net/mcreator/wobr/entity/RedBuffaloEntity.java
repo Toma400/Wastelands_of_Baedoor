@@ -53,7 +53,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class RedBuffaloEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public RedBuffaloEntity(WobrModElements instance) {
-		super(instance, 457);
+		super(instance, 460);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

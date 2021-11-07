@@ -16,7 +16,7 @@ public class CurareItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:curare")
 	public static final Item block = null;
 	public CurareItem(WobrModElements instance) {
-		super(instance, 257);
+		super(instance, 260);
 	}
 
 	@Override

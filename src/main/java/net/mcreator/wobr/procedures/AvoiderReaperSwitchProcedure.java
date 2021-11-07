@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AvoiderReaperSwitchProcedure extends WobrModElements.ModElement {
 	public AvoiderReaperSwitchProcedure(WobrModElements instance) {
-		super(instance, 1240);
+		super(instance, 1308);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

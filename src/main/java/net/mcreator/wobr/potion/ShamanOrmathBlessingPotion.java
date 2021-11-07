@@ -25,7 +25,7 @@ public class ShamanOrmathBlessingPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:shaman_ormath_blessing")
 	public static final Effect potion = null;
 	public ShamanOrmathBlessingPotion(WobrModElements instance) {
-		super(instance, 1474);
+		super(instance, 1542);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

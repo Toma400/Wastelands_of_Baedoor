@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LightBlockExpirewoConditionsProcedure extends WobrModElements.ModElement {
 	public LightBlockExpirewoConditionsProcedure(WobrModElements instance) {
-		super(instance, 1173);
+		super(instance, 1241);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

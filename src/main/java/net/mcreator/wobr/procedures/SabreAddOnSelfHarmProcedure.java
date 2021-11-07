@@ -19,7 +19,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SabreAddOnSelfHarmProcedure extends WobrModElements.ModElement {
 	public SabreAddOnSelfHarmProcedure(WobrModElements instance) {
-		super(instance, 1430);
+		super(instance, 1498);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

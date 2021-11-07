@@ -24,7 +24,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SabrePathBeginningProcedure extends WobrModElements.ModElement {
 	public SabrePathBeginningProcedure(WobrModElements instance) {
-		super(instance, 1197);
+		super(instance, 1265);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

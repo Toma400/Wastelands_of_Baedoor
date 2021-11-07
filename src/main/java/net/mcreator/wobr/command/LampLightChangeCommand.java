@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @WobrModElements.ModElement.Tag
 public class LampLightChangeCommand extends WobrModElements.ModElement {
 	public LampLightChangeCommand(WobrModElements instance) {
-		super(instance, 1342);
+		super(instance, 1410);
 	}
 
 	@Override

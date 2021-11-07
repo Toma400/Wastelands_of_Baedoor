@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SandyVeilPlantingProcedure extends WobrModElements.ModElement {
 	public SandyVeilPlantingProcedure(WobrModElements instance) {
-		super(instance, 679);
+		super(instance, 748);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

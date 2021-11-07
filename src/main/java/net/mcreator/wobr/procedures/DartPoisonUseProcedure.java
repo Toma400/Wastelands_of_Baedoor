@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class DartPoisonUseProcedure extends WobrModElements.ModElement {
 	public DartPoisonUseProcedure(WobrModElements instance) {
-		super(instance, 1426);
+		super(instance, 1494);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

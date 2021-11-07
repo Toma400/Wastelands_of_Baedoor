@@ -33,7 +33,7 @@ public class ChiseledStrippedOakWoodBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:chiseled_stripped_oak_wood")
 	public static final Block block = null;
 	public ChiseledStrippedOakWoodBlock(WobrModElements instance) {
-		super(instance, 94);
+		super(instance, 96);
 	}
 
 	@Override

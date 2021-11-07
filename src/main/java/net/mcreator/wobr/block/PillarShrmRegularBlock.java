@@ -37,7 +37,7 @@ public class PillarShrmRegularBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_shrm_regular")
 	public static final Block block = null;
 	public PillarShrmRegularBlock(WobrModElements instance) {
-		super(instance, 615);
+		super(instance, 679);
 	}
 
 	@Override

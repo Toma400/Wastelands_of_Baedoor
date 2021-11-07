@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class PaleGoldIngotReturningProcedure extends WobrModElements.ModElement {
 	public PaleGoldIngotReturningProcedure(WobrModElements instance) {
-		super(instance, 1677);
+		super(instance, 1746);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

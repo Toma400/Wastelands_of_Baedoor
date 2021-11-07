@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_cherry_strip",
+    "up": "wobr:blocks/regular_byg_cherry_strip",
+    "north": "wobr:blocks/chisel_byg_cherry_strip",
+    "east": "wobr:blocks/chisel_byg_cherry_strip",
+    "south": "wobr:blocks/chisel_byg_cherry_strip",
+    "west": "wobr:blocks/chisel_byg_cherry_strip",
+    "particle": "wobr:blocks/regular_byg_cherry_strip"
+  }
+}

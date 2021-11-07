@@ -39,7 +39,7 @@ public class AvoiderBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:avoider_block")
 	public static final Block block = null;
 	public AvoiderBlockBlock(WobrModElements instance) {
-		super(instance, 1328);
+		super(instance, 1396);
 	}
 
 	@Override

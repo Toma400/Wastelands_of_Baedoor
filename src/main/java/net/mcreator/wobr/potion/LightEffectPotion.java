@@ -29,7 +29,7 @@ public class LightEffectPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:light_effect")
 	public static final Potion potionType = null;
 	public LightEffectPotion(WobrModElements instance) {
-		super(instance, 1166);
+		super(instance, 1234);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

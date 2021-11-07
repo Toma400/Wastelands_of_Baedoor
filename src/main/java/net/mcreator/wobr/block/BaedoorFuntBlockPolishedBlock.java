@@ -26,7 +26,7 @@ public class BaedoorFuntBlockPolishedBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block_polished")
 	public static final Block block = null;
 	public BaedoorFuntBlockPolishedBlock(WobrModElements instance) {
-		super(instance, 181);
+		super(instance, 183);
 	}
 
 	@Override

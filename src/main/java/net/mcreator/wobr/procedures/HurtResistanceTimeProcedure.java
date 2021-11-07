@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class HurtResistanceTimeProcedure extends WobrModElements.ModElement {
 	public HurtResistanceTimeProcedure(WobrModElements instance) {
-		super(instance, 1480);
+		super(instance, 1548);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

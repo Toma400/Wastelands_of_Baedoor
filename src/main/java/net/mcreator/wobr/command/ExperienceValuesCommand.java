@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @WobrModElements.ModElement.Tag
 public class ExperienceValuesCommand extends WobrModElements.ModElement {
 	public ExperienceValuesCommand(WobrModElements instance) {
-		super(instance, 1224);
+		super(instance, 1292);
 	}
 
 	@Override

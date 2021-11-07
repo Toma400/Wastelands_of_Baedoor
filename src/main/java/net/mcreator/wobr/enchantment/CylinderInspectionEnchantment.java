@@ -28,7 +28,7 @@ public class CylinderInspectionEnchantment extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cylinder_inspection")
 	public static final Enchantment enchantment = null;
 	public CylinderInspectionEnchantment(WobrModElements instance) {
-		super(instance, 1203);
+		super(instance, 1271);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class FluidConverterRemovalProcedure extends WobrModElements.ModElement {
 	public FluidConverterRemovalProcedure(WobrModElements instance) {
-		super(instance, 1673);
+		super(instance, 1742);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

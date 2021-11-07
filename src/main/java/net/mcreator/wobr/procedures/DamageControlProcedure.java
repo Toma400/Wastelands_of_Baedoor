@@ -19,7 +19,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class DamageControlProcedure extends WobrModElements.ModElement {
 	public DamageControlProcedure(WobrModElements instance) {
-		super(instance, 1189);
+		super(instance, 1257);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

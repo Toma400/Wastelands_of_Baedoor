@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_jacaranda",
+    "up": "wobr:blocks/regular_byg_jacaranda",
+    "north": "wobr:blocks/wood_lamp_byg_jacaranda_off",
+    "east": "wobr:blocks/wood_lamp_byg_jacaranda_off",
+    "south": "wobr:blocks/wood_lamp_byg_jacaranda_off",
+    "west": "wobr:blocks/wood_lamp_byg_jacaranda_off",
+    "particle": "wobr:blocks/regular_byg_jacaranda"
+  }
+}

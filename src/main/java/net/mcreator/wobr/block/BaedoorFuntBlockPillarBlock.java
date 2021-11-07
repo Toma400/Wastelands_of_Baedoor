@@ -32,7 +32,7 @@ public class BaedoorFuntBlockPillarBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block_pillar")
 	public static final Block block = null;
 	public BaedoorFuntBlockPillarBlock(WobrModElements instance) {
-		super(instance, 182);
+		super(instance, 184);
 	}
 
 	@Override

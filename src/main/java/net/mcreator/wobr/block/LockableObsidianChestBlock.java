@@ -82,7 +82,7 @@ public class LockableObsidianChestBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lockable_obsidian_chest")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockableObsidianChestBlock(WobrModElements instance) {
-		super(instance, 195);
+		super(instance, 197);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

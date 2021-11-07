@@ -76,7 +76,7 @@ public class NetherAvoiderBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_avoider")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public NetherAvoiderBlock(WobrModElements instance) {
-		super(instance, 848);
+		super(instance, 916);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

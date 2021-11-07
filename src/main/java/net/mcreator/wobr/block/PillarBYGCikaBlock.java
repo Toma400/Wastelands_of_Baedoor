@@ -37,7 +37,7 @@ public class PillarBYGCikaBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_cika")
 	public static final Block block = null;
 	public PillarBYGCikaBlock(WobrModElements instance) {
-		super(instance, 610);
+		super(instance, 669);
 	}
 
 	@Override

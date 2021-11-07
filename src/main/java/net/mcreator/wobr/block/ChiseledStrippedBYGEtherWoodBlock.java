@@ -38,7 +38,7 @@ public class ChiseledStrippedBYGEtherWoodBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:chiseled_stripped_byg_ether_wood")
 	public static final Block block = null;
 	public ChiseledStrippedBYGEtherWoodBlock(WobrModElements instance) {
-		super(instance, 523);
+		super(instance, 540);
 	}
 
 	@Override

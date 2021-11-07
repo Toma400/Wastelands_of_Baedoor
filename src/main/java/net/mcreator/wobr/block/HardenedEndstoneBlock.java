@@ -26,7 +26,7 @@ public class HardenedEndstoneBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:hardened_endstone")
 	public static final Block block = null;
 	public HardenedEndstoneBlock(WobrModElements instance) {
-		super(instance, 64);
+		super(instance, 65);
 	}
 
 	@Override

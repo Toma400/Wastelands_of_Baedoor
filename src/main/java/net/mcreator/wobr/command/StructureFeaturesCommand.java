@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @WobrModElements.ModElement.Tag
 public class StructureFeaturesCommand extends WobrModElements.ModElement {
 	public StructureFeaturesCommand(WobrModElements instance) {
-		super(instance, 1230);
+		super(instance, 1298);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 	public WinfletonsLifeSaverProcedure(WobrModElements instance) {
-		super(instance, 1713);
+		super(instance, 1780);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -40,7 +40,7 @@ public class LapisCrystalBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lapis_crystal")
 	public static final Block block = null;
 	public LapisCrystalBlock(WobrModElements instance) {
-		super(instance, 200);
+		super(instance, 202);
 	}
 
 	@Override

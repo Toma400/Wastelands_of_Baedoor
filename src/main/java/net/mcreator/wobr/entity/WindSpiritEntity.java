@@ -66,7 +66,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class WindSpiritEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public WindSpiritEntity(WobrModElements instance) {
-		super(instance, 458);
+		super(instance, 461);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

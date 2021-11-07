@@ -23,7 +23,7 @@ public class CookedTropicalFishItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cooked_tropical_fish")
 	public static final Item block = null;
 	public CookedTropicalFishItem(WobrModElements instance) {
-		super(instance, 261);
+		super(instance, 264);
 	}
 
 	@Override

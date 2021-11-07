@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_byg_lament_top",
+    "up": "wobr:blocks/pillar_byg_lament_top",
+    "north": "wobr:blocks/pillar_byg_lament",
+    "east": "wobr:blocks/pillar_byg_lament",
+    "south": "wobr:blocks/pillar_byg_lament",
+    "west": "wobr:blocks/pillar_byg_lament",
+    "particle": "wobr:blocks/pillar_byg_lament_top"
+  }
+}

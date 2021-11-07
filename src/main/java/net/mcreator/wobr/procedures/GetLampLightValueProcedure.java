@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class GetLampLightValueProcedure extends WobrModElements.ModElement {
 	public GetLampLightValueProcedure(WobrModElements instance) {
-		super(instance, 1341);
+		super(instance, 1409);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

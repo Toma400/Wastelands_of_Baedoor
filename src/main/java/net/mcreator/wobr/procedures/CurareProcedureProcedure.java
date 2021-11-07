@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class CurareProcedureProcedure extends WobrModElements.ModElement {
 	public CurareProcedureProcedure(WobrModElements instance) {
-		super(instance, 1084);
+		super(instance, 1152);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

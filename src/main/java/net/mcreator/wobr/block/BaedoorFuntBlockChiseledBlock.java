@@ -26,7 +26,7 @@ public class BaedoorFuntBlockChiseledBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block_chiseled")
 	public static final Block block = null;
 	public BaedoorFuntBlockChiseledBlock(WobrModElements instance) {
-		super(instance, 184);
+		super(instance, 186);
 	}
 
 	@Override

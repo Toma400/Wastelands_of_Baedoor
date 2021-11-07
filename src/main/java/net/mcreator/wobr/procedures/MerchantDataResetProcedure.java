@@ -9,7 +9,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class MerchantDataResetProcedure extends WobrModElements.ModElement {
 	public MerchantDataResetProcedure(WobrModElements instance) {
-		super(instance, 1404);
+		super(instance, 1472);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -9,7 +9,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AvoiderTeamAddProcedure extends WobrModElements.ModElement {
 	public AvoiderTeamAddProcedure(WobrModElements instance) {
-		super(instance, 1150);
+		super(instance, 1218);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -17,7 +17,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class EmeraldIteratorProcedure extends WobrModElements.ModElement {
 	public EmeraldIteratorProcedure(WobrModElements instance) {
-		super(instance, 1397);
+		super(instance, 1465);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

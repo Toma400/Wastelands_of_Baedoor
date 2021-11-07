@@ -34,7 +34,7 @@ public class JuniperWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:juniper_wooden_slab")
 	public static final Block block = null;
 	public JuniperWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 488);
+		super(instance, 489);
 	}
 
 	@Override

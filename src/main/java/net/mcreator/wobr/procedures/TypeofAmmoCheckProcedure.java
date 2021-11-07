@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TypeofAmmoCheckProcedure extends WobrModElements.ModElement {
 	public TypeofAmmoCheckProcedure(WobrModElements instance) {
-		super(instance, 808);
+		super(instance, 876);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

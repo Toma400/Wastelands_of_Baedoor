@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_baobab",
+    "up": "wobr:blocks/regular_byg_baobab",
+    "north": "wobr:blocks/wood_lamp_byg_baobab",
+    "east": "wobr:blocks/wood_lamp_byg_baobab",
+    "south": "wobr:blocks/wood_lamp_byg_baobab",
+    "west": "wobr:blocks/wood_lamp_byg_baobab",
+    "particle": "wobr:blocks/regular_byg_baobab"
+  }
+}

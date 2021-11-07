@@ -28,7 +28,7 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderActiveProcedure(WobrModElements instance) {
-		super(instance, 846);
+		super(instance, 914);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

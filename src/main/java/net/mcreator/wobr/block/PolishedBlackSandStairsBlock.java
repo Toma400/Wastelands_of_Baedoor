@@ -27,7 +27,7 @@ public class PolishedBlackSandStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:polished_black_sand_stairs")
 	public static final Block block = null;
 	public PolishedBlackSandStairsBlock(WobrModElements instance) {
-		super(instance, 80);
+		super(instance, 81);
 	}
 
 	@Override

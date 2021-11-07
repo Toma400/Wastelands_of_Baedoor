@@ -27,7 +27,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ShotRustyReaperProcedure extends WobrModElements.ModElement {
 	public ShotRustyReaperProcedure(WobrModElements instance) {
-		super(instance, 1217);
+		super(instance, 1285);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

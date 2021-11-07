@@ -19,7 +19,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadScoreCheckProcedure extends WobrModElements.ModElement {
 	public ReloadScoreCheckProcedure(WobrModElements instance) {
-		super(instance, 770);
+		super(instance, 838);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class JavelinInventoryProcedure extends WobrModElements.ModElement {
 	public JavelinInventoryProcedure(WobrModElements instance) {
-		super(instance, 1091);
+		super(instance, 1159);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

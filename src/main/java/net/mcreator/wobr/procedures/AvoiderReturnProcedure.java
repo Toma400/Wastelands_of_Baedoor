@@ -14,7 +14,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class AvoiderReturnProcedure extends WobrModElements.ModElement {
 	public AvoiderReturnProcedure(WobrModElements instance) {
-		super(instance, 1469);
+		super(instance, 1537);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

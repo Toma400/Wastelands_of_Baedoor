@@ -34,7 +34,7 @@ public class StrippedBYGCikaWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:stripped_byg_cika_wooden_slab")
 	public static final Block block = null;
 	public StrippedBYGCikaWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 500);
+		super(instance, 517);
 	}
 
 	@Override

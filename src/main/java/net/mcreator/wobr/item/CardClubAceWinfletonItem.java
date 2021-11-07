@@ -22,7 +22,7 @@ public class CardClubAceWinfletonItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:card_club_ace_winfleton")
 	public static final Item block = null;
 	public CardClubAceWinfletonItem(WobrModElements instance) {
-		super(instance, 223);
+		super(instance, 225);
 	}
 
 	@Override

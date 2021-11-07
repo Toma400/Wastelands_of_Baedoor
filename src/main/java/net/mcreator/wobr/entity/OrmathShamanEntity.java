@@ -65,7 +65,7 @@ import com.google.common.collect.ImmutableMap;
 public class OrmathShamanEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public OrmathShamanEntity(WobrModElements instance) {
-		super(instance, 456);
+		super(instance, 459);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

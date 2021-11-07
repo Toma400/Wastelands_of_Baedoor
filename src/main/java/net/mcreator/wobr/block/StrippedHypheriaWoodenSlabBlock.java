@@ -34,7 +34,7 @@ public class StrippedHypheriaWoodenSlabBlock extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:stripped_hypheria_wooden_slab")
 	public static final Block block = null;
 	public StrippedHypheriaWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 588);
+		super(instance, 645);
 	}
 
 	@Override

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/pillar_byg_jacaranda_top",
+    "up": "wobr:blocks/pillar_byg_jacaranda_top",
+    "north": "wobr:blocks/pillar_byg_jacaranda",
+    "east": "wobr:blocks/pillar_byg_jacaranda",
+    "south": "wobr:blocks/pillar_byg_jacaranda",
+    "west": "wobr:blocks/pillar_byg_jacaranda",
+    "particle": "wobr:blocks/pillar_byg_jacaranda_top"
+  }
+}

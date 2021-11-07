@@ -82,7 +82,7 @@ public class LockableIronChestBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lockable_iron_chest")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockableIronChestBlock(WobrModElements instance) {
-		super(instance, 193);
+		super(instance, 195);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

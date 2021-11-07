@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WanderingDeathProcedure extends WobrModElements.ModElement {
 	public WanderingDeathProcedure(WobrModElements instance) {
-		super(instance, 1405);
+		super(instance, 1473);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

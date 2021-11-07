@@ -30,7 +30,7 @@ public class AshDustItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ash_dust")
 	public static final Item block = null;
 	public AshDustItem(WobrModElements instance) {
-		super(instance, 62);
+		super(instance, 63);
 	}
 
 	@Override

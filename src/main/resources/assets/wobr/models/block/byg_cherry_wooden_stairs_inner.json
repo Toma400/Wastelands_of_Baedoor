@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "wobr:blocks/regular_byg_cherry",
+    "top": "wobr:blocks/regular_byg_cherry",
+    "side": "wobr:blocks/regular_byg_cherry"
+  }
+}

@@ -32,7 +32,7 @@ public class PillarJungleBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_jungle")
 	public static final Block block = null;
 	public PillarJungleBlock(WobrModElements instance) {
-		super(instance, 154);
+		super(instance, 156);
 	}
 
 	@Override

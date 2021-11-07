@@ -16,7 +16,7 @@ public class LongGripItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:long_grip")
 	public static final Item block = null;
 	public LongGripItem(WobrModElements instance) {
-		super(instance, 242);
+		super(instance, 245);
 	}
 
 	@Override

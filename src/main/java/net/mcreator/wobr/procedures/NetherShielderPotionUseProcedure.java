@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherShielderPotionUseProcedure extends WobrModElements.ModElement {
 	public NetherShielderPotionUseProcedure(WobrModElements instance) {
-		super(instance, 1406);
+		super(instance, 1474);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

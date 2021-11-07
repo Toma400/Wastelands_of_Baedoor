@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WindShieldProcedureProcedure extends WobrModElements.ModElement {
 	public WindShieldProcedureProcedure(WobrModElements instance) {
-		super(instance, 1285);
+		super(instance, 1353);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

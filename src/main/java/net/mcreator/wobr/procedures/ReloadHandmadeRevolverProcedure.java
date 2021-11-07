@@ -20,7 +20,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadHandmadeRevolverProcedure extends WobrModElements.ModElement {
 	public ReloadHandmadeRevolverProcedure(WobrModElements instance) {
-		super(instance, 772);
+		super(instance, 840);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

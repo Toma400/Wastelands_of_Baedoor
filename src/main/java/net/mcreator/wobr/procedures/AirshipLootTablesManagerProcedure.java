@@ -17,7 +17,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElement {
 	public AirshipLootTablesManagerProcedure(WobrModElements instance) {
-		super(instance, 1784);
+		super(instance, 1848);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

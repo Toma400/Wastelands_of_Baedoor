@@ -16,7 +16,7 @@ public class SlugItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:slug")
 	public static final Item block = null;
 	public SlugItem(WobrModElements instance) {
-		super(instance, 239);
+		super(instance, 242);
 	}
 
 	@Override

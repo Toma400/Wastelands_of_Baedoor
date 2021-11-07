@@ -28,7 +28,7 @@ public class BookGuideItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:book_guide")
 	public static final Item block = null;
 	public BookGuideItem(WobrModElements instance) {
-		super(instance, 232);
+		super(instance, 235);
 	}
 
 	@Override

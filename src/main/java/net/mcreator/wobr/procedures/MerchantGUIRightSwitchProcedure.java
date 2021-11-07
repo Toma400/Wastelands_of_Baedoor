@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @WobrModElements.ModElement.Tag
 public class MerchantGUIRightSwitchProcedure extends WobrModElements.ModElement {
 	public MerchantGUIRightSwitchProcedure(WobrModElements instance) {
-		super(instance, 1400);
+		super(instance, 1468);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -22,7 +22,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SpawnBlockUseProcedure extends WobrModElements.ModElement {
 	public SpawnBlockUseProcedure(WobrModElements instance) {
-		super(instance, 1117);
+		super(instance, 1185);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

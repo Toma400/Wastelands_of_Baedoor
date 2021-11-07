@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_mangrove",
+    "up": "wobr:blocks/regular_byg_mangrove",
+    "north": "wobr:blocks/chisel_byg_mangrove",
+    "east": "wobr:blocks/chisel_byg_mangrove",
+    "south": "wobr:blocks/chisel_byg_mangrove",
+    "west": "wobr:blocks/chisel_byg_mangrove",
+    "particle": "wobr:blocks/regular_byg_mangrove"
+  }
+}

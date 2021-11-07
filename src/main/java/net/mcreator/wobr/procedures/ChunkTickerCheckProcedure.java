@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ChunkTickerCheckProcedure extends WobrModElements.ModElement {
 	public ChunkTickerCheckProcedure(WobrModElements instance) {
-		super(instance, 1477);
+		super(instance, 1545);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

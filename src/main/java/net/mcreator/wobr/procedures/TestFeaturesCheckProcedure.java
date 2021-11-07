@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TestFeaturesCheckProcedure extends WobrModElements.ModElement {
 	public TestFeaturesCheckProcedure(WobrModElements instance) {
-		super(instance, 1225);
+		super(instance, 1293);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

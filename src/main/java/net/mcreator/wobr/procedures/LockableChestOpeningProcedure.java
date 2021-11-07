@@ -32,7 +32,7 @@ import io.netty.buffer.Unpooled;
 @WobrModElements.ModElement.Tag
 public class LockableChestOpeningProcedure extends WobrModElements.ModElement {
 	public LockableChestOpeningProcedure(WobrModElements instance) {
-		super(instance, 1179);
+		super(instance, 1247);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

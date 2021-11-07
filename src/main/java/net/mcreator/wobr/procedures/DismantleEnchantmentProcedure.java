@@ -21,7 +21,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class DismantleEnchantmentProcedure extends WobrModElements.ModElement {
 	public DismantleEnchantmentProcedure(WobrModElements instance) {
-		super(instance, 1205);
+		super(instance, 1273);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -31,7 +31,7 @@ public class SandElixirItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sand_elixir")
 	public static final Item block = null;
 	public SandElixirItem(WobrModElements instance) {
-		super(instance, 260);
+		super(instance, 263);
 	}
 
 	@Override
