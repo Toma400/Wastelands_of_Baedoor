@@ -21000,6 +21000,33 @@
           }
         ]
       }
+    },
+    {
+      "name": "GildedBlackstoneRecipe",
+      "type": "recipe",
+      "sortid": 1859,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "gilded_blackstone_recipe"
+    },
+    {
+      "name": "RenewableCrystalShardsBetterEnd",
+      "type": "recipe",
+      "sortid": 1860,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_crystal_shards_better_end"
+    },
+    {
+      "name": "RenewableDiamonds",
+      "type": "recipe",
+      "sortid": 1861,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "renewable_diamonds"
     }
   ],
   "variable_elements": [

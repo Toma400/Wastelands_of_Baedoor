@@ -30,7 +30,7 @@
             "item": {
               "value": "CUSTOM:LongRevolver"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -44,7 +44,7 @@
             "item": {
               "value": "CUSTOM:ShortRevolver"
             },
-            "weight": 12,
+            "weight": 20,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -58,7 +58,7 @@
             "item": {
               "value": "CUSTOM:RustyReaper"
             },
-            "weight": 12,
+            "weight": 18,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -101,6 +101,20 @@
               "value": "CUSTOM:CrocodileGunScheme"
             },
             "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Lefs8"
+            },
+            "weight": 5,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
