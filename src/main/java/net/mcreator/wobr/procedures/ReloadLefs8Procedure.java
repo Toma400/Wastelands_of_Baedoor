@@ -13,7 +13,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.potion.SingleReloadTypePotion;
-import net.mcreator.wobr.item.SlugItem;
+import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
@@ -21,35 +21,35 @@ import java.util.HashMap;
 import java.util.Collection;
 
 @WobrModElements.ModElement.Tag
-public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
-	public ReloadRustyReaperProcedure(WobrModElements instance) {
-		super(instance, 1286);
+public class ReloadLefs8Procedure extends WobrModElements.ModElement {
+	public ReloadLefs8Procedure(WobrModElements instance) {
+		super(instance, 1857);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ReloadRustyReaper!");
+				System.err.println("Failed to load dependency entity for procedure ReloadLefs8!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ReloadRustyReaper!");
+				System.err.println("Failed to load dependency x for procedure ReloadLefs8!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ReloadRustyReaper!");
+				System.err.println("Failed to load dependency y for procedure ReloadLefs8!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ReloadRustyReaper!");
+				System.err.println("Failed to load dependency z for procedure ReloadLefs8!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ReloadRustyReaper!");
+				System.err.println("Failed to load dependency world for procedure ReloadLefs8!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -58,9 +58,9 @@ public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-				.getDouble("Ammo")) < 2)) {
+				.getDouble("Ammo")) < 5)) {
 			if (((entity instanceof PlayerEntity)
-					? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SlugItem.block, (int) (1)))
+					? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block, (int) (1)))
 					: false)) {
 				if ((!(new Object() {
 					boolean check(Entity _entity) {
@@ -75,7 +75,7 @@ public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(SlugItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -93,10 +93,10 @@ public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
 								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
-								(int) 90);
+								(int) 20);
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion, (int) 30, (int) 1, (false), (false)));
+								.addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion, (int) 20, (int) 1, (false), (false)));
 				}
 			} else {
 				entity.getPersistentData().putString("Message", "              No bullets in inventory!");
@@ -106,8 +106,7 @@ public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
 					MessageManagerProcedure.executeProcedure($_dependencies);
 				}
 			}
-		} else if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-				.getDouble("Ammo")) >= 2)) {
+		} else {
 			if (!world.getWorld().isRemote) {
 				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:revolver_reload_full_1")),

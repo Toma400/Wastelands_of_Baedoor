@@ -18,6 +18,7 @@ import net.mcreator.wobr.item.RustyReaperItem;
 import net.mcreator.wobr.item.PepperBoxItem;
 import net.mcreator.wobr.item.LongRevolverItem;
 import net.mcreator.wobr.item.Lefs9Item;
+import net.mcreator.wobr.item.Lefs8Item;
 import net.mcreator.wobr.item.JitadoShotgunItem;
 import net.mcreator.wobr.item.HandmadeRevolverItem;
 import net.mcreator.wobr.item.GoldenShotRevolverItem;
@@ -126,6 +127,17 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ReloadLongRevolverProcedure.executeProcedure($_dependencies);
+			}
+		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(Lefs8Item.block, (int) (1)).getItem())) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ReloadLefs8Procedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(Lefs9Item.block, (int) (1)).getItem())) {

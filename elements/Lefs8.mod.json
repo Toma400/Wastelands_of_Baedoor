@@ -1,0 +1,41 @@
+{
+  "_fv": 13,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "lefs_8",
+    "customModelName": "firearm_lefs8_revolver:default",
+    "name": "Lefs 8",
+    "specialInfo": [
+      "Regular revolver produced by Lefs Factories. Used by both commoners and gunslingers because of its complexity and balanced characteristics."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 1.0,
+    "usageCount": 280,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShotLefs8"
+    },
+    "onItemInInventoryTick": {
+      "name": "GuideBookAdvancement"
+    },
+    "onItemInUseTick": {
+      "name": "ReloadScoreCheck"
+    }
+  }
+}
