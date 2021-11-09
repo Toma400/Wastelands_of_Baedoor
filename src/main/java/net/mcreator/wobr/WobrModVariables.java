@@ -110,7 +110,6 @@ public class WobrModVariables {
 		public static final String DATA_NAME = "wobr_mapvars";
 		public boolean Test_Features = false;
 		public boolean Structure_Generation = false;
-		public boolean Lamp_Light = true;
 		public boolean Merchant = false;
 		public boolean Chunk_Ticker = false;
 		public MapVariables() {
@@ -125,7 +124,6 @@ public class WobrModVariables {
 		public void read(CompoundNBT nbt) {
 			Test_Features = nbt.getBoolean("Test_Features");
 			Structure_Generation = nbt.getBoolean("Structure_Generation");
-			Lamp_Light = nbt.getBoolean("Lamp_Light");
 			Merchant = nbt.getBoolean("Merchant");
 			Chunk_Ticker = nbt.getBoolean("Chunk_Ticker");
 		}
@@ -134,7 +132,6 @@ public class WobrModVariables {
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putBoolean("Test_Features", Test_Features);
 			nbt.putBoolean("Structure_Generation", Structure_Generation);
-			nbt.putBoolean("Lamp_Light", Lamp_Light);
 			nbt.putBoolean("Merchant", Merchant);
 			nbt.putBoolean("Chunk_Ticker", Chunk_Ticker);
 			return nbt;

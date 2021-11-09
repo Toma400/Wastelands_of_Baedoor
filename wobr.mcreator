@@ -9495,65 +9495,6 @@
       "registry_name": "light_block"
     },
     {
-      "name": "LightBlockTrigger",
-      "type": "procedure",
-      "sortid": 1233,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "light_block_trigger",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LightEffect",
-      "type": "potion",
-      "sortid": 1234,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "light_effect"
-    },
-    {
-      "name": "LightBlockExpire",
-      "type": "procedure",
-      "sortid": 1235,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "light_block_expire",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "BambooFenceGate",
       "type": "block",
       "sortid": 175,
@@ -9621,64 +9562,6 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LightBlockUse",
-      "type": "procedure",
-      "sortid": 1240,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "light_block_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LightBlockExpirewoConditions",
-      "type": "procedure",
-      "sortid": 1241,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "light_block_expirewo_conditions",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -12638,66 +12521,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "LampLightSwitch",
-      "type": "procedure",
-      "sortid": 1408,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lamp_light_switch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GetLampLightValue",
-      "type": "procedure",
-      "sortid": 1409,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "get_lamp_light_value",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LampLightChange",
-      "type": "command",
-      "sortid": 1410,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lamp_light_change"
-    },
-    {
-      "name": "LampLightCheck",
-      "type": "command",
-      "sortid": 1411,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lamp_light_check"
     },
     {
       "name": "OrmathRider",
@@ -21358,12 +21181,6 @@
       "value": "0"
     },
     {
-      "name": "Lamp_Light",
-      "type": "logic",
-      "scope": "map",
-      "value": "true"
-    },
-    {
       "name": "Coins",
       "type": "number",
       "scope": "player_persistent",
@@ -21786,7 +21603,6 @@
       "item.minecraft.potion.effect.avoider_curse": "Avoider Curse",
       "block.wobr.byg_cika_wooden_slab": "Cypress Wooden Slab",
       "block.wobr.stripped_nutwood_wooden_stairs": "Stripped Juniper Wooden Stairs",
-      "item.minecraft.splash_potion.effect.light_effect": "Splash Light Effect",
       "item.minecraft.lingering_potion.effect.warhammer_cooldown_effect": "Lingering Warhammer Cooldown Effect",
       "item.minecraft.splash_potion.effect.tribe_reputation_raise": "Splash Tribe Reputation Raise",
       "block.wobr.birch_framed_black_stained_glass": "Birch Framed Black Stained Glass",
@@ -21859,7 +21675,6 @@
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
       "item.wobr.sand_elixir": "Sand Elixir",
       "item.minecraft.tipped_arrow.effect.anti_wandering_trader": "Arrow of Anti Wandering Trader",
-      "item.minecraft.potion.effect.light_effect": "Light Effect",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
       "block.wobr.bamboo_lamp": "Bamboo Lamp",
@@ -21917,7 +21732,6 @@
       "enchantment.wobr.quick_draw": "Fast Draw",
       "block.wobr.wooden_lamp_byg_jacaranda_inactive": "Jacaranda Wooden Lamp",
       "effect.shaman_ormath_blessing": "Shaman Ormath Blessing",
-      "item.minecraft.tipped_arrow.effect.light_effect": "Arrow of Light Effect",
       "advancements.mobile_firearm_crafting.title": "Mobile Firearm Crafting",
       "block.wobr.lapis_crystal": "Lapis Crystal",
       "block.wobr.wooden_lamp_hypheria": "Asha Hypheria Wooden Lamp",
@@ -21935,7 +21749,6 @@
       "block.wobr.wooden_lamp_blue_shroomwood": "Brown Shroomwood Lamp",
       "block.wobr.chiseled_byg_mangrove_wood": "Chiseled Lament Wood",
       "block.wobr.chiseled_stripped_byg_ebony_wooden_slab": "Chiseled Stripped Deadwood Wooden Slab",
-      "effect.light_effect": "Light Effect",
       "block.wobr.warped_framed_purple_stained_glass": "Warped Framed Purple Stained Glass",
       "advancements.portable_nether_lakes.title": "Portable Nether Lakes",
       "block.wobr.chiseled_stripped_byg_jacaranda_wooden_slab": "Chiseled Stripped Cherry Wooden Slab",
@@ -22047,7 +21860,6 @@
       "subtitles.ormath_shaman_hurt": "",
       "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.stripped_darkwood_wooden_stairs": "Darkwood Wooden Stairs",
-      "item.minecraft.lingering_potion.effect.light_effect": "Lingering Light Effect",
       "block.wobr.chiseled_warped_wooden_slab": "Warped Wooden Slab",
       "block.wobr.jungle_wooden_stairs": "Jungle Wooden Stairs",
       "block.wobr.wooden_lamp_cypress": "Nutwood Spicewood Lamp",
@@ -22785,7 +22597,6 @@
       "item.minecraft.potion.effect.avoider_curse": "Avoider Curse",
       "block.wobr.byg_cika_wooden_slab": "Cika Wooden Slab",
       "block.wobr.stripped_nutwood_wooden_stairs": "Stripped Nutwood Wooden Stairs",
-      "item.minecraft.splash_potion.effect.light_effect": "Splash Light Effect",
       "item.minecraft.lingering_potion.effect.warhammer_cooldown_effect": "Lingering Warhammer Cooldown Effect",
       "item.minecraft.splash_potion.effect.tribe_reputation_raise": "Splash Tribe Reputation Raise",
       "block.wobr.birch_framed_black_stained_glass": "Birch Framed Black Stained Glass",
@@ -22858,7 +22669,6 @@
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
       "item.wobr.sand_elixir": "Sand Elixir",
       "item.minecraft.tipped_arrow.effect.anti_wandering_trader": "Arrow of Anti Wandering Trader",
-      "item.minecraft.potion.effect.light_effect": "Light Effect",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
       "block.wobr.bamboo_lamp": "Bamboo Lamp",
@@ -22916,7 +22726,6 @@
       "enchantment.wobr.quick_draw": "Fast Draw",
       "block.wobr.wooden_lamp_byg_jacaranda_inactive": "Jacaranda Wooden Lamp",
       "effect.shaman_ormath_blessing": "Shaman Ormath Blessing",
-      "item.minecraft.tipped_arrow.effect.light_effect": "Arrow of Light Effect",
       "advancements.mobile_firearm_crafting.title": "Mobile Firearm Crafting",
       "block.wobr.lapis_crystal": "Lapis Crystal",
       "block.wobr.wooden_lamp_hypheria": "Hypheria Wooden Lamp",
@@ -22934,7 +22743,6 @@
       "block.wobr.wooden_lamp_blue_shroomwood": "Blue Shroomwood Lamp",
       "block.wobr.chiseled_byg_mangrove_wood": "Chiseled Mangrove Wood",
       "block.wobr.chiseled_stripped_byg_ebony_wooden_slab": "Chiseled Stripped Ebony Wooden Slab",
-      "effect.light_effect": "Light Effect",
       "block.wobr.warped_framed_purple_stained_glass": "Warped Framed Purple Stained Glass",
       "advancements.portable_nether_lakes.title": "Portable Nether Lakes",
       "block.wobr.chiseled_stripped_byg_jacaranda_wooden_slab": "Chiseled Stripped Jacaranda Wooden Slab",
@@ -23046,7 +22854,6 @@
       "subtitles.ormath_shaman_hurt": "",
       "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.stripped_darkwood_wooden_stairs": "Stripped Darkwood Wooden Stairs",
-      "item.minecraft.lingering_potion.effect.light_effect": "Lingering Light Effect",
       "block.wobr.chiseled_warped_wooden_slab": "Chiseled Warped Wooden Slab",
       "block.wobr.jungle_wooden_stairs": "Jungle Wooden Stairs",
       "block.wobr.wooden_lamp_cypress": "Cypress Wooden Lamp",
