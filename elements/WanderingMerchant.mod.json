@@ -56,7 +56,7 @@
     "xpAmount": 1,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "MerchantGUI1",
+    "guiBoundTo": "MerchantGUIResources",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,

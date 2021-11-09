@@ -10,9 +10,7 @@ import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -31,12 +29,15 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.wobr.procedures.MerchantGUIRightSwitchProcedure;
-import net.mcreator.wobr.procedures.MerchantGUILeftSwitchProcedure;
-import net.mcreator.wobr.procedures.MerchantGUIBuyProcedure;
-import net.mcreator.wobr.procedures.MainGUINBTProcedure;
-import net.mcreator.wobr.procedures.EmeraldIteratorProcedure;
-import net.mcreator.wobr.WobrModVariables;
+import net.mcreator.wobr.procedures.MerchantTrade9Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade8Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade7Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade6Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade5Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade4Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade3Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade2Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade1Procedure;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -45,18 +46,17 @@ import java.util.Map;
 import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
-public class MerchantGUI1Gui extends WobrModElements.ModElement {
+public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public MerchantGUI1Gui(WobrModElements instance) {
-		super(instance, 1463);
+	public MerchantGUIResourcesGui(WobrModElements instance) {
+		super(instance, 1862);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -65,25 +65,8 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 	}
 
 	@SubscribeEvent
-	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		PlayerEntity entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
-				EmeraldIteratorProcedure.executeProcedure($_dependencies);
-			}
-		}
-	}
-
-	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("merchant_gui_1"));
+		event.getRegistry().register(containerType.setRegistryName("merchant_gui_resources"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -110,11 +93,6 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 				this.y = pos.getY();
 				this.z = pos.getZ();
 			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				MainGUINBTProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		public Map<Integer, Slot> get() {
@@ -139,8 +117,8 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 320;
-			this.ySize = 200;
+			this.xSize = 150;
+			this.ySize = 150;
 		}
 
 		@Override
@@ -153,12 +131,26 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/wandering_trader_gui.png"));
-			this.blit(this.guiLeft + 11, this.guiTop + 24, 0, 0, 300, 100, 300, 100);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32card.png"));
-			this.blit(this.guiLeft + 240, this.guiTop + 52, 0, 0, 32, 32, 32, 32);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32emerald.png"));
-			this.blit(this.guiLeft + 63, this.guiTop + 51, 0, 0, 32, 32, 32, 32);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/merchant_trading_background.png"));
+			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 150, 150, 150, 150);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glistering_ash.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 65, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glowing_obsidian.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 41, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32sand_veil.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32vulc_veil.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 41, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/heart_of_the_sea.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/shulker_shell.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 65, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_gold_ingot_2.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/card_spade_ace_winfleton.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -177,11 +169,15 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Random Card", 227, 94, -4684786);
-			this.font.drawString("20 Emeralds", 52, 95, -4684786);
-			this.font.drawString("" + ((entity.getCapability(WobrModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new WobrModVariables.PlayerVariables())).Emeralds) + "", 158, 168, -9285877);
-			this.font.drawString("Emeralds in inventory:", 114, 154, -9946353);
+			this.font.drawString("10", 51, 20, -4356062);
+			this.font.drawString("10", 51, 44, -4356062);
+			this.font.drawString("24", 51, 68, -4356062);
+			this.font.drawString("3", 54, 92, -4356062);
+			this.font.drawString("1(1*)", 113, 20, -4356062);
+			this.font.drawString("1", 123, 44, -4356062);
+			this.font.drawString("1(2*)", 113, 68, -4356062);
+			this.font.drawString("1(1*)", 113, 92, -4356062);
+			this.font.drawString("1", 123, 116, -4356062);
 		}
 
 		@Override
@@ -194,17 +190,45 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 146, this.guiTop + 130, 40, 20, "Buy", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 63, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 194, this.guiTop + 130, 11, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 87, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 127, this.guiTop + 130, 10, 20, "«", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 39, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 111, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
+				handleButtonAction(entity, 3, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 15, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
+				handleButtonAction(entity, 4, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 15, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
+				handleButtonAction(entity, 5, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 39, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
+				handleButtonAction(entity, 6, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 63, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
+				handleButtonAction(entity, 7, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 87, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
+				handleButtonAction(entity, 8, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 111, 7, 20, "»", e -> {
+				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
+				handleButtonAction(entity, 9, x, y, z);
 			}));
 		}
 	}
@@ -299,8 +323,11 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				MerchantGUIBuyProcedure.executeProcedure($_dependencies);
+				MerchantTrade3Procedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
@@ -311,7 +338,7 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				MerchantGUIRightSwitchProcedure.executeProcedure($_dependencies);
+				MerchantTrade4Procedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 2) {
@@ -322,7 +349,70 @@ public class MerchantGUI1Gui extends WobrModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				MerchantGUILeftSwitchProcedure.executeProcedure($_dependencies);
+				MerchantTrade2Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 4) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade1Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 5) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade5Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 6) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade6Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 7) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade7Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 8) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade8Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 9) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				MerchantTrade9Procedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -67,7 +67,7 @@ import net.mcreator.wobr.procedures.WanderingDeathProcedure;
 import net.mcreator.wobr.procedures.MerchantDataMergeProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.item.BulletRangedItem;
-import net.mcreator.wobr.gui.MerchantGUI1Gui;
+import net.mcreator.wobr.gui.MerchantGUIResourcesGui;
 import net.mcreator.wobr.WobrModElements;
 
 import javax.annotation.Nullable;
@@ -259,7 +259,7 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 						packetBuffer.writeBlockPos(new BlockPos(sourceentity));
 						packetBuffer.writeByte(0);
 						packetBuffer.writeVarInt(CustomEntity.this.getEntityId());
-						return new MerchantGUI1Gui.GuiContainerMod(id, inventory, packetBuffer);
+						return new MerchantGUIResourcesGui.GuiContainerMod(id, inventory, packetBuffer);
 					}
 				}, buf -> {
 					buf.writeBlockPos(new BlockPos(sourceentity));

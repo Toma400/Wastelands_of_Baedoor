@@ -1,0 +1,289 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 150,
+    "height": 150,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "merchant_trading_background.png",
+          "use1Xscale": false,
+          "name": "merchant_trading_background.png",
+          "x": 138,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_crocodile_revolver.png",
+          "use1Xscale": false,
+          "name": "scheme_crocodile_revolver.png",
+          "x": 155,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade3"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade2"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 156
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade1"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade4"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 156
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_sand_wanderer.png",
+          "use1Xscale": false,
+          "name": "scheme_sand_wanderer.png",
+          "x": 219,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_block.png",
+          "use1Xscale": false,
+          "name": "light_block.png",
+          "x": 219,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_long_revolver.png",
+          "use1Xscale": false,
+          "name": "scheme_long_revolver.png",
+          "x": 155,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scheme_windsweeper.png",
+          "use1Xscale": false,
+          "name": "scheme_windsweeper.png",
+          "x": 155,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_block.png",
+          "use1Xscale": false,
+          "name": "light_block.png",
+          "x": 219,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_block.png",
+          "use1Xscale": false,
+          "name": "light_block.png",
+          "x": 219,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_block.png",
+          "use1Xscale": false,
+          "name": "light_block.png",
+          "x": 155,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "5",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "5",
+          "x": 193,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "7",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "7",
+          "x": 193,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "12",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "12",
+          "x": 190,
+          "y": 113
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_block.png",
+          "use1Xscale": false,
+          "name": "light_block.png",
+          "x": 219,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "2",
+          "x": 261,
+          "y": 65
+        }
+      }
+    ]
+  }
+}

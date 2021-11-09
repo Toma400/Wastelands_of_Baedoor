@@ -1,0 +1,369 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 150,
+    "height": 150,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "merchant_trading_background.png",
+          "use1Xscale": false,
+          "name": "merchant_trading_background.png",
+          "x": 138,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glistering_ash.png",
+          "use1Xscale": false,
+          "name": "glistering_ash.png",
+          "x": 155,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade3"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade4"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade2"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 156
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade1"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 178,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade5"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade6"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade7"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade8"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "»",
+          "onClick": {
+            "name": "MerchantTrade9"
+          },
+          "width": 7,
+          "height": 20,
+          "name": "»",
+          "x": 242,
+          "y": 156
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "budding_amethyst.png",
+          "use1Xscale": false,
+          "name": "budding_amethyst.png",
+          "x": 219,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowing_obsidian.png",
+          "use1Xscale": false,
+          "name": "glowing_obsidian.png",
+          "x": 219,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "32sand_veil.png",
+          "use1Xscale": true,
+          "name": "32sand_veil.png",
+          "x": 155,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "32vulc_veil.png",
+          "use1Xscale": true,
+          "name": "32vulc_veil.png",
+          "x": 155,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heart_of_the_sea.png",
+          "use1Xscale": false,
+          "name": "heart_of_the_sea.png",
+          "x": 219,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shulker_shell.png",
+          "use1Xscale": false,
+          "name": "shulker_shell.png",
+          "x": 219,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baedoor_gold_ingot_2.png",
+          "use1Xscale": false,
+          "name": "baedoor_gold_ingot_2.png",
+          "x": 155,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "10",
+          "x": 190,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "10",
+          "x": 190,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "24",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "24",
+          "x": 190,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "3",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "3",
+          "x": 193,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "card_spade_ace_winfleton.png",
+          "use1Xscale": false,
+          "name": "card_spade_ace_winfleton.png",
+          "x": 219,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1(1*)",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "1(1*)",
+          "x": 252,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 262,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1(2*)",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "1(2*)",
+          "x": 252,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1(1*)",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "1(1*)",
+          "x": 252,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 262,
+          "y": 161
+        }
+      }
+    ]
+  }
+}
