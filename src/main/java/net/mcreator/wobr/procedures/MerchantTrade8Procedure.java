@@ -9,6 +9,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
@@ -75,7 +76,7 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 				}
 			}
 		}
-		if (((money) > 0)) {
+		if (((money) >= 1)) {
 			if ((!(new Object() {
 				boolean check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {
@@ -101,6 +102,48 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
 							.addPotionEffect(new EffectInstance(MerchantBlockHeartoftheSeaPotion.potion, (int) 24000, (int) 1, (false), (false)));
+			}
+		} else {
+			money = (double) 0;
+			{
+				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
+				if (_iitemhandlerref.get() != null) {
+					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						}
+					}
+				}
+			}
+			if (((money) >= 9)) {
+				if ((!(new Object() {
+					boolean check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == MerchantBlockHeartoftheSeaPotion.potion)
+									return true;
+							}
+						}
+						return false;
+					}
+				}.check(entity)))) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
+					}
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								"give @a[distance=..1] minecraft:heart_of_the_sea 1");
+					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.addPotionEffect(new EffectInstance(MerchantBlockHeartoftheSeaPotion.potion, (int) 24000, (int) 1, (false), (false)));
+				}
 			}
 		}
 	}

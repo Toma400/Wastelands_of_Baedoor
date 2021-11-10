@@ -5,6 +5,7 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -53,7 +54,7 @@ public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 				}
 			}
 		}
-		if (((money) > 0)) {
+		if (((money) >= 1)) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
@@ -82,6 +83,52 @@ public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 					ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1));
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+				}
+			}
+		} else {
+			money = (double) 0;
+			{
+				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
+				if (_iitemhandlerref.get() != null) {
+					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						}
+					}
+				}
+			}
+			if (((money) >= 9)) {
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
+				}
+				randomness = (double) (Math.random() * 100);
+				if (((randomness) <= 25)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(CardDiamondAceWinfletonItem.block, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+				} else if (((randomness) <= 50)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(CardHeartAceWinfletonItem.block, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+				} else if (((randomness) <= 75)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(CardClubAceWinfletonItem.block, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+				} else {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
 				}
 			}
 		}

@@ -115,7 +115,7 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 150;
-			this.ySize = 150;
+			this.ySize = 230;
 		}
 
 		@Override
@@ -129,27 +129,33 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/merchant_trading_background.png"));
-			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 150, 150, 150, 150);
+			this.blit(this.guiLeft + 0, this.guiTop + 63, 0, 0, 150, 150, 150, 150);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/scheme_crocodile_revolver.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 65, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 16, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/scheme_sand_wanderer.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 41, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 81, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/scheme_long_revolver.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 16, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/scheme_windsweeper.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 41, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 16, this.guiTop + 104, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 65, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 105, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 16, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/ancient_debris.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 16, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/merchant_trading_background_price.png"));
+			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 150, 59, 150, 59);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/diamond.png"));
+			this.blit(this.guiLeft + 15, this.guiTop + 20, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/diamond.png"));
+			this.blit(this.guiLeft + 111, this.guiTop + 20, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -168,12 +174,14 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("5", 54, 20, -16734040);
-			this.font.drawString("7", 54, 44, -16734040);
-			this.font.drawString("12", 51, 68, -16734040);
-			this.font.drawString("2", 122, 20, -16734040);
-			this.font.drawString("27", 51, 116, -16734040);
-			this.font.drawString("9(1*)", 113, 116, -16734040);
+			this.font.drawString("5", 54, 83, -16734040);
+			this.font.drawString("7", 54, 107, -16734040);
+			this.font.drawString("12", 51, 131, -16734040);
+			this.font.drawString("2", 123, 83, -16734040);
+			this.font.drawString("27", 51, 179, -16734040);
+			this.font.drawString("9(1*)", 113, 179, -16734040);
+			this.font.drawString("x 1", 40, 24, -16734040);
+			this.font.drawString("9 x", 87, 24, -16734040);
 		}
 
 		@Override
@@ -186,43 +194,43 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 63, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 126, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 87, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 150, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 39, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 102, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 111, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 174, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
 				handleButtonAction(entity, 3, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 15, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 78, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
 				handleButtonAction(entity, 4, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 15, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 78, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
 				handleButtonAction(entity, 5, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 39, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 102, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
 				handleButtonAction(entity, 6, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 63, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 126, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
 				handleButtonAction(entity, 7, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 87, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 150, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
 				handleButtonAction(entity, 8, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 111, 7, 20, "»", e -> {
+			this.addButton(new Button(this.guiLeft + 103, this.guiTop + 174, 7, 20, "»", e -> {
 				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
 				handleButtonAction(entity, 9, x, y, z);
 			}));

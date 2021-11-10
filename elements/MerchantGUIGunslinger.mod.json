@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 150,
-    "height": 150,
+    "height": 230,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": false,
@@ -17,7 +17,7 @@
           "use1Xscale": false,
           "name": "merchant_trading_background.png",
           "x": 138,
-          "y": 45
+          "y": 68
         }
       },
       {
@@ -27,7 +27,7 @@
           "use1Xscale": false,
           "name": "scheme_crocodile_revolver.png",
           "x": 155,
-          "y": 110
+          "y": 133
         }
       },
       {
@@ -41,7 +41,7 @@
           "height": 20,
           "name": "»",
           "x": 178,
-          "y": 108
+          "y": 131
         }
       },
       {
@@ -52,7 +52,7 @@
           "height": 20,
           "name": "»",
           "x": 178,
-          "y": 132
+          "y": 155
         }
       },
       {
@@ -66,7 +66,7 @@
           "height": 20,
           "name": "»",
           "x": 178,
-          "y": 84
+          "y": 107
         }
       },
       {
@@ -80,7 +80,7 @@
           "height": 20,
           "name": "»",
           "x": 178,
-          "y": 156
+          "y": 179
         }
       },
       {
@@ -94,7 +94,7 @@
           "height": 20,
           "name": "»",
           "x": 178,
-          "y": 60
+          "y": 83
         }
       },
       {
@@ -108,7 +108,7 @@
           "height": 20,
           "name": "»",
           "x": 242,
-          "y": 60
+          "y": 83
         }
       },
       {
@@ -119,7 +119,7 @@
           "height": 20,
           "name": "»",
           "x": 242,
-          "y": 84
+          "y": 107
         }
       },
       {
@@ -130,7 +130,7 @@
           "height": 20,
           "name": "»",
           "x": 242,
-          "y": 108
+          "y": 131
         }
       },
       {
@@ -141,7 +141,7 @@
           "height": 20,
           "name": "»",
           "x": 242,
-          "y": 132
+          "y": 155
         }
       },
       {
@@ -155,7 +155,7 @@
           "height": 20,
           "name": "»",
           "x": 242,
-          "y": 156
+          "y": 179
         }
       },
       {
@@ -165,7 +165,7 @@
           "use1Xscale": false,
           "name": "scheme_sand_wanderer.png",
           "x": 219,
-          "y": 62
+          "y": 85
         }
       },
       {
@@ -185,7 +185,7 @@
           "use1Xscale": false,
           "name": "scheme_long_revolver.png",
           "x": 155,
-          "y": 62
+          "y": 85
         }
       },
       {
@@ -195,7 +195,7 @@
           "use1Xscale": false,
           "name": "scheme_windsweeper.png",
           "x": 155,
-          "y": 86
+          "y": 109
         }
       },
       {
@@ -238,7 +238,7 @@
           },
           "name": "5",
           "x": 193,
-          "y": 65
+          "y": 88
         }
       },
       {
@@ -251,7 +251,7 @@
           },
           "name": "7",
           "x": 193,
-          "y": 89
+          "y": 112
         }
       },
       {
@@ -264,7 +264,7 @@
           },
           "name": "12",
           "x": 190,
-          "y": 113
+          "y": 136
         }
       },
       {
@@ -274,7 +274,7 @@
           "use1Xscale": false,
           "name": "elytra.png",
           "x": 219,
-          "y": 158
+          "y": 181
         }
       },
       {
@@ -286,8 +286,8 @@
             "falpha": 0.0
           },
           "name": "2",
-          "x": 261,
-          "y": 65
+          "x": 262,
+          "y": 88
         }
       },
       {
@@ -297,7 +297,7 @@
           "use1Xscale": false,
           "name": "ancient_debris.png",
           "x": 155,
-          "y": 158
+          "y": 181
         }
       },
       {
@@ -310,7 +310,7 @@
           },
           "name": "27",
           "x": 190,
-          "y": 161
+          "y": 184
         }
       },
       {
@@ -323,7 +323,63 @@
           },
           "name": "9(1*)",
           "x": 252,
-          "y": 161
+          "y": 184
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "merchant_trading_background_price.png",
+          "use1Xscale": false,
+          "name": "merchant_trading_background_price.png",
+          "x": 138,
+          "y": 5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diamond.png",
+          "use1Xscale": false,
+          "name": "diamond.png",
+          "x": 154,
+          "y": 25
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diamond.png",
+          "use1Xscale": false,
+          "name": "diamond.png",
+          "x": 250,
+          "y": 25
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "x 1",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "x 1",
+          "x": 179,
+          "y": 29
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "9 x",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "9 x",
+          "x": 226,
+          "y": 29
         }
       }
     ]

@@ -3,7 +3,7 @@
   "_type": "potion",
   "definition": {
     "name": "Merchant Block Budding Amethyst",
-    "effectName": "Merchant Block Budding Amethyst",
+    "effectName": "Merchant Block Shulker Shells",
     "icon": "32card.png",
     "color": {
       "value": -13421773,
@@ -14,6 +14,9 @@
     "isBenefitical": false,
     "registerPotionType": false,
     "renderStatusInInventory": false,
-    "renderStatusInHUD": false
+    "renderStatusInHUD": false,
+    "onExpired": {
+      "name": "MerchantUnBlockShulkerShells"
+    }
   }
 }

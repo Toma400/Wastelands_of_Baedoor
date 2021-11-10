@@ -79,6 +79,47 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 					((LivingEntity) entity)
 							.addPotionEffect(new EffectInstance(MerchantBlockElytraPotion.potion, (int) 24000, (int) 1, (false), (false)));
 			}
+		} else {
+			money = (double) 0;
+			{
+				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
+				if (_iitemhandlerref.get() != null) {
+					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						}
+					}
+				}
+			}
+			if (((money) >= 81)) {
+				if ((!(new Object() {
+					boolean check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == MerchantBlockElytraPotion.potion)
+									return true;
+							}
+						}
+						return false;
+					}
+				}.check(entity)))) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 81);
+					}
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(Items.ELYTRA, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.addPotionEffect(new EffectInstance(MerchantBlockElytraPotion.potion, (int) 24000, (int) 1, (false), (false)));
+				}
+			}
 		}
 	}
 }

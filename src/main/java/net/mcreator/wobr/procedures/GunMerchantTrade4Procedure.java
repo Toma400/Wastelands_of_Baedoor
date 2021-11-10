@@ -5,6 +5,7 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -58,6 +59,31 @@ public class GunMerchantTrade4Procedure extends WobrModElements.ModElement {
 				ItemStack _setstack = new ItemStack(SandWandererSchemeItem.block, (int) (1));
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+		} else {
+			money = (double) 0;
+			{
+				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
+				if (_iitemhandlerref.get() != null) {
+					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						}
+					}
+				}
+			}
+			if (((money) >= 18)) {
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 18);
+				}
+				if (entity instanceof PlayerEntity) {
+					ItemStack _setstack = new ItemStack(SandWandererSchemeItem.block, (int) (1));
+					_setstack.setCount((int) 1);
+					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+				}
 			}
 		}
 	}
