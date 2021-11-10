@@ -73,6 +73,9 @@
         "type": "button",
         "data": {
           "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade5"
+          },
           "width": 7,
           "height": 20,
           "name": "»",
@@ -145,6 +148,9 @@
         "type": "button",
         "data": {
           "text": "»",
+          "onClick": {
+            "name": "GunMerchantTrade6"
+          },
           "width": 7,
           "height": 20,
           "name": "»",
@@ -264,9 +270,9 @@
       {
         "type": "image",
         "data": {
-          "image": "light_block.png",
+          "image": "elytra.png",
           "use1Xscale": false,
-          "name": "light_block.png",
+          "name": "elytra.png",
           "x": 219,
           "y": 158
         }
@@ -282,6 +288,42 @@
           "name": "2",
           "x": 261,
           "y": 65
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ancient_debris.png",
+          "use1Xscale": false,
+          "name": "ancient_debris.png",
+          "x": 155,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "27",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "27",
+          "x": 190,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "9(1*)",
+          "color": {
+            "value": -16734040,
+            "falpha": 0.0
+          },
+          "name": "9(1*)",
+          "x": 252,
+          "y": 161
         }
       }
     ]

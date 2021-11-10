@@ -38,6 +38,7 @@ import net.mcreator.wobr.procedures.MerchantTrade4Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade3Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade2Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade1Procedure;
+import net.mcreator.wobr.procedures.MerchantTrade10Procedure;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -151,6 +152,8 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 16, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/card_spade_ace_winfleton.png"));
 			this.blit(this.guiLeft + 80, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/copper_ingot.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -178,6 +181,7 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.font.drawString("1(2*)", 113, 68, -4356062);
 			this.font.drawString("1(1*)", 113, 92, -4356062);
 			this.font.drawString("1", 123, 116, -4356062);
+			this.font.drawString("6", 54, 116, -4356062);
 		}
 
 		@Override
@@ -350,6 +354,17 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				MerchantTrade2Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 3) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MerchantTrade10Procedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 4) {

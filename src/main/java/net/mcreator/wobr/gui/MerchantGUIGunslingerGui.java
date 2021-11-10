@@ -29,6 +29,8 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.wobr.procedures.GunMerchantTrade6Procedure;
+import net.mcreator.wobr.procedures.GunMerchantTrade5Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade4Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade3Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade2Procedure;
@@ -144,8 +146,10 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 80, this.guiTop + 65, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 89, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
 			this.blit(this.guiLeft + 80, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/ancient_debris.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -168,6 +172,8 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.font.drawString("7", 54, 44, -16734040);
 			this.font.drawString("12", 51, 68, -16734040);
 			this.font.drawString("2", 122, 20, -16734040);
+			this.font.drawString("27", 51, 116, -16734040);
+			this.font.drawString("9(1*)", 113, 116, -16734040);
 		}
 
 		@Override
@@ -325,6 +331,14 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 				GunMerchantTrade2Procedure.executeProcedure($_dependencies);
 			}
 		}
+		if (buttonID == 3) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				GunMerchantTrade5Procedure.executeProcedure($_dependencies);
+			}
+		}
 		if (buttonID == 4) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -339,6 +353,14 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GunMerchantTrade4Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 9) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				GunMerchantTrade6Procedure.executeProcedure($_dependencies);
 			}
 		}
 	}

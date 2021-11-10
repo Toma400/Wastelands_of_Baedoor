@@ -76,6 +76,9 @@
         "type": "button",
         "data": {
           "text": "»",
+          "onClick": {
+            "name": "MerchantTrade10"
+          },
           "width": 7,
           "height": 20,
           "name": "»",
@@ -361,6 +364,29 @@
           },
           "name": "1",
           "x": 262,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "copper_ingot.png",
+          "use1Xscale": false,
+          "name": "copper_ingot.png",
+          "x": 155,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "6",
+          "color": {
+            "value": -4356062,
+            "falpha": 0.0
+          },
+          "name": "6",
+          "x": 193,
           "y": 161
         }
       }

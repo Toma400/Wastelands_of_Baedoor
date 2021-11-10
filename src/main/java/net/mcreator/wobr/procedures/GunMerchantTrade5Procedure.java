@@ -10,27 +10,26 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.item.CrocodileGunSchemeItem;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
 
 @WobrModElements.ModElement.Tag
-public class GunMerchantTrade3Procedure extends WobrModElements.ModElement {
-	public GunMerchantTrade3Procedure(WobrModElements instance) {
-		super(instance, 1878);
+public class GunMerchantTrade5Procedure extends WobrModElements.ModElement {
+	public GunMerchantTrade5Procedure(WobrModElements instance) {
+		super(instance, 1883);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunMerchantTrade3!");
+				System.err.println("Failed to load dependency entity for procedure GunMerchantTrade5!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunMerchantTrade3!");
+				System.err.println("Failed to load dependency world for procedure GunMerchantTrade5!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -49,14 +48,14 @@ public class GunMerchantTrade3Procedure extends WobrModElements.ModElement {
 				}
 			}
 		}
-		if (((money) >= 12)) {
+		if (((money) >= 27)) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 12);
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 27);
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(CrocodileGunSchemeItem.block, (int) (1));
-				_setstack.setCount((int) 1);
+				ItemStack _setstack = new ItemStack(Items.DIAMOND, (int) (1));
+				_setstack.setCount((int) 27);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 		}

@@ -52,7 +52,7 @@ public class GunMerchantTrade1Procedure extends WobrModElements.ModElement {
 		if (((money) >= 5)) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 5);
 			}
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(LongRevolverSchemeItem.block, (int) (1));
