@@ -47,314 +47,321 @@ public class AddOnSandyWaterGenProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock)) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+		if (((net.minecraftforge.fml.ModList.get().isLoaded("atum")) == (true))) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock)) {
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == BlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == BlackSandBlock.block.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == BlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == BlackSandBlock.block.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == BlackSandBlock.block.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_porphyry"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.SAND.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_sand"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.DIORITE.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.DIORITE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.DIORITE.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.DIORITE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.DIORITE.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.DIORITE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.DIORITE.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.DIORITE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.DIORITE.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.DIORITE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
-					.getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.COBBLESTONE.getDefaultState()
+						.getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_limestone"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_gravel"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y - 1), (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z - 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) (z + 1)), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
-			}
-			if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+				if (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CLAY.getDefaultState().getBlock())) {
+					if (!world.getWorld().isRemote) {
+						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_marl"));
+						if (template != null) {
+							template.addBlocksToWorld(world, new BlockPos((int) (x + 1), (int) y, (int) z), new PlacementSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+						}
 					}
 				}
 			}

@@ -63,47 +63,7 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double money = 0;
-		money = (double) 0;
-		{
-			AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-			entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
-			if (_iitemhandlerref.get() != null) {
-				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
-					}
-				}
-			}
-		}
-		if (((money) >= 1)) {
-			if ((!(new Object() {
-				boolean check(Entity _entity) {
-					if (_entity instanceof LivingEntity) {
-						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == MerchantBlockBuddingAmethystPotion.potion)
-								return true;
-						}
-					}
-					return false;
-				}
-			}.check(entity)))) {
-				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
-					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"give @a[distance=..1] cavesandcliffs:budding_amethyst 1");
-				}
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity)
-							.addPotionEffect(new EffectInstance(MerchantBlockBuddingAmethystPotion.potion, (int) 24000, (int) 1, (false), (false)));
-			}
-		} else {
+		if (((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs")) == (true))) {
 			money = (double) 0;
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -111,13 +71,13 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+						if ((new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1)).getItem() == (itemstackiterator).getItem())) {
 							money = (double) ((money) + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((money) >= 9)) {
+			if (((money) >= 1)) {
 				if ((!(new Object() {
 					boolean check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
@@ -131,8 +91,8 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
-						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
+						ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
+						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager().handleCommand(
@@ -143,6 +103,49 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(
 								new EffectInstance(MerchantBlockBuddingAmethystPotion.potion, (int) 24000, (int) 1, (false), (false)));
+				}
+			} else {
+				money = (double) 0;
+				{
+					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _iitemhandlerref.set(capability));
+					if (_iitemhandlerref.get() != null) {
+						for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+							ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+							if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+								money = (double) ((money) + (((itemstackiterator)).getCount()));
+							}
+						}
+					}
+				}
+				if (((money) >= 9)) {
+					if ((!(new Object() {
+						boolean check(Entity _entity) {
+							if (_entity instanceof LivingEntity) {
+								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+								for (EffectInstance effect : effects) {
+									if (effect.getPotion() == MerchantBlockBuddingAmethystPotion.potion)
+										return true;
+								}
+							}
+							return false;
+						}
+					}.check(entity)))) {
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+							((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
+						}
+						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+							world.getWorld().getServer().getCommandManager().handleCommand(
+									new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+											new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+									"give @a[distance=..1] cavesandcliffs:budding_amethyst 1");
+						}
+						if (entity instanceof LivingEntity)
+							((LivingEntity) entity).addPotionEffect(
+									new EffectInstance(MerchantBlockBuddingAmethystPotion.potion, (int) 24000, (int) 1, (false), (false)));
+					}
 				}
 			}
 		}

@@ -293,98 +293,10 @@ public class FluidConverterWaterConvertingProcedure extends WobrModElements.ModE
 			}
 		} else if ((BlockTags.getCollection().getOrCreate(new ResourceLocation(("forge:atum_sand").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock()))) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) (z + 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) (z - 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) z);
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) z);
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			{
-				BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1));
-				BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-			if ((Math.random() <= 0.25)) {
+			if (((net.minecraftforge.fml.ModList.get().isLoaded("atum")) == (true))) {
 				{
-					BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-					BlockState _bs = Blocks.AIR.getDefaultState();
+					BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) (z + 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
@@ -392,6 +304,96 @@ public class FluidConverterWaterConvertingProcedure extends WobrModElements.ModE
 							_bs = _bs.with(_property, (Comparable) entry.getValue());
 					}
 					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) (z - 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) z);
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) z);
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					BlockPos _bp = new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1));
+					BlockState _bs = AddOnSandyWaterBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				if ((Math.random() <= 0.25)) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+						BlockState _bs = Blocks.AIR.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
 				}
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {

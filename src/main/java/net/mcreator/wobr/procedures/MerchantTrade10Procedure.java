@@ -58,29 +58,31 @@ public class MerchantTrade10Procedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double money = 0;
-		money = (double) 0;
-		{
-			AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-			entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
-			if (_iitemhandlerref.get() != null) {
-				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
+		if (((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs")) == (true))) {
+			money = (double) 0;
+			{
+				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> _iitemhandlerref.set(capability));
+				if (_iitemhandlerref.get() != null) {
+					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						}
 					}
 				}
 			}
-		}
-		if (((money) > 0)) {
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
-			}
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"give @a[distance=..1] cavesandcliffs:copper_ingot 6");
+			if (((money) > 0)) {
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				}
+				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+					world.getWorld().getServer().getCommandManager().handleCommand(
+							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+							"give @a[distance=..1] cavesandcliffs:copper_ingot 6");
+				}
 			}
 		}
 	}
