@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wobr:block/wooden_lamp_byg_palm"
+    },
+    "facing=east": {
+      "model": "wobr:block/wooden_lamp_byg_palm",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wobr:block/wooden_lamp_byg_palm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wobr:block/wooden_lamp_byg_palm",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wobr:block/wooden_lamp_byg_palm",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wobr:block/wooden_lamp_byg_palm",
+      "x": 90
+    }
+  }
+}

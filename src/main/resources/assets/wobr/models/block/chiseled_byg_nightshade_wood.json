@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_nightshade",
+    "up": "wobr:blocks/regular_byg_nightshade",
+    "north": "wobr:blocks/chisel_byg_nightshade",
+    "east": "wobr:blocks/chisel_byg_nightshade",
+    "south": "wobr:blocks/chisel_byg_nightshade",
+    "west": "wobr:blocks/chisel_byg_nightshade",
+    "particle": "wobr:blocks/regular_byg_nightshade"
+  }
+}

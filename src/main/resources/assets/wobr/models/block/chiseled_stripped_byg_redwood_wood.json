@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_redwood_strip",
+    "up": "wobr:blocks/regular_byg_redwood_strip",
+    "north": "wobr:blocks/chisel_byg_redwood_strip",
+    "east": "wobr:blocks/chisel_byg_redwood_strip",
+    "south": "wobr:blocks/chisel_byg_redwood_strip",
+    "west": "wobr:blocks/chisel_byg_redwood_strip",
+    "particle": "wobr:blocks/regular_byg_redwood_strip"
+  }
+}

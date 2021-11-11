@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "wobr:blocks/regular_byg_skyris_strip",
+    "top": "wobr:blocks/regular_byg_skyris_strip",
+    "side": "wobr:blocks/regular_byg_skyris_strip"
+  }
+}
