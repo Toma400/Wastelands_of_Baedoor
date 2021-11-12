@@ -37,7 +37,7 @@ public class PillarBYGHollyBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_holly")
 	public static final Block block = null;
 	public PillarBYGHollyBlock(WobrModElements instance) {
-		super(instance, 674);
+		super(instance, 723);
 	}
 
 	@Override

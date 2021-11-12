@@ -34,7 +34,7 @@ public class BYGEtherWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:byg_ether_wooden_slab")
 	public static final Block block = null;
 	public BYGEtherWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 537);
+		super(instance, 538);
 	}
 
 	@Override

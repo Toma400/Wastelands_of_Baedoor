@@ -29,7 +29,7 @@ public class TestBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:test_block")
 	public static final Block block = null;
 	public TestBlockBlock(WobrModElements instance) {
-		super(instance, 904);
+		super(instance, 964);
 	}
 
 	@Override

@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "byg:holly_log"
+    },
+    "3": {
+      "item": "byg:holly_log"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "byg:holly_log"
+    },
+    "7": {
+      "item": "byg:holly_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_byg_holly",
+    "count": 2
+  }
+}

@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WarhammerRegistryProcedure extends WobrModElements.ModElement {
 	public WarhammerRegistryProcedure(WobrModElements instance) {
-		super(instance, 1668);
+		super(instance, 1711);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

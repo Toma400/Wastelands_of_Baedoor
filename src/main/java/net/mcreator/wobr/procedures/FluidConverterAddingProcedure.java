@@ -23,7 +23,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 	public FluidConverterAddingProcedure(WobrModElements instance) {
-		super(instance, 1740);
+		super(instance, 1783);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

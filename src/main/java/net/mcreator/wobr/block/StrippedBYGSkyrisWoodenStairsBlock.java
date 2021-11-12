@@ -33,7 +33,7 @@ public class StrippedBYGSkyrisWoodenStairsBlock extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:stripped_byg_skyris_wooden_stairs")
 	public static final Block block = null;
 	public StrippedBYGSkyrisWoodenStairsBlock(WobrModElements instance) {
-		super(instance, 1942);
+		super(instance, 639);
 	}
 
 	@Override

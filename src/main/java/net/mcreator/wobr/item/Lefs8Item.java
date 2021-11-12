@@ -37,7 +37,7 @@ public class Lefs8Item extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lefs_8")
 	public static final Item block = null;
 	public Lefs8Item(WobrModElements instance) {
-		super(instance, 1856);
+		super(instance, 471);
 	}
 
 	@Override

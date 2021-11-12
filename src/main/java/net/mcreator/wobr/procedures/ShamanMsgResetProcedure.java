@@ -9,7 +9,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ShamanMsgResetProcedure extends WobrModElements.ModElement {
 	public ShamanMsgResetProcedure(WobrModElements instance) {
-		super(instance, 1447);
+		super(instance, 1497);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

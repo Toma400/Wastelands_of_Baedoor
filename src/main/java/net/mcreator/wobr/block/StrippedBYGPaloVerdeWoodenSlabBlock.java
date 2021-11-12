@@ -34,7 +34,7 @@ public class StrippedBYGPaloVerdeWoodenSlabBlock extends WobrModElements.ModElem
 	@ObjectHolder("wobr:stripped_byg_palo_verde_wooden_slab")
 	public static final Block block = null;
 	public StrippedBYGPaloVerdeWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 1921);
+		super(instance, 622);
 	}
 
 	@Override

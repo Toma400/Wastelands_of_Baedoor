@@ -31,7 +31,7 @@ public class ModeChangeKeyKeyBinding extends WobrModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public ModeChangeKeyKeyBinding(WobrModElements instance) {
-		super(instance, 879);
+		super(instance, 939);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

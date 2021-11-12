@@ -14,7 +14,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 	public TribeAttackValueProcedure(WobrModElements instance) {
-		super(instance, 1368);
+		super(instance, 1422);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

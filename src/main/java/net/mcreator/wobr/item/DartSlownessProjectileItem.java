@@ -46,7 +46,7 @@ public class DartSlownessProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:entitybulletdart_slowness_projectile")
 	public static final EntityType arrow = null;
 	public DartSlownessProjectileItem(WobrModElements instance) {
-		super(instance, 1528);
+		super(instance, 1571);
 	}
 
 	@Override

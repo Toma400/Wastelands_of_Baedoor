@@ -18,7 +18,7 @@ public class MerchantBlockHeartoftheSeaPotion extends WobrModElements.ModElement
 	@ObjectHolder("wobr:merchant_block_heartofthe_sea")
 	public static final Effect potion = null;
 	public MerchantBlockHeartoftheSeaPotion(WobrModElements instance) {
-		super(instance, 1871);
+		super(instance, 1912);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

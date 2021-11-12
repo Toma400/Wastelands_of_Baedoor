@@ -1,0 +1,39 @@
+{
+  "group": "wooden_chiseled_group",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:jacaranda_log"
+    },
+    "1": {
+      "item": "byg:jacaranda_log"
+    },
+    "2": {
+      "item": "byg:jacaranda_log"
+    },
+    "3": {
+      "item": "byg:jacaranda_log"
+    },
+    "5": {
+      "item": "byg:jacaranda_log"
+    },
+    "6": {
+      "item": "byg:jacaranda_log"
+    },
+    "7": {
+      "item": "byg:jacaranda_log"
+    },
+    "8": {
+      "item": "byg:jacaranda_log"
+    }
+  },
+  "result": {
+    "item": "wobr:chiseled_byg_jacaranda_wood",
+    "count": 8
+  }
+}

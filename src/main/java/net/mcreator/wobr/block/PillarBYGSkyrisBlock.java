@@ -37,7 +37,7 @@ public class PillarBYGSkyrisBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_skyris")
 	public static final Block block = null;
 	public PillarBYGSkyrisBlock(WobrModElements instance) {
-		super(instance, 1945);
+		super(instance, 733);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class BonemealingProcedure extends WobrModElements.ModElement {
 	public BonemealingProcedure(WobrModElements instance) {
-		super(instance, 1429);
+		super(instance, 1479);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

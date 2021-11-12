@@ -28,7 +28,7 @@ public class StabilisationEnchantment extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:stabilisation")
 	public static final Enchantment enchantment = null;
 	public StabilisationEnchantment(WobrModElements instance) {
-		super(instance, 1302);
+		super(instance, 1357);
 	}
 
 	@Override

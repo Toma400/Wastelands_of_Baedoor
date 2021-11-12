@@ -33,7 +33,7 @@ public class PurpleShroomedWoodenStairsBlock extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:purple_shroomed_wooden_stairs")
 	public static final Block block = null;
 	public PurpleShroomedWoodenStairsBlock(WobrModElements instance) {
-		super(instance, 610);
+		super(instance, 659);
 	}
 
 	@Override

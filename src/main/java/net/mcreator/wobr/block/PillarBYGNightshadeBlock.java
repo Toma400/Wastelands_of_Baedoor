@@ -37,7 +37,7 @@ public class PillarBYGNightshadeBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_nightshade")
 	public static final Block block = null;
 	public PillarBYGNightshadeBlock(WobrModElements instance) {
-		super(instance, 1905);
+		super(instance, 729);
 	}
 
 	@Override

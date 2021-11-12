@@ -34,7 +34,7 @@ public class BYGNightshadeWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:byg_nightshade_wooden_slab")
 	public static final Block block = null;
 	public BYGNightshadeWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 1896);
+		super(instance, 602);
 	}
 
 	@Override

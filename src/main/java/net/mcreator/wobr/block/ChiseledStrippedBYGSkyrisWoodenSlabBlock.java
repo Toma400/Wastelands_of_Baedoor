@@ -34,7 +34,7 @@ public class ChiseledStrippedBYGSkyrisWoodenSlabBlock extends WobrModElements.Mo
 	@ObjectHolder("wobr:chiseled_stripped_byg_skyris_wooden_slab")
 	public static final Block block = null;
 	public ChiseledStrippedBYGSkyrisWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 1944);
+		super(instance, 640);
 	}
 
 	@Override

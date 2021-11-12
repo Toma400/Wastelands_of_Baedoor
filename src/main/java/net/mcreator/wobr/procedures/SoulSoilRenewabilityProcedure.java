@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SoulSoilRenewabilityProcedure extends WobrModElements.ModElement {
 	public SoulSoilRenewabilityProcedure(WobrModElements instance) {
-		super(instance, 1764);
+		super(instance, 1807);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

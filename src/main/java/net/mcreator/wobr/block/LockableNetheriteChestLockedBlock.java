@@ -81,7 +81,7 @@ public class LockableNetheriteChestLockedBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:lockable_netherite_chest_locked")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockableNetheriteChestLockedBlock(WobrModElements instance) {
-		super(instance, 1385);
+		super(instance, 1439);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -38,7 +38,7 @@ public class WoodenLampBYGMahoganyBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wooden_lamp_byg_mahogany")
 	public static final Block block = null;
 	public WoodenLampBYGMahoganyBlock(WobrModElements instance) {
-		super(instance, 703);
+		super(instance, 758);
 	}
 
 	@Override

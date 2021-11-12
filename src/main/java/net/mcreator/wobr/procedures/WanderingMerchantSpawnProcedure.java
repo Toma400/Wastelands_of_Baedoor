@@ -31,7 +31,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement {
 	public WanderingMerchantSpawnProcedure(WobrModElements instance) {
-		super(instance, 1458);
+		super(instance, 1508);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

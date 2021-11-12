@@ -37,7 +37,7 @@ public class PillarBYGCypressBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_cypress")
 	public static final Block block = null;
 	public PillarBYGCypressBlock(WobrModElements instance) {
-		super(instance, 670);
+		super(instance, 719);
 	}
 
 	@Override

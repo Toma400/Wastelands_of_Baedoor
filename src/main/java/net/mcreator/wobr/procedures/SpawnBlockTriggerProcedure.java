@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SpawnBlockTriggerProcedure extends WobrModElements.ModElement {
 	public SpawnBlockTriggerProcedure(WobrModElements instance) {
-		super(instance, 1210);
+		super(instance, 1270);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

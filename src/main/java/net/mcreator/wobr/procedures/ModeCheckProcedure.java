@@ -14,7 +14,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ModeCheckProcedure extends WobrModElements.ModElement {
 	public ModeCheckProcedure(WobrModElements instance) {
-		super(instance, 878);
+		super(instance, 938);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

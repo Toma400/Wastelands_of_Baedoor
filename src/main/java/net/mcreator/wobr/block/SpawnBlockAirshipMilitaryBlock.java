@@ -61,7 +61,7 @@ public class SpawnBlockAirshipMilitaryBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:spawn_block_airship_military")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public SpawnBlockAirshipMilitaryBlock(WobrModElements instance) {
-		super(instance, 1179);
+		super(instance, 1239);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

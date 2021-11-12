@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 	public GunMerchantTrade6Procedure(WobrModElements instance) {
-		super(instance, 1884);
+		super(instance, 1925);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

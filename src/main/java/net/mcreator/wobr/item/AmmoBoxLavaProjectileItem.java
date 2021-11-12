@@ -46,7 +46,7 @@ public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:entitybulletammo_box_lava_projectile")
 	public static final EntityType arrow = null;
 	public AmmoBoxLavaProjectileItem(WobrModElements instance) {
-		super(instance, 885);
+		super(instance, 945);
 	}
 
 	@Override

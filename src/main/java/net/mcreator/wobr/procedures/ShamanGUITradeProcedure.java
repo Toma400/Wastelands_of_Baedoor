@@ -34,7 +34,7 @@ import io.netty.buffer.Unpooled;
 @WobrModElements.ModElement.Tag
 public class ShamanGUITradeProcedure extends WobrModElements.ModElement {
 	public ShamanGUITradeProcedure(WobrModElements instance) {
-		super(instance, 1378);
+		super(instance, 1432);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

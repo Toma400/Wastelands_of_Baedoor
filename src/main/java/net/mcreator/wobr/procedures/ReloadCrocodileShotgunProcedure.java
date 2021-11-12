@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ReloadCrocodileShotgunProcedure extends WobrModElements.ModElement {
 	public ReloadCrocodileShotgunProcedure(WobrModElements instance) {
-		super(instance, 869);
+		super(instance, 930);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

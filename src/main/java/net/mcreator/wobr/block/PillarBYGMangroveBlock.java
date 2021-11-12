@@ -37,7 +37,7 @@ public class PillarBYGMangroveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_mangrove")
 	public static final Block block = null;
 	public PillarBYGMangroveBlock(WobrModElements instance) {
-		super(instance, 678);
+		super(instance, 727);
 	}
 
 	@Override

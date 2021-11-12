@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SandElixirEffectProcedure extends WobrModElements.ModElement {
 	public SandElixirEffectProcedure(WobrModElements instance) {
-		super(instance, 1692);
+		super(instance, 1735);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

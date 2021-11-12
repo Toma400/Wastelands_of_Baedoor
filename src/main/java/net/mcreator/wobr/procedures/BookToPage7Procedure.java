@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @WobrModElements.ModElement.Tag
 public class BookToPage7Procedure extends WobrModElements.ModElement {
 	public BookToPage7Procedure(WobrModElements instance) {
-		super(instance, 1442);
+		super(instance, 1492);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

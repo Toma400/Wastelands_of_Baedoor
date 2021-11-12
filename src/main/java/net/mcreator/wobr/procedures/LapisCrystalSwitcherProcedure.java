@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LapisCrystalSwitcherProcedure extends WobrModElements.ModElement {
 	public LapisCrystalSwitcherProcedure(WobrModElements instance) {
-		super(instance, 945);
+		super(instance, 1005);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

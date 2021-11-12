@@ -47,7 +47,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:entitybulletwind_projectile")
 	public static final EntityType arrow = null;
 	public WindProjectileItem(WobrModElements instance) {
-		super(instance, 1345);
+		super(instance, 1400);
 	}
 
 	@Override

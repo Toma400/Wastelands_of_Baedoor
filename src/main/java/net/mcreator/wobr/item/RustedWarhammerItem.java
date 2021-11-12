@@ -26,7 +26,7 @@ public class RustedWarhammerItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:rusted_warhammer")
 	public static final Item block = null;
 	public RustedWarhammerItem(WobrModElements instance) {
-		super(instance, 1662);
+		super(instance, 1705);
 	}
 
 	@Override

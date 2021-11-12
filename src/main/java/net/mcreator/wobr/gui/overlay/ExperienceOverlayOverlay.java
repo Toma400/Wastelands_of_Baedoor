@@ -25,7 +25,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class ExperienceOverlayOverlay extends WobrModElements.ModElement {
 	public ExperienceOverlayOverlay(WobrModElements instance) {
-		super(instance, 1297);
+		super(instance, 1352);
 	}
 
 	@Override

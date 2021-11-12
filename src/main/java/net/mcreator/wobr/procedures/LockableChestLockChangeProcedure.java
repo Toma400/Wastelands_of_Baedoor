@@ -28,7 +28,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LockableChestLockChangeProcedure extends WobrModElements.ModElement {
 	public LockableChestLockChangeProcedure(WobrModElements instance) {
-		super(instance, 1251);
+		super(instance, 1306);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -25,7 +25,7 @@ public class NetherAvoiderShieldingPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_avoider_shielding")
 	public static final Effect potion = null;
 	public NetherAvoiderShieldingPotion(WobrModElements instance) {
-		super(instance, 1476);
+		super(instance, 1519);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

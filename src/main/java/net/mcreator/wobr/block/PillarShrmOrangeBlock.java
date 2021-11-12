@@ -37,7 +37,7 @@ public class PillarShrmOrangeBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_shrm_orange")
 	public static final Block block = null;
 	public PillarShrmOrangeBlock(WobrModElements instance) {
-		super(instance, 681);
+		super(instance, 736);
 	}
 
 	@Override

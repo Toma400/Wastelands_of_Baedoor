@@ -37,7 +37,7 @@ public class PillarBYGPaloVerdeBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_byg_palo_verde")
 	public static final Block block = null;
 	public PillarBYGPaloVerdeBlock(WobrModElements instance) {
-		super(instance, 1925);
+		super(instance, 731);
 	}
 
 	@Override

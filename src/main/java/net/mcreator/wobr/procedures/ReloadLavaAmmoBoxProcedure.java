@@ -14,7 +14,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadLavaAmmoBoxProcedure extends WobrModElements.ModElement {
 	public ReloadLavaAmmoBoxProcedure(WobrModElements instance) {
-		super(instance, 881);
+		super(instance, 941);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

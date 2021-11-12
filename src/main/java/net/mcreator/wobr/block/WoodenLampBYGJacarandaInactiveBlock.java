@@ -45,7 +45,7 @@ public class WoodenLampBYGJacarandaInactiveBlock extends WobrModElements.ModElem
 	@ObjectHolder("wobr:wooden_lamp_byg_jacaranda_inactive")
 	public static final Block block = null;
 	public WoodenLampBYGJacarandaInactiveBlock(WobrModElements instance) {
-		super(instance, 1849);
+		super(instance, 1891);
 	}
 
 	@Override

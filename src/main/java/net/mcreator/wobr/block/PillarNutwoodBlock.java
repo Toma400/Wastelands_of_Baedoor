@@ -37,7 +37,7 @@ public class PillarNutwoodBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_nutwood")
 	public static final Block block = null;
 	public PillarNutwoodBlock(WobrModElements instance) {
-		super(instance, 683);
+		super(instance, 738);
 	}
 
 	@Override

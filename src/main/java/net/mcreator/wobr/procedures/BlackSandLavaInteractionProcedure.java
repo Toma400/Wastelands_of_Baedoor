@@ -7,7 +7,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BlackSandLavaInteractionProcedure extends WobrModElements.ModElement {
 	public BlackSandLavaInteractionProcedure(WobrModElements instance) {
-		super(instance, 1460);
+		super(instance, 1510);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

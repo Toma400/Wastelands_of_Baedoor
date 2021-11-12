@@ -18,7 +18,7 @@ public class WarhammerProtectionPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warhammer_protection")
 	public static final Effect potion = null;
 	public WarhammerProtectionPotion(WobrModElements instance) {
-		super(instance, 1664);
+		super(instance, 1707);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

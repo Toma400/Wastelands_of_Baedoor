@@ -11,7 +11,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class KnifeCooldownCheckProcedure extends WobrModElements.ModElement {
 	public KnifeCooldownCheckProcedure(WobrModElements instance) {
-		super(instance, 1133);
+		super(instance, 1193);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

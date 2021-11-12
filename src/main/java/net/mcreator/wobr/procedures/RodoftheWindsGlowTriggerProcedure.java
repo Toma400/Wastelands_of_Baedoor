@@ -13,7 +13,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class RodoftheWindsGlowTriggerProcedure extends WobrModElements.ModElement {
 	public RodoftheWindsGlowTriggerProcedure(WobrModElements instance) {
-		super(instance, 1508);
+		super(instance, 1551);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

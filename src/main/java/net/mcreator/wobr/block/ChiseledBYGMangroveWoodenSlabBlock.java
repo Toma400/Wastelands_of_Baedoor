@@ -34,7 +34,7 @@ public class ChiseledBYGMangroveWoodenSlabBlock extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:chiseled_byg_mangrove_wooden_slab")
 	public static final Block block = null;
 	public ChiseledBYGMangroveWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 587);
+		super(instance, 588);
 	}
 
 	@Override

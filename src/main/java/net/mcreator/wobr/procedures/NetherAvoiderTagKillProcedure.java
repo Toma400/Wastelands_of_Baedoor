@@ -40,7 +40,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderTagKillProcedure(WobrModElements instance) {
-		super(instance, 1268);
+		super(instance, 1323);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
