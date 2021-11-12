@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CirtainBlock"
+      },
+      {
+        "value": "CUSTOM:LavaBlock"
+      },
+      {
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
+      }
+    ],
+    "functions": [],
+    "name": "beacon_base_blocks",
+    "namespace": "minecraft"
+  }
+}
