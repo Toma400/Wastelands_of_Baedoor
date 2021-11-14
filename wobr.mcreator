@@ -22130,6 +22130,348 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chiseled_stripped_byg_baobab_wooden_slab_recipe"
+    },
+    {
+      "name": "RenewableQuartziteSandBYG",
+      "type": "recipe",
+      "sortid": 1968,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_quartzite_sand_byg"
+    },
+    {
+      "name": "AirshipBanditLootTableBYG",
+      "type": "loottable",
+      "sortid": 1969,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "airship_bandit_loot_table_byg"
+    },
+    {
+      "name": "WarpedCoralRecipeBYG",
+      "type": "recipe",
+      "sortid": 1970,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "warped_coral_recipe_byg"
+    },
+    {
+      "name": "RenewableBlackIceBYG",
+      "type": "recipe",
+      "sortid": 1971,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_black_ice_byg"
+    },
+    {
+      "name": "RenewablePurpurStoneBYG",
+      "type": "recipe",
+      "sortid": 1972,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_purpur_stone_byg"
+    },
+    {
+      "name": "RenewableBrimstoneBYG",
+      "type": "recipe",
+      "sortid": 1973,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_brimstone_byg"
+    },
+    {
+      "name": "RenewableEtherStoneBYG",
+      "type": "recipe",
+      "sortid": 1974,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_ether_stone_byg"
+    },
+    {
+      "name": "RenewableCrypticStoneBYG",
+      "type": "recipe",
+      "sortid": 1975,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "renewable_cryptic_stone_byg"
+    },
+    {
+      "name": "BYGLamentWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1976,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_lament_wooden_slab_recipe"
+    },
+    {
+      "name": "BYGLamentWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 1977,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_lament_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledBYGLamentWoodRecipe",
+      "type": "recipe",
+      "sortid": 1978,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_byg_lament_wood_recipe"
+    },
+    {
+      "name": "ChiseledBYGLamentWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1979,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_byg_lament_wooden_slab_recipe"
+    },
+    {
+      "name": "PillarBYGLamentRecipe",
+      "type": "recipe",
+      "sortid": 1980,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pillar_byg_lament_recipe"
+    },
+    {
+      "name": "WoodLampBYGLamentRecipe",
+      "type": "recipe",
+      "sortid": 1981,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "wood_lamp_byg_lament_recipe"
+    },
+    {
+      "name": "StrippedBYGLamentWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1982,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_lament_wooden_slab_recipe"
+    },
+    {
+      "name": "StrippedBYGLamentWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 1983,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_lament_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGLamentWoodRecipe",
+      "type": "recipe",
+      "sortid": 1984,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_lament_wood_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGLamentWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1985,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_lament_wooden_slab_recipe"
+    },
+    {
+      "name": "BYGMangroveWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1986,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_mangrove_wooden_slab_recipe"
+    },
+    {
+      "name": "BYGMangroveWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 1987,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_mangrove_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledBYGMangroveWoodRecipe",
+      "type": "recipe",
+      "sortid": 1988,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_byg_mangrove_wood_recipe"
+    },
+    {
+      "name": "ChiseledBYGMangroveWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1989,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_byg_mangrove_wooden_slab_recipe"
+    },
+    {
+      "name": "PillarBYGMangroveRecipe",
+      "type": "recipe",
+      "sortid": 1990,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pillar_byg_mangrove_recipe"
+    },
+    {
+      "name": "WoodLampBYGMangroveRecipe",
+      "type": "recipe",
+      "sortid": 1991,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "wood_lamp_byg_mangrove_recipe"
+    },
+    {
+      "name": "StrippedBYGMangroveWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1992,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_mangrove_wooden_slab_recipe"
+    },
+    {
+      "name": "StrippedBYGMangroveWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 1993,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_mangrove_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGMangroveWoodRecipe",
+      "type": "recipe",
+      "sortid": 1994,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_mangrove_wood_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGMangroveWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1995,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_mangrove_wooden_slab_recipe"
+    },
+    {
+      "name": "BYGMahoganyWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1996,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_mahogany_wooden_slab_recipe"
+    },
+    {
+      "name": "BYGMahoganyWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 1997,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "byg_mahogany_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledBYGMahoganyWoodRecipe",
+      "type": "recipe",
+      "sortid": 1998,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_byg_mahogany_wood_recipe"
+    },
+    {
+      "name": "ChiseledBYGMahoganyWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 1999,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_byg_mahogany_wooden_slab_recipe"
+    },
+    {
+      "name": "PillarBYGMahoganyRecipe",
+      "type": "recipe",
+      "sortid": 2000,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pillar_byg_mahogany_recipe"
+    },
+    {
+      "name": "WoodLampBYGMahoganyRecipe",
+      "type": "recipe",
+      "sortid": 2001,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "wood_lamp_byg_mahogany_recipe"
+    },
+    {
+      "name": "StrippedBYGMahoganyWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 2002,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_mahogany_wooden_slab_recipe"
+    },
+    {
+      "name": "StrippedBYGMahoganyWoodenStairsRecipe",
+      "type": "recipe",
+      "sortid": 2003,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_byg_mahogany_wooden_stairs_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGMahoganyWoodRecipe",
+      "type": "recipe",
+      "sortid": 2004,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_mahogany_wood_recipe"
+    },
+    {
+      "name": "ChiseledStrippedBYGMahoganyWoodenSlabRecipe",
+      "type": "recipe",
+      "sortid": 2005,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_stripped_byg_mahogany_wooden_slab_recipe"
     }
   ],
   "variable_elements": [

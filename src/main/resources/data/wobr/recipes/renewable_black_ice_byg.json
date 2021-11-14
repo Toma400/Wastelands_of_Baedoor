@@ -1,0 +1,25 @@
+{
+  "group": "black_ice_byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:ash_dust"
+    },
+    {
+      "item": "wobr:ash_dust"
+    },
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "item": "wobr:ash_dust"
+    },
+    {
+      "item": "wobr:ash_dust"
+    }
+  ],
+  "result": {
+    "item": "byg:black_ice",
+    "count": 1
+  }
+}

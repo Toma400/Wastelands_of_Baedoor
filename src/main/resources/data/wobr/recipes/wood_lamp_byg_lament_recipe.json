@@ -1,0 +1,30 @@
+{
+  "group": "wood_lamps",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "byg:lament_log"
+    },
+    "3": {
+      "item": "byg:lament_log"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "byg:lament_log"
+    },
+    "7": {
+      "item": "byg:lament_log"
+    }
+  },
+  "result": {
+    "item": "wobr:wooden_lamp_byg_lament",
+    "count": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "brimstone_byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:blockof_nether_soul_essence"
+    },
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "item": "byg:brimstone",
+    "count": 2
+  }
+}
