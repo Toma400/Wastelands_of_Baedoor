@@ -1,0 +1,22 @@
+{
+  "group": "kimberlite_unearthed",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:black_sand"
+    },
+    {
+      "item": "minecraft:vine"
+    },
+    {
+      "item": "minecraft:vine"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "unearthed:kimberlite",
+    "count": 1
+  }
+}

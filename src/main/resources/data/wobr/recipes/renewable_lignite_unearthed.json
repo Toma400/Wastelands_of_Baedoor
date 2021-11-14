@@ -1,0 +1,16 @@
+{
+  "group": "lignite_unearthed",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "unearthed:pumice"
+    }
+  ],
+  "result": {
+    "item": "unearthed:lignite",
+    "count": 1
+  }
+}

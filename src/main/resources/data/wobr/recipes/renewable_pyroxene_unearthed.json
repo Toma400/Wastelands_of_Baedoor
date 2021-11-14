@@ -1,0 +1,26 @@
+{
+  "group": "pyroxene_unearthed",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:nether_soul_essence"
+    },
+    "1": {
+      "item": "minecraft:magma_cream"
+    },
+    "2": {
+      "item": "minecraft:magma_cream"
+    },
+    "3": {
+      "item": "wobr:nether_soul_essence"
+    }
+  },
+  "result": {
+    "item": "unearthed:pyroxene",
+    "count": 1
+  }
+}

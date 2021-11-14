@@ -266,7 +266,7 @@ public class FluidConverterWaterConvertingProcedure extends WobrModElements.ModE
 				}
 				world.setBlockState(_bp, _bs, 3);
 			}
-			if ((Math.random() <= 0.05)) {
+			if ((Math.random() <= 0.02)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
 					BlockState _bs = Blocks.AIR.getDefaultState();

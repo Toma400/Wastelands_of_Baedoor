@@ -1,0 +1,19 @@
+{
+  "group": "white_granite_unearthed",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "minecraft:granite"
+    },
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "result": {
+    "item": "unearthed:white_granite",
+    "count": 1
+  }
+}

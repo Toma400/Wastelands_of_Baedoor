@@ -15,7 +15,9 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.mcreator.wobr.item.MusicDiscOneironautItem;
+import net.mcreator.wobr.item.GlisteringAshItem;
 import net.mcreator.wobr.item.BaedoorFuntItem;
+import net.mcreator.wobr.entity.WindSpiritEntity;
 import net.mcreator.wobr.entity.OrmathRiderEntity;
 import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.entity.BanditDespawningEntity;
@@ -91,6 +93,19 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 				if ((5 >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block, (int) (1)));
+						entityToSpawn.setPickupDelay((int) 10);
+						world.addEntity(entityToSpawn);
+					}
+				}
+			}
+		} else if ((entity instanceof WindSpiritEntity.CustomEntity)) {
+			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
+				if (((10 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
+						* 7)) >= (Math.random() * 100))) {
+					if (!world.getWorld().isRemote) {
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}

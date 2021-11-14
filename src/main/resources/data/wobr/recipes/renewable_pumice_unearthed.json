@@ -1,0 +1,19 @@
+{
+  "group": "pumice_unearthed",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unearthed:pyroxene"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    }
+  ],
+  "result": {
+    "item": "unearthed:pumice",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "pillow_basalt_unearthed",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    },
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "result": {
+    "item": "unearthed:pillow_basalt",
+    "count": 1
+  }
+}
