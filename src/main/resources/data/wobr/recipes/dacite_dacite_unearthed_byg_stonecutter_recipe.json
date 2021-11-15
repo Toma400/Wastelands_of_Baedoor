@@ -1,0 +1,9 @@
+{
+  "group": "dacite_unearthed_byg",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "unearthed:dacite"
+  },
+  "result": "byg:dacite"
+}
