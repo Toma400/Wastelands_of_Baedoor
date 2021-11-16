@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:wobr:crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
         "value": ""
@@ -19,7 +19,7 @@
         "value": ""
       },
       {
-        "value": "TAG:wobr:crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
         "value": ""
@@ -28,7 +28,7 @@
         "value": ""
       },
       {
-        "value": "TAG:wobr:crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
         "value": ""

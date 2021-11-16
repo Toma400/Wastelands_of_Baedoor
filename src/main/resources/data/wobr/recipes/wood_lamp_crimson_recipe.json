@@ -3,21 +3,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " 1 ",
-    "3 5",
+    "345",
     " 7 "
   ],
   "key": {
     "1": {
-      "tag": "wobr:crimson_log"
+      "item": "minecraft:crimson_stem"
     },
     "3": {
-      "tag": "wobr:crimson_log"
+      "item": "minecraft:crimson_stem"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
     },
     "5": {
-      "tag": "wobr:crimson_log"
+      "item": "minecraft:crimson_stem"
     },
     "7": {
-      "tag": "wobr:crimson_log"
+      "item": "minecraft:crimson_stem"
     }
   },
   "result": {

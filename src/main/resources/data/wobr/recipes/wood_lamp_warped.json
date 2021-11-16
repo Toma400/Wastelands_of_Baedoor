@@ -3,21 +3,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " 1 ",
-    "3 5",
+    "345",
     " 7 "
   ],
   "key": {
     "1": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "3": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
     },
     "5": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "7": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     }
   },
   "result": {

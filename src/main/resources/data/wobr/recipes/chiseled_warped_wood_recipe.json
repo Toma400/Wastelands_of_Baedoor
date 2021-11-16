@@ -8,28 +8,28 @@
   ],
   "key": {
     "0": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "1": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "2": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "3": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "5": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "6": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "7": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     },
     "8": {
-      "tag": "wobr:warped_log"
+      "item": "minecraft:warped_stem"
     }
   },
   "result": {

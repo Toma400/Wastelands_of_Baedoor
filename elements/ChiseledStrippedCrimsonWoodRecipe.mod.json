@@ -10,31 +10,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       },
       {
-        "value": "TAG:wobr:stripped_crimson_log"
+        "value": "CUSTOM:PillarCrimson"
       }
     ],
     "recipeReturnStack": {
