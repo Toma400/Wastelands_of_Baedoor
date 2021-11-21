@@ -2,9 +2,8 @@
   "group": "coral_block",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "01",
+    "23"
   ],
   "key": {
     "0": {
@@ -17,21 +16,6 @@
       "item": "byg:warped_coral"
     },
     "3": {
-      "item": "byg:warped_coral"
-    },
-    "4": {
-      "item": "byg:warped_coral"
-    },
-    "5": {
-      "item": "byg:warped_coral"
-    },
-    "6": {
-      "item": "byg:warped_coral"
-    },
-    "7": {
-      "item": "byg:warped_coral"
-    },
-    "8": {
       "item": "byg:warped_coral"
     }
   },

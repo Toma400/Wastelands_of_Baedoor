@@ -22492,15 +22492,6 @@
       "registry_name": "renewable_pumice_unearthed"
     },
     {
-      "name": "DaciteDaciteUnearthedBYGRecipe",
-      "type": "recipe",
-      "sortid": 2012,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "dacite_dacite_unearthed_byg_recipe"
-    },
-    {
       "name": "DaciteDaciteUnearthedBYGStonecutterRecipe",
       "type": "recipe",
       "sortid": 2013,
@@ -22508,6 +22499,60 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "dacite_dacite_unearthed_byg_stonecutter_recipe"
+    },
+    {
+      "name": "AddonDullrockIERecipe",
+      "type": "recipe",
+      "sortid": 2014,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_dullrock_ie_recipe"
+    },
+    {
+      "name": "AddonDullthornsIERecipe",
+      "type": "recipe",
+      "sortid": 2015,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_dullthorns_ie_recipe"
+    },
+    {
+      "name": "AddonCrumblingBlackstoneIERecipe",
+      "type": "recipe",
+      "sortid": 2016,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_crumbling_blackstone_ie_recipe"
+    },
+    {
+      "name": "AddonRubbleIERecipe",
+      "type": "recipe",
+      "sortid": 2017,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_rubble_ie_recipe"
+    },
+    {
+      "name": "AddonBasaltSiltIERecipe",
+      "type": "recipe",
+      "sortid": 2018,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_basalt_silt_ie_recipe"
+    },
+    {
+      "name": "AddonBasalticMagmaIERecipe",
+      "type": "recipe",
+      "sortid": 2019,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "addon_basaltic_magma_ie_recipe"
     }
   ],
   "variable_elements": [

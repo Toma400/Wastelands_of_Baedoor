@@ -1,0 +1,20 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:CrackedBone"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:CrackedBone"
+    },
+    "name": "addon_basalt_silt_ie_recipe",
+    "namespace": "mod"
+  }
+}

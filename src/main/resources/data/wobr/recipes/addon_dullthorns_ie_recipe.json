@@ -1,0 +1,12 @@
+{
+  "group": "dullthorns",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft:vine"
+  },
+  "result": {
+    "item": "infernalexp:dullthorns"
+  }
+}

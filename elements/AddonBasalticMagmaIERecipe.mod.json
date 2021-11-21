@@ -6,7 +6,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "coral_block",
+    "group": "basaltic_magma",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -22,25 +22,25 @@
         "value": ""
       },
       {
-        "value": "Blocks.HORN_CORAL"
+        "value": "Items.MAGMA_CREAM"
       },
       {
-        "value": "Blocks.HORN_CORAL"
+        "value": "Items.MAGMA_CREAM"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.HORN_CORAL"
+        "value": "CUSTOM:ChiseledStrippedBirchWood"
       },
       {
-        "value": "Blocks.HORN_CORAL"
+        "value": "Items.MAGMA_CREAM"
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.HORN_CORAL_BLOCK"
+      "value": "CUSTOM:ChiseledStrippedBirchWood"
     },
-    "name": "warped_coral_recipe_byg",
+    "name": "addon_basaltic_magma_ie_recipe",
     "namespace": "mod"
   }
 }

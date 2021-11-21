@@ -5,9 +5,9 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
-    "group": "dacite_unearthed_byg",
-    "recipeShapeless": false,
+    "recipeRetstackSize": 1,
+    "group": "dullrock",
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
@@ -22,25 +22,25 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:CleanBirchWood"
-      },
-      {
-        "value": "CUSTOM:CleanBirchWood"
+        "value": "CUSTOM:VulcanicVeilPlant"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:CleanBirchWood"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CleanBirchWood"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NetherSoulEssence"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CleanBirchWood"
+      "value": "CUSTOM:VulcanicVeilPlant"
     },
-    "name": "dacite_dacite_unearthed_byg_recipe",
+    "name": "addon_dullrock_ie_recipe",
     "namespace": "mod"
   }
 }
