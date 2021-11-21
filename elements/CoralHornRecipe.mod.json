@@ -10,7 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.HORN_CORAL"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "Blocks.HORN_CORAL"
@@ -19,16 +28,7 @@
         "value": "Blocks.HORN_CORAL"
       },
       {
-        "value": "Blocks.HORN_CORAL"
-      },
-      {
-        "value": "Blocks.HORN_CORAL"
-      },
-      {
-        "value": "Blocks.HORN_CORAL"
-      },
-      {
-        "value": "Blocks.HORN_CORAL"
+        "value": ""
       },
       {
         "value": "Blocks.HORN_CORAL"

@@ -10,7 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.FIRE_CORAL"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "Blocks.FIRE_CORAL"
@@ -19,16 +28,7 @@
         "value": "Blocks.FIRE_CORAL"
       },
       {
-        "value": "Blocks.FIRE_CORAL"
-      },
-      {
-        "value": "Blocks.FIRE_CORAL"
-      },
-      {
-        "value": "Blocks.FIRE_CORAL"
-      },
-      {
-        "value": "Blocks.FIRE_CORAL"
+        "value": ""
       },
       {
         "value": "Blocks.FIRE_CORAL"

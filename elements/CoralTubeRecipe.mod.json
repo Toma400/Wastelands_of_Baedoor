@@ -10,7 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.TUBE_CORAL"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "Blocks.TUBE_CORAL"
@@ -19,16 +28,7 @@
         "value": "Blocks.TUBE_CORAL"
       },
       {
-        "value": "Blocks.TUBE_CORAL"
-      },
-      {
-        "value": "Blocks.TUBE_CORAL"
-      },
-      {
-        "value": "Blocks.TUBE_CORAL"
-      },
-      {
-        "value": "Blocks.TUBE_CORAL"
+        "value": ""
       },
       {
         "value": "Blocks.TUBE_CORAL"

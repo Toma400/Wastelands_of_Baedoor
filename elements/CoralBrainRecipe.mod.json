@@ -10,7 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.BRAIN_CORAL"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "Blocks.BRAIN_CORAL"
@@ -19,16 +28,7 @@
         "value": "Blocks.BRAIN_CORAL"
       },
       {
-        "value": "Blocks.BRAIN_CORAL"
-      },
-      {
-        "value": "Blocks.BRAIN_CORAL"
-      },
-      {
-        "value": "Blocks.BRAIN_CORAL"
-      },
-      {
-        "value": "Blocks.BRAIN_CORAL"
+        "value": ""
       },
       {
         "value": "Blocks.BRAIN_CORAL"
