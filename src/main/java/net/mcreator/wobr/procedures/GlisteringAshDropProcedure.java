@@ -63,7 +63,7 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
 				if (((0.02 + (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
-						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 2) / 100)) >= Math
+						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 5) / 100)) >= Math
 								.random())) {
 					if (!world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));

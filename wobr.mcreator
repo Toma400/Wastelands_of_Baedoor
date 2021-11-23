@@ -17147,59 +17147,6 @@
       "registry_name": "add_on_alabaster"
     },
     {
-      "name": "SandElixirEffect",
-      "type": "procedure",
-      "sortid": 1735,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sand_elixir_effect",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SandElixir",
-      "type": "food",
-      "sortid": 263,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sand_elixir"
-    },
-    {
-      "name": "SandyWater",
-      "type": "item",
-      "sortid": 262,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sandy_water"
-    },
-    {
-      "name": "SandyWaterRecipe",
-      "type": "recipe",
-      "sortid": 1736,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "sandy_water_recipe"
-    },
-    {
-      "name": "SandyElixirRecipe",
-      "type": "recipe",
-      "sortid": 1737,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sandy_elixir_recipe"
-    },
-    {
       "name": "StrippedHypheriaWoodenSlab",
       "type": "block",
       "sortid": 694,
@@ -18050,15 +17997,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "baedoor_gold_ingot_smelter_recipe"
-    },
-    {
-      "name": "SandyWaterRecipe2",
-      "type": "recipe",
-      "sortid": 1792,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sandy_water_recipe_2"
     },
     {
       "name": "AtumSand",
@@ -23140,7 +23078,6 @@
       "block.wobr.chiseled_stripped_byg_mangrove_wood": "Chiseled Stripped Baobab Wood",
       "block.wobr.chiseled_stripped_byg_nightshade_wooden_slab": "Chiseled Stripped Maple Wooden Slab",
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
-      "item.wobr.sand_elixir": "Sand Elixir",
       "item.minecraft.tipped_arrow.effect.anti_wandering_trader": "Arrow of Anti Wandering Trader",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
@@ -23192,8 +23129,8 @@
       "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
+      "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.warped_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -23508,7 +23445,6 @@
       "item.minecraft.lingering_potion.effect.tribe_reputation_drop": "Lingering Tribe Reputation Drop",
       "item.minecraft.splash_potion.effect.nether_avoider_shielding": "Splash Nether Avoider Shielding",
       "item.minecraft.lingering_potion.effect.additional_player_message_potion": "Lingering Player Message Potion",
-      "item.wobr.sandy_water": "Sandy Water",
       "block.wobr.glistering_sandstone_smooth": "Smooth Glistering Sandstone",
       "block.wobr.spicewood_wooden_slab": "Nutwood Wooden Slab",
       "item.wobr.rusty_reaper": "Rusty Reaper",
@@ -24199,7 +24135,6 @@
       "block.wobr.chiseled_stripped_byg_mangrove_wood": "Chiseled Stripped Mangrove Wood",
       "block.wobr.chiseled_stripped_byg_nightshade_wooden_slab": "Chiseled Stripped Nightshade Wooden Slab",
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
-      "item.wobr.sand_elixir": "Sand Elixir",
       "item.minecraft.tipped_arrow.effect.anti_wandering_trader": "Arrow of Anti Wandering Trader",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
@@ -24251,8 +24186,8 @@
       "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
+      "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.warped_wooden_slab": "Warped Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -24567,7 +24502,6 @@
       "item.minecraft.lingering_potion.effect.tribe_reputation_drop": "Lingering Tribe Reputation Drop",
       "item.minecraft.splash_potion.effect.nether_avoider_shielding": "Splash Nether Avoider Shielding",
       "item.minecraft.lingering_potion.effect.additional_player_message_potion": "Lingering Player Message Potion",
-      "item.wobr.sandy_water": "Sandy Water",
       "block.wobr.glistering_sandstone_smooth": "Smooth Glistering Sandstone",
       "block.wobr.spicewood_wooden_slab": "Spicewood Wooden Slab",
       "item.wobr.rusty_reaper": "Rusty Reaper",
