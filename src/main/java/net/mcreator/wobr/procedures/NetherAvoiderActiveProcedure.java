@@ -69,7 +69,7 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3");
+							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
@@ -120,7 +120,7 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3");
+							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
@@ -171,7 +171,7 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3");
+							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
