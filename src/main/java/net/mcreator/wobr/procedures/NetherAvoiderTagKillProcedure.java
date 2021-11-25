@@ -6,9 +6,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.DamageSource;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
@@ -17,25 +14,22 @@ import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.monster.MagmaCubeEntity;
-import net.minecraft.entity.monster.HuskEntity;
 import net.minecraft.entity.monster.GhastEntity;
+import net.minecraft.entity.monster.EndermiteEntity;
 import net.minecraft.entity.monster.EndermanEntity;
 import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.monster.BlazeEntity;
-import net.minecraft.entity.merchant.villager.VillagerEntity;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.wobr.potion.NetherAvoiderHiddenPotion;
 import net.mcreator.wobr.entity.WindSpiritEntity;
 import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
-import java.util.Collection;
 
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
@@ -74,25 +68,14 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((WobrModVariables.WorldVariables.get(world).Avoider_Reapering) == (false)) || (new Object() {
-			boolean check(Entity _entity) {
-				if (_entity instanceof LivingEntity) {
-					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == NetherAvoiderHiddenPotion.potion)
-							return true;
-					}
-				}
-				return false;
-			}
-		}.check(entity)))) {
+		if (((WobrModVariables.WorldVariables.get(world).Avoider_Reapering) == (false))) {
 			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || (((((entity instanceof SlimeEntity)
 					|| (entity instanceof BlazeEntity)) || ((entity instanceof GhastEntity) || (entity instanceof MagmaCubeEntity)))
-					|| ((entity instanceof WitherSkeletonEntity) || (entity instanceof HuskEntity)))
+					|| ((entity instanceof WitchEntity) || (entity instanceof WitherSkeletonEntity)))
 					|| ((((entity instanceof BanditEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
 							|| ((entity instanceof SkeletonEntity) || (entity instanceof SpiderEntity)))
 							|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity))) || (entity instanceof CreeperEntity))
-									|| ((entity instanceof WitchEntity) || (entity instanceof EndermanEntity))))))
+									|| ((entity instanceof EndermiteEntity) || (entity instanceof EndermanEntity))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -103,8 +86,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else {
-			if (((!(((entity instanceof PlayerEntity) || (entity instanceof ServerPlayerEntity)) || (entity instanceof VillagerEntity)))
-					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
+			if (((entity instanceof MobEntity) && ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(

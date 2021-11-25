@@ -86,18 +86,6 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=drowned,distance=..50,tag=!Named]");
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=stray,distance=..50,tag=!Named]");
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"kill @e[team=avoider_killable,distance=..50,tag=!Named]");
 				}
 			} else {
@@ -140,18 +128,6 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 							((LivingEntity) entityiterator)
 									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
 					}
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=drowned,distance=..50,tag=!Named]");
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=stray,distance=..50,tag=!Named]");
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
@@ -204,18 +180,6 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=drowned,distance=..50,tag=!Named]");
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=stray,distance=..50,tag=!Named]");
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"kill @e[team=avoider_killable,distance=..50,tag=!Named]");
 				}
 			} else {
@@ -237,23 +201,19 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AvoiderBlockBlock.block.getDefaultState()
 				.getBlock())) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"effect give @e[distance=..50] wobr:nether_avoider_hidden 3 true");
-			}
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"kill @e[type=drowned,distance=..50,tag=!Named]");
-			}
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"kill @e[type=stray,distance=..50,tag=!Named]");
+			{
+				List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+						new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).collect(Collectors.toList());
+				for (Entity entityiterator : _entfound) {
+					if (entityiterator instanceof LivingEntity)
+						((LivingEntity) entityiterator)
+								.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+				}
 			}
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
