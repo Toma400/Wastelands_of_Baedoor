@@ -8,11 +8,14 @@ import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotion;
 import net.mcreator.wobr.block.NetherAvoiderBlock;
 import net.mcreator.wobr.block.LapisAvoiderActiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderActiveBlock;
@@ -65,11 +68,19 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					return false;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
+				{
+					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).collect(Collectors.toList());
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof LivingEntity)
+							((LivingEntity) entityiterator)
+									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
@@ -116,11 +127,19 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					return false;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
+				{
+					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).collect(Collectors.toList());
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof LivingEntity)
+							((LivingEntity) entityiterator)
+									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
@@ -167,11 +186,19 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					return false;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:nether_avoider_pulsating 3 true");
+				{
+					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
+							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).collect(Collectors.toList());
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof LivingEntity)
+							((LivingEntity) entityiterator)
+									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(

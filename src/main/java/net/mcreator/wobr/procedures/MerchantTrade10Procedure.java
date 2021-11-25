@@ -81,7 +81,7 @@ public class MerchantTrade10Procedure extends WobrModElements.ModElement {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"give @a[distance=..1] cavesandcliffs:copper_ingot 6");
+							"give @a[distance=..1] cavesandcliffs:copper_ingot 12");
 				}
 			}
 		}

@@ -42,6 +42,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.google.common.collect.ImmutableMap;
+
 @WobrModElements.ModElement.Tag
 public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 	public static HashMap guistate = new HashMap();
@@ -146,8 +148,10 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 80, this.guiTop + 105, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
+			if (GunMerchantTrade6Procedure.executeProcedure(ImmutableMap.of("entity", entity, "world", world))) {
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
+				this.blit(this.guiLeft + 80, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
+			}
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/ancient_debris.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/merchant_trading_background_price.png"));

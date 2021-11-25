@@ -26,16 +26,16 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 		super(instance, 1925);
 	}
 
-	public static void executeProcedure(Map<String, Object> dependencies) {
+	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				System.err.println("Failed to load dependency entity for procedure GunMerchantTrade6!");
-			return;
+			return false;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				System.err.println("Failed to load dependency world for procedure GunMerchantTrade6!");
-			return;
+			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
@@ -121,5 +121,17 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 				}
 			}
 		}
+		return (!(new Object() {
+			boolean check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == MerchantBlockElytraPotion.potion)
+							return true;
+					}
+				}
+				return false;
+			}
+		}.check(entity)));
 	}
 }

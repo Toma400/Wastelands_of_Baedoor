@@ -272,6 +272,9 @@
         "data": {
           "image": "elytra.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "GunMerchantTrade6"
+          },
           "name": "elytra.png",
           "x": 219,
           "y": 181

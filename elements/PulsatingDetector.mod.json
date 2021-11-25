@@ -26,7 +26,7 @@
     "specialInfo": [
       "Detector that will glow if it recognises pulsating in the area"
     ],
-    "hasGlow": false,
+    "hasGlow": true,
     "glowCondition": {
       "name": "PulsatingDetectorUse"
     },

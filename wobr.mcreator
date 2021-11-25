@@ -20759,6 +20759,7 @@
       "ids": {},
       "registry_name": "merchant_trade_5",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "entity",
@@ -20852,6 +20853,7 @@
       "ids": {},
       "registry_name": "merchant_trade_7",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "entity",
@@ -20885,6 +20887,7 @@
       "ids": {},
       "registry_name": "merchant_trade_8",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "entity",
@@ -21095,6 +21098,7 @@
       "ids": {},
       "registry_name": "gun_merchant_trade_6",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "entity",
@@ -22536,6 +22540,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pulsating_detector_recipe"
+    },
+    {
+      "name": "ConfigWriter",
+      "type": "procedure",
+      "sortid": 2023,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config_writer",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [

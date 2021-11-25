@@ -46,6 +46,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.google.common.collect.ImmutableMap;
+
 @WobrModElements.ModElement.Tag
 public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 	public static HashMap guistate = new HashMap();
@@ -136,18 +138,24 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 0, this.guiTop + 63, 0, 0, 150, 150, 150, 150);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glistering_ash.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
+			if (MerchantTrade5Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
+				this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
+			}
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glowing_obsidian.png"));
 			this.blit(this.guiLeft + 80, this.guiTop + 104, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32sand_veil.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32vulc_veil.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 104, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/heart_of_the_sea.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 152, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/shulker_shell.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
+			if (MerchantTrade8Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/heart_of_the_sea.png"));
+				this.blit(this.guiLeft + 80, this.guiTop + 152, 0, 0, 16, 16, 16, 16);
+			}
+			if (MerchantTrade7Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/shulker_shell.png"));
+				this.blit(this.guiLeft + 80, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
+			}
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_gold_ingot_2.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 152, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/card_spade_ace_winfleton.png"));
@@ -187,7 +195,7 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.font.drawString("1(2*)", 113, 131, -4356062);
 			this.font.drawString("1(1*)", 113, 155, -4356062);
 			this.font.drawString("1", 123, 179, -4356062);
-			this.font.drawString("6", 54, 179, -4356062);
+			this.font.drawString("12", 52, 179, -4356062);
 			this.font.drawString("x 1", 40, 25, -4356062);
 			this.font.drawString("9 x", 87, 25, -4356062);
 		}
