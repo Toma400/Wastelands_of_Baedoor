@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "lapis_crystal"
+        "0": "lapis_tower"
       },
       "name": "default"
     }

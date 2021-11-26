@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "wobr:blocks/dark_lapis_crystal",
-    "up": "wobr:blocks/dark_lapis_crystal",
+    "down": "wobr:blocks/lapis_tower",
+    "up": "wobr:blocks/lapis_tower",
     "north": "wobr:blocks/lapis_avoider_inactive_2",
     "east": "wobr:blocks/lapis_avoider_inactive_2",
     "south": "wobr:blocks/lapis_avoider_inactive_2",
     "west": "wobr:blocks/lapis_avoider_inactive_2",
-    "particle": "wobr:blocks/dark_lapis_crystal"
+    "particle": "wobr:blocks/lapis_tower"
   }
 }

@@ -4138,44 +4138,6 @@
       "registry_name": "lapis_crystal"
     },
     {
-      "name": "InvertedLapisCrystal",
-      "type": "block",
-      "sortid": 1004,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "inverted_lapis_crystal"
-    },
-    {
-      "name": "LapisCrystalSwitcher",
-      "type": "procedure",
-      "sortid": 1005,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lapis_crystal_switcher",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "LapisCrystalRecipe",
       "type": "recipe",
       "sortid": 1006,
@@ -4183,42 +4145,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lapis_crystal_recipe"
-    },
-    {
-      "name": "DarkLapisCrystal",
-      "type": "block",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_crystal"
-    },
-    {
-      "name": "InvertedDarkLapisCrystal",
-      "type": "block",
-      "sortid": 1007,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "inverted_dark_lapis_crystal"
-    },
-    {
-      "name": "DarkLapisCrystalRecipe",
-      "type": "recipe",
-      "sortid": 1008,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_crystal_recipe"
-    },
-    {
-      "name": "DarkLapisCrystalRecipeAlternate",
-      "type": "recipe",
-      "sortid": 1009,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_crystal_recipe_alternate"
     },
     {
       "name": "LapisLamp",
@@ -4230,15 +4156,6 @@
       "registry_name": "lapis_lamp"
     },
     {
-      "name": "DarkLapisLamp",
-      "type": "block",
-      "sortid": 205,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_lamp"
-    },
-    {
       "name": "LapisLampRecipe",
       "type": "recipe",
       "sortid": 1010,
@@ -4246,15 +4163,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lapis_lamp_recipe"
-    },
-    {
-      "name": "DarkLapisLampRecipe",
-      "type": "recipe",
-      "sortid": 1011,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_lamp_recipe"
     },
     {
       "name": "ChiseledRedNetherBrick",
@@ -8439,15 +8347,6 @@
       "registry_name": "lapis_tower"
     },
     {
-      "name": "DarkLapisTower",
-      "type": "block",
-      "sortid": 219,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_tower"
-    },
-    {
       "name": "LapisTowerRecipe",
       "type": "recipe",
       "sortid": 1243,
@@ -8455,15 +8354,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lapis_tower_recipe"
-    },
-    {
-      "name": "DarkLapisTowerRecipe",
-      "type": "recipe",
-      "sortid": 1244,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_lapis_tower_recipe"
     },
     {
       "name": "PlayerMessagePotion",
@@ -15447,15 +15337,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lapis_avoider_recipe"
-    },
-    {
-      "name": "LapisAvoiderRecipe2",
-      "type": "recipe",
-      "sortid": 1647,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lapis_avoider_recipe_2"
     },
     {
       "name": "CrimsonWoodenSlab",
@@ -23202,7 +23083,6 @@
       "effect.single_reload_type": "Single Reload Type",
       "block.wobr.stripped_byg_fir_wooden_slab": "Stripped Ether Wooden Slab",
       "advancements.ormath_betrayer.descr": "They invited you in peace, and you didn\u0027t hesitate to use that for your benefit, don\u0027t you?",
-      "block.wobr.dark_lapis_lamp": "Dark Lapis Lamp",
       "item.wobr.iron_key": "¯elazny klucz",
       "block.wobr.chiseled_stripped_spruce_wooden_slab": "Chiseled Stripped Spruce Wooden Slab",
       "item.wobr.bandit_despawning_spawn_egg": "Bandit Spawn Egg",
@@ -23221,7 +23101,6 @@
       "block.wobr.jungle_framed_lime_stained_glass": "Jungle Framed Lime Stained Glass",
       "block.wobr.orange_horizontal_stained_glass_pane": "Orange Horizontal Stained Glass",
       "item.wobr.bandit_spawn_egg": "Bandit Spawn Egg",
-      "block.wobr.dark_lapis_crystal": "Dark Lapis Crystal",
       "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "item.wobr.javelin_sack_stone": "Javelin Sack (with Stone Javelins)",
       "key.mcreator.ammunition_key": "Ammunition Check Key",
@@ -23544,7 +23423,6 @@
       "item.wobr.wind_projectile_item": "Wind Projectile Item",
       "item.wobr.javelin_sack": "Javelin Sack",
       "entity.wobr.spawn_entity_mage_airship": "[Spawn Entity] Military Airship",
-      "block.wobr.inverted_dark_lapis_crystal": "Inverted Dark Lapis Crystal",
       "item.wobr.rifle_clip_6": "6-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_cika_wood": "Chiseled Cypress Wood",
       "item.wobr.rifle_clip_3": "3-Rounded Rifle Clip",
@@ -23580,7 +23458,6 @@
       "block.wobr.bamboo_fence_gate": "Bamboo Fence Gate",
       "block.wobr.oak_framed_green_stained_glass": "Oak Framed Green Stained Glass",
       "block.wobr.oak_framed_red_stained_glass": "Oak Framed Red Stained Glass",
-      "block.wobr.dark_lapis_tower": "Dark Lapis Tower",
       "item.minecraft.splash_potion.effect.warhammer_nausea_triggered": "Splash Warhammer Nausea Walk",
       "block.wobr.pillar_byg_cika": "Cypress Pillar",
       "block.wobr.chiseled_byg_mahogany_wood": "Chiseled Mangrove Wood",
@@ -23944,7 +23821,6 @@
       "item.minecraft.tipped_arrow.effect.rodofthe_winds_glow": "Arrow of Rod ofthe Winds Glow",
       "block.wobr.avoider_block": "Avoider Block",
       "block.wobr.chiseled_cypress_wooden_slab": "Chiseled Nutwood Wooden Slab",
-      "block.wobr.inverted_lapis_crystal": "Inverted Lapis Crystal",
       "block.wobr.cut_brown_shroomed_wood": "Cut Brown Shroomwood",
       "subtitles.ormath_hunter_death": "",
       "block.wobr.byg_ebony_wooden_slab": "Deadwood Wooden Slab",
@@ -24259,7 +24135,6 @@
       "effect.single_reload_type": "Single Reload Type",
       "block.wobr.stripped_byg_fir_wooden_slab": "Stripped Fir Wooden Slab",
       "advancements.ormath_betrayer.descr": "They invited you in peace, and you didn\u0027t hesitate to use that for your benefit, don\u0027t you?",
-      "block.wobr.dark_lapis_lamp": "Dark Lapis Lamp",
       "item.wobr.iron_key": "Iron Key",
       "block.wobr.chiseled_stripped_spruce_wooden_slab": "Chiseled Stripped Spruce Wooden Slab",
       "item.wobr.bandit_despawning_spawn_egg": "Bandit Spawn Egg",
@@ -24278,7 +24153,6 @@
       "block.wobr.jungle_framed_lime_stained_glass": "Jungle Framed Lime Stained Glass",
       "block.wobr.orange_horizontal_stained_glass_pane": "Orange Horizontal Stained Glass",
       "item.wobr.bandit_spawn_egg": "Bandit Spawn Egg",
-      "block.wobr.dark_lapis_crystal": "Dark Lapis Crystal",
       "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "item.wobr.javelin_sack_stone": "Javelin Sack (with Stone Javelins)",
       "key.mcreator.ammunition_key": "Ammunition Check Key",
@@ -24601,7 +24475,6 @@
       "item.wobr.wind_projectile_item": "Wind Projectile Item",
       "item.wobr.javelin_sack": "Javelin Sack",
       "entity.wobr.spawn_entity_mage_airship": "[Spawn Entity] Mage Airship",
-      "block.wobr.inverted_dark_lapis_crystal": "Inverted Dark Lapis Crystal",
       "item.wobr.rifle_clip_6": "6-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_cika_wood": "Chiseled Cika Wood",
       "item.wobr.rifle_clip_3": "3-Rounded Rifle Clip",
@@ -24637,7 +24510,6 @@
       "block.wobr.bamboo_fence_gate": "Bamboo Fence Gate",
       "block.wobr.oak_framed_green_stained_glass": "Oak Framed Green Stained Glass",
       "block.wobr.oak_framed_red_stained_glass": "Oak Framed Red Stained Glass",
-      "block.wobr.dark_lapis_tower": "Dark Lapis Tower",
       "item.minecraft.splash_potion.effect.warhammer_nausea_triggered": "Splash Warhammer Nausea Walk",
       "block.wobr.pillar_byg_cika": "Cika Pillar",
       "block.wobr.chiseled_byg_mahogany_wood": "Chiseled Mahogany Wood",
@@ -25001,7 +24873,6 @@
       "item.minecraft.tipped_arrow.effect.rodofthe_winds_glow": "Arrow of Rod ofthe Winds Glow",
       "block.wobr.avoider_block": "Avoider Block",
       "block.wobr.chiseled_cypress_wooden_slab": "Chiseled Cypress Wooden Slab",
-      "block.wobr.inverted_lapis_crystal": "Inverted Lapis Crystal",
       "block.wobr.cut_brown_shroomed_wood": "Cut Brown Shroomwood",
       "subtitles.ormath_hunter_death": "",
       "block.wobr.byg_ebony_wooden_slab": "Ebony Wooden Slab",

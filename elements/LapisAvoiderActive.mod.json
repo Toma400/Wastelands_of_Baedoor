@@ -2,8 +2,8 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "dark_lapis_crystal_alternate",
-    "textureTop": "dark_lapis_crystal_alternate",
+    "texture": "lapis_avoider_top",
+    "textureTop": "lapis_avoider_top",
     "textureLeft": "lapis_avoider_2",
     "textureFront": "lapis_avoider_2",
     "textureRight": "lapis_avoider_2",

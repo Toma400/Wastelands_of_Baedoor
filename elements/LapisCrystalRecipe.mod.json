@@ -10,31 +10,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.GLOWSTONE_DUST"
       },
       {
         "value": "Items.DYE#4"
       },
       {
-        "value": ""
+        "value": "Items.GLOWSTONE_DUST"
       },
       {
         "value": "Items.DYE#4"
       },
       {
-        "value": "Blocks.GLOWSTONE"
+        "value": "Blocks.LAPIS_BLOCK"
       },
       {
         "value": "Items.DYE#4"
       },
       {
-        "value": ""
+        "value": "Items.GLOWSTONE_DUST"
       },
       {
         "value": "Items.DYE#4"
       },
       {
-        "value": ""
+        "value": "Items.GLOWSTONE_DUST"
       }
     ],
     "recipeReturnStack": {
