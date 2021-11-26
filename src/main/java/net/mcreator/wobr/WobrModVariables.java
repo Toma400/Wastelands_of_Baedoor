@@ -222,7 +222,6 @@ public class WobrModVariables {
 			nbt.putDouble("Ormath_Reputation", instance.Ormath_Reputation);
 			nbt.putDouble("Coins", instance.Coins);
 			nbt.putDouble("Emeralds", instance.Emeralds);
-			nbt.putBoolean("Under_Avoider", instance.Under_Avoider);
 			return nbt;
 		}
 
@@ -236,7 +235,6 @@ public class WobrModVariables {
 			instance.Ormath_Reputation = nbt.getDouble("Ormath_Reputation");
 			instance.Coins = nbt.getDouble("Coins");
 			instance.Emeralds = nbt.getDouble("Emeralds");
-			instance.Under_Avoider = nbt.getBoolean("Under_Avoider");
 		}
 	}
 
@@ -248,7 +246,6 @@ public class WobrModVariables {
 		public double Ormath_Reputation = 0;
 		public double Coins = 0;
 		public double Emeralds = 0;
-		public boolean Under_Avoider = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				WobrMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -287,7 +284,6 @@ public class WobrModVariables {
 		clone.Ormath_Reputation = original.Ormath_Reputation;
 		clone.Coins = original.Coins;
 		clone.Emeralds = original.Emeralds;
-		clone.Under_Avoider = original.Under_Avoider;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -319,7 +315,6 @@ public class WobrModVariables {
 					variables.Ormath_Reputation = message.data.Ormath_Reputation;
 					variables.Coins = message.data.Coins;
 					variables.Emeralds = message.data.Emeralds;
-					variables.Under_Avoider = message.data.Under_Avoider;
 				}
 			});
 			context.setPacketHandled(true);

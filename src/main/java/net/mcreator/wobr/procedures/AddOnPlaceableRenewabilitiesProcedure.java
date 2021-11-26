@@ -117,13 +117,15 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == HardenedBlackSandBlock.block.getDefaultState()
 					.getBlock())) {
-				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
+				if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
 						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
 								.getBlock()))
 						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA.getDefaultState()
 								.getBlock())
 								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-										.getBlock())))) {
+										.getBlock())))
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.OBSIDIAN.getDefaultState()
+								.getBlock()))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_deepslate"));

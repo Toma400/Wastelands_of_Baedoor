@@ -25,7 +25,7 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.entity.WindSpiritEntity;
-import net.mcreator.wobr.entity.BanditEntity;
+import net.mcreator.wobr.entity.BanditDespawningEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 
@@ -72,7 +72,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || (((((entity instanceof SlimeEntity)
 					|| (entity instanceof BlazeEntity)) || ((entity instanceof GhastEntity) || (entity instanceof MagmaCubeEntity)))
 					|| ((entity instanceof WitchEntity) || (entity instanceof WitherSkeletonEntity)))
-					|| ((((entity instanceof BanditEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
+					|| ((((entity instanceof BanditDespawningEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
 							|| ((entity instanceof SkeletonEntity) || (entity instanceof SpiderEntity)))
 							|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity))) || (entity instanceof CreeperEntity))
 									|| ((entity instanceof EndermiteEntity) || (entity instanceof EndermanEntity))))))

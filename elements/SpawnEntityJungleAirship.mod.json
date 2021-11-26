@@ -1,0 +1,122 @@
+{
+  "_fv": 13,
+  "_type": "mob",
+  "definition": {
+    "mobName": "[Spawn Entity] Jungle Airship",
+    "mobLabel": "",
+    "mobModelName": "Modelspawn_entity",
+    "mobModelTexture": "spawn_block_airship_bamboo.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 1.0,
+    "modelHeight": 1.0,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -10066432,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -13865970,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Creature",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 0,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.0,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 999,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
+    "immuneToPlayer": true,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": ""
+    },
+    "deathSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "whenMobDies": {
+      "name": "SpawnEntitiesUse"
+    },
+    "onMobTickUpdate": {
+      "name": "SpawnEntitiesKill"
+    },
+    "hasAI": false,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false
+  }
+}

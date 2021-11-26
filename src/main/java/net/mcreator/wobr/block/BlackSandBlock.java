@@ -64,7 +64,7 @@ public class BlackSandBlock extends WobrModElements.ModElement {
 
 		@Override
 		public int tickRate(IWorldReader world) {
-			return 40;
+			return 20;
 		}
 
 		@Override

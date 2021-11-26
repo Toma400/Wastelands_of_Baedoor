@@ -49,7 +49,7 @@
     "material": {
       "value": "SAND"
     },
-    "tickRate": 40,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",

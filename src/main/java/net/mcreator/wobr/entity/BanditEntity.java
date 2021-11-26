@@ -12,12 +12,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -31,11 +28,9 @@ import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRangedAttackMob;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -43,14 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.VillagerModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.wobr.procedures.AvoiderTeamAddProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.item.GoldenShotRevolverItem;
 import net.mcreator.wobr.item.BulletRangedItem;
 import net.mcreator.wobr.WobrModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
 public class BanditEntity extends WobrModElements.ModElement {
@@ -141,22 +132,6 @@ public class BanditEntity extends WobrModElements.ModElement {
 			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public ILivingEntityData onInitialSpawn(IWorld world, DifficultyInstance difficulty, SpawnReason reason, ILivingEntityData livingdata,
-				CompoundNBT tag) {
-			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				AvoiderTeamAddProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
 		}
 
 		@Override
