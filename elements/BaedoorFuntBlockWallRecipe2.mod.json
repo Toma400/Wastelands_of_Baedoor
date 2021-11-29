@@ -5,7 +5,7 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 6,
     "group": "baedoor_gold_variants",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -19,13 +19,13 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
       },
       {
         "value": "CUSTOM:BaedoorFuntBlockPolished"
       },
       {
-        "value": ""
+        "value": "CUSTOM:BaedoorFuntBlockPolished"
       },
       {
         "value": "CUSTOM:BaedoorFuntBlockPolished"

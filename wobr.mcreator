@@ -22387,6 +22387,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "airship_jungle"
+    },
+    {
+      "name": "ConfigManager",
+      "type": "procedure",
+      "sortid": 2036,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config_manager",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [

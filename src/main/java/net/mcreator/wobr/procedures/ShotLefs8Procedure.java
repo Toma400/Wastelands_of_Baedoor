@@ -115,11 +115,11 @@ public class ShotLefs8Procedure extends WobrModElements.ModElement {
 				}
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:pepper_box_shot")),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:short_revolver_shot")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1);
 				} else {
 					world.getWorld().playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:pepper_box_shot")),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:short_revolver_shot")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
 			} else {
