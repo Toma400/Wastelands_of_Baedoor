@@ -65,15 +65,6 @@
       "registry_name": "thrown_dagger_projectile"
     },
     {
-      "name": "ThrownDagger",
-      "type": "rangeditem",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "thrown_dagger"
-    },
-    {
       "name": "ThrownDaggerRecipe",
       "type": "recipe",
       "sortid": 783,
@@ -1118,15 +1109,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mushroom_poison"
-    },
-    {
-      "name": "PoisonedThrownDagger",
-      "type": "rangeditem",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "poisoned_thrown_dagger"
     },
     {
       "name": "PoisonedThrownDaggerRecipe",
@@ -2623,15 +2605,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "large_bullet"
-    },
-    {
-      "name": "BulletRanged",
-      "type": "rangeditem",
-      "sortid": 916,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bullet_ranged"
     },
     {
       "name": "ReloadElephantGun",
@@ -22525,6 +22498,33 @@
         ]
       },
       "path": "~/Configured"
+    },
+    {
+      "name": "ThrownDagger",
+      "type": "rangeditem",
+      "sortid": 2079,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thrown_dagger"
+    },
+    {
+      "name": "PoisonedThrownDagger",
+      "type": "rangeditem",
+      "sortid": 2080,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poisoned_thrown_dagger"
+    },
+    {
+      "name": "BulletRanged",
+      "type": "rangeditem",
+      "sortid": 2081,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet_ranged"
     }
   ],
   "variable_elements": [
