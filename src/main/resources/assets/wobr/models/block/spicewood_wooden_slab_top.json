@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "wobr:blocks/regular_addon_spicewood",
-    "top": "wobr:blocks/regular_addon_spicewood",
-    "side": "wobr:blocks/regular_addon_spicewood"
-  }
-}

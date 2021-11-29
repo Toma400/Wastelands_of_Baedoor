@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_shrm_purple",
-    "top": "wobr:blocks/chisel_shrm_purple",
-    "side": "wobr:blocks/regular_addon_purple_stem"
-  }
-}

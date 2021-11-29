@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_palo_verde",
-    "top": "wobr:blocks/regular_byg_palo_verde",
-    "side": "wobr:blocks/regular_byg_palo_verde"
-  }
-}

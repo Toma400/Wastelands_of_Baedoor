@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_byg_ether",
-    "top": "wobr:blocks/chisel_byg_ether",
-    "side": "wobr:blocks/regular_byg_ether"
-  }
-}

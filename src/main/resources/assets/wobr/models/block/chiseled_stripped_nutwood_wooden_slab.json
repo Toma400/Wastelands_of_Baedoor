@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_nutwood_strip",
-    "top": "wobr:blocks/chisel_nutwood_strip",
-    "side": "wobr:blocks/regular_addon_nutwood_strip"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_byg_maple_strip",
-    "top": "wobr:blocks/chisel_byg_maple_strip",
-    "side": "wobr:blocks/regular_byg_maple_strip"
-  }
-}

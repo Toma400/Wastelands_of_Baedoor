@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/regular_addon_purple_stem",
-    "top": "wobr:blocks/regular_addon_purple_stem",
-    "side": "wobr:blocks/regular_addon_purple_stem"
-  }
-}

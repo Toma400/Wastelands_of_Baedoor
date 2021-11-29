@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_addon_nutwood",
-    "top": "wobr:blocks/regular_addon_nutwood",
-    "side": "wobr:blocks/regular_addon_nutwood"
-  }
-}

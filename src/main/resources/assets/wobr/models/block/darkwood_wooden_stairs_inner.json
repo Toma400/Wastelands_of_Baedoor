@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_darkwood",
-    "top": "wobr:blocks/regular_darkwood",
-    "side": "wobr:blocks/regular_darkwood"
-  }
-}

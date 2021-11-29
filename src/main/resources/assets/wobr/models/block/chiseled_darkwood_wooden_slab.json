@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_darkwood_2",
-    "top": "wobr:blocks/chisel_darkwood_2",
-    "side": "wobr:blocks/regular_darkwood"
-  }
-}

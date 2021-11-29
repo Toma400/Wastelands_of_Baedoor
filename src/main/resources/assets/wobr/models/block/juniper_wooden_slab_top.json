@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "wobr:blocks/regular_addon_juniper",
-    "top": "wobr:blocks/regular_addon_juniper",
-    "side": "wobr:blocks/regular_addon_juniper"
-  }
-}

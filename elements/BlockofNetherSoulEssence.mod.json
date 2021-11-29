@@ -25,11 +25,9 @@
     "My": 1.0,
     "Mz": 1.0,
     "name": "Block of Nether Soul Essence",
-    "specialInfo": [
-      "Who cramped us that ridiculous way? We hope, only, that no fire will burn us."
-    ],
-    "hardness": 0.3,
-    "resistance": 0.3,
+    "specialInfo": [],
+    "hardness": 0.5,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -47,9 +45,9 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "SAND"
+      "value": "EARTH"
     },
-    "tickRate": 40,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -94,15 +92,13 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "SoulSoilRenewability"
-    },
-    "onEntityWalksOn": {
-      "name": "WalkingOnSouls"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_jacaranda",
-    "top": "wobr:blocks/regular_byg_jacaranda",
-    "side": "wobr:blocks/regular_byg_jacaranda"
-  }
-}

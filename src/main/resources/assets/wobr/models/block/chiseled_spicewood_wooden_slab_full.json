@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_spicewood",
-    "top": "wobr:blocks/chisel_spicewood",
-    "side": "wobr:blocks/regular_addon_spicewood"
-  }
-}
