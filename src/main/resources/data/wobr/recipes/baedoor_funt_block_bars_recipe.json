@@ -2,25 +2,21 @@
   "group": "baedoor_gold_bars",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01",
-    "23"
+    "012"
   ],
   "key": {
     "0": {
-      "item": "wobr:baedoor_funt_block_polished"
+      "item": "wobr:baedoor_gold_ingot"
     },
     "1": {
-      "item": "wobr:baedoor_funt_block_polished"
+      "item": "wobr:baedoor_gold_ingot"
     },
     "2": {
-      "item": "wobr:baedoor_funt_block_polished"
-    },
-    "3": {
-      "item": "wobr:baedoor_funt_block_polished"
+      "item": "wobr:baedoor_gold_ingot"
     }
   },
   "result": {
     "item": "wobr:baedoor_funt_block_bars",
-    "count": 8
+    "count": 1
   }
 }

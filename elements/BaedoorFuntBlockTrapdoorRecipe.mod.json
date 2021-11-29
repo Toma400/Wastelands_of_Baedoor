@@ -5,7 +5,7 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 2,
     "group": "baedoor_gold_trapdoor",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -19,22 +19,22 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       },
       {
-        "value": "CUSTOM:BaedoorFuntBlockPolished"
+        "value": "CUSTOM:BaedoorGoldIngot"
       }
     ],
     "recipeReturnStack": {

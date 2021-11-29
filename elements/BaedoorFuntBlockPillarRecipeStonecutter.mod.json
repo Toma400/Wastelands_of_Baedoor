@@ -6,7 +6,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "",
+    "group": "baedoor_gold_pillar",
     "recipeShapeless": false,
     "stoneCuttingInputStack": {
       "value": "CUSTOM:BaedoorFuntBlockPolished"
