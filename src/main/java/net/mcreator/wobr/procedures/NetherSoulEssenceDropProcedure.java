@@ -14,6 +14,7 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.mcreator.wobr.item.NetherSoulEssenceItem;
+import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -58,34 +59,36 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getDimension().getType().getId()) == (-1))) {
-			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
-				if (((8 * ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
-						+ 1)) >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
-						entityToSpawn.setPickupDelay((int) 10);
-						world.addEntity(entityToSpawn);
-					}
-					if (((11 * (EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-							((sourceentity instanceof LivingEntity)
-									? ((LivingEntity) sourceentity).getHeldItemMainhand()
-									: ItemStack.EMPTY)))) >= (Math.random() * 100))) {
+		if ((WobrModVariables.MapVariables.get(world).KF_Drop_Essence == (true))) {
+			if (((world.getDimension().getType().getId()) == (-1))) {
+				if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
+					if (((8 * ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+							((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
+							+ 1)) >= (Math.random() * 100))) {
 						if (!world.getWorld().isRemote) {
 							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
 							entityToSpawn.setPickupDelay((int) 10);
 							world.addEntity(entityToSpawn);
 						}
+						if (((11 * (EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+								((sourceentity instanceof LivingEntity)
+										? ((LivingEntity) sourceentity).getHeldItemMainhand()
+										: ItemStack.EMPTY)))) >= (Math.random() * 100))) {
+							if (!world.getWorld().isRemote) {
+								ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
+								entityToSpawn.setPickupDelay((int) 10);
+								world.addEntity(entityToSpawn);
+							}
+						}
 					}
-				}
-			} else {
-				if ((8 >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
-						entityToSpawn.setPickupDelay((int) 10);
-						world.addEntity(entityToSpawn);
+				} else {
+					if ((8 >= (Math.random() * 100))) {
+						if (!world.getWorld().isRemote) {
+							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
 					}
 				}
 			}

@@ -27,9 +27,12 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
+import net.mcreator.wobr.procedures.AirshipBanditConditionProcedure;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class AirshipBanditStructure extends WobrModElements.ModElement {
@@ -57,6 +60,8 @@ public class AirshipBanditStructure extends WobrModElements.ModElement {
 					int x = spawnTo.getX();
 					int y = spawnTo.getY();
 					int z = spawnTo.getZ();
+					if (!AirshipBanditConditionProcedure.executeProcedure(ImmutableMap.of("world", world)))
+						continue;
 					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("wobr", "spawn_entity_airship_bandit"));
 					if (template == null)

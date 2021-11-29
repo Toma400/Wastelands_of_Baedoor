@@ -17,6 +17,7 @@ import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.wobr.item.BulletRangedItem;
+import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -67,105 +68,50 @@ public class ShotRustyReaperProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((((itemstack).getOrCreateTag().getDouble("Ammo")) > 0) || ((new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayerEntity) {
-					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
-				} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
-					NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-							.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
-					return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+		if ((WobrModVariables.MapVariables.get(world).KF_Wp_Gun_Enabled == (true))) {
+			if (((((itemstack).getOrCreateTag().getDouble("Ammo")) > 0) || ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+					}
+					return false;
 				}
-				return false;
-			}
-		}.checkGamemode(entity)) == (true)))) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				GunStatisticsProcedure.executeProcedure($_dependencies);
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FirearmExperienceProcedure.executeProcedure($_dependencies);
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FirearmExperience2Procedure.executeProcedure($_dependencies);
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				FirearmJammingProcedure.executeProcedure($_dependencies);
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FastDrawUseProcedure.executeProcedure($_dependencies);
-			}
-			if ((((itemstack).getOrCreateTag().getBoolean("jammed")) == (false))) {
-				if ((((itemstack).getOrCreateTag().getDouble("Shoot_Mode")) == 1)) {
-					(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 1));
-					if (entity instanceof LivingEntity) {
-						Entity _ent = entity;
-						if (!_ent.world.isRemote) {
-							BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
-						}
-					}
-					if (!world.getWorld().isRemote) {
-						world.playSound(null, new BlockPos((int) x, (int) y, (int) z), (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-								.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
-					} else {
-						world.getWorld().playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-										.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
-								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-					}
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						$_dependencies.put("itemstack", itemstack);
-						ShotDelay20tProcedure.executeProcedure($_dependencies);
-					}
-					{
-						ItemStack _ist = (itemstack);
-						if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-							_ist.shrink(1);
-							_ist.setDamage(0);
-						}
-					}
-				} else {
-					if ((((itemstack).getOrCreateTag().getDouble("Ammo")) > 1)) {
-						(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 2));
-						if (entity instanceof LivingEntity) {
-							Entity _ent = entity;
-							if (!_ent.world.isRemote) {
-								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
-							}
-						}
-						if (entity instanceof LivingEntity) {
-							Entity _ent = entity;
-							if (!_ent.world.isRemote) {
-								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
-							}
-						}
-						if (!world.getWorld().isRemote) {
-							world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-											.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
-									SoundCategory.NEUTRAL, (float) 1, (float) 1);
-						} else {
-							world.getWorld().playSound(x, y, z,
-									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-											.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
-									SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-						}
-					} else if ((((itemstack).getOrCreateTag().getDouble("Ammo")) == 1)) {
+			}.checkGamemode(entity)) == (true)))) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					GunStatisticsProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					FirearmExperienceProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					FirearmExperience2Procedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					FirearmJammingProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					FastDrawUseProcedure.executeProcedure($_dependencies);
+				}
+				if ((((itemstack).getOrCreateTag().getBoolean("jammed")) == (false))) {
+					if ((((itemstack).getOrCreateTag().getDouble("Shoot_Mode")) == 1)) {
 						(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof LivingEntity) {
 							Entity _ent = entity;
@@ -185,16 +131,109 @@ public class ShotRustyReaperProcedure extends WobrModElements.ModElement {
 									SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 						}
 						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("entity", entity);
+							$_dependencies.put("itemstack", itemstack);
+							ShotDelay20tProcedure.executeProcedure($_dependencies);
+						}
+						{
 							ItemStack _ist = (itemstack);
 							if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
 								_ist.shrink(1);
 								_ist.setDamage(0);
 							}
 						}
+					} else {
+						if ((((itemstack).getOrCreateTag().getDouble("Ammo")) > 1)) {
+							(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 2));
+							if (entity instanceof LivingEntity) {
+								Entity _ent = entity;
+								if (!_ent.world.isRemote) {
+									BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
+								}
+							}
+							if (entity instanceof LivingEntity) {
+								Entity _ent = entity;
+								if (!_ent.world.isRemote) {
+									BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
+								}
+							}
+							if (!world.getWorld().isRemote) {
+								world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+												.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
+										SoundCategory.NEUTRAL, (float) 1, (float) 1);
+							} else {
+								world.getWorld().playSound(x, y, z,
+										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+												.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
+										SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+							}
+						} else if ((((itemstack).getOrCreateTag().getDouble("Ammo")) == 1)) {
+							(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 1));
+							if (entity instanceof LivingEntity) {
+								Entity _ent = entity;
+								if (!_ent.world.isRemote) {
+									BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 3, (int) 0);
+								}
+							}
+							if (!world.getWorld().isRemote) {
+								world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+												.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
+										SoundCategory.NEUTRAL, (float) 1, (float) 1);
+							} else {
+								world.getWorld().playSound(x, y, z,
+										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+												.getValue(new ResourceLocation("wobr:crocodile_shotgun_shot")),
+										SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+							}
+							{
+								ItemStack _ist = (itemstack);
+								if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+									_ist.shrink(1);
+									_ist.setDamage(0);
+								}
+							}
+						}
+					}
+				} else {
+					(itemstack).getOrCreateTag().putBoolean("jammed", (false));
+					if (!world.getWorld().isRemote) {
+						world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						world.getWorld().playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("itemstack", itemstack);
+						ShotDelay20tProcedure.executeProcedure($_dependencies);
 					}
 				}
+				{
+					ItemStack _ist = (itemstack);
+					if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					FirearmAccuracyProcedure.executeProcedure($_dependencies);
+				}
 			} else {
-				(itemstack).getOrCreateTag().putBoolean("jammed", (false));
+				entity.getPersistentData().putString("Message", "             Shotgun out of bullets!");
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					MessageManagerProcedure.executeProcedure($_dependencies);
+				}
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
@@ -204,40 +243,6 @@ public class ShotRustyReaperProcedure extends WobrModElements.ModElement {
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					ShotDelay20tProcedure.executeProcedure($_dependencies);
-				}
-			}
-			{
-				ItemStack _ist = (itemstack);
-				if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-					_ist.shrink(1);
-					_ist.setDamage(0);
-				}
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FirearmAccuracyProcedure.executeProcedure($_dependencies);
-			}
-		} else {
-			entity.getPersistentData().putString("Message", "             Shotgun out of bullets!");
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				MessageManagerProcedure.executeProcedure($_dependencies);
-			}
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			} else {
-				world.getWorld().playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:failed_shot")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		}
 	}

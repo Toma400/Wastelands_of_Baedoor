@@ -11,11 +11,11 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
@@ -71,10 +71,10 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 							|| (EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))))
-					|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity)))
-							&& (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (true)))
-							|| (((entity instanceof ZombieEntity) && (!(entity instanceof ZombieVillagerEntity)))
-									&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (true)))))
+					|| ((entity instanceof ZombieEntity)
+							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
+									|| ((!(entity instanceof ZombieVillagerEntity))
+											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
 					|| (((((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
 							.contains(entity.getType()))
@@ -113,7 +113,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else {
-			if (((entity instanceof MobEntity) && ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
+			if (((entity instanceof BanditEntity.CustomEntity) && ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(

@@ -3233,6 +3233,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -3254,6 +3258,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -7772,7 +7780,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "reveal"
+      "registry_name": "reveal",
+      "path": "~/Advancements"
     },
     {
       "name": "CardDiamondAceWinfleton",
@@ -8203,7 +8212,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "letthe_hunt_begin"
+      "registry_name": "letthe_hunt_begin",
+      "path": "~/Advancements"
     },
     {
       "name": "MessageOverlay",
@@ -8380,7 +8390,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "trappingthe_beast"
+      "registry_name": "trappingthe_beast",
+      "path": "~/Advancements"
     },
     {
       "name": "WinfletonsCollector",
@@ -8389,7 +8400,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "winfletons_collector"
+      "registry_name": "winfletons_collector",
+      "path": "~/Advancements"
     },
     {
       "name": "HunterofLostWoods",
@@ -8398,7 +8410,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hunterof_lost_woods"
+      "registry_name": "hunterof_lost_woods",
+      "path": "~/Advancements"
     },
     {
       "name": "SimpleAchievements",
@@ -9307,7 +9320,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "awakethe_eye"
+      "registry_name": "awakethe_eye",
+      "path": "~/Advancements"
     },
     {
       "name": "MessageCallout",
@@ -9358,7 +9372,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mastermindof_swordsmanship"
+      "registry_name": "mastermindof_swordsmanship",
+      "path": "~/Advancements"
     },
     {
       "name": "OrmathShaman",
@@ -9516,7 +9531,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shields_is_for_newbies"
+      "registry_name": "shields_is_for_newbies",
+      "path": "~/Advancements"
     },
     {
       "name": "SabreSelfHarm",
@@ -9719,7 +9735,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sabre_path_begin"
+      "registry_name": "sabre_path_begin",
+      "path": "~/Advancements"
     },
     {
       "name": "LockableIronChest",
@@ -9779,7 +9796,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "partofthe_gun"
+      "registry_name": "partofthe_gun",
+      "path": "~/Advancements"
     },
     {
       "name": "MobileFirearmCrafting",
@@ -9788,7 +9806,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mobile_firearm_crafting"
+      "registry_name": "mobile_firearm_crafting",
+      "path": "~/Advancements"
     },
     {
       "name": "CylinderInspection",
@@ -9974,7 +9993,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sharpest_sharpshooter"
+      "registry_name": "sharpest_sharpshooter",
+      "path": "~/Advancements"
     },
     {
       "name": "RustyReaper",
@@ -10183,7 +10203,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blessedby_godsof_war"
+      "registry_name": "blessedby_godsof_war",
+      "path": "~/Advancements"
     },
     {
       "name": "ExperienceGUI",
@@ -10588,7 +10609,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "against_spiritsof_nature"
+      "registry_name": "against_spiritsof_nature",
+      "path": "~/Advancements"
     },
     {
       "name": "ShamanTradeGUI",
@@ -10765,7 +10787,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fingers_are_my_revolvers"
+      "registry_name": "fingers_are_my_revolvers",
+      "path": "~/Advancements"
     },
     {
       "name": "NetherSoulEssence",
@@ -11246,7 +11269,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "guide_book"
+      "registry_name": "guide_book",
+      "path": "~/Advancements"
     },
     {
       "name": "GuideBookAdvancement",
@@ -11361,24 +11385,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "green_buffalo"
-    },
-    {
-      "name": "GuidePage1",
-      "type": "gui",
-      "sortid": 1419,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_1"
-    },
-    {
-      "name": "GuidePage2",
-      "type": "gui",
-      "sortid": 1420,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_2"
     },
     {
       "name": "TribeReputationRaisePotionItem",
@@ -11506,7 +11512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ormaths"
+      "registry_name": "ormaths",
+      "path": "~/Advancements"
     },
     {
       "name": "OrmathFriend",
@@ -11515,7 +11522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ormath_friend"
+      "registry_name": "ormath_friend",
+      "path": "~/Advancements"
     },
     {
       "name": "FriendofGrandOrmathClan",
@@ -11524,7 +11532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "friendof_grand_ormath_clan"
+      "registry_name": "friendof_grand_ormath_clan",
+      "path": "~/Advancements"
     },
     {
       "name": "OrmathBetrayer",
@@ -11533,7 +11542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ormath_betrayer"
+      "registry_name": "ormath_betrayer",
+      "path": "~/Advancements"
     },
     {
       "name": "AdvancementOrmath2",
@@ -11975,7 +11985,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "guide_book_completed"
+      "registry_name": "guide_book_completed",
+      "path": "~/Advancements"
     },
     {
       "name": "VillagerTradeGUI1",
@@ -12548,291 +12559,6 @@
       }
     },
     {
-      "name": "GuidePage3",
-      "type": "gui",
-      "sortid": 1481,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_3"
-    },
-    {
-      "name": "GuidePage4",
-      "type": "gui",
-      "sortid": 1482,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_4"
-    },
-    {
-      "name": "GuidePage5",
-      "type": "gui",
-      "sortid": 1483,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_5"
-    },
-    {
-      "name": "GuidePage6",
-      "type": "gui",
-      "sortid": 1484,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_6"
-    },
-    {
-      "name": "GuidePage7",
-      "type": "gui",
-      "sortid": 1485,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_7"
-    },
-    {
-      "name": "BookToPage2",
-      "type": "procedure",
-      "sortid": 1486,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage1",
-      "type": "procedure",
-      "sortid": 1487,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage3",
-      "type": "procedure",
-      "sortid": 1488,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_3",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage4",
-      "type": "procedure",
-      "sortid": 1489,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_4",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage5",
-      "type": "procedure",
-      "sortid": 1490,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_5",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage6",
-      "type": "procedure",
-      "sortid": 1491,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_6",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BookToPage7",
-      "type": "procedure",
-      "sortid": 1492,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "book_to_page_7",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GuidePageTOL",
-      "type": "gui",
-      "sortid": 1493,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guide_page_tol"
-    },
-    {
       "name": "CoinIterator",
       "type": "procedure",
       "sortid": 1494,
@@ -13399,7 +13125,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "protectthe_unprotected"
+      "registry_name": "protectthe_unprotected",
+      "path": "~/Advancements"
     },
     {
       "name": "SandyVeilTag",
@@ -18053,7 +17780,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "walking_on_cursed_land"
+      "registry_name": "walking_on_cursed_land",
+      "path": "~/Advancements"
     },
     {
       "name": "WalkingOnSouls",
@@ -18169,7 +17897,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gambled_salvage"
+      "registry_name": "gambled_salvage",
+      "path": "~/Advancements"
     },
     {
       "name": "WinfletonsLifeSaver",
@@ -19356,7 +19085,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "new_technician_inthe_town"
+      "registry_name": "new_technician_inthe_town",
+      "path": "~/Advancements"
     },
     {
       "name": "PortableNetherLakes",
@@ -19365,7 +19095,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "portable_nether_lakes"
+      "registry_name": "portable_nether_lakes",
+      "path": "~/Advancements"
     },
     {
       "name": "BulletGroundHit",
@@ -22204,23 +21935,6 @@
       "registry_name": "pulsating_detector_recipe"
     },
     {
-      "name": "ConfigWriter",
-      "type": "procedure",
-      "sortid": 2023,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "config_writer",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SpawnEntityBanditAirship",
       "type": "livingentity",
       "sortid": 2024,
@@ -22377,27 +22091,6 @@
       "registry_name": "airship_jungle"
     },
     {
-      "name": "ConfigManager",
-      "type": "procedure",
-      "sortid": 2036,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "config_manager",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "NetherAvoiderPulsatingPotionItem",
-      "type": "potion",
-      "sortid": 978,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_avoider_pulsating"
-    },
-    {
       "name": "NetherAvoiderPulsating",
       "type": "potioneffect",
       "sortid": 2037,
@@ -22405,15 +22098,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nether_avoider_pulsating"
-    },
-    {
-      "name": "CurarePoisonPotionItem",
-      "type": "potion",
-      "sortid": 1213,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "curare_poison"
     },
     {
       "name": "CurarePoison",
@@ -22425,15 +22109,6 @@
       "registry_name": "curare_poison"
     },
     {
-      "name": "PlayerMessagePotionPotionItem",
-      "type": "potion",
-      "sortid": 1246,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "player_message_potion"
-    },
-    {
       "name": "PlayerMessagePotion",
       "type": "potioneffect",
       "sortid": 2039,
@@ -22441,15 +22116,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "player_message_potion"
-    },
-    {
-      "name": "AdditionalPlayerMessagePotionPotionItem",
-      "type": "potion",
-      "sortid": 1253,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "additional_player_message_potion"
     },
     {
       "name": "AdditionalPlayerMessagePotion",
@@ -22461,15 +22127,6 @@
       "registry_name": "additional_player_message_potion"
     },
     {
-      "name": "SabreDefencePotionItem",
-      "type": "potion",
-      "sortid": 1279,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sabre_defence"
-    },
-    {
       "name": "SabreDefence",
       "type": "potioneffect",
       "sortid": 2041,
@@ -22477,15 +22134,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sabre_defence"
-    },
-    {
-      "name": "SabreAttackCooldownPotionItem",
-      "type": "potion",
-      "sortid": 1281,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sabre_attack_cooldown"
     },
     {
       "name": "SabreAttackCooldown",
@@ -22497,15 +22145,6 @@
       "registry_name": "sabre_attack_cooldown"
     },
     {
-      "name": "SingleReloadTypePotionItem",
-      "type": "potion",
-      "sortid": 1283,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "single_reload_type"
-    },
-    {
       "name": "SingleReloadType",
       "type": "potioneffect",
       "sortid": 2043,
@@ -22513,15 +22152,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "single_reload_type"
-    },
-    {
-      "name": "TribeReputationRaisePotionItem",
-      "type": "potion",
-      "sortid": 1421,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tribe_reputation_raise"
     },
     {
       "name": "TribeReputationRaise",
@@ -22533,15 +22163,6 @@
       "registry_name": "tribe_reputation_raise"
     },
     {
-      "name": "TribeReputationDropPotionItem",
-      "type": "potion",
-      "sortid": 1425,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tribe_reputation_drop"
-    },
-    {
       "name": "TribeReputationDrop",
       "type": "potioneffect",
       "sortid": 2045,
@@ -22549,15 +22170,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tribe_reputation_drop"
-    },
-    {
-      "name": "AntiWanderingTraderPotionItem",
-      "type": "potion",
-      "sortid": 1507,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "anti_wandering_trader"
     },
     {
       "name": "AntiWanderingTrader",
@@ -22569,15 +22181,6 @@
       "registry_name": "anti_wandering_trader"
     },
     {
-      "name": "NetherAvoiderShieldingPotionItem",
-      "type": "potion",
-      "sortid": 1519,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_avoider_shielding"
-    },
-    {
       "name": "NetherAvoiderShielding",
       "type": "potioneffect",
       "sortid": 2047,
@@ -22585,15 +22188,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nether_avoider_shielding"
-    },
-    {
-      "name": "SabreDefenceCooldownPotionItem",
-      "type": "potion",
-      "sortid": 1542,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sabre_defence_cooldown"
     },
     {
       "name": "SabreDefenceCooldown",
@@ -22605,15 +22199,6 @@
       "registry_name": "sabre_defence_cooldown"
     },
     {
-      "name": "RodoftheWindsGlowPotionItem",
-      "type": "potion",
-      "sortid": 1550,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rodofthe_winds_glow"
-    },
-    {
       "name": "RodoftheWindsGlow",
       "type": "potioneffect",
       "sortid": 2049,
@@ -22621,15 +22206,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rodofthe_winds_glow"
-    },
-    {
-      "name": "ShamanOrmathBlessingPotionItem",
-      "type": "potion",
-      "sortid": 1585,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shaman_ormath_blessing"
     },
     {
       "name": "ShamanOrmathBlessing",
@@ -22641,15 +22217,6 @@
       "registry_name": "shaman_ormath_blessing"
     },
     {
-      "name": "WarhammerProtectionPotionItem",
-      "type": "potion",
-      "sortid": 1707,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "warhammer_protection"
-    },
-    {
       "name": "WarhammerProtection",
       "type": "potioneffect",
       "sortid": 2051,
@@ -22657,15 +22224,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warhammer_protection"
-    },
-    {
-      "name": "WarhammerFieldAttackPotionItem",
-      "type": "potion",
-      "sortid": 1708,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "warhammer_field_attack"
     },
     {
       "name": "WarhammerFieldAttack",
@@ -22677,15 +22235,6 @@
       "registry_name": "warhammer_field_attack"
     },
     {
-      "name": "WarhammerCooldownEffectPotionItem",
-      "type": "potion",
-      "sortid": 1710,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "warhammer_cooldown_effect"
-    },
-    {
       "name": "WarhammerCooldownEffect",
       "type": "potioneffect",
       "sortid": 2053,
@@ -22693,15 +22242,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warhammer_cooldown_effect"
-    },
-    {
-      "name": "WarhammerNauseaWalkPotionItem",
-      "type": "potion",
-      "sortid": 1712,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "warhammer_nausea_walk"
     },
     {
       "name": "WarhammerNauseaWalk",
@@ -22713,15 +22253,6 @@
       "registry_name": "warhammer_nausea_walk"
     },
     {
-      "name": "WarhammerNauseaTriggeredPotionItem",
-      "type": "potion",
-      "sortid": 1715,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "warhammer_nausea_triggered"
-    },
-    {
       "name": "WarhammerNauseaTriggered",
       "type": "potioneffect",
       "sortid": 2055,
@@ -22729,15 +22260,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warhammer_nausea_triggered"
-    },
-    {
-      "name": "AvoiderCursePotionItem",
-      "type": "potion",
-      "sortid": 1826,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "avoider_curse"
     },
     {
       "name": "AvoiderCurse",
@@ -22749,15 +22271,6 @@
       "registry_name": "avoider_curse"
     },
     {
-      "name": "MerchantBlockBuddingAmethystPotionItem",
-      "type": "potion",
-      "sortid": 1910,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "merchant_block_budding_amethyst"
-    },
-    {
       "name": "MerchantBlockBuddingAmethyst",
       "type": "potioneffect",
       "sortid": 2057,
@@ -22765,15 +22278,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "merchant_block_budding_amethyst"
-    },
-    {
-      "name": "MerchantBlockShulkerShellsPotionItem",
-      "type": "potion",
-      "sortid": 1911,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "merchant_block_shulker_shells"
     },
     {
       "name": "MerchantBlockShulkerShells",
@@ -22785,15 +22289,6 @@
       "registry_name": "merchant_block_shulker_shells"
     },
     {
-      "name": "MerchantBlockHeartoftheSeaPotionItem",
-      "type": "potion",
-      "sortid": 1912,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "merchant_block_heartofthe_sea"
-    },
-    {
       "name": "MerchantBlockHeartoftheSea",
       "type": "potioneffect",
       "sortid": 2059,
@@ -22801,15 +22296,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "merchant_block_heartofthe_sea"
-    },
-    {
-      "name": "MerchantBlockElytraPotionItem",
-      "type": "potion",
-      "sortid": 1923,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "merchant_block_elytra"
     },
     {
       "name": "MerchantBlockElytra",
@@ -22927,6 +22413,118 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "avoider_eidolon"
+    },
+    {
+      "name": "ConfigManager",
+      "type": "procedure",
+      "sortid": 2073,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config_manager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirshipBanditCondition",
+      "type": "procedure",
+      "sortid": 2074,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_bandit_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "AirshipMageCondition",
+      "type": "procedure",
+      "sortid": 2075,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_mage_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "AirshipTraderCondition",
+      "type": "procedure",
+      "sortid": 2076,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_trader_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "AirshipMilitaryCondition",
+      "type": "procedure",
+      "sortid": 2077,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_military_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "AirshipJungleCondition",
+      "type": "procedure",
+      "sortid": 2078,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_jungle_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
     }
   ],
   "variable_elements": [
@@ -23028,6 +22626,72 @@
     },
     {
       "name": "KF_Av_Villager",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Av_Distance",
+      "type": "number",
+      "scope": "map",
+      "value": "50.0"
+    },
+    {
+      "name": "KF_Str_Bandit_Airship",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Str_Mage_Airship",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Str_Trader_Airship",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Str_Military_Airship",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Str_Jungle_Airship",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Str_Airship_General",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Wp_Gun_Enabled",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Wp_Gun_Dmg",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "KF_Drop_Glister",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Drop_Essence",
       "type": "logic",
       "scope": "map",
       "value": "true"
@@ -25454,7 +25118,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Configured",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "wobr",

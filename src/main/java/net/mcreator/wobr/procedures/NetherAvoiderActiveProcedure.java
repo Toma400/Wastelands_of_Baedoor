@@ -20,6 +20,7 @@ import net.mcreator.wobr.block.NetherAvoiderBlock;
 import net.mcreator.wobr.block.LapisAvoiderActiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderActiveBlock;
 import net.mcreator.wobr.block.AvoiderBlockBlock;
+import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -70,8 +71,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 				}
 			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
-					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
-							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+					List<Entity> _entfound = world
+							.getEntitiesWithinAABB(Entity.class,
+									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
+									null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -116,8 +124,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 				}
 			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
-					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
-							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+					List<Entity> _entfound = world
+							.getEntitiesWithinAABB(Entity.class,
+									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
+									null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -162,8 +177,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 				}
 			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
-					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
-							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+					List<Entity> _entfound = world
+							.getEntitiesWithinAABB(Entity.class,
+									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
+									null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -200,8 +222,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AvoiderBlockBlock.block)) {
 			{
-				List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
-						new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+				List<Entity> _entfound = world
+						.getEntitiesWithinAABB(Entity.class,
+								new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+										y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+										z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+										x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+										y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
+										z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
+								null)
 						.stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));

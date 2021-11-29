@@ -114,6 +114,17 @@ public class WobrModVariables {
 		public boolean Chunk_Ticker = false;
 		public boolean KF_Av_Pigman = false;
 		public boolean KF_Av_Villager = true;
+		public double KF_Av_Distance = 50.0;
+		public boolean KF_Str_Bandit_Airship = true;
+		public boolean KF_Str_Mage_Airship = true;
+		public boolean KF_Str_Trader_Airship = true;
+		public boolean KF_Str_Military_Airship = true;
+		public boolean KF_Str_Jungle_Airship = true;
+		public boolean KF_Str_Airship_General = true;
+		public boolean KF_Wp_Gun_Enabled = true;
+		public double KF_Wp_Gun_Dmg = 1.0;
+		public boolean KF_Drop_Glister = true;
+		public boolean KF_Drop_Essence = true;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -130,6 +141,17 @@ public class WobrModVariables {
 			Chunk_Ticker = nbt.getBoolean("Chunk_Ticker");
 			KF_Av_Pigman = nbt.getBoolean("KF_Av_Pigman");
 			KF_Av_Villager = nbt.getBoolean("KF_Av_Villager");
+			KF_Av_Distance = nbt.getDouble("KF_Av_Distance");
+			KF_Str_Bandit_Airship = nbt.getBoolean("KF_Str_Bandit_Airship");
+			KF_Str_Mage_Airship = nbt.getBoolean("KF_Str_Mage_Airship");
+			KF_Str_Trader_Airship = nbt.getBoolean("KF_Str_Trader_Airship");
+			KF_Str_Military_Airship = nbt.getBoolean("KF_Str_Military_Airship");
+			KF_Str_Jungle_Airship = nbt.getBoolean("KF_Str_Jungle_Airship");
+			KF_Str_Airship_General = nbt.getBoolean("KF_Str_Airship_General");
+			KF_Wp_Gun_Enabled = nbt.getBoolean("KF_Wp_Gun_Enabled");
+			KF_Wp_Gun_Dmg = nbt.getDouble("KF_Wp_Gun_Dmg");
+			KF_Drop_Glister = nbt.getBoolean("KF_Drop_Glister");
+			KF_Drop_Essence = nbt.getBoolean("KF_Drop_Essence");
 		}
 
 		@Override
@@ -140,6 +162,17 @@ public class WobrModVariables {
 			nbt.putBoolean("Chunk_Ticker", Chunk_Ticker);
 			nbt.putBoolean("KF_Av_Pigman", KF_Av_Pigman);
 			nbt.putBoolean("KF_Av_Villager", KF_Av_Villager);
+			nbt.putDouble("KF_Av_Distance", KF_Av_Distance);
+			nbt.putBoolean("KF_Str_Bandit_Airship", KF_Str_Bandit_Airship);
+			nbt.putBoolean("KF_Str_Mage_Airship", KF_Str_Mage_Airship);
+			nbt.putBoolean("KF_Str_Trader_Airship", KF_Str_Trader_Airship);
+			nbt.putBoolean("KF_Str_Military_Airship", KF_Str_Military_Airship);
+			nbt.putBoolean("KF_Str_Jungle_Airship", KF_Str_Jungle_Airship);
+			nbt.putBoolean("KF_Str_Airship_General", KF_Str_Airship_General);
+			nbt.putBoolean("KF_Wp_Gun_Enabled", KF_Wp_Gun_Enabled);
+			nbt.putDouble("KF_Wp_Gun_Dmg", KF_Wp_Gun_Dmg);
+			nbt.putBoolean("KF_Drop_Glister", KF_Drop_Glister);
+			nbt.putBoolean("KF_Drop_Essence", KF_Drop_Essence);
 			return nbt;
 		}
 
