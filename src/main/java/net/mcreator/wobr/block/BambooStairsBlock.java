@@ -39,15 +39,11 @@ public class BambooStairsBlock extends WobrModElements.ModElement {
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1f, 1f)).getDefaultState(),
+			super(() -> new Block(Block.Properties.create(Material.BAMBOO).sound(SoundType.BAMBOO).hardnessAndResistance(1f, 1f).lightValue(0)
+					.harvestLevel(1).harvestTool(ToolType.AXE)).getDefaultState(),
 					Block.Properties.create(Material.BAMBOO).sound(SoundType.BAMBOO).hardnessAndResistance(1f, 1f).lightValue(0).harvestLevel(1)
 							.harvestTool(ToolType.AXE));
 			setRegistryName("bamboo_stairs");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

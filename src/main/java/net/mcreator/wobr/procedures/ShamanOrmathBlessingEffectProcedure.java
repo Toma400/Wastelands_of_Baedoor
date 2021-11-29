@@ -15,6 +15,7 @@ import net.mcreator.wobr.entity.OrmathVillagerEntity;
 import net.mcreator.wobr.entity.OrmathRangedWarriorEntity;
 import net.mcreator.wobr.entity.GreenBuffaloEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -27,7 +28,7 @@ public class ShamanOrmathBlessingEffectProcedure extends WobrModElements.ModElem
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ShamanOrmathBlessingEffect!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ShamanOrmathBlessingEffect!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

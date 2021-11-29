@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -17,12 +18,12 @@ public class KnifeSneakAttackProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure KnifeSneakAttack!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure KnifeSneakAttack!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure KnifeSneakAttack!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure KnifeSneakAttack!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

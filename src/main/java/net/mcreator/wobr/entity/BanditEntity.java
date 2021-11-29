@@ -45,7 +45,9 @@ import net.mcreator.wobr.WobrModElements;
 
 @WobrModElements.ModElement.Tag
 public class BanditEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.95f)).build("bandit").setRegistryName("bandit");
 	public BanditEntity(WobrModElements instance) {
 		super(instance, 458);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -53,9 +55,6 @@ public class BanditEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.95f)).build("bandit")
-						.setRegistryName("bandit");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10079488, -8169469, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("bandit_spawn_egg"));
@@ -81,7 +80,7 @@ public class BanditEntity extends WobrModElements.ModElement {
 			experienceValue = 5;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GoldenShotRevolverItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GoldenShotRevolverItem.block));
 		}
 
 		@Override

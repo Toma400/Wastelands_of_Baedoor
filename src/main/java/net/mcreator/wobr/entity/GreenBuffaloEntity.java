@@ -51,7 +51,9 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class GreenBuffaloEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.5f, 2f))
+					.build("green_buffalo").setRegistryName("green_buffalo");
 	public GreenBuffaloEntity(WobrModElements instance) {
 		super(instance, 462);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -59,9 +61,6 @@ public class GreenBuffaloEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.5f, 2f)).build("green_buffalo")
-						.setRegistryName("green_buffalo");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -13031657, -15125748, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("green_buffalo_spawn_egg"));
@@ -118,7 +117,7 @@ public class GreenBuffaloEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.BEEF, (int) (1)));
+			this.entityDropItem(new ItemStack(Items.BEEF));
 		}
 
 		@Override
@@ -142,10 +141,6 @@ public class GreenBuffaloEntity extends WobrModElements.ModElement {
 			boolean retval = true;
 			super.processInteract(sourceentity, hand);
 			sourceentity.startRiding(this);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
 			return retval;
 		}
 

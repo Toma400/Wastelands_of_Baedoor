@@ -25,6 +25,7 @@ import net.minecraft.command.CommandSource;
 import net.mcreator.wobr.item.BaedoorFuntItem;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -37,27 +38,27 @@ public class OrmathTrade5Procedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure OrmathTrade5!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure OrmathTrade5!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure OrmathTrade5!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure OrmathTrade5!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure OrmathTrade5!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure OrmathTrade5!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure OrmathTrade5!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure OrmathTrade5!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure OrmathTrade5!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure OrmathTrade5!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -65,15 +66,13 @@ public class OrmathTrade5Procedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BaedoorFuntItem.block, (int) (1)))
-				: false)) {
+		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BaedoorFuntItem.block)) : false)) {
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(BaedoorFuntItem.block, (int) (1));
+				ItemStack _stktoremove = new ItemStack(BaedoorFuntItem.block);
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(Items.CLAY_BALL, (int) (1));
+				ItemStack _setstack = new ItemStack(Items.CLAY_BALL);
 				_setstack.setCount((int) 32);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}

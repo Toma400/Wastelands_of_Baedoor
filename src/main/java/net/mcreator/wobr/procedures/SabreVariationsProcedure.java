@@ -14,6 +14,7 @@ import net.mcreator.wobr.item.GoldenScimitarItem;
 import net.mcreator.wobr.item.BrotherhoodSabreItem;
 import net.mcreator.wobr.item.BlackSabreItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -27,12 +28,12 @@ public class SabreVariationsProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SabreVariations!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SabreVariations!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure SabreVariations!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure SabreVariations!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -40,26 +41,23 @@ public class SabreVariationsProcedure extends WobrModElements.ModElement {
 		if ((((itemstack).getOrCreateTag().getDouble("Sabre_Checker")) < 255)) {
 			(itemstack).getOrCreateTag().putDouble("Sabre_Defence", 10);
 			(itemstack).getOrCreateTag().putDouble("Sabre_Harm", 1);
-			if (((((itemstack).getItem() == new ItemStack(BrotherhoodSabreItem.block, (int) (1)).getItem())
-					|| ((itemstack).getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem()))
-					|| ((itemstack).getItem() == new ItemStack(GoldenScimitarItem.block, (int) (1)).getItem()))) {
+			if (((((itemstack).getItem() == BrotherhoodSabreItem.block) || ((itemstack).getItem() == BlackSabreItem.block))
+					|| ((itemstack).getItem() == GoldenScimitarItem.block))) {
 				(itemstack).getOrCreateTag().putDouble("Sabre_Cooldown", 15);
 				(itemstack).getOrCreateTag().putDouble("Sabre_Checker", 255);
-			} else if (((((itemstack).getItem() == new ItemStack(PrismarineSabreItem.block, (int) (1)).getItem())
-					|| ((itemstack).getItem() == new ItemStack(WhiteSabreItem.block, (int) (1)).getItem()))
-					|| (((itemstack).getItem() == new ItemStack(HardenedIronSabreItem.block, (int) (1)).getItem())
-							|| ((itemstack).getItem() == new ItemStack(IronSabreItem.block, (int) (1)).getItem())))) {
+			} else if (((((itemstack).getItem() == PrismarineSabreItem.block) || ((itemstack).getItem() == WhiteSabreItem.block))
+					|| (((itemstack).getItem() == HardenedIronSabreItem.block) || ((itemstack).getItem() == IronSabreItem.block)))) {
 				(itemstack).getOrCreateTag().putDouble("Sabre_Cooldown", 20);
 				(itemstack).getOrCreateTag().putDouble("Sabre_Checker", 255);
 			}
 		}
-		if (((itemstack).getItem() == new ItemStack(PrismarineSabreItem.block, (int) (1)).getItem())) {
+		if (((itemstack).getItem() == PrismarineSabreItem.block)) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.CONDUIT_POWER, (int) 20, (int) 1));
-		} else if (((itemstack).getItem() == new ItemStack(WhiteSabreItem.block, (int) (1)).getItem())) {
+		} else if (((itemstack).getItem() == WhiteSabreItem.block)) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 1));
-		} else if (((itemstack).getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem())) {
+		} else if (((itemstack).getItem() == BlackSabreItem.block)) {
 			if ((!(new Object() {
 				boolean check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {

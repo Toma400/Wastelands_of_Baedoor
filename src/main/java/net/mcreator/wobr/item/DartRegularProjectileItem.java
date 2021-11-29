@@ -40,8 +40,9 @@ import java.util.Random;
 public class DartRegularProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_regular_projectile")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletdart_regular_projectile")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletdart_regular_projectile").setRegistryName("entitybulletdart_regular_projectile");
 	public DartRegularProjectileItem(WobrModElements instance) {
 		super(instance, 1528);
 	}
@@ -49,9 +50,7 @@ public class DartRegularProjectileItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletdart_regular_projectile").setRegistryName("entitybulletdart_regular_projectile"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -124,7 +123,7 @@ public class DartRegularProjectileItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ThrownDaggerProjectileItem.block, (int) (1));
+			return new ItemStack(ThrownDaggerProjectileItem.block);
 		}
 
 		@Override
@@ -146,6 +145,7 @@ public class DartRegularProjectileItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				this.remove();
 			}

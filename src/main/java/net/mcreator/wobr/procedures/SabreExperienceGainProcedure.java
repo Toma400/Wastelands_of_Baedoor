@@ -19,6 +19,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -31,24 +32,24 @@ public class SabreExperienceGainProcedure extends WobrModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("isvanillacritical") == null) {
-			if (!dependencies.containsKey("isvanillacritical"))
-				System.err.println("Failed to load dependency isvanillacritical for procedure SabreExperienceGain!");
-			return;
-		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SabreExperienceGain!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SabreExperienceGain!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure SabreExperienceGain!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure SabreExperienceGain!");
 			return;
 		}
-		boolean isvanillacritical = (boolean) dependencies.get("isvanillacritical");
+		if (dependencies.get("isvanillacritical") == null) {
+			if (!dependencies.containsKey("isvanillacritical"))
+				WobrMod.LOGGER.warn("Failed to load dependency isvanillacritical for procedure SabreExperienceGain!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		boolean isvanillacritical = (boolean) dependencies.get("isvanillacritical");
 		if (((ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_sabre").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				&& ((isvanillacritical) == (true)))) {

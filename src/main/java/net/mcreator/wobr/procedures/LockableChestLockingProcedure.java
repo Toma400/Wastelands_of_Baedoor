@@ -12,6 +12,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.wobr.item.IronKeyItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -26,27 +27,27 @@ public class LockableChestLockingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure LockableChestLocking!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure LockableChestLocking!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure LockableChestLocking!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure LockableChestLocking!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure LockableChestLocking!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure LockableChestLocking!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure LockableChestLocking!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure LockableChestLocking!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure LockableChestLocking!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure LockableChestLocking!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -68,7 +69,7 @@ public class LockableChestLockingProcedure extends WobrModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(IronKeyItem.block, (int) (1)).getItem())) {
+		}.getItemStack((int) (0))).getItem() == IronKeyItem.block)) {
 			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);

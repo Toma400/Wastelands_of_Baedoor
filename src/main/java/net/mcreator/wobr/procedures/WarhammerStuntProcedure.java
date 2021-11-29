@@ -21,11 +21,13 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.wobr.potion.WarhammerProtectionPotion;
-import net.mcreator.wobr.potion.WarhammerCooldownEffectPotion;
+import net.mcreator.wobr.potion.WarhammerProtectionPotionEffect;
+import net.mcreator.wobr.potion.WarhammerCooldownEffectPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Random;
 import java.util.Map;
@@ -44,27 +46,27 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WarhammerStunt!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WarhammerStunt!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure WarhammerStunt!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure WarhammerStunt!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure WarhammerStunt!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure WarhammerStunt!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure WarhammerStunt!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure WarhammerStunt!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure WarhammerStunt!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure WarhammerStunt!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -80,7 +82,7 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == WarhammerCooldownEffectPotion.potion)
+							if (effect.getPotion() == WarhammerCooldownEffectPotionEffect.potion)
 								return true;
 						}
 					}
@@ -102,7 +104,7 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 				}
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
-							.addPotionEffect(new EffectInstance(WarhammerProtectionPotion.potion, (int) 60, (int) 1, (false), (false)));
+							.addPotionEffect(new EffectInstance(WarhammerProtectionPotionEffect.potion, (int) 60, (int) 1, (false), (false)));
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
@@ -118,24 +120,24 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 							(new java.text.DecimalFormat("####")
 									.format((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 											.getOrCreateTag().getDouble("wrhm_dist"))))));
-					Console = (String) ((Console).replace("TIME",
+					Console = (String) (Console.replace("TIME",
 							(new java.text.DecimalFormat("####")
 									.format((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 											.getOrCreateTag().getDouble("wrhm_nau_long"))))));
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager()
 								.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), (Console));
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), Console);
 					}
 				}
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(WarhammerCooldownEffectPotion.potion,
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(WarhammerCooldownEffectPotionEffect.potion,
 							(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("wrhm_cooldown")),
 							(int) 1, (false), (false)));
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).getCooldownTracker().setCooldown(
-							(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 							(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("wrhm_cooldown")));
 			}
@@ -151,12 +153,15 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 		int j = event.getPos().getY();
 		int k = event.getPos().getZ();
 		World world = event.getWorld();
+		BlockState state = world.getBlockState(event.getPos());
 		Map<String, Object> dependencies = new HashMap<>();
 		dependencies.put("x", i);
 		dependencies.put("y", j);
 		dependencies.put("z", k);
 		dependencies.put("world", world);
 		dependencies.put("entity", entity);
+		dependencies.put("direction", event.getFace());
+		dependencies.put("blockstate", state);
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}

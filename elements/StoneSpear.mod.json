@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 1,
@@ -24,6 +24,7 @@
         "value": "Blocks.COBBLESTONE"
       }
     ],
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInUseTick": {

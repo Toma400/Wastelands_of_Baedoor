@@ -39,7 +39,7 @@ public class ReloadKeyKeyBinding extends WobrModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.reload_key", GLFW.GLFW_KEY_R, "key.categories.misc");
+		keys = new KeyBinding("key.wobr.reload_key", GLFW.GLFW_KEY_R, "key.categories.misc");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

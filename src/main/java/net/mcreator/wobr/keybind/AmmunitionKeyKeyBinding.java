@@ -39,7 +39,7 @@ public class AmmunitionKeyKeyBinding extends WobrModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.ammunition_key", GLFW.GLFW_KEY_Z, "key.categories.misc");
+		keys = new KeyBinding("key.wobr.ammunition_key", GLFW.GLFW_KEY_Z, "key.categories.misc");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

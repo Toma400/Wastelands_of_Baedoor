@@ -18,8 +18,9 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Direction;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.EnumProperty;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
@@ -29,7 +30,6 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -60,10 +60,10 @@ public class LapisTowerBlock extends WobrModElements.ModElement {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutoutMipped());
 	}
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
+		public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(1f, 1f).lightValue(8).notSolid());
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH));
+			super(Block.Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(1f, 1f).lightValue(7).notSolid());
+			this.setDefaultState(this.stateContainer.getBaseState().with(AXIS, Direction.Axis.Y));
 			setRegistryName("lapis_tower");
 		}
 
@@ -85,34 +85,36 @@ public class LapisTowerBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			switch ((Direction) state.get(FACING)) {
-				case SOUTH :
-				case NORTH :
+			switch ((Direction.Axis) state.get(AXIS)) {
+				case X :
+					return VoxelShapes.or(makeCuboidShape(0, 6.4, 6.4, 13.6, 9.6, 9.6)).withOffset(offset.x, offset.y, offset.z);
+				case Y :
 				default :
-					return VoxelShapes.create(0.4D, 0D, 0.4D, 0.6D, 0.85D, 0.6D).withOffset(offset.x, offset.y, offset.z);
-				case EAST :
-				case WEST :
-					return VoxelShapes.create(0.4D, 0.6D, 0D, 0.6D, 0.4D, 0.85D).withOffset(offset.x, offset.y, offset.z);
-				case UP :
-				case DOWN :
-					return VoxelShapes.create(0D, 0.6D, 0.6D, 0.85D, 0.4D, 0.4D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(6.4, 0, 6.4, 9.6, 13.6, 9.6)).withOffset(offset.x, offset.y, offset.z);
+				case Z :
+					return VoxelShapes.or(makeCuboidShape(6.4, 6.4, 16, 9.6, 9.6, 2.4)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
 		@Override
 		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
+			builder.add(AXIS);
 		}
 
 		@Override
 		public BlockState rotate(BlockState state, Rotation rot) {
 			if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
-				if ((Direction) state.get(FACING) == Direction.WEST || (Direction) state.get(FACING) == Direction.EAST) {
-					return state.with(FACING, Direction.UP);
-				} else if ((Direction) state.get(FACING) == Direction.UP || (Direction) state.get(FACING) == Direction.DOWN) {
-					return state.with(FACING, Direction.WEST);
+				if ((Direction.Axis) state.get(AXIS) == Direction.Axis.X) {
+					return state.with(AXIS, Direction.Axis.Z);
+				} else if ((Direction.Axis) state.get(AXIS) == Direction.Axis.Z) {
+					return state.with(AXIS, Direction.Axis.X);
 				}
 			}
 			return state;
@@ -120,14 +122,8 @@ public class LapisTowerBlock extends WobrModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			Direction facing = context.getFace();
-			if (facing == Direction.WEST || facing == Direction.EAST)
-				facing = Direction.UP;
-			else if (facing == Direction.NORTH || facing == Direction.SOUTH)
-				facing = Direction.EAST;
-			else
-				facing = Direction.SOUTH;;
-			return this.getDefaultState().with(FACING, facing);
+			Direction.Axis axis = context.getFace().getAxis();;
+			return this.getDefaultState().with(AXIS, axis);
 		}
 
 		@Override

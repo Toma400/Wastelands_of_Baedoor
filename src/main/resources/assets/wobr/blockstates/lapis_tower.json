@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "wobr:block/lapis_tower"
-    },
-    "facing=north": {
-      "model": "wobr:block/lapis_tower"
-    },
-    "facing=east": {
-      "model": "wobr:block/lapis_tower",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "wobr:block/lapis_tower",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "wobr:block/lapis_tower",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "wobr:block/lapis_tower"
+    },
+    "axis=z": {
       "model": "wobr:block/lapis_tower",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

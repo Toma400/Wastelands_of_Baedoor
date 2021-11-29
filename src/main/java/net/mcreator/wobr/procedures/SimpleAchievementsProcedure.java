@@ -21,8 +21,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.wobr.potion.NetherAvoiderShieldingPotion;
-import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotion;
+import net.mcreator.wobr.potion.NetherAvoiderShieldingPotionEffect;
+import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotionEffect;
 import net.mcreator.wobr.item.ThrownDaggerItem;
 import net.mcreator.wobr.item.StoneJavelinItem;
 import net.mcreator.wobr.item.CardSpadeAceWinfletonItem;
@@ -31,6 +31,7 @@ import net.mcreator.wobr.item.CardDiamondAceWinfletonItem;
 import net.mcreator.wobr.item.CardClubAceWinfletonItem;
 import net.mcreator.wobr.item.BoneJavelinItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Iterator;
@@ -47,21 +48,21 @@ public class SimpleAchievementsProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SimpleAchievements!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SimpleAchievements!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardDiamondAceWinfletonItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardDiamondAceWinfletonItem.block))
 				: false)
 				&& ((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardHeartAceWinfletonItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardHeartAceWinfletonItem.block))
 						: false))
 				&& (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardClubAceWinfletonItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardClubAceWinfletonItem.block))
 						: false)
 						&& ((entity instanceof PlayerEntity)
-								? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1)))
+								? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardSpadeAceWinfletonItem.block))
 								: false)))) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -76,17 +77,11 @@ public class SimpleAchievementsProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else if (((((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(StoneJavelinItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(StoneJavelinItem.block))
 				: false)
-				|| ((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BoneJavelinItem.block, (int) (1)))
-						: false))
-				|| (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ThrownDaggerItem.block, (int) (1)))
-						: false)
-						|| ((entity instanceof PlayerEntity)
-								? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.BOW, (int) (1)))
-								: false)))) {
+				|| ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BoneJavelinItem.block)) : false))
+				|| (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ThrownDaggerItem.block)) : false)
+						|| ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.BOW)) : false)))) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("wobr:hunterof_lost_woods"));
@@ -104,7 +99,7 @@ public class SimpleAchievementsProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == NetherAvoiderPulsatingPotion.potion)
+						if (effect.getPotion() == NetherAvoiderPulsatingPotionEffect.potion)
 							return true;
 					}
 				}
@@ -316,7 +311,7 @@ public class SimpleAchievementsProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == NetherAvoiderShieldingPotion.potion)
+						if (effect.getPotion() == NetherAvoiderShieldingPotionEffect.potion)
 							return true;
 					}
 				}

@@ -50,8 +50,9 @@ import com.google.common.collect.Multimap;
 public class StoneJavelinItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:stone_javelin")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletstone_javelin")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletstone_javelin").setRegistryName("entitybulletstone_javelin");
 	public StoneJavelinItem(WobrModElements instance) {
 		super(instance, 17);
 	}
@@ -59,9 +60,7 @@ public class StoneJavelinItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletstone_javelin").setRegistryName("entitybulletstone_javelin"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -152,7 +151,7 @@ public class StoneJavelinItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ThrownDaggerProjectileItem.block, (int) (1));
+			return new ItemStack(ThrownDaggerProjectileItem.block);
 		}
 
 		@Override
@@ -174,6 +173,7 @@ public class StoneJavelinItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

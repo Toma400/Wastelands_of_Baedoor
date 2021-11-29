@@ -12,9 +12,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.SingleReloadTypePotion;
+import net.mcreator.wobr.potion.SingleReloadTypePotionEffect;
 import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Random;
 import java.util.Map;
@@ -30,27 +31,27 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ReloadEnhancedPepperBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ReloadEnhancedPepperBox!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ReloadEnhancedPepperBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ReloadEnhancedPepperBox!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ReloadEnhancedPepperBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ReloadEnhancedPepperBox!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ReloadEnhancedPepperBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ReloadEnhancedPepperBox!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ReloadEnhancedPepperBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ReloadEnhancedPepperBox!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -63,14 +64,14 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 			if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 					.getDouble("Shoot_Mode")) == 0)) {
 				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block))
 						: false)) {
 					if ((!(new Object() {
 						boolean check(Entity _entity) {
 							if (_entity instanceof LivingEntity) {
 								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 								for (EffectInstance effect : effects) {
-									if (effect.getPotion() == SingleReloadTypePotion.potion)
+									if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 										return true;
 								}
 							}
@@ -78,7 +79,7 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 						}
 					}.check(entity)))) {
 						if (entity instanceof PlayerEntity) {
-							ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
+							ItemStack _stktoremove = new ItemStack(SmallBulletItem.block);
 							((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 						}
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -98,11 +99,11 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 						}
 						if (entity instanceof PlayerEntity)
 							((PlayerEntity) entity).getCooldownTracker().setCooldown(
-									(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+									((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 									(int) 20);
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
-									.addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion, (int) 20, (int) 1, (false), (false)));
+									.addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion, (int) 20, (int) 1, (false), (false)));
 					}
 				} else {
 					entity.getPersistentData().putString("Message", "              No bullets in inventory!");
@@ -117,10 +118,10 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 				while (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.getDouble("Ammo")) < 4)) {
 					if (((entity instanceof PlayerEntity)
-							? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block, (int) (1)))
+							? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block))
 							: false)) {
 						if (entity instanceof PlayerEntity) {
-							ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
+							ItemStack _stktoremove = new ItemStack(SmallBulletItem.block);
 							((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 						}
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -140,7 +141,7 @@ public class ReloadEnhancedPepperBoxProcedure extends WobrModElements.ModElement
 						}
 						if (entity instanceof PlayerEntity)
 							((PlayerEntity) entity).getCooldownTracker().setCooldown(
-									(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+									((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 									(int) 60);
 						if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 								.getDouble("Ammo")) == 4)) {

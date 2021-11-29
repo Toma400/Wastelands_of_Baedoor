@@ -59,7 +59,9 @@ import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class OrmathHunterEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(110).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("ormath_hunter").setRegistryName("ormath_hunter");
 	public OrmathHunterEntity(WobrModElements instance) {
 		super(instance, 468);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -67,9 +69,6 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(110).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ormath_hunter")
-						.setRegistryName("ormath_hunter");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -12188411, -3490131, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("ormath_hunter_spawn_egg"));
@@ -96,7 +95,7 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 			super(type, world);
 			experienceValue = 3;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StoneJavelinItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StoneJavelinItem.block));
 		}
 
 		@Override
@@ -149,7 +148,7 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.LEATHER, (int) (1)));
+			this.entityDropItem(new ItemStack(Items.LEATHER));
 		}
 
 		@Override

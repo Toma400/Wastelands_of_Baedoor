@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "wobr:block/pillar_oak"
-    },
-    "facing=north": {
-      "model": "wobr:block/pillar_oak"
-    },
-    "facing=east": {
-      "model": "wobr:block/pillar_oak",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "wobr:block/pillar_oak",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "wobr:block/pillar_oak",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "wobr:block/pillar_oak"
+    },
+    "axis=z": {
       "model": "wobr:block/pillar_oak",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

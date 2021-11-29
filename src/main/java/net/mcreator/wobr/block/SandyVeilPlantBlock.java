@@ -63,7 +63,7 @@ public class SandyVeilPlantBlock extends WobrModElements.ModElement {
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(SandDustItem.block, (int) (1));
+			return new ItemStack(SandDustItem.block);
 		}
 
 		@Override
@@ -71,7 +71,7 @@ public class SandyVeilPlantBlock extends WobrModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(SandDustItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(SandDustItem.block));
 		}
 
 		@Override
@@ -80,7 +80,7 @@ public class SandyVeilPlantBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

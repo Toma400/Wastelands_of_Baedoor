@@ -14,6 +14,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.FunctionObject;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Optional;
 import java.util.Map;
@@ -29,18 +30,18 @@ public class FriendlyNetherAvoiderShieldExecutionProcedure extends WobrModElemen
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure FriendlyNetherAvoiderShieldExecution!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure FriendlyNetherAvoiderShieldExecution!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure FriendlyNetherAvoiderShieldExecution!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure FriendlyNetherAvoiderShieldExecution!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Items.NAME_TAG, (int) (1)).getItem())) {
+				.getItem() == Items.NAME_TAG)) {
 			if (!sourceentity.world.isRemote && sourceentity.world.getServer() != null) {
 				Optional<FunctionObject> _fopt = sourceentity.world.getServer().getFunctionManager()
 						.get(new ResourceLocation("wobr:friendly_nether_avoider_shield"));

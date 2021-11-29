@@ -22,7 +22,7 @@ public class WoBCreativeTabItemGroup extends WobrModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(AyerShotgunItem.block, (int) (1));
+				return new ItemStack(AyerShotgunItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

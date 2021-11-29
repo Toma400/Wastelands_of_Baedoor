@@ -43,8 +43,9 @@ import java.util.HashMap;
 public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ammo_box_lava_projectile")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletammo_box_lava_projectile")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletammo_box_lava_projectile").setRegistryName("entitybulletammo_box_lava_projectile");
 	public AmmoBoxLavaProjectileItem(WobrModElements instance) {
 		super(instance, 945);
 	}
@@ -52,9 +53,7 @@ public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletammo_box_lava_projectile").setRegistryName("entitybulletammo_box_lava_projectile"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -127,7 +126,7 @@ public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(AmmoBoxLavaItem.block, (int) (1));
+			return new ItemStack(AmmoBoxLavaItem.block);
 		}
 
 		@Override
@@ -144,6 +143,7 @@ public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -162,6 +162,7 @@ public class AmmoBoxLavaProjectileItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

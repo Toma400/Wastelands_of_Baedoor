@@ -4,8 +4,9 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.WarhammerProtectionPotion;
+import net.mcreator.wobr.potion.WarhammerProtectionPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -19,7 +20,7 @@ public class WarhammerFieldAttackResultProcedure extends WobrModElements.ModElem
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WarhammerFieldAttackResult!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WarhammerFieldAttackResult!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -28,7 +29,7 @@ public class WarhammerFieldAttackResultProcedure extends WobrModElements.ModElem
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == WarhammerProtectionPotion.potion)
+						if (effect.getPotion() == WarhammerProtectionPotionEffect.potion)
 							return true;
 					}
 				}

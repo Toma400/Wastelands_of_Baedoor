@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.mcreator.wobr.item.StoneSpearItem;
 import net.mcreator.wobr.item.IronSpearItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -17,19 +18,19 @@ public class SpearRegistryProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure SpearRegistry!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure SpearRegistry!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if ((((itemstack).getOrCreateTag().getDouble("spear_reg")) < 15)) {
-			if (((itemstack).getItem() == new ItemStack(StoneSpearItem.block, (int) (1)).getItem())) {
+			if (((itemstack).getItem() == StoneSpearItem.block)) {
 				(itemstack).getOrCreateTag().putDouble("spr_def_power", 2);
 				(itemstack).getOrCreateTag().putDouble("spr_def_time", 80);
 				(itemstack).getOrCreateTag().putDouble("spr_cooldown", 301);
 				(itemstack).getOrCreateTag().putDouble("spr_rg_power", 1);
 				(itemstack).getOrCreateTag().putDouble("spr_rg_factor", 2);
 				(itemstack).getOrCreateTag().putDouble("spear_reg", 15);
-			} else if (((itemstack).getItem() == new ItemStack(IronSpearItem.block, (int) (1)).getItem())) {
+			} else if (((itemstack).getItem() == IronSpearItem.block)) {
 				(itemstack).getOrCreateTag().putDouble("spr_def_power", 2);
 				(itemstack).getOrCreateTag().putDouble("spr_def_time", 140);
 				(itemstack).getOrCreateTag().putDouble("spr_cooldown", 301);

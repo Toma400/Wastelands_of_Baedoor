@@ -11,6 +11,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.BlackSabreItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -23,12 +24,12 @@ public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SabreSelfHarm!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SabreSelfHarm!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure SabreSelfHarm!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure SabreSelfHarm!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -53,7 +54,7 @@ public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 		}.getScore("sabre_experience")) < 41)) {
 			if ((Math.random() < 0.2)) {
 				if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem())) {
+						.getItem() == BlackSabreItem.block)) {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 				} else {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC,
@@ -92,7 +93,7 @@ public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 		}.getScore("sabre_experience")) < 81))) {
 			if ((Math.random() < 0.15)) {
 				if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem())) {
+						.getItem() == BlackSabreItem.block)) {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 				} else {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC,
@@ -131,7 +132,7 @@ public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 		}.getScore("sabre_experience")) < 126))) {
 			if ((Math.random() < 0.07)) {
 				if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem())) {
+						.getItem() == BlackSabreItem.block)) {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 				} else {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC,
@@ -170,7 +171,7 @@ public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 		}.getScore("sabre_experience")) < 251))) {
 			if ((Math.random() < 0.03)) {
 				if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(BlackSabreItem.block, (int) (1)).getItem())) {
+						.getItem() == BlackSabreItem.block)) {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 				} else {
 					sourceentity.attackEntityFrom(DamageSource.GENERIC,

@@ -13,6 +13,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public class WobrModGunsExperienceProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WobrModGunsExperience!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WobrModGunsExperience!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

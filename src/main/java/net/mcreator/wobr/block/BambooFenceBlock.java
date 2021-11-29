@@ -69,11 +69,6 @@ public class BambooFenceBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
-		}
-
-		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 5;
 		}

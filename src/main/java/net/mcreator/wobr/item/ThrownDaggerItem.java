@@ -50,8 +50,9 @@ import com.google.common.collect.Multimap;
 public class ThrownDaggerItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:thrown_dagger")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletthrown_dagger")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletthrown_dagger").setRegistryName("entitybulletthrown_dagger");
 	public ThrownDaggerItem(WobrModElements instance) {
 		super(instance, 12);
 	}
@@ -59,9 +60,7 @@ public class ThrownDaggerItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletthrown_dagger").setRegistryName("entitybulletthrown_dagger"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -152,7 +151,7 @@ public class ThrownDaggerItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ThrownDaggerProjectileItem.block, (int) (1));
+			return new ItemStack(ThrownDaggerProjectileItem.block);
 		}
 
 		@Override
@@ -174,6 +173,7 @@ public class ThrownDaggerItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

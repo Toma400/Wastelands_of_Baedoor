@@ -46,7 +46,9 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class SpawnEntityBanditAirshipEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.size(1f, 1f)).build("spawn_entity_bandit_airship").setRegistryName("spawn_entity_bandit_airship");
 	public SpawnEntityBanditAirshipEntity(WobrModElements instance) {
 		super(instance, 2024);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -54,9 +56,6 @@ public class SpawnEntityBanditAirshipEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(1f, 1f))
-						.build("spawn_entity_bandit_airship").setRegistryName("spawn_entity_bandit_airship");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10066432, -9945585, new Item.Properties().group(null))
 				.setRegistryName("spawn_entity_bandit_airship_spawn_egg"));

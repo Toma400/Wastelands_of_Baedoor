@@ -11,6 +11,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.entity.OrmathHunterEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -23,27 +24,27 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure OrmathHuntersSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure OrmathHuntersSpawn!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure OrmathHuntersSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure OrmathHuntersSpawn!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure OrmathHuntersSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure OrmathHuntersSpawn!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure OrmathHuntersSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure OrmathHuntersSpawn!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure OrmathHuntersSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure OrmathHuntersSpawn!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -57,6 +58,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -66,6 +68,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -77,6 +80,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -86,6 +90,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -95,6 +100,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -106,6 +112,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -115,6 +122,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -124,6 +132,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.7), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -133,6 +142,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.7), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -144,6 +154,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.5), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -153,6 +164,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.6), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -162,6 +174,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.7), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -171,6 +184,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.8), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -180,6 +194,7 @@ public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 				Entity entityToSpawn = new OrmathHunterEntity.CustomEntity(OrmathHunterEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 0.9), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
+				entityToSpawn.setRotationYawHead((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

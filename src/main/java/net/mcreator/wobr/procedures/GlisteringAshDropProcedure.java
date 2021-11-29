@@ -16,6 +16,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.wobr.item.GlisteringAshItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -30,27 +31,27 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GlisteringAshDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GlisteringAshDrop!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure GlisteringAshDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure GlisteringAshDrop!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure GlisteringAshDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure GlisteringAshDrop!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure GlisteringAshDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure GlisteringAshDrop!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GlisteringAshDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GlisteringAshDrop!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -58,15 +59,15 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
-				&& ((entity.dimension.getId()) == 1))) {
+		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.END_STONE)
+				&& ((world.getDimension().getType().getId()) == (1)))) {
 			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
 				if (((0.02 + (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 5) / 100)) >= Math
 								.random())) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -74,7 +75,7 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 			} else {
 				if ((0.02 >= Math.random())) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -88,14 +89,15 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 		Entity entity = event.getPlayer();
 		Map<String, Object> dependencies = new HashMap<>();
 		dependencies.put("xpAmount", event.getExpToDrop());
-		dependencies.put("x", (int) event.getPos().getX());
-		dependencies.put("y", (int) event.getPos().getY());
-		dependencies.put("z", (int) event.getPos().getZ());
+		dependencies.put("x", event.getPos().getX());
+		dependencies.put("y", event.getPos().getY());
+		dependencies.put("z", event.getPos().getZ());
 		dependencies.put("px", entity.getPosX());
 		dependencies.put("py", entity.getPosY());
 		dependencies.put("pz", entity.getPosZ());
 		dependencies.put("world", event.getWorld().getWorld());
 		dependencies.put("entity", entity);
+		dependencies.put("blockstate", event.getState());
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}

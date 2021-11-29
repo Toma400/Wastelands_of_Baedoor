@@ -76,9 +76,14 @@ public class GlisteringSandBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0D, 0D, 0D, 1D, 0.9D, 1D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 14.4, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

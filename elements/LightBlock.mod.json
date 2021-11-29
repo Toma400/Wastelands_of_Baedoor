@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "light_block",
@@ -15,15 +15,23 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.49,
-    "my": 0.49,
-    "mz": 0.49,
-    "Mx": 0.5,
-    "My": 0.5,
-    "Mz": 0.5,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 7.84,
+        "my": 7.84,
+        "mz": 7.84,
+        "Mx": 8.0,
+        "My": 8.0,
+        "Mz": 8.0,
+        "subtract": false
+      }
+    ],
     "name": "Light Block",
     "specialInfo": [],
     "hardness": 0.0,
@@ -39,17 +47,17 @@
     },
     "dropAmount": 0,
     "useLootTableForDrops": false,
-    "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "AIR"
     },
     "tickRate": 600,
     "tickRandomly": false,
     "isReplaceable": true,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": "Blocks.AIR"
@@ -60,12 +68,15 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "LANTERN"
     },
-    "luminance": 0.9,
+    "luminance": 13,
     "unbreakable": false,
     "breakHarvestLevel": -1,
     "spawnParticles": false,

@@ -19,6 +19,7 @@ import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.item.SlugItem;
 import net.mcreator.wobr.item.LargeBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -33,27 +34,27 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunAddOnRldAllOnce!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunAddOnRldAllOnce!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure GunAddOnRldAllOnce!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure GunAddOnRldAllOnce!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure GunAddOnRldAllOnce!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure GunAddOnRldAllOnce!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure GunAddOnRldAllOnce!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure GunAddOnRldAllOnce!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunAddOnRldAllOnce!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunAddOnRldAllOnce!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -69,10 +70,10 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 			if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 					.getString("ammo_using"))).equals("Small_Bullet"))) {
 				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block))
 						: false)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(SmallBulletItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -97,7 +98,7 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 				} else {
@@ -112,10 +113,10 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 			} else if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 					.getString("ammo_using"))).equals("Large_Bullet"))) {
 				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LargeBulletItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LargeBulletItem.block))
 						: false)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -140,7 +141,7 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 				} else {
@@ -154,11 +155,9 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 				}
 			} else if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 					.getString("ammo_using"))).equals("Slug"))) {
-				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SlugItem.block, (int) (1)))
-						: false)) {
+				if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SlugItem.block)) : false)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(SlugItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(SlugItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -183,7 +182,7 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 				} else {
@@ -197,11 +196,9 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 				}
 			} else if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 					.getString("ammo_using"))).equals("Gunpowder"))) {
-				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.GUNPOWDER, (int) (1)))
-						: false)) {
+				if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.GUNPOWDER)) : false)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.GUNPOWDER, (int) (1));
+						ItemStack _stktoremove = new ItemStack(Items.GUNPOWDER);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -226,7 +223,7 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 				} else {
@@ -255,12 +252,12 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 											.getOrCreate(new ResourceLocation(("forge:wobr_ammo").toLowerCase(java.util.Locale.ENGLISH)))
 											.contains((itemstackiterator).getItem())))) {
 								ammo_info = (itemstackiterator);
-								number_ammo = (double) ((number_ammo) + 1);
+								number_ammo = (double) (number_ammo + 1);
 							}
 						}
 					}
 				}
-				if (((number_ammo) > 0)) {
+				if ((number_ammo > 0)) {
 					((ammo_info)).shrink((int) 1);
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 							.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
@@ -284,7 +281,7 @@ public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 				} else {

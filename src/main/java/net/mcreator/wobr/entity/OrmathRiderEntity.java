@@ -65,7 +65,9 @@ import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class OrmathRiderEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(120).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(1.5f, 2f)).build("ormath_rider").setRegistryName("ormath_rider");
 	public OrmathRiderEntity(WobrModElements instance) {
 		super(instance, 467);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -73,9 +75,6 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(120).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.5f, 2f)).build("ormath_rider")
-						.setRegistryName("ormath_rider");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -11851759, -8487859, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("ormath_rider_spawn_egg"));
@@ -133,7 +132,7 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 			super(type, world);
 			experienceValue = 7;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StoneSpearItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StoneSpearItem.block));
 		}
 
 		@Override

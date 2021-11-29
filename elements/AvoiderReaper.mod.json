@@ -1,9 +1,9 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "command",
   "definition": {
     "commandName": "wobrRule_Avoider",
-    "permissionLevel": 4,
+    "permissionLevel": "4",
     "onCommandExecuted": {
       "name": "AvoiderReaperSwitch"
     }

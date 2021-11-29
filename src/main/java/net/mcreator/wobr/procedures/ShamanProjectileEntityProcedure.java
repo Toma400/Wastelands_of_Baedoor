@@ -5,9 +5,10 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.CurarePoisonPotion;
+import net.mcreator.wobr.potion.CurarePoisonPotionEffect;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -20,7 +21,7 @@ public class ShamanProjectileEntityProcedure extends WobrModElements.ModElement 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ShamanProjectileEntity!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ShamanProjectileEntity!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -30,16 +31,16 @@ public class ShamanProjectileEntityProcedure extends WobrModElements.ModElement 
 			((LivingEntity) entity).removePotionEffect(Effects.LEVITATION);
 		}
 		WobrModVariables.For_Random_Uses = (double) (Math.random() * 100);
-		if (((WobrModVariables.For_Random_Uses) <= 5)) {
+		if ((WobrModVariables.For_Random_Uses <= 5)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(CurarePoisonPotion.potion, (int) 60, (int) 1, (false), (true)));
-		} else if ((((WobrModVariables.For_Random_Uses) <= 25) && ((WobrModVariables.For_Random_Uses) > 5))) {
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(CurarePoisonPotionEffect.potion, (int) 60, (int) 1, (false), (true)));
+		} else if (((WobrModVariables.For_Random_Uses <= 25) && (WobrModVariables.For_Random_Uses > 5))) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.BLINDNESS, (int) 60, (int) 1, (false), (true)));
-		} else if ((((WobrModVariables.For_Random_Uses) <= 60) && ((WobrModVariables.For_Random_Uses) > 25))) {
+		} else if (((WobrModVariables.For_Random_Uses <= 60) && (WobrModVariables.For_Random_Uses > 25))) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 60, (int) 1, (false), (true)));
-		} else if ((((WobrModVariables.For_Random_Uses) <= 75) && ((WobrModVariables.For_Random_Uses) > 60))) {
+		} else if (((WobrModVariables.For_Random_Uses <= 75) && (WobrModVariables.For_Random_Uses > 60))) {
 			entity.setFire((int) 6);
 		}
 	}

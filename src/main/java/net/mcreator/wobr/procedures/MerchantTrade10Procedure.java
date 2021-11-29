@@ -16,6 +16,7 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -29,27 +30,27 @@ public class MerchantTrade10Procedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure MerchantTrade10!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure MerchantTrade10!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure MerchantTrade10!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure MerchantTrade10!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure MerchantTrade10!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure MerchantTrade10!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure MerchantTrade10!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure MerchantTrade10!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure MerchantTrade10!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure MerchantTrade10!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -66,15 +67,15 @@ public class MerchantTrade10Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						if ((Items.DIAMOND == (itemstackiterator).getItem())) {
+							money = (double) (money + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((money) > 0)) {
+			if ((money > 0)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+					ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

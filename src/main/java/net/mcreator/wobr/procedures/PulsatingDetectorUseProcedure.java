@@ -4,8 +4,9 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotion;
+import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -19,7 +20,7 @@ public class PulsatingDetectorUseProcedure extends WobrModElements.ModElement {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure PulsatingDetectorUse!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure PulsatingDetectorUse!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -28,7 +29,7 @@ public class PulsatingDetectorUseProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == NetherAvoiderPulsatingPotion.potion)
+						if (effect.getPotion() == NetherAvoiderPulsatingPotionEffect.potion)
 							return true;
 					}
 				}

@@ -16,6 +16,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -30,14 +31,13 @@ public class SpearResistanceManagerProcedure extends WobrModElements.ModElement 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SpearResistanceManager!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SpearResistanceManager!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if ((ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_spear").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))) {
-			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
-					.getItem() == new ItemStack(Items.SHIELD, (int) (1)).getItem())) {
+			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == Items.SHIELD)) {
 				if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 4)) {
 					if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 							.getDouble("Spear_Resistance")) >= (((entity instanceof LivingEntity)

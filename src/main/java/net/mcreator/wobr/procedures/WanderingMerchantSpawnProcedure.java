@@ -24,6 +24,7 @@ import net.mcreator.wobr.entity.WanderingMerchantFirearmsEntity;
 import net.mcreator.wobr.entity.WanderingMerchantEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -38,27 +39,27 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WanderingMerchantSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WanderingMerchantSpawn!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure WanderingMerchantSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure WanderingMerchantSpawn!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure WanderingMerchantSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure WanderingMerchantSpawn!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure WanderingMerchantSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure WanderingMerchantSpawn!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure WanderingMerchantSpawn!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure WanderingMerchantSpawn!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -66,7 +67,7 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((entity instanceof WanderingTraderEntity) && ((WobrModVariables.MapVariables.get(world).Merchant) == (false)))) {
+		if (((entity instanceof WanderingTraderEntity) && (WobrModVariables.MapVariables.get(world).Merchant == (false)))) {
 			if ((25 >= (Math.random() * 100))) {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(

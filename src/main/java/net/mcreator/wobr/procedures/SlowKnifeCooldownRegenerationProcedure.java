@@ -3,6 +3,7 @@ package net.mcreator.wobr.procedures;
 import net.minecraft.item.ItemStack;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -15,7 +16,7 @@ public class SlowKnifeCooldownRegenerationProcedure extends WobrModElements.ModE
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure SlowKnifeCooldownRegeneration!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure SlowKnifeCooldownRegeneration!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");

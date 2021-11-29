@@ -61,6 +61,11 @@ public class GlowingObsidianBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public PushReaction getPushReaction(BlockState state) {
 			return PushReaction.IGNORE;
 		}

@@ -18,6 +18,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.wobr.block.HardenedBlackSandBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -32,38 +33,35 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure AddOnPlaceableRenewabilities!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure AddOnPlaceableRenewabilities!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure AddOnPlaceableRenewabilities!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure AddOnPlaceableRenewabilities!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure AddOnPlaceableRenewabilities!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure AddOnPlaceableRenewabilities!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure AddOnPlaceableRenewabilities!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure AddOnPlaceableRenewabilities!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.SOUL_SAND.getDefaultState().getBlock())) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.SOUL_SAND)) {
 			if ((BlockTags.getCollection().getOrCreate(new ResourceLocation(("forge:be_nyl_sand").toLowerCase(java.util.Locale.ENGLISH)))
 					.contains((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()))) {
-				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.WATER.getDefaultState()
-										.getBlock())))) {
+				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.WATER)
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.WATER))
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.WATER)
+								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.WATER)))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_byg_nylium_soul_sand"));
@@ -77,14 +75,11 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 		}
 		if ((BlockTags.getCollection().getOrCreate(new ResourceLocation(("forge:desolat_sandstone").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())) {
-				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-										.getBlock())))) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER)) {
+				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA)
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA))
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA)
+								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA)))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_desolat_cobblestone"));
@@ -97,14 +92,11 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 			}
 		}
 		if (((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs")) == (true))) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())) {
-				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
-						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock())
-								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-										.getBlock())))) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRAVEL)) {
+				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA)
+						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA))
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA)
+								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA)))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_tuff"));
@@ -115,17 +107,12 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 					}
 				}
 			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == HardenedBlackSandBlock.block.getDefaultState()
-					.getBlock())) {
-				if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
-						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-								.getBlock())
-								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA.getDefaultState()
-										.getBlock())))
-						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.OBSIDIAN.getDefaultState()
-								.getBlock()))) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == HardenedBlackSandBlock.block)) {
+				if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA)
+						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA))
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA)
+								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA)))
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.OBSIDIAN))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_deepslate"));
@@ -143,14 +130,16 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 	public void onBlockPlace(BlockEvent.EntityPlaceEvent event) {
 		Entity entity = event.getEntity();
 		Map<String, Object> dependencies = new HashMap<>();
-		dependencies.put("x", (int) event.getPos().getX());
-		dependencies.put("y", (int) event.getPos().getY());
-		dependencies.put("z", (int) event.getPos().getZ());
+		dependencies.put("x", event.getPos().getX());
+		dependencies.put("y", event.getPos().getY());
+		dependencies.put("z", event.getPos().getZ());
 		dependencies.put("px", entity.getPosX());
 		dependencies.put("py", entity.getPosY());
 		dependencies.put("pz", entity.getPosZ());
 		dependencies.put("world", event.getWorld().getWorld());
 		dependencies.put("entity", entity);
+		dependencies.put("blockstate", event.getState());
+		dependencies.put("placedagainst", event.getPlacedAgainst());
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}

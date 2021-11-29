@@ -44,7 +44,8 @@ public class StrippedBYGEbonyWoodenStairsBlock extends WobrModElements.ModElemen
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2f, 3f)).getDefaultState(),
+			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0)
+					.harvestLevel(1).harvestTool(ToolType.AXE)).getDefaultState(),
 					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0).harvestLevel(1)
 							.harvestTool(ToolType.AXE));
 			setRegistryName("stripped_byg_ebony_wooden_stairs");

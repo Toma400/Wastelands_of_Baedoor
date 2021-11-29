@@ -1,8 +1,6 @@
 
 package net.mcreator.wobr.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -44,6 +42,8 @@ import net.mcreator.wobr.WobrMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -346,8 +346,10 @@ public class LockedStorageGUIGui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1, 1, 1, 1);
+		protected void drawGuiContainerBackgroundLayer(float partialTicks, int gx, int gy) {
+			RenderSystem.color4f(1, 1, 1, 1);
+			RenderSystem.enableBlend();
+			RenderSystem.defaultBlendFunc();
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
@@ -362,6 +364,7 @@ public class LockedStorageGUIGui extends WobrModElements.ModElement {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/iron_key_7.png"));
 				this.blit(this.guiLeft + 56, this.guiTop + 56, 0, 0, 26, 17, 26, 17);
 			}
+			RenderSystem.disableBlend();
 		}
 
 		@Override
@@ -393,8 +396,10 @@ public class LockedStorageGUIGui extends WobrModElements.ModElement {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
 			this.addButton(new Button(this.guiLeft + 142, this.guiTop + 49, 18, 20, "¤", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+					handleButtonAction(entity, 0, x, y, z);
+				}
 			}));
 		}
 	}

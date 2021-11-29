@@ -13,6 +13,7 @@ import net.mcreator.wobr.block.LapisAvoiderActiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderInactiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderActiveBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -25,30 +26,29 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure NetherAvoiderSwitcher!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure NetherAvoiderSwitcher!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure NetherAvoiderSwitcher!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure NetherAvoiderSwitcher!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure NetherAvoiderSwitcher!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure NetherAvoiderSwitcher!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure NetherAvoiderSwitcher!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure NetherAvoiderSwitcher!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderInactiveBlock.block.getDefaultState()
-				.getBlock())) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderInactiveBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = NetherAvoiderBlock.block.getDefaultState();
@@ -69,8 +69,7 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = NetherAvoiderInactiveBlock.block.getDefaultState();
@@ -91,8 +90,7 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderInactiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderInactiveBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = GoldenAvoiderActiveBlock.block.getDefaultState();
@@ -113,8 +111,7 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = GoldenAvoiderInactiveBlock.block.getDefaultState();
@@ -135,8 +132,7 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderInactiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderInactiveBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = LapisAvoiderActiveBlock.block.getDefaultState();
@@ -157,8 +153,7 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = LapisAvoiderInactiveBlock.block.getDefaultState();

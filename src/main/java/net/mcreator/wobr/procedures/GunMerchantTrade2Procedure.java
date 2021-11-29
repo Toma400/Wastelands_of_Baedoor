@@ -12,6 +12,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.WindsweeperSchemeItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -25,12 +26,12 @@ public class GunMerchantTrade2Procedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunMerchantTrade2!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunMerchantTrade2!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunMerchantTrade2!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunMerchantTrade2!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -43,19 +44,19 @@ public class GunMerchantTrade2Procedure extends WobrModElements.ModElement {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
+					if ((Items.DIAMOND == (itemstackiterator).getItem())) {
+						money = (double) (money + (((itemstackiterator)).getCount()));
 					}
 				}
 			}
 		}
-		if (((money) >= 7)) {
+		if ((money >= 7)) {
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+				ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 7);
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(WindsweeperSchemeItem.block, (int) (1));
+				ItemStack _setstack = new ItemStack(WindsweeperSchemeItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}

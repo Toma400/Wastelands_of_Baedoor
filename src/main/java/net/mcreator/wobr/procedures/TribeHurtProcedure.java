@@ -21,6 +21,7 @@ import net.mcreator.wobr.entity.OrmathVillagerEntity;
 import net.mcreator.wobr.entity.OrmathShamanEntity;
 import net.mcreator.wobr.entity.OrmathRangedWarriorEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -35,32 +36,32 @@ public class TribeHurtProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure TribeHurt!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure TribeHurt!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure TribeHurt!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure TribeHurt!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure TribeHurt!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure TribeHurt!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure TribeHurt!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

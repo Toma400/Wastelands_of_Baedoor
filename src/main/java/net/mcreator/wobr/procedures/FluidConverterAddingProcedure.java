@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
@@ -29,27 +30,27 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure FluidConverterAdding!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure FluidConverterAdding!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure FluidConverterAdding!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure FluidConverterAdding!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure FluidConverterAdding!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure FluidConverterAdding!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure FluidConverterAdding!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure FluidConverterAdding!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure FluidConverterAdding!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure FluidConverterAdding!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -59,7 +60,7 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((ForgeHooks.getBurnTime(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) >= 8)
 				&& (!(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(Items.LAVA_BUCKET, (int) (1)).getItem())))) {
+						.getItem() == Items.LAVA_BUCKET)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				int _amount = (int) (ForgeHooks
@@ -70,7 +71,7 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent(
 						("Converter energy is set to NULL".replace("NULL", (new java.text.DecimalFormat("###").format((new Object() {
-							public int getEnergyStored(BlockPos pos) {
+							public int getEnergyStored(IWorld world, BlockPos pos) {
 								AtomicInteger _retval = new AtomicInteger(0);
 								TileEntity _ent = world.getTileEntity(pos);
 								if (_ent != null)
@@ -78,37 +79,30 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 											.ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 								return _retval.get();
 							}
-						}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z)))))))), (false));
+						}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))))))), (false));
 			}
 			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).shrink((int) 1);
 		}
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY)
 				.getItem())) {
 			if (((new Object() {
-				public int getEnergyStored(BlockPos pos) {
+				public int getEnergyStored(IWorld world, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					TileEntity _ent = world.getTileEntity(pos);
 					if (_ent != null)
 						_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) >= 12)) {
-				if ((((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER.getDefaultState()
-						.getBlock())
-						&& ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock()))
-						&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock())
-								&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock())))
-						&& ((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER
-								.getDefaultState().getBlock())
-								&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock()))
-								&& (((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock())
+			}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))) >= 12)) {
+				if ((((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER)
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER))
+						&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER)
+								&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER)))
+						&& ((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER)
+								&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER))
+								&& (((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER)
 										&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1))))
-												.getBlock() == Blocks.WATER.getDefaultState().getBlock()))))) {
+												.getBlock() == Blocks.WATER))))) {
 					{
 						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						int _amount = (int) 12;
@@ -137,7 +131,7 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 				((PlayerEntity) entity).sendStatusMessage(
 						new StringTextComponent(("Converter energy: NULL".replace("NULL", (new java.text.DecimalFormat("###").format((new Object() {
-							public int getEnergyStored(BlockPos pos) {
+							public int getEnergyStored(IWorld world, BlockPos pos) {
 								AtomicInteger _retval = new AtomicInteger(0);
 								TileEntity _ent = world.getTileEntity(pos);
 								if (_ent != null)
@@ -145,7 +139,7 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 											.ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 								return _retval.get();
 							}
-						}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z)))))))), (false));
+						}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))))))), (false));
 			}
 		}
 	}

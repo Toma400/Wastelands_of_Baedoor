@@ -10,8 +10,9 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.CurarePoisonPotion;
+import net.mcreator.wobr.potion.CurarePoisonPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public class CurareAttackParalyseProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure CurareAttackParalyse!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure CurareAttackParalyse!");
 			return;
 		}
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
@@ -36,7 +37,7 @@ public class CurareAttackParalyseProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == CurarePoisonPotion.potion)
+						if (effect.getPotion() == CurarePoisonPotionEffect.potion)
 							return true;
 					}
 				}

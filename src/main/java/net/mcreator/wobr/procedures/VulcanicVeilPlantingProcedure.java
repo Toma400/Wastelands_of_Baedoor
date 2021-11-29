@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.wobr.item.AshDustItem;
 import net.mcreator.wobr.block.VulcanicVeilPlantBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -21,27 +22,27 @@ public class VulcanicVeilPlantingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure VulcanicVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure VulcanicVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure VulcanicVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure VulcanicVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure VulcanicVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure VulcanicVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure VulcanicVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure VulcanicVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure VulcanicVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure VulcanicVeilPlanting!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -52,7 +53,7 @@ public class VulcanicVeilPlantingProcedure extends WobrModElements.ModElement {
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == net.minecraft.block.material.Material.SAND)) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getMaterial() == net.minecraft.block.material.Material.AIR)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(AshDustItem.block, (int) (1));
+					ItemStack _stktoremove = new ItemStack(AshDustItem.block);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 				}
 				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), VulcanicVeilPlantBlock.block.getDefaultState(), 3);

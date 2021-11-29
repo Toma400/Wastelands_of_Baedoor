@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "wobr:block/pillar_byg_ebony"
-    },
-    "facing=north": {
-      "model": "wobr:block/pillar_byg_ebony"
-    },
-    "facing=east": {
-      "model": "wobr:block/pillar_byg_ebony",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "wobr:block/pillar_byg_ebony",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "wobr:block/pillar_byg_ebony",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "wobr:block/pillar_byg_ebony"
+    },
+    "axis=z": {
       "model": "wobr:block/pillar_byg_ebony",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

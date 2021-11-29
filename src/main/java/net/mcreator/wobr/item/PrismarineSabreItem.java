@@ -55,7 +55,7 @@ public class PrismarineSabreItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.PRISMARINE_CRYSTALS, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.PRISMARINE_CRYSTALS));
 			}
 		}, 3, -1.8f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

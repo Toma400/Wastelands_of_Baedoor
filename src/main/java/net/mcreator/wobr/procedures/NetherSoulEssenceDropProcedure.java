@@ -15,6 +15,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.mcreator.wobr.item.NetherSoulEssenceItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -27,50 +28,44 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure NetherSoulEssenceDrop!");
-			return;
-		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure NetherSoulEssenceDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure NetherSoulEssenceDrop!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure NetherSoulEssenceDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure NetherSoulEssenceDrop!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure NetherSoulEssenceDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure NetherSoulEssenceDrop!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure NetherSoulEssenceDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure NetherSoulEssenceDrop!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure NetherSoulEssenceDrop!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure NetherSoulEssenceDrop!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((entity.dimension.getId()) == (-1))) {
+		if (((world.getDimension().getType().getId()) == (-1))) {
 			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
 				if (((8 * ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						+ 1)) >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -79,8 +74,7 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 									? ((LivingEntity) sourceentity).getHeldItemMainhand()
 									: ItemStack.EMPTY)))) >= (Math.random() * 100))) {
 						if (!world.getWorld().isRemote) {
-							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z,
-									new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
+							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
 							entityToSpawn.setPickupDelay((int) 10);
 							world.addEntity(entityToSpawn);
 						}
@@ -89,7 +83,7 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 			} else {
 				if ((8 >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}

@@ -57,7 +57,9 @@ import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class OrmathRangedWarriorEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("ormath_ranged_warrior").setRegistryName("ormath_ranged_warrior");
 	public OrmathRangedWarriorEntity(WobrModElements instance) {
 		super(instance, 465);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -65,9 +67,6 @@ public class OrmathRangedWarriorEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ormath_ranged_warrior")
-						.setRegistryName("ormath_ranged_warrior");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10066330, -13557214, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("ormath_ranged_warrior_spawn_egg"));
@@ -152,7 +151,7 @@ public class OrmathRangedWarriorEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(BoneJavelinItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(BoneJavelinItem.block));
 		}
 
 		@Override

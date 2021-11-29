@@ -1,0 +1,56 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityBlaze"
+      },
+      {
+        "value": "EntitySlime"
+      },
+      {
+        "value": "EntityEnderman"
+      },
+      {
+        "value": "EntityGhast"
+      },
+      {
+        "value": "EntityMagmaCube"
+      },
+      {
+        "value": "EntityCaveSpider"
+      },
+      {
+        "value": "EntityCreeper"
+      },
+      {
+        "value": "EntityEndermite"
+      },
+      {
+        "value": "EntitySpider"
+      },
+      {
+        "value": "EntitySkeleton"
+      },
+      {
+        "value": "EntityStray"
+      },
+      {
+        "value": "EntityVex"
+      },
+      {
+        "value": "EntityWitch"
+      },
+      {
+        "value": "EntityWitherSkeleton"
+      }
+    ],
+    "name": "avoider_vanilla",
+    "namespace": "forge"
+  }
+}

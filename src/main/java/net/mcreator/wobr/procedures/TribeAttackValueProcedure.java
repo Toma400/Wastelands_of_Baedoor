@@ -4,9 +4,10 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.TribeReputationRaisePotion;
-import net.mcreator.wobr.potion.TribeReputationDropPotion;
+import net.mcreator.wobr.potion.TribeReputationRaisePotionEffect;
+import net.mcreator.wobr.potion.TribeReputationDropPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -20,7 +21,7 @@ public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure TribeAttackValue!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure TribeAttackValue!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -29,7 +30,7 @@ public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == TribeReputationDropPotion.potion)
+						if (effect.getPotion() == TribeReputationDropPotionEffect.potion)
 							return true;
 					}
 				}
@@ -42,7 +43,7 @@ public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 							if (_entity instanceof LivingEntity) {
 								Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 								for (EffectInstance effect : effects) {
-									if (effect.getPotion() == TribeReputationDropPotion.potion)
+									if (effect.getPotion() == TribeReputationDropPotionEffect.potion)
 										return effect.getAmplifier();
 								}
 							}
@@ -55,7 +56,7 @@ public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == TribeReputationRaisePotion.potion)
+						if (effect.getPotion() == TribeReputationRaisePotionEffect.potion)
 							return true;
 					}
 				}
@@ -69,7 +70,7 @@ public class TribeAttackValueProcedure extends WobrModElements.ModElement {
 								if (_entity instanceof LivingEntity) {
 									Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 									for (EffectInstance effect : effects) {
-										if (effect.getPotion() == TribeReputationRaisePotion.potion)
+										if (effect.getPotion() == TribeReputationRaisePotionEffect.potion)
 											return effect.getAmplifier();
 									}
 								}

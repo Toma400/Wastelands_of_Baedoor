@@ -61,7 +61,7 @@ public class AssassinsKnifeItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT));
 			}
 		}, 3, -3f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

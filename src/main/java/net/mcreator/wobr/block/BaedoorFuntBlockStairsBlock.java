@@ -49,7 +49,8 @@ public class BaedoorFuntBlockStairsBlock extends WobrModElements.ModElement {
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(6f, 6f)).getDefaultState(),
+			super(() -> new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 6f).lightValue(0)
+					.harvestLevel(1).harvestTool(ToolType.PICKAXE).notSolid()).getDefaultState(),
 					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 6f).lightValue(0).harvestLevel(1)
 							.harvestTool(ToolType.PICKAXE).notSolid());
 			setRegistryName("baedoor_funt_block_stairs");
@@ -58,11 +59,6 @@ public class BaedoorFuntBlockStairsBlock extends WobrModElements.ModElement {
 		@Override
 		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return false;
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

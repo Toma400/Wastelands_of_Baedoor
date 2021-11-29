@@ -10,6 +10,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -24,11 +25,11 @@ public class ExperienceGUIProcedure extends WobrModElements.ModElement {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ExperienceGUI!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ExperienceGUI!");
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		return (WobrModVariables.MapVariables.get(world).Test_Features);
+		return WobrModVariables.MapVariables.get(world).Test_Features;
 	}
 
 	@SubscribeEvent

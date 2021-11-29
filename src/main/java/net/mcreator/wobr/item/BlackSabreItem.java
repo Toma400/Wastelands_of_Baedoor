@@ -55,7 +55,7 @@ public class BlackSabreItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Blocks.WITHER_SKELETON_SKULL, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Blocks.WITHER_SKELETON_SKULL));
 			}
 		}, 3, -1.3f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

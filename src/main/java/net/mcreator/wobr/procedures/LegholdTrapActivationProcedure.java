@@ -12,6 +12,7 @@ import net.mcreator.wobr.block.LegholdTrapInactiveBlock;
 import net.mcreator.wobr.block.LegholdTrapCatchBlock;
 import net.mcreator.wobr.block.LegholdTrapActiveBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -24,27 +25,27 @@ public class LegholdTrapActivationProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure LegholdTrapActivation!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure LegholdTrapActivation!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure LegholdTrapActivation!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure LegholdTrapActivation!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure LegholdTrapActivation!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure LegholdTrapActivation!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure LegholdTrapActivation!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure LegholdTrapActivation!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure LegholdTrapActivation!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure LegholdTrapActivation!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -52,19 +53,16 @@ public class LegholdTrapActivationProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Blocks.TRIPWIRE_HOOK, (int) (1)).getItem())) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapInactiveBlock.block.getDefaultState()
-					.getBlock())) {
+		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Blocks.TRIPWIRE_HOOK
+				.asItem())) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapInactiveBlock.block)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = LegholdTrapActiveBlock.block.getDefaultState();
 					world.setBlockState(_bp, _bs, 3);
 				}
-			} else if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapActiveBlock.block.getDefaultState()
-					.getBlock())
-					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapCatchBlock.block.getDefaultState()
-							.getBlock()))) {
+			} else if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapActiveBlock.block)
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LegholdTrapCatchBlock.block))) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = LegholdTrapInactiveBlock.block.getDefaultState();

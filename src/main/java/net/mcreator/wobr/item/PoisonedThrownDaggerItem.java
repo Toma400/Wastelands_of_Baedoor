@@ -51,8 +51,9 @@ import com.google.common.collect.Multimap;
 public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:poisoned_thrown_dagger")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletpoisoned_thrown_dagger")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletpoisoned_thrown_dagger").setRegistryName("entitybulletpoisoned_thrown_dagger");
 	public PoisonedThrownDaggerItem(WobrModElements instance) {
 		super(instance, 13);
 	}
@@ -60,9 +61,7 @@ public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletpoisoned_thrown_dagger").setRegistryName("entitybulletpoisoned_thrown_dagger"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -153,7 +152,7 @@ public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ThrownDaggerProjectileItem.block, (int) (1));
+			return new ItemStack(ThrownDaggerProjectileItem.block);
 		}
 
 		@Override
@@ -170,6 +169,7 @@ public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -185,6 +185,7 @@ public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

@@ -112,6 +112,8 @@ public class WobrModVariables {
 		public boolean Structure_Generation = false;
 		public boolean Merchant = false;
 		public boolean Chunk_Ticker = false;
+		public boolean KF_Av_Pigman = false;
+		public boolean KF_Av_Villager = true;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -126,6 +128,8 @@ public class WobrModVariables {
 			Structure_Generation = nbt.getBoolean("Structure_Generation");
 			Merchant = nbt.getBoolean("Merchant");
 			Chunk_Ticker = nbt.getBoolean("Chunk_Ticker");
+			KF_Av_Pigman = nbt.getBoolean("KF_Av_Pigman");
+			KF_Av_Villager = nbt.getBoolean("KF_Av_Villager");
 		}
 
 		@Override
@@ -134,6 +138,8 @@ public class WobrModVariables {
 			nbt.putBoolean("Structure_Generation", Structure_Generation);
 			nbt.putBoolean("Merchant", Merchant);
 			nbt.putBoolean("Chunk_Ticker", Chunk_Ticker);
+			nbt.putBoolean("KF_Av_Pigman", KF_Av_Pigman);
+			nbt.putBoolean("KF_Av_Villager", KF_Av_Villager);
 			return nbt;
 		}
 

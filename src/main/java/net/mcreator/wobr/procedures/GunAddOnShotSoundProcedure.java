@@ -12,6 +12,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.Lefs9Item;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -24,27 +25,27 @@ public class GunAddOnShotSoundProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunAddOnShotSound!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunAddOnShotSound!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure GunAddOnShotSound!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure GunAddOnShotSound!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure GunAddOnShotSound!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure GunAddOnShotSound!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure GunAddOnShotSound!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure GunAddOnShotSound!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunAddOnShotSound!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunAddOnShotSound!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -52,8 +53,7 @@ public class GunAddOnShotSoundProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Lefs9Item.block, (int) (1)).getItem())
+		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Lefs9Item.block)
 				&& ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.getBoolean("rld_trig")) == (true)))) {
 			if (!world.getWorld().isRemote) {

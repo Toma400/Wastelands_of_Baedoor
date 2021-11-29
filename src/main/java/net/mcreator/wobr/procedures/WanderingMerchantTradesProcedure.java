@@ -5,6 +5,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.wobr.entity.WanderingMerchantFirearmsEntity;
 import net.mcreator.wobr.entity.WanderingMerchantEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -17,7 +18,7 @@ public class WanderingMerchantTradesProcedure extends WobrModElements.ModElement
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WanderingMerchantTrades!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WanderingMerchantTrades!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.wobr.item.SandDustItem;
 import net.mcreator.wobr.block.SandyVeilPlantBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -21,27 +22,27 @@ public class SandyVeilPlantingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SandyVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SandyVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure SandyVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure SandyVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure SandyVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure SandyVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure SandyVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure SandyVeilPlanting!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure SandyVeilPlanting!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure SandyVeilPlanting!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -52,7 +53,7 @@ public class SandyVeilPlantingProcedure extends WobrModElements.ModElement {
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == net.minecraft.block.material.Material.SAND)) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getMaterial() == net.minecraft.block.material.Material.AIR)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(SandDustItem.block, (int) (1));
+					ItemStack _stktoremove = new ItemStack(SandDustItem.block);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 				}
 				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), SandyVeilPlantBlock.block.getDefaultState(), 3);

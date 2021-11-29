@@ -22,7 +22,7 @@ public class WoBIntegrationsTabItemGroup extends WobrModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(CirtainIngotItem.block, (int) (1));
+				return new ItemStack(CirtainIngotItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

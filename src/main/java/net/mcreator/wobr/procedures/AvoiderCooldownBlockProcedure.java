@@ -8,8 +8,9 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.wobr.potion.AvoiderCursePotion;
+import net.mcreator.wobr.potion.AvoiderCursePotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -23,27 +24,27 @@ public class AvoiderCooldownBlockProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure AvoiderCooldownBlock!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure AvoiderCooldownBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure AvoiderCooldownBlock!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure AvoiderCooldownBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure AvoiderCooldownBlock!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure AvoiderCooldownBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure AvoiderCooldownBlock!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure AvoiderCooldownBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure AvoiderCooldownBlock!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure AvoiderCooldownBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -56,7 +57,7 @@ public class AvoiderCooldownBlockProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == AvoiderCursePotion.potion)
+						if (effect.getPotion() == AvoiderCursePotionEffect.potion)
 							return true;
 					}
 				}

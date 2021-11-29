@@ -63,7 +63,9 @@ import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class OrmathShamanEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("ormath_shaman").setRegistryName("ormath_shaman");
 	public OrmathShamanEntity(WobrModElements instance) {
 		super(instance, 459);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -71,9 +73,6 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ormath_shaman")
-						.setRegistryName("ormath_shaman");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10066330, -2565928, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("ormath_shaman_spawn_egg"));
@@ -161,7 +160,7 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(RodoftheWindsItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(RodoftheWindsItem.block));
 		}
 
 		@Override

@@ -51,7 +51,9 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class OrmathVillagerEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("ormath_villager").setRegistryName("ormath_villager");
 	public OrmathVillagerEntity(WobrModElements instance) {
 		super(instance, 463);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -59,9 +61,6 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ormath_villager")
-						.setRegistryName("ormath_villager");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10066330, -1452346, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("ormath_villager_spawn_egg"));
@@ -119,7 +118,7 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(CookedTropicalFishItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(CookedTropicalFishItem.block));
 		}
 
 		@Override

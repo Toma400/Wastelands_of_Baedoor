@@ -23,6 +23,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.wobr.item.IronKeyItem;
 import net.mcreator.wobr.gui.LockedStorageGUIGui;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -38,27 +39,27 @@ public class LockableChestOpeningProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure LockableChestOpening!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure LockableChestOpening!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure LockableChestOpening!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure LockableChestOpening!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure LockableChestOpening!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure LockableChestOpening!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure LockableChestOpening!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure LockableChestOpening!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure LockableChestOpening!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure LockableChestOpening!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -67,13 +68,13 @@ public class LockableChestOpeningProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((new Object() {
-			public double getValue(BlockPos pos, String tag) {
+			public double getValue(IWorld world, BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
 				if (tileEntity != null)
 					return tileEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Chest_Locked")) != 5)) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "Chest_Locked")) != 5)) {
 			if (!world.getWorld().isRemote) {
 				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")),
@@ -101,17 +102,16 @@ public class LockableChestOpeningProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else {
-			if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-					.getItem() == new ItemStack(IronKeyItem.block, (int) (1)).getItem())
+			if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == IronKeyItem.block)
 					&& (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getDisplayName()
 							.getString())).equals((new Object() {
-								public String getValue(BlockPos pos, String tag) {
+								public String getValue(IWorld world, BlockPos pos, String tag) {
 									TileEntity tileEntity = world.getTileEntity(pos);
 									if (tileEntity != null)
 										return tileEntity.getTileData().getString(tag);
 									return "";
 								}
-							}.getValue(new BlockPos((int) x, (int) y, (int) z), "Chest_Password")))))) {
+							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "Chest_Password")))))) {
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")),

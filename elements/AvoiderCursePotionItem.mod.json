@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Avoider Curse",
+    "splashName": "Splash Avoider Curse",
+    "lingeringName": "Lingering Avoider Curse",
+    "arrowName": "Arrow of Avoider Curse",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:AvoiderCurse"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

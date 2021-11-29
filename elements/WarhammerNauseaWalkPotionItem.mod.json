@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Warhammer Nausea Walk",
+    "splashName": "Splash Warhammer Nausea Walk",
+    "lingeringName": "Lingering Warhammer Nausea Walk",
+    "arrowName": "Arrow of Warhammer Nausea Walk",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:WarhammerNauseaWalk"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

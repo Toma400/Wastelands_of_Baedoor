@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class AdditionalMessageReturnProcedure extends WobrModElements.ModElement
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure AdditionalMessageReturn!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure AdditionalMessageReturn!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

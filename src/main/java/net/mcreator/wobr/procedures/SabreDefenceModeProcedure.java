@@ -30,10 +30,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.wobr.potion.SabreDefencePotion;
-import net.mcreator.wobr.potion.SabreDefenceCooldownPotion;
+import net.mcreator.wobr.potion.SabreDefencePotionEffect;
+import net.mcreator.wobr.potion.SabreDefenceCooldownPotionEffect;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Random;
 import java.util.Map;
@@ -51,32 +52,32 @@ public class SabreDefenceModeProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure SabreDefenceMode!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure SabreDefenceMode!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure SabreDefenceMode!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure SabreDefenceMode!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure SabreDefenceMode!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure SabreDefenceMode!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure SabreDefenceMode!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -92,7 +93,7 @@ public class SabreDefenceModeProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SabreDefencePotion.potion)
+								if (effect.getPotion() == SabreDefencePotionEffect.potion)
 									return true;
 							}
 						}
@@ -105,13 +106,13 @@ public class SabreDefenceModeProcedure extends WobrModElements.ModElement {
 					((ServerWorld) world).spawnParticle(ParticleTypes.CRIT, x, y, z, (int) 7, 3, 3, 3, 1);
 				}
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(SabreDefenceCooldownPotion.potion,
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(SabreDefenceCooldownPotionEffect.potion,
 							(int) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("Sabre_Defence")) + 40),
 							(int) 1, (false), (false)));
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).getCooldownTracker().setCooldown(
-							(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 							(int) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("Sabre_Defence")) + 40));
 				{

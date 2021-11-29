@@ -45,6 +45,7 @@ import net.mcreator.wobr.item.CrocodileShotgunItem;
 import net.mcreator.wobr.item.CrocodileGunSchemeItem;
 import net.mcreator.wobr.item.AyerShotgunItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -60,7 +61,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure FirearmTableCrafting!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure FirearmTableCrafting!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -79,7 +80,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(RevolverGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == RevolverGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -93,7 +94,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(GunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == GunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -107,7 +108,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(RevolverClip5Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == RevolverClip5Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -121,13 +122,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(ShortRevolverSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == ShortRevolverSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(ShortRevolverItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(ShortRevolverItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -149,7 +150,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(RevolverGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == RevolverGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -163,7 +164,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(GunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == GunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -177,7 +178,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(RevolverClip6Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == RevolverClip6Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -191,13 +192,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(LongRevolverSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == LongRevolverSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(LongRevolverItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(LongRevolverItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -219,7 +220,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(LongGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == LongGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -233,7 +234,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (3))).getItem() == Blocks.AIR.asItem())) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -247,7 +248,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == Items.IRON_INGOT) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -261,13 +262,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(ShotgunBarrelItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (4))).getItem() == ShotgunBarrelItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(ElephantGunItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(ElephantGunItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -289,7 +290,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(LongGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == LongGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -303,7 +304,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(ShotgunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == ShotgunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -317,7 +318,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Blocks.GOLD_BLOCK, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == Blocks.GOLD_BLOCK.asItem()) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -331,13 +332,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(SandWandererSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == SandWandererSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(SandWandererItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(SandWandererItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -359,7 +360,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(ShortRevolverItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == ShortRevolverItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -373,7 +374,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(Items.GOLD_INGOT, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == Items.GOLD_INGOT)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -387,7 +388,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == Blocks.AIR.asItem()) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -401,13 +402,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == Blocks.AIR.asItem())))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(GoldenShotRevolverItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(GoldenShotRevolverItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -429,7 +430,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(HandmadeRevolverItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == HandmadeRevolverItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -443,7 +444,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == Items.IRON_INGOT)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -457,7 +458,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == Blocks.AIR.asItem()) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -471,13 +472,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == Blocks.AIR.asItem())))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(PepperBoxItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(PepperBoxItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -499,7 +500,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(PepperBoxItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == PepperBoxItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -513,7 +514,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == Items.IRON_INGOT)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -527,7 +528,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == Blocks.AIR.asItem()) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -541,13 +542,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(EnhancedPepperBoxSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == EnhancedPepperBoxSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(EnhancedPepperBoxItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(EnhancedPepperBoxItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -569,7 +570,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(LongGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == LongGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -583,7 +584,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(DoubledShotgunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == DoubledShotgunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -597,7 +598,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(ShotgunClip2Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == ShotgunClip2Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -611,13 +612,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(CrocodileGunSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == CrocodileGunSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(CrocodileShotgunItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(CrocodileShotgunItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -639,7 +640,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(RevolverGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == RevolverGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -653,7 +654,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(GunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == GunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -667,7 +668,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(RevolverClip7Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == RevolverClip7Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -681,13 +682,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Lefs9SchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == Lefs9SchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Lefs9Item.block, (int) (1));
+							ItemStack _setstack = new ItemStack(Lefs9Item.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -709,7 +710,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(LongGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == LongGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -723,7 +724,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(DoubledShotgunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == DoubledShotgunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -737,7 +738,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(ShotgunClip2Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == ShotgunClip2Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -751,13 +752,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(RustyReaperSchemeItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == RustyReaperSchemeItem.block)))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(RustyReaperItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(RustyReaperItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -779,7 +780,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(ElephantGunItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == ElephantGunItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -793,7 +794,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(Items.DIAMOND, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (2))).getItem() == Items.DIAMOND)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -807,7 +808,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(WindsweeperSchemeItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (3))).getItem() == WindsweeperSchemeItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -821,13 +822,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())))) {
+			}.getItemStack((int) (4))).getItem() == Blocks.AIR.asItem())))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(WindsweeperItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(WindsweeperItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -849,7 +850,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (1))).getItem() == new ItemStack(LongGripItem.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (1))).getItem() == LongGripItem.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -863,7 +864,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (4))).getItem() == new ItemStack(DoubledShotgunBarrelItem.block, (int) (1)).getItem())) && (((new Object() {
+			}.getItemStack((int) (4))).getItem() == DoubledShotgunBarrelItem.block)) && (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -877,7 +878,7 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (2))).getItem() == new ItemStack(ShotgunClip2Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (2))).getItem() == ShotgunClip2Item.block) && ((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -891,13 +892,13 @@ public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem())))) {
+			}.getItemStack((int) (3))).getItem() == Blocks.AIR.asItem())))) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(AyerShotgunItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(AyerShotgunItem.block);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
 							_current.detectAndSendChanges();

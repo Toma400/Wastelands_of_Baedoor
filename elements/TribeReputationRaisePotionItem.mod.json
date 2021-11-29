@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Tribe Reputation Raise",
+    "splashName": "Splash Tribe Reputation Raise",
+    "lingeringName": "Lingering Tribe Reputation Raise",
+    "arrowName": "Arrow of Tribe Reputation Raise",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:TribeReputationRaise"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

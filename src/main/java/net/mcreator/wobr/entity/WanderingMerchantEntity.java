@@ -80,7 +80,9 @@ import io.netty.buffer.Unpooled;
 
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2f))
+					.build("wandering_merchant").setRegistryName("wandering_merchant");
 	public WanderingMerchantEntity(WobrModElements instance) {
 		super(instance, 469);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -88,9 +90,6 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2f)).build("wandering_merchant")
-						.setRegistryName("wandering_merchant");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -13421773, -13434778, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("wandering_merchant_spawn_egg"));

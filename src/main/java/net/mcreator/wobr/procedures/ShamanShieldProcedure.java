@@ -9,6 +9,7 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -21,22 +22,22 @@ public class ShamanShieldProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ShamanShield!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ShamanShield!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ShamanShield!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ShamanShield!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ShamanShield!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ShamanShield!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ShamanShield!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ShamanShield!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

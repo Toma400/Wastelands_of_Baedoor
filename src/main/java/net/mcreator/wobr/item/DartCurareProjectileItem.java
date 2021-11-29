@@ -43,8 +43,9 @@ import java.util.HashMap;
 public class DartCurareProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_curare_projectile")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletdart_curare_projectile")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletdart_curare_projectile").setRegistryName("entitybulletdart_curare_projectile");
 	public DartCurareProjectileItem(WobrModElements instance) {
 		super(instance, 1530);
 	}
@@ -52,9 +53,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletdart_curare_projectile").setRegistryName("entitybulletdart_curare_projectile"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -127,7 +126,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ThrownDaggerProjectileItem.block, (int) (1));
+			return new ItemStack(ThrownDaggerProjectileItem.block);
 		}
 
 		@Override
@@ -144,6 +143,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -159,6 +159,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				this.remove();
 			}

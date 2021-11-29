@@ -20,8 +20,8 @@ public class GlobalGrowthProcedure extends WobrModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (((WobrModVariables.Growth_Stadium) <= 333)) {
-			WobrModVariables.Growth_Stadium = (double) ((WobrModVariables.Growth_Stadium) + 1);
+		if ((WobrModVariables.Growth_Stadium <= 333)) {
+			WobrModVariables.Growth_Stadium = (double) (WobrModVariables.Growth_Stadium + 1);
 		} else {
 			WobrModVariables.Growth_Stadium = (double) 1;
 		}

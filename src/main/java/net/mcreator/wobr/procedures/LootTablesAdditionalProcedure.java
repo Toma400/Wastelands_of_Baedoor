@@ -22,6 +22,7 @@ import net.mcreator.wobr.entity.OrmathRiderEntity;
 import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.entity.BanditDespawningEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -36,32 +37,32 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure LootTablesAdditional!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure LootTablesAdditional!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure LootTablesAdditional!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure LootTablesAdditional!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure LootTablesAdditional!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure LootTablesAdditional!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure LootTablesAdditional!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -73,7 +74,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 		if (((entity instanceof BanditEntity.CustomEntity) || (entity instanceof BanditDespawningEntity.CustomEntity))) {
 			if ((1 >= (Math.random() * 100))) {
 				if (!world.getWorld().isRemote) {
-					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MusicDiscOneironautItem.block, (int) (1)));
+					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MusicDiscOneironautItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
@@ -84,7 +85,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						* 2)) >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -92,7 +93,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 			} else {
 				if ((5 >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -105,7 +106,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						* 7)) >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
+						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
@@ -113,12 +114,12 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 			}
 		} else if ((entity instanceof OrmathRiderEntity.CustomEntity)) {
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.LEATHER, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.LEATHER));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.BEEF, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.BEEF));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}

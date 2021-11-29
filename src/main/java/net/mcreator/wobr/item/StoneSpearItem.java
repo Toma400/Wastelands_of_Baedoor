@@ -51,7 +51,7 @@ public class StoneSpearItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Blocks.COBBLESTONE, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Blocks.COBBLESTONE));
 			}
 		}, 3, -3.25f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

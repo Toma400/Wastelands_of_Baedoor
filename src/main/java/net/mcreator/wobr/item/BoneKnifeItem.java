@@ -56,7 +56,7 @@ public class BoneKnifeItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(CrackedBoneItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(CrackedBoneItem.block));
 			}
 		}, 3, -3f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

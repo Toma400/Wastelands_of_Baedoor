@@ -13,8 +13,9 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.wobr.potion.MerchantBlockElytraPotion;
+import net.mcreator.wobr.potion.MerchantBlockElytraPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -29,12 +30,12 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunMerchantTrade6!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunMerchantTrade6!");
 			return false;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunMerchantTrade6!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunMerchantTrade6!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -47,19 +48,19 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
+					if ((Blocks.DIAMOND_BLOCK.asItem() == (itemstackiterator).getItem())) {
+						money = (double) (money + (((itemstackiterator)).getCount()));
 					}
 				}
 			}
 		}
-		if (((money) >= 9)) {
+		if ((money >= 9)) {
 			if ((!(new Object() {
 				boolean check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == MerchantBlockElytraPotion.potion)
+							if (effect.getPotion() == MerchantBlockElytraPotionEffect.potion)
 								return true;
 						}
 					}
@@ -67,17 +68,17 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 				}
 			}.check(entity)))) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
+					ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
 				}
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(Items.ELYTRA, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.ELYTRA);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
-							.addPotionEffect(new EffectInstance(MerchantBlockElytraPotion.potion, (int) 24000, (int) 1, (false), (false)));
+							.addPotionEffect(new EffectInstance(MerchantBlockElytraPotionEffect.potion, (int) 24000, (int) 1, (false), (false)));
 			}
 		} else {
 			money = (double) 0;
@@ -87,19 +88,19 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						if ((Items.DIAMOND == (itemstackiterator).getItem())) {
+							money = (double) (money + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((money) >= 81)) {
+			if ((money >= 81)) {
 				if ((!(new Object() {
 					boolean check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == MerchantBlockElytraPotion.potion)
+								if (effect.getPotion() == MerchantBlockElytraPotionEffect.potion)
 									return true;
 							}
 						}
@@ -107,17 +108,17 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+						ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 81);
 					}
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(Items.ELYTRA, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.ELYTRA);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(MerchantBlockElytraPotion.potion, (int) 24000, (int) 1, (false), (false)));
+								.addPotionEffect(new EffectInstance(MerchantBlockElytraPotionEffect.potion, (int) 24000, (int) 1, (false), (false)));
 				}
 			}
 		}
@@ -126,7 +127,7 @@ public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == MerchantBlockElytraPotion.potion)
+						if (effect.getPotion() == MerchantBlockElytraPotionEffect.potion)
 							return true;
 					}
 				}

@@ -3,6 +3,7 @@ package net.mcreator.wobr.procedures;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -15,7 +16,7 @@ public class MerchantDataResetProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure MerchantDataReset!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure MerchantDataReset!");
 			return;
 		}
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");

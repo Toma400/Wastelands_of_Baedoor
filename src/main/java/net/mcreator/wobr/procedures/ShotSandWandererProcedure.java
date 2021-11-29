@@ -2,7 +2,6 @@ package net.mcreator.wobr.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.GameType;
 import net.minecraft.util.math.BlockPos;
@@ -14,11 +13,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.network.play.NetworkPlayerInfo;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.wobr.item.BulletRangedItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Random;
 import java.util.Map;
@@ -33,32 +33,32 @@ public class ShotSandWandererProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ShotSandWanderer!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure ShotSandWanderer!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ShotSandWanderer!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ShotSandWanderer!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ShotSandWanderer!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ShotSandWanderer!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ShotSandWanderer!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -73,7 +73,7 @@ public class ShotSandWandererProcedure extends WobrModElements.ModElement {
 					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
 				} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
 					NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-							.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+							.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
 					return _npi != null && _npi.getGameType() == GameType.CREATIVE;
 				}
 				return false;
@@ -110,8 +110,11 @@ public class ShotSandWandererProcedure extends WobrModElements.ModElement {
 			}
 			if ((((itemstack).getOrCreateTag().getBoolean("jammed")) == (false))) {
 				(itemstack).getOrCreateTag().putDouble("Ammo", (((itemstack).getOrCreateTag().getDouble("Ammo")) - 1));
-				if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
-					BulletRangedItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 3, (float) 5, (int) 1);
+				if (entity instanceof LivingEntity) {
+					Entity _ent = entity;
+					if (!_ent.world.isRemote) {
+						BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 5, (int) 1);
+					}
 				}
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z), (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS

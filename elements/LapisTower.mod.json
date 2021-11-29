@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "lapis_tower",
@@ -15,15 +15,23 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.4,
-    "my": 0.0,
-    "mz": 0.4,
-    "Mx": 0.6,
-    "My": 0.85,
-    "Mz": 0.6,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 6.4,
+        "my": 0.0,
+        "mz": 6.4,
+        "Mx": 9.6,
+        "My": 13.6,
+        "Mz": 9.6,
+        "subtract": false
+      }
+    ],
     "name": "Lapis Tower",
     "specialInfo": [
       "Lapis Tower is decoration reminding about tri's monument, where most-known tri mages gather together"
@@ -41,10 +49,9 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "isBeaconBase": false,
     "enchantPowerBonus": 3.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "GLASS"
@@ -52,6 +59,7 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -62,12 +70,15 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "GLASS"
     },
-    "luminance": 0.5,
+    "luminance": 7,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "spawnParticles": false,

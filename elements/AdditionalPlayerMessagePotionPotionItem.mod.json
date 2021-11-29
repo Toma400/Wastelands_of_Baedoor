@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Player Message Potion",
+    "splashName": "Splash Player Message Potion",
+    "lingeringName": "Lingering Player Message Potion",
+    "arrowName": "Arrow of Player Message Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:AdditionalPlayerMessagePotion"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

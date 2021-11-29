@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "locked_chest_cirtain",
@@ -15,15 +15,23 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "mx": 0.062,
-    "my": 0.0,
-    "mz": 0.062,
-    "Mx": 0.938,
-    "My": 0.875,
-    "Mz": 0.938,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.992,
+        "my": 0.0,
+        "mz": 0.992,
+        "Mx": 15.008,
+        "My": 14.0,
+        "Mz": 15.008,
+        "subtract": false
+      }
+    ],
     "name": "Lockable Cirtain Chest",
     "specialInfo": [],
     "hardness": 1000.0,
@@ -39,10 +47,9 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "IRON"
@@ -50,6 +57,7 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -60,12 +68,15 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "METAL"
     },
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 3,
     "spawnParticles": false,

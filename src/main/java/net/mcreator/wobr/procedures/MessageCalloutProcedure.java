@@ -4,10 +4,11 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.PlayerMessagePotionPotion;
-import net.mcreator.wobr.potion.AdditionalPlayerMessagePotionPotion;
+import net.mcreator.wobr.potion.PlayerMessagePotionPotionEffect;
+import net.mcreator.wobr.potion.AdditionalPlayerMessagePotionPotionEffect;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Collection;
@@ -21,7 +22,7 @@ public class MessageCalloutProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure MessageCallout!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure MessageCallout!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -30,7 +31,7 @@ public class MessageCalloutProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == PlayerMessagePotionPotion.potion)
+						if (effect.getPotion() == PlayerMessagePotionPotionEffect.potion)
 							return true;
 					}
 				}
@@ -50,7 +51,7 @@ public class MessageCalloutProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == AdditionalPlayerMessagePotionPotion.potion)
+						if (effect.getPotion() == AdditionalPlayerMessagePotionPotionEffect.potion)
 							return true;
 					}
 				}

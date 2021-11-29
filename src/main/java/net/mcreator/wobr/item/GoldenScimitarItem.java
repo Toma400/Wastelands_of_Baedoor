@@ -55,7 +55,7 @@ public class GoldenScimitarItem extends WobrModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT));
 			}
 		}, 3, -1.3f, new Item.Properties().group(WoBCreativeTabItemGroup.tab)) {
 			@Override

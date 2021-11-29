@@ -15,12 +15,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotion;
+import net.mcreator.wobr.potion.NetherAvoiderPulsatingPotionEffect;
 import net.mcreator.wobr.block.NetherAvoiderBlock;
 import net.mcreator.wobr.block.LapisAvoiderActiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderActiveBlock;
 import net.mcreator.wobr.block.AvoiderBlockBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.stream.Collectors;
 import java.util.function.Function;
@@ -37,37 +38,37 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure NetherAvoiderActive!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure NetherAvoiderActive!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure NetherAvoiderActive!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure NetherAvoiderActive!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure NetherAvoiderActive!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure NetherAvoiderActive!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure NetherAvoiderActive!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure NetherAvoiderActive!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block.getDefaultState().getBlock())) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)) {
 			if (((new Object() {
-				public boolean getValue(BlockPos pos, String tag) {
+				public boolean getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
 					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
 							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
@@ -78,8 +79,8 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator)
-									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+							((LivingEntity) entityiterator).addPotionEffect(
+									new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
 					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -105,16 +106,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block)) {
 			if (((new Object() {
-				public boolean getValue(BlockPos pos, String tag) {
+				public boolean getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
 					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
 							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
@@ -125,8 +125,8 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator)
-									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+							((LivingEntity) entityiterator).addPotionEffect(
+									new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
 					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -152,16 +152,15 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block)) {
 			if (((new Object() {
-				public boolean getValue(BlockPos pos, String tag) {
+				public boolean getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
 					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
 							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
@@ -172,8 +171,8 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator)
-									.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+							((LivingEntity) entityiterator).addPotionEffect(
+									new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
 					}
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -199,8 +198,7 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 					}
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AvoiderBlockBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AvoiderBlockBlock.block)) {
 			{
 				List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
 						new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
@@ -212,7 +210,7 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity)
 						((LivingEntity) entityiterator)
-								.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotion.potion, (int) 60, (int) 2, (false), (false)));
+								.addPotionEffect(new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
 				}
 			}
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

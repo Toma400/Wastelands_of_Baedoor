@@ -1,8 +1,7 @@
 {
-  "_fv": 13,
-  "_type": "potion",
+  "_fv": 24,
+  "_type": "potioneffect",
   "definition": {
-    "name": "Nether Avoider Shielding",
     "effectName": "Nether Avoider Shielding",
     "icon": "nether_shielding.png",
     "color": {
@@ -12,7 +11,6 @@
     "isInstant": false,
     "isBad": false,
     "isBenefitical": false,
-    "registerPotionType": false,
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
     "onStarted": {

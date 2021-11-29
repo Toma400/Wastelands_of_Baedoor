@@ -5,8 +5,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.item.ItemStack;
-
 import net.mcreator.wobr.block.BambooBlockBlock;
 import net.mcreator.wobr.WobrModElements;
 
@@ -19,7 +17,7 @@ public class BambooBlockFuelFuel extends WobrModElements.ModElement {
 
 	@SubscribeEvent
 	public void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
-		if (event.getItemStack().getItem() == new ItemStack(BambooBlockBlock.block, (int) (1)).getItem())
+		if (event.getItemStack().getItem() == BambooBlockBlock.block.asItem())
 			event.setBurnTime(400);
 	}
 }

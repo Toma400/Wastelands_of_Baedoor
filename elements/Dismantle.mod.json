@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 24,
   "_type": "enchantment",
   "definition": {
     "name": "Dismantle",
@@ -31,6 +31,8 @@
     "compatibleItems": [],
     "isTreasureEnchantment": false,
     "isCurse": false,
-    "isAllowedOnBooks": true
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
   }
 }

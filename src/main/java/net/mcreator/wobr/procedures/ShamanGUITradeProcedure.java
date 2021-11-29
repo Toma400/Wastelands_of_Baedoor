@@ -25,6 +25,7 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.wobr.gui.ShamanTradeGUIGui;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Iterator;
@@ -40,32 +41,32 @@ public class ShamanGUITradeProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ShamanGUITrade!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure ShamanGUITrade!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ShamanGUITrade!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ShamanGUITrade!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ShamanGUITrade!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ShamanGUITrade!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ShamanGUITrade!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -87,11 +88,11 @@ public class ShamanGUITradeProcedure extends WobrModElements.ModElement {
 							ScoreCriteria.RenderType.INTEGER);
 				}
 				Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
-				_scr.setScorePoints((int) (repo));
+				_scr.setScorePoints((int) repo);
 			}
 		}
 		{
-			double _setval = (double) (repo);
+			double _setval = (double) repo;
 			entity.getCapability(WobrModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.Ormath_Reputation = _setval;
 				capability.syncPlayerVariables(entity);

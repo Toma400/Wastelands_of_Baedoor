@@ -19,6 +19,7 @@ import net.mcreator.wobr.block.TsuaBlock;
 import net.mcreator.wobr.block.SandyVeilPlantBlock;
 import net.mcreator.wobr.block.SandyVeilBlock;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -33,27 +34,27 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure Bonemealing!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure Bonemealing!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure Bonemealing!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure Bonemealing!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure Bonemealing!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure Bonemealing!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure Bonemealing!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure Bonemealing!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure Bonemealing!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure Bonemealing!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
@@ -61,7 +62,7 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SandyVeilPlantBlock.block.getDefaultState().getBlock())) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SandyVeilPlantBlock.block)) {
 			((itemstack)).shrink((int) 1);
 			if ((45 >= (Math.random() * 100))) {
 				{
@@ -70,14 +71,16 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-						if (_bs.has(_property))
-							_bs = _bs.with(_property, (Comparable) entry.getValue());
+						if (_property != null && _bs.has(_property))
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
 					}
 					world.setBlockState(_bp, _bs, 3);
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == VulcanicVeilPlantBlock.block.getDefaultState()
-				.getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == VulcanicVeilPlantBlock.block)) {
 			((itemstack)).shrink((int) 1);
 			if ((40 >= (Math.random() * 100))) {
 				{
@@ -86,16 +89,19 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-						if (_bs.has(_property))
-							_bs = _bs.with(_property, (Comparable) entry.getValue());
+						if (_property != null && _bs.has(_property))
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
 					}
 					world.setBlockState(_bp, _bs, 3);
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == TsuaBlock.block.getDefaultState().getBlock())) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == TsuaBlock.block)) {
 			((itemstack)).shrink((int) 1);
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(TsuaBlock.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(TsuaBlock.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
@@ -117,6 +123,7 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 		dependencies.put("world", world);
 		dependencies.put("itemstack", itemstack);
 		dependencies.put("entity", entity);
+		dependencies.put("blockstate", event.getBlock());
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}

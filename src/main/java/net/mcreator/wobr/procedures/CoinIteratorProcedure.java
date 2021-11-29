@@ -10,6 +10,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.wobr.item.BaedoorFuntItem;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -23,12 +24,12 @@ public class CoinIteratorProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure CoinIterator!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure CoinIterator!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure CoinIterator!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure CoinIterator!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -41,14 +42,14 @@ public class CoinIteratorProcedure extends WobrModElements.ModElement {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(BaedoorFuntItem.block, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						coins = (double) ((coins) + (((itemstackiterator)).getCount()));
+					if ((BaedoorFuntItem.block == (itemstackiterator).getItem())) {
+						coins = (double) (coins + (((itemstackiterator)).getCount()));
 					}
 				}
 			}
 		}
 		{
-			double _setval = (double) (coins);
+			double _setval = (double) coins;
 			entity.getCapability(WobrModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.Coins = _setval;
 				capability.syncPlayerVariables(entity);

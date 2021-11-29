@@ -16,11 +16,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.SingleReloadTypePotion;
+import net.mcreator.wobr.potion.SingleReloadTypePotionEffect;
 import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.item.SlugItem;
 import net.mcreator.wobr.item.LargeBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -35,27 +36,27 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunAddOnRldSingle!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunAddOnRldSingle!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure GunAddOnRldSingle!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure GunAddOnRldSingle!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure GunAddOnRldSingle!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure GunAddOnRldSingle!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure GunAddOnRldSingle!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure GunAddOnRldSingle!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure GunAddOnRldSingle!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunAddOnRldSingle!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -74,7 +75,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SingleReloadTypePotion.potion)
+								if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 									return true;
 							}
 						}
@@ -82,7 +83,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(SmallBulletItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -107,11 +108,11 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 					if (entity instanceof LivingEntity)
-						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion,
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion,
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")),
 								(int) 1, (false), (false)));
@@ -123,7 +124,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SingleReloadTypePotion.potion)
+								if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 									return true;
 							}
 						}
@@ -131,7 +132,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -156,11 +157,11 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 					if (entity instanceof LivingEntity)
-						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion,
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion,
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")),
 								(int) 1, (false), (false)));
@@ -172,7 +173,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SingleReloadTypePotion.potion)
+								if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 									return true;
 							}
 						}
@@ -180,7 +181,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(SlugItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(SlugItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -205,11 +206,11 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 					if (entity instanceof LivingEntity)
-						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion,
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion,
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")),
 								(int) 1, (false), (false)));
@@ -221,7 +222,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SingleReloadTypePotion.potion)
+								if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 									return true;
 							}
 						}
@@ -229,7 +230,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.GUNPOWDER, (int) (1));
+						ItemStack _stktoremove = new ItemStack(Items.GUNPOWDER);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -254,11 +255,11 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 					}
 					if (entity instanceof PlayerEntity)
 						((PlayerEntity) entity).getCooldownTracker().setCooldown(
-								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
+								((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(),
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")));
 					if (entity instanceof LivingEntity)
-						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion,
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion,
 								(int) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getOrCreateTag().getDouble("rld_delay")),
 								(int) 1, (false), (false)));
@@ -270,7 +271,7 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == SingleReloadTypePotion.potion)
+								if (effect.getPotion() == SingleReloadTypePotionEffect.potion)
 									return true;
 							}
 						}
@@ -315,13 +316,13 @@ public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 									}
 									if (entity instanceof PlayerEntity)
 										((PlayerEntity) entity).getCooldownTracker().setCooldown(
-												(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
+												((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 														.getItem(),
 												(int) (((entity instanceof LivingEntity)
 														? ((LivingEntity) entity).getHeldItemMainhand()
 														: ItemStack.EMPTY).getOrCreateTag().getDouble("rld_delay")));
 									if (entity instanceof LivingEntity)
-										((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotion.potion,
+										((LivingEntity) entity).addPotionEffect(new EffectInstance(SingleReloadTypePotionEffect.potion,
 												(int) (((entity instanceof LivingEntity)
 														? ((LivingEntity) entity).getHeldItemMainhand()
 														: ItemStack.EMPTY).getOrCreateTag().getDouble("rld_delay")),

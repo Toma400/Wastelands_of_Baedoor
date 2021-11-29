@@ -64,7 +64,9 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class WindSpiritEntity extends WobrModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.size(0.6f, 1.8f)).build("wind_spirit").setRegistryName("wind_spirit");
 	public WindSpiritEntity(WobrModElements instance) {
 		super(instance, 461);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -72,9 +74,6 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
-						.build("wind_spirit").setRegistryName("wind_spirit");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -3355444, -5066062, new Item.Properties().group(WoBCreativeTabItemGroup.tab))
 				.setRegistryName("wind_spirit_spawn_egg"));
@@ -148,7 +147,7 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(GlisteringAshItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(GlisteringAshItem.block));
 		}
 
 		@Override

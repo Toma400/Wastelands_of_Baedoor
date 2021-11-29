@@ -17,6 +17,7 @@ import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.item.SlugItem;
 import net.mcreator.wobr.item.LargeBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -29,7 +30,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure UnloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure UnloadCheck!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -43,7 +44,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 						.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 								.getOrCreateTag().getDouble("Ammo")) - 1));
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(SmallBulletItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(SmallBulletItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
@@ -53,7 +54,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 						.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 								.getOrCreateTag().getDouble("Ammo")) - 1));
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(LargeBulletItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(LargeBulletItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
@@ -63,7 +64,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 						.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 								.getOrCreateTag().getDouble("Ammo")) - 1));
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(SlugItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(SlugItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
@@ -73,7 +74,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 						.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 								.getOrCreateTag().getDouble("Ammo")) - 1));
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(Items.GUNPOWDER, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.GUNPOWDER);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
@@ -88,7 +89,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 							.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("Ammo")) - 1));
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(SmallBulletItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(SmallBulletItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}
@@ -100,7 +101,7 @@ public class UnloadCheckProcedure extends WobrModElements.ModElement {
 							.putDouble("Ammo", ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 									.getOrCreateTag().getDouble("Ammo")) - 1));
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(LargeBulletItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(LargeBulletItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}

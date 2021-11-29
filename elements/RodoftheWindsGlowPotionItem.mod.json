@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Rod ofthe Winds Glow",
+    "splashName": "Splash Rod ofthe Winds Glow",
+    "lingeringName": "Lingering Rod ofthe Winds Glow",
+    "arrowName": "Arrow of Rod ofthe Winds Glow",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:RodoftheWindsGlow"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

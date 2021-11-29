@@ -63,7 +63,7 @@ public class LightBlockBlock extends WobrModElements.ModElement {
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.AIR).sound(SoundType.LANTERN).hardnessAndResistance(0f, 0f).lightValue(14).doesNotBlockMovement()
+			super(Block.Properties.create(Material.AIR).sound(SoundType.LANTERN).hardnessAndResistance(0f, 0f).lightValue(13).doesNotBlockMovement()
 					.notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(WATERLOGGED, false));
 			setRegistryName("light_block");
@@ -75,9 +75,14 @@ public class LightBlockBlock extends WobrModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.49D, 0.49D, 0.49D, 0.5D, 0.5D, 0.5D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(7.84, 7.84, 7.84, 8, 8, 8)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -112,12 +117,12 @@ public class LightBlockBlock extends WobrModElements.ModElement {
 
 		@Override
 		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
-			return true;
+			return context.getItem().getItem() != this.asItem();
 		}
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(Blocks.AIR, (int) (1));
+			return new ItemStack(Blocks.AIR);
 		}
 
 		@Override

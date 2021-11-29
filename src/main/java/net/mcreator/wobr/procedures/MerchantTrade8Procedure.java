@@ -18,8 +18,9 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.wobr.potion.MerchantBlockHeartoftheSeaPotion;
+import net.mcreator.wobr.potion.MerchantBlockHeartoftheSeaPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -34,27 +35,27 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure MerchantTrade8!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure MerchantTrade8!");
 			return false;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure MerchantTrade8!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure MerchantTrade8!");
 			return false;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure MerchantTrade8!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure MerchantTrade8!");
 			return false;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure MerchantTrade8!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure MerchantTrade8!");
 			return false;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure MerchantTrade8!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure MerchantTrade8!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -70,19 +71,19 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
+					if ((Blocks.DIAMOND_BLOCK.asItem() == (itemstackiterator).getItem())) {
+						money = (double) (money + (((itemstackiterator)).getCount()));
 					}
 				}
 			}
 		}
-		if (((money) >= 1)) {
+		if ((money >= 1)) {
 			if ((!(new Object() {
 				boolean check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == MerchantBlockHeartoftheSeaPotion.potion)
+							if (effect.getPotion() == MerchantBlockHeartoftheSeaPotionEffect.potion)
 								return true;
 						}
 					}
@@ -90,7 +91,7 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 				}
 			}.check(entity)))) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
+					ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -100,8 +101,8 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 							"give @a[distance=..1] minecraft:heart_of_the_sea 1");
 				}
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity)
-							.addPotionEffect(new EffectInstance(MerchantBlockHeartoftheSeaPotion.potion, (int) 24000, (int) 1, (false), (false)));
+					((LivingEntity) entity).addPotionEffect(
+							new EffectInstance(MerchantBlockHeartoftheSeaPotionEffect.potion, (int) 24000, (int) 1, (false), (false)));
 			}
 		} else {
 			money = (double) 0;
@@ -111,19 +112,19 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						if ((Items.DIAMOND == (itemstackiterator).getItem())) {
+							money = (double) (money + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((money) >= 9)) {
+			if ((money >= 9)) {
 				if ((!(new Object() {
 					boolean check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == MerchantBlockHeartoftheSeaPotion.potion)
+								if (effect.getPotion() == MerchantBlockHeartoftheSeaPotionEffect.potion)
 									return true;
 							}
 						}
@@ -131,7 +132,7 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 					}
 				}.check(entity)))) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+						ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
 					}
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -141,8 +142,8 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 								"give @a[distance=..1] minecraft:heart_of_the_sea 1");
 					}
 					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(MerchantBlockHeartoftheSeaPotion.potion, (int) 24000, (int) 1, (false), (false)));
+						((LivingEntity) entity).addPotionEffect(
+								new EffectInstance(MerchantBlockHeartoftheSeaPotionEffect.potion, (int) 24000, (int) 1, (false), (false)));
 				}
 			}
 		}
@@ -151,7 +152,7 @@ public class MerchantTrade8Procedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == MerchantBlockHeartoftheSeaPotion.potion)
+						if (effect.getPotion() == MerchantBlockHeartoftheSeaPotionEffect.potion)
 							return true;
 					}
 				}

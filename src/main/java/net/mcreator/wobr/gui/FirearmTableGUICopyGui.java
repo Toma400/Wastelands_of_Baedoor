@@ -1,8 +1,6 @@
 
 package net.mcreator.wobr.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -45,6 +43,8 @@ import net.mcreator.wobr.WobrMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
 
 @WobrModElements.ModElement.Tag
 public class FirearmTableGUICopyGui extends WobrModElements.ModElement {
@@ -383,8 +383,10 @@ public class FirearmTableGUICopyGui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1, 1, 1, 1);
+		protected void drawGuiContainerBackgroundLayer(float partialTicks, int gx, int gy) {
+			RenderSystem.color4f(1, 1, 1, 1);
+			RenderSystem.enableBlend();
+			RenderSystem.defaultBlendFunc();
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
@@ -407,6 +409,7 @@ public class FirearmTableGUICopyGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 143, this.guiTop + -3, 0, 0, 256, 256, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/scheme_storage_2.png"));
 			this.blit(this.guiLeft + 3, this.guiTop + -3, 0, 0, 256, 256, 256, 256);
+			RenderSystem.disableBlend();
 		}
 
 		@Override
@@ -438,12 +441,16 @@ public class FirearmTableGUICopyGui extends WobrModElements.ModElement {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
 			this.addButton(new Button(this.guiLeft + 123, this.guiTop + 32, 6, 20, "»", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+					handleButtonAction(entity, 0, x, y, z);
+				}
 			}));
 			this.addButton(new Button(this.guiLeft + 44, this.guiTop + 32, 7, 20, "«", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
-				handleButtonAction(entity, 1, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
+					handleButtonAction(entity, 1, x, y, z);
+				}
 			}));
 		}
 	}

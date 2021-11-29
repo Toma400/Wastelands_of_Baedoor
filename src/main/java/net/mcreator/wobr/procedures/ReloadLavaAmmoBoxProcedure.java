@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.LargeBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -20,7 +21,7 @@ public class ReloadLavaAmmoBoxProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ReloadLavaAmmoBox!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ReloadLavaAmmoBox!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -28,10 +29,10 @@ public class ReloadLavaAmmoBoxProcedure extends WobrModElements.ModElement {
 				.getDouble("Ammo")) < 120)) {
 			for (int index0 = 0; index0 < (int) (10); index0++) {
 				if (((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LargeBulletItem.block, (int) (1)))
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LargeBulletItem.block))
 						: false)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block, (int) (1));
+						ItemStack _stktoremove = new ItemStack(LargeBulletItem.block);
 						((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 					}
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()

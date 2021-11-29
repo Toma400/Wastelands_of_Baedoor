@@ -1,8 +1,6 @@
 
 package net.mcreator.wobr.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.fml.network.NetworkEvent;
@@ -43,6 +41,8 @@ import net.mcreator.wobr.WobrMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
 
 @WobrModElements.ModElement.Tag
 public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
@@ -146,8 +146,10 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1, 1, 1, 1);
+		protected void drawGuiContainerBackgroundLayer(float partialTicks, int gx, int gy) {
+			RenderSystem.color4f(1, 1, 1, 1);
+			RenderSystem.enableBlend();
+			RenderSystem.defaultBlendFunc();
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/ormath_trading_background.png"));
 			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 176, 166, 176, 166);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_funt_2.png"));
@@ -166,6 +168,7 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 127, this.guiTop + 110, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_funt_2.png"));
 			this.blit(this.guiLeft + 42, this.guiTop + 109, 0, 0, 16, 16, 16, 16);
+			RenderSystem.disableBlend();
 		}
 
 		@Override
@@ -211,20 +214,28 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
 			this.addButton(new Button(this.guiLeft + 76, this.guiTop + 38, 23, 20, "->", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+					handleButtonAction(entity, 0, x, y, z);
+				}
 			}));
 			this.addButton(new Button(this.guiLeft + 76, this.guiTop + 62, 23, 20, "->", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
-				handleButtonAction(entity, 1, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
+					handleButtonAction(entity, 1, x, y, z);
+				}
 			}));
 			this.addButton(new Button(this.guiLeft + 76, this.guiTop + 85, 23, 20, "->", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
-				handleButtonAction(entity, 2, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
+					handleButtonAction(entity, 2, x, y, z);
+				}
 			}));
 			this.addButton(new Button(this.guiLeft + 76, this.guiTop + 108, 23, 20, "->", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
-				handleButtonAction(entity, 3, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
+					handleButtonAction(entity, 3, x, y, z);
+				}
 			}));
 		}
 	}

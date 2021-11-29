@@ -16,6 +16,7 @@ import net.mcreator.wobr.item.CardHeartAceWinfletonItem;
 import net.mcreator.wobr.item.CardDiamondAceWinfletonItem;
 import net.mcreator.wobr.item.CardClubAceWinfletonItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -29,12 +30,12 @@ public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure MerchantTrade9!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure MerchantTrade9!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure MerchantTrade9!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure MerchantTrade9!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -48,39 +49,39 @@ public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if ((new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-						money = (double) ((money) + (((itemstackiterator)).getCount()));
+					if ((Blocks.DIAMOND_BLOCK.asItem() == (itemstackiterator).getItem())) {
+						money = (double) (money + (((itemstackiterator)).getCount()));
 					}
 				}
 			}
 		}
-		if (((money) >= 1)) {
+		if ((money >= 1)) {
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
+				ItemStack _stktoremove = new ItemStack(Blocks.DIAMOND_BLOCK);
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 			}
 			randomness = (double) (Math.random() * 100);
-			if (((randomness) <= 25)) {
+			if ((randomness <= 25)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(CardDiamondAceWinfletonItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(CardDiamondAceWinfletonItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
-			} else if (((randomness) <= 50)) {
+			} else if ((randomness <= 50)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(CardHeartAceWinfletonItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(CardHeartAceWinfletonItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
-			} else if (((randomness) <= 75)) {
+			} else if ((randomness <= 75)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(CardClubAceWinfletonItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(CardClubAceWinfletonItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
 			} else {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
@@ -93,39 +94,39 @@ public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.DIAMOND, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-							money = (double) ((money) + (((itemstackiterator)).getCount()));
+						if ((Items.DIAMOND == (itemstackiterator).getItem())) {
+							money = (double) (money + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((money) >= 9)) {
+			if ((money >= 9)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+					ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 9);
 				}
 				randomness = (double) (Math.random() * 100);
-				if (((randomness) <= 25)) {
+				if ((randomness <= 25)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(CardDiamondAceWinfletonItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(CardDiamondAceWinfletonItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}
-				} else if (((randomness) <= 50)) {
+				} else if ((randomness <= 50)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(CardHeartAceWinfletonItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(CardHeartAceWinfletonItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}
-				} else if (((randomness) <= 75)) {
+				} else if ((randomness <= 75)) {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(CardClubAceWinfletonItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(CardClubAceWinfletonItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}
 				} else {
 					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(CardSpadeAceWinfletonItem.block);
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 					}

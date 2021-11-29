@@ -7,6 +7,7 @@ import net.minecraft.entity.item.ItemEntity;
 import net.mcreator.wobr.item.StoneJavelinItem;
 import net.mcreator.wobr.item.JavelinSackItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -19,27 +20,27 @@ public class JavelinSackStoneUnloadProcedure extends WobrModElements.ModElement 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
-				System.err.println("Failed to load dependency itemstack for procedure JavelinSackStoneUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure JavelinSackStoneUnload!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure JavelinSackStoneUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure JavelinSackStoneUnload!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure JavelinSackStoneUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure JavelinSackStoneUnload!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure JavelinSackStoneUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure JavelinSackStoneUnload!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure JavelinSackStoneUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure JavelinSackStoneUnload!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
@@ -49,13 +50,13 @@ public class JavelinSackStoneUnloadProcedure extends WobrModElements.ModElement 
 		IWorld world = (IWorld) dependencies.get("world");
 		((itemstack)).shrink((int) 1);
 		if (!world.getWorld().isRemote) {
-			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(JavelinSackItem.block, (int) (1)));
+			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(JavelinSackItem.block));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}
 		for (int index0 = 0; index0 < (int) (8); index0++) {
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(StoneJavelinItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(StoneJavelinItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}

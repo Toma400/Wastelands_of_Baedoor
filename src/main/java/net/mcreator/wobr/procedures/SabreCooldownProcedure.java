@@ -10,8 +10,9 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.potion.SabreAttackCooldownPotion;
+import net.mcreator.wobr.potion.SabreAttackCooldownPotionEffect;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public class SabreCooldownProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure SabreCooldown!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure SabreCooldown!");
 			return;
 		}
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
@@ -36,7 +37,7 @@ public class SabreCooldownProcedure extends WobrModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == SabreAttackCooldownPotion.potion)
+						if (effect.getPotion() == SabreAttackCooldownPotionEffect.potion)
 							return true;
 					}
 				}

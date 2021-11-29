@@ -43,8 +43,9 @@ import java.util.HashMap;
 public class BulletRangedItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bullet_ranged")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletbullet_ranged")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletbullet_ranged").setRegistryName("entitybulletbullet_ranged");
 	public BulletRangedItem(WobrModElements instance) {
 		super(instance, 916);
 	}
@@ -52,9 +53,7 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletbullet_ranged").setRegistryName("entitybulletbullet_ranged"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -127,7 +126,7 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(BulletProjectileItem.block, (int) (1));
+			return new ItemStack(BulletProjectileItem.block);
 		}
 
 		@Override
@@ -149,6 +148,7 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

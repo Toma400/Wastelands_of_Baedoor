@@ -1,8 +1,6 @@
 
 package net.mcreator.wobr.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.fml.network.NetworkEvent;
@@ -36,6 +34,8 @@ import net.mcreator.wobr.WobrMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
 
 @WobrModElements.ModElement.Tag
 public class GuidePage1Gui extends WobrModElements.ModElement {
@@ -121,10 +121,13 @@ public class GuidePage1Gui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1, 1, 1, 1);
+		protected void drawGuiContainerBackgroundLayer(float partialTicks, int gx, int gy) {
+			RenderSystem.color4f(1, 1, 1, 1);
+			RenderSystem.enableBlend();
+			RenderSystem.defaultBlendFunc();
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/book_page_1.png"));
 			this.blit(this.guiLeft + -28, this.guiTop + -15, 0, 0, 200, 213, 200, 213);
+			RenderSystem.disableBlend();
 		}
 
 		@Override
@@ -156,8 +159,10 @@ public class GuidePage1Gui extends WobrModElements.ModElement {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
 			this.addButton(new Button(this.guiLeft + 52, this.guiTop + 183, 43, 20, ">", e -> {
-				WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
+				if (true) {
+					WobrMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+					handleButtonAction(entity, 0, x, y, z);
+				}
 			}));
 		}
 	}

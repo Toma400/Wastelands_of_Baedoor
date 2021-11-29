@@ -30,6 +30,7 @@ import net.mcreator.wobr.item.AyerSawedOffItem;
 import net.mcreator.wobr.item.AmmoBoxLavaItem;
 import net.mcreator.wobr.item.AmmoBoxIronItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -43,27 +44,27 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ReloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ReloadCheck!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ReloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ReloadCheck!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ReloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ReloadCheck!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ReloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ReloadCheck!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ReloadCheck!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ReloadCheck!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -72,7 +73,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(HandmadeRevolverItem.block, (int) (1)).getItem())) {
+				.getItem() == HandmadeRevolverItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -83,7 +84,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadHandmadeRevolverProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(PepperBoxItem.block, (int) (1)).getItem())) {
+				.getItem() == PepperBoxItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -94,7 +95,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadPepperBoxProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(EnhancedPepperBoxItem.block, (int) (1)).getItem())) {
+				.getItem() == EnhancedPepperBoxItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -105,9 +106,9 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadEnhancedPepperBoxProcedure.executeProcedure($_dependencies);
 			}
 		} else if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(ShortRevolverItem.block, (int) (1)).getItem())
+				.getItem() == ShortRevolverItem.block)
 				|| (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(GoldenShotRevolverItem.block, (int) (1)).getItem()))) {
+						.getItem() == GoldenShotRevolverItem.block))) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -118,7 +119,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadShortRevolverProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(LongRevolverItem.block, (int) (1)).getItem())) {
+				.getItem() == LongRevolverItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -129,7 +130,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadLongRevolverProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Lefs8Item.block, (int) (1)).getItem())) {
+				.getItem() == Lefs8Item.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -140,7 +141,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadLefs8Procedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Lefs9Item.block, (int) (1)).getItem())) {
+				.getItem() == Lefs9Item.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -151,7 +152,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadLefs9Procedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(ElephantGunItem.block, (int) (1)).getItem())) {
+				.getItem() == ElephantGunItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -162,7 +163,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadElephantGunProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(JitadoShotgunItem.block, (int) (1)).getItem())) {
+				.getItem() == JitadoShotgunItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -173,7 +174,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadJitadoShotgunProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(CrocodileShotgunItem.block, (int) (1)).getItem())) {
+				.getItem() == CrocodileShotgunItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -184,9 +185,9 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadCrocodileShotgunProcedure.executeProcedure($_dependencies);
 			}
 		} else if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(AyerShotgunItem.block, (int) (1)).getItem())
+				.getItem() == AyerShotgunItem.block)
 				|| (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(AyerSawedOffItem.block, (int) (1)).getItem()))) {
+						.getItem() == AyerSawedOffItem.block))) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -197,7 +198,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadAyerShotgunProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(WindsweeperItem.block, (int) (1)).getItem())) {
+				.getItem() == WindsweeperItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -208,7 +209,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadWindsweeperProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(RustyReaperItem.block, (int) (1)).getItem())) {
+				.getItem() == RustyReaperItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -219,7 +220,7 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadRustyReaperProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(SandWandererItem.block, (int) (1)).getItem())) {
+				.getItem() == SandWandererItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -230,14 +231,14 @@ public class ReloadCheckProcedure extends WobrModElements.ModElement {
 				ReloadSandWandererProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(AmmoBoxIronItem.block, (int) (1)).getItem())) {
+				.getItem() == AmmoBoxIronItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				ReloadIronAmmoBoxProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(AmmoBoxLavaItem.block, (int) (1)).getItem())) {
+				.getItem() == AmmoBoxLavaItem.block)) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);

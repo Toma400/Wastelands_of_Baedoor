@@ -52,31 +52,31 @@ public class StabilisationEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		public boolean canApplyAtEnchantingTable(ItemStack stack) {
-			if (stack.getItem() == new ItemStack(HandmadeRevolverItem.block, (int) (1)).getItem())
+			if (stack.getItem() == HandmadeRevolverItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(PepperBoxItem.block, (int) (1)).getItem())
+			if (stack.getItem() == PepperBoxItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(ShortRevolverItem.block, (int) (1)).getItem())
+			if (stack.getItem() == ShortRevolverItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(GoldenShotRevolverItem.block, (int) (1)).getItem())
+			if (stack.getItem() == GoldenShotRevolverItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(LongRevolverItem.block, (int) (1)).getItem())
+			if (stack.getItem() == LongRevolverItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(ElephantGunItem.block, (int) (1)).getItem())
+			if (stack.getItem() == ElephantGunItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(JitadoShotgunItem.block, (int) (1)).getItem())
+			if (stack.getItem() == JitadoShotgunItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(CrocodileShotgunItem.block, (int) (1)).getItem())
+			if (stack.getItem() == CrocodileShotgunItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(Lefs9Item.block, (int) (1)).getItem())
+			if (stack.getItem() == Lefs9Item.block)
 				return true;
-			if (stack.getItem() == new ItemStack(AyerShotgunItem.block, (int) (1)).getItem())
+			if (stack.getItem() == AyerShotgunItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(AyerSawedOffItem.block, (int) (1)).getItem())
+			if (stack.getItem() == AyerSawedOffItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(WindsweeperItem.block, (int) (1)).getItem())
+			if (stack.getItem() == WindsweeperItem.block)
 				return true;
-			if (stack.getItem() == new ItemStack(RustyReaperItem.block, (int) (1)).getItem())
+			if (stack.getItem() == RustyReaperItem.block)
 				return true;
 			return false;
 		}

@@ -30,15 +30,27 @@ public class AdditionalMessageOverlayOverlay extends WobrModElements.ModElement 
 
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent(priority = EventPriority.NORMAL)
-	public void eventHandler(RenderGameOverlayEvent event) {
-		if (!event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
-			int posX = (event.getWindow().getScaledWidth()) / 2;
-			int posY = (event.getWindow().getScaledHeight()) / 2;
+	public void eventHandler(RenderGameOverlayEvent.Post event) {
+		if (event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
+			int w = event.getWindow().getScaledWidth();
+			int h = event.getWindow().getScaledHeight();
+			int posX = w / 2;
+			int posY = h / 2;
+			World _world = null;
+			double _x = 0;
+			double _y = 0;
+			double _z = 0;
 			PlayerEntity entity = Minecraft.getInstance().player;
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			if (entity != null) {
+				_world = entity.world;
+				_x = entity.getPosX();
+				_y = entity.getPosY();
+				_z = entity.getPosZ();
+			}
+			World world = _world;
+			double x = _x;
+			double y = _y;
+			double z = _z;
 			if (AdditionalMessageReturnProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getString("Message2")) + "", posX + -4, posY + 39,
 						-5606906);

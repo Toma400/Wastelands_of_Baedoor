@@ -19,6 +19,7 @@ import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.item.SlugItem;
 import net.mcreator.wobr.item.LargeBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
@@ -31,7 +32,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure GunAddOnUnload!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunAddOnUnload!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -51,7 +52,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(SmallBulletItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(SmallBulletItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -62,7 +63,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(LargeBulletItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(LargeBulletItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -73,7 +74,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(SlugItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(SlugItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -84,7 +85,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(Items.GUNPOWDER, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.GUNPOWDER);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -97,12 +98,12 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 						command = (String) ("give @s TARG:ITEM".replace("TARG",
 								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 										.getString("mod_id"))));
-						command = (String) ((command).replace("ITEM", "ammo_id"));
+						command = (String) (command.replace("ITEM", "ammo_id"));
 						{
 							Entity _ent = entity;
 							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 								_ent.world.getServer().getCommandManager()
-										.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), (command));
+										.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), command);
 							}
 						}
 					}
@@ -118,7 +119,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(SmallBulletItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(SmallBulletItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -131,7 +132,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(LargeBulletItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(LargeBulletItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -144,7 +145,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(SlugItem.block, (int) (1));
+							ItemStack _setstack = new ItemStack(SlugItem.block);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -157,7 +158,7 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 										((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 												.getOrCreateTag().getDouble("Ammo")) - 1));
 						if (entity instanceof PlayerEntity) {
-							ItemStack _setstack = new ItemStack(Items.GUNPOWDER, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.GUNPOWDER);
 							_setstack.setCount((int) 1);
 							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 						}
@@ -172,12 +173,12 @@ public class GunAddOnUnloadProcedure extends WobrModElements.ModElement {
 						command = (String) ("give @s TARG:ITEM".replace("TARG",
 								(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 										.getString("mod_id"))));
-						command = (String) ((command).replace("ITEM", "ammo_id"));
+						command = (String) (command.replace("ITEM", "ammo_id"));
 						{
 							Entity _ent = entity;
 							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 								_ent.world.getServer().getCommandManager()
-										.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), (command));
+										.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), command);
 							}
 						}
 					}

@@ -5,31 +5,24 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.entity.monster.WitherSkeletonEntity;
-import net.minecraft.entity.monster.WitchEntity;
-import net.minecraft.entity.monster.SpiderEntity;
-import net.minecraft.entity.monster.SlimeEntity;
-import net.minecraft.entity.monster.SkeletonEntity;
-import net.minecraft.entity.monster.MagmaCubeEntity;
-import net.minecraft.entity.monster.GhastEntity;
-import net.minecraft.entity.monster.EndermiteEntity;
-import net.minecraft.entity.monster.EndermanEntity;
-import net.minecraft.entity.monster.CreeperEntity;
-import net.minecraft.entity.monster.BlazeEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.wobr.entity.WindSpiritEntity;
-import net.mcreator.wobr.entity.BanditDespawningEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
+
+import java.io.File;
 
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
@@ -40,27 +33,27 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure NetherAvoiderTagKill!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure NetherAvoiderTagKill!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure NetherAvoiderTagKill!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure NetherAvoiderTagKill!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure NetherAvoiderTagKill!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure NetherAvoiderTagKill!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure NetherAvoiderTagKill!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure NetherAvoiderTagKill!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure NetherAvoiderTagKill!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure NetherAvoiderTagKill!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -68,14 +61,48 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((WobrModVariables.WorldVariables.get(world).Avoider_Reapering) == (false))) {
-			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || (((((entity instanceof SlimeEntity)
-					|| (entity instanceof BlazeEntity)) || ((entity instanceof GhastEntity) || (entity instanceof MagmaCubeEntity)))
-					|| ((entity instanceof WitchEntity) || (entity instanceof WitherSkeletonEntity)))
-					|| ((((entity instanceof BanditDespawningEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
-							|| ((entity instanceof SkeletonEntity) || (entity instanceof SpiderEntity)))
-							|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity))) || (entity instanceof CreeperEntity))
-									|| ((entity instanceof EndermiteEntity) || (entity instanceof EndermanEntity))))))
+		File config = new File("");
+		if ((WobrModVariables.WorldVariables.get(world).Avoider_Reapering == (false))) {
+			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || ((((EntityTypeTags.getCollection()
+					.getOrCreate(new ResourceLocation(("forge:avoider_wobr").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))
+					|| ((EntityTypeTags.getCollection()
+							.getOrCreate(new ResourceLocation(("forge:avoider_vanilla").toLowerCase(java.util.Locale.ENGLISH)))
+							.contains(entity.getType()))
+							|| (EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType()))))
+					|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity)))
+							&& (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (true)))
+							|| (((entity instanceof ZombieEntity) && (!(entity instanceof ZombieVillagerEntity)))
+									&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (true)))))
+					|| (((((EntityTypeTags.getCollection()
+							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
+							.contains(entity.getType()))
+							|| (EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_desolat").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType())))
+							|| ((EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_arcaneum_15").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType()))
+									|| (EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_arcaneum").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))))
+							|| (((EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_atum").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType()))
+									|| (EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_adv_adv").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType())))
+									|| ((EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_infernal_exp").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(
+															new ResourceLocation(("forge:avoider_better_end").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))))
+							|| (EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_eidolon").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType())))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

@@ -69,6 +69,11 @@ public class ChiseledStrippedBYGCherryWoodBlock extends WobrModElements.ModEleme
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
 			builder.add(FACING);
 		}

@@ -27,6 +27,7 @@ import net.minecraft.command.CommandSource;
 import net.mcreator.wobr.item.BaedoorFuntItem;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
@@ -40,27 +41,27 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure OrmathTrade3!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure OrmathTrade3!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure OrmathTrade3!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure OrmathTrade3!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure OrmathTrade3!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure OrmathTrade3!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure OrmathTrade3!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure OrmathTrade3!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure OrmathTrade3!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure OrmathTrade3!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -69,9 +70,7 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double honey = 0;
-		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.HONEY_BOTTLE, (int) (1)))
-				: false)) {
+		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.HONEY_BOTTLE)) : false)) {
 			honey = (double) 0;
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -79,19 +78,19 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.HONEY_BOTTLE, (int) (1)).getItem() == (itemstackiterator).getItem())) {
-							honey = (double) ((honey) + (((itemstackiterator)).getCount()));
+						if ((Items.HONEY_BOTTLE == (itemstackiterator).getItem())) {
+							honey = (double) (honey + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((honey) >= 8)) {
+			if ((honey >= 8)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Items.HONEY_BOTTLE, (int) (1));
+					ItemStack _stktoremove = new ItemStack(Items.HONEY_BOTTLE);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 8);
 				}
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(BaedoorFuntItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(BaedoorFuntItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}

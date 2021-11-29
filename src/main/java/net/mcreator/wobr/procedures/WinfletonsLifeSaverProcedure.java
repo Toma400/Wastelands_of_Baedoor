@@ -25,6 +25,7 @@ import net.mcreator.wobr.item.CardHeartAceWinfletonItem;
 import net.mcreator.wobr.item.CardDiamondAceWinfletonItem;
 import net.mcreator.wobr.item.CardClubAceWinfletonItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.Iterator;
@@ -40,27 +41,27 @@ public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WinfletonsLifeSaver!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure WinfletonsLifeSaver!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure WinfletonsLifeSaver!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure WinfletonsLifeSaver!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure WinfletonsLifeSaver!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure WinfletonsLifeSaver!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure WinfletonsLifeSaver!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure WinfletonsLifeSaver!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure WinfletonsLifeSaver!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure WinfletonsLifeSaver!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -71,26 +72,26 @@ public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 		double cards = 0;
 		cards = (double) 0;
 		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardDiamondAceWinfletonItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardDiamondAceWinfletonItem.block))
 				: false)) {
-			cards = (double) ((cards) + 1);
+			cards = (double) (cards + 1);
 		}
 		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardHeartAceWinfletonItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardHeartAceWinfletonItem.block))
 				: false)) {
-			cards = (double) ((cards) + 1);
+			cards = (double) (cards + 1);
 		}
 		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardClubAceWinfletonItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardClubAceWinfletonItem.block))
 				: false)) {
-			cards = (double) ((cards) + 1);
+			cards = (double) (cards + 1);
 		}
 		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardSpadeAceWinfletonItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(CardSpadeAceWinfletonItem.block))
 				: false)) {
-			cards = (double) ((cards) + 1);
+			cards = (double) (cards + 1);
 		}
-		if (((cards) == 1)) {
+		if ((cards == 1)) {
 			if ((Math.random() <= 0.15)) {
 				entity.getPersistentData().putString("Message", "         Gambled and won!");
 				{
@@ -130,7 +131,7 @@ public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).setHealth((float) 4);
 			}
-		} else if (((cards) == 2)) {
+		} else if ((cards == 2)) {
 			if ((Math.random() <= 0.25)) {
 				entity.getPersistentData().putString("Message", "         Gambled and won!");
 				{
@@ -170,7 +171,7 @@ public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).setHealth((float) 4);
 			}
-		} else if (((cards) == 3)) {
+		} else if ((cards == 3)) {
 			if ((Math.random() <= 0.33)) {
 				entity.getPersistentData().putString("Message", "         Gambled and won!");
 				{
@@ -210,7 +211,7 @@ public class WinfletonsLifeSaverProcedure extends WobrModElements.ModElement {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).setHealth((float) 4);
 			}
-		} else if (((cards) == 4)) {
+		} else if ((cards == 4)) {
 			if ((Math.random() <= 0.5)) {
 				entity.getPersistentData().putString("Message", "         Gambled and won!");
 				{

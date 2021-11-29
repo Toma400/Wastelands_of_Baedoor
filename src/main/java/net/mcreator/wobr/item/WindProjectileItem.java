@@ -44,8 +44,9 @@ import java.util.HashMap;
 public class WindProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wind_projectile")
 	public static final Item block = null;
-	@ObjectHolder("wobr:entitybulletwind_projectile")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletwind_projectile").setRegistryName("entitybulletwind_projectile");
 	public WindProjectileItem(WobrModElements instance) {
 		super(instance, 1400);
 	}
@@ -53,9 +54,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletwind_projectile").setRegistryName("entitybulletwind_projectile"));
+		elements.entities.add(() -> arrow);
 	}
 
 	@Override
@@ -130,7 +129,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(WindProjectileItemItem.block, (int) (1));
+			return new ItemStack(WindProjectileItemItem.block);
 		}
 
 		@Override
@@ -147,6 +146,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -162,6 +162,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

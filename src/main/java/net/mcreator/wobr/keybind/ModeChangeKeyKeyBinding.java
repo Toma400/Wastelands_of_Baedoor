@@ -39,7 +39,7 @@ public class ModeChangeKeyKeyBinding extends WobrModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.mode_change_key", GLFW.GLFW_KEY_M, "key.categories.misc");
+		keys = new KeyBinding("key.wobr.mode_change_key", GLFW.GLFW_KEY_M, "key.categories.misc");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

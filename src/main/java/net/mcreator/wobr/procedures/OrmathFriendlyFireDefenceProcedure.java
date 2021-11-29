@@ -13,6 +13,7 @@ import net.mcreator.wobr.entity.OrmathVillagerEntity;
 import net.mcreator.wobr.entity.OrmathShamanEntity;
 import net.mcreator.wobr.entity.OrmathRangedWarriorEntity;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -27,12 +28,12 @@ public class OrmathFriendlyFireDefenceProcedure extends WobrModElements.ModEleme
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure OrmathFriendlyFireDefence!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure OrmathFriendlyFireDefence!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure OrmathFriendlyFireDefence!");
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure OrmathFriendlyFireDefence!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

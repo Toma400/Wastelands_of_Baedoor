@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "wobr:block/baedoor_funt_block_lamp"
-    },
-    "facing=north": {
-      "model": "wobr:block/baedoor_funt_block_lamp"
-    },
-    "facing=east": {
-      "model": "wobr:block/baedoor_funt_block_lamp",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "wobr:block/baedoor_funt_block_lamp",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "wobr:block/baedoor_funt_block_lamp",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "wobr:block/baedoor_funt_block_lamp"
+    },
+    "axis=z": {
       "model": "wobr:block/baedoor_funt_block_lamp",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

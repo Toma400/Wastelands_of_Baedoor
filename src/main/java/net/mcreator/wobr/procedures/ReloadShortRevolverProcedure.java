@@ -13,6 +13,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.SmallBulletItem;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -26,27 +27,27 @@ public class ReloadShortRevolverProcedure extends WobrModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ReloadShortRevolver!");
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure ReloadShortRevolver!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure ReloadShortRevolver!");
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure ReloadShortRevolver!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure ReloadShortRevolver!");
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure ReloadShortRevolver!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure ReloadShortRevolver!");
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure ReloadShortRevolver!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ReloadShortRevolver!");
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure ReloadShortRevolver!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -56,11 +57,9 @@ public class ReloadShortRevolverProcedure extends WobrModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		while (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 				.getDouble("Ammo")) < 5)) {
-			if (((entity instanceof PlayerEntity)
-					? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block, (int) (1)))
-					: false)) {
+			if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SmallBulletItem.block)) : false)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(SmallBulletItem.block, (int) (1));
+					ItemStack _stktoremove = new ItemStack(SmallBulletItem.block);
 					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
 				}
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -77,8 +76,7 @@ public class ReloadShortRevolverProcedure extends WobrModElements.ModElement {
 				}
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).getCooldownTracker().setCooldown(
-							(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(),
-							(int) 80);
+							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(), (int) 80);
 			} else {
 				entity.getPersistentData().putString("Message", "              No bullets in inventory!");
 				{
