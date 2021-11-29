@@ -60,9 +60,9 @@
       {
         "type": "image",
         "data": {
-          "image": "trade_honey_bottle.png",
-          "use1Xscale": false,
-          "name": "trade_honey_bottle.png",
+          "image": "trade_melon.png",
+          "use1Xscale": true,
+          "name": "trade_melon.png",
           "x": 168,
           "y": 77
         }

@@ -163,15 +163,6 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public boolean keyPressed(int key, int b, int c) {
-			if (key == 256) {
-				this.minecraft.player.closeScreen();
-				return true;
-			}
-			return super.keyPressed(key, b, c);
-		}
-
-		@Override
 		public void tick() {
 			super.tick();
 		}
@@ -186,6 +177,15 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.font.drawString("9(1*)", 113, 179, -16734040);
 			this.font.drawString("x 1", 40, 24, -16734040);
 			this.font.drawString("9 x", 87, 24, -16734040);
+		}
+
+		@Override
+		public boolean keyPressed(int key, int b, int c) {
+			if (key == 256) {
+				this.minecraft.player.closeScreen();
+				return true;
+			}
+			return super.keyPressed(key, b, c);
 		}
 
 		@Override

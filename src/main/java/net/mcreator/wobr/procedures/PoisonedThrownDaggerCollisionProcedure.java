@@ -1,5 +1,6 @@
 package net.mcreator.wobr.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
@@ -40,7 +41,7 @@ public class PoisonedThrownDaggerCollisionProcedure extends WobrModElements.ModE
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (!world.getWorld().isRemote) {
+		if (world instanceof World && !world.getWorld().isRemote) {
 			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, (y + 1), z, new ItemStack(PoisonedThrownDaggerItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);

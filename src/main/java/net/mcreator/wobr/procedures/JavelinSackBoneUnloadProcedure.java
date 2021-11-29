@@ -1,5 +1,6 @@
 package net.mcreator.wobr.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
@@ -48,13 +49,13 @@ public class JavelinSackBoneUnloadProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		((itemstack)).shrink((int) 1);
-		if (!world.getWorld().isRemote) {
+		if (world instanceof World && !world.getWorld().isRemote) {
 			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(JavelinSackItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}
 		for (int index0 = 0; index0 < (int) (8); index0++) {
-			if (!world.getWorld().isRemote) {
+			if (world instanceof World && !world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BoneJavelinItem.block, (int) (1)));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);

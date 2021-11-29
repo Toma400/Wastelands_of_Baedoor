@@ -94,7 +94,7 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == TsuaBlock.block.getDefaultState().getBlock())) {
 			((itemstack)).shrink((int) 1);
-			if (!world.getWorld().isRemote) {
+			if (world instanceof World && !world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(TsuaBlock.block, (int) (1)));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
@@ -104,7 +104,7 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 
 	@SubscribeEvent
 	public void onBonemeal(BonemealEvent event) {
-		PlayerEntity entity = event.getPlayer();
+		PlayerEntity entity = event.getEntityPlayer();
 		int i = event.getPos().getX();
 		int j = event.getPos().getY();
 		int k = event.getPos().getZ();

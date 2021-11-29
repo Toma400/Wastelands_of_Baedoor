@@ -2,23 +2,22 @@
 package net.mcreator.wobr.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IEnviromentBlockReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FallingBlock;
@@ -46,23 +45,17 @@ public class GlisteringSandBlock extends WobrModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(WoBCreativeTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutoutMipped());
-	}
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.SAND).sound(SoundType.SAND).hardnessAndResistance(0.1f, 0.1f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).notSolid());
+					.harvestTool(ToolType.SHOVEL));
 			setRegistryName("glistering_sand");
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public boolean isEmissiveRendering(BlockState blockState) {
-			return true;
+		public BlockRenderLayer getRenderLayer() {
+			return BlockRenderLayer.CUTOUT_MIPPED;
 		}
 
 		@Override
@@ -79,6 +72,12 @@ public class GlisteringSandBlock extends WobrModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			return VoxelShapes.create(0D, 0D, 0D, 1D, 0.9D, 1D).withOffset(offset.x, offset.y, offset.z);
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getPackedLightmapCoords(BlockState state, IEnviromentBlockReader worldIn, BlockPos pos) {
+			return 15728880;
 		}
 
 		@Override

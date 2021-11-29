@@ -33,7 +33,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
@@ -45,9 +45,6 @@ import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
 import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class OrmathVillagerEntity extends WobrModElements.ModElement {
@@ -70,10 +67,10 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
+		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new ModelOrmath_Villager(), 0.5f) {
 				@Override
-				public ResourceLocation getEntityTexture(Entity entity) {
+				protected ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("wobr:textures/ormath_villager.png");
 				}
 			};
@@ -151,9 +148,9 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 			ItemStack itemstack = sourceentity.getHeldItem(hand);
 			boolean retval = true;
 			super.processInteract(sourceentity, hand);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -171,9 +168,9 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 		@Override
 		public void baseTick() {
 			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -204,36 +201,36 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
 	public static class ModelOrmath_Villager extends EntityModel<Entity> {
-		private final ModelRenderer LeftLeg;
-		private final ModelRenderer RightLeg;
-		private final ModelRenderer LeftArm;
-		private final ModelRenderer RightArm;
-		private final ModelRenderer bb_main;
-		private final ModelRenderer Head_r1;
-		private final ModelRenderer cube_r1;
+		private final RendererModel LeftLeg;
+		private final RendererModel RightLeg;
+		private final RendererModel LeftArm;
+		private final RendererModel RightArm;
+		private final RendererModel bb_main;
+		private final RendererModel Head_r1;
+		private final RendererModel cube_r1;
 		public ModelOrmath_Villager() {
 			textureWidth = 64;
 			textureHeight = 64;
-			LeftLeg = new ModelRenderer(this);
+			LeftLeg = new RendererModel(this);
 			LeftLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
 			LeftLeg.setTextureOffset(0, 22).addBox(0.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
-			RightLeg = new ModelRenderer(this);
+			RightLeg = new RendererModel(this);
 			RightLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
 			RightLeg.setTextureOffset(20, 22).addBox(-5.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
-			LeftArm = new ModelRenderer(this);
+			LeftArm = new RendererModel(this);
 			LeftArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
 			LeftArm.setTextureOffset(35, 12).addBox(5.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
-			RightArm = new ModelRenderer(this);
+			RightArm = new RendererModel(this);
 			RightArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
 			RightArm.setTextureOffset(37, 37).addBox(-8.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
-			bb_main = new ModelRenderer(this);
+			bb_main = new RendererModel(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			Head_r1 = new ModelRenderer(this);
+			Head_r1 = new RendererModel(this);
 			Head_r1.setRotationPoint(0.0F, -26.1187F, -2.599F);
 			bb_main.addChild(Head_r1);
 			setRotationAngle(Head_r1, 0.3054F, 0.0F, 0.0F);
 			Head_r1.setTextureOffset(32, 0).addBox(-3.0F, -5.1565F, -6.5142F, 6.0F, 6.0F, 6.0F, 0.0F, false);
-			cube_r1 = new ModelRenderer(this);
+			cube_r1 = new RendererModel(this);
 			cube_r1.setRotationPoint(0.0F, -18.5625F, -2.5162F);
 			bb_main.addChild(cube_r1);
 			setRotationAngle(cube_r1, 0.3054F, 0.0F, 0.0F);
@@ -250,13 +247,14 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
-		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+		public void setRotationAngle(RendererModel modelRenderer, float x, float y, float z) {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
 		}
 
-		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4, float f5) {
+			super.setRotationAngles(e, f, f1, f2, f3, f4, f5);
 			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.Head_r1.rotateAngleY = f3 / (180F / (float) Math.PI);

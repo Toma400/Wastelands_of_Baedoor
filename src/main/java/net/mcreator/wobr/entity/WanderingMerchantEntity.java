@@ -99,10 +99,10 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
+		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
+			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(), 0.5f) {
 				@Override
-				public ResourceLocation getEntityTexture(Entity entity) {
+				protected ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("wobr:textures/wandering_merchant.png");
 				}
 			};
@@ -175,10 +175,10 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 		@Override
 		public void onDeath(DamageSource source) {
 			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
 			Entity sourceentity = source.getTrueSource();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -191,9 +191,9 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 		public ILivingEntityData onInitialSpawn(IWorld world, DifficultyInstance difficulty, SpawnReason reason, ILivingEntityData livingdata,
 				CompoundNBT tag) {
 			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -268,9 +268,9 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 				});
 			}
 			super.processInteract(sourceentity, hand);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -284,9 +284,9 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 		@Override
 		public void baseTick() {
 			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();

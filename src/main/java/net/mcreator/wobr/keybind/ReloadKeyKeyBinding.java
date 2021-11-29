@@ -83,9 +83,9 @@ public class ReloadKeyKeyBinding extends WobrModElements.ModElement {
 	}
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
 		World world = entity.world;
-		double x = entity.getPosX();
-		double y = entity.getPosY();
-		double z = entity.getPosZ();
+		double x = entity.posX;
+		double y = entity.posY;
+		double z = entity.posZ;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;

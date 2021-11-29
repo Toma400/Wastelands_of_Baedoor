@@ -3,6 +3,7 @@ package net.mcreator.wobr.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.block.material.Material;
 
 import net.mcreator.wobr.WobrModElements;
 
@@ -40,7 +41,7 @@ public class BulletGroundHitProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		world.addParticle(ParticleTypes.EXPLOSION, x, y, z, 0, 1, 0);
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == net.minecraft.block.material.Material.GLASS)) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == Material.GLASS)) {
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		}
 	}

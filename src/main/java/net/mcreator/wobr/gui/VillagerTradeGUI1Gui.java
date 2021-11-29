@@ -69,9 +69,9 @@ public class VillagerTradeGUI1Gui extends WobrModElements.ModElement {
 		PlayerEntity entity = event.player;
 		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -169,15 +169,6 @@ public class VillagerTradeGUI1Gui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public boolean keyPressed(int key, int b, int c) {
-			if (key == 256) {
-				this.minecraft.player.closeScreen();
-				return true;
-			}
-			return super.keyPressed(key, b, c);
-		}
-
-		@Override
 		public void tick() {
 			super.tick();
 		}
@@ -198,6 +189,15 @@ public class VillagerTradeGUI1Gui extends WobrModElements.ModElement {
 					.orElse(new WobrModVariables.PlayerVariables())).Coins) + "", 79, 20, -6057201);
 			this.font.drawString("Reputation", 62, 137, -7572572);
 			this.font.drawString("Coins", 75, 8, -6057201);
+		}
+
+		@Override
+		public boolean keyPressed(int key, int b, int c) {
+			if (key == 256) {
+				this.minecraft.player.closeScreen();
+				return true;
+			}
+			return super.keyPressed(key, b, c);
 		}
 
 		@Override

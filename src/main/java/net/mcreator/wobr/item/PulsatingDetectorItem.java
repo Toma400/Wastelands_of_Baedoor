@@ -62,9 +62,9 @@ public class PulsatingDetectorItem extends WobrModElements.ModElement {
 		public boolean hasEffect(ItemStack itemstack) {
 			PlayerEntity entity = Minecraft.getInstance().player;
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			if (!(PulsatingDetectorUseProcedure.executeProcedure(ImmutableMap.of("entity", entity)))) {
 				return false;
 			}

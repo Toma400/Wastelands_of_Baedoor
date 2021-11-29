@@ -81,12 +81,13 @@ public class BanditDespawningEntity extends WobrModElements.ModElement {
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> new MobRenderer(renderManager, new VillagerModel(0), 0.5f) {
-			@Override
-			public ResourceLocation getEntityTexture(Entity entity) {
-				return new ResourceLocation("wobr:textures/bandit.png");
-			}
-		});
+		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class,
+				renderManager -> new MobRenderer(renderManager, new VillagerModel(0), 0.5f) {
+					@Override
+					protected ResourceLocation getEntityTexture(Entity entity) {
+						return new ResourceLocation("wobr:textures/bandit.png");
+					}
+				});
 	}
 	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {

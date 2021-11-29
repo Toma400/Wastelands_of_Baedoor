@@ -6,17 +6,17 @@
   ],
   "key": {
     "0": {
-      "item": "wobr:chiseled_crimson_wood"
+      "item": "wobr:unknown_element"
     },
     "1": {
-      "item": "wobr:chiseled_crimson_wood"
+      "item": "wobr:unknown_element"
     },
     "2": {
-      "item": "wobr:chiseled_crimson_wood"
+      "item": "wobr:unknown_element"
     }
   },
   "result": {
-    "item": "wobr:chiseled_crimson_wooden_slab",
+    "item": "wobr:unknown_element",
     "count": 6
   }
 }

@@ -57,9 +57,9 @@ public class RodoftheWindsItem extends WobrModElements.ModElement {
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
 				ItemStack itemstack = retval.getResult();
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -72,9 +72,9 @@ public class RodoftheWindsItem extends WobrModElements.ModElement {
 			@Override
 			public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
 				super.onPlayerStoppedUsing(itemstack, world, entity, time);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -85,9 +85,9 @@ public class RodoftheWindsItem extends WobrModElements.ModElement {
 			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				if (selected) {
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -100,9 +100,9 @@ public class RodoftheWindsItem extends WobrModElements.ModElement {
 			public boolean hasEffect(ItemStack itemstack) {
 				PlayerEntity entity = Minecraft.getInstance().player;
 				World world = entity.world;
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				if (!(RodoftheWindsGlowTriggerProcedure.executeProcedure(ImmutableMap.of("entity", entity)))) {
 					return false;
 				}

@@ -17,7 +17,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
@@ -29,7 +28,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -133,7 +131,7 @@ public class GoldenFluidConverterActiveBlock extends WobrModElements.ModElement 
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		public void tick(BlockState state, World world, BlockPos pos, Random random) {
 			super.tick(state, world, pos, random);
 			int x = pos.getX();
 			int y = pos.getY();
@@ -167,9 +165,8 @@ public class GoldenFluidConverterActiveBlock extends WobrModElements.ModElement 
 		}
 
 		@Override
-		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(state, world, pos, entity, hand, hit);
+		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
+			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -183,7 +180,7 @@ public class GoldenFluidConverterActiveBlock extends WobrModElements.ModElement 
 				$_dependencies.put("world", world);
 				FluidConverterAddingProcedure.executeProcedure($_dependencies);
 			}
-			return ActionResultType.SUCCESS;
+			return true;
 		}
 
 		@Override
@@ -245,10 +242,10 @@ public class GoldenFluidConverterActiveBlock extends WobrModElements.ModElement 
 		@Override
 		public void read(CompoundNBT compound) {
 			super.read(compound);
+			this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
 			if (!this.checkLootAndRead(compound)) {
-				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+				ItemStackHelper.loadAllItems(compound, this.stacks);
 			}
-			ItemStackHelper.loadAllItems(compound, this.stacks);
 			if (compound.get("energyStorage") != null)
 				CapabilityEnergy.ENERGY.readNBT(energyStorage, null, compound.get("energyStorage"));
 		}

@@ -49,14 +49,14 @@ public class ChunkTickerSwitchProcedure extends WobrModElements.ModElement {
 			WobrModVariables.MapVariables.get(world).syncData(world);
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"msg @a chunk ticker disabled");
 			}
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager()
 						.handleCommand(
-								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 								"forceload remove all");
 			}
@@ -65,7 +65,7 @@ public class ChunkTickerSwitchProcedure extends WobrModElements.ModElement {
 			WobrModVariables.MapVariables.get(world).syncData(world);
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"msg @a chunk ticker enabled");
 			}

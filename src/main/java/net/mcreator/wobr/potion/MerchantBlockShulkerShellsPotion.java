@@ -75,9 +75,9 @@ public class MerchantBlockShulkerShellsPotion extends WobrModElements.ModElement
 		public void removeAttributesModifiersFromEntity(LivingEntity entity, AbstractAttributeMap attributeMapIn, int amplifier) {
 			super.removeAttributesModifiersFromEntity(entity, attributeMapIn, amplifier);
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);

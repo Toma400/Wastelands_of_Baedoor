@@ -4,6 +4,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.common.MinecraftForge;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
@@ -65,7 +66,7 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 				if (((0.02 + (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 5) / 100)) >= Math
 								.random())) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -73,7 +74,7 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 				}
 			} else {
 				if ((0.02 >= Math.random())) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -91,9 +92,9 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 		dependencies.put("x", (int) event.getPos().getX());
 		dependencies.put("y", (int) event.getPos().getY());
 		dependencies.put("z", (int) event.getPos().getZ());
-		dependencies.put("px", entity.getPosX());
-		dependencies.put("py", entity.getPosY());
-		dependencies.put("pz", entity.getPosZ());
+		dependencies.put("px", entity.posX);
+		dependencies.put("py", entity.posY);
+		dependencies.put("pz", entity.posZ);
 		dependencies.put("world", event.getWorld().getWorld());
 		dependencies.put("entity", entity);
 		dependencies.put("event", event);

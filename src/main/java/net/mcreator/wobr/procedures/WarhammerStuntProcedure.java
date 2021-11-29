@@ -105,7 +105,7 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 							.addPotionEffect(new EffectInstance(WarhammerProtectionPotion.potion, (int) 60, (int) 1, (false), (false)));
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							("effect give @e[distance=..SUN] wobr:warhammer_field_attack 3".replace("SUN",
 									(new java.text.DecimalFormat("####").format(
@@ -124,8 +124,8 @@ public class WarhammerStuntProcedure extends WobrModElements.ModElement {
 											.getOrCreateTag().getDouble("wrhm_nau_long"))))));
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager()
-								.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), (Console));
+								.handleCommand(new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world,
+										4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), (Console));
 					}
 				}
 				if (entity instanceof LivingEntity)

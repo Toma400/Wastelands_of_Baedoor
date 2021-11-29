@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[28,)"
 
 [[mods]]
 modId="wobr"
@@ -16,7 +16,7 @@ Mod adding steampunk weapons and blocks, inspired by my own fictional universe, 
 [[dependencies.wobr]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.14.4]"
     ordering="NONE"
     side="BOTH"
 

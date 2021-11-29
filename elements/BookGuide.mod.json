@@ -29,9 +29,6 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "BookToPage1"
-    }
+    "inventoryStackSize": 64
   }
 }

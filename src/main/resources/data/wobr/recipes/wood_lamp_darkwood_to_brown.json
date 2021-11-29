@@ -6,11 +6,11 @@
   ],
   "key": {
     "0": {
-      "item": "wobr:wooden_lamp_darkwood_2"
+      "item": "wobr:unknown_element"
     }
   },
   "result": {
-    "item": "wobr:wooden_lamp_darkwood",
+    "item": "wobr:unknown_element",
     "count": 1
   }
 }

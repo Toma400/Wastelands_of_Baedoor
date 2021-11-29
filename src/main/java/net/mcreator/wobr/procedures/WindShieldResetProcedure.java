@@ -45,8 +45,8 @@ public class WindShieldResetProcedure extends WobrModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 			world.getWorld().getServer().getCommandManager().handleCommand(
-					new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "", new StringTextComponent(""),
-							world.getWorld().getServer(), null).withFeedbackDisabled(),
+					new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 					"fill ~100 ~100 ~100 ~-100 ~-100 ~-100 wobr:wind_shield replace minecraft:air");
 		}
 	}

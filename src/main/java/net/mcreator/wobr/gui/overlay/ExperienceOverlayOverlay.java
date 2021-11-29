@@ -17,7 +17,6 @@ import net.mcreator.wobr.procedures.ExperienceGUIProcedure;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 import com.google.common.collect.ImmutableMap;
@@ -41,22 +40,22 @@ public class ExperienceOverlayOverlay extends WobrModElements.ModElement {
 			int posY = (event.getWindow().getScaledHeight()) / 2;
 			PlayerEntity entity = Minecraft.getInstance().player;
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			if (ExperienceGUIProcedure.executeProcedure(ImmutableMap.of("world", world))) {
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
+				GlStateManager.disableDepthTest();
+				GlStateManager.depthMask(false);
+				GlStateManager.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
 						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
+				GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				GlStateManager.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/xp_gun.png"));
 				Minecraft.getInstance().ingameGUI.blit(posX + -38, posY + -116, 0, 0, 10, 10, 10, 10);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				GlStateManager.depthMask(true);
+				GlStateManager.enableDepthTest();
+				GlStateManager.enableAlphaTest();
+				GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				Minecraft
 						.getInstance().fontRenderer
 								.drawString(
@@ -69,18 +68,18 @@ public class ExperienceOverlayOverlay extends WobrModElements.ModElement {
 										"" + ((entity.getCapability(WobrModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 												.orElse(new WobrModVariables.PlayerVariables())).Sabre_Experience) + "",
 										posX + 26, posY + -115, -12183425);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
+				GlStateManager.disableDepthTest();
+				GlStateManager.depthMask(false);
+				GlStateManager.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
 						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
+				GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				GlStateManager.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/xp_sabre.png"));
 				Minecraft.getInstance().ingameGUI.blit(posX + 13, posY + -115, 0, 0, 10, 10, 10, 10);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				GlStateManager.depthMask(true);
+				GlStateManager.enableDepthTest();
+				GlStateManager.enableAlphaTest();
+				GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			}
 		}
 	}

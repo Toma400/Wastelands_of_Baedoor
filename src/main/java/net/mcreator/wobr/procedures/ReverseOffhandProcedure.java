@@ -38,10 +38,10 @@ public class ReverseOffhandProcedure extends WobrModElements.ModElement {
 				((ServerPlayerEntity) entity).inventory.markDirty();
 		}
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+			((LivingEntity) entity).swingArm(Hand.MAIN_HAND);
 		}
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).swing(Hand.OFF_HAND, true);
+			((LivingEntity) entity).swingArm(Hand.OFF_HAND);
 		}
 	}
 }

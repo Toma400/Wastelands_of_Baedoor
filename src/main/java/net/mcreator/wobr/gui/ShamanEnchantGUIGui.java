@@ -67,9 +67,9 @@ public class ShamanEnchantGUIGui extends WobrModElements.ModElement {
 		PlayerEntity entity = event.player;
 		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -156,15 +156,6 @@ public class ShamanEnchantGUIGui extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public boolean keyPressed(int key, int b, int c) {
-			if (key == 256) {
-				this.minecraft.player.closeScreen();
-				return true;
-			}
-			return super.keyPressed(key, b, c);
-		}
-
-		@Override
 		public void tick() {
 			super.tick();
 		}
@@ -176,6 +167,15 @@ public class ShamanEnchantGUIGui extends WobrModElements.ModElement {
 			this.font.drawString("Ask for treatment", 48, 48, -10182876);
 			this.font.drawString("Ask for blessing", 50, 90, -13785201);
 			this.font.drawString("" + (entity.getPersistentData().getString("shaman_msg")) + "", 36, 71, -11823423);
+		}
+
+		@Override
+		public boolean keyPressed(int key, int b, int c) {
+			if (key == 256) {
+				this.minecraft.player.closeScreen();
+				return true;
+			}
+			return super.keyPressed(key, b, c);
 		}
 
 		@Override

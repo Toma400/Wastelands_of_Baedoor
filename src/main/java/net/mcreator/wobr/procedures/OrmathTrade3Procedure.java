@@ -17,12 +17,12 @@ import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.ScoreObjective;
 import net.minecraft.scoreboard.ScoreCriteria;
 import net.minecraft.scoreboard.Score;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.wobr.item.BaedoorFuntItem;
 import net.mcreator.wobr.WobrModVariables;
@@ -69,9 +69,7 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double honey = 0;
-		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.HONEY_BOTTLE, (int) (1)))
-				: false)) {
+		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Blocks.MELON, (int) (1))) : false)) {
 			honey = (double) 0;
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -79,16 +77,16 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if ((new ItemStack(Items.HONEY_BOTTLE, (int) (1)).getItem() == (itemstackiterator).getItem())) {
+						if ((new ItemStack(Blocks.MELON, (int) (1)).getItem() == (itemstackiterator).getItem())) {
 							honey = (double) ((honey) + (((itemstackiterator)).getCount()));
 						}
 					}
 				}
 			}
-			if (((honey) >= 8)) {
+			if (((honey) >= 16)) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Items.HONEY_BOTTLE, (int) (1));
-					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 8);
+					ItemStack _stktoremove = new ItemStack(Blocks.MELON, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 16);
 				}
 				if (entity instanceof PlayerEntity) {
 					ItemStack _setstack = new ItemStack(BaedoorFuntItem.block, (int) (1));
@@ -106,7 +104,7 @@ public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 				}
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"effect give @e[distance=..200] wobr:tribe_reputation_raise 2 1");
 				}

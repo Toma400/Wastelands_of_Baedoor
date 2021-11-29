@@ -69,7 +69,7 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 				if (((8 * ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						+ 1)) >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -78,7 +78,7 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 							((sourceentity instanceof LivingEntity)
 									? ((LivingEntity) sourceentity).getHeldItemMainhand()
 									: ItemStack.EMPTY)))) >= (Math.random() * 100))) {
-						if (!world.getWorld().isRemote) {
+						if (world instanceof World && !world.getWorld().isRemote) {
 							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z,
 									new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
 							entityToSpawn.setPickupDelay((int) 10);
@@ -88,7 +88,7 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 				}
 			} else {
 				if ((8 >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(NetherSoulEssenceItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -103,9 +103,9 @@ public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
+			double i = entity.posX;
+			double j = entity.posY;
+			double k = entity.posZ;
 			World world = entity.world;
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);

@@ -50,14 +50,14 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 			if ((net.minecraftforge.fml.ModList.get().isLoaded("byg"))) {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit_loot_table_byg\"} replace");
 				}
 			} else {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit\"} replace");
 				}

@@ -28,7 +28,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -139,9 +138,8 @@ public class GoldenFluidConverterFilledBlock extends WobrModElements.ModElement 
 		}
 
 		@Override
-		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(state, world, pos, entity, hand, hit);
+		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
+			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -155,7 +153,7 @@ public class GoldenFluidConverterFilledBlock extends WobrModElements.ModElement 
 				$_dependencies.put("world", world);
 				FluidConverterAddingProcedure.executeProcedure($_dependencies);
 			}
-			return ActionResultType.SUCCESS;
+			return true;
 		}
 
 		@Override
@@ -217,10 +215,10 @@ public class GoldenFluidConverterFilledBlock extends WobrModElements.ModElement 
 		@Override
 		public void read(CompoundNBT compound) {
 			super.read(compound);
+			this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
 			if (!this.checkLootAndRead(compound)) {
-				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+				ItemStackHelper.loadAllItems(compound, this.stacks);
 			}
-			ItemStackHelper.loadAllItems(compound, this.stacks);
 			if (compound.get("energyStorage") != null)
 				CapabilityEnergy.ENERGY.readNBT(energyStorage, null, compound.get("energyStorage"));
 		}

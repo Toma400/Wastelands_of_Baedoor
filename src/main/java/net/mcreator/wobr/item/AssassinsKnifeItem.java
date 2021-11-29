@@ -74,9 +74,9 @@ public class AssassinsKnifeItem extends WobrModElements.ModElement {
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
 				ItemStack itemstack = retval.getResult();
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -89,9 +89,9 @@ public class AssassinsKnifeItem extends WobrModElements.ModElement {
 			@Override
 			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
@@ -105,9 +105,9 @@ public class AssassinsKnifeItem extends WobrModElements.ModElement {
 			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+				double x = entity.posX;
+				double y = entity.posY;
+				double z = entity.posZ;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("itemstack", itemstack);

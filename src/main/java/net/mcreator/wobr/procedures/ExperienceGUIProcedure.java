@@ -36,9 +36,9 @@ public class ExperienceGUIProcedure extends WobrModElements.ModElement {
 		if (event.phase == TickEvent.Phase.END) {
 			Entity entity = event.player;
 			World world = entity.world;
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
+			double i = entity.posX;
+			double j = entity.posY;
+			double k = entity.posZ;
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);

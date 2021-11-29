@@ -44,11 +44,10 @@ public class WindProjectileGroundProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-			world.getWorld().getServer().getCommandManager()
-					.handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..2] minecraft:levitation 5 2");
+			world.getWorld().getServer().getCommandManager().handleCommand(
+					new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+					"effect give @e[distance=..2] minecraft:levitation 5 2");
 		}
 	}
 }

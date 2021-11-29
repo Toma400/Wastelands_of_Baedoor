@@ -78,7 +78,7 @@ public class MerchantTrade4Procedure extends WobrModElements.ModElement {
 			}
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"give @a[distance=..1] wobr:baedoor_gold_ingot 3");
 			}

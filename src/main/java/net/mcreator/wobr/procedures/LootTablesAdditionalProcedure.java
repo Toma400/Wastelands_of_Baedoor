@@ -72,7 +72,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof BanditEntity.CustomEntity) || (entity instanceof BanditDespawningEntity.CustomEntity))) {
 			if ((1 >= (Math.random() * 100))) {
-				if (!world.getWorld().isRemote) {
+				if (world instanceof World && !world.getWorld().isRemote) {
 					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MusicDiscOneironautItem.block, (int) (1)));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
@@ -83,7 +83,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 				if (((5 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						* 2)) >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -91,7 +91,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 				}
 			} else {
 				if ((5 >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -104,7 +104,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 				if (((10 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						* 7)) >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
+					if (world instanceof World && !world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block, (int) (1)));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
@@ -112,12 +112,12 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else if ((entity instanceof OrmathRiderEntity.CustomEntity)) {
-			if (!world.getWorld().isRemote) {
+			if (world instanceof World && !world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.LEATHER, (int) (1)));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
-			if (!world.getWorld().isRemote) {
+			if (world instanceof World && !world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.BEEF, (int) (1)));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
@@ -130,9 +130,9 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
+			double i = entity.posX;
+			double j = entity.posY;
+			double k = entity.posZ;
 			World world = entity.world;
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);

@@ -77,7 +77,7 @@ public class TribeDeathofShamanProcedure extends WobrModElements.ModElement {
 		if ((entity instanceof OrmathShamanEntity.CustomEntity)) {
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"effect give @e[distance=..200] wobr:tribe_reputation_drop 3 20");
 			}
@@ -100,7 +100,7 @@ public class TribeDeathofShamanProcedure extends WobrModElements.ModElement {
 				&& ((sourceentity instanceof PlayerEntity) || (sourceentity instanceof ServerPlayerEntity)))) {
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"effect give @e[distance=..200] wobr:tribe_reputation_drop 3 11");
 			}
@@ -112,9 +112,9 @@ public class TribeDeathofShamanProcedure extends WobrModElements.ModElement {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
+			double i = entity.posX;
+			double j = entity.posY;
+			double k = entity.posZ;
 			World world = entity.world;
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);

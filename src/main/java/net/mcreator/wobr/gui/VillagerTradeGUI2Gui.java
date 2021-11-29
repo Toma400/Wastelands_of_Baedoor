@@ -69,9 +69,9 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 		PlayerEntity entity = event.player;
 		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -152,8 +152,8 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 176, 166, 176, 166);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_funt_2.png"));
 			this.blit(this.guiLeft + 127, this.guiTop + 40, 0, 0, 16, 16, 16, 16);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/trade_honey_bottle.png"));
-			this.blit(this.guiLeft + 42, this.guiTop + 40, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/trade_melon.png"));
+			this.blit(this.guiLeft + 42, this.guiTop + 40, 0, 0, 15, 15, 15, 15);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/trade_wheat.png"));
 			this.blit(this.guiLeft + 42, this.guiTop + 64, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_funt_2.png"));
@@ -166,15 +166,6 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 127, this.guiTop + 110, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/baedoor_funt_2.png"));
 			this.blit(this.guiLeft + 42, this.guiTop + 109, 0, 0, 16, 16, 16, 16);
-		}
-
-		@Override
-		public boolean keyPressed(int key, int b, int c) {
-			if (key == 256) {
-				this.minecraft.player.closeScreen();
-				return true;
-			}
-			return super.keyPressed(key, b, c);
 		}
 
 		@Override
@@ -198,6 +189,15 @@ public class VillagerTradeGUI2Gui extends WobrModElements.ModElement {
 					.orElse(new WobrModVariables.PlayerVariables())).Coins) + "", 78, 21, -6057201);
 			this.font.drawString("Reputation", 62, 134, -7572572);
 			this.font.drawString("Coins", 75, 9, -6057201);
+		}
+
+		@Override
+		public boolean keyPressed(int key, int b, int c) {
+			if (key == 256) {
+				this.minecraft.player.closeScreen();
+				return true;
+			}
+			return super.keyPressed(key, b, c);
 		}
 
 		@Override

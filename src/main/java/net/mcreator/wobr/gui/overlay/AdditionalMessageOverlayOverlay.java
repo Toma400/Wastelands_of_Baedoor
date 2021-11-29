@@ -36,9 +36,9 @@ public class AdditionalMessageOverlayOverlay extends WobrModElements.ModElement 
 			int posY = (event.getWindow().getScaledHeight()) / 2;
 			PlayerEntity entity = Minecraft.getInstance().player;
 			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			if (AdditionalMessageReturnProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getString("Message2")) + "", posX + -4, posY + 39,
 						-5606906);

@@ -46,9 +46,9 @@ public class NetherTickerUseAddProcedure extends WobrModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((WobrModVariables.MapVariables.get(world).Chunk_Ticker) == (true))) {
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
-						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"forceload add ~ ~");
+				world.getWorld().getServer().getCommandManager()
+						.handleCommand(new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), "forceload add ~ ~");
 			}
 		}
 	}

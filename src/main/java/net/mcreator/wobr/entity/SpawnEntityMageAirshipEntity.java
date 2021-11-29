@@ -29,7 +29,8 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.model.ModelBox;
+import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.BlockState;
@@ -40,9 +41,6 @@ import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
 import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.mojang.blaze3d.matrix.MatrixStack;
 
 @WobrModElements.ModElement.Tag
 public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
@@ -65,10 +63,10 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
+		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new Modelspawn_entity(), 0.5f) {
 				@Override
-				public ResourceLocation getEntityTexture(Entity entity) {
+				protected ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("wobr:textures/spawn_block_airship_mage.png");
 				}
 			};
@@ -84,7 +82,7 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(true);
 			enablePersistence();
-			this.moveController = new FlyingMovementController(this, 10, true);
+			this.moveController = new FlyingMovementController(this);
 			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
@@ -114,8 +112,7 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 		}
 
 		@Override
-		public boolean onLivingFall(float l, float d) {
-			return false;
+		public void fall(float l, float d) {
 		}
 
 		@Override
@@ -140,10 +137,10 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 		@Override
 		public void onDeath(DamageSource source) {
 			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
 			Entity sourceentity = source.getTrueSource();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -159,9 +156,9 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 		@Override
 		public void baseTick() {
 			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -207,31 +204,31 @@ public class SpawnEntityMageAirshipEntity extends WobrModElements.ModElement {
 	}
 
 	// Made with Blockbench 3.8.4
-	// Exported for Minecraft version 1.15 - 1.16
+	// Exported for Minecraft version 1.14
 	// Paste this class into your mod and generate all required imports
-	public static class Modelspawn_entity extends EntityModel<Entity> {
-		private final ModelRenderer bb_main;
+	public static class Modelspawn_entity extends EntityModel {
+		private final RendererModel bb_main;
 		public Modelspawn_entity() {
 			textureWidth = 16;
 			textureHeight = 16;
-			bb_main = new ModelRenderer(this);
+			bb_main = new RendererModel(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.setTextureOffset(0, 0).addBox(-8.0F, -16.0F, -8.0F, 16.0F, 16.0F, 16.0F, 0.0F, false);
+			bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -8.0F, -16.0F, -8.0F, 16, 16, 16, 0.0F, false));
 		}
 
 		@Override
-		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-				float alpha) {
-			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+		public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+			bb_main.render(f5);
 		}
 
-		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+		public void setRotationAngle(RendererModel modelRenderer, float x, float y, float z) {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
 		}
 
-		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4, float f5) {
+			super.setRotationAngles(e, f, f1, f2, f3, f4, f5);
 		}
 	}
 }

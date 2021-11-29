@@ -3,6 +3,6 @@
   "textures": {
     "all": "wobr:blocks/lapis_tower",
     "particle": "wobr:blocks/lapis_tower",
-    "0": "wobr:blocks/lapis_crystal"
+    "0": "wobr:blocks/lapis_tower"
   }
 }

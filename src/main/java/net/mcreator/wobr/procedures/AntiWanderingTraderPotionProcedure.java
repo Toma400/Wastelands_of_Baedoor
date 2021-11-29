@@ -57,7 +57,7 @@ public class AntiWanderingTraderPotionProcedure extends WobrModElements.ModEleme
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 300);
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+						new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 						"kill @e[type=item,distance=..1]");
 			}

@@ -74,7 +74,7 @@ public class TribeHurtProcedure extends WobrModElements.ModElement {
 			if (((sourceentity instanceof PlayerEntity) || (sourceentity instanceof ServerPlayerEntity))) {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"effect give @e[distance=..200] wobr:tribe_reputation_drop 2 1");
 				}
@@ -88,9 +88,9 @@ public class TribeHurtProcedure extends WobrModElements.ModElement {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
 			Entity imediatesourceentity = event.getSource().getImmediateSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
+			double i = entity.posX;
+			double j = entity.posY;
+			double k = entity.posZ;
 			double amount = event.getAmount();
 			World world = entity.world;
 			Map<String, Object> dependencies = new HashMap<>();

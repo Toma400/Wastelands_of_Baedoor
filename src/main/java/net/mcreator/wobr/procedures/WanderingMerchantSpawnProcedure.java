@@ -70,7 +70,7 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 			if ((25 >= (Math.random() * 100))) {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+							new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							"effect give @e[distance=..50] wobr:anti_wandering_trader 3");
 				}
@@ -105,9 +105,9 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 	@SubscribeEvent
 	public void onEntitySpawned(EntityJoinWorldEvent event) {
 		Entity entity = event.getEntity();
-		double i = entity.getPosX();
-		double j = entity.getPosY();
-		double k = entity.getPosZ();
+		double i = entity.posX;
+		double j = entity.posY;
+		double k = entity.posZ;
 		World world = event.getWorld().getWorld();
 		Map<String, Object> dependencies = new HashMap<>();
 		dependencies.put("x", i);
