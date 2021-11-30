@@ -2,22 +2,22 @@
   "_fv": 24,
   "_type": "rangeditem",
   "definition": {
-    "renderType": 0,
-    "texture": "smallthrowndagger",
-    "customModelName": "Normal",
-    "name": "Throwing Dagger",
+    "renderType": 1,
+    "texture": "bone_javelin",
+    "customModelName": "weapon_bone_javelin:default",
+    "name": "Bone Javelin",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:WoBCreativeTab"
     },
-    "stackSize": 16,
+    "stackSize": 4,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": ""
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "animation": "spear",
@@ -27,7 +27,7 @@
       "name": "ProjectilesInventory"
     },
     "bulletPower": 1.0,
-    "bulletDamage": 3.0,
+    "bulletDamage": 4.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
@@ -37,7 +37,10 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "ThrownDaggerCollision"
+      "name": "BoneJavelinCollision"
+    },
+    "onBulletHitsEntity": {
+      "name": "BoneJavelinSlowness"
     }
   }
 }

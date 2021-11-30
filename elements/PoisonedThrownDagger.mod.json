@@ -24,7 +24,7 @@
     "enableMeleeDamage": true,
     "damageVsEntity": 1.0,
     "onRangedItemUsed": {
-      "name": "ThrownDaggerInventory"
+      "name": "ProjectilesInventory"
     },
     "bulletPower": 1.0,
     "bulletDamage": 3.0,

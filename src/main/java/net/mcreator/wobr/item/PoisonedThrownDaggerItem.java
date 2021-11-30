@@ -35,7 +35,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.wobr.procedures.ThrownDaggerInventoryProcedure;
+import net.mcreator.wobr.procedures.ProjectilesInventoryProcedure;
 import net.mcreator.wobr.procedures.PoisonedThrownDaggerCollisionProcedure;
 import net.mcreator.wobr.procedures.MushroomLongPoisoningProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
@@ -119,7 +119,7 @@ public class PoisonedThrownDaggerItem extends WobrModElements.ModElement {
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);
 						$_dependencies.put("itemstack", itemstack);
-						ThrownDaggerInventoryProcedure.executeProcedure($_dependencies);
+						ProjectilesInventoryProcedure.executeProcedure($_dependencies);
 					}
 				}
 			}

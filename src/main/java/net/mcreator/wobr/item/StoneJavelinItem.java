@@ -36,7 +36,7 @@ import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.wobr.procedures.StoneJavelinCollisionProcedure;
-import net.mcreator.wobr.procedures.JavelinInventoryProcedure;
+import net.mcreator.wobr.procedures.ProjectilesInventoryProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.WobrModElements;
 
@@ -54,7 +54,7 @@ public class StoneJavelinItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletstone_javelin").setRegistryName("entitybulletstone_javelin");
 	public StoneJavelinItem(WobrModElements instance) {
-		super(instance, 17);
+		super(instance, 2091);
 	}
 
 	@Override
@@ -118,7 +118,7 @@ public class StoneJavelinItem extends WobrModElements.ModElement {
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);
 						$_dependencies.put("itemstack", itemstack);
-						JavelinInventoryProcedure.executeProcedure($_dependencies);
+						ProjectilesInventoryProcedure.executeProcedure($_dependencies);
 					}
 				}
 			}

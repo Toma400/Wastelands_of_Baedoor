@@ -3,21 +3,21 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "smallthrowndagger",
+    "texture": "iron_throwing_axe",
     "customModelName": "Normal",
-    "name": "Throwing Dagger",
+    "name": "Iron Throwing Axe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:WoBCreativeTab"
     },
-    "stackSize": 16,
+    "stackSize": 8,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": ""
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "animation": "spear",
@@ -27,7 +27,7 @@
       "name": "ProjectilesInventory"
     },
     "bulletPower": 1.0,
-    "bulletDamage": 3.0,
+    "bulletDamage": 6.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
@@ -37,7 +37,7 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "ThrownDaggerCollision"
+      "name": "IronThrowingAxeCollision"
     }
   }
 }

@@ -74,27 +74,6 @@
       "registry_name": "thrown_dagger_recipe"
     },
     {
-      "name": "ThrownDaggerInventory",
-      "type": "procedure",
-      "sortid": 784,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "thrown_dagger_inventory",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "CrackedBone",
       "type": "item",
       "sortid": 265,
@@ -3232,24 +3211,6 @@
       }
     },
     {
-      "name": "AmmoBoxIronProjectile",
-      "type": "rangeditem",
-      "sortid": 944,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ammo_box_iron_projectile"
-    },
-    {
-      "name": "AmmoBoxLavaProjectile",
-      "type": "rangeditem",
-      "sortid": 945,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ammo_box_lava_projectile"
-    },
-    {
       "name": "ShotIronAmmoBox",
       "type": "procedure",
       "sortid": 946,
@@ -6062,7 +6023,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_acacia_black"
+      "registry_name": "fpr_acacia_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprBambooBlack",
@@ -6071,7 +6033,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_bamboo_black"
+      "registry_name": "fpr_bamboo_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprBirchBlack",
@@ -6080,7 +6043,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_birch_black"
+      "registry_name": "fpr_birch_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprCrimsonBlack",
@@ -6089,7 +6053,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_crimson_black"
+      "registry_name": "fpr_crimson_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprDarkOakBlack",
@@ -6098,7 +6063,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_dark_oak_black"
+      "registry_name": "fpr_dark_oak_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprJungleBlack",
@@ -6107,7 +6073,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_jungle_black"
+      "registry_name": "fpr_jungle_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprOakBlack",
@@ -6116,7 +6083,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_oak_black"
+      "registry_name": "fpr_oak_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprRedAcaciaBlack",
@@ -6125,7 +6093,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_red_acacia_black"
+      "registry_name": "fpr_red_acacia_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprSandyBirchBlack",
@@ -6134,7 +6103,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_sandy_birch_black"
+      "registry_name": "fpr_sandy_birch_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprSpruceBlack",
@@ -6143,7 +6113,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_spruce_black"
+      "registry_name": "fpr_spruce_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprWarpedBlack",
@@ -6152,7 +6123,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fpr_warped_black"
+      "registry_name": "fpr_warped_black",
+      "path": "~/Glass Recipes"
     },
     {
       "name": "FprAcaciaBlue",
@@ -8206,36 +8178,6 @@
       }
     },
     {
-      "name": "BoneJavelin",
-      "type": "rangeditem",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bone_javelin"
-    },
-    {
-      "name": "JavelinInventory",
-      "type": "procedure",
-      "sortid": 1219,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "javelin_inventory",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "BoneJavelinCollision",
       "type": "procedure",
       "sortid": 1220,
@@ -8263,15 +8205,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "StoneJavelin",
-      "type": "rangeditem",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stone_javelin"
     },
     {
       "name": "StoneJavelinCollision",
@@ -8699,54 +8632,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "additional_message_overlay"
-    },
-    {
-      "name": "BoneThrowingAxe",
-      "type": "rangeditem",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bone_throwing_axe"
-    },
-    {
-      "name": "ThrowingAxeInventory",
-      "type": "procedure",
-      "sortid": 1255,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "throwing_axe_inventory",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
-      "name": "StoneThrowingAxe",
-      "type": "rangeditem",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stone_throwing_axe"
-    },
-    {
-      "name": "IronThrowingAxe",
-      "type": "rangeditem",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_throwing_axe"
     },
     {
       "name": "BoneThrowingAxeRecipe",
@@ -14424,18 +14309,20 @@
       "type": "tag",
       "sortid": 1592,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
-      "registry_name": "fpr_crimson"
+      "registry_name": "fpr_crimson",
+      "path": "~/Glass Tags"
     },
     {
       "name": "FprWarped",
       "type": "tag",
       "sortid": 1593,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
-      "registry_name": "fpr_warped"
+      "registry_name": "fpr_warped",
+      "path": "~/Glass Tags"
     },
     {
       "name": "ModuleSmallGrip",
@@ -16278,15 +16165,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fpr_netherite"
-    },
-    {
-      "name": "JungleAirshipRelicRecipe",
-      "type": "recipe",
-      "sortid": 1704,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "jungle_airship_relic_recipe"
     },
     {
       "name": "RustedWarhammer",
@@ -22849,6 +22727,100 @@
       "ids": {},
       "registry_name": "avoider_iceand_fire",
       "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "FprBlackGlass",
+      "type": "tag",
+      "sortid": 2087,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_black_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "AmmoBoxIronProjectile",
+      "type": "rangeditem",
+      "sortid": 2088,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammo_box_iron_projectile"
+    },
+    {
+      "name": "AmmoBoxLavaProjectile",
+      "type": "rangeditem",
+      "sortid": 2089,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammo_box_lava_projectile"
+    },
+    {
+      "name": "BoneJavelin",
+      "type": "rangeditem",
+      "sortid": 2090,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_javelin"
+    },
+    {
+      "name": "StoneJavelin",
+      "type": "rangeditem",
+      "sortid": 2091,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_javelin"
+    },
+    {
+      "name": "BoneThrowingAxe",
+      "type": "rangeditem",
+      "sortid": 2092,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_throwing_axe"
+    },
+    {
+      "name": "StoneThrowingAxe",
+      "type": "rangeditem",
+      "sortid": 2093,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_throwing_axe"
+    },
+    {
+      "name": "IronThrowingAxe",
+      "type": "rangeditem",
+      "sortid": 2094,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_throwing_axe"
+    },
+    {
+      "name": "ProjectilesInventory",
+      "type": "procedure",
+      "sortid": 2095,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "projectiles_inventory",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -23689,8 +23661,8 @@
       "block.wobr.palm_wooden_slab": "Hypheria Wooden Slab",
       "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "block.wobr.oak_framed_yellow_stained_glass": "Oak Framed Yellow Stained Glass",
-      "item.wobr.stone_javelin": "Stone Javelin",
       "block.wobr.wooden_lamp_byg_skyris": "Redwood Wooden Lamp",
+      "item.wobr.stone_javelin": "Stone Javelin",
       "entity.wobr.ormath_shaman": "Ormath Shaman",
       "block.wobr.chiseled_cuctur_wood": "Chiseled Asha Hypheria Wood",
       "block.wobr.wooden_lamp_darkwood_2": "Darkwood Wooden Lamp",
@@ -24016,9 +23988,9 @@
       "block.wobr.chiseled_juniper_wood": "Chiseled Oak Wood",
       "item.minecraft.lingering_potion.effect.warhammer_nausea_triggered": "Lingering Warhammer Nausea Walk",
       "item.minecraft.lingering_potion.effect.merchant_block_heartofthe_sea": "Lingering Merchant Block Budding Amethyst",
-      "item.wobr.bone_javelin": "Bone Javelin",
       "effect.tribe_reputation_drop": "Tribe Reputation Drop",
       "block.wobr.chiseled_stripped_byg_baobab_wood": "Chiseled Stripped Holly Wood",
+      "item.wobr.bone_javelin": "Bone Javelin",
       "item.wobr.wither_knife": "Wither Knife",
       "item.wobr.shotgun_clip_2": "2-Rounded Shotgun Clip",
       "block.wobr.stripped_byg_cypress_wooden_stairs": "Stripped Fir Wooden Stairs",
@@ -24747,8 +24719,8 @@
       "block.wobr.palm_wooden_slab": "Palm Wooden Slab",
       "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "block.wobr.oak_framed_yellow_stained_glass": "Oak Framed Yellow Stained Glass",
-      "item.wobr.stone_javelin": "Stone Javelin",
       "block.wobr.wooden_lamp_byg_skyris": "Skyris Wooden Lamp",
+      "item.wobr.stone_javelin": "Stone Javelin",
       "entity.wobr.ormath_shaman": "Ormath Shaman",
       "block.wobr.chiseled_cuctur_wood": "Chiseled Cuctur Wood",
       "block.wobr.wooden_lamp_darkwood_2": "Darkwood Wooden Lamp",
@@ -25074,9 +25046,9 @@
       "block.wobr.chiseled_juniper_wood": "Chiseled Juniper Wood",
       "item.minecraft.lingering_potion.effect.warhammer_nausea_triggered": "Lingering Warhammer Nausea Walk",
       "item.minecraft.lingering_potion.effect.merchant_block_heartofthe_sea": "Lingering Merchant Block Budding Amethyst",
-      "item.wobr.bone_javelin": "Bone Javelin",
       "effect.tribe_reputation_drop": "Tribe Reputation Drop",
       "block.wobr.chiseled_stripped_byg_baobab_wood": "Chiseled Stripped Baobab Wood",
+      "item.wobr.bone_javelin": "Bone Javelin",
       "item.wobr.wither_knife": "Wither Knife",
       "item.wobr.shotgun_clip_2": "2-Rounded Shotgun Clip",
       "block.wobr.stripped_byg_cypress_wooden_stairs": "Stripped Cypress Wooden Stairs",
@@ -25523,6 +25495,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Glass Recipes",
+        "children": []
+      },
+      {
+        "name": "Glass Tags",
+        "children": []
       }
     ]
   },

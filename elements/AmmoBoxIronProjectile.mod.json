@@ -3,41 +3,41 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "smallthrowndagger",
+    "texture": "grenade_iron",
     "customModelName": "Normal",
-    "name": "Throwing Dagger",
+    "name": "Ammo Box Iron Projectile",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:WoBCreativeTab"
+      "value": "No creative tab entry"
     },
-    "stackSize": 16,
+    "stackSize": 1,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 0,
+    "usageCount": 100,
     "actionSound": {
       "value": ""
     },
     "hasGlow": false,
     "animation": "spear",
-    "enableMeleeDamage": true,
-    "damageVsEntity": 1.0,
-    "onRangedItemUsed": {
-      "name": "ProjectilesInventory"
-    },
-    "bulletPower": 1.0,
-    "bulletDamage": 3.0,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.0,
+    "bulletDamage": 0.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:ThrownDaggerProjectile"
+      "value": "CUSTOM:AmmoBoxIron"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "ThrownDaggerCollision"
+      "name": "ExplosionIronAmmoBox"
+    },
+    "onBulletHitsEntity": {
+      "name": "ExplosionIronAmmoBox"
     }
   }
 }

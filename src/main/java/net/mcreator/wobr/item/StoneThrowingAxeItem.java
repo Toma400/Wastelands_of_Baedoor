@@ -35,8 +35,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.wobr.procedures.ThrowingAxeInventoryProcedure;
 import net.mcreator.wobr.procedures.StoneThrowingAxeCollisionProcedure;
+import net.mcreator.wobr.procedures.ProjectilesInventoryProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.WobrModElements;
 
@@ -54,7 +54,7 @@ public class StoneThrowingAxeItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletstone_throwing_axe").setRegistryName("entitybulletstone_throwing_axe");
 	public StoneThrowingAxeItem(WobrModElements instance) {
-		super(instance, 29);
+		super(instance, 2093);
 	}
 
 	@Override
@@ -118,7 +118,7 @@ public class StoneThrowingAxeItem extends WobrModElements.ModElement {
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);
 						$_dependencies.put("itemstack", itemstack);
-						ThrowingAxeInventoryProcedure.executeProcedure($_dependencies);
+						ProjectilesInventoryProcedure.executeProcedure($_dependencies);
 					}
 				}
 			}
