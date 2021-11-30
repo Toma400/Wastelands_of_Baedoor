@@ -76,9 +76,6 @@
         "type": "button",
         "data": {
           "text": "»",
-          "onClick": {
-            "name": "MerchantTrade10"
-          },
           "width": 7,
           "height": 20,
           "name": "»",
@@ -104,9 +101,6 @@
         "type": "button",
         "data": {
           "text": "»",
-          "onClick": {
-            "name": "MerchantTrade5"
-          },
           "width": 7,
           "height": 20,
           "name": "»",
@@ -175,9 +169,6 @@
         "data": {
           "image": "budding_amethyst.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MerchantTrade5"
-          },
           "name": "budding_amethyst.png",
           "x": 219,
           "y": 85

@@ -33,12 +33,10 @@ import net.mcreator.wobr.procedures.MerchantTrade9Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade8Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade7Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade6Procedure;
-import net.mcreator.wobr.procedures.MerchantTrade5Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade4Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade3Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade2Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade1Procedure;
-import net.mcreator.wobr.procedures.MerchantTrade10Procedure;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -138,10 +136,8 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 0, this.guiTop + 63, 0, 0, 150, 150, 150, 150);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glistering_ash.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
-			if (MerchantTrade5Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
-				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
-				this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
-			}
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
+			this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glowing_obsidian.png"));
 			this.blit(this.guiLeft + 80, this.guiTop + 104, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32sand_veil.png"));
@@ -372,17 +368,6 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 				MerchantTrade2Procedure.executeProcedure($_dependencies);
 			}
 		}
-		if (buttonID == 3) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MerchantTrade10Procedure.executeProcedure($_dependencies);
-			}
-		}
 		if (buttonID == 4) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -392,17 +377,6 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				MerchantTrade1Procedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 5) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MerchantTrade5Procedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 6) {

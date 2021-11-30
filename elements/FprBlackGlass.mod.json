@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BlackHorizontalStainedGlassPane"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "CUSTOM:SmoothBlackSandSlab"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fpr_black_glass",
+    "namespace": "forge"
+  }
+}

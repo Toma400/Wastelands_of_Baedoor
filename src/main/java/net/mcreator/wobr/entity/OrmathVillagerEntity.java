@@ -33,6 +33,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.model.ModelBox;
 import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -197,54 +198,57 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 		}
 	}
 
-	// Made with Blockbench 3.9.2
-	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+	// Made with Blockbench 3.8.4
+	// Exported for Minecraft version 1.14
 	// Paste this class into your mod and generate all required imports
-	public static class ModelOrmath_Villager extends EntityModel<Entity> {
-		private final RendererModel LeftLeg;
-		private final RendererModel RightLeg;
-		private final RendererModel LeftArm;
-		private final RendererModel RightArm;
-		private final RendererModel bb_main;
-		private final RendererModel Head_r1;
-		private final RendererModel cube_r1;
+	public static class ModelOrmath_Villager extends EntityModel {
+		private final RendererModel whole;
+		private final RendererModel body_r1;
+		private final RendererModel head;
+		private final RendererModel head_r1;
+		private final RendererModel arm_right;
+		private final RendererModel arm_left;
+		private final RendererModel left_leg;
+		private final RendererModel right_leg;
 		public ModelOrmath_Villager() {
 			textureWidth = 64;
 			textureHeight = 64;
-			LeftLeg = new RendererModel(this);
-			LeftLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-			LeftLeg.setTextureOffset(0, 22).addBox(0.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
-			RightLeg = new RendererModel(this);
-			RightLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-			RightLeg.setTextureOffset(20, 22).addBox(-5.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
-			LeftArm = new RendererModel(this);
-			LeftArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-			LeftArm.setTextureOffset(35, 12).addBox(5.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
-			RightArm = new RendererModel(this);
-			RightArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-			RightArm.setTextureOffset(37, 37).addBox(-8.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
-			bb_main = new RendererModel(this);
-			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			Head_r1 = new RendererModel(this);
-			Head_r1.setRotationPoint(0.0F, -26.1187F, -2.599F);
-			bb_main.addChild(Head_r1);
-			setRotationAngle(Head_r1, 0.3054F, 0.0F, 0.0F);
-			Head_r1.setTextureOffset(32, 0).addBox(-3.0F, -5.1565F, -6.5142F, 6.0F, 6.0F, 6.0F, 0.0F, false);
-			cube_r1 = new RendererModel(this);
-			cube_r1.setRotationPoint(0.0F, -18.5625F, -2.5162F);
-			bb_main.addChild(cube_r1);
-			setRotationAngle(cube_r1, 0.3054F, 0.0F, 0.0F);
-			cube_r1.setTextureOffset(0, 0).addBox(-5.0F, -7.75F, -2.5F, 10.0F, 16.0F, 6.0F, 0.01F, false);
+			whole = new RendererModel(this);
+			whole.setRotationPoint(0.0F, 5.4375F, 1.4838F);
+			body_r1 = new RendererModel(this);
+			body_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+			whole.addChild(body_r1);
+			setRotationAngle(body_r1, 0.3054F, 0.0F, 0.0F);
+			body_r1.cubeList.add(new ModelBox(body_r1, 0, 0, -5.0F, -7.75F, -2.5F, 10, 16, 6, 0.01F, false));
+			head = new RendererModel(this);
+			head.setRotationPoint(0.0F, 0.0F, 0.0F);
+			whole.addChild(head);
+			head_r1 = new RendererModel(this);
+			head_r1.setRotationPoint(0.0F, -8.7946F, -4.158F);
+			head.addChild(head_r1);
+			setRotationAngle(head_r1, 0.3054F, 0.0F, 0.0F);
+			head_r1.cubeList.add(new ModelBox(head_r1, 32, 0, -3.0F, -2.75F, -3.0F, 6, 6, 6, 0.0F, false));
+			arm_right = new RendererModel(this);
+			arm_right.setRotationPoint(0.0F, 18.5625F, 5.5162F);
+			whole.addChild(arm_right);
+			arm_right.cubeList.add(new ModelBox(arm_right, 37, 37, -8.0F, -23.0F, -9.0F, 3, 11, 3, 0.0F, false));
+			arm_left = new RendererModel(this);
+			arm_left.setRotationPoint(0.0F, 18.5625F, 5.5162F);
+			whole.addChild(arm_left);
+			arm_left.cubeList.add(new ModelBox(arm_left, 35, 12, 5.0F, -23.0F, -9.0F, 3, 11, 3, 0.0F, false));
+			left_leg = new RendererModel(this);
+			left_leg.setRotationPoint(0.0F, -8.7946F, -4.158F);
+			whole.addChild(left_leg);
+			left_leg.cubeList.add(new ModelBox(left_leg, 0, 22, 0.0F, 14.3571F, 3.6742F, 5, 13, 5, 0.02F, false));
+			right_leg = new RendererModel(this);
+			right_leg.setRotationPoint(0.0F, -8.7946F, -4.158F);
+			whole.addChild(right_leg);
+			right_leg.cubeList.add(new ModelBox(right_leg, 20, 22, -5.0F, 14.3571F, 3.6742F, 5, 13, 5, 0.02F, false));
 		}
 
 		@Override
-		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-				float alpha) {
-			LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-			RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-			LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
-			RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
-			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+		public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+			whole.render(f5);
 		}
 
 		public void setRotationAngle(RendererModel modelRenderer, float x, float y, float z) {
@@ -255,12 +259,12 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4, float f5) {
 			super.setRotationAngles(e, f, f1, f2, f3, f4, f5);
-			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.Head_r1.rotateAngleY = f3 / (180F / (float) Math.PI);
-			this.Head_r1.rotateAngleX = f4 / (180F / (float) Math.PI);
-			this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
+			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
+			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
+			this.left_leg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.right_leg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.arm_right.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.arm_left.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
 }

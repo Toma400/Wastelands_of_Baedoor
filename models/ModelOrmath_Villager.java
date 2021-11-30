@@ -1,60 +1,64 @@
-// Made with Blockbench 3.9.2
-// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+// Made with Blockbench 3.8.4
+// Exported for Minecraft version 1.14
 // Paste this class into your mod and generate all required imports
 
-public static class ModelOrmath_Villager extends EntityModel<Entity> {
-	private final ModelRenderer LeftLeg;
-	private final ModelRenderer RightLeg;
-	private final ModelRenderer LeftArm;
-	private final ModelRenderer RightArm;
-	private final ModelRenderer bb_main;
-	private final ModelRenderer Head_r1;
-	private final ModelRenderer cube_r1;
+public static class ModelOrmath_Villager extends EntityModel {
+	private final ModelRenderer whole;
+	private final ModelRenderer body_r1;
+	private final ModelRenderer head;
+	private final ModelRenderer head_r1;
+	private final ModelRenderer arm_right;
+	private final ModelRenderer arm_left;
+	private final ModelRenderer left_leg;
+	private final ModelRenderer right_leg;
 
 	public ModelOrmath_Villager() {
 		textureWidth = 64;
 		textureHeight = 64;
 
-		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-		LeftLeg.setTextureOffset(0, 22).addBox(0.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
+		whole = new ModelRenderer(this);
+		whole.setRotationPoint(0.0F, 5.4375F, 1.4838F);
 
-		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-		RightLeg.setTextureOffset(20, 22).addBox(-5.0F, 5.5625F, -0.4838F, 5.0F, 13.0F, 5.0F, 0.02F, false);
+		body_r1 = new ModelRenderer(this);
+		body_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+		whole.addChild(body_r1);
+		setRotationAngle(body_r1, 0.3054F, 0.0F, 0.0F);
+		body_r1.cubeList.add(new ModelBox(body_r1, 0, 0, -5.0F, -7.75F, -2.5F, 10, 16, 6, 0.01F, false));
 
-		LeftArm = new ModelRenderer(this);
-		LeftArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-		LeftArm.setTextureOffset(35, 12).addBox(5.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
+		head = new ModelRenderer(this);
+		head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		whole.addChild(head);
 
-		RightArm = new ModelRenderer(this);
-		RightArm.setRotationPoint(0.0F, 5.4375F, -2.5162F);
-		RightArm.setTextureOffset(37, 37).addBox(-8.0F, -4.4375F, -3.4838F, 3.0F, 11.0F, 3.0F, 0.0F, false);
+		head_r1 = new ModelRenderer(this);
+		head_r1.setRotationPoint(0.0F, -8.7946F, -4.158F);
+		head.addChild(head_r1);
+		setRotationAngle(head_r1, 0.3054F, 0.0F, 0.0F);
+		head_r1.cubeList.add(new ModelBox(head_r1, 32, 0, -3.0F, -2.75F, -3.0F, 6, 6, 6, 0.0F, false));
 
-		bb_main = new ModelRenderer(this);
-		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
+		arm_right = new ModelRenderer(this);
+		arm_right.setRotationPoint(0.0F, 18.5625F, 5.5162F);
+		whole.addChild(arm_right);
+		arm_right.cubeList.add(new ModelBox(arm_right, 37, 37, -8.0F, -23.0F, -9.0F, 3, 11, 3, 0.0F, false));
 
-		Head_r1 = new ModelRenderer(this);
-		Head_r1.setRotationPoint(0.0F, -26.1187F, -2.599F);
-		bb_main.addChild(Head_r1);
-		setRotationAngle(Head_r1, 0.3054F, 0.0F, 0.0F);
-		Head_r1.setTextureOffset(32, 0).addBox(-3.0F, -5.1565F, -6.5142F, 6.0F, 6.0F, 6.0F, 0.0F, false);
+		arm_left = new ModelRenderer(this);
+		arm_left.setRotationPoint(0.0F, 18.5625F, 5.5162F);
+		whole.addChild(arm_left);
+		arm_left.cubeList.add(new ModelBox(arm_left, 35, 12, 5.0F, -23.0F, -9.0F, 3, 11, 3, 0.0F, false));
 
-		cube_r1 = new ModelRenderer(this);
-		cube_r1.setRotationPoint(0.0F, -18.5625F, -2.5162F);
-		bb_main.addChild(cube_r1);
-		setRotationAngle(cube_r1, 0.3054F, 0.0F, 0.0F);
-		cube_r1.setTextureOffset(0, 0).addBox(-5.0F, -7.75F, -2.5F, 10.0F, 16.0F, 6.0F, 0.01F, false);
+		left_leg = new ModelRenderer(this);
+		left_leg.setRotationPoint(0.0F, -8.7946F, -4.158F);
+		whole.addChild(left_leg);
+		left_leg.cubeList.add(new ModelBox(left_leg, 0, 22, 0.0F, 14.3571F, 3.6742F, 5, 13, 5, 0.02F, false));
+
+		right_leg = new ModelRenderer(this);
+		right_leg.setRotationPoint(0.0F, -8.7946F, -4.158F);
+		whole.addChild(right_leg);
+		right_leg.cubeList.add(new ModelBox(right_leg, 20, 22, -5.0F, 14.3571F, 3.6742F, 5, 13, 5, 0.02F, false));
 	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
-			float green, float blue, float alpha) {
-		LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-		LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
-		bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		whole.render(f5);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -65,11 +69,11 @@ public static class ModelOrmath_Villager extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-		this.Head_r1.rotateAngleY = f3 / (180F / (float) Math.PI);
-		this.Head_r1.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
+		this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
+		this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
+		this.left_leg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+		this.right_leg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+		this.arm_right.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.arm_left.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 	}
 }
