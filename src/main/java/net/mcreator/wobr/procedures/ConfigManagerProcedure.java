@@ -148,6 +148,12 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				WobrModVariables.MapVariables.get(world).KF_Drop_Essence = (boolean) config_exist.get("drops").getAsJsonObject()
 						.get("nether_soul_essence").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Ent_Wind_Spirit = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
+						.get("wind_spirit").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Ent_Orm_Raider = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
+						.get("ormath_raiders").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -650,7 +650,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "black_sand"
+      "registry_name": "black_sand",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "HardenedBlackSand",
@@ -659,7 +660,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_black_sand"
+      "registry_name": "hardened_black_sand",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "PolishedBlackSand",
@@ -668,7 +670,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_black_sand"
+      "registry_name": "polished_black_sand",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "BlackSandRecipe",
@@ -713,7 +716,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_black_sand_stairs"
+      "registry_name": "hardened_black_sand_stairs",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "HardenedBlackSandSlab",
@@ -722,7 +726,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_black_sand_slab"
+      "registry_name": "hardened_black_sand_slab",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "HardenedBlackSandStairsRecipeStonecutter",
@@ -767,7 +772,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_black_sand_wall"
+      "registry_name": "polished_black_sand_wall",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "PolishedBlackSandSlab",
@@ -776,7 +782,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_black_sand_slab"
+      "registry_name": "polished_black_sand_slab",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "PolishedBlackSandStairs",
@@ -785,7 +792,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "polished_black_sand_stairs"
+      "registry_name": "polished_black_sand_stairs",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "PolishedBlackSandWallRecipeStonecutter2",
@@ -875,7 +883,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_black_sand"
+      "registry_name": "chiseled_black_sand",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "ChiseledBlackSandSlab",
@@ -884,7 +893,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_black_sand_slab"
+      "registry_name": "chiseled_black_sand_slab",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "ChiseledBlackSandRecipe",
@@ -947,7 +957,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_wooden_slab"
+      "registry_name": "oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "OakWoodenStairs",
@@ -956,7 +967,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_wooden_stairs"
+      "registry_name": "oak_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledOakWood",
@@ -965,7 +977,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_oak_wood"
+      "registry_name": "chiseled_oak_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledOakWoodenSlab",
@@ -974,7 +987,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_oak_wooden_slab"
+      "registry_name": "chiseled_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedOakWoodenSlab",
@@ -983,7 +997,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_oak_wooden_slab"
+      "registry_name": "stripped_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedOakWoodenStairs",
@@ -992,7 +1007,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_oak_wooden_stairs"
+      "registry_name": "stripped_oak_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedOakWood",
@@ -1001,7 +1017,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_oak_wood"
+      "registry_name": "chiseled_stripped_oak_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedOakWoodenSlab",
@@ -1010,7 +1027,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_oak_wooden_slab"
+      "registry_name": "chiseled_stripped_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "JungleWoodenSlab",
@@ -1019,7 +1037,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_wooden_slab"
+      "registry_name": "jungle_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "JungleWoodenStairs",
@@ -1028,7 +1047,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_wooden_stairs"
+      "registry_name": "jungle_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledJungleWood",
@@ -1037,7 +1057,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_jungle_wood"
+      "registry_name": "chiseled_jungle_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledJungleWoodenSlab",
@@ -1046,7 +1067,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_jungle_wooden_slab"
+      "registry_name": "chiseled_jungle_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedJungleWoodenSlab",
@@ -1055,7 +1077,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_jungle_wooden_slab"
+      "registry_name": "stripped_jungle_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedJungleWoodenStairs",
@@ -1064,7 +1087,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_jungle_wooden_stairs"
+      "registry_name": "stripped_jungle_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedJungleWood",
@@ -1073,7 +1097,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_jungle_wood"
+      "registry_name": "chiseled_stripped_jungle_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedJungleWoodenSlab",
@@ -1082,7 +1107,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_jungle_wooden_slab"
+      "registry_name": "chiseled_stripped_jungle_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "MushroomLongPoisoning",
@@ -1178,7 +1204,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "always_lit_lamp"
+      "registry_name": "always_lit_lamp",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "BirchWoodenStairs",
@@ -1187,7 +1214,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_wooden_stairs"
+      "registry_name": "birch_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "BirchWoodenSlab",
@@ -1196,7 +1224,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_wooden_slab"
+      "registry_name": "birch_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledBirchWood",
@@ -1205,7 +1234,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_birch_wood"
+      "registry_name": "chiseled_birch_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledBirchWoodenSlab",
@@ -1214,7 +1244,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_birch_wooden_slab"
+      "registry_name": "chiseled_birch_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedBirchWoodenSlab",
@@ -1223,7 +1254,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_birch_wooden_slab"
+      "registry_name": "stripped_birch_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedBirchWoodenStairs",
@@ -1232,7 +1264,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_birch_wooden_stairs"
+      "registry_name": "stripped_birch_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedBirchWood",
@@ -1241,7 +1274,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_birch_wood"
+      "registry_name": "chiseled_stripped_birch_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedBirchWoodenSlab",
@@ -1250,7 +1284,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_birch_wooden_slab"
+      "registry_name": "chiseled_stripped_birch_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "AcaciaWoodenSlab",
@@ -1259,7 +1294,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_wooden_slab"
+      "registry_name": "acacia_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "AcaciaWoodenStairs",
@@ -1268,7 +1304,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_wooden_stairs"
+      "registry_name": "acacia_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledAcaciaWood",
@@ -1277,7 +1314,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_acacia_wood"
+      "registry_name": "chiseled_acacia_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledAcaciaWoodenSlab",
@@ -1286,7 +1324,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_acacia_wooden_slab"
+      "registry_name": "chiseled_acacia_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedAcaciaWoodenSlab",
@@ -1295,7 +1334,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_acacia_wooden_slab"
+      "registry_name": "stripped_acacia_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedAcaciaWoodenStairs",
@@ -1304,7 +1344,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_acacia_wooden_stairs"
+      "registry_name": "stripped_acacia_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedAcaciaWood",
@@ -1313,7 +1354,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_acacia_wood"
+      "registry_name": "chiseled_stripped_acacia_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedAcaciaWoodenSlab",
@@ -1322,7 +1364,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_acacia_wooden_slab"
+      "registry_name": "chiseled_stripped_acacia_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "SpruceWoodenSlab",
@@ -1331,7 +1374,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_wooden_slab"
+      "registry_name": "spruce_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "SpruceWoodenStairs",
@@ -1340,7 +1384,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_wooden_stairs"
+      "registry_name": "spruce_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledSpruceWood",
@@ -1349,7 +1394,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_spruce_wood"
+      "registry_name": "chiseled_spruce_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledSpruceWoodenSlab",
@@ -1358,7 +1404,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_spruce_wooden_slab"
+      "registry_name": "chiseled_spruce_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedSpruceWoodenSlab",
@@ -1367,7 +1414,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_spruce_wooden_slab"
+      "registry_name": "stripped_spruce_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedSpruceWoodenStairs",
@@ -1376,7 +1424,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_spruce_wooden_stairs"
+      "registry_name": "stripped_spruce_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedSpruceWood",
@@ -1385,7 +1434,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_spruce_wood"
+      "registry_name": "chiseled_stripped_spruce_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedSpruceWoodenSlab",
@@ -1394,7 +1444,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_spruce_wooden_slab"
+      "registry_name": "chiseled_stripped_spruce_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "DarkOakWoodenSlab",
@@ -1403,7 +1454,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_wooden_slab"
+      "registry_name": "dark_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "DarkOakWoodenStairs",
@@ -1412,7 +1464,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_wooden_stairs"
+      "registry_name": "dark_oak_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledDarkOakWood",
@@ -1421,7 +1474,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_dark_oak_wood"
+      "registry_name": "chiseled_dark_oak_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledDarkOakWoodenSlab",
@@ -1430,7 +1484,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_dark_oak_wooden_slab"
+      "registry_name": "chiseled_dark_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedDarkOakWoodenSlab",
@@ -1439,7 +1494,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_dark_oak_wooden_slab"
+      "registry_name": "stripped_dark_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedDarkOakWoodenStairs",
@@ -1448,7 +1504,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_dark_oak_wooden_stairs"
+      "registry_name": "stripped_dark_oak_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "OakWoodenSlabRecipe",
@@ -1637,7 +1694,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "clean_birch_wood"
+      "registry_name": "clean_birch_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "CleanBirchWoodRecipe",
@@ -1889,7 +1947,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_dark_oak_wood"
+      "registry_name": "chiseled_stripped_dark_oak_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedDarkOakWoodRecipe",
@@ -1907,7 +1966,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_dark_oak_wooden_slab"
+      "registry_name": "chiseled_stripped_dark_oak_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedDarkOakWoodenSlabRecipe",
@@ -3318,7 +3378,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_block"
+      "registry_name": "bamboo_block",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooBlockRecipe",
@@ -3363,7 +3424,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_stairs"
+      "registry_name": "bamboo_stairs",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooSlab",
@@ -3372,7 +3434,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_slab"
+      "registry_name": "bamboo_slab",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooFence",
@@ -3381,7 +3444,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence"
+      "registry_name": "bamboo_fence",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooStairsRecipe",
@@ -3417,7 +3481,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_trapdoor"
+      "registry_name": "bamboo_trapdoor",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "ChiseledBambooBlock",
@@ -3426,7 +3491,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_bamboo_block"
+      "registry_name": "chiseled_bamboo_block",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "ChiseledBambooSlab",
@@ -3435,7 +3501,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_bamboo_slab"
+      "registry_name": "chiseled_bamboo_slab",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "ChiseledBambooRecipe",
@@ -3588,7 +3655,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "white_horizontal_stained_glass_pane"
+      "registry_name": "white_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BlackHorizontalStainedGlassPane",
@@ -3597,7 +3665,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "black_horizontal_stained_glass_pane"
+      "registry_name": "black_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedHorizontalStainedGlassPane",
@@ -3606,7 +3675,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_horizontal_stained_glass_pane"
+      "registry_name": "red_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "GreenHorizontalStainedGlassPane",
@@ -3615,7 +3685,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "green_horizontal_stained_glass_pane"
+      "registry_name": "green_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BrownHorizontalStainedGlassPane",
@@ -3624,7 +3695,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "brown_horizontal_stained_glass_pane"
+      "registry_name": "brown_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BlueHorizontalStainedGlassPane",
@@ -3633,7 +3705,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blue_horizontal_stained_glass_pane"
+      "registry_name": "blue_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "PurpleHorizontalStainedGlassPane",
@@ -3642,7 +3715,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purple_horizontal_stained_glass_pane"
+      "registry_name": "purple_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CyanHorizontalStainedGlassPane",
@@ -3651,7 +3725,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cyan_horizontal_stained_glass_pane"
+      "registry_name": "cyan_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "LightGrayHorizontalStainedGlassPane",
@@ -3660,7 +3735,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "light_gray_horizontal_stained_glass_pane"
+      "registry_name": "light_gray_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "GrayHorizontalStainedGlassPane",
@@ -3669,7 +3745,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gray_horizontal_stained_glass_pane"
+      "registry_name": "gray_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "PinkHorizontalStainedGlassPane",
@@ -3678,7 +3755,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pink_horizontal_stained_glass_pane"
+      "registry_name": "pink_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "LimeHorizontalStainedGlassPane",
@@ -3687,7 +3765,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lime_horizontal_stained_glass_pane"
+      "registry_name": "lime_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "YellowHorizontalStainedGlassPane",
@@ -3696,7 +3775,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "yellow_horizontal_stained_glass_pane"
+      "registry_name": "yellow_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "LightBlueHorizontalStainedGlassPane",
@@ -3705,7 +3785,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "light_blue_horizontal_stained_glass_pane"
+      "registry_name": "light_blue_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "MagentaHorizontalStainedGlassPane",
@@ -3714,7 +3795,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magenta_horizontal_stained_glass_pane"
+      "registry_name": "magenta_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OrangeHorizontalStainedGlassPane",
@@ -3723,7 +3805,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "orange_horizontal_stained_glass_pane"
+      "registry_name": "orange_horizontal_stained_glass_pane",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "FriendlyNetherAvoiderShield",
@@ -4000,7 +4083,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "smooth_black_sand"
+      "registry_name": "smooth_black_sand",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "SmoothBlackSandSlab",
@@ -4009,7 +4093,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "smooth_black_sand_slab"
+      "registry_name": "smooth_black_sand_slab",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "SmoothBlackSandStairs",
@@ -4018,7 +4103,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "smooth_black_sand_stairs"
+      "registry_name": "smooth_black_sand_stairs",
+      "path": "~/Blocks/Vulcanic Sand"
     },
     {
       "name": "SmoothBlackSandRecipe",
@@ -4216,7 +4302,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_black_stained_glass"
+      "registry_name": "acacia_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedBlueStainedGlass",
@@ -4225,7 +4312,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_blue_stained_glass"
+      "registry_name": "acacia_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedBrownStainedGlass",
@@ -4234,7 +4322,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_brown_stained_glass"
+      "registry_name": "acacia_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedCyanStainedGlass",
@@ -4243,7 +4332,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_cyan_stained_glass"
+      "registry_name": "acacia_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedGrayStainedGlass",
@@ -4252,7 +4342,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_gray_stained_glass"
+      "registry_name": "acacia_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedGreenStainedGlass",
@@ -4261,7 +4352,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_green_stained_glass"
+      "registry_name": "acacia_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedLightBlueStainedGlass",
@@ -4270,7 +4362,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_light_blue_stained_glass"
+      "registry_name": "acacia_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedLightGrayStainedGlass",
@@ -4279,7 +4372,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_light_gray_stained_glass"
+      "registry_name": "acacia_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedLimeStainedGlass",
@@ -4288,7 +4382,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_lime_stained_glass"
+      "registry_name": "acacia_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedMagentaStainedGlass",
@@ -4297,7 +4392,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_magenta_stained_glass"
+      "registry_name": "acacia_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedOrangeStainedGlass",
@@ -4306,7 +4402,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_orange_stained_glass"
+      "registry_name": "acacia_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedPinkStainedGlass",
@@ -4315,7 +4412,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_pink_stained_glass"
+      "registry_name": "acacia_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedPurpleStainedGlass",
@@ -4324,7 +4422,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_purple_stained_glass"
+      "registry_name": "acacia_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedRedStainedGlass",
@@ -4333,7 +4432,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_red_stained_glass"
+      "registry_name": "acacia_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedWhiteStainedGlass",
@@ -4342,7 +4442,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_white_stained_glass"
+      "registry_name": "acacia_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "AcaciaFramedYellowStainedGlass",
@@ -4351,7 +4452,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "acacia_framed_yellow_stained_glass"
+      "registry_name": "acacia_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedBlackStainedGlass",
@@ -4360,7 +4462,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_black_stained_glass"
+      "registry_name": "bamboo_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedBlueStainedGlass",
@@ -4369,7 +4472,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_blue_stained_glass"
+      "registry_name": "bamboo_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedBrownStainedGlass",
@@ -4378,7 +4482,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_brown_stained_glass"
+      "registry_name": "bamboo_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedCyanStainedGlass",
@@ -4387,7 +4492,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_cyan_stained_glass"
+      "registry_name": "bamboo_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedGrayStainedGlass",
@@ -4396,7 +4502,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_gray_stained_glass"
+      "registry_name": "bamboo_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedGreenStainedGlass",
@@ -4405,7 +4512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_green_stained_glass"
+      "registry_name": "bamboo_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedLightBlueStainedGlass",
@@ -4414,7 +4522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_light_blue_stained_glass"
+      "registry_name": "bamboo_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedLightGrayStainedGlass",
@@ -4423,7 +4532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_light_gray_stained_glass"
+      "registry_name": "bamboo_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedLimeStainedGlass",
@@ -4432,7 +4542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_lime_stained_glass"
+      "registry_name": "bamboo_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedMagentaStainedGlass",
@@ -4441,7 +4552,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_magenta_stained_glass"
+      "registry_name": "bamboo_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedOrangeStainedGlass",
@@ -4450,7 +4562,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_orange_stained_glass"
+      "registry_name": "bamboo_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedPinkStainedGlass",
@@ -4459,7 +4572,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_pink_stained_glass"
+      "registry_name": "bamboo_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedPurpleStainedGlass",
@@ -4468,7 +4582,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_purple_stained_glass"
+      "registry_name": "bamboo_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedRedStainedGlass",
@@ -4477,7 +4592,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_red_stained_glass"
+      "registry_name": "bamboo_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedWhiteStainedGlass",
@@ -4486,7 +4602,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_white_stained_glass"
+      "registry_name": "bamboo_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BambooFramedYellowStainedGlass",
@@ -4495,7 +4612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_framed_yellow_stained_glass"
+      "registry_name": "bamboo_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedBlackStainedGlass",
@@ -4504,7 +4622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_black_stained_glass"
+      "registry_name": "birch_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedBlueStainedGlass",
@@ -4513,7 +4632,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_blue_stained_glass"
+      "registry_name": "birch_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedBrownStainedGlass",
@@ -4522,7 +4642,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_brown_stained_glass"
+      "registry_name": "birch_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedCyanStainedGlass",
@@ -4531,7 +4652,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_cyan_stained_glass"
+      "registry_name": "birch_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedGrayStainedGlass",
@@ -4540,7 +4662,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_gray_stained_glass"
+      "registry_name": "birch_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedGreenStainedGlass",
@@ -4549,7 +4672,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_green_stained_glass"
+      "registry_name": "birch_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedLightBlueStainedGlass",
@@ -4558,7 +4682,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_light_blue_stained_glass"
+      "registry_name": "birch_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedLightGrayStainedGlass",
@@ -4567,7 +4692,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_light_gray_stained_glass"
+      "registry_name": "birch_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedLimeStainedGlass",
@@ -4576,7 +4702,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_lime_stained_glass"
+      "registry_name": "birch_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedMagentaStainedGlass",
@@ -4585,7 +4712,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_magenta_stained_glass"
+      "registry_name": "birch_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedOrangeStainedGlass",
@@ -4594,7 +4722,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_orange_stained_glass"
+      "registry_name": "birch_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedPinkStainedGlass",
@@ -4603,7 +4732,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_pink_stained_glass"
+      "registry_name": "birch_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedPurpleStainedGlass",
@@ -4612,7 +4742,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_purple_stained_glass"
+      "registry_name": "birch_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedRedStainedGlass",
@@ -4621,7 +4752,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_red_stained_glass"
+      "registry_name": "birch_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedWhiteStainedGlass",
@@ -4630,7 +4762,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_white_stained_glass"
+      "registry_name": "birch_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "BirchFramedYellowStainedGlass",
@@ -4639,7 +4772,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "birch_framed_yellow_stained_glass"
+      "registry_name": "birch_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedBlackStainedGlass",
@@ -4648,7 +4782,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_black_stained_glass"
+      "registry_name": "crimson_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedBlueStainedGlass",
@@ -4657,7 +4792,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_blue_stained_glass"
+      "registry_name": "crimson_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedBrownStainedGlass",
@@ -4666,7 +4802,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_brown_stained_glass"
+      "registry_name": "crimson_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedCyanStainedGlass",
@@ -4675,7 +4812,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_cyan_stained_glass"
+      "registry_name": "crimson_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedGrayStainedGlass",
@@ -4684,7 +4822,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_gray_stained_glass"
+      "registry_name": "crimson_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedGreenStainedGlass",
@@ -4693,7 +4832,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_green_stained_glass"
+      "registry_name": "crimson_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedLightBlueStainedGlass",
@@ -4702,7 +4842,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_light_blue_stained_glass"
+      "registry_name": "crimson_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedLightGrayStainedGlass",
@@ -4711,7 +4852,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_light_gray_stained_glass"
+      "registry_name": "crimson_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedLimeStainedGlass",
@@ -4720,7 +4862,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_lime_stained_glass"
+      "registry_name": "crimson_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedMagentaStainedGlass",
@@ -4729,7 +4872,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_magenta_stained_glass"
+      "registry_name": "crimson_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedOrangeStainedGlass",
@@ -4738,7 +4882,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_orange_stained_glass"
+      "registry_name": "crimson_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedPinkStainedGlass",
@@ -4747,7 +4892,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_pink_stained_glass"
+      "registry_name": "crimson_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedPurpleStainedGlass",
@@ -4756,7 +4902,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_purple_stained_glass"
+      "registry_name": "crimson_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedRedStainedGlass",
@@ -4765,7 +4912,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_red_stained_glass"
+      "registry_name": "crimson_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedWhiteStainedGlass",
@@ -4774,7 +4922,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_white_stained_glass"
+      "registry_name": "crimson_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "CrimsonFramedYellowStainedGlass",
@@ -4783,7 +4932,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_framed_yellow_stained_glass"
+      "registry_name": "crimson_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedBlackStainedGlass",
@@ -4792,7 +4942,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_black_stained_glass"
+      "registry_name": "dark_oak_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedBlueStainedGlass",
@@ -4801,7 +4952,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_blue_stained_glass"
+      "registry_name": "dark_oak_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedBrownStainedGlass",
@@ -4810,7 +4962,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_brown_stained_glass"
+      "registry_name": "dark_oak_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedCyanStainedGlass",
@@ -4819,7 +4972,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_cyan_stained_glass"
+      "registry_name": "dark_oak_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedGrayStainedGlass",
@@ -4828,7 +4982,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_gray_stained_glass"
+      "registry_name": "dark_oak_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedGreenStainedGlass",
@@ -4837,7 +4992,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_green_stained_glass"
+      "registry_name": "dark_oak_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedLightBlueStainedGlass",
@@ -4846,7 +5002,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_light_blue_stained_glass"
+      "registry_name": "dark_oak_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedLightGrayStainedGlass",
@@ -4855,7 +5012,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_light_gray_stained_glass"
+      "registry_name": "dark_oak_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedLimeStainedGlass",
@@ -4864,7 +5022,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_lime_stained_glass"
+      "registry_name": "dark_oak_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedMagentaStainedGlass",
@@ -4873,7 +5032,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_magenta_stained_glass"
+      "registry_name": "dark_oak_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedOrangeStainedGlass",
@@ -4882,7 +5042,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_orange_stained_glass"
+      "registry_name": "dark_oak_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedPinkStainedGlass",
@@ -4891,7 +5052,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_pink_stained_glass"
+      "registry_name": "dark_oak_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedPurpleStainedGlass",
@@ -4900,7 +5062,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_purple_stained_glass"
+      "registry_name": "dark_oak_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedRedStainedGlass",
@@ -4909,7 +5072,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_red_stained_glass"
+      "registry_name": "dark_oak_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedWhiteStainedGlass",
@@ -4918,7 +5082,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_white_stained_glass"
+      "registry_name": "dark_oak_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "DarkOakFramedYellowStainedGlass",
@@ -4927,7 +5092,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_oak_framed_yellow_stained_glass"
+      "registry_name": "dark_oak_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedBlackStainedGlass",
@@ -4936,7 +5102,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_black_stained_glass"
+      "registry_name": "jungle_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedBlueStainedGlass",
@@ -4945,7 +5112,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_blue_stained_glass"
+      "registry_name": "jungle_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedBrownStainedGlass",
@@ -4954,7 +5122,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_brown_stained_glass"
+      "registry_name": "jungle_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedCyanStainedGlass",
@@ -4963,7 +5132,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_cyan_stained_glass"
+      "registry_name": "jungle_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedGrayStainedGlass",
@@ -4972,7 +5142,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_gray_stained_glass"
+      "registry_name": "jungle_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedGreenStainedGlass",
@@ -4981,7 +5152,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_green_stained_glass"
+      "registry_name": "jungle_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedLightBlueStainedGlass",
@@ -4990,7 +5162,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_light_blue_stained_glass"
+      "registry_name": "jungle_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedLightGrayStainedGlass",
@@ -4999,7 +5172,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_light_gray_stained_glass"
+      "registry_name": "jungle_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedLimeStainedGlass",
@@ -5008,7 +5182,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_lime_stained_glass"
+      "registry_name": "jungle_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedMagentaStainedGlass",
@@ -5017,7 +5192,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_magenta_stained_glass"
+      "registry_name": "jungle_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedOrangeStainedGlass",
@@ -5026,7 +5202,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_orange_stained_glass"
+      "registry_name": "jungle_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedPinkStainedGlass",
@@ -5035,7 +5212,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_pink_stained_glass"
+      "registry_name": "jungle_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedPurpleStainedGlass",
@@ -5044,7 +5222,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_purple_stained_glass"
+      "registry_name": "jungle_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedRedStainedGlass",
@@ -5053,7 +5232,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_red_stained_glass"
+      "registry_name": "jungle_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedWhiteStainedGlass",
@@ -5062,7 +5242,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_white_stained_glass"
+      "registry_name": "jungle_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "JungleFramedYellowStainedGlass",
@@ -5071,7 +5252,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "jungle_framed_yellow_stained_glass"
+      "registry_name": "jungle_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedBlackStainedGlass",
@@ -5080,7 +5262,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_black_stained_glass"
+      "registry_name": "oak_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedBlueStainedGlass",
@@ -5089,7 +5272,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_blue_stained_glass"
+      "registry_name": "oak_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedBrownStainedGlass",
@@ -5098,7 +5282,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_brown_stained_glass"
+      "registry_name": "oak_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedCyanStainedGlass",
@@ -5107,7 +5292,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_cyan_stained_glass"
+      "registry_name": "oak_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedGrayStainedGlass",
@@ -5116,7 +5302,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_gray_stained_glass"
+      "registry_name": "oak_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedGreenStainedGlass",
@@ -5125,7 +5312,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_green_stained_glass"
+      "registry_name": "oak_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedLightBlueStainedGlass",
@@ -5134,7 +5322,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_light_blue_stained_glass"
+      "registry_name": "oak_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedLightGrayStainedGlass",
@@ -5143,7 +5332,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_light_gray_stained_glass"
+      "registry_name": "oak_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedLimeStainedGlass",
@@ -5152,7 +5342,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_lime_stained_glass"
+      "registry_name": "oak_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedMagentaStainedGlass",
@@ -5161,7 +5352,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_magenta_stained_glass"
+      "registry_name": "oak_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedOrangeStainedGlass",
@@ -5170,7 +5362,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_orange_stained_glass"
+      "registry_name": "oak_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedPinkStainedGlass",
@@ -5179,7 +5372,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_pink_stained_glass"
+      "registry_name": "oak_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedPurpleStainedGlass",
@@ -5188,7 +5382,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_purple_stained_glass"
+      "registry_name": "oak_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedRedStainedGlass",
@@ -5197,7 +5392,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_red_stained_glass"
+      "registry_name": "oak_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedWhiteStainedGlass",
@@ -5206,7 +5402,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_white_stained_glass"
+      "registry_name": "oak_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "OakFramedYellowStainedGlass",
@@ -5215,7 +5412,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oak_framed_yellow_stained_glass"
+      "registry_name": "oak_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedBlackStainedGlass",
@@ -5224,7 +5422,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_black_stained_glass"
+      "registry_name": "red_acacia_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedBlueStainedGlass",
@@ -5233,7 +5432,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_blue_stained_glass"
+      "registry_name": "red_acacia_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedBrownStainedGlass",
@@ -5242,7 +5442,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_brown_stained_glass"
+      "registry_name": "red_acacia_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedCyanStainedGlass",
@@ -5251,7 +5452,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_cyan_stained_glass"
+      "registry_name": "red_acacia_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedGrayStainedGlass",
@@ -5260,7 +5462,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_gray_stained_glass"
+      "registry_name": "red_acacia_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedGreenStainedGlass",
@@ -5269,7 +5472,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_green_stained_glass"
+      "registry_name": "red_acacia_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedLightBlueStainedGlass",
@@ -5278,7 +5482,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_light_blue_stained_glass"
+      "registry_name": "red_acacia_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedLightGrayStainedGlass",
@@ -5287,7 +5492,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_light_gray_stained_glass"
+      "registry_name": "red_acacia_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedLimeStainedGlass",
@@ -5296,7 +5502,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_lime_stained_glass"
+      "registry_name": "red_acacia_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedMagentaStainedGlass",
@@ -5305,7 +5512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_magenta_stained_glass"
+      "registry_name": "red_acacia_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedOrangeStainedGlass",
@@ -5314,7 +5522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_orange_stained_glass"
+      "registry_name": "red_acacia_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedPinkStainedGlass",
@@ -5323,7 +5532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_pink_stained_glass"
+      "registry_name": "red_acacia_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedPurpleStainedGlass",
@@ -5332,7 +5542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_purple_stained_glass"
+      "registry_name": "red_acacia_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedRedStainedGlass",
@@ -5341,7 +5552,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_red_stained_glass"
+      "registry_name": "red_acacia_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedWhiteStainedGlass",
@@ -5350,7 +5562,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_white_stained_glass"
+      "registry_name": "red_acacia_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "RedAcaciaFramedYellowStainedGlass",
@@ -5359,7 +5572,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_acacia_framed_yellow_stained_glass"
+      "registry_name": "red_acacia_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedBlackStainedGlass",
@@ -5368,7 +5582,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_black_stained_glass"
+      "registry_name": "sandy_birch_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedBlueStainedGlass",
@@ -5377,7 +5592,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_blue_stained_glass"
+      "registry_name": "sandy_birch_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedBrownStainedGlass",
@@ -5386,7 +5602,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_brown_stained_glass"
+      "registry_name": "sandy_birch_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedCyanStainedGlass",
@@ -5395,7 +5612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_cyan_stained_glass"
+      "registry_name": "sandy_birch_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedGrayStainedGlass",
@@ -5404,7 +5622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_gray_stained_glass"
+      "registry_name": "sandy_birch_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedGreenStainedGlass",
@@ -5413,7 +5632,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_green_stained_glass"
+      "registry_name": "sandy_birch_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedLightBlueStainedGlass",
@@ -5422,7 +5642,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_light_blue_stained_glass"
+      "registry_name": "sandy_birch_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedLightGrayStainedGlass",
@@ -5431,7 +5652,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_light_gray_stained_glass"
+      "registry_name": "sandy_birch_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedLimeStainedGlass",
@@ -5440,7 +5662,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_lime_stained_glass"
+      "registry_name": "sandy_birch_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedMagentaStainedGlass",
@@ -5449,7 +5672,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_magenta_stained_glass"
+      "registry_name": "sandy_birch_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedOrangeStainedGlass",
@@ -5458,7 +5682,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_orange_stained_glass"
+      "registry_name": "sandy_birch_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedPinkStainedGlass",
@@ -5467,7 +5692,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_pink_stained_glass"
+      "registry_name": "sandy_birch_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedPurpleStainedGlass",
@@ -5476,7 +5702,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_purple_stained_glass"
+      "registry_name": "sandy_birch_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedRedStainedGlass",
@@ -5485,7 +5712,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_red_stained_glass"
+      "registry_name": "sandy_birch_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedWhiteStainedGlass",
@@ -5494,7 +5722,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_white_stained_glass"
+      "registry_name": "sandy_birch_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SandyBirchFramedYellowStainedGlass",
@@ -5503,7 +5732,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandy_birch_framed_yellow_stained_glass"
+      "registry_name": "sandy_birch_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedBlackStainedGlass",
@@ -5512,7 +5742,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_black_stained_glass"
+      "registry_name": "spruce_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedBlueStainedGlass",
@@ -5521,7 +5752,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_blue_stained_glass"
+      "registry_name": "spruce_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedBrownStainedGlass",
@@ -5530,7 +5762,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_brown_stained_glass"
+      "registry_name": "spruce_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedCyanStainedGlass",
@@ -5539,7 +5772,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_cyan_stained_glass"
+      "registry_name": "spruce_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedGrayStainedGlass",
@@ -5548,7 +5782,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_gray_stained_glass"
+      "registry_name": "spruce_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedGreenStainedGlass",
@@ -5557,7 +5792,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_green_stained_glass"
+      "registry_name": "spruce_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedLightBlueStainedGlass",
@@ -5566,7 +5802,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_light_blue_stained_glass"
+      "registry_name": "spruce_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedLightGrayStainedGlass",
@@ -5575,7 +5812,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_light_gray_stained_glass"
+      "registry_name": "spruce_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedLimeStainedGlass",
@@ -5584,7 +5822,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_lime_stained_glass"
+      "registry_name": "spruce_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedMagentaStainedGlass",
@@ -5593,7 +5832,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_magenta_stained_glass"
+      "registry_name": "spruce_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedOrangeStainedGlass",
@@ -5602,7 +5842,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_orange_stained_glass"
+      "registry_name": "spruce_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedPinkStainedGlass",
@@ -5611,7 +5852,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_pink_stained_glass"
+      "registry_name": "spruce_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedPurpleStainedGlass",
@@ -5620,7 +5862,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_purple_stained_glass"
+      "registry_name": "spruce_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedRedStainedGlass",
@@ -5629,7 +5872,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_red_stained_glass"
+      "registry_name": "spruce_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedWhiteStainedGlass",
@@ -5638,7 +5882,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_white_stained_glass"
+      "registry_name": "spruce_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "SpruceFramedYellowStainedGlass",
@@ -5647,7 +5892,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spruce_framed_yellow_stained_glass"
+      "registry_name": "spruce_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedBlackStainedGlass",
@@ -5656,7 +5902,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_black_stained_glass"
+      "registry_name": "warped_framed_black_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedBlueStainedGlass",
@@ -5665,7 +5912,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_blue_stained_glass"
+      "registry_name": "warped_framed_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedBrownStainedGlass",
@@ -5674,7 +5922,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_brown_stained_glass"
+      "registry_name": "warped_framed_brown_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedCyanStainedGlass",
@@ -5683,7 +5932,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_cyan_stained_glass"
+      "registry_name": "warped_framed_cyan_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedGrayStainedGlass",
@@ -5692,7 +5942,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_gray_stained_glass"
+      "registry_name": "warped_framed_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedGreenStainedGlass",
@@ -5701,7 +5952,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_green_stained_glass"
+      "registry_name": "warped_framed_green_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedLightBlueStainedGlass",
@@ -5710,7 +5962,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_light_blue_stained_glass"
+      "registry_name": "warped_framed_light_blue_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedLightGrayStainedGlass",
@@ -5719,7 +5972,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_light_gray_stained_glass"
+      "registry_name": "warped_framed_light_gray_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedLimeStainedGlass",
@@ -5728,7 +5982,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_lime_stained_glass"
+      "registry_name": "warped_framed_lime_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedMagentaStainedGlass",
@@ -5737,7 +5992,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_magenta_stained_glass"
+      "registry_name": "warped_framed_magenta_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedOrangeStainedGlass",
@@ -5746,7 +6002,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_orange_stained_glass"
+      "registry_name": "warped_framed_orange_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedPinkStainedGlass",
@@ -5755,7 +6012,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_pink_stained_glass"
+      "registry_name": "warped_framed_pink_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedPurpleStainedGlass",
@@ -5764,7 +6022,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_purple_stained_glass"
+      "registry_name": "warped_framed_purple_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedRedStainedGlass",
@@ -5773,7 +6032,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_red_stained_glass"
+      "registry_name": "warped_framed_red_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedWhiteStainedGlass",
@@ -5782,7 +6042,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_white_stained_glass"
+      "registry_name": "warped_framed_white_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "WarpedFramedYellowStainedGlass",
@@ -5791,7 +6052,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_framed_yellow_stained_glass"
+      "registry_name": "warped_framed_yellow_stained_glass",
+      "path": "~/Blocks/Glass Variants"
     },
     {
       "name": "FprAcaciaBlack",
@@ -9221,7 +9483,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_fence_gate"
+      "registry_name": "bamboo_fence_gate",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooDoor",
@@ -9230,7 +9493,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_door"
+      "registry_name": "bamboo_door",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooFenceGateRecipe",
@@ -10205,67 +10469,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "experience_overlay"
-    },
-    {
-      "name": "StructureFeatures",
-      "type": "command",
-      "sortid": 1353,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "structure_features"
-    },
-    {
-      "name": "StructureSwitch",
-      "type": "procedure",
-      "sortid": 1354,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "structure_switch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "StructureCheck",
-      "type": "procedure",
-      "sortid": 1355,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "structure_check",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "StructureChecking",
-      "type": "command",
-      "sortid": 1356,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "structure_checking"
     },
     {
       "name": "Stabilisation",
@@ -11598,7 +11801,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_lamp"
+      "registry_name": "bamboo_lamp",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooLampRecipe",
@@ -11869,7 +12073,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bamboo_panel"
+      "registry_name": "bamboo_panel",
+      "path": "~/Blocks/Bamboo"
     },
     {
       "name": "BambooPanelRecipe",
@@ -11887,7 +12092,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wood_lamp_jungle"
+      "registry_name": "wood_lamp_jungle",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodLampJungleRecipe",
@@ -12290,7 +12496,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_acacia"
+      "registry_name": "wooden_lamp_acacia",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodLampAcaciaRecipe",
@@ -12308,7 +12515,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_birch"
+      "registry_name": "wooden_lamp_birch",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodenLampDarkOak",
@@ -12317,7 +12525,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_dark_oak"
+      "registry_name": "wooden_lamp_dark_oak",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodenLampOak",
@@ -12326,7 +12535,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_oak"
+      "registry_name": "wooden_lamp_oak",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodenLampSpruce",
@@ -12335,7 +12545,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_spruce"
+      "registry_name": "wooden_lamp_spruce",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "LockedChestGoldRecipe",
@@ -14359,7 +14570,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_wooden_slab"
+      "registry_name": "juniper_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "JuniperWoodenStairs",
@@ -14368,7 +14580,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_wooden_stairs"
+      "registry_name": "juniper_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "StrippedJuniperWoodenSlab",
@@ -14377,7 +14590,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_juniper_wooden_slab"
+      "registry_name": "stripped_juniper_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "StrippedJuniperWoodenStairs",
@@ -14386,7 +14600,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_juniper_wooden_stairs"
+      "registry_name": "stripped_juniper_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "ChiseledJuniperWood",
@@ -14395,7 +14610,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_juniper_wood"
+      "registry_name": "chiseled_juniper_wood",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "ChiseledStrippedJuniperWood",
@@ -14404,7 +14620,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_juniper_wood"
+      "registry_name": "chiseled_stripped_juniper_wood",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "WoBIntegrationsTab",
@@ -14422,7 +14639,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_juniper_wooden_slab"
+      "registry_name": "chiseled_juniper_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "ChiseledStrippedJuniperWoodenSlab",
@@ -14431,7 +14649,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_juniper_wooden_slab"
+      "registry_name": "chiseled_stripped_juniper_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "WoodenLampJuniper",
@@ -14440,7 +14659,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_juniper"
+      "registry_name": "wooden_lamp_juniper",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "JuniperWoodenSlabRecipe",
@@ -14530,7 +14750,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "brown_shroomed_wooden_slab"
+      "registry_name": "brown_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "BrownShroomedWoodenStairs",
@@ -14539,7 +14760,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "brown_shroomed_wooden_stairs"
+      "registry_name": "brown_shroomed_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledBrownShroomedWood",
@@ -14548,7 +14770,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_brown_shroomed_wood"
+      "registry_name": "chiseled_brown_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledBrownShroomedWoodenSlab",
@@ -14557,7 +14780,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_brown_shroomed_wooden_slab"
+      "registry_name": "chiseled_brown_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "CutBrownShroomedWood",
@@ -14566,7 +14790,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cut_brown_shroomed_wood"
+      "registry_name": "cut_brown_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "GlisAsh",
@@ -14584,7 +14809,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blue_shroomed_wooden_slab"
+      "registry_name": "blue_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "BlueShroomedWoodenStairs",
@@ -14593,7 +14819,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blue_shroomed_wooden_stairs"
+      "registry_name": "blue_shroomed_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledBlueShroomedWood",
@@ -14602,7 +14829,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_blue_shroomed_wood"
+      "registry_name": "chiseled_blue_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledBlueShroomedWoodenSlab",
@@ -14611,7 +14839,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_blue_shroomed_wooden_slab"
+      "registry_name": "chiseled_blue_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "CutBlueShroomedWood",
@@ -14620,7 +14849,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cut_blue_shroomed_wood"
+      "registry_name": "cut_blue_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "OrangeShroomedWoodenSlab",
@@ -14629,7 +14859,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "orange_shroomed_wooden_slab"
+      "registry_name": "orange_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "OrangeShroomedWoodenStairs",
@@ -14638,7 +14869,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "orange_shroomed_wooden_stairs"
+      "registry_name": "orange_shroomed_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledOrangeShroomedWood",
@@ -14647,7 +14879,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_orange_shroomed_wood"
+      "registry_name": "chiseled_orange_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledOrangeShroomedWoodenSlab",
@@ -14656,7 +14889,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_orange_shroomed_wooden_slab"
+      "registry_name": "chiseled_orange_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "CutOrangeShroomedWood",
@@ -14665,7 +14899,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cut_orange_shroomed_wood"
+      "registry_name": "cut_orange_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PurpleShroomedWoodenSlab",
@@ -14674,7 +14909,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purple_shroomed_wooden_slab"
+      "registry_name": "purple_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PurpleShroomedWoodenStairs",
@@ -14683,7 +14919,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purple_shroomed_wooden_stairs"
+      "registry_name": "purple_shroomed_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledPurpleShroomedWood",
@@ -14692,7 +14929,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_purple_shroomed_wood"
+      "registry_name": "chiseled_purple_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ChiseledPurpleShroomedWoodenSlab",
@@ -14701,7 +14939,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_purple_shroomed_wooden_slab"
+      "registry_name": "chiseled_purple_shroomed_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "CutPurpleShroomedWood",
@@ -14710,7 +14949,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cut_purple_shroomed_wood"
+      "registry_name": "cut_purple_shroomed_wood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "WoodenLampBrownShroomwood",
@@ -14719,7 +14959,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_brown_shroomwood"
+      "registry_name": "wooden_lamp_brown_shroomwood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "WoodenLampBlueShroomwood",
@@ -14728,7 +14969,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_blue_shroomwood"
+      "registry_name": "wooden_lamp_blue_shroomwood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "WoodenLampOrangeShroomwood",
@@ -14737,7 +14979,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_orange_shroomwood"
+      "registry_name": "wooden_lamp_orange_shroomwood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "WoodenLampPurpleShroomwood",
@@ -14746,7 +14989,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_purple_shroomwood"
+      "registry_name": "wooden_lamp_purple_shroomwood",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "ShrmBrownWoodenSlabRecipe",
@@ -22286,7 +22530,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "avoider_vanilla"
+      "registry_name": "avoider_vanilla",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderWobr",
@@ -22295,7 +22540,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "avoider_wobr"
+      "registry_name": "avoider_wobr",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderVanilla16",
@@ -22304,7 +22550,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_vanilla_16"
+      "registry_name": "avoider_vanilla_16",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderMowzie",
@@ -22313,7 +22560,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_mowzie"
+      "registry_name": "avoider_mowzie",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderDesolat",
@@ -22322,7 +22570,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_desolat"
+      "registry_name": "avoider_desolat",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderArcaneum15",
@@ -22331,7 +22580,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_arcaneum_15"
+      "registry_name": "avoider_arcaneum_15",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderArcaneum",
@@ -22340,7 +22590,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_arcaneum"
+      "registry_name": "avoider_arcaneum",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderAtum",
@@ -22349,7 +22600,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_atum"
+      "registry_name": "avoider_atum",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderAdvAdv",
@@ -22358,7 +22610,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_adv_adv"
+      "registry_name": "avoider_adv_adv",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderInfernalExp",
@@ -22367,7 +22620,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_infernal_exp"
+      "registry_name": "avoider_infernal_exp",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderBetterEnd",
@@ -22376,7 +22630,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_better_end"
+      "registry_name": "avoider_better_end",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "AvoiderEidolon",
@@ -22385,7 +22640,8 @@
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "avoider_eidolon"
+      "registry_name": "avoider_eidolon",
+      "path": "~/Compatibility Tags/Avoider"
     },
     {
       "name": "ConfigManager",
@@ -22525,6 +22781,74 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bullet_ranged"
+    },
+    {
+      "name": "EntityWindSpiritCondition",
+      "type": "procedure",
+      "sortid": 2082,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_wind_spirit_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "EntityOrmathRaiderCondition",
+      "type": "procedure",
+      "sortid": 2083,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_ormath_raider_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Configured"
+    },
+    {
+      "name": "AvoiderEternalTales",
+      "type": "tag",
+      "sortid": 2084,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_eternal_tales",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderElvenation",
+      "type": "tag",
+      "sortid": 2085,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_elvenation",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderIceandFire",
+      "type": "tag",
+      "sortid": 2086,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_iceand_fire",
+      "path": "~/Compatibility Tags/Avoider"
     }
   ],
   "variable_elements": [
@@ -22695,6 +23019,36 @@
       "type": "logic",
       "scope": "map",
       "value": "true"
+    },
+    {
+      "name": "KF_Ent_Wind_Spirit",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "KF_Ent_Orm_Raider",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "KF_Xp_Structures",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "KF_Xp_Developer",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "KF_Xp_Ticker",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -23015,8 +23369,8 @@
       "block.wobr.stripped_byg_palo_verde_wooden_slab": "Stripped Palm Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
-      "block.wobr.wooden_lamp_byg_maple": "Mahogany Wooden Lamp",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
+      "block.wobr.wooden_lamp_byg_maple": "Mahogany Wooden Lamp",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",
@@ -23024,13 +23378,13 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Nutwood Wooden Slab",
       "item.wobr.rifle_clip_1_2": "12-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_jacaranda_wooden_slab": "Chiseled Cherry Wooden Slab",
-      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
-      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
+      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
-      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Orange Shroomwood Slab",
+      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
+      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
       "item.wobr.card_club_ace_winfleton": "As trefl Winfletonów",
+      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Orange Shroomwood Slab",
       "item.minecraft.splash_potion.effect.tribe_reputation_drop": "Splash Tribe Reputation Drop",
       "block.wobr.byg_lament_wooden_slab": "Baobab Wooden Slab",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
@@ -23040,8 +23394,8 @@
       "item.minecraft.potion.effect.single_reload_type": "Single Reload Type",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
       "block.wobr.chiseled_stripped_byg_lament_wood": "Chiseled Stripped Baobab Wood",
-      "block.wobr.pillar_byg_palm": "Nightshade Pillar",
       "block.wobr.chiseled_byg_ether_wooden_slab": "Chiseled Ebony Wooden Slab",
+      "block.wobr.pillar_byg_palm": "Nightshade Pillar",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Oak Pillar",
       "block.wobr.chiseled_byg_fir_wood": "Chiseled Ether Wood",
@@ -23049,21 +23403,21 @@
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
       "item.minecraft.potion.effect.anti_wandering_trader": "Anti Wandering Trader",
-      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Lament Wooden Stairs",
-      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
+      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
+      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Lament Wooden Stairs",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
       "advancements.portable_nether_lakes.descr": "You found out how to convert some fluids into another.. but why lava?",
-      "block.wobr.wooden_lamp_byg_mahogany": "Mangrove Wooden Lamp",
       "block.wobr.crimson_framed_red_stained_glass": "Crimson Framed Red Stained Glass",
+      "block.wobr.wooden_lamp_byg_mahogany": "Mangrove Wooden Lamp",
       "item.minecraft.splash_potion.effect.single_reload_type": "Splash Single Reload Type",
       "block.wobr.chiseled_stripped_deadwood_wooden_slab": "Chiseled Deadwood Wooden Slab",
       "block.wobr.lockable_cirtain_chest_locked": "Lockable Cirtain Chest",
       "item.wobr.ayer_shotgun": "Ayer Shotgun",
       "block.wobr.lockable_prismarine_chest_locked": "Lockable Prismarine Chest",
       "block.wobr.golden_fluid_converter_active": "Golden Fluid Converter",
-      "block.wobr.chiseled_palm_wood": "Chiseled Hypheria Wood",
       "block.wobr.palm_wooden_stairs": "Hypheria Wooden Stairs",
+      "block.wobr.chiseled_palm_wood": "Chiseled Hypheria Wood",
       "block.wobr.chiseled_stripped_warped_wood": "Chiseled Stripped Crimson Stem",
       "block.wobr.chiseled_stripped_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
@@ -23074,13 +23428,13 @@
       "block.wobr.blue_shroomed_wooden_stairs": "Brown Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
       "block.wobr.chiseled_stripped_byg_palo_verde_wood": "Chiseled Stripped Palm Wood",
-      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Hypheria Wooden Slab",
+      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.pillar_byg_mangrove": "Lament Pillar",
       "block.wobr.stripped_byg_palo_verde_wooden_stairs": "Stripped Palm Wooden Stairs",
       "effect.merchant_block_heartofthe_sea": "Merchant Block Budding Amethyst",
-      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Military Airship Spawn Egg",
       "entity.wobr.ormath_villager": "Ormath Villager",
+      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Military Airship Spawn Egg",
       "block.wobr.byg_cypress_wooden_slab": "Fir Wooden Slab",
       "block.wobr.byg_mangrove_wooden_slab": "Lament Wooden Slab",
       "block.wobr.chiseled_stripped_byg_jacaranda_wood": "Chiseled Stripped Cherry Wood",
@@ -23111,15 +23465,15 @@
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
-      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cika Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_shielding": "Lingering Nether Avoider Shielding",
+      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cika Wooden Slab",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.stripped_byg_nightshade_wooden_stairs": "Stripped Maple Wooden Stairs",
       "item.minecraft.potion.effect.warhammer_nausea_triggered": "Warhammer Nausea Walk",
-      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
-      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
-      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
       "item.minecraft.lingering_potion.effect.merchant_block_elytra": "Lingering Merchant Block Budding Amethyst",
+      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
+      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
+      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
       "block.wobr.pillar_shrm_regular": "Purple Shroomwood Pillar",
       "block.wobr.nutwood_wooden_slab": "Juniper Wooden Slab",
       "effect.additional_player_message_potion": "Player Message Potion",
@@ -23127,21 +23481,21 @@
       "item.wobr.prismarine_sabre": "Pryzmarynowa szabla",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
       "block.wobr.chiseled_byg_nightshade_wood": "Chiseled Maple Wood",
-      "block.wobr.chiseled_darkwood_wood": "Chiseled Cuctur Wood",
       "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
+      "block.wobr.chiseled_darkwood_wood": "Chiseled Cuctur Wood",
       "block.wobr.wooden_lamp_byg_lament": "Baobab Wooden Lamp",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Asha Hypheria Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
-      "block.wobr.pillar_byg_fir": "Ether Pillar",
       "item.minecraft.potion.effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "block.wobr.pillar_byg_fir": "Ether Pillar",
       "block.wobr.stripped_spruce_wooden_slab": "Stripped Spruce Wooden Slab",
       "block.wobr.chiseled_acacia_wooden_slab": "Chiseled Acacia Wooden Slab",
       "item.minecraft.tipped_arrow.effect.nether_avoider_pulsating": "Arrow of Nether Avoider Pulsating",
       "block.wobr.crimson_framed_light_gray_stained_glass": "Crimson Framed Light Gray Stained Glass",
       "block.wobr.wooden_lamp_byg_holly": "Jacaranda Wooden Lamp",
-      "block.wobr.stripped_cuctur_wooden_stairs": "Cuctur Wooden Stairs",
       "block.wobr.acacia_framed_brown_stained_glass": "Acacia Framed Brown Stained Glass",
+      "block.wobr.stripped_cuctur_wooden_stairs": "Cuctur Wooden Stairs",
       "block.wobr.chiseled_hypheria_wooden_slab": "Chiseled Asha Hypheria Wooden Slab",
       "block.wobr.pillar_warped": "Acacia Pillar",
       "block.wobr.blue_nether_brick_wall": "Blue Nether Brick Wall",
@@ -23149,8 +23503,8 @@
       "block.wobr.byg_nightshade_wooden_stairs": "Maple Wooden Stairs",
       "block.wobr.chiseled_byg_redwood_wood": "Chiseled Palo Verde Wood",
       "item.minecraft.potion.effect.warhammer_nausea_walk": "Warhammer Nausea Walk",
-      "block.wobr.wooden_lamp_warped": "Chiseled Warped Stem",
       "block.wobr.oak_framed_white_stained_glass": "Oak Framed White Stained Glass",
+      "block.wobr.wooden_lamp_warped": "Chiseled Warped Stem",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
@@ -23184,8 +23538,8 @@
       "block.wobr.test_block": "Blok testowy",
       "block.wobr.red_acacia_framed_white_stained_glass": "Red Acacia Framed White Stained Glass",
       "item.minecraft.potion.effect.nether_avoider_pulsating": "Nether Avoider Pulsating",
-      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_cika_wooden_stairs": "Cypress Wooden Stairs",
+      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_fir_wooden_stairs": "Ether Wooden Stairs",
       "item.wobr.white_sabre": "Bia³a szabla",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
@@ -23220,13 +23574,13 @@
       "block.wobr.purple_shroomed_wooden_stairs": "Orange Shroomwood Stairs",
       "item.wobr.advancement_ormath": "Ormath Head",
       "block.wobr.stripped_byg_ether_wooden_stairs": "Stripped Ebony Wooden Stairs",
-      "block.wobr.pillar_hypheria": "Cypress Pillar",
-      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
       "key.wobr.unload_key": "Unload Key",
+      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "block.wobr.pillar_hypheria": "Cypress Pillar",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
+      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.warped_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -24073,8 +24427,8 @@
       "block.wobr.stripped_byg_palo_verde_wooden_slab": "Stripped Palo Verde Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
-      "block.wobr.wooden_lamp_byg_maple": "Maple Wooden Lamp",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
+      "block.wobr.wooden_lamp_byg_maple": "Maple Wooden Lamp",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",
@@ -24082,13 +24436,13 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Cypress Wooden Slab",
       "item.wobr.rifle_clip_1_2": "12-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_jacaranda_wooden_slab": "Chiseled Jacaranda Wooden Slab",
-      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
-      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
+      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
-      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Purple Shroomwood Slab",
+      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
+      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
       "item.wobr.card_club_ace_winfleton": "Winfleton\u0027s Club Ace Card",
+      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Purple Shroomwood Slab",
       "item.minecraft.splash_potion.effect.tribe_reputation_drop": "Splash Tribe Reputation Drop",
       "block.wobr.byg_lament_wooden_slab": "Lament Wooden Slab",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
@@ -24098,8 +24452,8 @@
       "item.minecraft.potion.effect.single_reload_type": "Single Reload Type",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
       "block.wobr.chiseled_stripped_byg_lament_wood": "Chiseled Stripped Lament Wood",
-      "block.wobr.pillar_byg_palm": "Palm Pillar",
       "block.wobr.chiseled_byg_ether_wooden_slab": "Chiseled Ether Wooden Slab",
+      "block.wobr.pillar_byg_palm": "Palm Pillar",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Dark Oak Pillar",
       "block.wobr.chiseled_byg_fir_wood": "Chiseled Fir Wood",
@@ -24107,21 +24461,21 @@
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
       "item.minecraft.potion.effect.anti_wandering_trader": "Anti Wandering Trader",
-      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Mangrove Wooden Stairs",
-      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
+      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
+      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Mangrove Wooden Stairs",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
       "advancements.portable_nether_lakes.descr": "You found out how to convert some fluids into another.. but why lava?",
-      "block.wobr.wooden_lamp_byg_mahogany": "Mahogany Wooden Lamp",
       "block.wobr.crimson_framed_red_stained_glass": "Crimson Framed Red Stained Glass",
+      "block.wobr.wooden_lamp_byg_mahogany": "Mahogany Wooden Lamp",
       "item.minecraft.splash_potion.effect.single_reload_type": "Splash Single Reload Type",
       "block.wobr.chiseled_stripped_deadwood_wooden_slab": "Chiseled Stripped Deadwood Wooden Slab",
       "block.wobr.lockable_cirtain_chest_locked": "Lockable Cirtain Chest",
       "item.wobr.ayer_shotgun": "Ayer Shotgun",
       "block.wobr.lockable_prismarine_chest_locked": "Lockable Prismarine Chest",
       "block.wobr.golden_fluid_converter_active": "Fluid Tank Heater",
-      "block.wobr.chiseled_palm_wood": "Chiseled Palm Wood",
       "block.wobr.palm_wooden_stairs": "Palm Wooden Stairs",
+      "block.wobr.chiseled_palm_wood": "Chiseled Palm Wood",
       "block.wobr.chiseled_stripped_warped_wood": "Chiseled Stripped Warped Stem",
       "block.wobr.chiseled_stripped_darkwood_wood": "Chiseled Stripped Darkwood Wood",
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
@@ -24132,13 +24486,13 @@
       "block.wobr.blue_shroomed_wooden_stairs": "Blue Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
       "block.wobr.chiseled_stripped_byg_palo_verde_wood": "Chiseled Stripped Palo Verde Wood",
-      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Palm Wooden Slab",
+      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.pillar_byg_mangrove": "Mangrove Pillar",
       "block.wobr.stripped_byg_palo_verde_wooden_stairs": "Stripped Palo Verde Wooden Stairs",
       "effect.merchant_block_heartofthe_sea": "Merchant Block Budding Amethyst",
-      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
       "entity.wobr.ormath_villager": "Ormath Villager",
+      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
       "block.wobr.byg_cypress_wooden_slab": "Cypress Wooden Slab",
       "block.wobr.byg_mangrove_wooden_slab": "Mangrove Wooden Slab",
       "block.wobr.chiseled_stripped_byg_jacaranda_wood": "Chiseled Stripped Jacaranda Wood",
@@ -24169,15 +24523,15 @@
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
-      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cherry Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_shielding": "Lingering Nether Avoider Shielding",
+      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cherry Wooden Slab",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.stripped_byg_nightshade_wooden_stairs": "Stripped Nightshade Wooden Stairs",
       "item.minecraft.potion.effect.warhammer_nausea_triggered": "Warhammer Nausea Walk",
-      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
-      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
-      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
       "item.minecraft.lingering_potion.effect.merchant_block_elytra": "Lingering Merchant Block Budding Amethyst",
+      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
+      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
+      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
       "block.wobr.pillar_shrm_regular": "Shroomwood Pillar",
       "block.wobr.nutwood_wooden_slab": "Nutwood Wooden Slab",
       "effect.additional_player_message_potion": "Player Message Potion",
@@ -24185,21 +24539,21 @@
       "item.wobr.prismarine_sabre": "Prismarine Sabre",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
       "block.wobr.chiseled_byg_nightshade_wood": "Chiseled Nightshade Wood",
-      "block.wobr.chiseled_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
+      "block.wobr.chiseled_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.wooden_lamp_byg_lament": "Lament Wooden Lamp",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Cuctur Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
-      "block.wobr.pillar_byg_fir": "Fir Pillar",
       "item.minecraft.potion.effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "block.wobr.pillar_byg_fir": "Fir Pillar",
       "block.wobr.stripped_spruce_wooden_slab": "Stripped Spruce Wooden Slab",
       "block.wobr.chiseled_acacia_wooden_slab": "Chiseled Acacia Wooden Slab",
       "item.minecraft.tipped_arrow.effect.nether_avoider_pulsating": "Arrow of Nether Avoider Pulsating",
       "block.wobr.crimson_framed_light_gray_stained_glass": "Crimson Framed Light Gray Stained Glass",
       "block.wobr.wooden_lamp_byg_holly": "Holly Wooden Lamp",
-      "block.wobr.stripped_cuctur_wooden_stairs": "Stripped Cuctur Wooden Stairs",
       "block.wobr.acacia_framed_brown_stained_glass": "Acacia Framed Brown Stained Glass",
+      "block.wobr.stripped_cuctur_wooden_stairs": "Stripped Cuctur Wooden Stairs",
       "block.wobr.chiseled_hypheria_wooden_slab": "Chiseled Hypheria Wooden Slab",
       "block.wobr.pillar_warped": "Warped Pillar",
       "block.wobr.blue_nether_brick_wall": "Blue Nether Brick Wall",
@@ -24207,8 +24561,8 @@
       "block.wobr.byg_nightshade_wooden_stairs": "Nightshade Wooden Stairs",
       "block.wobr.chiseled_byg_redwood_wood": "Chiseled Redwood Wood",
       "item.minecraft.potion.effect.warhammer_nausea_walk": "Warhammer Nausea Walk",
-      "block.wobr.wooden_lamp_warped": "Warped Wooden Lamp",
       "block.wobr.oak_framed_white_stained_glass": "Oak Framed White Stained Glass",
+      "block.wobr.wooden_lamp_warped": "Warped Wooden Lamp",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
@@ -24242,8 +24596,8 @@
       "block.wobr.test_block": "Test Block",
       "block.wobr.red_acacia_framed_white_stained_glass": "Red Acacia Framed White Stained Glass",
       "item.minecraft.potion.effect.nether_avoider_pulsating": "Nether Avoider Pulsating",
-      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_cika_wooden_stairs": "Cika Wooden Stairs",
+      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_fir_wooden_stairs": "Fir Wooden Stairs",
       "item.wobr.white_sabre": "White Sabre",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
@@ -24278,13 +24632,13 @@
       "block.wobr.purple_shroomed_wooden_stairs": "Purple Shroomwood Stairs",
       "item.wobr.advancement_ormath": "Ormath Head",
       "block.wobr.stripped_byg_ether_wooden_stairs": "Stripped Ether Wooden Stairs",
-      "block.wobr.pillar_hypheria": "Hypheria Pillar",
-      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
       "key.wobr.unload_key": "Unload Key",
+      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "block.wobr.pillar_hypheria": "Hypheria Pillar",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
+      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.warped_wooden_slab": "Warped Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -25126,6 +25480,49 @@
       {
         "name": "Configured",
         "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Bamboo",
+            "children": []
+          },
+          {
+            "name": "Glass Variants",
+            "children": []
+          },
+          {
+            "name": "Vulcanic Sand",
+            "children": []
+          },
+          {
+            "name": "Wood Variants",
+            "children": [
+              {
+                "name": "Vanilla Wood",
+                "children": []
+              },
+              {
+                "name": "Betterlands Wood",
+                "children": []
+              },
+              {
+                "name": "Shroomed Wood",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Compatibility Tags",
+        "children": [
+          {
+            "name": "Avoider",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -125,6 +125,11 @@ public class WobrModVariables {
 		public double KF_Wp_Gun_Dmg = 1.0;
 		public boolean KF_Drop_Glister = true;
 		public boolean KF_Drop_Essence = true;
+		public boolean KF_Ent_Wind_Spirit = true;
+		public boolean KF_Ent_Orm_Raider = false;
+		public boolean KF_Xp_Structures = false;
+		public boolean KF_Xp_Developer = false;
+		public boolean KF_Xp_Ticker = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -152,6 +157,11 @@ public class WobrModVariables {
 			KF_Wp_Gun_Dmg = nbt.getDouble("KF_Wp_Gun_Dmg");
 			KF_Drop_Glister = nbt.getBoolean("KF_Drop_Glister");
 			KF_Drop_Essence = nbt.getBoolean("KF_Drop_Essence");
+			KF_Ent_Wind_Spirit = nbt.getBoolean("KF_Ent_Wind_Spirit");
+			KF_Ent_Orm_Raider = nbt.getBoolean("KF_Ent_Orm_Raider");
+			KF_Xp_Structures = nbt.getBoolean("KF_Xp_Structures");
+			KF_Xp_Developer = nbt.getBoolean("KF_Xp_Developer");
+			KF_Xp_Ticker = nbt.getBoolean("KF_Xp_Ticker");
 		}
 
 		@Override
@@ -173,6 +183,11 @@ public class WobrModVariables {
 			nbt.putDouble("KF_Wp_Gun_Dmg", KF_Wp_Gun_Dmg);
 			nbt.putBoolean("KF_Drop_Glister", KF_Drop_Glister);
 			nbt.putBoolean("KF_Drop_Essence", KF_Drop_Essence);
+			nbt.putBoolean("KF_Ent_Wind_Spirit", KF_Ent_Wind_Spirit);
+			nbt.putBoolean("KF_Ent_Orm_Raider", KF_Ent_Orm_Raider);
+			nbt.putBoolean("KF_Xp_Structures", KF_Xp_Structures);
+			nbt.putBoolean("KF_Xp_Developer", KF_Xp_Developer);
+			nbt.putBoolean("KF_Xp_Ticker", KF_Xp_Ticker);
 			return nbt;
 		}
 

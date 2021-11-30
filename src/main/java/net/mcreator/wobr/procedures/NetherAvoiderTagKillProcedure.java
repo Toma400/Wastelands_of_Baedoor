@@ -22,8 +22,6 @@ import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 
-import java.io.File;
-
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderTagKillProcedure(WobrModElements instance) {
@@ -61,7 +59,6 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		File config = new File("");
 		if ((WobrModVariables.WorldVariables.get(world).Avoider_Reapering == (false))) {
 			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || ((((EntityTypeTags.getCollection()
 					.getOrCreate(new ResourceLocation(("forge:avoider_wobr").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))
@@ -100,9 +97,19 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													.getOrCreate(
 															new ResourceLocation(("forge:avoider_better_end").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType())))))
-							|| (EntityTypeTags.getCollection()
+							|| (((EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_eidolon").toLowerCase(java.util.Locale.ENGLISH)))
-									.contains(entity.getType())))))
+									.contains(entity.getType()))
+									|| (EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_eternal_tales").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType())))
+									|| ((EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_elvenation").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(
+															("forge:avoider_ice_and_fire").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
