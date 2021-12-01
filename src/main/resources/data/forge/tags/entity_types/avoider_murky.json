@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+      "murky:stalker",
+      "murky:amalgamation",
+      "murky:gargantuan_angler",
+      "murky:hollowed",
+      "murky:possesed_sentry",
+      "murky:bladed_worm",
+      "murky:crawler",
+      "murky:large_amalgamation",
+      "murky:wither_whirl",
+      "murky:bladded_hound",
+      "murky:wither_wing",
+      "murky:void_construct",
+      "murky:scorched_crawler",
+      "murky:scorched_hopper",
+      "murky:living_shadow",
+      "murky:walking_shadow",
+      "murky:reaper_natural",
+      "murky:peeper_natural",
+      "murky:void_leach_natural",
+      "murky:wraith",
+      "murky:wandering_mind",
+      "murky:magot"
+    ]
+}

@@ -47,7 +47,7 @@ public class DartSlownessProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletdart_slowness_projectile").setRegistryName("entitybulletdart_slowness_projectile");
 	public DartSlownessProjectileItem(WobrModElements instance) {
-		super(instance, 1571);
+		super(instance, 2107);
 	}
 
 	@Override

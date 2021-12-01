@@ -97,7 +97,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													.getOrCreate(
 															new ResourceLocation(("forge:avoider_better_end").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType())))))
-							|| (((EntityTypeTags.getCollection()
+							|| ((((EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_eidolon").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))
 									|| (EntityTypeTags.getCollection()
@@ -109,6 +109,12 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 											|| (EntityTypeTags.getCollection()
 													.getOrCreate(new ResourceLocation(
 															("forge:avoider_ice_and_fire").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType()))))
+									|| ((EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_phytolands").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(("forge:avoider_murky").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType())))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);

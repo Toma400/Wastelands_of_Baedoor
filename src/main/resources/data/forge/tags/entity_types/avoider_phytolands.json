@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+      "phytolands:solar_mummy",
+      "phytolands:cactorse",
+      "phytolands:cactorse_swordsman",
+      "phytolands:cactorse_gunslinger",
+      "phytolands:elder_lost_soul",
+      "phytolands:solar_lost_soul",
+      "phytolands:edge_lost_soul",
+      "phytolands:fungal_zombie",
+      "phytolands:slothian_skeleton",
+      "phytolands:ancient_golem",
+      "phytolands:ancient_drone"
+    ]
+}

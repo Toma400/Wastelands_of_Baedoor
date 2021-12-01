@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "1": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "2": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "3": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "4": {
       "item": "minecraft:spruce_planks"
     },
     "5": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "6": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "7": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     },
     "8": {
-      "item": "minecraft:cyan_stained_glass_pane"
+      "tag": "forge:fpr_cyan_glass"
     }
   },
   "result": {

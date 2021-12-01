@@ -48,7 +48,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletwind_projectile").setRegistryName("entitybulletwind_projectile");
 	public WindProjectileItem(WobrModElements instance) {
-		super(instance, 1400);
+		super(instance, 2101);
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class WindProjectileItem extends WobrModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(null).maxStackSize(1));
+			super(new Item.Properties().group(null).maxDamage(100));
 			setRegistryName("wind_projectile");
 		}
 

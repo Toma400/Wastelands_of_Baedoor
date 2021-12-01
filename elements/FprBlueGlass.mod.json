@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BlueHorizontalStainedGlassPane"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#11"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "fpr_blue_glass",
+    "namespace": "forge"
+  }
+}
