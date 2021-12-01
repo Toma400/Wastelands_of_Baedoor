@@ -1140,7 +1140,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "short_revolver_scheme"
+      "registry_name": "short_revolver_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "FirearmTableResetting",
@@ -2426,7 +2427,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "long_revolver_scheme"
+      "registry_name": "long_revolver_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "ReloadLongRevolver",
@@ -2963,7 +2965,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crocodile_gun_scheme"
+      "registry_name": "crocodile_gun_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "ShotgunClip2Recipe",
@@ -3312,7 +3315,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "charcoal_block"
+      "registry_name": "charcoal_block",
+      "path": "~/Storage Blocks"
     },
     {
       "name": "CharcoalBlockRecipe",
@@ -4195,7 +4199,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_red_nether_brick"
+      "registry_name": "chiseled_red_nether_brick",
+      "path": "~/Vanilla Expanded Blocks"
     },
     {
       "name": "ChiseledBlueNetherBrick",
@@ -7887,7 +7892,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blockof_mushroom_poison"
+      "registry_name": "blockof_mushroom_poison",
+      "path": "~/Storage Blocks"
     },
     {
       "name": "PoisonBlockRecipe",
@@ -8127,7 +8133,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lefs_9_scheme"
+      "registry_name": "lefs_9_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "SabreDefenceMode",
@@ -8920,7 +8927,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "windsweeper_scheme"
+      "registry_name": "windsweeper_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "ReloadWindsweeper",
@@ -9017,7 +9025,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block"
+      "registry_name": "baedoor_funt_block",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockRecipe",
@@ -9044,7 +9053,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_polished"
+      "registry_name": "baedoor_funt_block_polished",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockWall",
@@ -9053,7 +9063,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_wall"
+      "registry_name": "baedoor_funt_block_wall",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockSlab",
@@ -9062,7 +9073,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_slab"
+      "registry_name": "baedoor_funt_block_slab",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockStairs",
@@ -9071,7 +9083,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_stairs"
+      "registry_name": "baedoor_funt_block_stairs",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockChiseled",
@@ -9080,7 +9093,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_chiseled"
+      "registry_name": "baedoor_funt_block_chiseled",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockPolishedRecipe",
@@ -9228,7 +9242,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_cobblestone"
+      "registry_name": "hardened_cobblestone",
+      "path": "~/Hardened Variants"
     },
     {
       "name": "HardenedCobblestoneRecipe",
@@ -9528,7 +9543,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_baedoor_golden_chest"
+      "registry_name": "lockable_baedoor_golden_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableChestOpening",
@@ -9612,7 +9628,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_baedoor_golden_chest_locked"
+      "registry_name": "lockable_baedoor_golden_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableChestLockChange",
@@ -9699,7 +9716,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_cirtain_chest"
+      "registry_name": "lockable_cirtain_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableCirtainChestLocked",
@@ -9708,7 +9726,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_cirtain_chest_locked"
+      "registry_name": "lockable_cirtain_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockedChestCirtain",
@@ -9765,7 +9784,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_obsidian_chest"
+      "registry_name": "lockable_obsidian_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableObsidianChestLocked",
@@ -9774,7 +9794,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_obsidian_chest_locked"
+      "registry_name": "lockable_obsidian_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockedObsidianChest",
@@ -9873,7 +9894,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_iron_chest"
+      "registry_name": "lockable_iron_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableIronChestLocked",
@@ -9882,7 +9904,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_iron_chest_locked"
+      "registry_name": "lockable_iron_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "NetherAvoiderTagKill",
@@ -10219,7 +10242,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rusty_reaper_scheme"
+      "registry_name": "rusty_reaper_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "RustyReaperSchemeRecipe",
@@ -10229,44 +10253,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rusty_reaper_scheme_recipe"
-    },
-    {
-      "name": "TestFeaturesSwitch",
-      "type": "procedure",
-      "sortid": 1344,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_features_switch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TestFeatures",
-      "type": "command",
-      "sortid": 1345,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_features"
     },
     {
       "name": "GetExperienceValues",
@@ -10293,36 +10279,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "experience_values"
-    },
-    {
-      "name": "TestFeaturesCheck",
-      "type": "procedure",
-      "sortid": 1348,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_features_check",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TestFeaturesChecking",
-      "type": "command",
-      "sortid": 1349,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_features_checking"
     },
     {
       "name": "BlessedbyGodsofWar",
@@ -10377,7 +10333,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_netherrack"
+      "registry_name": "hardened_netherrack",
+      "path": "~/Hardened Variants"
     },
     {
       "name": "HardenedNetherrackRecipe",
@@ -10404,7 +10361,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hardened_endstone"
+      "registry_name": "hardened_endstone",
+      "path": "~/Hardened Variants"
     },
     {
       "name": "HardenedEndstoneRecipe",
@@ -10432,66 +10390,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "locked_chest_iron"
-    },
-    {
-      "name": "AvoiderReaperSwitch",
-      "type": "procedure",
-      "sortid": 1363,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "avoider_reaper_switch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AvoiderReaperCheck",
-      "type": "procedure",
-      "sortid": 1364,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "avoider_reaper_check",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AvoiderReaper",
-      "type": "command",
-      "sortid": 1365,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "avoider_reaper"
-    },
-    {
-      "name": "AvoiderReaperChecking",
-      "type": "command",
-      "sortid": 1366,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "avoider_reaper_checking"
     },
     {
       "name": "WobrAmmoBox",
@@ -10551,7 +10449,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sand"
+      "registry_name": "glistering_sand",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandRecipe",
@@ -10578,7 +10477,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_clay"
+      "registry_name": "glistering_clay",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringClayRecipe",
@@ -10596,7 +10496,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone"
+      "registry_name": "glistering_sandstone",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandstoneRecipe",
@@ -10614,7 +10515,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone_smooth"
+      "registry_name": "glistering_sandstone_smooth",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandstoneSlab",
@@ -10623,7 +10525,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone_slab"
+      "registry_name": "glistering_sandstone_slab",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandstoneStairs",
@@ -10632,7 +10535,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone_stairs"
+      "registry_name": "glistering_sandstone_stairs",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandstoneSmoothSlab",
@@ -10641,7 +10545,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone_smooth_slab"
+      "registry_name": "glistering_sandstone_smooth_slab",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "GlisteringSandstoneSmoothStairs",
@@ -10650,7 +10555,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glistering_sandstone_smooth_stairs"
+      "registry_name": "glistering_sandstone_smooth_stairs",
+      "path": "~/Blocks/Glistering Sand"
     },
     {
       "name": "RevealAchievement",
@@ -10821,24 +10727,6 @@
       }
     },
     {
-      "name": "TestModeReturns",
-      "type": "procedure",
-      "sortid": 1388,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_mode_returns",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "RedBuffalo",
       "type": "livingentity",
       "sortid": 460,
@@ -10959,7 +10847,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_pillar"
+      "registry_name": "baedoor_funt_block_pillar",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockDoor",
@@ -10968,7 +10857,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_door"
+      "registry_name": "baedoor_funt_block_door",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockPillarRecipe",
@@ -11345,7 +11235,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sand_wanderer_scheme"
+      "registry_name": "sand_wanderer_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "SandWanderer",
@@ -11723,7 +11614,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_lamp"
+      "registry_name": "baedoor_funt_block_lamp",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockLampRecipe",
@@ -11778,7 +11670,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_trapdoor"
+      "registry_name": "baedoor_funt_block_trapdoor",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockTrapdoorRecipe",
@@ -11796,7 +11689,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_netherite_chest"
+      "registry_name": "lockable_netherite_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableNetheriteChestLocked",
@@ -11805,7 +11699,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_netherite_chest_locked"
+      "registry_name": "lockable_netherite_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "ShamanTrade1",
@@ -12351,7 +12246,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_golden_chest"
+      "registry_name": "lockable_golden_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockableGoldenChestLocked",
@@ -12360,7 +12256,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_golden_chest_locked"
+      "registry_name": "lockable_golden_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "WoodenLampAcacia",
@@ -12482,7 +12379,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_prismarine_chest"
+      "registry_name": "lockable_prismarine_chest",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockablePrismarineChestLocked",
@@ -12491,7 +12389,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lockable_prismarine_chest_locked"
+      "registry_name": "lockable_prismarine_chest_locked",
+      "path": "~/Lockable Chests"
     },
     {
       "name": "LockedChestPrismarineRecipe",
@@ -12545,7 +12444,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "baedoor_funt_block_bars"
+      "registry_name": "baedoor_funt_block_bars",
+      "path": "~/Blocks/Baedoor Gold"
     },
     {
       "name": "BaedoorFuntBlockBarsRecipe",
@@ -13417,7 +13317,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blockof_curare_poison"
+      "registry_name": "blockof_curare_poison",
+      "path": "~/Storage Blocks"
     },
     {
       "name": "CurareBlockRecipe",
@@ -14157,74 +14058,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "ChunkTickerSwitch",
-      "type": "procedure",
-      "sortid": 1587,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chunk_ticker_switch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ChunkTickerCheck",
-      "type": "procedure",
-      "sortid": 1588,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chunk_ticker_check",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TickerFeature",
-      "type": "command",
-      "sortid": 1589,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ticker_feature"
-    },
-    {
-      "name": "TickerCheck",
-      "type": "command",
-      "sortid": 1590,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ticker_check"
     },
     {
       "name": "HurtResistanceTime",
@@ -15090,7 +14923,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_wooden_slab"
+      "registry_name": "crimson_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "CrimsonWoodenStairs",
@@ -15099,7 +14933,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimson_wooden_stairs"
+      "registry_name": "crimson_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedCrimsonWoodenSlab",
@@ -15108,7 +14943,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_crimson_wooden_slab"
+      "registry_name": "stripped_crimson_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedCrimsonWoodenStairs",
@@ -15117,7 +14953,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_crimson_wooden_stairs"
+      "registry_name": "stripped_crimson_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WarpedWoodenSlab",
@@ -15126,7 +14963,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_wooden_slab"
+      "registry_name": "warped_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WarpedWoodenStairs",
@@ -15135,7 +14973,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "warped_wooden_stairs"
+      "registry_name": "warped_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedWarpedWoodenSlab",
@@ -15144,7 +14983,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_warped_wooden_slab"
+      "registry_name": "stripped_warped_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "StrippedWarpedWoodenStairs",
@@ -15153,7 +14993,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_warped_wooden_stairs"
+      "registry_name": "stripped_warped_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledCrimsonWood",
@@ -15162,7 +15003,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_crimson_wood"
+      "registry_name": "chiseled_crimson_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedCrimsonWood",
@@ -15171,7 +15013,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_crimson_wood"
+      "registry_name": "chiseled_stripped_crimson_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledWarpedWood",
@@ -15180,7 +15023,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_warped_wood"
+      "registry_name": "chiseled_warped_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedWarpedWood",
@@ -15189,7 +15033,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_warped_wood"
+      "registry_name": "chiseled_stripped_warped_wood",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledCrimsonWoodenSlab",
@@ -15198,7 +15043,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_crimson_wooden_slab"
+      "registry_name": "chiseled_crimson_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedCrimsonWoodenSlab",
@@ -15207,7 +15053,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_crimson_wooden_slab"
+      "registry_name": "chiseled_stripped_crimson_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledWarpedWoodenSlab",
@@ -15216,7 +15063,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_warped_wooden_slab"
+      "registry_name": "chiseled_warped_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "ChiseledStrippedWarpedWoodenSlab",
@@ -15225,7 +15073,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_warped_wooden_slab"
+      "registry_name": "chiseled_stripped_warped_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodenLampCrimson",
@@ -15234,7 +15083,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_crimson"
+      "registry_name": "wooden_lamp_crimson",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "WoodenLampWarped",
@@ -15243,7 +15093,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_warped"
+      "registry_name": "wooden_lamp_warped",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "CrimsonWoodenSlabRecipe",
@@ -15414,7 +15265,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_oak"
+      "registry_name": "pillar_oak",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarOakRecipe",
@@ -15432,7 +15284,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_dark_oak"
+      "registry_name": "pillar_dark_oak",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarDarkOakRecipe",
@@ -15450,7 +15303,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_spruce"
+      "registry_name": "pillar_spruce",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarSpruceRecipe",
@@ -15468,7 +15322,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_birch"
+      "registry_name": "pillar_birch",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarJungle",
@@ -15477,7 +15332,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_jungle"
+      "registry_name": "pillar_jungle",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarAcacia",
@@ -15486,7 +15342,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_acacia"
+      "registry_name": "pillar_acacia",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarBirchRecipe",
@@ -15522,7 +15379,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_crimson"
+      "registry_name": "pillar_crimson",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarWarped",
@@ -15531,7 +15389,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_warped"
+      "registry_name": "pillar_warped",
+      "path": "~/Blocks/Wood Variants/Vanilla Wood"
     },
     {
       "name": "PillarCrimsonRecipe",
@@ -15558,7 +15417,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_juniper"
+      "registry_name": "pillar_juniper",
+      "path": "~/Blocks/Wood Variants/Betterlands Wood"
     },
     {
       "name": "PillarJuniperRecipe",
@@ -15576,7 +15436,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_shrm_blue"
+      "registry_name": "pillar_shrm_blue",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PillarShrmOrange",
@@ -15585,7 +15446,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_shrm_orange"
+      "registry_name": "pillar_shrm_orange",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PillarShrmPurple",
@@ -15594,7 +15456,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_shrm_purple"
+      "registry_name": "pillar_shrm_purple",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PillarShrmRegular",
@@ -15603,7 +15466,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_shrm_regular"
+      "registry_name": "pillar_shrm_regular",
+      "path": "~/Blocks/Wood Variants/Shroomed Wood"
     },
     {
       "name": "PillarShrmBluePillarRecipe",
@@ -15648,7 +15512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "nutwood_wooden_slab"
+      "registry_name": "nutwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "NutwoodWoodenStairs",
@@ -15657,7 +15522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "nutwood_wooden_stairs"
+      "registry_name": "nutwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedNutwoodWoodenSlab",
@@ -15666,7 +15532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_nutwood_wooden_slab"
+      "registry_name": "stripped_nutwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedNutwoodWoodenStairs",
@@ -15675,7 +15542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_nutwood_wooden_stairs"
+      "registry_name": "stripped_nutwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledNutwoodWood",
@@ -15684,7 +15552,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_nutwood_wood"
+      "registry_name": "chiseled_nutwood_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedNutwoodWood",
@@ -15693,7 +15562,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_nutwood_wood"
+      "registry_name": "chiseled_stripped_nutwood_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledNutwoodWoodenSlab",
@@ -15702,7 +15572,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_nutwood_wooden_slab"
+      "registry_name": "chiseled_nutwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedNutwoodWoodenSlab",
@@ -15711,7 +15582,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_nutwood_wooden_slab"
+      "registry_name": "chiseled_stripped_nutwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "WoodenLampNutwood",
@@ -15720,7 +15592,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_nutwood"
+      "registry_name": "wooden_lamp_nutwood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "PillarNutwood",
@@ -15729,7 +15602,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_nutwood"
+      "registry_name": "pillar_nutwood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "SpicewoodWoodenSlab",
@@ -15738,7 +15612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spicewood_wooden_slab"
+      "registry_name": "spicewood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "SpicewoodWoodenStairs",
@@ -15747,7 +15622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spicewood_wooden_stairs"
+      "registry_name": "spicewood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedSpicewoodWoodenSlab",
@@ -15756,7 +15632,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_spicewood_wooden_slab"
+      "registry_name": "stripped_spicewood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedSpicewoodWoodenStairs",
@@ -15765,7 +15642,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_spicewood_wooden_stairs"
+      "registry_name": "stripped_spicewood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledSpicewoodWood",
@@ -15774,7 +15652,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_spicewood_wood"
+      "registry_name": "chiseled_spicewood_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedSpicewoodWood",
@@ -15783,7 +15662,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_spicewood_wood"
+      "registry_name": "chiseled_stripped_spicewood_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledSpicewoodWoodenSlab",
@@ -15792,7 +15672,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_spicewood_wooden_slab"
+      "registry_name": "chiseled_spicewood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedSpicewoodWoodenSlab",
@@ -15801,7 +15682,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_spicewood_wooden_slab"
+      "registry_name": "chiseled_stripped_spicewood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "WoodenLampSpicewood",
@@ -15810,7 +15692,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_spicewood"
+      "registry_name": "wooden_lamp_spicewood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "PillarSpicewood",
@@ -15819,7 +15702,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_spicewood"
+      "registry_name": "pillar_spicewood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "NutwoodWoodenSlabRecipe",
@@ -16008,7 +15892,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cypress_wooden_slab"
+      "registry_name": "cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "CypressWoodenStairs",
@@ -16017,7 +15902,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cypress_wooden_stairs"
+      "registry_name": "cypress_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedCypressWoodenSlab",
@@ -16026,7 +15912,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_cypress_wooden_slab"
+      "registry_name": "stripped_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "StrippedCypressWoodenStairs",
@@ -16035,7 +15922,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_cypress_wooden_stairs"
+      "registry_name": "stripped_cypress_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledCypressWood",
@@ -16044,7 +15932,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_cypress_wood"
+      "registry_name": "chiseled_cypress_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedCypressWood",
@@ -16053,7 +15942,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_cypress_wood"
+      "registry_name": "chiseled_stripped_cypress_wood",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledCypressWoodenSlab",
@@ -16062,7 +15952,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_cypress_wooden_slab"
+      "registry_name": "chiseled_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "ChiseledStrippedCypressWoodenSlab",
@@ -16071,7 +15962,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_cypress_wooden_slab"
+      "registry_name": "chiseled_stripped_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "WoodenLampCypress",
@@ -16080,7 +15972,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_cypress"
+      "registry_name": "wooden_lamp_cypress",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "PillarCypress",
@@ -16089,7 +15982,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_cypress"
+      "registry_name": "pillar_cypress",
+      "path": "~/Blocks/Wood Variants/Mobs n Crops Wood"
     },
     {
       "name": "FprNetherite",
@@ -16324,7 +16218,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "asha_hypheria_wooden_slab"
+      "registry_name": "asha_hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "AshaHypheriaWoodenStairs",
@@ -16333,7 +16228,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "asha_hypheria_wooden_stairs"
+      "registry_name": "asha_hypheria_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledAshaHypheriaWood",
@@ -16342,7 +16238,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_asha_hypheria_wood"
+      "registry_name": "chiseled_asha_hypheria_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledAshaHypheriaWoodenSlab",
@@ -16351,7 +16248,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_asha_hypheria_wooden_slab"
+      "registry_name": "chiseled_asha_hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "WoodenLampAshaHypheria",
@@ -16360,7 +16258,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_asha_hypheria"
+      "registry_name": "wooden_lamp_asha_hypheria",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "HypheriaWoodenSlab",
@@ -16369,7 +16268,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hypheria_wooden_slab"
+      "registry_name": "hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "HypheriaWoodenStairs",
@@ -16378,7 +16278,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hypheria_wooden_stairs"
+      "registry_name": "hypheria_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledHypheriaWood",
@@ -16387,7 +16288,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_hypheria_wood"
+      "registry_name": "chiseled_hypheria_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledHypheriaWoodenSlab",
@@ -16396,7 +16298,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_hypheria_wooden_slab"
+      "registry_name": "chiseled_hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "WoodenLampHypheria",
@@ -16405,7 +16308,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_hypheria"
+      "registry_name": "wooden_lamp_hypheria",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "AshaHypheriaWoodenSlabRecipe",
@@ -16571,7 +16475,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_hypheria_wooden_slab"
+      "registry_name": "stripped_hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedHypheriaWoodenStairs",
@@ -16580,7 +16485,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_hypheria_wooden_stairs"
+      "registry_name": "stripped_hypheria_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedHypheriaWood",
@@ -16589,7 +16495,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_hypheria_wood"
+      "registry_name": "chiseled_stripped_hypheria_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedHypheriaWoodenSlab",
@@ -16598,7 +16505,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_hypheria_wooden_slab"
+      "registry_name": "chiseled_stripped_hypheria_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "PillarAshaHypheria",
@@ -16607,7 +16515,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_asha_hypheria"
+      "registry_name": "pillar_asha_hypheria",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "PillarHypheria",
@@ -16616,7 +16525,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_hypheria"
+      "registry_name": "pillar_hypheria",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedHypheriaWoodenSlabRecipe",
@@ -16787,7 +16697,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cuctur_wooden_slab"
+      "registry_name": "cuctur_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "CucturWoodenStairs",
@@ -16796,7 +16707,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cuctur_wooden_stairs"
+      "registry_name": "cuctur_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledCucturWood",
@@ -16805,7 +16717,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_cuctur_wood"
+      "registry_name": "chiseled_cuctur_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledCucturWoodenSlab",
@@ -16814,7 +16727,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_cuctur_wooden_slab"
+      "registry_name": "chiseled_cuctur_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "WoodenLampCuctur",
@@ -16823,7 +16737,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_cuctur"
+      "registry_name": "wooden_lamp_cuctur",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "PillarCuctur",
@@ -16832,7 +16747,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_cuctur"
+      "registry_name": "pillar_cuctur",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedCucturWoodenSlab",
@@ -16841,7 +16757,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_cuctur_wooden_slab"
+      "registry_name": "stripped_cuctur_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedCucturWoodenStairs",
@@ -16850,7 +16767,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_cuctur_wooden_stairs"
+      "registry_name": "stripped_cuctur_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedCucturWood",
@@ -16859,7 +16777,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_cuctur_wood"
+      "registry_name": "chiseled_stripped_cuctur_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedCucturWoodenSlab",
@@ -16868,7 +16787,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_cuctur_wooden_slab"
+      "registry_name": "chiseled_stripped_cuctur_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "DarkwoodWoodenSlab",
@@ -16877,7 +16797,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "darkwood_wooden_slab"
+      "registry_name": "darkwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "DarkwoodWoodenStairs",
@@ -16886,7 +16807,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "darkwood_wooden_stairs"
+      "registry_name": "darkwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledDarkwoodWood",
@@ -16895,7 +16817,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_darkwood_wood"
+      "registry_name": "chiseled_darkwood_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledDarkwoodWoodenSlab",
@@ -16904,7 +16827,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_darkwood_wooden_slab"
+      "registry_name": "chiseled_darkwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "WoodenLampDarkwood",
@@ -16913,7 +16837,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_darkwood"
+      "registry_name": "wooden_lamp_darkwood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "PillarDarkwood",
@@ -16922,7 +16847,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_darkwood"
+      "registry_name": "pillar_darkwood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedDarkwoodWoodenSlab",
@@ -16931,7 +16857,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_darkwood_wooden_slab"
+      "registry_name": "stripped_darkwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "StrippedDarkwoodWoodenStairs",
@@ -16940,7 +16867,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_darkwood_wooden_stairs"
+      "registry_name": "stripped_darkwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedDarkwoodWood",
@@ -16949,7 +16877,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_darkwood_wood"
+      "registry_name": "chiseled_stripped_darkwood_wood",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "ChiseledStrippedDarkwoodWoodenSlab",
@@ -16958,7 +16887,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_darkwood_wooden_slab"
+      "registry_name": "chiseled_stripped_darkwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "AddOnTyorite",
@@ -16976,7 +16906,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_darkwood_2"
+      "registry_name": "wooden_lamp_darkwood_2",
+      "path": "~/Blocks/Wood Variants/Desolat Wood"
     },
     {
       "name": "CucturWoodenSlabRecipe",
@@ -17474,7 +17405,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "palm_wooden_slab"
+      "registry_name": "palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "PalmWoodenStairs",
@@ -17483,7 +17415,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "palm_wooden_stairs"
+      "registry_name": "palm_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledPalmWood",
@@ -17492,7 +17425,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_palm_wood"
+      "registry_name": "chiseled_palm_wood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledPalmWoodenSlab",
@@ -17501,7 +17435,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_palm_wooden_slab"
+      "registry_name": "chiseled_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "WoodenLampPalm",
@@ -17510,7 +17445,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_palm"
+      "registry_name": "wooden_lamp_palm",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "StrippedPalmWoodenSlab",
@@ -17519,7 +17455,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_palm_wooden_slab"
+      "registry_name": "stripped_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "StrippedPalmWoodenStairs",
@@ -17528,7 +17465,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_palm_wooden_stairs"
+      "registry_name": "stripped_palm_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledStrippedPalmWood",
@@ -17537,7 +17475,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_palm_wood"
+      "registry_name": "chiseled_stripped_palm_wood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledStrippedPalmWoodenSlab",
@@ -17546,7 +17485,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_palm_wooden_slab"
+      "registry_name": "chiseled_stripped_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "PillarPalm",
@@ -17555,7 +17495,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_palm"
+      "registry_name": "pillar_palm",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "DeadwoodWoodenSlab",
@@ -17564,7 +17505,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "deadwood_wooden_slab"
+      "registry_name": "deadwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "DeadwoodWoodenStairs",
@@ -17573,7 +17515,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "deadwood_wooden_stairs"
+      "registry_name": "deadwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledDeadwoodWood",
@@ -17582,7 +17525,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_deadwood_wood"
+      "registry_name": "chiseled_deadwood_wood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledDeadwoodWoodenSlab",
@@ -17591,7 +17535,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_deadwood_wooden_slab"
+      "registry_name": "chiseled_deadwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "WoodenLampDeadwood",
@@ -17600,7 +17545,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_deadwood"
+      "registry_name": "wooden_lamp_deadwood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "StrippedDeadwoodWoodenSlab",
@@ -17609,7 +17555,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_deadwood_wooden_slab"
+      "registry_name": "stripped_deadwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "StrippedDeadwoodWoodenStairs",
@@ -17618,7 +17565,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_deadwood_wooden_stairs"
+      "registry_name": "stripped_deadwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledStrippedDeadwoodWood",
@@ -17627,7 +17575,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_deadwood_wood"
+      "registry_name": "chiseled_stripped_deadwood_wood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "ChiseledStrippedDeadwoodWoodenSlab",
@@ -17636,7 +17585,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_deadwood_wooden_slab"
+      "registry_name": "chiseled_stripped_deadwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "PillarDeadwood",
@@ -17645,7 +17595,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_deadwood"
+      "registry_name": "pillar_deadwood",
+      "path": "~/Blocks/Wood Variants/Atum Wood"
     },
     {
       "name": "AddOnBlubosite",
@@ -17753,7 +17704,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blockof_nether_soul_essence"
+      "registry_name": "blockof_nether_soul_essence",
+      "path": "~/Storage Blocks"
     },
     {
       "name": "SoulSoilRenewability",
@@ -17995,7 +17947,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_ebony_wooden_slab"
+      "registry_name": "byg_ebony_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGEbonyWoodenStairs",
@@ -18004,7 +17957,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_ebony_wooden_stairs"
+      "registry_name": "byg_ebony_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGEbonyWood",
@@ -18013,7 +17967,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_ebony_wood"
+      "registry_name": "chiseled_byg_ebony_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGEbonyWoodenSlab",
@@ -18022,7 +17977,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_ebony_wooden_slab"
+      "registry_name": "chiseled_byg_ebony_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGEbony",
@@ -18031,7 +17987,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_ebony"
+      "registry_name": "wooden_lamp_byg_ebony",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGEbonyWoodenSlab",
@@ -18040,7 +17997,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_ebony_wooden_slab"
+      "registry_name": "stripped_byg_ebony_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGEbonyWoodenStairs",
@@ -18049,7 +18007,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_ebony_wooden_stairs"
+      "registry_name": "stripped_byg_ebony_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGEbonyWood",
@@ -18058,7 +18017,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_ebony_wood"
+      "registry_name": "chiseled_stripped_byg_ebony_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGEbonyWoodenSlab",
@@ -18067,7 +18027,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_ebony_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_ebony_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGEbony",
@@ -18076,7 +18037,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_ebony"
+      "registry_name": "pillar_byg_ebony",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGEtherWoodenSlab",
@@ -18085,7 +18047,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_ether_wooden_slab"
+      "registry_name": "byg_ether_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGEtherWoodenStairs",
@@ -18094,7 +18057,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_ether_wooden_stairs"
+      "registry_name": "byg_ether_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGEtherWood",
@@ -18103,7 +18067,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_ether_wood"
+      "registry_name": "chiseled_byg_ether_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGEtherWoodenSlab",
@@ -18112,7 +18077,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_ether_wooden_slab"
+      "registry_name": "chiseled_byg_ether_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGEther",
@@ -18121,7 +18087,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_ether"
+      "registry_name": "wooden_lamp_byg_ether",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGEtherWoodenSlab",
@@ -18130,7 +18097,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_ether_wooden_slab"
+      "registry_name": "stripped_byg_ether_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGEtherWoodenStairs",
@@ -18139,7 +18107,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_ether_wooden_stairs"
+      "registry_name": "stripped_byg_ether_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGEtherWood",
@@ -18148,7 +18117,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_ether_wood"
+      "registry_name": "chiseled_stripped_byg_ether_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGEtherWoodenSlab",
@@ -18157,7 +18127,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_ether_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_ether_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGEther",
@@ -18166,7 +18137,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_ether"
+      "registry_name": "pillar_byg_ether",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "AvoiderCursePotionItem",
@@ -18263,7 +18235,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_fir_wooden_slab"
+      "registry_name": "byg_fir_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGFirWoodenStairs",
@@ -18272,7 +18245,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_fir_wooden_stairs"
+      "registry_name": "byg_fir_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGFirWood",
@@ -18281,7 +18255,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_fir_wood"
+      "registry_name": "chiseled_byg_fir_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGFirWoodenSlab",
@@ -18290,7 +18265,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_fir_wooden_slab"
+      "registry_name": "chiseled_byg_fir_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGFir",
@@ -18299,7 +18275,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_fir"
+      "registry_name": "wooden_lamp_byg_fir",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGFirWoodenSlab",
@@ -18308,7 +18285,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_fir_wooden_slab"
+      "registry_name": "stripped_byg_fir_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGFirWoodenStairs",
@@ -18317,7 +18295,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_fir_wooden_stairs"
+      "registry_name": "stripped_byg_fir_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGFirWood",
@@ -18326,7 +18305,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_fir_wood"
+      "registry_name": "chiseled_stripped_byg_fir_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGFirWoodenSlab",
@@ -18335,7 +18315,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_fir_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_fir_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGFir",
@@ -18344,7 +18325,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_fir"
+      "registry_name": "pillar_byg_fir",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCypressWoodenSlab",
@@ -18353,7 +18335,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cypress_wooden_slab"
+      "registry_name": "byg_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCypressWoodenStairs",
@@ -18362,7 +18345,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cypress_wooden_stairs"
+      "registry_name": "byg_cypress_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCypressWood",
@@ -18371,7 +18355,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cypress_wood"
+      "registry_name": "chiseled_byg_cypress_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCypressWoodenSlab",
@@ -18380,7 +18365,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cypress_wooden_slab"
+      "registry_name": "chiseled_byg_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGCypress",
@@ -18389,7 +18375,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_cypress"
+      "registry_name": "wooden_lamp_byg_cypress",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCypressWoodenSlab",
@@ -18398,7 +18385,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cypress_wooden_slab"
+      "registry_name": "stripped_byg_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCypressWoodenStairs",
@@ -18407,7 +18395,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cypress_wooden_stairs"
+      "registry_name": "stripped_byg_cypress_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCypressWood",
@@ -18416,7 +18405,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cypress_wood"
+      "registry_name": "chiseled_stripped_byg_cypress_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCypressWoodenSlab",
@@ -18425,7 +18415,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cypress_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_cypress_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGCypress",
@@ -18434,7 +18425,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_cypress"
+      "registry_name": "pillar_byg_cypress",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCikaWoodenSlab",
@@ -18443,7 +18435,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cika_wooden_slab"
+      "registry_name": "byg_cika_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCikaWoodenStairs",
@@ -18452,7 +18445,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cika_wooden_stairs"
+      "registry_name": "byg_cika_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCikaWood",
@@ -18461,7 +18455,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cika_wood"
+      "registry_name": "chiseled_byg_cika_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCikaWoodenSlab",
@@ -18470,7 +18465,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cika_wooden_slab"
+      "registry_name": "chiseled_byg_cika_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGCika",
@@ -18479,7 +18475,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_cika"
+      "registry_name": "wooden_lamp_byg_cika",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCikaWoodenSlab",
@@ -18488,7 +18485,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cika_wooden_slab"
+      "registry_name": "stripped_byg_cika_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCikaWoodenStairs",
@@ -18497,7 +18495,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cika_wooden_stairs"
+      "registry_name": "stripped_byg_cika_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCikaWood",
@@ -18506,7 +18505,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cika_wood"
+      "registry_name": "chiseled_stripped_byg_cika_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCikaWoodenSlab",
@@ -18515,7 +18515,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cika_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_cika_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGCika",
@@ -18524,7 +18525,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_cika"
+      "registry_name": "pillar_byg_cika",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGEbonyWoodenSlabRecipe",
@@ -18916,7 +18918,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enhanced_pepper_box_scheme"
+      "registry_name": "enhanced_pepper_box_scheme",
+      "path": "~/Gun Schemes"
     },
     {
       "name": "EnhancedPepperBoxSchemeRecipe",
@@ -19210,7 +19213,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cherry_wooden_slab"
+      "registry_name": "byg_cherry_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCherryWoodenStairs",
@@ -19219,7 +19223,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_cherry_wooden_stairs"
+      "registry_name": "byg_cherry_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCherryWood",
@@ -19228,7 +19233,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cherry_wood"
+      "registry_name": "chiseled_byg_cherry_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGCherryWoodenSlab",
@@ -19237,7 +19243,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_cherry_wooden_slab"
+      "registry_name": "chiseled_byg_cherry_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGCherry",
@@ -19246,7 +19253,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_cherry"
+      "registry_name": "wooden_lamp_byg_cherry",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCherryWoodenSlab",
@@ -19255,7 +19263,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cherry_wooden_slab"
+      "registry_name": "stripped_byg_cherry_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGCherryWoodenStairs",
@@ -19264,7 +19273,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_cherry_wooden_stairs"
+      "registry_name": "stripped_byg_cherry_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCherryWood",
@@ -19273,7 +19283,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cherry_wood"
+      "registry_name": "chiseled_stripped_byg_cherry_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGCherryWoodenSlab",
@@ -19282,7 +19293,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_cherry_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_cherry_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGCherry",
@@ -19291,7 +19303,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_cherry"
+      "registry_name": "pillar_byg_cherry",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGJacarandaWoodenSlab",
@@ -19300,7 +19313,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_jacaranda_wooden_slab"
+      "registry_name": "byg_jacaranda_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGJacarandaWoodenStairs",
@@ -19309,7 +19323,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_jacaranda_wooden_stairs"
+      "registry_name": "byg_jacaranda_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGJacarandaWood",
@@ -19318,7 +19333,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_jacaranda_wood"
+      "registry_name": "chiseled_byg_jacaranda_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGJacarandaWoodenSlab",
@@ -19327,7 +19343,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_jacaranda_wooden_slab"
+      "registry_name": "chiseled_byg_jacaranda_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGJacaranda",
@@ -19336,7 +19353,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_jacaranda"
+      "registry_name": "wooden_lamp_byg_jacaranda",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGJacarandaWoodenSlab",
@@ -19345,7 +19363,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_jacaranda_wooden_slab"
+      "registry_name": "stripped_byg_jacaranda_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGJacarandaWoodenStairs",
@@ -19354,7 +19373,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_jacaranda_wooden_stairs"
+      "registry_name": "stripped_byg_jacaranda_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGJacarandaWood",
@@ -19363,7 +19383,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_jacaranda_wood"
+      "registry_name": "chiseled_stripped_byg_jacaranda_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGJacarandaWoodenSlab",
@@ -19372,7 +19393,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_jacaranda_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_jacaranda_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGJacaranda",
@@ -19381,7 +19403,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_jacaranda"
+      "registry_name": "pillar_byg_jacaranda",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGJacarandaInactive",
@@ -19390,7 +19413,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_jacaranda_inactive"
+      "registry_name": "wooden_lamp_byg_jacaranda_inactive",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PropertiesLamps",
@@ -19428,7 +19452,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_holly_wooden_slab"
+      "registry_name": "byg_holly_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGHollyWoodenStairs",
@@ -19437,7 +19462,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_holly_wooden_stairs"
+      "registry_name": "byg_holly_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGHollyWood",
@@ -19446,7 +19472,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_holly_wood"
+      "registry_name": "chiseled_byg_holly_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGHollyWoodenSlab",
@@ -19455,7 +19482,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_holly_wooden_slab"
+      "registry_name": "chiseled_byg_holly_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGHolly",
@@ -19464,7 +19492,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_holly"
+      "registry_name": "wooden_lamp_byg_holly",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGHollyWoodenSlab",
@@ -19473,7 +19502,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_holly_wooden_slab"
+      "registry_name": "stripped_byg_holly_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGHollyWoodenStairs",
@@ -19482,7 +19512,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_holly_wooden_stairs"
+      "registry_name": "stripped_byg_holly_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGHollyWood",
@@ -19491,7 +19522,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_holly_wood"
+      "registry_name": "chiseled_stripped_byg_holly_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGHollyWoodenSlab",
@@ -19500,7 +19532,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_holly_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_holly_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGHolly",
@@ -19509,7 +19542,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_holly"
+      "registry_name": "pillar_byg_holly",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGBaobabWoodenSlab",
@@ -19518,7 +19552,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_baobab_wooden_slab"
+      "registry_name": "byg_baobab_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGBaobabWoodenStairs",
@@ -19527,7 +19562,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_baobab_wooden_stairs"
+      "registry_name": "byg_baobab_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGBaobabWood",
@@ -19536,7 +19572,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_baobab_wood"
+      "registry_name": "chiseled_byg_baobab_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGBaobabWoodenSlab",
@@ -19545,7 +19582,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_baobab_wooden_slab"
+      "registry_name": "chiseled_byg_baobab_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGBaobab",
@@ -19554,7 +19592,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_baobab"
+      "registry_name": "wooden_lamp_byg_baobab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGBaobabWoodenSlab",
@@ -19563,7 +19602,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_baobab_wooden_slab"
+      "registry_name": "stripped_byg_baobab_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGBaobabWoodenStairs",
@@ -19572,7 +19612,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_baobab_wooden_stairs"
+      "registry_name": "stripped_byg_baobab_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGBaobabWood",
@@ -19581,7 +19622,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_baobab_wood"
+      "registry_name": "chiseled_stripped_byg_baobab_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGBaobabWoodenSlab",
@@ -19590,7 +19632,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_baobab_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_baobab_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGBaobab",
@@ -19599,7 +19642,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_baobab"
+      "registry_name": "pillar_byg_baobab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGLamentWoodenSlab",
@@ -19608,7 +19652,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_lament_wooden_slab"
+      "registry_name": "byg_lament_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGLamentWoodenStairs",
@@ -19617,7 +19662,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_lament_wooden_stairs"
+      "registry_name": "byg_lament_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGLamentWood",
@@ -19626,7 +19672,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_lament_wood"
+      "registry_name": "chiseled_byg_lament_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGLamentWoodenSlab",
@@ -19635,7 +19682,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_lament_wooden_slab"
+      "registry_name": "chiseled_byg_lament_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGLament",
@@ -19644,7 +19692,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_lament"
+      "registry_name": "wooden_lamp_byg_lament",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGLamentWoodenSlab",
@@ -19653,7 +19702,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_lament_wooden_slab"
+      "registry_name": "stripped_byg_lament_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGLamentWoodenStairs",
@@ -19662,7 +19712,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_lament_wooden_stairs"
+      "registry_name": "stripped_byg_lament_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGLamentWood",
@@ -19671,7 +19722,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_lament_wood"
+      "registry_name": "chiseled_stripped_byg_lament_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGLamentWoodenSlab",
@@ -19680,7 +19732,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_lament_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_lament_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGLament",
@@ -19689,7 +19742,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_lament"
+      "registry_name": "pillar_byg_lament",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGMangroveWoodenSlab",
@@ -19698,7 +19752,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_mangrove_wooden_slab"
+      "registry_name": "byg_mangrove_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGMangroveWoodenStairs",
@@ -19707,7 +19762,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_mangrove_wooden_stairs"
+      "registry_name": "byg_mangrove_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMangroveWood",
@@ -19716,7 +19772,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_mangrove_wood"
+      "registry_name": "chiseled_byg_mangrove_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMangroveWoodenSlab",
@@ -19725,7 +19782,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_mangrove_wooden_slab"
+      "registry_name": "chiseled_byg_mangrove_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGMangrove",
@@ -19734,7 +19792,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_mangrove"
+      "registry_name": "wooden_lamp_byg_mangrove",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMangroveWoodenSlab",
@@ -19743,7 +19802,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_mangrove_wooden_slab"
+      "registry_name": "stripped_byg_mangrove_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMangroveWoodenStairs",
@@ -19752,7 +19812,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_mangrove_wooden_stairs"
+      "registry_name": "stripped_byg_mangrove_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMangroveWood",
@@ -19761,7 +19822,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_mangrove_wood"
+      "registry_name": "chiseled_stripped_byg_mangrove_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMangroveWoodenSlab",
@@ -19770,7 +19832,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_mangrove_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_mangrove_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGMangrove",
@@ -19779,7 +19842,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_mangrove"
+      "registry_name": "pillar_byg_mangrove",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGMahoganyWoodenSlab",
@@ -19788,7 +19852,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_mahogany_wooden_slab"
+      "registry_name": "byg_mahogany_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGMahoganyWoodenStairs",
@@ -19797,7 +19862,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_mahogany_wooden_stairs"
+      "registry_name": "byg_mahogany_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMahoganyWood",
@@ -19806,7 +19872,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_mahogany_wood"
+      "registry_name": "chiseled_byg_mahogany_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMahoganyWoodenSlab",
@@ -19815,7 +19882,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_mahogany_wooden_slab"
+      "registry_name": "chiseled_byg_mahogany_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGMahogany",
@@ -19824,7 +19892,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_mahogany"
+      "registry_name": "wooden_lamp_byg_mahogany",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMahoganyWoodenSlab",
@@ -19833,7 +19902,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_mahogany_wooden_slab"
+      "registry_name": "stripped_byg_mahogany_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMahoganyWoodenStairs",
@@ -19842,7 +19912,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_mahogany_wooden_stairs"
+      "registry_name": "stripped_byg_mahogany_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMahoganyWood",
@@ -19851,7 +19922,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_mahogany_wood"
+      "registry_name": "chiseled_stripped_byg_mahogany_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMahoganyWoodenSlab",
@@ -19860,7 +19932,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_mahogany_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_mahogany_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGMahogany",
@@ -19869,7 +19942,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_mahogany"
+      "registry_name": "pillar_byg_mahogany",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "CoralTubeRecipe",
@@ -20557,7 +20631,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_maple_wooden_slab"
+      "registry_name": "byg_maple_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGMapleWoodenStairs",
@@ -20566,7 +20641,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_maple_wooden_stairs"
+      "registry_name": "byg_maple_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMapleWood",
@@ -20575,7 +20651,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_maple_wood"
+      "registry_name": "chiseled_byg_maple_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGMapleWoodenSlab",
@@ -20584,7 +20661,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_maple_wooden_slab"
+      "registry_name": "chiseled_byg_maple_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGMaple",
@@ -20593,7 +20671,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_maple"
+      "registry_name": "wooden_lamp_byg_maple",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMapleWoodenSlab",
@@ -20602,7 +20681,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_maple_wooden_slab"
+      "registry_name": "stripped_byg_maple_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGMapleWoodenStairs",
@@ -20611,7 +20691,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_maple_wooden_stairs"
+      "registry_name": "stripped_byg_maple_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMapleWood",
@@ -20620,7 +20701,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_maple_wood"
+      "registry_name": "chiseled_stripped_byg_maple_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGMapleWoodenSlab",
@@ -20629,7 +20711,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_maple_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_maple_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGMaple",
@@ -20638,7 +20721,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_maple"
+      "registry_name": "pillar_byg_maple",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGNightshadeWoodenSlab",
@@ -20647,7 +20731,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_nightshade_wooden_slab"
+      "registry_name": "byg_nightshade_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGNightshadeWoodenStairs",
@@ -20656,7 +20741,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_nightshade_wooden_stairs"
+      "registry_name": "byg_nightshade_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGNightshadeWood",
@@ -20665,7 +20751,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_nightshade_wood"
+      "registry_name": "chiseled_byg_nightshade_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGNightshadeWoodenSlab",
@@ -20674,7 +20761,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_nightshade_wooden_slab"
+      "registry_name": "chiseled_byg_nightshade_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGNightshade",
@@ -20683,7 +20771,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_nightshade"
+      "registry_name": "wooden_lamp_byg_nightshade",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGNightshadeWoodenSlab",
@@ -20692,7 +20781,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_nightshade_wooden_slab"
+      "registry_name": "stripped_byg_nightshade_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGNightshadeWoodenStairs",
@@ -20701,7 +20791,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_nightshade_wooden_stairs"
+      "registry_name": "stripped_byg_nightshade_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGNightshadeWood",
@@ -20710,7 +20801,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_nightshade_wood"
+      "registry_name": "chiseled_stripped_byg_nightshade_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGNightshadeWoodenSlab",
@@ -20719,7 +20811,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_nightshade_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_nightshade_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGNightshade",
@@ -20728,7 +20821,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_nightshade"
+      "registry_name": "pillar_byg_nightshade",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGPalmWoodenSlab",
@@ -20737,7 +20831,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_palm_wooden_slab"
+      "registry_name": "byg_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGPalmWoodenStairs",
@@ -20746,7 +20841,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_palm_wooden_stairs"
+      "registry_name": "byg_palm_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGPalmWood",
@@ -20755,7 +20851,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_palm_wood"
+      "registry_name": "chiseled_byg_palm_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGPalmWoodenSlab",
@@ -20764,7 +20861,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_palm_wooden_slab"
+      "registry_name": "chiseled_byg_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGPalm",
@@ -20773,7 +20871,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_palm"
+      "registry_name": "wooden_lamp_byg_palm",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGPalmWoodenSlab",
@@ -20782,7 +20881,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_palm_wooden_slab"
+      "registry_name": "stripped_byg_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGPalmWoodenStairs",
@@ -20791,7 +20891,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_palm_wooden_stairs"
+      "registry_name": "stripped_byg_palm_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGPalmWood",
@@ -20800,7 +20901,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_palm_wood"
+      "registry_name": "chiseled_stripped_byg_palm_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGPalmWoodenSlab",
@@ -20809,7 +20911,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_palm_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_palm_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGPalm",
@@ -20818,7 +20921,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_palm"
+      "registry_name": "pillar_byg_palm",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGPaloVerdeWoodenSlab",
@@ -20827,7 +20931,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_palo_verde_wooden_slab"
+      "registry_name": "byg_palo_verde_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGPaloVerdeWoodenStairs",
@@ -20836,7 +20941,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_palo_verde_wooden_stairs"
+      "registry_name": "byg_palo_verde_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGPaloVerdeWood",
@@ -20845,7 +20951,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_palo_verde_wood"
+      "registry_name": "chiseled_byg_palo_verde_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGPaloVerdeWoodenSlab",
@@ -20854,7 +20961,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_palo_verde_wooden_slab"
+      "registry_name": "chiseled_byg_palo_verde_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGPaloVerde",
@@ -20863,7 +20971,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_palo_verde"
+      "registry_name": "wooden_lamp_byg_palo_verde",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGPaloVerdeWoodenSlab",
@@ -20872,7 +20981,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_palo_verde_wooden_slab"
+      "registry_name": "stripped_byg_palo_verde_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGPaloVerdeWoodenStairs",
@@ -20881,7 +20991,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_palo_verde_wooden_stairs"
+      "registry_name": "stripped_byg_palo_verde_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGPaloVerdeWood",
@@ -20890,7 +21001,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_palo_verde_wood"
+      "registry_name": "chiseled_stripped_byg_palo_verde_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGPaloVerdeWoodenSlab",
@@ -20899,7 +21011,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_palo_verde_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_palo_verde_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGPaloVerde",
@@ -20908,7 +21021,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_palo_verde"
+      "registry_name": "pillar_byg_palo_verde",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGRedwoodWoodenSlab",
@@ -20917,7 +21031,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_redwood_wooden_slab"
+      "registry_name": "byg_redwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGRedwoodWoodenStairs",
@@ -20926,7 +21041,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_redwood_wooden_stairs"
+      "registry_name": "byg_redwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGRedwoodWood",
@@ -20935,7 +21051,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_redwood_wood"
+      "registry_name": "chiseled_byg_redwood_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGRedwoodWoodenSlab",
@@ -20944,7 +21061,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_redwood_wooden_slab"
+      "registry_name": "chiseled_byg_redwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGRedwood",
@@ -20953,7 +21071,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_redwood"
+      "registry_name": "wooden_lamp_byg_redwood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGRedwoodWoodenSlab",
@@ -20962,7 +21081,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_redwood_wooden_slab"
+      "registry_name": "stripped_byg_redwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGRedwoodWoodenStairs",
@@ -20971,7 +21091,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_redwood_wooden_stairs"
+      "registry_name": "stripped_byg_redwood_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGRedwoodWood",
@@ -20980,7 +21101,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_redwood_wood"
+      "registry_name": "chiseled_stripped_byg_redwood_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGRedwoodWoodenSlab",
@@ -20989,7 +21111,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_redwood_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_redwood_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGRedwood",
@@ -20998,7 +21121,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_redwood"
+      "registry_name": "pillar_byg_redwood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGSkyrisWoodenSlab",
@@ -21007,7 +21131,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_skyris_wooden_slab"
+      "registry_name": "byg_skyris_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGSkyrisWoodenStairs",
@@ -21016,7 +21141,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "byg_skyris_wooden_stairs"
+      "registry_name": "byg_skyris_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGSkyrisWood",
@@ -21025,7 +21151,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_skyris_wood"
+      "registry_name": "chiseled_byg_skyris_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledBYGSkyrisWoodenSlab",
@@ -21034,7 +21161,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_byg_skyris_wooden_slab"
+      "registry_name": "chiseled_byg_skyris_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "WoodenLampBYGSkyris",
@@ -21043,7 +21171,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wooden_lamp_byg_skyris"
+      "registry_name": "wooden_lamp_byg_skyris",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGSkyrisWoodenSlab",
@@ -21052,7 +21181,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_skyris_wooden_slab"
+      "registry_name": "stripped_byg_skyris_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "StrippedBYGSkyrisWoodenStairs",
@@ -21061,7 +21191,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_byg_skyris_wooden_stairs"
+      "registry_name": "stripped_byg_skyris_wooden_stairs",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGSkyrisWood",
@@ -21070,7 +21201,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_skyris_wood"
+      "registry_name": "chiseled_stripped_byg_skyris_wood",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "ChiseledStrippedBYGSkyrisWoodenSlab",
@@ -21079,7 +21211,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chiseled_stripped_byg_skyris_wooden_slab"
+      "registry_name": "chiseled_stripped_byg_skyris_wooden_slab",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "PillarBYGSkyris",
@@ -21088,7 +21221,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pillar_byg_skyris"
+      "registry_name": "pillar_byg_skyris",
+      "path": "~/Blocks/Wood Variants/BYG Wood"
     },
     {
       "name": "BYGCherryWoodenSlabRecipe",
@@ -22877,6 +23011,38 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "stronger_wind_projectile"
+    },
+    {
+      "name": "FprGrayGlass",
+      "type": "tag",
+      "sortid": 2109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_gray_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "AvoiderReaperMode",
+      "type": "gamerule",
+      "sortid": 2110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "avoiderReaperMode",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "AvoiderBetterNether",
+      "type": "tag",
+      "sortid": 2111,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_better_nether",
+      "path": "~/Compatibility Tags/Avoider"
     }
   ],
   "variable_elements": [
@@ -22902,24 +23068,6 @@
       "name": "Additional_Message_Active",
       "type": "logic",
       "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "Test_Features",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "Structure_Generation",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "Avoider_Reapering",
-      "type": "logic",
-      "scope": "world",
       "value": "false"
     },
     {
@@ -22963,12 +23111,6 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
-    },
-    {
-      "name": "Chunk_Ticker",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
     },
     {
       "name": "KF_Av_Pigman",
@@ -23397,8 +23539,8 @@
       "block.wobr.stripped_byg_palo_verde_wooden_slab": "Stripped Palm Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
-      "block.wobr.wooden_lamp_byg_maple": "Mahogany Wooden Lamp",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
+      "block.wobr.wooden_lamp_byg_maple": "Mahogany Wooden Lamp",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",
@@ -23406,13 +23548,13 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Nutwood Wooden Slab",
       "item.wobr.rifle_clip_1_2": "12-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_jacaranda_wooden_slab": "Chiseled Cherry Wooden Slab",
-      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
-      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
+      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
-      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Orange Shroomwood Slab",
+      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
+      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
       "item.wobr.card_club_ace_winfleton": "As trefl Winfletonów",
+      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Orange Shroomwood Slab",
       "item.minecraft.splash_potion.effect.tribe_reputation_drop": "Splash Tribe Reputation Drop",
       "block.wobr.byg_lament_wooden_slab": "Baobab Wooden Slab",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
@@ -23422,8 +23564,8 @@
       "item.minecraft.potion.effect.single_reload_type": "Single Reload Type",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
       "block.wobr.chiseled_stripped_byg_lament_wood": "Chiseled Stripped Baobab Wood",
-      "block.wobr.pillar_byg_palm": "Nightshade Pillar",
       "block.wobr.chiseled_byg_ether_wooden_slab": "Chiseled Ebony Wooden Slab",
+      "block.wobr.pillar_byg_palm": "Nightshade Pillar",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Oak Pillar",
       "block.wobr.chiseled_byg_fir_wood": "Chiseled Ether Wood",
@@ -23431,21 +23573,21 @@
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
       "item.minecraft.potion.effect.anti_wandering_trader": "Anti Wandering Trader",
-      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Lament Wooden Stairs",
-      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
+      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
+      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Lament Wooden Stairs",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
       "advancements.portable_nether_lakes.descr": "You found out how to convert some fluids into another.. but why lava?",
-      "block.wobr.wooden_lamp_byg_mahogany": "Mangrove Wooden Lamp",
       "block.wobr.crimson_framed_red_stained_glass": "Crimson Framed Red Stained Glass",
+      "block.wobr.wooden_lamp_byg_mahogany": "Mangrove Wooden Lamp",
       "item.minecraft.splash_potion.effect.single_reload_type": "Splash Single Reload Type",
       "block.wobr.chiseled_stripped_deadwood_wooden_slab": "Chiseled Deadwood Wooden Slab",
       "block.wobr.lockable_cirtain_chest_locked": "Lockable Cirtain Chest",
       "item.wobr.ayer_shotgun": "Ayer Shotgun",
       "block.wobr.lockable_prismarine_chest_locked": "Lockable Prismarine Chest",
       "block.wobr.golden_fluid_converter_active": "Golden Fluid Converter",
-      "block.wobr.chiseled_palm_wood": "Chiseled Hypheria Wood",
       "block.wobr.palm_wooden_stairs": "Hypheria Wooden Stairs",
+      "block.wobr.chiseled_palm_wood": "Chiseled Hypheria Wood",
       "block.wobr.chiseled_stripped_warped_wood": "Chiseled Stripped Crimson Stem",
       "block.wobr.chiseled_stripped_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
@@ -23456,13 +23598,13 @@
       "block.wobr.blue_shroomed_wooden_stairs": "Brown Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
       "block.wobr.chiseled_stripped_byg_palo_verde_wood": "Chiseled Stripped Palm Wood",
-      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Hypheria Wooden Slab",
+      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.pillar_byg_mangrove": "Lament Pillar",
       "block.wobr.stripped_byg_palo_verde_wooden_stairs": "Stripped Palm Wooden Stairs",
       "effect.merchant_block_heartofthe_sea": "Merchant Block Budding Amethyst",
-      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Military Airship Spawn Egg",
       "entity.wobr.ormath_villager": "Ormath Villager",
+      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Military Airship Spawn Egg",
       "block.wobr.byg_cypress_wooden_slab": "Fir Wooden Slab",
       "block.wobr.byg_mangrove_wooden_slab": "Lament Wooden Slab",
       "block.wobr.chiseled_stripped_byg_jacaranda_wood": "Chiseled Stripped Cherry Wood",
@@ -23493,15 +23635,15 @@
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
-      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cika Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_shielding": "Lingering Nether Avoider Shielding",
+      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cika Wooden Slab",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.stripped_byg_nightshade_wooden_stairs": "Stripped Maple Wooden Stairs",
       "item.minecraft.potion.effect.warhammer_nausea_triggered": "Warhammer Nausea Walk",
-      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
-      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
-      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
       "item.minecraft.lingering_potion.effect.merchant_block_elytra": "Lingering Merchant Block Budding Amethyst",
+      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
+      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
+      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
       "block.wobr.pillar_shrm_regular": "Purple Shroomwood Pillar",
       "block.wobr.nutwood_wooden_slab": "Juniper Wooden Slab",
       "effect.additional_player_message_potion": "Player Message Potion",
@@ -23509,21 +23651,21 @@
       "item.wobr.prismarine_sabre": "Pryzmarynowa szabla",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
       "block.wobr.chiseled_byg_nightshade_wood": "Chiseled Maple Wood",
-      "block.wobr.chiseled_darkwood_wood": "Chiseled Cuctur Wood",
       "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
+      "block.wobr.chiseled_darkwood_wood": "Chiseled Cuctur Wood",
       "block.wobr.wooden_lamp_byg_lament": "Baobab Wooden Lamp",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Asha Hypheria Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
-      "block.wobr.pillar_byg_fir": "Ether Pillar",
       "item.minecraft.potion.effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "block.wobr.pillar_byg_fir": "Ether Pillar",
       "block.wobr.stripped_spruce_wooden_slab": "Stripped Spruce Wooden Slab",
       "block.wobr.chiseled_acacia_wooden_slab": "Chiseled Acacia Wooden Slab",
       "item.minecraft.tipped_arrow.effect.nether_avoider_pulsating": "Arrow of Nether Avoider Pulsating",
       "block.wobr.crimson_framed_light_gray_stained_glass": "Crimson Framed Light Gray Stained Glass",
       "block.wobr.wooden_lamp_byg_holly": "Jacaranda Wooden Lamp",
-      "block.wobr.stripped_cuctur_wooden_stairs": "Cuctur Wooden Stairs",
       "block.wobr.acacia_framed_brown_stained_glass": "Acacia Framed Brown Stained Glass",
+      "block.wobr.stripped_cuctur_wooden_stairs": "Cuctur Wooden Stairs",
       "block.wobr.chiseled_hypheria_wooden_slab": "Chiseled Asha Hypheria Wooden Slab",
       "block.wobr.pillar_warped": "Acacia Pillar",
       "block.wobr.blue_nether_brick_wall": "Blue Nether Brick Wall",
@@ -23531,8 +23673,8 @@
       "block.wobr.byg_nightshade_wooden_stairs": "Maple Wooden Stairs",
       "block.wobr.chiseled_byg_redwood_wood": "Chiseled Palo Verde Wood",
       "item.minecraft.potion.effect.warhammer_nausea_walk": "Warhammer Nausea Walk",
-      "block.wobr.wooden_lamp_warped": "Chiseled Warped Stem",
       "block.wobr.oak_framed_white_stained_glass": "Oak Framed White Stained Glass",
+      "block.wobr.wooden_lamp_warped": "Chiseled Warped Stem",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
@@ -23566,8 +23708,8 @@
       "block.wobr.test_block": "Blok testowy",
       "block.wobr.red_acacia_framed_white_stained_glass": "Red Acacia Framed White Stained Glass",
       "item.minecraft.potion.effect.nether_avoider_pulsating": "Nether Avoider Pulsating",
-      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_cika_wooden_stairs": "Cypress Wooden Stairs",
+      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_fir_wooden_stairs": "Ether Wooden Stairs",
       "item.wobr.white_sabre": "Bia³a szabla",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
@@ -23602,13 +23744,14 @@
       "block.wobr.purple_shroomed_wooden_stairs": "Orange Shroomwood Stairs",
       "item.wobr.advancement_ormath": "Ormath Head",
       "block.wobr.stripped_byg_ether_wooden_stairs": "Stripped Ebony Wooden Stairs",
-      "block.wobr.pillar_hypheria": "Cypress Pillar",
-      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "gamerule.avoiderReaperMode": "Nether Avoider Reaper Mode",
       "key.wobr.unload_key": "Unload Key",
+      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "block.wobr.pillar_hypheria": "Cypress Pillar",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
+      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.warped_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -24011,6 +24154,7 @@
       "item.wobr.advancement_shield_is_for_newbies": "Advancement: Shield Is For Newbies",
       "block.wobr.wooden_lamp_spicewood": "Nutwood Wooden Lamp",
       "block.wobr.byg_palo_verde_wooden_slab": "Palm Wooden Slab",
+      "gamerule.avoiderReaperMode.description": "Nether Avoider will kill all hostile type of mobs (can affect also neutral ones)",
       "block.wobr.baedoor_funt_block_pillar": "Baedoor Golden Pillar",
       "block.wobr.lockable_netherite_chest": "Lockable Netherite Chest",
       "block.wobr.spruce_framed_purple_stained_glass": "Spruce Framed Purple Stained Glass",
@@ -24455,8 +24599,8 @@
       "block.wobr.stripped_byg_palo_verde_wooden_slab": "Stripped Palo Verde Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
-      "block.wobr.wooden_lamp_byg_maple": "Maple Wooden Lamp",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
+      "block.wobr.wooden_lamp_byg_maple": "Maple Wooden Lamp",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",
@@ -24464,13 +24608,13 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Cypress Wooden Slab",
       "item.wobr.rifle_clip_1_2": "12-Rounded Rifle Clip",
       "block.wobr.chiseled_byg_jacaranda_wooden_slab": "Chiseled Jacaranda Wooden Slab",
-      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
-      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
+      "item.minecraft.splash_potion.effect.avoider_curse": "Splash Avoider Curse",
       "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
-      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Purple Shroomwood Slab",
+      "item.minecraft.splash_potion.effect.sabre_attack_cooldown": "Splash Sabre Defence",
+      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
       "item.wobr.card_club_ace_winfleton": "Winfleton\u0027s Club Ace Card",
+      "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Purple Shroomwood Slab",
       "item.minecraft.splash_potion.effect.tribe_reputation_drop": "Splash Tribe Reputation Drop",
       "block.wobr.byg_lament_wooden_slab": "Lament Wooden Slab",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
@@ -24480,8 +24624,8 @@
       "item.minecraft.potion.effect.single_reload_type": "Single Reload Type",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
       "block.wobr.chiseled_stripped_byg_lament_wood": "Chiseled Stripped Lament Wood",
-      "block.wobr.pillar_byg_palm": "Palm Pillar",
       "block.wobr.chiseled_byg_ether_wooden_slab": "Chiseled Ether Wooden Slab",
+      "block.wobr.pillar_byg_palm": "Palm Pillar",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Dark Oak Pillar",
       "block.wobr.chiseled_byg_fir_wood": "Chiseled Fir Wood",
@@ -24489,21 +24633,21 @@
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
       "item.minecraft.potion.effect.anti_wandering_trader": "Anti Wandering Trader",
-      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Mangrove Wooden Stairs",
-      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
+      "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
+      "block.wobr.stripped_byg_mangrove_wooden_stairs": "Stripped Mangrove Wooden Stairs",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
       "advancements.portable_nether_lakes.descr": "You found out how to convert some fluids into another.. but why lava?",
-      "block.wobr.wooden_lamp_byg_mahogany": "Mahogany Wooden Lamp",
       "block.wobr.crimson_framed_red_stained_glass": "Crimson Framed Red Stained Glass",
+      "block.wobr.wooden_lamp_byg_mahogany": "Mahogany Wooden Lamp",
       "item.minecraft.splash_potion.effect.single_reload_type": "Splash Single Reload Type",
       "block.wobr.chiseled_stripped_deadwood_wooden_slab": "Chiseled Stripped Deadwood Wooden Slab",
       "block.wobr.lockable_cirtain_chest_locked": "Lockable Cirtain Chest",
       "item.wobr.ayer_shotgun": "Ayer Shotgun",
       "block.wobr.lockable_prismarine_chest_locked": "Lockable Prismarine Chest",
       "block.wobr.golden_fluid_converter_active": "Fluid Tank Heater",
-      "block.wobr.chiseled_palm_wood": "Chiseled Palm Wood",
       "block.wobr.palm_wooden_stairs": "Palm Wooden Stairs",
+      "block.wobr.chiseled_palm_wood": "Chiseled Palm Wood",
       "block.wobr.chiseled_stripped_warped_wood": "Chiseled Stripped Warped Stem",
       "block.wobr.chiseled_stripped_darkwood_wood": "Chiseled Stripped Darkwood Wood",
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
@@ -24514,13 +24658,13 @@
       "block.wobr.blue_shroomed_wooden_stairs": "Blue Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
       "block.wobr.chiseled_stripped_byg_palo_verde_wood": "Chiseled Stripped Palo Verde Wood",
-      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Palm Wooden Slab",
+      "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "block.wobr.pillar_byg_mangrove": "Mangrove Pillar",
       "block.wobr.stripped_byg_palo_verde_wooden_stairs": "Stripped Palo Verde Wooden Stairs",
       "effect.merchant_block_heartofthe_sea": "Merchant Block Budding Amethyst",
-      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
       "entity.wobr.ormath_villager": "Ormath Villager",
+      "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
       "block.wobr.byg_cypress_wooden_slab": "Cypress Wooden Slab",
       "block.wobr.byg_mangrove_wooden_slab": "Mangrove Wooden Slab",
       "block.wobr.chiseled_stripped_byg_jacaranda_wood": "Chiseled Stripped Jacaranda Wood",
@@ -24551,15 +24695,15 @@
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
-      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cherry Wooden Slab",
       "item.minecraft.lingering_potion.effect.nether_avoider_shielding": "Lingering Nether Avoider Shielding",
+      "block.wobr.chiseled_byg_cherry_wooden_slab": "Chiseled Cherry Wooden Slab",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.stripped_byg_nightshade_wooden_stairs": "Stripped Nightshade Wooden Stairs",
       "item.minecraft.potion.effect.warhammer_nausea_triggered": "Warhammer Nausea Walk",
-      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
-      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
-      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
       "item.minecraft.lingering_potion.effect.merchant_block_elytra": "Lingering Merchant Block Budding Amethyst",
+      "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
+      "item.wobr.crocodile_shotgun": "Crocodile Shotgun",
+      "block.wobr.chiseled_stripped_dark_oak_wooden_slab": "Chiseled Stripped Dark Oak Wooden Slab",
       "block.wobr.pillar_shrm_regular": "Shroomwood Pillar",
       "block.wobr.nutwood_wooden_slab": "Nutwood Wooden Slab",
       "effect.additional_player_message_potion": "Player Message Potion",
@@ -24567,21 +24711,21 @@
       "item.wobr.prismarine_sabre": "Prismarine Sabre",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
       "block.wobr.chiseled_byg_nightshade_wood": "Chiseled Nightshade Wood",
-      "block.wobr.chiseled_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
+      "block.wobr.chiseled_darkwood_wood": "Chiseled Darkwood Wood",
       "block.wobr.wooden_lamp_byg_lament": "Lament Wooden Lamp",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Cuctur Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
-      "block.wobr.pillar_byg_fir": "Fir Pillar",
       "item.minecraft.potion.effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "block.wobr.pillar_byg_fir": "Fir Pillar",
       "block.wobr.stripped_spruce_wooden_slab": "Stripped Spruce Wooden Slab",
       "block.wobr.chiseled_acacia_wooden_slab": "Chiseled Acacia Wooden Slab",
       "item.minecraft.tipped_arrow.effect.nether_avoider_pulsating": "Arrow of Nether Avoider Pulsating",
       "block.wobr.crimson_framed_light_gray_stained_glass": "Crimson Framed Light Gray Stained Glass",
       "block.wobr.wooden_lamp_byg_holly": "Holly Wooden Lamp",
-      "block.wobr.stripped_cuctur_wooden_stairs": "Stripped Cuctur Wooden Stairs",
       "block.wobr.acacia_framed_brown_stained_glass": "Acacia Framed Brown Stained Glass",
+      "block.wobr.stripped_cuctur_wooden_stairs": "Stripped Cuctur Wooden Stairs",
       "block.wobr.chiseled_hypheria_wooden_slab": "Chiseled Hypheria Wooden Slab",
       "block.wobr.pillar_warped": "Warped Pillar",
       "block.wobr.blue_nether_brick_wall": "Blue Nether Brick Wall",
@@ -24589,8 +24733,8 @@
       "block.wobr.byg_nightshade_wooden_stairs": "Nightshade Wooden Stairs",
       "block.wobr.chiseled_byg_redwood_wood": "Chiseled Redwood Wood",
       "item.minecraft.potion.effect.warhammer_nausea_walk": "Warhammer Nausea Walk",
-      "block.wobr.wooden_lamp_warped": "Warped Wooden Lamp",
       "block.wobr.oak_framed_white_stained_glass": "Oak Framed White Stained Glass",
+      "block.wobr.wooden_lamp_warped": "Warped Wooden Lamp",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
@@ -24624,8 +24768,8 @@
       "block.wobr.test_block": "Test Block",
       "block.wobr.red_acacia_framed_white_stained_glass": "Red Acacia Framed White Stained Glass",
       "item.minecraft.potion.effect.nether_avoider_pulsating": "Nether Avoider Pulsating",
-      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_cika_wooden_stairs": "Cika Wooden Stairs",
+      "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "block.wobr.byg_fir_wooden_stairs": "Fir Wooden Stairs",
       "item.wobr.white_sabre": "White Sabre",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
@@ -24660,13 +24804,14 @@
       "block.wobr.purple_shroomed_wooden_stairs": "Purple Shroomwood Stairs",
       "item.wobr.advancement_ormath": "Ormath Head",
       "block.wobr.stripped_byg_ether_wooden_stairs": "Stripped Ether Wooden Stairs",
-      "block.wobr.pillar_hypheria": "Hypheria Pillar",
-      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "gamerule.avoiderReaperMode": "Nether Avoider Reaper Mode",
       "key.wobr.unload_key": "Unload Key",
+      "block.wobr.blue_horizontal_stained_glass_pane": "Blue Horizontal Stained Glass",
+      "block.wobr.pillar_hypheria": "Hypheria Pillar",
       "block.wobr.oak_framed_blue_stained_glass": "Oak Framed Blue Stained Glass",
       "advancements.awakethe_eye.title": "Awake the Eye",
-      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
+      "block.wobr.bamboo_framed_pink_stained_glass": "Bamboo Framed Pink Stained Glass",
       "block.wobr.warped_wooden_slab": "Warped Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
       "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
@@ -25069,6 +25214,7 @@
       "item.wobr.advancement_shield_is_for_newbies": "Advancement: Shield Is For Newbies",
       "block.wobr.wooden_lamp_spicewood": "Nutwood Wooden Lamp",
       "block.wobr.byg_palo_verde_wooden_slab": "Palo Verde Wooden Slab",
+      "gamerule.avoiderReaperMode.description": "Nether Avoider will kill all hostile type of mobs (can affect also neutral ones)",
       "block.wobr.baedoor_funt_block_pillar": "Baedoor Golden Pillar",
       "block.wobr.lockable_netherite_chest": "Lockable Netherite Chest",
       "block.wobr.spruce_framed_purple_stained_glass": "Spruce Framed Purple Stained Glass",
@@ -25538,11 +25684,35 @@
               {
                 "name": "Shroomed Wood",
                 "children": []
+              },
+              {
+                "name": "Mobs n Crops Wood",
+                "children": []
+              },
+              {
+                "name": "Desolat Wood",
+                "children": []
+              },
+              {
+                "name": "Atum Wood",
+                "children": []
+              },
+              {
+                "name": "BYG Wood",
+                "children": []
               }
             ]
           },
           {
             "name": "Blue Nether Bricks",
+            "children": []
+          },
+          {
+            "name": "Baedoor Gold",
+            "children": []
+          },
+          {
+            "name": "Glistering Sand",
             "children": []
           }
         ]
@@ -25562,6 +25732,30 @@
       },
       {
         "name": "Glass Tags",
+        "children": []
+      },
+      {
+        "name": "Hardened Variants",
+        "children": []
+      },
+      {
+        "name": "Vanilla Expanded Blocks",
+        "children": []
+      },
+      {
+        "name": "Storage Blocks",
+        "children": []
+      },
+      {
+        "name": "Lockable Chests",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Gun Schemes",
         "children": []
       }
     ]

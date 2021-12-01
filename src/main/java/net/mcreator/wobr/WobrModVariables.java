@@ -70,7 +70,6 @@ public class WobrModVariables {
 	}
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "wobr_worldvars";
-		public boolean Avoider_Reapering = false;
 		public WorldVariables() {
 			super(DATA_NAME);
 		}
@@ -81,12 +80,10 @@ public class WobrModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			Avoider_Reapering = nbt.getBoolean("Avoider_Reapering");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putBoolean("Avoider_Reapering", Avoider_Reapering);
 			return nbt;
 		}
 
@@ -108,10 +105,7 @@ public class WobrModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "wobr_mapvars";
-		public boolean Test_Features = false;
-		public boolean Structure_Generation = false;
 		public boolean Merchant = false;
-		public boolean Chunk_Ticker = false;
 		public boolean KF_Av_Pigman = false;
 		public boolean KF_Av_Villager = true;
 		public double KF_Av_Distance = 50.0;
@@ -140,10 +134,7 @@ public class WobrModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			Test_Features = nbt.getBoolean("Test_Features");
-			Structure_Generation = nbt.getBoolean("Structure_Generation");
 			Merchant = nbt.getBoolean("Merchant");
-			Chunk_Ticker = nbt.getBoolean("Chunk_Ticker");
 			KF_Av_Pigman = nbt.getBoolean("KF_Av_Pigman");
 			KF_Av_Villager = nbt.getBoolean("KF_Av_Villager");
 			KF_Av_Distance = nbt.getDouble("KF_Av_Distance");
@@ -166,10 +157,7 @@ public class WobrModVariables {
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putBoolean("Test_Features", Test_Features);
-			nbt.putBoolean("Structure_Generation", Structure_Generation);
 			nbt.putBoolean("Merchant", Merchant);
-			nbt.putBoolean("Chunk_Ticker", Chunk_Ticker);
 			nbt.putBoolean("KF_Av_Pigman", KF_Av_Pigman);
 			nbt.putBoolean("KF_Av_Villager", KF_Av_Villager);
 			nbt.putDouble("KF_Av_Distance", KF_Av_Distance);

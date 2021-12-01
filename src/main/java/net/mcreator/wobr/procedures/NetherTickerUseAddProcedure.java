@@ -45,7 +45,7 @@ public class NetherTickerUseAddProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((WobrModVariables.MapVariables.get(world).Chunk_Ticker == (true))) {
+		if ((WobrModVariables.MapVariables.get(world).KF_Xp_Ticker == (true))) {
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
 						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),

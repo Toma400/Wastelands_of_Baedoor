@@ -154,6 +154,15 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				WobrModVariables.MapVariables.get(world).KF_Ent_Orm_Raider = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
 						.get("ormath_raiders").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Xp_Structures = (boolean) config_exist.get("experimental").getAsJsonObject()
+						.get("additional_structures_generating").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Xp_Developer = (boolean) config_exist.get("experimental").getAsJsonObject()
+						.get("developers_mode").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Xp_Ticker = (boolean) config_exist.get("experimental").getAsJsonObject()
+						.get("nether_ticker_use").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

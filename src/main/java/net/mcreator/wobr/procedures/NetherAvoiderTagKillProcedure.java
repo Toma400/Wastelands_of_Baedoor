@@ -8,13 +8,12 @@ import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
-import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
-import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.wobr.world.AvoiderReaperModeGameRule;
 import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
@@ -59,7 +58,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((WobrModVariables.WorldVariables.get(world).Avoider_Reapering == (false))) {
+		if (((world.getWorld().getGameRules().getBoolean(AvoiderReaperModeGameRule.gamerule)) == (false))) {
 			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || ((((EntityTypeTags.getCollection()
 					.getOrCreate(new ResourceLocation(("forge:avoider_wobr").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))
 					|| ((EntityTypeTags.getCollection()
@@ -68,9 +67,9 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 							|| (EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))))
-					|| ((entity instanceof ZombieEntity)
+					|| ((entity instanceof BanditEntity.CustomEntity)
 							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
-									|| ((!(entity instanceof ZombieVillagerEntity))
+									|| ((!(entity instanceof BanditEntity.CustomEntity))
 											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
 					|| (((((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
@@ -110,11 +109,15 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													.getOrCreate(new ResourceLocation(
 															("forge:avoider_ice_and_fire").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType()))))
-									|| ((EntityTypeTags.getCollection()
+									|| (((EntityTypeTags.getCollection()
 											.getOrCreate(new ResourceLocation(("forge:avoider_phytolands").toLowerCase(java.util.Locale.ENGLISH)))
 											.contains(entity.getType()))
 											|| (EntityTypeTags.getCollection()
 													.getOrCreate(new ResourceLocation(("forge:avoider_murky").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(
+															("forge:avoider_better_nether").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType())))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);

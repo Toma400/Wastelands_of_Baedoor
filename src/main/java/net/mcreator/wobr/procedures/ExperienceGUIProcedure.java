@@ -29,7 +29,7 @@ public class ExperienceGUIProcedure extends WobrModElements.ModElement {
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		return WobrModVariables.MapVariables.get(world).Test_Features;
+		return WobrModVariables.MapVariables.get(world).KF_Xp_Developer;
 	}
 
 	@SubscribeEvent

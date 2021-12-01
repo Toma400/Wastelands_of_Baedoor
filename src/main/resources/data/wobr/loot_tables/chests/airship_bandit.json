@@ -32,7 +32,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:long_revolver",
-          "weight": 10,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -54,7 +54,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:short_revolver",
-          "weight": 20,
+          "weight": 10,
           "functions": [
             {
               "function": "set_count",
@@ -76,7 +76,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:rusty_reaper",
-          "weight": 18,
+          "weight": 9,
           "functions": [
             {
               "function": "set_count",
@@ -149,7 +149,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:pepper_box",
-          "weight": 70,
+          "weight": 35,
           "functions": [
             {
               "function": "set_count",
@@ -163,7 +163,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:enhanced_pepper_box",
-          "weight": 25,
+          "weight": 15,
           "functions": [
             {
               "function": "set_count",
@@ -177,7 +177,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:ayer_shotgun",
-          "weight": 10,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",

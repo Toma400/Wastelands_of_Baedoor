@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Nether Avoider Reaper Mode",
+    "description": "Nether Avoider will kill all hostile type of mobs (can affect also neutral ones)",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

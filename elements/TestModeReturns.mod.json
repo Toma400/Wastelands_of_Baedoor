@@ -1,7 +1,0 @@
-{
-  "_fv": 24,
-  "_type": "procedure",
-  "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"288\" y=\"113\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_logic\"><comment h=\"80\" pinned=\"false\" w=\"160\">Used by:\r\n- buffalo spawning\r\n- wind spirits spawning</comment><value name=\"return\"><block type=\"variables_get_logic\"><field name=\"VAR\">global:Test_Features</field></block></value></block></next></block></xml>"
-  }
-}
