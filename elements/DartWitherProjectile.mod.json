@@ -34,7 +34,7 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsEntity": {
-      "name": "DartPoisonUse"
+      "name": "DartWitherUse"
     }
   }
 }

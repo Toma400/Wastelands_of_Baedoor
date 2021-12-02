@@ -9372,7 +9372,7 @@
       "name": "OrmathShaman",
       "type": "mob",
       "sortid": 459,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ormath_shaman"
@@ -10761,7 +10761,7 @@
       "name": "RedBuffalo",
       "type": "mob",
       "sortid": 460,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "red_buffalo"
@@ -11364,7 +11364,7 @@
       "name": "GreenBuffalo",
       "type": "mob",
       "sortid": 462,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "green_buffalo"
@@ -11619,7 +11619,7 @@
       "name": "OrmathRangedWarrior",
       "type": "mob",
       "sortid": 465,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ormath_ranged_warrior"
@@ -12223,7 +12223,7 @@
       "name": "OrmathRider",
       "type": "mob",
       "sortid": 467,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ormath_rider"
@@ -12232,7 +12232,7 @@
       "name": "OrmathHunter",
       "type": "mob",
       "sortid": 468,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "ormath_hunter"
@@ -14370,87 +14370,6 @@
       "registry_name": "wo_b_integrations_tab"
     },
     {
-      "name": "JuniperWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1609,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "juniper_wooden_slab_recipe"
-    },
-    {
-      "name": "JuniperWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1610,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "juniper_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledJuniperWoodRecipe",
-      "type": "recipe",
-      "sortid": 1611,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_juniper_wood_recipe"
-    },
-    {
-      "name": "ChiseledJuniperWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1612,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_juniper_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedJuniperWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1613,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_juniper_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedJuniperWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1614,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_juniper_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedJuniperWoodRecipe",
-      "type": "recipe",
-      "sortid": 1615,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_juniper_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedJuniperWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1616,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_juniper_wooden_slab_recipe"
-    },
-    {
-      "name": "WoodLampJuniper",
-      "type": "recipe",
-      "sortid": 1617,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_juniper"
-    },
-    {
       "name": "GlisAsh",
       "type": "tag",
       "sortid": 1618,
@@ -14458,222 +14377,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "glis_ash"
-    },
-    {
-      "name": "ShrmBrownWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1619,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_brown_wooden_slab_recipe"
-    },
-    {
-      "name": "ShrmBlueWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1620,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_blue_wooden_slab_recipe"
-    },
-    {
-      "name": "ShrmOrangeWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1621,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_orange_wooden_slab_recipe"
-    },
-    {
-      "name": "ShrmPurpleWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1622,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_purple_wooden_slab_recipe"
-    },
-    {
-      "name": "ShrmBrownWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1623,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_brown_wooden_stairs_recipe"
-    },
-    {
-      "name": "ShrmBlueWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1624,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_blue_wooden_stairs_recipe"
-    },
-    {
-      "name": "ShrmOrangeWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1625,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_orange_wooden_stairs_recipe"
-    },
-    {
-      "name": "ShrmPurpleWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1626,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_purple_wooden_stairs_recipe"
-    },
-    {
-      "name": "ShrmChiseledBrownWoodRecipe",
-      "type": "recipe",
-      "sortid": 1627,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_chiseled_brown_wood_recipe"
-    },
-    {
-      "name": "ShrmChiseledBlueWoodRecipe",
-      "type": "recipe",
-      "sortid": 1628,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_chiseled_blue_wood_recipe"
-    },
-    {
-      "name": "ShrmChiseledOrangeWoodRecipe",
-      "type": "recipe",
-      "sortid": 1629,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_chiseled_orange_wood_recipe"
-    },
-    {
-      "name": "ShrmChiseledPurpleWoodRecipe",
-      "type": "recipe",
-      "sortid": 1630,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_chiseled_purple_wood_recipe"
-    },
-    {
-      "name": "ShrmCutBrownWoodRecipe",
-      "type": "recipe",
-      "sortid": 1631,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_cut_brown_wood_recipe"
-    },
-    {
-      "name": "ShrmCutBlueWoodRecipe",
-      "type": "recipe",
-      "sortid": 1632,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_cut_blue_wood_recipe"
-    },
-    {
-      "name": "ShrmCutOrangeWoodRecipe",
-      "type": "recipe",
-      "sortid": 1633,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_cut_orange_wood_recipe"
-    },
-    {
-      "name": "ShrmCutPurpleWoodRecipe",
-      "type": "recipe",
-      "sortid": 1634,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "shrm_cut_purple_wood_recipe"
-    },
-    {
-      "name": "ShrmBrownChiseledSlabRecipe",
-      "type": "recipe",
-      "sortid": 1635,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shrm_brown_chiseled_slab_recipe"
-    },
-    {
-      "name": "ShrmBlueChiseledSlabRecipe",
-      "type": "recipe",
-      "sortid": 1636,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shrm_blue_chiseled_slab_recipe"
-    },
-    {
-      "name": "ShrmOrangeChiseledSlabRecipe",
-      "type": "recipe",
-      "sortid": 1637,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shrm_orange_chiseled_slab_recipe"
-    },
-    {
-      "name": "ShrmPurpleChiseledSlabRecipe",
-      "type": "recipe",
-      "sortid": 1638,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shrm_purple_chiseled_slab_recipe"
-    },
-    {
-      "name": "WoodLampShrmBrown",
-      "type": "recipe",
-      "sortid": 1639,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_shrm_brown"
-    },
-    {
-      "name": "WoodLampShrmBlue",
-      "type": "recipe",
-      "sortid": 1640,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_shrm_blue"
-    },
-    {
-      "name": "WoodLampShrmOrange",
-      "type": "recipe",
-      "sortid": 1641,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_shrm_orange"
-    },
-    {
-      "name": "WoodLampShrmPurple",
-      "type": "recipe",
-      "sortid": 1642,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_shrm_purple"
     },
     {
       "name": "GoldenAvoiderInactive",
@@ -14838,231 +14541,6 @@
       "registry_name": "pillar_acacia_recipe"
     },
     {
-      "name": "PillarJuniperRecipe",
-      "type": "recipe",
-      "sortid": 1678,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_juniper_recipe"
-    },
-    {
-      "name": "PillarShrmBluePillarRecipe",
-      "type": "recipe",
-      "sortid": 1679,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_shrm_blue_pillar_recipe"
-    },
-    {
-      "name": "PillarShrmOrangePillarRecipe",
-      "type": "recipe",
-      "sortid": 1680,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_shrm_orange_pillar_recipe"
-    },
-    {
-      "name": "PillarShrmPurplePillarRecipe",
-      "type": "recipe",
-      "sortid": 1681,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_shrm_purple_pillar_recipe"
-    },
-    {
-      "name": "PillarShrmRegularPillarRecipe",
-      "type": "recipe",
-      "sortid": 1682,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_shrm_regular_pillar_recipe"
-    },
-    {
-      "name": "NutwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1683,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "nutwood_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedNutwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1684,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_nutwood_wooden_slab_recipe"
-    },
-    {
-      "name": "SpicewoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1685,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "spicewood_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedSpicewoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1686,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_spicewood_wooden_slab_recipe"
-    },
-    {
-      "name": "NutwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1687,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "nutwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "StrippedNutwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1688,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_nutwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "SpicewoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1689,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "spicewood_wooden_stairs_recipe"
-    },
-    {
-      "name": "StrippedSpicewoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1690,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_spicewood_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledNutwoodRecipe",
-      "type": "recipe",
-      "sortid": 1691,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_nutwood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedNutwoodRecipe",
-      "type": "recipe",
-      "sortid": 1692,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_nutwood_recipe"
-    },
-    {
-      "name": "ChiseledSpicewoodRecipe",
-      "type": "recipe",
-      "sortid": 1693,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_spicewood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedSpicewoodRecipe",
-      "type": "recipe",
-      "sortid": 1694,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_spicewood_recipe"
-    },
-    {
-      "name": "ChiseledNutwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1695,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_nutwood_wooden_slab_recipe"
-    },
-    {
-      "name": "ChiseledStrippedNutwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1696,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_nutwood_wooden_slab_recipe"
-    },
-    {
-      "name": "ChiseledSpicewoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1697,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_spicewood_wooden_slab_recipe"
-    },
-    {
-      "name": "ChiseledStrippedSpicewoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1698,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_spicewood_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarNutwoodRecipe",
-      "type": "recipe",
-      "sortid": 1699,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_nutwood_recipe"
-    },
-    {
-      "name": "PillarSpicewoodRecipe",
-      "type": "recipe",
-      "sortid": 1700,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_spicewood_recipe"
-    },
-    {
-      "name": "WoodLampNutwood",
-      "type": "recipe",
-      "sortid": 1701,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_nutwood"
-    },
-    {
-      "name": "WoodLampSpicewood",
-      "type": "recipe",
-      "sortid": 1702,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_spicewood"
-    },
-    {
       "name": "FprNetherite",
       "type": "tag",
       "sortid": 1703,
@@ -15070,15 +14548,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fpr_netherite"
-    },
-    {
-      "name": "JungleAirshipRelicRecipe",
-      "type": "recipe",
-      "sortid": 1704,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "jungle_airship_relic_recipe"
     },
     {
       "name": "RustedWarhammer",
@@ -15280,15 +14749,6 @@
       "registry_name": "add_on_solar_dust"
     },
     {
-      "name": "AddOnDesolatSand",
-      "type": "recipe",
-      "sortid": 1720,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_desolat_sand"
-    },
-    {
       "name": "AddOnSoulFace",
       "type": "recipe",
       "sortid": 1721,
@@ -15298,159 +14758,6 @@
       "registry_name": "add_on_soul_face"
     },
     {
-      "name": "AshaHypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1722,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "asha_hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "AshaHypheriaWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1723,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "asha_hypheria_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledAshaHypheriaWoodRecipe",
-      "type": "recipe",
-      "sortid": 1724,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_asha_hypheria_wood_recipe"
-    },
-    {
-      "name": "ChiseledAshaHypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1725,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_asha_hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "HypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1726,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "HypheriaWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1727,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "hypheria_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledHypheriaWoodRecipe",
-      "type": "recipe",
-      "sortid": 1728,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_hypheria_wood_recipe"
-    },
-    {
-      "name": "ChiseledHypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1729,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "WoodLampAshaHypheria",
-      "type": "recipe",
-      "sortid": 1730,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_asha_hypheria"
-    },
-    {
-      "name": "WoodLampHypheria",
-      "type": "recipe",
-      "sortid": 1731,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_hypheria"
-    },
-    {
-      "name": "AddOnAlabaster",
-      "type": "recipe",
-      "sortid": 1734,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_alabaster"
-    },
-    {
-      "name": "StrippedHypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1738,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedHypheriaWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1739,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_hypheria_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedHypheriaWoodRecipe",
-      "type": "recipe",
-      "sortid": 1740,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_hypheria_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedHypheriaWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1741,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_hypheria_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarAshaHypheriaRecipe",
-      "type": "recipe",
-      "sortid": 1742,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_asha_hypheria_recipe"
-    },
-    {
-      "name": "PillarHypheriaRecipe",
-      "type": "recipe",
-      "sortid": 1743,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_hypheria_recipe"
-    },
-    {
       "name": "BENylSand",
       "type": "tag",
       "sortid": 1755,
@@ -15458,213 +14765,6 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "be_nyl_sand"
-    },
-    {
-      "name": "AddOnTyorite",
-      "type": "recipe",
-      "sortid": 1756,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_tyorite"
-    },
-    {
-      "name": "CucturWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1757,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "cuctur_wooden_slab_recipe"
-    },
-    {
-      "name": "CucturWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1758,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "cuctur_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledCucturWoodRecipe",
-      "type": "recipe",
-      "sortid": 1759,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_cuctur_wood_recipe"
-    },
-    {
-      "name": "ChiseledCucturWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1760,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_cuctur_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarCucturRecipe",
-      "type": "recipe",
-      "sortid": 1761,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_cuctur_recipe"
-    },
-    {
-      "name": "WoodLampCuctur",
-      "type": "recipe",
-      "sortid": 1762,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_cuctur"
-    },
-    {
-      "name": "StrippedCucturWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1763,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_cuctur_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedCucturWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1764,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_cuctur_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedCucturWoodRecipe",
-      "type": "recipe",
-      "sortid": 1765,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_cuctur_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedCucturWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1766,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_cuctur_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarDarkwoodRecipe",
-      "type": "recipe",
-      "sortid": 1767,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_darkwood_recipe"
-    },
-    {
-      "name": "WoodLampDarkwood",
-      "type": "recipe",
-      "sortid": 1768,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_darkwood"
-    },
-    {
-      "name": "WoodLampDarkwoodToGreen",
-      "type": "recipe",
-      "sortid": 1769,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wood_lamp_darkwood_to_green"
-    },
-    {
-      "name": "WoodLampDarkwoodToBrown",
-      "type": "recipe",
-      "sortid": 1770,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wood_lamp_darkwood_to_brown"
-    },
-    {
-      "name": "DarkwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1771,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "darkwood_wooden_slab_recipe"
-    },
-    {
-      "name": "DarkwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1772,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "darkwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledDarkwoodWoodRecipe",
-      "type": "recipe",
-      "sortid": 1773,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_darkwood_wood_recipe"
-    },
-    {
-      "name": "ChiseledDarkwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1774,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_darkwood_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedDarkwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1775,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_darkwood_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedDarkwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1776,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_darkwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedDarkwoodWoodRecipe",
-      "type": "recipe",
-      "sortid": 1777,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_darkwood_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedDarkwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1778,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_darkwood_wooden_slab_recipe"
     },
     {
       "name": "DesolatSandstone",
@@ -15920,114 +15020,6 @@
       }
     },
     {
-      "name": "AddOnDeadwood",
-      "type": "recipe",
-      "sortid": 1795,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_deadwood"
-    },
-    {
-      "name": "AddOnBlubosite",
-      "type": "recipe",
-      "sortid": 1796,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_blubosite"
-    },
-    {
-      "name": "PalmWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1797,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "palm_wooden_slab_recipe"
-    },
-    {
-      "name": "PalmWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1798,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "palm_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledPalmWoodRecipe",
-      "type": "recipe",
-      "sortid": 1799,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_palm_wood_recipe"
-    },
-    {
-      "name": "ChiseledPalmWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1800,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_palm_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarPalmRecipe",
-      "type": "recipe",
-      "sortid": 1801,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_palm_recipe"
-    },
-    {
-      "name": "WoodLampPalm",
-      "type": "recipe",
-      "sortid": 1802,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_palm"
-    },
-    {
-      "name": "StrippedPalmWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1803,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_palm_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedPalmWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1804,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_palm_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedPalmWoodRecipe",
-      "type": "recipe",
-      "sortid": 1805,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_palm_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedPalmWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1806,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_palm_wooden_slab_recipe"
-    },
-    {
       "name": "BlockofNetherSoulEssenceRecipe",
       "type": "recipe",
       "sortid": 1808,
@@ -16053,96 +15045,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "walking_on_cursed_land"
-    },
-    {
-      "name": "DeadwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1812,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "deadwood_wooden_slab_recipe"
-    },
-    {
-      "name": "DeadwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1813,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "deadwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledDeadwoodWoodRecipe",
-      "type": "recipe",
-      "sortid": 1814,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_deadwood_wood_recipe"
-    },
-    {
-      "name": "ChiseledDeadwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1815,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_deadwood_wooden_slab_recipe"
-    },
-    {
-      "name": "PillarDeadwoodRecipe",
-      "type": "recipe",
-      "sortid": 1816,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "pillar_deadwood_recipe"
-    },
-    {
-      "name": "WoodLampDeadwood",
-      "type": "recipe",
-      "sortid": 1817,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "wood_lamp_deadwood"
-    },
-    {
-      "name": "StrippedDeadwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1818,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_deadwood_wooden_slab_recipe"
-    },
-    {
-      "name": "StrippedDeadwoodWoodenStairsRecipe",
-      "type": "recipe",
-      "sortid": 1819,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "stripped_deadwood_wooden_stairs_recipe"
-    },
-    {
-      "name": "ChiseledStrippedDeadwoodWoodRecipe",
-      "type": "recipe",
-      "sortid": 1820,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "chiseled_stripped_deadwood_wood_recipe"
-    },
-    {
-      "name": "ChiseledStrippedDeadwoodWoodenSlabRecipe",
-      "type": "recipe",
-      "sortid": 1821,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chiseled_stripped_deadwood_wooden_slab_recipe"
     },
     {
       "name": "GambledSalvage",
@@ -16299,15 +15201,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "AddOnPraerieSand",
-      "type": "recipe",
-      "sortid": 1840,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "add_on_praerie_sand"
     },
     {
       "name": "KnifeSneakingDouble",
@@ -16648,15 +15541,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "GildedBlackstoneRecipe",
-      "type": "recipe",
-      "sortid": 1900,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "gilded_blackstone_recipe"
     },
     {
       "name": "RenewableDiamonds",
@@ -17129,69 +16013,6 @@
       "registry_name": "beacon_base"
     },
     {
-      "name": "AddonDullrockIERecipe",
-      "type": "recipe",
-      "sortid": 2014,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_dullrock_ie_recipe"
-    },
-    {
-      "name": "AddonDullthornsIERecipe",
-      "type": "recipe",
-      "sortid": 2015,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_dullthorns_ie_recipe"
-    },
-    {
-      "name": "AddonCrumblingBlackstoneIERecipe",
-      "type": "recipe",
-      "sortid": 2016,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_crumbling_blackstone_ie_recipe"
-    },
-    {
-      "name": "AddonRubbleIERecipe",
-      "type": "recipe",
-      "sortid": 2017,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_rubble_ie_recipe"
-    },
-    {
-      "name": "AddonBasaltSiltIERecipe",
-      "type": "recipe",
-      "sortid": 2018,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_basalt_silt_ie_recipe"
-    },
-    {
-      "name": "AddonBasalticMagmaIERecipe",
-      "type": "recipe",
-      "sortid": 2019,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_basaltic_magma_ie_recipe"
-    },
-    {
-      "name": "AddonTorisciteImmersionRecipe",
-      "type": "recipe",
-      "sortid": 2020,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "addon_toriscite_immersion_recipe"
-    },
-    {
       "name": "PulsatingDetectorUse",
       "type": "procedure",
       "sortid": 2021,
@@ -17424,6 +16245,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fpr_black_glass"
+    },
+    {
+      "name": "FprBlueGlass",
+      "type": "tag",
+      "sortid": 2039,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_blue_glass"
+    },
+    {
+      "name": "FprBrownGlass",
+      "type": "tag",
+      "sortid": 2040,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_brown_glass"
+    },
+    {
+      "name": "FprCyanGlass",
+      "type": "tag",
+      "sortid": 2041,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_cyan_glass"
+    },
+    {
+      "name": "FprGrayGlass",
+      "type": "tag",
+      "sortid": 2042,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_gray_glass"
     }
   ],
   "variable_elements": [
@@ -17823,29 +16680,29 @@
     "pl_pl": {
       "block.wobr.glistering_clay": "B³yszcz¹ca glina",
       "block.wobr.spruce_framed_gray_stained_glass": "Spruce Framed Gray Stained Glass",
-      "item.wobr.glistering_ash": "B³yszcz¹cy proch",
       "item.wobr.revolver_clip_2": "2-Rounded Revolver Clip",
+      "item.wobr.glistering_ash": "B³yszcz¹cy proch",
       "block.wobr.birch_framed_cyan_stained_glass": "Birch Framed Cyan Stained Glass",
-      "item.wobr.revolver_clip_4": "4-Rounded Revolver Clip",
-      "item.wobr.book_guide": "Guide Book",
       "item.minecraft.potion.effect.merchant_block_shulker_shells": "Merchant Block Budding Amethyst",
+      "item.wobr.book_guide": "Guide Book",
+      "item.wobr.revolver_clip_4": "4-Rounded Revolver Clip",
       "item.wobr.revolver_clip_5": "5-Rounded Revolver Clip",
       "item.wobr.revolver_clip_6": "6-Rounded Revolver Clip",
       "item.wobr.revolver_clip_7": "7-Rounded Revolver Clip",
       "item.minecraft.tipped_arrow.effect.sabre_attack_cooldown": "Arrow of Sabre Defence",
-      "block.wobr.oak_framed_light_gray_stained_glass": "Oak Framed Light Gray Stained Glass",
       "entity.wobr.spawn_entity_military_airship": "[Spawn Entity] Trader Airship",
-      "item.wobr.sand_dust": "Piaskowy proch",
-      "block.wobr.oak_framed_lime_stained_glass": "Oak Framed Lime Stained Glass",
-      "item.wobr.card_diamond_ace_winfleton": "As karo Winfletonów",
+      "block.wobr.oak_framed_light_gray_stained_glass": "Oak Framed Light Gray Stained Glass",
       "item.wobr.ormath_ranged_warrior_spawn_egg": "Ormath Javelin Warrior Spawn Egg",
+      "item.wobr.card_diamond_ace_winfleton": "As karo Winfletonów",
+      "block.wobr.oak_framed_lime_stained_glass": "Oak Framed Lime Stained Glass",
+      "item.wobr.sand_dust": "Piaskowy proch",
       "block.wobr.lockable_baedoor_golden_chest_locked": "Lockable Baedoor Golden Chest",
       "item.wobr.bullet_ranged": "Small Bullet Ranged",
       "item.wobr.black_sabre": "Black Sabre",
-      "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "block.wobr.white_horizontal_stained_glass_pane": "White Horizontal Stained Glass",
-      "block.wobr.baedoor_funt_block_door": "Baedoor Golden Door",
+      "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "advancements.guide_book_completed.descr": "Logic Only Advancement",
+      "block.wobr.baedoor_funt_block_door": "Baedoor Golden Door",
       "block.wobr.acacia_framed_light_gray_stained_glass": "Acacia Framed Light Gray Stained Glass",
       "block.wobr.sandy_birch_framed_light_blue_stained_glass": "Sandy Birch Framed Light Blue Stained Glass",
       "block.wobr.red_acacia_framed_light_gray_stained_glass": "Red Acacia Framed Light Gray Stained Glass",
@@ -17853,15 +16710,15 @@
       "item.minecraft.lingering_potion.effect.tribe_reputation_drop": "Lingering Tribe Reputation Drop",
       "item.minecraft.splash_potion.effect.nether_avoider_shielding": "Splash Nether Avoider Shielding",
       "advancements.letthe_hunt_begin.title": "Polowanie Rozpoczête!",
-      "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "item.minecraft.lingering_potion.effect.additional_player_message_potion": "Lingering Player Message Potion",
+      "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
       "block.wobr.glistering_sandstone_smooth": "Smooth Glistering Sandstone",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
-      "item.wobr.rusty_reaper": "Rusty Reaper",
       "advancements.new_technician_inthe_town.title": "New Technician In the Town",
-      "effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "item.wobr.rusty_reaper": "Rusty Reaper",
       "block.wobr.stripped_jungle_wooden_stairs": "Stripped Jungle Wooden Stairs",
+      "effect.nether_avoider_shielding": "Nether Avoider Shielding",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",
@@ -18547,29 +17404,29 @@
     "en_us": {
       "block.wobr.glistering_clay": "Glistering Clay",
       "block.wobr.spruce_framed_gray_stained_glass": "Spruce Framed Gray Stained Glass",
-      "item.wobr.glistering_ash": "Glistering Ash",
       "item.wobr.revolver_clip_2": "2-Rounded Revolver Clip",
+      "item.wobr.glistering_ash": "Glistering Ash",
       "block.wobr.birch_framed_cyan_stained_glass": "Birch Framed Cyan Stained Glass",
-      "item.wobr.book_guide": "Guide Book",
-      "item.wobr.revolver_clip_4": "4-Rounded Revolver Clip",
       "item.minecraft.potion.effect.merchant_block_shulker_shells": "Merchant Block Budding Amethyst",
+      "item.wobr.revolver_clip_4": "4-Rounded Revolver Clip",
+      "item.wobr.book_guide": "Guide Book",
       "item.wobr.revolver_clip_5": "5-Rounded Revolver Clip",
       "item.wobr.revolver_clip_6": "6-Rounded Revolver Clip",
       "item.wobr.revolver_clip_7": "7-Rounded Revolver Clip",
       "item.minecraft.tipped_arrow.effect.sabre_attack_cooldown": "Arrow of Sabre Defence",
-      "block.wobr.oak_framed_light_gray_stained_glass": "Oak Framed Light Gray Stained Glass",
       "entity.wobr.spawn_entity_military_airship": "[Spawn Entity] Military Airship",
-      "item.wobr.sand_dust": "Sand Dust",
-      "block.wobr.oak_framed_lime_stained_glass": "Oak Framed Lime Stained Glass",
-      "item.wobr.card_diamond_ace_winfleton": "Winfleton\u0027s Diamond Ace Card",
+      "block.wobr.oak_framed_light_gray_stained_glass": "Oak Framed Light Gray Stained Glass",
       "item.wobr.ormath_ranged_warrior_spawn_egg": "Ormath Javelin Warrior Spawn Egg",
+      "item.wobr.card_diamond_ace_winfleton": "Winfleton\u0027s Diamond Ace Card",
+      "block.wobr.oak_framed_lime_stained_glass": "Oak Framed Lime Stained Glass",
+      "item.wobr.sand_dust": "Sand Dust",
       "block.wobr.lockable_baedoor_golden_chest_locked": "Lockable Baedoor Golden Chest",
       "item.wobr.bullet_ranged": "Small Bullet Ranged",
       "item.wobr.black_sabre": "Black Sabre",
-      "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "block.wobr.white_horizontal_stained_glass_pane": "White Horizontal Stained Glass",
-      "advancements.guide_book_completed.descr": "Logic Only Advancement",
+      "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "block.wobr.baedoor_funt_block_door": "Baedoor Golden Door",
+      "advancements.guide_book_completed.descr": "Logic Only Advancement",
       "block.wobr.acacia_framed_light_gray_stained_glass": "Acacia Framed Light Gray Stained Glass",
       "block.wobr.sandy_birch_framed_light_blue_stained_glass": "Sandy Birch Framed Light Blue Stained Glass",
       "block.wobr.red_acacia_framed_light_gray_stained_glass": "Red Acacia Framed Light Gray Stained Glass",
@@ -18577,15 +17434,15 @@
       "item.minecraft.lingering_potion.effect.tribe_reputation_drop": "Lingering Tribe Reputation Drop",
       "item.minecraft.splash_potion.effect.nether_avoider_shielding": "Splash Nether Avoider Shielding",
       "advancements.letthe_hunt_begin.title": "Let the Hunt Begin",
-      "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "item.minecraft.lingering_potion.effect.additional_player_message_potion": "Lingering Player Message Potion",
+      "item.minecraft.lingering_potion.effect.nether_avoider_pulsating": "Lingering Nether Avoider Pulsating",
       "block.wobr.bamboo_framed_white_stained_glass": "Bamboo Framed White Stained Glass",
       "block.wobr.glistering_sandstone_smooth": "Smooth Glistering Sandstone",
       "block.wobr.sandy_birch_framed_cyan_stained_glass": "Sandy Birch Framed Cyan Stained Glass",
-      "item.wobr.rusty_reaper": "Rusty Reaper",
       "advancements.new_technician_inthe_town.title": "New Technician In Town",
-      "block.wobr.stripped_jungle_wooden_stairs": "Stripped Jungle Wooden Stairs",
+      "item.wobr.rusty_reaper": "Rusty Reaper",
       "effect.nether_avoider_shielding": "Nether Avoider Shielding",
+      "block.wobr.stripped_jungle_wooden_stairs": "Stripped Jungle Wooden Stairs",
       "block.wobr.polished_black_sand_slab": "Polished Vulcanic Sand Slab",
       "advancements.reveal.descr": "Grants you with vision of all recipes",
       "item.wobr.long_grip": "Long Grip",

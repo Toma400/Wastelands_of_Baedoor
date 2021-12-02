@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "1": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "2": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "3": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "4": {
       "tag": "wobr:fpr_crimson"
     },
     "5": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "6": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "7": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     },
     "8": {
-      "item": "minecraft:blue_stained_glass_pane"
+      "tag": "forge:fpr_blue_glass"
     }
   },
   "result": {

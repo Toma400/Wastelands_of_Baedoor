@@ -41,6 +41,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.model.ModelBox;
 import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -247,16 +248,17 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 		}
 	}
 
-	// Made with Blockbench 3.9.2
-	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+	// Made with Blockbench 3.8.4
+	// Exported for Minecraft version 1.14
 	// Paste this class into your mod and generate all required imports
-	public static class ModelOrmath_Shaman extends EntityModel<Entity> {
+	public static class ModelOrmath_Shaman extends EntityModel {
 		private final RendererModel Left_Arm;
 		private final RendererModel Right_Arm;
 		private final RendererModel cube_r1;
 		private final RendererModel Wand;
-		private final RendererModel Head;
 		private final RendererModel cube_r2;
+		private final RendererModel Head;
+		private final RendererModel cube_r3;
 		private final RendererModel LeftLeg;
 		private final RendererModel RightLeg;
 		private final RendererModel bb_main;
@@ -266,50 +268,53 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 			textureHeight = 64;
 			Left_Arm = new RendererModel(this);
 			Left_Arm.setRotationPoint(4.0F, 2.0F, -0.775F);
-			Left_Arm.setTextureOffset(8, 42).addBox(-0.18F, -0.213F, -1.437F, 3.0F, 11.0F, 3.0F, 0.1F, false);
+			Left_Arm.cubeList.add(new ModelBox(Left_Arm, 8, 42, -0.18F, -0.213F, -1.437F, 3, 11, 3, 0.1F, false));
 			Right_Arm = new RendererModel(this);
 			Right_Arm.setRotationPoint(-4.568F, 3.0621F, -0.4373F);
 			cube_r1 = new RendererModel(this);
 			cube_r1.setRotationPoint(0.04F, -0.0071F, -0.2427F);
 			Right_Arm.addChild(cube_r1);
 			setRotationAngle(cube_r1, -1.3526F, 0.0F, 0.0F);
-			cube_r1.setTextureOffset(20, 42).addBox(-3.458F, -0.3809F, -1.4446F, 3.0F, 11.0F, 3.0F, 0.1F, false);
+			cube_r1.cubeList.add(new ModelBox(cube_r1, 20, 42, -3.458F, -0.3809F, -1.4446F, 3, 11, 3, 0.1F, false));
 			Wand = new RendererModel(this);
-			Wand.setRotationPoint(5.568F, 36.9379F, 6.4373F);
+			Wand.setRotationPoint(5.568F, 20.9379F, 0.4373F);
 			Right_Arm.addChild(Wand);
-			Wand.setTextureOffset(0, 24).addBox(-8.4F, -40.2628F, -17.5357F, 2.0F, 24.0F, 2.0F, 0.0F, false);
+			cube_r2 = new RendererModel(this);
+			cube_r2.setRotationPoint(-7.4F, -24.7628F, -13.5357F);
+			Wand.addChild(cube_r2);
+			setRotationAngle(cube_r2, 0.1745F, 0.0F, 0.0F);
+			cube_r2.cubeList.add(new ModelBox(cube_r2, 0, 24, -1.0F, -1.5F, 1.0F, 2, 27, 2, -0.5F, false));
 			Head = new RendererModel(this);
 			Head.setRotationPoint(-0.45F, -0.875F, -4.52F);
 			setRotationAngle(Head, -0.1309F, 0.0F, 0.0F);
-			cube_r2 = new RendererModel(this);
-			cube_r2.setRotationPoint(0.05F, -0.95F, -1.08F);
-			Head.addChild(cube_r2);
-			setRotationAngle(cube_r2, 0.3054F, 0.0F, 0.0F);
-			cube_r2.setTextureOffset(36, 0).addBox(-3.05F, -2.8F, -2.92F, 6.0F, 6.0F, 6.0F, 0.0F, false);
+			cube_r3 = new RendererModel(this);
+			cube_r3.setRotationPoint(0.05F, -0.95F, -1.08F);
+			Head.addChild(cube_r3);
+			setRotationAngle(cube_r3, 0.3054F, 0.0F, 0.0F);
+			cube_r3.cubeList.add(new ModelBox(cube_r3, 36, 0, -3.05F, -2.8F, -2.92F, 6, 6, 6, 0.0F, false));
 			LeftLeg = new RendererModel(this);
 			LeftLeg.setRotationPoint(1.846F, 11.503F, 2.672F);
-			LeftLeg.setTextureOffset(8, 24).addBox(-2.5F, -0.5F, -2.5F, 5.0F, 13.0F, 5.0F, -0.1F, false);
+			LeftLeg.cubeList.add(new ModelBox(LeftLeg, 8, 24, -2.5F, -0.5F, -2.5F, 5, 13, 5, -0.1F, false));
 			RightLeg = new RendererModel(this);
 			RightLeg.setRotationPoint(-2.95F, 12.503F, 2.672F);
-			RightLeg.setTextureOffset(28, 24).addBox(-2.5F, -1.5F, -2.5F, 5.0F, 13.0F, 5.0F, -0.1F, false);
+			RightLeg.cubeList.add(new ModelBox(RightLeg, 28, 24, -2.5F, -1.5F, -2.5F, 5, 13, 5, -0.1F, false));
 			bb_main = new RendererModel(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
 			Body_r1 = new RendererModel(this);
 			Body_r1.setRotationPoint(0.0F, -15.7904F, -1.2527F);
 			bb_main.addChild(Body_r1);
 			setRotationAngle(Body_r1, 0.4538F, 0.0F, 0.0F);
-			Body_r1.setTextureOffset(0, 0).addBox(-5.524F, -9.664F, -1.576F, 10.0F, 16.0F, 8.0F, -0.4F, false);
+			Body_r1.cubeList.add(new ModelBox(Body_r1, 0, 0, -5.524F, -9.664F, -1.576F, 10, 16, 8, -0.4F, false));
 		}
 
 		@Override
-		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-				float alpha) {
-			Left_Arm.render(matrixStack, buffer, packedLight, packedOverlay);
-			Right_Arm.render(matrixStack, buffer, packedLight, packedOverlay);
-			Head.render(matrixStack, buffer, packedLight, packedOverlay);
-			LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-			RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+		public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+			Left_Arm.render(f5);
+			Right_Arm.render(f5);
+			Head.render(f5);
+			LeftLeg.render(f5);
+			RightLeg.render(f5);
+			bb_main.render(f5);
 		}
 
 		public void setRotationAngle(RendererModel modelRenderer, float x, float y, float z) {

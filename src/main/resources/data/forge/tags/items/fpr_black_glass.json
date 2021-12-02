@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "wobr:black_horizontal_stained_glass_pane",
-    "minecraft:black_stained_glass_pane",
-    "wobr:smooth_black_sand_slab"
+    "minecraft:black_stained_glass_pane"
   ]
 }

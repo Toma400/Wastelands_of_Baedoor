@@ -5,15 +5,15 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:BlackHorizontalStainedGlassPane"
+        "value": "CUSTOM:CyanHorizontalStainedGlassPane"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#15"
+        "value": "Blocks.STAINED_GLASS_PANE#9"
       }
     ],
     "blocks": [],
     "functions": [],
-    "name": "fpr_black_glass",
+    "name": "fpr_cyan_glass",
     "namespace": "forge"
   }
 }

@@ -32,7 +32,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.wobr.procedures.DartPoisonUseProcedure;
+import net.mcreator.wobr.procedures.DartWitherUseProcedure;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Random;
@@ -147,7 +147,7 @@ public class DartWitherProjectileItem extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				DartPoisonUseProcedure.executeProcedure($_dependencies);
+				DartWitherUseProcedure.executeProcedure($_dependencies);
 			}
 		}
 
