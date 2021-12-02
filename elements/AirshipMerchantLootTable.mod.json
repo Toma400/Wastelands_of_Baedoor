@@ -14,13 +14,13 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:BrotherhoodSabre"
+              "value": "CUSTOM:Lefs8"
             },
-            "weight": 1,
+            "weight": 7,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 2,
+            "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
@@ -30,11 +30,11 @@
             "item": {
               "value": "CUSTOM:LongRevolver"
             },
-            "weight": 5,
-            "minCount": 0,
+            "weight": 12,
+            "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 2,
+            "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
@@ -42,13 +42,13 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:ShortRevolver"
+              "value": "CUSTOM:Windsweeper"
             },
-            "weight": 10,
-            "minCount": 0,
+            "weight": 4,
+            "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 2,
+            "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
@@ -56,51 +56,23 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:RustyReaper"
+              "value": "CUSTOM:CrocodileGunScheme"
+            },
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WindsweeperScheme"
             },
             "weight": 9,
-            "minCount": 0,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 2,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:ShortRevolverScheme"
-            },
-            "weight": 50,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:LongRevolverScheme"
-            },
-            "weight": 30,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Lefs8"
-            },
-            "weight": 5,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -112,7 +84,7 @@
         ]
       },
       {
-        "minrolls": 0,
+        "minrolls": 1,
         "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
@@ -121,65 +93,9 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:PepperBox"
-            },
-            "weight": 35,
-            "minCount": 1,
-            "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:EnhancedPepperBox"
-            },
-            "weight": 15,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:AyerShotgun"
-            },
-            "weight": 8,
-            "minCount": 0,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:HardenedIronSabre"
+              "value": "CUSTOM:IronSabre"
             },
             "weight": 25,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 1,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.IRON_SWORD"
-            },
-            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -191,13 +107,27 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.LEATHER_LEGGINGS"
+              "value": "CUSTOM:GoldenScimitar"
             },
-            "weight": 15,
+            "weight": 14,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 2,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:PrismarineSabre"
+            },
+            "weight": 7,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 2,
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
@@ -205,20 +135,20 @@
         ]
       },
       {
-        "minrolls": 2,
-        "maxrolls": 4,
+        "minrolls": 1,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
             "item": {
-              "value": "Items.ROTTEN_FLESH"
+              "value": "Blocks.RED_FLOWER#1"
             },
             "weight": 5,
-            "minCount": 1,
-            "maxCount": 7,
+            "minCount": 6,
+            "maxCount": 22,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -228,11 +158,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.GOLDEN_APPLE#0"
+              "value": "Items.COOKED_PORKCHOP"
             },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "weight": 12,
+            "minCount": 4,
+            "maxCount": 20,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -242,11 +172,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.PORKCHOP"
+              "value": "Items.COOKED_BEEF"
             },
-            "weight": 25,
-            "minCount": 2,
-            "maxCount": 5,
+            "weight": 12,
+            "minCount": 6,
+            "maxCount": 20,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -256,39 +186,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.BEEF"
+              "value": "Items.COOKED_FISH#1"
             },
-            "weight": 25,
-            "minCount": 2,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.FISH#0"
-            },
-            "weight": 75,
-            "minCount": 3,
-            "maxCount": 9,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.FISH#2"
-            },
-            "weight": 25,
-            "minCount": 1,
-            "maxCount": 5,
+            "weight": 20,
+            "minCount": 9,
+            "maxCount": 22,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -298,20 +200,20 @@
         ]
       },
       {
-        "minrolls": 4,
-        "maxrolls": 6,
+        "minrolls": 1,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
             "item": {
               "value": "Items.GOLD_INGOT"
             },
-            "weight": 75,
-            "minCount": 1,
-            "maxCount": 5,
+            "weight": 55,
+            "minCount": 5,
+            "maxCount": 27,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -323,9 +225,9 @@
             "item": {
               "value": "CUSTOM:BaedoorGoldIngot"
             },
-            "weight": 55,
-            "minCount": 1,
-            "maxCount": 3,
+            "weight": 70,
+            "minCount": 4,
+            "maxCount": 20,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -337,7 +239,21 @@
             "item": {
               "value": "Items.EMERALD"
             },
-            "weight": 75,
+            "weight": 45,
+            "minCount": 3,
+            "maxCount": 20,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Items.DIAMOND"
+            },
+            "weight": 20,
             "minCount": 1,
             "maxCount": 6,
             "minEnchantmentLevel": 0,
@@ -349,39 +265,11 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:SmallBullet"
+              "value": "Items.IRON_INGOT"
             },
-            "weight": 100,
-            "minCount": 1,
-            "maxCount": 22,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:LargeBullet"
-            },
-            "weight": 75,
-            "minCount": 1,
-            "maxCount": 12,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Slug"
-            },
-            "weight": 25,
-            "minCount": 1,
-            "maxCount": 7,
+            "weight": 45,
+            "minCount": 10,
+            "maxCount": 32,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -393,9 +281,79 @@
             "item": {
               "value": "CUSTOM:BaedoorFunt"
             },
-            "weight": 15,
+            "weight": 35,
+            "minCount": 10,
+            "maxCount": 32,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Blocks.SEA_LANTERN"
+            },
+            "weight": 7,
+            "minCount": 2,
+            "maxCount": 6,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Items.SHULKER_SHELL"
+            },
+            "weight": 7,
             "minCount": 1,
-            "maxCount": 4,
+            "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Blocks.SEA_PICKLE"
+            },
+            "weight": 10,
+            "minCount": 4,
+            "maxCount": 12,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Items.CHORUS_FRUIT_POPPED"
+            },
+            "weight": 10,
+            "minCount": 4,
+            "maxCount": 12,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:GlisteringAsh"
+            },
+            "weight": 15,
+            "minCount": 12,
+            "maxCount": 64,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -405,7 +363,7 @@
         ]
       }
     ],
-    "name": "chests/airship_bandit",
+    "name": "chests/airship_merchant",
     "namespace": "mod"
   }
 }

@@ -26,7 +26,7 @@ public class CurarePoisonPotionItemPotion extends WobrModElements.ModElement {
 	}
 	public static class PotionCustom extends Potion {
 		public PotionCustom() {
-			super(new EffectInstance(CurarePoisonPotionEffect.potion, 3600, 0, false, true));
+			super(new EffectInstance(CurarePoisonPotionEffect.potion, 20, 0, false, true));
 			setRegistryName("curare_poison");
 		}
 	}

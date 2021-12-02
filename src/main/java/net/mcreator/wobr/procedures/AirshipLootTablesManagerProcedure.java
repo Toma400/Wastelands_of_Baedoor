@@ -9,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.wobr.block.AirshipMerchantChestBlock;
 import net.mcreator.wobr.block.AirshipBanditChestBlock;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
@@ -47,21 +48,14 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipBanditChestBlock.block)) {
-			if ((net.minecraftforge.fml.ModList.get().isLoaded("byg"))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit_loot_table_byg\"} replace");
-				}
-			} else {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit\"} replace");
-				}
+			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+				world.getWorld().getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+						"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit_loot_table_byg\"} replace");
 			}
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMerchantChestBlock.block)) {
+			System.out.println("Awaiting.");
 		}
 	}
 }
