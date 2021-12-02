@@ -18,7 +18,7 @@ public class RodoftheWindsGlowPotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:rodofthe_winds_glow")
 	public static final Effect potion = null;
 	public RodoftheWindsGlowPotionEffect(WobrModElements instance) {
-		super(instance, 2049);
+		super(instance, 2125);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -31,7 +31,7 @@ public class RodoftheWindsGlowPotionEffect extends WobrModElements.ModElement {
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -1);
 			setRegistryName("rodofthe_winds_glow");
-			potionIcon = new ResourceLocation("wobr:textures/32card.png");
+			potionIcon = new ResourceLocation("wobr:textures/curare.png");
 		}
 
 		@Override

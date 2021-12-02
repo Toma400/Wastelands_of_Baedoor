@@ -26,7 +26,7 @@ public class AdditionalPlayerMessagePotionPotionEffect extends WobrModElements.M
 	@ObjectHolder("wobr:additional_player_message_potion")
 	public static final Effect potion = null;
 	public AdditionalPlayerMessagePotionPotionEffect(WobrModElements instance) {
-		super(instance, 2040);
+		super(instance, 2116);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -39,7 +39,7 @@ public class AdditionalPlayerMessagePotionPotionEffect extends WobrModElements.M
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -3826426);
 			setRegistryName("additional_player_message_potion");
-			potionIcon = new ResourceLocation("wobr:textures/card_spade_ace_winfleton.png");
+			potionIcon = new ResourceLocation("wobr:textures/effect_message.png");
 		}
 
 		@Override

@@ -18,7 +18,7 @@ public class MerchantBlockElytraPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:merchant_block_elytra")
 	public static final Effect potion = null;
 	public MerchantBlockElytraPotionEffect(WobrModElements instance) {
-		super(instance, 2060);
+		super(instance, 2131);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -31,7 +31,7 @@ public class MerchantBlockElytraPotionEffect extends WobrModElements.ModElement 
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -13421773);
 			setRegistryName("merchant_block_elytra");
-			potionIcon = new ResourceLocation("wobr:textures/32card.png");
+			potionIcon = new ResourceLocation("wobr:textures/elytra.png");
 		}
 
 		@Override

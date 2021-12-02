@@ -11,8 +11,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
-import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.procedures.NetherAvoiderShieldProcedure;
 import net.mcreator.wobr.WobrModElements;
@@ -25,7 +25,7 @@ public class NetherAvoiderShieldingPotionEffect extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:nether_avoider_shielding")
 	public static final Effect potion = null;
 	public NetherAvoiderShieldingPotionEffect(WobrModElements instance) {
-		super(instance, 2047);
+		super(instance, 2123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -36,7 +36,7 @@ public class NetherAvoiderShieldingPotionEffect extends WobrModElements.ModEleme
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.NEUTRAL, -14960215);
+			super(EffectType.BENEFICIAL, -15113686);
 			setRegistryName("nether_avoider_shielding");
 			potionIcon = new ResourceLocation("wobr:textures/nether_shielding.png");
 		}
@@ -48,31 +48,31 @@ public class NetherAvoiderShieldingPotionEffect extends WobrModElements.ModEleme
 
 		@Override
 		public boolean isBeneficial() {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean isInstant() {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRenderInvText(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRender(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRenderHUD(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
-		public void applyAttributesModifiersToEntity(LivingEntity entity, AbstractAttributeMap attributeMapIn, int amplifier) {
+		public void affectEntity(Entity source, Entity indirectSource, LivingEntity entity, int amplifier, double health) {
 			World world = entity.world;
 			double x = entity.getPosX();
 			double y = entity.getPosY();

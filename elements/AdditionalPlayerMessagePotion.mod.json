@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "[Additional Player Message Potion]",
+    "icon": "effect_message.png",
+    "color": {
+      "value": -3826426,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "MessageCallout"
+    },
+    "onExpired": {
+      "name": "MessageOutcall"
+    }
+  }
+}

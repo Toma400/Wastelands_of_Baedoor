@@ -25,7 +25,7 @@ public class AntiWanderingTraderPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:anti_wandering_trader")
 	public static final Effect potion = null;
 	public AntiWanderingTraderPotionEffect(WobrModElements instance) {
-		super(instance, 2046);
+		super(instance, 2122);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -36,9 +36,9 @@ public class AntiWanderingTraderPotionEffect extends WobrModElements.ModElement 
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.NEUTRAL, -6750055);
+			super(EffectType.NEUTRAL, -10331753);
 			setRegistryName("anti_wandering_trader");
-			potionIcon = new ResourceLocation("wobr:textures/curare.png");
+			potionIcon = new ResourceLocation("wobr:textures/card_spade_ace_winfleton.png");
 		}
 
 		@Override

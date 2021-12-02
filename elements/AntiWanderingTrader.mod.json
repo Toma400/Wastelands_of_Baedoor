@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "[Anti Wandering Trader]",
+    "icon": "card_spade_ace_winfleton.png",
+    "color": {
+      "value": -10331753,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "AntiWanderingTraderPotion"
+    }
+  }
+}

@@ -18,7 +18,7 @@ public class MerchantBlockBuddingAmethystPotionEffect extends WobrModElements.Mo
 	@ObjectHolder("wobr:merchant_block_budding_amethyst")
 	public static final Effect potion = null;
 	public MerchantBlockBuddingAmethystPotionEffect(WobrModElements instance) {
-		super(instance, 2057);
+		super(instance, 2128);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -31,7 +31,7 @@ public class MerchantBlockBuddingAmethystPotionEffect extends WobrModElements.Mo
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -13421773);
 			setRegistryName("merchant_block_budding_amethyst");
-			potionIcon = new ResourceLocation("wobr:textures/32card.png");
+			potionIcon = new ResourceLocation("wobr:textures/budding_amethyst.png");
 		}
 
 		@Override

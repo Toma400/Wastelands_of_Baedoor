@@ -18,7 +18,7 @@ public class SingleReloadTypePotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:single_reload_type")
 	public static final Effect potion = null;
 	public SingleReloadTypePotionEffect(WobrModElements instance) {
-		super(instance, 2043);
+		super(instance, 2119);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -29,9 +29,9 @@ public class SingleReloadTypePotionEffect extends WobrModElements.ModElement {
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.NEUTRAL, -1);
+			super(EffectType.NEUTRAL, -10863606);
 			setRegistryName("single_reload_type");
-			potionIcon = new ResourceLocation("wobr:textures/5_rounds_revolver.png");
+			potionIcon = new ResourceLocation("wobr:textures/xp_gun.png");
 		}
 
 		@Override

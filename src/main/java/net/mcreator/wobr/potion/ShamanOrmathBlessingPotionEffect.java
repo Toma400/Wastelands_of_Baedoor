@@ -25,7 +25,7 @@ public class ShamanOrmathBlessingPotionEffect extends WobrModElements.ModElement
 	@ObjectHolder("wobr:shaman_ormath_blessing")
 	public static final Effect potion = null;
 	public ShamanOrmathBlessingPotionEffect(WobrModElements instance) {
-		super(instance, 2050);
+		super(instance, 2126);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -36,7 +36,7 @@ public class ShamanOrmathBlessingPotionEffect extends WobrModElements.ModElement
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.NEUTRAL, -1);
+			super(EffectType.BENEFICIAL, -1);
 			setRegistryName("shaman_ormath_blessing");
 			potionIcon = new ResourceLocation("wobr:textures/head_ormath_2.png");
 		}
@@ -48,7 +48,7 @@ public class ShamanOrmathBlessingPotionEffect extends WobrModElements.ModElement
 
 		@Override
 		public boolean isBeneficial() {
-			return false;
+			return true;
 		}
 
 		@Override

@@ -18,7 +18,7 @@ public class SabreAttackCooldownPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:sabre_attack_cooldown")
 	public static final Effect potion = null;
 	public SabreAttackCooldownPotionEffect(WobrModElements instance) {
-		super(instance, 2042);
+		super(instance, 2118);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -31,7 +31,7 @@ public class SabreAttackCooldownPotionEffect extends WobrModElements.ModElement 
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -6684724);
 			setRegistryName("sabre_attack_cooldown");
-			potionIcon = new ResourceLocation("wobr:textures/regular_dark_oak.png");
+			potionIcon = new ResourceLocation("wobr:textures/xp_sabre.png");
 		}
 
 		@Override

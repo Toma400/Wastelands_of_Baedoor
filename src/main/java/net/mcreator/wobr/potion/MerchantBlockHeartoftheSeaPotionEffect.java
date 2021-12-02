@@ -18,7 +18,7 @@ public class MerchantBlockHeartoftheSeaPotionEffect extends WobrModElements.ModE
 	@ObjectHolder("wobr:merchant_block_heartofthe_sea")
 	public static final Effect potion = null;
 	public MerchantBlockHeartoftheSeaPotionEffect(WobrModElements instance) {
-		super(instance, 2059);
+		super(instance, 2130);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -31,7 +31,7 @@ public class MerchantBlockHeartoftheSeaPotionEffect extends WobrModElements.ModE
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -13421773);
 			setRegistryName("merchant_block_heartofthe_sea");
-			potionIcon = new ResourceLocation("wobr:textures/32card.png");
+			potionIcon = new ResourceLocation("wobr:textures/heart_of_the_sea.png");
 		}
 
 		@Override
