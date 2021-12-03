@@ -23,10 +23,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -47,12 +45,11 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.block.material.Material;
 
 import net.mcreator.wobr.procedures.TribeAttackValueProcedure;
 import net.mcreator.wobr.procedures.OrmathHuntersSpawnProcedure;
+import net.mcreator.wobr.procedures.EntityOrmathRaiderConditionProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
-import net.mcreator.wobr.item.StoneSpearItem;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
@@ -69,7 +66,7 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(120).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.5f, 2f)).build("ormath_rider").setRegistryName("ormath_rider");
 	public OrmathRiderEntity(WobrModElements instance) {
-		super(instance, 467);
+		super(instance, 2148);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -84,31 +81,29 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("bamboo_jungle")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("bamboo_jungle_hills")))
+				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("jungle")))
 				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("jungle_hills")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("jungle_edge")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("dark_forest")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("modified_jungle")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("modified_jungle_edge")))
 				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("dark_forest_hills")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("bamboo_jungle")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("bamboo_jungle_hills")))
-				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 5, 1, 1));
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 10, 1, 1));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos,
-						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
+				(entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return EntityOrmathRaiderConditionProcedure.executeProcedure(ImmutableMap.of("world", world));
+				});
 	}
 
 	@SubscribeEvent
@@ -132,7 +127,6 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 			super(type, world);
 			experienceValue = 7;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StoneSpearItem.block));
 		}
 
 		@Override
@@ -153,22 +147,12 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, false));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.5, false));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(8, new SwimGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, false));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.5, false));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}
 
 		@Override
@@ -193,6 +177,8 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
 			if (source == DamageSource.FALL)
 				return false;
 			if (source == DamageSource.CACTUS)

@@ -15,19 +15,15 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.monster.VexEntity;
@@ -38,9 +34,7 @@ import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -51,16 +45,15 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.wobr.procedures.AvoiderTeamAddProcedure;
+import net.mcreator.wobr.procedures.EntityWindSpiritConditionProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.item.GlisteringAshItem;
 import net.mcreator.wobr.WobrModElements;
 
-import java.util.Map;
-import java.util.HashMap;
-
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class WindSpiritEntity extends WobrModElements.ModElement {
@@ -68,7 +61,7 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("wind_spirit").setRegistryName("wind_spirit");
 	public WindSpiritEntity(WobrModElements instance) {
-		super(instance, 461);
+		super(instance, 2143);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -85,16 +78,21 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 			boolean biomeCriteria = false;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("desert")))
 				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("swamp")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("frozen_river")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("swamp")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
 			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 1, 1));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return EntityWindSpiritConditionProcedure.executeProcedure(ImmutableMap.of("world", world));
+				});
 	}
 
 	@SubscribeEvent
@@ -131,13 +129,12 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, VexEntity.class, false, false));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, false));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
-			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.3, true));
-			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(8, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, VexEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, false));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.3, true));
+			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 		}
 
 		@Override
@@ -186,23 +183,13 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 				return false;
 			if (source == DamageSource.DROWN)
 				return false;
+			if (source == DamageSource.DRAGON_BREATH)
+				return false;
+			if (source == DamageSource.WITHER)
+				return false;
+			if (source.getDamageType().equals("witherSkull"))
+				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public ILivingEntityData onInitialSpawn(IWorld world, DifficultyInstance difficulty, SpawnReason reason, ILivingEntityData livingdata,
-				CompoundNBT tag) {
-			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				AvoiderTeamAddProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
 		}
 
 		@Override

@@ -1,0 +1,11 @@
+{
+	"type": "betterend:alloying",
+	"group": "recipe_group",
+	"ingredients": ["minecraft:iron_ingot", "wobr:glistering_ash"],
+	"result": {
+		"item": "betterendforge:thallasium_ingot",
+		"count": 1
+	},
+	"experience": 0.0,
+	"smelttime": 350
+}

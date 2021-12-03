@@ -14,7 +14,7 @@
     "blastingReturnStack": {
       "value": "Blocks.END_STONE"
     },
-    "name": "renewable_flavolite_better_end",
+    "name": "flavolite_renewability",
     "namespace": "mod"
   }
 }

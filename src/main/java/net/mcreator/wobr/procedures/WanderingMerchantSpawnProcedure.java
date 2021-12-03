@@ -68,36 +68,38 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof WanderingTraderEntity) && (WobrModVariables.MapVariables.get(world).Merchant == (false)))) {
-			if ((25 >= (Math.random() * 100))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"effect give @e[distance=..50] wobr:anti_wandering_trader 3");
-				}
-				if ((50 >= (Math.random() * 100))) {
-					if (world instanceof World && !world.getWorld().isRemote) {
-						Entity entityToSpawn = new WanderingMerchantEntity.CustomEntity(WanderingMerchantEntity.entity, world.getWorld());
-						entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-						if (entityToSpawn instanceof MobEntity)
-							((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-									SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-						world.addEntity(entityToSpawn);
+			if ((WobrModVariables.MapVariables.get(world).KF_Ent_Merchant == (true))) {
+				if ((25 >= (Math.random() * 100))) {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								"effect give @e[distance=..50] wobr:anti_wandering_trader 3");
 					}
-					WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
-					WobrModVariables.MapVariables.get(world).syncData(world);
-				} else {
-					if (world instanceof World && !world.getWorld().isRemote) {
-						Entity entityToSpawn = new WanderingMerchantFirearmsEntity.CustomEntity(WanderingMerchantFirearmsEntity.entity,
-								world.getWorld());
-						entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-						if (entityToSpawn instanceof MobEntity)
-							((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-									SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-						world.addEntity(entityToSpawn);
+					if ((50 >= (Math.random() * 100))) {
+						if (world instanceof World && !world.getWorld().isRemote) {
+							Entity entityToSpawn = new WanderingMerchantEntity.CustomEntity(WanderingMerchantEntity.entity, world.getWorld());
+							entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+							if (entityToSpawn instanceof MobEntity)
+								((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+							world.addEntity(entityToSpawn);
+						}
+						WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
+						WobrModVariables.MapVariables.get(world).syncData(world);
+					} else {
+						if (world instanceof World && !world.getWorld().isRemote) {
+							Entity entityToSpawn = new WanderingMerchantFirearmsEntity.CustomEntity(WanderingMerchantFirearmsEntity.entity,
+									world.getWorld());
+							entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+							if (entityToSpawn instanceof MobEntity)
+								((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+							world.addEntity(entityToSpawn);
+						}
+						WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
+						WobrModVariables.MapVariables.get(world).syncData(world);
 					}
-					WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
-					WobrModVariables.MapVariables.get(world).syncData(world);
 				}
 			}
 		}

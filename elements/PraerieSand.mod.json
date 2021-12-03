@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "Blocks.SAND#1"
     },
-    "name": "add_on_praerie_sand",
+    "name": "praerie_sand",
     "namespace": "mod"
   }
 }

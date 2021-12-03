@@ -20,13 +20,12 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
@@ -55,7 +54,7 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ormath_villager").setRegistryName("ormath_villager");
 	public OrmathVillagerEntity(WobrModElements instance) {
-		super(instance, 463);
+		super(instance, 2145);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -101,9 +100,8 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
-			this.goalSelector.addGoal(4, new AvoidEntityGoal(this, CreeperEntity.class, (float) 15, 1, 1.2));
-			this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
-			this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
+			this.goalSelector.addGoal(4, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(5, new OpenDoorGoal(this, false));
 		}
 
 		@Override
@@ -138,6 +136,8 @@ public class OrmathVillagerEntity extends WobrModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
 			if (source == DamageSource.CACTUS)
 				return false;
 			if (source == DamageSource.DROWN)

@@ -80,8 +80,9 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				drops.addProperty("nether_soul_essence", (true));
 				settings.add("drops", drops);
 				JsonObject mob_spawn = new JsonObject();
+				mob_spawn.addProperty("merchant", (true));
 				mob_spawn.addProperty("wind_spirit", (true));
-				mob_spawn.addProperty("ormath_raiders", (true));
+				mob_spawn.addProperty("ormath_raiders", (false));
 				settings.add("mob_spawn", mob_spawn);
 				JsonObject experimental = new JsonObject();
 				experimental.addProperty("developers_mode", (false));
@@ -153,6 +154,9 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Ent_Orm_Raider = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
 						.get("ormath_raiders").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Ent_Merchant = (boolean) config_exist.get("mob_spawn").getAsJsonObject().get("merchant")
+						.getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Xp_Structures = (boolean) config_exist.get("experimental").getAsJsonObject()
 						.get("additional_structures_generating").getAsBoolean();

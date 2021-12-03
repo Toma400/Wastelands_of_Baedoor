@@ -32,7 +32,7 @@ public class ExperienceValuesCommand extends WobrModElements.ModElement {
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("wobrCheck_Experience").requires(s -> s.hasPermissionLevel(1))
+		return LiteralArgumentBuilder.<CommandSource>literal("wobrCheck_Experience")
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 

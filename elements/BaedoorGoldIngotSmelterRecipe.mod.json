@@ -2,16 +2,16 @@
   "_fv": 24,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Blasting",
     "xpReward": 1.0,
-    "cookingTime": 200,
+    "cookingTime": 100,
     "recipeRetstackSize": 1,
     "group": "baedoor_gold_ingot",
     "recipeShapeless": false,
-    "smeltingInputStack": {
+    "blastingInputStack": {
       "value": "CUSTOM:PaleGoldIngot"
     },
-    "smeltingReturnStack": {
+    "blastingReturnStack": {
       "value": "CUSTOM:BaedoorGoldIngot"
     },
     "name": "baedoor_gold_ingot_smelter_recipe",

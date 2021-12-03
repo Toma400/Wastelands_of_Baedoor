@@ -9,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.wobr.block.AirshipMilitaryChestBlock;
 import net.mcreator.wobr.block.AirshipMerchantChestBlock;
 import net.mcreator.wobr.block.AirshipBanditChestBlock;
 import net.mcreator.wobr.WobrModElements;
@@ -55,6 +56,8 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 						"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit_loot_table_byg\"} replace");
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMerchantChestBlock.block)) {
+			System.out.println("Awaiting.");
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMilitaryChestBlock.block)) {
 			System.out.println("Awaiting.");
 		}
 	}

@@ -6,41 +6,41 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "book_guide",
+    "group": "thallasium_ingot",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:FirearmLock"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": ""
       },
       {
-        "value": "Items.BOOK"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
+        "value": "Items.PRISMARINE_CRYSTALS"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BookGuide"
+      "value": "Items.PRISMARINE_CRYSTALS"
     },
-    "name": "book_guide_recipe",
+    "name": "thallasium_ingot_renewability",
     "namespace": "mod"
   }
 }

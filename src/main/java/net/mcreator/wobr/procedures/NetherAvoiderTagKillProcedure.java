@@ -71,7 +71,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
 									|| ((!(entity instanceof BanditEntity.CustomEntity))
 											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
-					|| (((((EntityTypeTags.getCollection()
+					|| ((((((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
 							.contains(entity.getType()))
 							|| (EntityTypeTags.getCollection()
@@ -122,7 +122,10 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													|| (EntityTypeTags.getCollection()
 															.getOrCreate(new ResourceLocation(
 																	("forge:avoider_xenoclus").toLowerCase(java.util.Locale.ENGLISH)))
-															.contains(entity.getType()))))))))
+															.contains(entity.getType()))))))
+							|| (EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_voidcraft").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType())))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

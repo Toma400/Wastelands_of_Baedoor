@@ -3,7 +3,7 @@
   "_type": "command",
   "definition": {
     "commandName": "wobrCheck_Experience",
-    "permissionLevel": "1",
+    "permissionLevel": "No requirement",
     "onCommandExecuted": {
       "name": "GetExperienceValues"
     }

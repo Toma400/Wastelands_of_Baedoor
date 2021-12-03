@@ -6,13 +6,25 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "end_dust",
+    "group": "crystal_shards",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
       },
       {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
         "value": "CUSTOM:GlisteringAsh"
       },
       {
@@ -22,25 +34,13 @@
         "value": "CUSTOM:GlisteringAsh"
       },
       {
-        "value": "CUSTOM:SandDust"
-      },
-      {
-        "value": "CUSTOM:GlisteringAsh"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:GlisteringAsh"
-      },
-      {
-        "value": ""
+        "value": "Items.ENDER_PEARL"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CrackedLavaBlock"
+      "value": "CUSTOM:MusicDiscDrganie"
     },
-    "name": "renewable_end_dust_better_end",
+    "name": "crystal_shards_renewability",
     "namespace": "mod"
   }
 }

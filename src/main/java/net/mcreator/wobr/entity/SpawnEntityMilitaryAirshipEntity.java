@@ -50,7 +50,7 @@ public class SpawnEntityMilitaryAirshipEntity extends WobrModElements.ModElement
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(1f, 1f)).build("spawn_entity_military_airship").setRegistryName("spawn_entity_military_airship");
 	public SpawnEntityMilitaryAirshipEntity(WobrModElements instance) {
-		super(instance, 2027);
+		super(instance, 2157);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -133,6 +133,18 @@ public class SpawnEntityMilitaryAirshipEntity extends WobrModElements.ModElement
 				return false;
 			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
+			if (source.isExplosion())
+				return false;
+			if (source.getDamageType().equals("trident"))
+				return false;
+			if (source == DamageSource.ANVIL)
+				return false;
+			if (source == DamageSource.DRAGON_BREATH)
+				return false;
+			if (source == DamageSource.WITHER)
+				return false;
+			if (source.getDamageType().equals("witherSkull"))
+				return false;
 			return super.attackEntityFrom(source, amount);
 		}
 
@@ -177,17 +189,17 @@ public class SpawnEntityMilitaryAirshipEntity extends WobrModElements.ModElement
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0);
+				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(999);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(0);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
 			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
-			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0);
+			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.3);
 		}
 
 		@Override

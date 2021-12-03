@@ -21,7 +21,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -67,7 +67,7 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ormath_shaman").setRegistryName("ormath_shaman");
 	public OrmathShamanEntity(WobrModElements instance) {
-		super(instance, 459);
+		super(instance, 2144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -122,24 +122,14 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(7, new SwimGoal(this));
-			this.goalSelector.addGoal(8, new AvoidEntityGoal(this, CreeperEntity.class, (float) 15, 1, 1.2));
-			this.goalSelector.addGoal(9, new OpenDoorGoal(this, true));
-			this.goalSelector.addGoal(10, new OpenDoorGoal(this, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
+			this.goalSelector.addGoal(7, new AvoidEntityGoal(this, CreeperEntity.class, (float) 15, 1, 1.2));
+			this.goalSelector.addGoal(8, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(9, new OpenDoorGoal(this, false));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
@@ -180,6 +170,8 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
 			if (source == DamageSource.CACTUS)
 				return false;
 			if (source == DamageSource.DROWN)

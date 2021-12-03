@@ -21,12 +21,13 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -63,7 +64,7 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(110).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ormath_hunter").setRegistryName("ormath_hunter");
 	public OrmathHunterEntity(WobrModElements instance) {
-		super(instance, 468);
+		super(instance, 2149);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -116,21 +117,12 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, false));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.5, false));
-			this.goalSelector.addGoal(5, new FollowMobGoal(this, (float) 1, 10, 5));
-			this.goalSelector.addGoal(6, new LookAtGoal(this, OrmathRiderEntity.CustomEntity.class, (float) 5));
-			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, false));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.5, false));
+			this.goalSelector.addGoal(4, new FollowMobGoal(this, (float) 1, 10, 50));
+			this.goalSelector.addGoal(5, new LookAtGoal(this, OrmathRiderEntity.CustomEntity.class, (float) 30));
+			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(9, new SwimGoal(this));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
@@ -164,6 +156,17 @@ public class OrmathHunterEntity extends WobrModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:ormath_hunter_death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
+			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override
