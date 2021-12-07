@@ -69,14 +69,14 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof WanderingTraderEntity) && (WobrModVariables.MapVariables.get(world).Merchant == (false)))) {
 			if ((WobrModVariables.MapVariables.get(world).KF_Ent_Merchant == (true))) {
-				if ((25 >= (Math.random() * 100))) {
+				if ((WobrModVariables.MapVariables.get(world).KF_Ent_Merchant_A >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager().handleCommand(
 								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 								"effect give @e[distance=..50] wobr:anti_wandering_trader 3");
 					}
-					if ((50 >= (Math.random() * 100))) {
+					if ((75 >= (Math.random() * 100))) {
 						if (world instanceof World && !world.getWorld().isRemote) {
 							Entity entityToSpawn = new WanderingMerchantEntity.CustomEntity(WanderingMerchantEntity.entity, world.getWorld());
 							entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);

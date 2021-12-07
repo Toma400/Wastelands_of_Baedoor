@@ -123,9 +123,15 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 															.getOrCreate(new ResourceLocation(
 																	("forge:avoider_xenoclus").toLowerCase(java.util.Locale.ENGLISH)))
 															.contains(entity.getType()))))))
-							|| (EntityTypeTags.getCollection()
+							|| (((EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_voidcraft").toLowerCase(java.util.Locale.ENGLISH)))
-									.contains(entity.getType())))))
+									.contains(entity.getType()))
+									|| (EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_klsts").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType())))
+									|| (EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_betteranimals").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

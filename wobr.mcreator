@@ -8029,7 +8029,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "starof_rising_day"
+      "registry_name": "tsua_petals"
     },
     {
       "name": "CurareProcedure",
@@ -22701,6 +22701,74 @@
       "ids": {},
       "registry_name": "avoider_voidcraft",
       "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AirshipMerchantLootTableTea",
+      "type": "loottable",
+      "sortid": 2162,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "airship_merchant_loot_table_tea"
+    },
+    {
+      "name": "FarmersDelightHeatSources",
+      "type": "tag",
+      "sortid": 2164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "farmers_delight_heat_sources",
+      "path": "~/Compatibility Tags/Farmers Delight"
+    },
+    {
+      "name": "FarmersDelightKnives",
+      "type": "tag",
+      "sortid": 2165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "farmers_delight_knives",
+      "path": "~/Compatibility Tags/Farmers Delight"
+    },
+    {
+      "name": "TsuaStraw",
+      "type": "food",
+      "sortid": 2166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tsua_straw"
+    },
+    {
+      "name": "TsuaStrawRecipe",
+      "type": "recipe",
+      "sortid": 2167,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "tsua_straw_recipe",
+      "path": "~/Compatibility Recipes/Farmers Delight"
+    },
+    {
+      "name": "AvoiderKlsts",
+      "type": "tag",
+      "sortid": 2168,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_klsts",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderBetterAnimals",
+      "type": "tag",
+      "sortid": 2169,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_better_animals",
+      "path": "~/Compatibility Tags/Avoider"
     }
   ],
   "variable_elements": [
@@ -22883,6 +22951,24 @@
       "type": "logic",
       "scope": "map",
       "value": "true"
+    },
+    {
+      "name": "KF_Drop_Glister_A",
+      "type": "number",
+      "scope": "map",
+      "value": "2.0"
+    },
+    {
+      "name": "KF_Drop_Essence_A",
+      "type": "number",
+      "scope": "map",
+      "value": "8.0"
+    },
+    {
+      "name": "KF_Ent_Merchant_A",
+      "type": "number",
+      "scope": "map",
+      "value": "25.0"
     }
   ],
   "sound_elements": [
@@ -23635,7 +23721,6 @@
       "item.wobr.hardened_iron_sabre": "Wzmocniona ¿elazna szabla",
       "block.wobr.chiseled_stripped_byg_ether_wooden_slab": "Chiseled Stripped Ebony Wooden Slab",
       "block.wobr.blue_nether_brick_slab": "Blue Nether Brick Slab",
-      "item.wobr.starof_rising_day": "Crossof Rising Day",
       "block.wobr.firearm_table": "Stó³ rusznikarski",
       "item.wobr.wind_shaman_projectile": "Wind Projectile",
       "item.wobr.spawn_entity_trader_airship_spawn_egg": "[Spawn Entity] Bandit Airship Spawn Egg",
@@ -23756,6 +23841,7 @@
       "block.wobr.crimson_wooden_stairs": "Juniper Wooden Stairs",
       "block.wobr.bamboo_framed_lime_stained_glass": "Bamboo Framed Lime Stained Glass",
       "block.wobr.acacia_framed_gray_stained_glass": "Acacia Framed Gray Stained Glass",
+      "item.wobr.tsua_petals": "Tsua Petals",
       "item.wobr.advancement_shield_is_for_newbies": "Advancement: Shield Is For Newbies",
       "block.wobr.wooden_lamp_spicewood": "Nutwood Wooden Lamp",
       "block.wobr.byg_palo_verde_wooden_slab": "Palm Wooden Slab",
@@ -24004,6 +24090,7 @@
       "block.wobr.wooden_lamp_cuctur": "Asha Hypheria Wooden Lamp",
       "block.wobr.stripped_oak_wooden_slab": "Stripped Oak Wooden Slab",
       "block.wobr.baedoor_funt_block_trapdoor": "Baedoor Golden Trapdoor",
+      "item.wobr.tsua_straw": "Tsua Straw",
       "block.wobr.wooden_lamp_byg_baobab": "Holly Wooden Lamp",
       "advancements.against_spiritsof_nature.title": "Przeciw Duchom Natury",
       "block.wobr.stripped_crimson_wooden_stairs": "Crimson Wooden Stairs",
@@ -24599,7 +24686,6 @@
       "item.wobr.hardened_iron_sabre": "Hardened Iron Sabre",
       "block.wobr.chiseled_stripped_byg_ether_wooden_slab": "Chiseled Stripped Ether Wooden Slab",
       "block.wobr.blue_nether_brick_slab": "Blue Nether Brick Slab",
-      "item.wobr.starof_rising_day": "Crossof Rising Day",
       "block.wobr.firearm_table": "Firearm Table",
       "item.wobr.wind_shaman_projectile": "Wind Projectile",
       "item.wobr.spawn_entity_trader_airship_spawn_egg": "[Spawn Entity] Trader Airship Spawn Egg",
@@ -24720,6 +24806,7 @@
       "block.wobr.crimson_wooden_stairs": "Crimson Wooden Stairs",
       "block.wobr.bamboo_framed_lime_stained_glass": "Bamboo Framed Lime Stained Glass",
       "block.wobr.acacia_framed_gray_stained_glass": "Acacia Framed Gray Stained Glass",
+      "item.wobr.tsua_petals": "Tsua Petals",
       "item.wobr.advancement_shield_is_for_newbies": "Advancement: Shield Is For Newbies",
       "block.wobr.wooden_lamp_spicewood": "Nutwood Wooden Lamp",
       "block.wobr.byg_palo_verde_wooden_slab": "Palo Verde Wooden Slab",
@@ -24968,6 +25055,7 @@
       "block.wobr.wooden_lamp_cuctur": "Cuctur Wooden Lamp",
       "block.wobr.stripped_oak_wooden_slab": "Stripped Oak Wooden Slab",
       "block.wobr.baedoor_funt_block_trapdoor": "Baedoor Golden Trapdoor",
+      "item.wobr.tsua_straw": "Tsua Straw",
       "block.wobr.wooden_lamp_byg_baobab": "Baobab Wooden Lamp",
       "advancements.against_spiritsof_nature.title": "Against Spirits of Nature",
       "block.wobr.stripped_crimson_wooden_stairs": "Stripped Crimson Wooden Stairs",
@@ -25195,6 +25283,10 @@
           {
             "name": "Avoider",
             "children": []
+          },
+          {
+            "name": "Farmers Delight",
+            "children": []
           }
         ]
       },
@@ -25249,6 +25341,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Farmers Delight",
+            "children": []
           }
         ]
       }

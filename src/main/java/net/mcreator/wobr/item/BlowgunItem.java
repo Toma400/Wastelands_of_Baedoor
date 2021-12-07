@@ -46,7 +46,6 @@ public class BlowgunItem extends WobrModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					$_dependencies.put("world", world);
 					BlowgunUseProcedure.executeProcedure($_dependencies);
 				}
 				return retval;

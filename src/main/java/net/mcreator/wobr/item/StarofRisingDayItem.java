@@ -27,7 +27,7 @@ import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
 public class StarofRisingDayItem extends WobrModElements.ModElement {
-	@ObjectHolder("wobr:starof_rising_day")
+	@ObjectHolder("wobr:tsua_petals")
 	public static final Item block = null;
 	public StarofRisingDayItem(WobrModElements instance) {
 		super(instance, 59);
@@ -40,7 +40,7 @@ public class StarofRisingDayItem extends WobrModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(WoBCreativeTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("starof_rising_day");
+			setRegistryName("tsua_petals");
 		}
 
 		@Override

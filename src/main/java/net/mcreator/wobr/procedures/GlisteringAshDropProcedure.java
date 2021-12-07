@@ -65,9 +65,10 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 					&& ((world.getDimension().getType().getId()) == (1)))) {
 				if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
-					if (((0.02 + (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
-							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 5)
-							/ 100)) >= Math.random())) {
+					if ((((WobrModVariables.MapVariables.get(world).KF_Drop_Glister_A / 100)
+							+ (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
+									((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 5)
+									/ 100)) >= Math.random())) {
 						if (!world.getWorld().isRemote) {
 							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block));
 							entityToSpawn.setPickupDelay((int) 10);
@@ -75,7 +76,7 @@ public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 						}
 					}
 				} else {
-					if ((0.02 >= Math.random())) {
+					if (((WobrModVariables.MapVariables.get(world).KF_Drop_Glister_A / 100) >= Math.random())) {
 						if (!world.getWorld().isRemote) {
 							ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(GlisteringAshItem.block));
 							entityToSpawn.setPickupDelay((int) 10);

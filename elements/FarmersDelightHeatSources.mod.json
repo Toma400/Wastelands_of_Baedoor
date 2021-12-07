@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "CUSTOM:GoldenFluidConverterActive"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "CUSTOM:GoldenFluidConverterActive"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "heat_sources",
+    "namespace": "farmersdelight"
+  }
+}

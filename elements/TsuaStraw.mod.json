@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "tsua_straw",
+    "customModelName": "Normal",
+    "name": "Tsua Straw",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Straw made from tsua flowers, making them somehow eatable"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WoBIntegrationsTab"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 2,
+    "saturation": 0.7,
+    "eatingSpeed": 64,
+    "resultItem": {
+      "value": "Items.BOWL"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}

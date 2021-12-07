@@ -125,6 +125,9 @@ public class WobrModVariables {
 		public boolean KF_Xp_Developer = false;
 		public boolean KF_Xp_Ticker = false;
 		public boolean KF_Ent_Merchant = true;
+		public double KF_Drop_Glister_A = 2.0;
+		public double KF_Drop_Essence_A = 8.0;
+		public double KF_Ent_Merchant_A = 25.0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -155,6 +158,9 @@ public class WobrModVariables {
 			KF_Xp_Developer = nbt.getBoolean("KF_Xp_Developer");
 			KF_Xp_Ticker = nbt.getBoolean("KF_Xp_Ticker");
 			KF_Ent_Merchant = nbt.getBoolean("KF_Ent_Merchant");
+			KF_Drop_Glister_A = nbt.getDouble("KF_Drop_Glister_A");
+			KF_Drop_Essence_A = nbt.getDouble("KF_Drop_Essence_A");
+			KF_Ent_Merchant_A = nbt.getDouble("KF_Ent_Merchant_A");
 		}
 
 		@Override
@@ -179,6 +185,9 @@ public class WobrModVariables {
 			nbt.putBoolean("KF_Xp_Developer", KF_Xp_Developer);
 			nbt.putBoolean("KF_Xp_Ticker", KF_Xp_Ticker);
 			nbt.putBoolean("KF_Ent_Merchant", KF_Ent_Merchant);
+			nbt.putDouble("KF_Drop_Glister_A", KF_Drop_Glister_A);
+			nbt.putDouble("KF_Drop_Essence_A", KF_Drop_Essence_A);
+			nbt.putDouble("KF_Ent_Merchant_A", KF_Ent_Merchant_A);
 			return nbt;
 		}
 

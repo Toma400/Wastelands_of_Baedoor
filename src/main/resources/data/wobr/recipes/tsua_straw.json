@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "wobr:starof_rising_day"
+    },
+    [
+      {"item": "minecraft:popped_chorus_fruit"},
+      {"item": "minecraft:chorus_fruit"}
+    ]
+  ],
+  "result": {
+    "item": "wobr:tsua_straw"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 300
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BoneKnife"
+      },
+      {
+        "value": "CUSTOM:AyerKnife"
+      },
+      {
+        "value": "CUSTOM:WitherKnife"
+      },
+      {
+        "value": "CUSTOM:AssassinsKnife"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "tools/knives",
+    "namespace": "farmersdelight"
+  }
+}

@@ -76,11 +76,20 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				mechanics.add("gun_control", gun_control);
 				settings.add("mechanics", mechanics);
 				JsonObject drops = new JsonObject();
-				drops.addProperty("glistering_ash_from_mining_endstone", (true));
-				drops.addProperty("nether_soul_essence", (true));
+				JsonObject glistering_ash_from_mining_endstone = new JsonObject();
+				glistering_ash_from_mining_endstone.addProperty("does_ash_drop", (true));
+				glistering_ash_from_mining_endstone.addProperty("ash_chance_[def:2]", 2);
+				settings.add("glistering_ash_from_mining_endstone", glistering_ash_from_mining_endstone);
+				JsonObject nether_soul_essence = new JsonObject();
+				nether_soul_essence.addProperty("does_essence_drop", (true));
+				nether_soul_essence.addProperty("essence_chance_[def:8]", 8);
+				settings.add("nether_soul_essence", nether_soul_essence);
 				settings.add("drops", drops);
 				JsonObject mob_spawn = new JsonObject();
-				mob_spawn.addProperty("merchant", (true));
+				JsonObject merchant = new JsonObject();
+				merchant.addProperty("do_merchant_spawn", (true));
+				merchant.addProperty("chance_of_replacing_[def:25]", 25);
+				settings.add("merchant", merchant);
 				mob_spawn.addProperty("wind_spirit", (true));
 				mob_spawn.addProperty("ormath_raiders", (false));
 				settings.add("mob_spawn", mob_spawn);
@@ -144,10 +153,16 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 						.get("gun_control").getAsJsonObject().get("guns_enabled").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Glister = (boolean) config_exist.get("drops").getAsJsonObject()
-						.get("glistering_ash_from_mining_endstone").getAsBoolean();
+						.get("glistering_ash_from_mining_endstone").getAsJsonObject().get("does_ash_drop").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Drop_Glister_A = (double) config_exist.get("drops").getAsJsonObject()
+						.get("glistering_ash_from_mining_endstone").getAsJsonObject().get("ash_chance_[def:2]").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Essence = (boolean) config_exist.get("drops").getAsJsonObject()
-						.get("nether_soul_essence").getAsBoolean();
+						.get("nether_soul_essence").getAsJsonObject().get("does_essence_drop").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Drop_Essence_A = (double) config_exist.get("drops").getAsJsonObject()
+						.get("nether_soul_essence").getAsJsonObject().get("essence_chance_[def:8]").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Ent_Wind_Spirit = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
 						.get("wind_spirit").getAsBoolean();
@@ -156,7 +171,10 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 						.get("ormath_raiders").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Ent_Merchant = (boolean) config_exist.get("mob_spawn").getAsJsonObject().get("merchant")
-						.getAsBoolean();
+						.getAsJsonObject().get("do_merchant_spawn").getAsBoolean();
+				WobrModVariables.MapVariables.get(world).syncData(world);
+				WobrModVariables.MapVariables.get(world).KF_Ent_Merchant_A = (double) config_exist.get("mob_spawn").getAsJsonObject().get("merchant")
+						.getAsJsonObject().get("chance_of_replacing_[def:25]").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Xp_Structures = (boolean) config_exist.get("experimental").getAsJsonObject()
 						.get("additional_structures_generating").getAsBoolean();
