@@ -30,6 +30,8 @@ import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
 
+import java.io.File;
+
 public class WobrModVariables {
 	public WobrModVariables(WobrModElements elements) {
 		elements.addNetworkMessage(WorldSavedDataSyncMessage.class, WorldSavedDataSyncMessage::buffer, WorldSavedDataSyncMessage::new,
@@ -45,6 +47,7 @@ public class WobrModVariables {
 	public static double Growth_Stadium = 0.0;
 	public static boolean Light_Blocks_Used = false;
 	public static double For_Random_Uses = 0;
+	public static File config = new File("");
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.getPlayer().world.isRemote) {

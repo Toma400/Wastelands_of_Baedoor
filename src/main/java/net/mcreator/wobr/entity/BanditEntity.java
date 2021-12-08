@@ -15,7 +15,9 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -52,6 +54,8 @@ public class BanditEntity extends WobrModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
+		elements.items
+				.add(() -> new SpawnEggItem(entity, -10079488, -8169469, new Item.Properties().group(null)).setRegistryName("bandit_spawn_egg"));
 	}
 
 	@SubscribeEvent

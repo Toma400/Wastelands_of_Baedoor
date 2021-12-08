@@ -9,6 +9,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
+import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
@@ -67,7 +68,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 							|| (EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))))
-					|| ((entity instanceof BanditEntity.CustomEntity)
+					|| ((entity instanceof ZombieEntity)
 							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
 									|| ((!(entity instanceof BanditEntity.CustomEntity))
 											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
@@ -136,9 +137,16 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													.getOrCreate(
 															new ResourceLocation(("forge:avoider_afterlight").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType()))))
-									|| (EntityTypeTags.getCollection()
+									|| (((EntityTypeTags.getCollection()
 											.getOrCreate(new ResourceLocation(("forge:avoider_cazfps_chr").toLowerCase(java.util.Locale.ENGLISH)))
-											.contains(entity.getType()))))))
+											.contains(entity.getType()))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(
+															new ResourceLocation(("forge:avoider_midnight").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(("forge:avoider_quark").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

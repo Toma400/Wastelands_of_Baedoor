@@ -1,11 +1,7 @@
 package net.mcreator.wobr.procedures;
 
 import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.WorldEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 
 import net.mcreator.wobr.WobrModVariables;
@@ -13,7 +9,6 @@ import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
-import java.util.HashMap;
 
 import java.io.IOException;
 import java.io.FileWriter;
@@ -29,7 +24,6 @@ import com.google.gson.Gson;
 public class ConfigManagerProcedure extends WobrModElements.ModElement {
 	public ConfigManagerProcedure(WobrModElements instance) {
 		super(instance, 2073);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -39,12 +33,11 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		File config = new File("");
-		if ((!config.exists())) {
-			config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
-			if (!config.exists()) {
+		if ((!WobrModVariables.config.exists())) {
+			WobrModVariables.config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
+			if (!WobrModVariables.config.exists()) {
 				try {
-					config.createNewFile();
+					WobrModVariables.config.createNewFile();
 				} catch (IOException exception) {
 					exception.printStackTrace();
 				}
@@ -78,17 +71,17 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				JsonObject drops = new JsonObject();
 				JsonObject glistering_ash_from_mining_endstone = new JsonObject();
 				glistering_ash_from_mining_endstone.addProperty("does_ash_drop", (true));
-				glistering_ash_from_mining_endstone.addProperty("ash_chance_[def:2]", 2);
+				glistering_ash_from_mining_endstone.addProperty("ash_chance", 2);
 				settings.add("glistering_ash_from_mining_endstone", glistering_ash_from_mining_endstone);
 				JsonObject nether_soul_essence = new JsonObject();
 				nether_soul_essence.addProperty("does_essence_drop", (true));
-				nether_soul_essence.addProperty("essence_chance_[def:8]", 8);
+				nether_soul_essence.addProperty("essence_chance", 8);
 				settings.add("nether_soul_essence", nether_soul_essence);
 				settings.add("drops", drops);
 				JsonObject mob_spawn = new JsonObject();
 				JsonObject merchant = new JsonObject();
 				merchant.addProperty("do_merchant_spawn", (true));
-				merchant.addProperty("chance_of_replacing_[def:25]", 25);
+				merchant.addProperty("chance_of_replacing", 25);
 				settings.add("merchant", merchant);
 				mob_spawn.addProperty("wind_spirit", (true));
 				mob_spawn.addProperty("ormath_raiders", (false));
@@ -99,7 +92,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				experimental.addProperty("additional_structures_generating", (false));
 				settings.add("experimental", experimental);
 				try {
-					FileWriter fileWriter = new FileWriter(config);
+					FileWriter fileWriter = new FileWriter(WobrModVariables.config);
 					fileWriter.write(mainGSONBuilderVariable.toJson(settings));
 					fileWriter.close();
 				} catch (IOException exception) {
@@ -111,7 +104,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 		}
 		{
 			try {
-				BufferedReader bufferedReader = new BufferedReader(new FileReader(config));
+				BufferedReader bufferedReader = new BufferedReader(new FileReader(WobrModVariables.config));
 				StringBuilder jsonstringbuilder = new StringBuilder();
 				String line;
 				while ((line = bufferedReader.readLine()) != null) {
@@ -156,13 +149,13 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 						.get("glistering_ash_from_mining_endstone").getAsJsonObject().get("does_ash_drop").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Glister_A = (double) config_exist.get("drops").getAsJsonObject()
-						.get("glistering_ash_from_mining_endstone").getAsJsonObject().get("ash_chance_[def:2]").getAsDouble();
+						.get("glistering_ash_from_mining_endstone").getAsJsonObject().get("ash_chance").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Essence = (boolean) config_exist.get("drops").getAsJsonObject()
 						.get("nether_soul_essence").getAsJsonObject().get("does_essence_drop").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Essence_A = (double) config_exist.get("drops").getAsJsonObject()
-						.get("nether_soul_essence").getAsJsonObject().get("essence_chance_[def:8]").getAsDouble();
+						.get("nether_soul_essence").getAsJsonObject().get("essence_chance").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Ent_Wind_Spirit = (boolean) config_exist.get("mob_spawn").getAsJsonObject()
 						.get("wind_spirit").getAsBoolean();
@@ -174,7 +167,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 						.getAsJsonObject().get("do_merchant_spawn").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Ent_Merchant_A = (double) config_exist.get("mob_spawn").getAsJsonObject().get("merchant")
-						.getAsJsonObject().get("chance_of_replacing_[def:25]").getAsDouble();
+						.getAsJsonObject().get("chance_of_replacing").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Xp_Structures = (boolean) config_exist.get("experimental").getAsJsonObject()
 						.get("additional_structures_generating").getAsBoolean();
@@ -189,14 +182,5 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	@SubscribeEvent
-	public void onWorldLoad(WorldEvent.Load event) {
-		World world = event.getWorld().getWorld();
-		Map<String, Object> dependencies = new HashMap<>();
-		dependencies.put("world", world);
-		dependencies.put("event", event);
-		this.executeProcedure(dependencies);
 	}
 }
