@@ -3794,6 +3794,22 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -12820,6 +12836,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -12851,6 +12871,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -22768,6 +22804,86 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "avoider_better_animals",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "FprGreenGlass",
+      "type": "tag",
+      "sortid": 2170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_green_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "FprLblueGlass",
+      "type": "tag",
+      "sortid": 2171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_lblue_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "FprLgrayGlass",
+      "type": "tag",
+      "sortid": 2172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_lgray_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "FprLimeGlass",
+      "type": "tag",
+      "sortid": 2173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_lime_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "FprMagentaGlass",
+      "type": "tag",
+      "sortid": 2174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_magenta_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "AvoiderAfterlight",
+      "type": "tag",
+      "sortid": 2175,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_afterlight",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "FprOrangeGlass",
+      "type": "tag",
+      "sortid": 2176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_orange_glass",
+      "path": "~/Glass Tags"
+    },
+    {
+      "name": "AvoiderCazfpsChr",
+      "type": "tag",
+      "sortid": 2177,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_cazfps_chr",
       "path": "~/Compatibility Tags/Avoider"
     }
   ],

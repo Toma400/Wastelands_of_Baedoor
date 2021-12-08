@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "wobr:light_gray_horizontal_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane"
+  ]
+}

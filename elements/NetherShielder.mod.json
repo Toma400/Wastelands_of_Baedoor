@@ -33,7 +33,10 @@
       }
     ],
     "name": "Nether Shielder",
-    "specialInfo": [],
+    "specialInfo": [
+      "Mystical block with almost unreadable description saying:",
+      "\"used against [unreadable] pulsating\""
+    ],
     "hardness": 3.0,
     "resistance": 1200.0,
     "hasGravity": false,
@@ -52,12 +55,15 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -74,7 +80,22 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 15,
     "unbreakable": false,
