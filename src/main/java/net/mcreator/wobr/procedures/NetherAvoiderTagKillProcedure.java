@@ -8,6 +8,7 @@ import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.Entity;
@@ -70,7 +71,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 									.contains(entity.getType()))))
 					|| ((entity instanceof ZombieEntity)
 							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
-									|| ((!(entity instanceof BanditEntity.CustomEntity))
+									|| ((!(entity instanceof ZombieVillagerEntity))
 											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
 					|| ((((((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))

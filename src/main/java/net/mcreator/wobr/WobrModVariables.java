@@ -131,6 +131,7 @@ public class WobrModVariables {
 		public double KF_Drop_Glister_A = 2.0;
 		public double KF_Drop_Essence_A = 8.0;
 		public double KF_Ent_Merchant_A = 25.0;
+		public boolean KF_Is_Config_Here = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -164,6 +165,7 @@ public class WobrModVariables {
 			KF_Drop_Glister_A = nbt.getDouble("KF_Drop_Glister_A");
 			KF_Drop_Essence_A = nbt.getDouble("KF_Drop_Essence_A");
 			KF_Ent_Merchant_A = nbt.getDouble("KF_Ent_Merchant_A");
+			KF_Is_Config_Here = nbt.getBoolean("KF_Is_Config_Here");
 		}
 
 		@Override
@@ -191,6 +193,7 @@ public class WobrModVariables {
 			nbt.putDouble("KF_Drop_Glister_A", KF_Drop_Glister_A);
 			nbt.putDouble("KF_Drop_Essence_A", KF_Drop_Essence_A);
 			nbt.putDouble("KF_Ent_Merchant_A", KF_Ent_Merchant_A);
+			nbt.putBoolean("KF_Is_Config_Here", KF_Is_Config_Here);
 			return nbt;
 		}
 

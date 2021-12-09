@@ -1,14 +1,19 @@
 package net.mcreator.wobr.procedures;
 
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
+import java.util.HashMap;
 
 import java.io.IOException;
 import java.io.FileWriter;
@@ -24,6 +29,7 @@ import com.google.gson.Gson;
 public class ConfigManagerProcedure extends WobrModElements.ModElement {
 	public ConfigManagerProcedure(WobrModElements instance) {
 		super(instance, 2073);
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -33,11 +39,13 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!WobrModVariables.config.exists())) {
-			WobrModVariables.config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
-			if (!WobrModVariables.config.exists()) {
+		File config = new File("");
+		if ((WobrModVariables.MapVariables.get(world).KF_Is_Config_Here == (false))) {
+			System.out.println("Wastelands of Baedoor configuration file not found. Writing.");
+			config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
+			if (!config.exists()) {
 				try {
-					WobrModVariables.config.createNewFile();
+					config.createNewFile();
 				} catch (IOException exception) {
 					exception.printStackTrace();
 				}
@@ -72,17 +80,17 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				JsonObject glistering_ash_from_mining_endstone = new JsonObject();
 				glistering_ash_from_mining_endstone.addProperty("does_ash_drop", (true));
 				glistering_ash_from_mining_endstone.addProperty("ash_chance", 2);
-				settings.add("glistering_ash_from_mining_endstone", glistering_ash_from_mining_endstone);
+				drops.add("glistering_ash_from_mining_endstone", glistering_ash_from_mining_endstone);
 				JsonObject nether_soul_essence = new JsonObject();
 				nether_soul_essence.addProperty("does_essence_drop", (true));
 				nether_soul_essence.addProperty("essence_chance", 8);
-				settings.add("nether_soul_essence", nether_soul_essence);
+				drops.add("nether_soul_essence", nether_soul_essence);
 				settings.add("drops", drops);
 				JsonObject mob_spawn = new JsonObject();
 				JsonObject merchant = new JsonObject();
 				merchant.addProperty("do_merchant_spawn", (true));
 				merchant.addProperty("chance_of_replacing", 25);
-				settings.add("merchant", merchant);
+				mob_spawn.add("merchant", merchant);
 				mob_spawn.addProperty("wind_spirit", (true));
 				mob_spawn.addProperty("ormath_raiders", (false));
 				settings.add("mob_spawn", mob_spawn);
@@ -92,19 +100,30 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				experimental.addProperty("additional_structures_generating", (false));
 				settings.add("experimental", experimental);
 				try {
-					FileWriter fileWriter = new FileWriter(WobrModVariables.config);
+					FileWriter fileWriter = new FileWriter(config);
 					fileWriter.write(mainGSONBuilderVariable.toJson(settings));
 					fileWriter.close();
 				} catch (IOException exception) {
 					exception.printStackTrace();
 				}
 			}
+			WobrModVariables.MapVariables.get(world).KF_Is_Config_Here = (boolean) (true);
+			WobrModVariables.MapVariables.get(world).syncData(world);
+			System.out.println("Configuration file successfully written! Version wrote: 0.");
 		} else {
-			System.out.println("Wastelands of Baedoor Config Settings Loaded. Version loaded: 0.");
+			config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
+			if (!config.exists()) {
+				try {
+					config.createNewFile();
+				} catch (IOException exception) {
+					exception.printStackTrace();
+				}
+			}
+			System.out.println("Wastelands of Baedoor configuration file loaded. Version loaded: 0.");
 		}
 		{
 			try {
-				BufferedReader bufferedReader = new BufferedReader(new FileReader(WobrModVariables.config));
+				BufferedReader bufferedReader = new BufferedReader(new FileReader(config));
 				StringBuilder jsonstringbuilder = new StringBuilder();
 				String line;
 				while ((line = bufferedReader.readLine()) != null) {
@@ -142,7 +161,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				WobrModVariables.MapVariables.get(world).KF_Wp_Gun_Dmg = (double) config_exist.get("mechanics").getAsJsonObject().get("gun_control")
 						.getAsJsonObject().get("damage_scaling").getAsDouble();
 				WobrModVariables.MapVariables.get(world).syncData(world);
-				WobrModVariables.MapVariables.get(world).KF_Wp_Gun_Enabled = (boolean) config_exist.get("airship_spawn").getAsJsonObject()
+				WobrModVariables.MapVariables.get(world).KF_Wp_Gun_Enabled = (boolean) config_exist.get("mechanics").getAsJsonObject()
 						.get("gun_control").getAsJsonObject().get("guns_enabled").getAsBoolean();
 				WobrModVariables.MapVariables.get(world).syncData(world);
 				WobrModVariables.MapVariables.get(world).KF_Drop_Glister = (boolean) config_exist.get("drops").getAsJsonObject()
@@ -182,5 +201,18 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	@SubscribeEvent
+	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		Entity entity = event.getPlayer();
+		Map<String, Object> dependencies = new HashMap<>();
+		dependencies.put("x", entity.getPosX());
+		dependencies.put("y", entity.getPosY());
+		dependencies.put("z", entity.getPosZ());
+		dependencies.put("world", entity.world);
+		dependencies.put("entity", entity);
+		dependencies.put("event", event);
+		this.executeProcedure(dependencies);
 	}
 }

@@ -22905,6 +22905,16 @@
       "ids": {},
       "registry_name": "avoider_quark",
       "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "FprPinkGlass",
+      "type": "tag",
+      "sortid": 2180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fpr_pink_glass",
+      "path": "~/Glass Tags"
     }
   ],
   "variable_elements": [
@@ -23111,6 +23121,12 @@
       "type": "file",
       "scope": "global",
       "value": "new File(\"\")"
+    },
+    {
+      "name": "KF_Is_Config_Here",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
