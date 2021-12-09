@@ -1,0 +1,9 @@
+{
+  "_fv": 24,
+  "_type": "function",
+  "definition": {
+    "code": "import net.minecraftforge.fml.ModList;\n\nif (net.minecraftforge.fml.ModList.get().isLoaded(\"byg\"))\n\telements.items.add(\n\t\t() -> new BlockItem(block, new Item.Properties().group(WoBIntegrationsTabItemGroup.tab)).setRegistryName(block.getRegistryName()));",
+    "name": "unregistering_the_component",
+    "namespace": "mod"
+  }
+}

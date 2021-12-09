@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/regular_byg_pine",
+    "up": "wobr:blocks/regular_byg_pine",
+    "north": "wobr:blocks/wood_lamp_byg_pine",
+    "east": "wobr:blocks/wood_lamp_byg_pine",
+    "south": "wobr:blocks/wood_lamp_byg_pine",
+    "west": "wobr:blocks/wood_lamp_byg_pine",
+    "particle": "wobr:blocks/regular_byg_pine"
+  }
+}

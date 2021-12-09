@@ -117,7 +117,7 @@ public class WobrModVariables {
 		public boolean KF_Str_Trader_Airship = true;
 		public boolean KF_Str_Military_Airship = true;
 		public boolean KF_Str_Jungle_Airship = true;
-		public boolean KF_Str_Airship_General = true;
+		public boolean KF_Str_Airship_General = false;
 		public boolean KF_Wp_Gun_Enabled = true;
 		public double KF_Wp_Gun_Dmg = 1.0;
 		public boolean KF_Drop_Glister = true;
