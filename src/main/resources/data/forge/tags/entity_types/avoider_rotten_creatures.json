@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+      "rotten_creatures:inmortal",
+      "rotten_creatures:dead_beard",
+      "rotten_creatures:mummy",
+      "rotten_creatures:eskimo",
+      "rotten_creatures:spear_eskimo",
+      "rotten_creatures:burned",
+      "rotten_creatures:marshied",
+      "rotten_creatures:miner1",
+      "rotten_creatures:miner2",
+      "rotten_creatures:cold",
+      "rotten_creatures:zombie_pirate",
+      "rotten_creatures:skeleton_pirate"
+    ]
+}

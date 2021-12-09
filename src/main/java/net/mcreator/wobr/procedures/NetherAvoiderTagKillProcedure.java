@@ -125,7 +125,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 															.getOrCreate(new ResourceLocation(
 																	("forge:avoider_xenoclus").toLowerCase(java.util.Locale.ENGLISH)))
 															.contains(entity.getType()))))))
-							|| ((((EntityTypeTags.getCollection()
+							|| (((((EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_voidcraft").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))
 									|| (EntityTypeTags.getCollection()
@@ -145,9 +145,36 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 													.getOrCreate(
 															new ResourceLocation(("forge:avoider_midnight").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType())))
-											|| (EntityTypeTags.getCollection()
+											|| ((EntityTypeTags.getCollection()
 													.getOrCreate(new ResourceLocation(("forge:avoider_quark").toLowerCase(java.util.Locale.ENGLISH)))
-													.contains(entity.getType())))))))
+													.contains(entity.getType()))
+													|| (EntityTypeTags.getCollection()
+															.getOrCreate(new ResourceLocation(
+																	("forge:avoider_refreshed_nether").toLowerCase(java.util.Locale.ENGLISH)))
+															.contains(entity.getType())))))
+									|| ((((EntityTypeTags.getCollection()
+											.getOrCreate(new ResourceLocation(("forge:avoider_undergarden").toLowerCase(java.util.Locale.ENGLISH)))
+											.contains(entity.getType()))
+											|| (EntityTypeTags.getCollection()
+													.getOrCreate(
+															new ResourceLocation(("forge:avoider_neverdark").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType())))
+											|| ((EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(
+															("forge:avoider_greek_fantasy").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType()))
+													|| (EntityTypeTags.getCollection()
+															.getOrCreate(new ResourceLocation(
+																	("forge:avoider_undead_exp").toLowerCase(java.util.Locale.ENGLISH)))
+															.contains(entity.getType()))))
+											|| ((EntityTypeTags.getCollection()
+													.getOrCreate(new ResourceLocation(
+															("forge:avoider_rotten_creatures").toLowerCase(java.util.Locale.ENGLISH)))
+													.contains(entity.getType()))
+													|| (EntityTypeTags.getCollection()
+															.getOrCreate(new ResourceLocation(
+																	("forge:avoider_elementals").toLowerCase(java.util.Locale.ENGLISH)))
+															.contains(entity.getType()))))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

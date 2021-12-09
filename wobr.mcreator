@@ -22915,6 +22915,76 @@
       "ids": {},
       "registry_name": "fpr_pink_glass",
       "path": "~/Glass Tags"
+    },
+    {
+      "name": "AvoiderUndergarden",
+      "type": "tag",
+      "sortid": 2181,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_undergarden",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderRefreshedNether",
+      "type": "tag",
+      "sortid": 2182,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_refreshed_nether",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderNeverdark",
+      "type": "tag",
+      "sortid": 2183,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_neverdark",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderGreekFantasy",
+      "type": "tag",
+      "sortid": 2184,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_greek_fantasy",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderUndeadExp",
+      "type": "tag",
+      "sortid": 2185,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_undead_exp",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderRottenCreatures",
+      "type": "tag",
+      "sortid": 2186,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_rotten_creatures",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "AvoiderElementals",
+      "type": "tag",
+      "sortid": 2187,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_elementals",
+      "path": "~/Compatibility Tags/Avoider"
     }
   ],
   "variable_elements": [
