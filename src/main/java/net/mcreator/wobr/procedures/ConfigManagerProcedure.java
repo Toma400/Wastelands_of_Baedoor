@@ -40,9 +40,11 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 		}
 		IWorld world = (IWorld) dependencies.get("world");
 		File config = new File("");
+		String save_file_path = "";
 		if ((WobrModVariables.MapVariables.get(world).KF_Is_Config_Here == (false))) {
 			System.out.println("Wastelands of Baedoor configuration file not found. Writing.");
-			config = new File(("dir/config".replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
+			save_file_path = (String) ("dir/saves/path/serverconfig/".replace("path", world.getWorldInfo().getWorldName()));
+			config = new File((save_file_path.replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
 			if (!config.exists()) {
 				try {
 					config.createNewFile();
