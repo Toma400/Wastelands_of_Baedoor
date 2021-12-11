@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_jacaranda_strip",
-    "top": "wobr:blocks/regular_byg_jacaranda_strip",
-    "side": "wobr:blocks/regular_byg_jacaranda_strip"
-  }
-}

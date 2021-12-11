@@ -61,8 +61,10 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getWorld().getGameRules().getBoolean(AvoiderReaperModeGameRule.gamerule)) == (false))) {
-			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || ((((EntityTypeTags.getCollection()
-					.getOrCreate(new ResourceLocation(("forge:avoider_wobr").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))
+			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || (((((EntityTypeTags.getCollection()
+					.getOrCreate(new ResourceLocation(("forge:avoider_killable").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))
+					|| (EntityTypeTags.getCollection().getOrCreate(new ResourceLocation(("forge:avoider_wobr").toLowerCase(java.util.Locale.ENGLISH)))
+							.contains(entity.getType())))
 					|| ((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_vanilla").toLowerCase(java.util.Locale.ENGLISH)))
 							.contains(entity.getType()))

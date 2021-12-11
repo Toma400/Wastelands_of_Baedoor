@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_holly",
-    "top": "wobr:blocks/regular_byg_holly",
-    "side": "wobr:blocks/regular_byg_holly"
-  }
-}

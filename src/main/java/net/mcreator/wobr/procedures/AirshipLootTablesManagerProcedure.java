@@ -1,7 +1,13 @@
 package net.mcreator.wobr.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.block.AirshipMilitaryChestBlock;
 import net.mcreator.wobr.block.AirshipMerchantChestBlock;
@@ -43,11 +49,62 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipBanditChestBlock.block)) {
-			System.out.println("Awaiting.");
+			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+				world.getWorld().getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+						"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit\"} replace");
+			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMerchantChestBlock.block)) {
-			System.out.println("Awaiting.");
+			if ((net.minecraftforge.fml.ModList.get().isLoaded("farmers_respite"))) {
+				if ((5 >= (Math.random() * 100))) {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_tea\"} replace");
+					}
+				} else {
+					if ((net.minecraftforge.fml.ModList.get().isLoaded("byg"))) {
+						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+							world.getWorld().getServer().getCommandManager().handleCommand(
+									new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+											new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+									"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_byg\"} replace");
+						}
+					} else {
+						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+							world.getWorld().getServer().getCommandManager().handleCommand(
+									new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+											new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+									"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant\"} replace");
+						}
+					}
+				}
+			} else {
+				if ((net.minecraftforge.fml.ModList.get().isLoaded("byg"))) {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_byg\"} replace");
+					}
+				} else {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant\"} replace");
+					}
+				}
+			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMilitaryChestBlock.block)) {
-			System.out.println("Awaiting.");
+			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+				world.getWorld().getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+						"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_military\"} replace");
+			}
 		}
 	}
 }

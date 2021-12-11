@@ -100,7 +100,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				merchant.addProperty("chance_of_replacing", 25);
 				mob_spawn.add("merchant", merchant);
 				mob_spawn.addProperty("wind_spirit", (true));
-				mob_spawn.addProperty("ormath_raiders", (false));
+				mob_spawn.addProperty("ormath_raiders", (true));
 				settings.add("mob_spawn", mob_spawn);
 				JsonObject experimental = new JsonObject();
 				experimental.addProperty("developers_mode", (false));

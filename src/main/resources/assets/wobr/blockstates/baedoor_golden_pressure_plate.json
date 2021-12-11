@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "wobr:block/baedoor_golden_pressure_plate"
+    },
+    "powered=true": {
+      "model": "wobr:block/baedoor_golden_pressure_plate_down"
+    }
+  }
+}

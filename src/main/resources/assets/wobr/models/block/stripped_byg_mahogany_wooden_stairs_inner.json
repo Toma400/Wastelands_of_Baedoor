@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_mahogany_strip",
-    "top": "wobr:blocks/regular_byg_mahogany_strip",
-    "side": "wobr:blocks/regular_byg_mahogany_strip"
-  }
-}

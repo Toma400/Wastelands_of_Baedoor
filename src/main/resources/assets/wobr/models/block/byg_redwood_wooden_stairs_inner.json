@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "wobr:blocks/regular_byg_redwood",
-    "top": "wobr:blocks/regular_byg_redwood",
-    "side": "wobr:blocks/regular_byg_redwood"
-  }
-}

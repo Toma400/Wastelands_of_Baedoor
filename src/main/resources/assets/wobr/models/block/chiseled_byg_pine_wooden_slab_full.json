@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_byg_pine",
-    "top": "wobr:blocks/chisel_byg_pine",
-    "side": "wobr:blocks/regular_byg_pine"
-  }
-}

@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BlockofNetherSoulEssence"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "soul_speed_blocks",
+    "namespace": "minecraft"
+  }
+}

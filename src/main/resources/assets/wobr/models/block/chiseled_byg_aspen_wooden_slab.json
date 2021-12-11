@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "wobr:blocks/chisel_byg_aspen",
-    "top": "wobr:blocks/chisel_byg_aspen",
-    "side": "wobr:blocks/regular_byg_aspen"
-  }
-}

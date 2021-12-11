@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CleanBirchWood"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "non_breakable_glass",
+    "namespace": "forge"
+  }
+}
