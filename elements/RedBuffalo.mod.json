@@ -109,9 +109,6 @@
     "rangedItemType": "Default item",
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
-    "spawningCondition": {
-      "name": "TestModeReturns"
-    },
     "spawningProbability": 20,
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,

@@ -10,31 +10,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
         "value": "TAG:wobr:fpr_crimson"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       },
       {
-        "value": "Blocks.STAINED_GLASS_PANE#3"
+        "value": "TAG:forge:fpr_lblue_glass"
       }
     ],
     "recipeReturnStack": {

@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "1": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "2": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "3": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "4": {
       "item": "minecraft:orange_dye"
     },
     "5": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "6": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "7": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     },
     "8": {
-      "item": "minecraft:lime_stained_glass_pane"
+      "tag": "forge:fpr_lime_glass"
     }
   },
   "result": {

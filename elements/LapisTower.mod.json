@@ -13,7 +13,7 @@
     "rotationMode": 5,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "lapis_tower",
     "particleTexture": "",
     "hasTransparency": true,
     "connectedSides": false,

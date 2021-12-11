@@ -111,6 +111,6 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
-    "spawnInDungeons": true
+    "spawnInDungeons": false
   }
 }
