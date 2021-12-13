@@ -5,8 +5,8 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 2,
-    "group": "toriscite",
+    "recipeRetstackSize": 1,
+    "group": "blue_nether_bricks",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -22,10 +22,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:ChiseledJungleWood"
+        "value": "CUSTOM:BlueNetherBrick"
       },
       {
-        "value": "CUSTOM:BlockofNetherSoulEssence"
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ChiseledDarkOakWood"
+      "value": "CUSTOM:BlueNetherBrick"
     },
-    "name": "addon_toriscite_immersion_recipe",
+    "name": "blue_nether_bricks_from_wob",
     "namespace": "mod"
   }
 }

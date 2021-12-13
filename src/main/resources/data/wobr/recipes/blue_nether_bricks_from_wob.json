@@ -1,0 +1,16 @@
+{
+  "group": "blue_nether_bricks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:blue_nether_bricks"
+    }
+  },
+  "result": {
+    "item": "wobr:blue_nether_brick",
+    "count": 1
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_wall_side",
-  "textures": {
-    "wall": "wobr:blocks/blue_nether_bricks",
-    "particle": "wobr:blocks/blue_nether_bricks"
-  }
-}
