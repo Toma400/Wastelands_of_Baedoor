@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RedHorizontalStainedGlassPane"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#14"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fpr_red_glass",
+    "namespace": "forge"
+  }
+}

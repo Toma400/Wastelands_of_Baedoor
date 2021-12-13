@@ -10,6 +10,7 @@ import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
 import net.minecraft.entity.monster.WitchEntity;
+import net.minecraft.entity.monster.StrayEntity;
 import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.entity.monster.SkeletonEntity;
@@ -73,7 +74,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 					|| (entity instanceof BlazeEntity)) || ((entity instanceof GhastEntity) || (entity instanceof MagmaCubeEntity)))
 					|| ((entity instanceof WitchEntity) || (entity instanceof WitherSkeletonEntity)))
 					|| ((((entity instanceof BanditDespawningEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
-							|| ((entity instanceof SkeletonEntity) || (entity instanceof SpiderEntity)))
+							|| (((entity instanceof SkeletonEntity) || (entity instanceof StrayEntity)) || (entity instanceof SpiderEntity)))
 							|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity))) || (entity instanceof CreeperEntity))
 									|| ((entity instanceof EndermiteEntity) || (entity instanceof EndermanEntity))))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {

@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MagentaHorizontalStainedGlassPane"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#2"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fpr_magenta_glass",
+    "namespace": "forge"
+  }
+}

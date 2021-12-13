@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PurpleHorizontalStainedGlassPane"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#10"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fpr_purple_glass",
+    "namespace": "forge"
+  }
+}
