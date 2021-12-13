@@ -9,12 +9,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.wobr.entity.WindSpiritEntity;
+import net.mcreator.wobr.entity.ShamanicWindSpiritEntity;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
-import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
 public class ShamanProjectileSpiritProcedure extends WobrModElements.ModElement {
@@ -49,7 +48,7 @@ public class ShamanProjectileSpiritProcedure extends WobrModElements.ModElement 
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((20 >= (Math.random() * 100))) {
 			if (world instanceof World && !world.getWorld().isRemote) {
-				Entity entityToSpawn = new WindSpiritEntity.CustomEntity(WindSpiritEntity.entity, world.getWorld());
+				Entity entityToSpawn = new ShamanicWindSpiritEntity.CustomEntity(ShamanicWindSpiritEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 2), z, (float) 0, (float) 0);
 				entityToSpawn.setRenderYawOffset((float) 0);
 				entityToSpawn.setRotationYawHead((float) 0);
@@ -57,14 +56,6 @@ public class ShamanProjectileSpiritProcedure extends WobrModElements.ModElement 
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				NetherShielderPotionUseProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

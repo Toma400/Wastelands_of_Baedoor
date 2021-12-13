@@ -1,22 +1,21 @@
 {
     "replace": false,
     "values": [
-      "the_arcaneum:hunter",
-      "the_arcaneum:hunter_wolf",
-      "the_arcaneum:cactus_guardian",
-      "the_arcaneum:large_cactus_guardian",
-      "the_arcaneum:enormous_cactus_guardian",
-      "the_arcaneum:centipede",
-      "the_arcaneum:giant_centipede",
-      "the_arcaneum:sleep_paralysis_demon",
-      "the_arcaneum:grukclu",
-      "the_arcaneum:corrupt_horror",
-      "the_arcaneum:snakoth",
-      "the_arcaneum:soilclaw",
-      "the_arcaneum:abomination",
-      "the_arcaneum:small_lava_golem",
-      "the_arcaneum:lava_golem",
-      "the_arcaneum:maniac",
-      "the_arcaneum:stone_giant"
+      "test:hunter",
+      "test:hunter_wolf",
+      "test:cactus_guardian",
+      "test:large_cactus_guardian",
+      "test:enormous_cactus_guardian",
+      "test:centipede",
+      "test:giant_centipede",
+      "test:sleep_paralysis_demon",
+      "test:grukclu",
+      "test:corrupt_horror",
+      "test:snakoth",
+      "test:abomination",
+      "test:small_lava_golem",
+      "test:lava_golem",
+      "test:maniac",
+      "test:stone_giant"
     ]
 }

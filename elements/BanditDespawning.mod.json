@@ -109,7 +109,7 @@
       "value": ""
     },
     "rangedItemType": "BulletRanged",
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 1,
     "mobSpawningType": "monster",

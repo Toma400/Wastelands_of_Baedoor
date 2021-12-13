@@ -11,12 +11,12 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.entity.monster.ZombieVillagerEntity;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.world.AvoiderReaperModeGameRule;
-import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
@@ -71,11 +71,10 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 							|| (EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))))
-					|| ((entity instanceof ZombieEntity)
-							&& (((!(entity instanceof ZombiePigmanEntity)) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false)))
-									|| ((!(entity instanceof ZombieVillagerEntity))
-											&& (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false))))))
-					|| ((((((EntityTypeTags.getCollection()
+					|| (((!((entity instanceof ZombiePigmanEntity) && (WobrModVariables.MapVariables.get(world).KF_Av_Pigman == (false))))
+							&& (!((entity instanceof ZombieVillagerEntity) && (WobrModVariables.MapVariables.get(world).KF_Av_Villager == (false)))))
+							&& (entity instanceof ZombieEntity)))
+					|| (((((((EntityTypeTags.getCollection()
 							.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
 							.contains(entity.getType()))
 							|| (EntityTypeTags.getCollection()
@@ -169,14 +168,25 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 															.getOrCreate(new ResourceLocation(
 																	("forge:avoider_undead_exp").toLowerCase(java.util.Locale.ENGLISH)))
 															.contains(entity.getType()))))
-											|| ((EntityTypeTags.getCollection()
+											|| (((EntityTypeTags.getCollection()
 													.getOrCreate(new ResourceLocation(
 															("forge:avoider_rotten_creatures").toLowerCase(java.util.Locale.ENGLISH)))
 													.contains(entity.getType()))
 													|| (EntityTypeTags.getCollection()
 															.getOrCreate(new ResourceLocation(
 																	("forge:avoider_elementals").toLowerCase(java.util.Locale.ENGLISH)))
-															.contains(entity.getType()))))))))
+															.contains(entity.getType())))
+													|| ((EntityTypeTags.getCollection()
+															.getOrCreate(new ResourceLocation(
+																	("forge:avoider_klsts_15").toLowerCase(java.util.Locale.ENGLISH)))
+															.contains(entity.getType()))
+															|| (EntityTypeTags.getCollection()
+																	.getOrCreate(new ResourceLocation(
+																			("forge:avoider_elementals_15").toLowerCase(java.util.Locale.ENGLISH)))
+																	.contains(entity.getType())))))))
+							|| (EntityTypeTags.getCollection()
+									.getOrCreate(new ResourceLocation(("forge:avoider_blue_skies").toLowerCase(java.util.Locale.ENGLISH)))
+									.contains(entity.getType())))))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -187,7 +197,7 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 				}
 			}
 		} else {
-			if (((entity instanceof BanditEntity.CustomEntity) && ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
+			if (((entity instanceof MonsterEntity) && ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(

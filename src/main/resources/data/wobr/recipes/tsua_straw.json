@@ -2,7 +2,7 @@
   "type": "farmersdelight:cooking",
   "ingredients": [
     {
-      "item": "wobr:starof_rising_day"
+      "item": "wobr:tsua_petals"
     },
     [
       {"item": "minecraft:popped_chorus_fruit"},

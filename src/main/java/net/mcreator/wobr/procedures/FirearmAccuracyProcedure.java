@@ -93,8 +93,5 @@ public class FirearmAccuracyProcedure extends WobrModElements.ModElement {
 		entity.rotationPitch = (float) (((entity.rotationPitch)
 				- Math.ceil(((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.getDouble("accuracy_penalty")) / 2))));
-		System.out.println((new java.text.DecimalFormat("#####")
-				.format(Math.ceil(((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getOrCreateTag().getDouble("accuracy_penalty")) / 2)))));
 	}
 }

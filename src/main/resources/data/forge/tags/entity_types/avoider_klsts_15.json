@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+      "klsts_adventure_mod:heem",
+      "klsts_adventure_mod:heem_corpse",
+      "klsts_adventure_mod:molten",
+      "klsts_adventure_mod:wave_molten",
+      "klsts_adventure_mod:cooled_molten",
+      "klsts_adventure_mod:ghost_spider",
+      "klsts_adventure_mod:sky_lord",
+      "klsts_adventure_mod:ancient_sentry_body",
+      "klsts_adventure_mod:ancient_sentry"
+    ]
+}

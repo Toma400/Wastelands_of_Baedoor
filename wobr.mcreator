@@ -20410,6 +20410,75 @@
       "ids": {},
       "registry_name": "dismantle_greek_fantasy",
       "path": "~/Compatibility Tags/Dismantle"
+    },
+    {
+      "name": "AvoiderKlsts15",
+      "type": "tag",
+      "sortid": 2220,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_klsts_15",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "ConfigManagerCopy",
+      "type": "procedure",
+      "sortid": 2221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config_manager_copy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AvoiderElementals15",
+      "type": "tag",
+      "sortid": 2222,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_elementals_15"
+    },
+    {
+      "name": "FarmersDelightKnivesForge",
+      "type": "tag",
+      "sortid": 2223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "farmers_delight_knives_forge",
+      "path": "~/Compatibility Tags/Farmers Delight"
+    },
+    {
+      "name": "AvoiderBlueSkies",
+      "type": "tag",
+      "sortid": 2224,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "avoider_blue_skies",
+      "path": "~/Compatibility Tags/Avoider"
+    },
+    {
+      "name": "ShamanicWindSpirit",
+      "type": "livingentity",
+      "sortid": 2225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shamanic_wind_spirit"
     }
   ],
   "variable_elements": [
@@ -20951,6 +21020,7 @@
       "advancements.trappingthe_beast.descr": "Placing that trap, you won\u0027t need to worry about hunting anymore! You ended the path sooner, you cheater! (...or did you?)",
       "advancements.protectthe_unprotected.title": "Protect the Unprotected",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
+      "item.wobr.shamanic_wind_spirit_spawn_egg": "Wind Spirit Spawn Egg",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Oak Pillar",
       "block.wobr.wooden_lamp_nutwood": "Juniper Wooden Lamp",
@@ -21318,6 +21388,7 @@
       "item.wobr.card_diamond_ace_winfleton": "As karo Winfletonów",
       "item.wobr.ormath_ranged_warrior_spawn_egg": "Ormath Javelin Warrior Spawn Egg",
       "block.wobr.lockable_baedoor_golden_chest_locked": "Lockable Baedoor Golden Chest",
+      "entity.wobr.shamanic_wind_spirit": "Wind Spirit",
       "item.wobr.black_sabre": "Black Sabre",
       "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "block.wobr.white_horizontal_stained_glass_pane": "White Horizontal Stained Glass",
@@ -21736,6 +21807,7 @@
       "advancements.trappingthe_beast.descr": "Placing that trap, you won\u0027t need to worry about hunting anymore! You ended the path sooner, you cheater! (...or did you?)",
       "advancements.protectthe_unprotected.title": "Protect the Unprotected",
       "advancements.sabre_path_begin.descr": "Your first kill with sabre marks your new path you entered...",
+      "item.wobr.shamanic_wind_spirit_spawn_egg": "Wind Spirit Spawn Egg",
       "item.wobr.ammo_box_lava": "Lava Ammo Box",
       "block.wobr.pillar_dark_oak": "Dark Oak Pillar",
       "block.wobr.wooden_lamp_nutwood": "Nutwood Wooden Lamp",
@@ -22103,6 +22175,7 @@
       "item.wobr.card_diamond_ace_winfleton": "Winfleton\u0027s Diamond Ace Card",
       "item.wobr.ormath_ranged_warrior_spawn_egg": "Ormath Javelin Warrior Spawn Egg",
       "block.wobr.lockable_baedoor_golden_chest_locked": "Lockable Baedoor Golden Chest",
+      "entity.wobr.shamanic_wind_spirit": "Wind Spirit",
       "item.wobr.black_sabre": "Black Sabre",
       "block.wobr.jungle_framed_brown_stained_glass": "Jungle Framed Brown Stained Glass",
       "block.wobr.white_horizontal_stained_glass_pane": "White Horizontal Stained Glass",

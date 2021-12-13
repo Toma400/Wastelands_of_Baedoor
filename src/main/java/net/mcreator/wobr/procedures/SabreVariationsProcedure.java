@@ -53,7 +53,7 @@ public class SabreVariationsProcedure extends WobrModElements.ModElement {
 		}
 		if (((itemstack).getItem() == PrismarineSabreItem.block)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.CONDUIT_POWER, (int) 20, (int) 1));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.CONDUIT_POWER, (int) 20, (int) 1, (false), (false)));
 		} else if (((itemstack).getItem() == WhiteSabreItem.block)) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 1));
