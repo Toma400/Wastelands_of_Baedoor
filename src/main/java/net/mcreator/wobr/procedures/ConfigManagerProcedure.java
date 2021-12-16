@@ -1,18 +1,12 @@
 package net.mcreator.wobr.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.IWorld;
-import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
-import java.util.HashMap;
 
 import java.io.IOException;
 import java.io.FileWriter;
@@ -28,7 +22,6 @@ import com.google.gson.Gson;
 public class ConfigManagerProcedure extends WobrModElements.ModElement {
 	public ConfigManagerProcedure(WobrModElements instance) {
 		super(instance, 2073);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -39,10 +32,6 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 		}
 		IWorld world = (IWorld) dependencies.get("world");
 		File config = new File("");
-		{
-			Map<String, Object> $_dependencies = new HashMap<>();
-			ConfigInfoProcedure.executeProcedure($_dependencies);
-		}
 		config = new File((("dir/saves/") + "" + (world.getWorldInfo().getWorldName()) + "" + ("/serverconfig/")),
 				File.separator + "wobr-common.json");
 		if (!config.exists()) {
@@ -53,8 +42,6 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 			}
 		}
 		if ((WobrModVariables.MapVariables.get(world).KF_Is_Config_Here == (false))) {
-			WobrModVariables.MapVariables.get(world).KF_Str_Airship_General = (boolean) (true);
-			WobrModVariables.MapVariables.get(world).syncData(world);
 			System.out.println("Wastelands of Baedoor configuration file not found. Writing.");
 			{
 				Gson mainGSONBuilderVariable = new GsonBuilder().setPrettyPrinting().create();
@@ -199,18 +186,5 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	@SubscribeEvent
-	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		Entity entity = event.getPlayer();
-		Map<String, Object> dependencies = new HashMap<>();
-		dependencies.put("x", entity.getPosX());
-		dependencies.put("y", entity.getPosY());
-		dependencies.put("z", entity.getPosZ());
-		dependencies.put("world", entity.world);
-		dependencies.put("entity", entity);
-		dependencies.put("event", event);
-		this.executeProcedure(dependencies);
 	}
 }

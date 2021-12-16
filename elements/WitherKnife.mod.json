@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "wither_knife",
+    "texture": "wither_knife_2",
     "customModelName": "Normal",
     "name": "Wither Knife",
     "specialInfo": [

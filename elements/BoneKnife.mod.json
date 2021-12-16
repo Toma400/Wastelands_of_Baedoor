@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "bone_knife",
+    "texture": "bone_knife_2",
     "customModelName": "Normal",
     "name": "Bone Knife",
     "specialInfo": [],
