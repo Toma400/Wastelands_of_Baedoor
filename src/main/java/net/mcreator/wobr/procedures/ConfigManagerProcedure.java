@@ -1,6 +1,5 @@
 package net.mcreator.wobr.procedures;
 
-import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,13 +39,12 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 		}
 		IWorld world = (IWorld) dependencies.get("world");
 		File config = new File("");
-		String save_file_path = "";
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
 			ConfigInfoProcedure.executeProcedure($_dependencies);
 		}
-		save_file_path = (String) ("dir/saves/path/serverconfig/".replace("path", world.getWorldInfo().getWorldName()));
-		config = new File((save_file_path.replace("dir", FMLPaths.GAMEDIR.get().toString())), File.separator + "wobr-common.json");
+		config = new File((("dir/saves/") + "" + (world.getWorldInfo().getWorldName()) + "" + ("/serverconfig/")),
+				File.separator + "wobr-common.json");
 		if (!config.exists()) {
 			try {
 				config.createNewFile();

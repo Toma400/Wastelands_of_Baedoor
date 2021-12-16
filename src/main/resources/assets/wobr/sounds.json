@@ -80,24 +80,6 @@
       }
     ]
   },
-  "disc_oneironaut": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "wobr:1._oneironaut",
-        "stream": true
-      }
-    ]
-  },
-  "disc_inside_forest": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "wobr:4._inside_the_hidden_forest_temple",
-        "stream": true
-      }
-    ]
-  },
   "failed_shot": {
     "category": "neutral",
     "sounds": [
@@ -347,6 +329,24 @@
       {
         "name": "wobr:sabre_whoosh",
         "stream": false
+      }
+    ]
+  },
+  "disc_inside_forest": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wobr:4._inside_the_hidden_forest_temple",
+        "stream": true
+      }
+    ]
+  },
+  "disc_oneironaut": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wobr:1._oneironaut",
+        "stream": true
       }
     ]
   }

@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.wobr.item.AyerShotgunItem;
+import net.mcreator.wobr.item.Lefs8Item;
 import net.mcreator.wobr.WobrModElements;
 
 @WobrModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class WoBCreativeTabItemGroup extends WobrModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(AyerShotgunItem.block);
+				return new ItemStack(Lefs8Item.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)
