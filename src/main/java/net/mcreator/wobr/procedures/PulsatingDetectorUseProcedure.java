@@ -14,7 +14,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class PulsatingDetectorUseProcedure extends WobrModElements.ModElement {
 	public PulsatingDetectorUseProcedure(WobrModElements instance) {
-		super(instance, 2021);
+		super(instance, 1598);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

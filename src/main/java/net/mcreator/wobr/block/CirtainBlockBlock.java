@@ -26,7 +26,7 @@ public class CirtainBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cirtain_block")
 	public static final Block block = null;
 	public CirtainBlockBlock(WobrModElements instance) {
-		super(instance, 54);
+		super(instance, 56);
 	}
 
 	@Override

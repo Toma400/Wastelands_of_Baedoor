@@ -26,7 +26,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class FriendlyNetherAvoiderShieldExecutionProcedure extends WobrModElements.ModElement {
 	public FriendlyNetherAvoiderShieldExecutionProcedure(WobrModElements instance) {
-		super(instance, 973);
+		super(instance, 786);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -3,7 +3,7 @@
   "_type": "fluid",
   "definition": {
     "name": "Add On Sandy Water",
-    "bucketName": "Add On Sandy Water Bucket",
+    "bucketName": "Sandy Water Bucket",
     "textureStill": "sandy_water",
     "textureFlowing": "sandy_water",
     "tintType": "No tint",
@@ -12,6 +12,9 @@
     "levelDecrease": 1,
     "slopeFindDistance": 4,
     "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
     "flowStrength": 1.0,
     "luminosity": 0,
     "density": 1000,
@@ -20,8 +23,12 @@
     "temperature": 300,
     "type": "WATER",
     "generateBucket": true,
+    "textureBucket": "sandy_water_bucket",
     "creativeTab": {
       "value": "CUSTOM:WoBIntegrationsTab"
+    },
+    "emptySound": {
+      "value": ""
     },
     "rarity": "COMMON",
     "specialInfo": [],
@@ -32,7 +39,7 @@
     "tickRate": 10,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "SAND",
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

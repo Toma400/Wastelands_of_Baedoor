@@ -21,7 +21,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WindProjectileShulkerProcedure extends WobrModElements.ModElement {
 	public WindProjectileShulkerProcedure(WobrModElements instance) {
-		super(instance, 1405);
+		super(instance, 1180);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

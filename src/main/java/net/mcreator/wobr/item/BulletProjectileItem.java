@@ -15,7 +15,7 @@ public class BulletProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bullet_projectile")
 	public static final Item block = null;
 	public BulletProjectileItem(WobrModElements instance) {
-		super(instance, 915);
+		super(instance, 735);
 	}
 
 	@Override

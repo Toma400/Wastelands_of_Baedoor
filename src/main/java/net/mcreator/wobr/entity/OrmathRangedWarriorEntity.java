@@ -61,7 +61,7 @@ public class OrmathRangedWarriorEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ormath_ranged_warrior").setRegistryName("ormath_ranged_warrior");
 	public OrmathRangedWarriorEntity(WobrModElements instance) {
-		super(instance, 2150);
+		super(instance, 464);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

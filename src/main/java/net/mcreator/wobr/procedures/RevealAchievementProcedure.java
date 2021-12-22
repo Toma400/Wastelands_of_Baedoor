@@ -21,7 +21,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class RevealAchievementProcedure extends WobrModElements.ModElement {
 	public RevealAchievementProcedure(WobrModElements instance) {
-		super(instance, 1373);
+		super(instance, 1151);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

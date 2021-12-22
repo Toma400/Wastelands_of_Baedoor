@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "pulsating_javelin",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorGoldIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TotemofPulsating"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BaedoorGoldIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PulsatingJavelin"
+    },
+    "name": "pulsating_javelin_recipe",
+    "namespace": "mod"
+  }
+}

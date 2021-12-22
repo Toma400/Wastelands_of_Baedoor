@@ -48,7 +48,7 @@ public class StrongerWindProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletstronger_wind_projectile").setRegistryName("entitybulletstronger_wind_projectile");
 	public StrongerWindProjectileItem(WobrModElements instance) {
-		super(instance, 2108);
+		super(instance, 1647);
 	}
 
 	@Override

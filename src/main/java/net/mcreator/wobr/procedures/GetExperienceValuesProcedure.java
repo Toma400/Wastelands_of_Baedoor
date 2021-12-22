@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class GetExperienceValuesProcedure extends WobrModElements.ModElement {
 	public GetExperienceValuesProcedure(WobrModElements instance) {
-		super(instance, 1346);
+		super(instance, 1134);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

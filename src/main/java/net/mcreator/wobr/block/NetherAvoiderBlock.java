@@ -76,7 +76,7 @@ public class NetherAvoiderBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_avoider")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public NetherAvoiderBlock(WobrModElements instance) {
-		super(instance, 976);
+		super(instance, 789);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -207,6 +207,7 @@ public class NetherAvoiderBlock extends WobrModElements.ModElement {
 			Direction direction = hit.getFace();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

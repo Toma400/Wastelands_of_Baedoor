@@ -24,7 +24,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class GunMerchantTrade6Procedure extends WobrModElements.ModElement {
 	public GunMerchantTrade6Procedure(WobrModElements instance) {
-		super(instance, 1925);
+		super(instance, 1574);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

@@ -22,7 +22,7 @@ public class DartPoisonItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_poison")
 	public static final Item block = null;
 	public DartPoisonItem(WobrModElements instance) {
-		super(instance, 24);
+		super(instance, 28);
 	}
 
 	@Override

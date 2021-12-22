@@ -107,7 +107,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:AmmoBoxIronProjectile"
+              "value": "CUSTOM:AmmoBoxIron"
             },
             "weight": 5,
             "minCount": 1,
@@ -121,7 +121,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:AmmoBoxLavaProjectile"
+              "value": "CUSTOM:AmmoBoxLava"
             },
             "weight": 5,
             "minCount": 1,

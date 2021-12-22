@@ -1,5 +1,7 @@
 package net.mcreator.wobr.procedures;
 
+import net.minecraftforge.fml.loading.FMLPaths;
+
 import net.minecraft.world.IWorld;
 
 import net.mcreator.wobr.WobrModVariables;
@@ -21,7 +23,7 @@ import com.google.gson.Gson;
 @WobrModElements.ModElement.Tag
 public class ConfigManagerProcedure extends WobrModElements.ModElement {
 	public ConfigManagerProcedure(WobrModElements instance) {
-		super(instance, 2073);
+		super(instance, 1619);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -32,7 +34,8 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 		}
 		IWorld world = (IWorld) dependencies.get("world");
 		File config = new File("");
-		config = new File((("dir/saves/") + "" + (world.getWorldInfo().getWorldName()) + "" + ("/serverconfig/")),
+		config = new File(
+				((FMLPaths.GAMEDIR.get().toString()) + "" + ("/saves/") + "" + (world.getWorldInfo().getWorldName()) + "" + ("/serverconfig/")),
 				File.separator + "wobr-common.json");
 		if (!config.exists()) {
 			try {
@@ -82,7 +85,7 @@ public class ConfigManagerProcedure extends WobrModElements.ModElement {
 				JsonObject mob_spawn = new JsonObject();
 				JsonObject merchant = new JsonObject();
 				merchant.addProperty("do_merchant_spawn", (true));
-				merchant.addProperty("chance_of_replacing", 25);
+				merchant.addProperty("chance_of_replacing", 20);
 				mob_spawn.add("merchant", merchant);
 				mob_spawn.addProperty("wind_spirit", (true));
 				mob_spawn.addProperty("ormath_raiders", (true));

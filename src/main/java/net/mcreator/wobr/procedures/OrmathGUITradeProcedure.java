@@ -31,7 +31,7 @@ import io.netty.buffer.Unpooled;
 @WobrModElements.ModElement.Tag
 public class OrmathGUITradeProcedure extends WobrModElements.ModElement {
 	public OrmathGUITradeProcedure(WobrModElements instance) {
-		super(instance, 1461);
+		super(instance, 1229);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -26,7 +26,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderTagKillProcedure(WobrModElements instance) {
-		super(instance, 1323);
+		super(instance, 1113);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -86,12 +86,9 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 									|| (EntityTypeTags.getCollection()
 											.getOrCreate(new ResourceLocation(("forge:avoider_arcaneum").toLowerCase(java.util.Locale.ENGLISH)))
 											.contains(entity.getType()))))
-							|| (((EntityTypeTags.getCollection()
+							|| ((EntityTypeTags.getCollection()
 									.getOrCreate(new ResourceLocation(("forge:avoider_atum").toLowerCase(java.util.Locale.ENGLISH)))
 									.contains(entity.getType()))
-									|| (EntityTypeTags.getCollection()
-											.getOrCreate(new ResourceLocation(("forge:avoider_adv_adv").toLowerCase(java.util.Locale.ENGLISH)))
-											.contains(entity.getType())))
 									|| ((EntityTypeTags.getCollection()
 											.getOrCreate(new ResourceLocation(("forge:avoider_infernal_exp").toLowerCase(java.util.Locale.ENGLISH)))
 											.contains(entity.getType()))

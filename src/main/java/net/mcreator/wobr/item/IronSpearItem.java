@@ -24,7 +24,7 @@ public class IronSpearItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:iron_spear")
 	public static final Item block = null;
 	public IronSpearItem(WobrModElements instance) {
-		super(instance, 15);
+		super(instance, 13);
 	}
 
 	@Override

@@ -54,7 +54,7 @@ public class IronThrowingAxeItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletiron_throwing_axe").setRegistryName("entitybulletiron_throwing_axe");
 	public IronThrowingAxeItem(WobrModElements instance) {
-		super(instance, 2094);
+		super(instance, 21);
 	}
 
 	@Override

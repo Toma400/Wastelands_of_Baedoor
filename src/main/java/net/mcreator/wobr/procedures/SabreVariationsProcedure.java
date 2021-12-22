@@ -22,7 +22,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class SabreVariationsProcedure extends WobrModElements.ModElement {
 	public SabreVariationsProcedure(WobrModElements instance) {
-		super(instance, 1286);
+		super(instance, 1076);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

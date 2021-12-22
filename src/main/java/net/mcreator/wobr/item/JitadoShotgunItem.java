@@ -37,7 +37,7 @@ public class JitadoShotgunItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:jitado_shotgun")
 	public static final Item block = null;
 	public JitadoShotgunItem(WobrModElements instance) {
-		super(instance, 42);
+		super(instance, 44);
 	}
 
 	@Override

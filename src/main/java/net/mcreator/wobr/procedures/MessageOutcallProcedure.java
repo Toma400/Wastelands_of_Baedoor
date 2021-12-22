@@ -16,7 +16,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class MessageOutcallProcedure extends WobrModElements.ModElement {
 	public MessageOutcallProcedure(WobrModElements instance) {
-		super(instance, 1509);
+		super(instance, 1263);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

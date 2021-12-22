@@ -16,7 +16,7 @@ public class DoubledShotgunBarrelItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:doubled_shotgun_barrel")
 	public static final Item block = null;
 	public DoubledShotgunBarrelItem(WobrModElements instance) {
-		super(instance, 248);
+		super(instance, 250);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class DartCurareItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_curare")
 	public static final Item block = null;
 	public DartCurareItem(WobrModElements instance) {
-		super(instance, 25);
+		super(instance, 29);
 	}
 
 	@Override

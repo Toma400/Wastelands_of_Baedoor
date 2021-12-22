@@ -37,7 +37,7 @@ public class HandmadeRevolverItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:handmade_revolver")
 	public static final Item block = null;
 	public HandmadeRevolverItem(WobrModElements instance) {
-		super(instance, 31);
+		super(instance, 32);
 	}
 
 	@Override

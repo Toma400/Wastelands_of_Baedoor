@@ -15,7 +15,7 @@ public class WindProjectileItemItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wind_projectile_item")
 	public static final Item block = null;
 	public WindProjectileItemItem(WobrModElements instance) {
-		super(instance, 1399);
+		super(instance, 1176);
 	}
 
 	@Override

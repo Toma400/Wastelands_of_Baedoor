@@ -16,7 +16,7 @@ public class ShotgunClip2Item extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:shotgun_clip_2")
 	public static final Item block = null;
 	public ShotgunClip2Item(WobrModElements instance) {
-		super(instance, 257);
+		super(instance, 259);
 	}
 
 	@Override

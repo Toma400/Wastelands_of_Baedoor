@@ -32,7 +32,7 @@ public class AirshipMerchantChestBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:airship_merchant_chest")
 	public static final Block block = null;
 	public AirshipMerchantChestBlock(WobrModElements instance) {
-		super(instance, 2132);
+		super(instance, 1671);
 	}
 
 	@Override

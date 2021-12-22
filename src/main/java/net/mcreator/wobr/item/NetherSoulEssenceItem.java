@@ -22,7 +22,7 @@ public class NetherSoulEssenceItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_soul_essence")
 	public static final Item block = null;
 	public NetherSoulEssenceItem(WobrModElements instance) {
-		super(instance, 258);
+		super(instance, 260);
 	}
 
 	@Override

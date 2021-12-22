@@ -32,7 +32,7 @@ public class BaedoorFuntBlockTrapdoorBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block_trapdoor")
 	public static final Block block = null;
 	public BaedoorFuntBlockTrapdoorBlock(WobrModElements instance) {
-		super(instance, 191);
+		super(instance, 193);
 	}
 
 	@Override

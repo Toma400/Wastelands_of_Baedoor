@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ReloadScoreUpProcedure extends WobrModElements.ModElement {
 	public ReloadScoreUpProcedure(WobrModElements instance) {
-		super(instance, 900);
+		super(instance, 720);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

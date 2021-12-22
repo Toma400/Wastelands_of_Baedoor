@@ -1,5 +1,6 @@
 {
-  "parent": "forge:item/bucket_drip",
-  "loader": "forge:bucket",
-  "fluid": "wobr:add_on_sandy_water"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wobr:items/sandy_water_bucket"
+  }
 }

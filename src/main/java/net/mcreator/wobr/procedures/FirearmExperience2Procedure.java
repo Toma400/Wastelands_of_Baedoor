@@ -17,7 +17,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class FirearmExperience2Procedure extends WobrModElements.ModElement {
 	public FirearmExperience2Procedure(WobrModElements instance) {
-		super(instance, 1386);
+		super(instance, 1164);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

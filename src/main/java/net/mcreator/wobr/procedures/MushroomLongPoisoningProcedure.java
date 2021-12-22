@@ -14,7 +14,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class MushroomLongPoisoningProcedure extends WobrModElements.ModElement {
 	public MushroomLongPoisoningProcedure(WobrModElements instance) {
-		super(instance, 836);
+		super(instance, 656);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

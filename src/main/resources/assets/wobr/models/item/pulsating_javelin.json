@@ -1,0 +1,7 @@
+{
+  "parent": "wobr:custom/weapon_pulsating_javelin",
+  "textures": {
+    "0": "wobr:blocks/txt_pulsating_javelin",
+    "particle": "wobr:items/pulsating_javelin"
+  }
+}

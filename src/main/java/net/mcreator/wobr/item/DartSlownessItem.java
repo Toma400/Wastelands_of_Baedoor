@@ -22,7 +22,7 @@ public class DartSlownessItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_slowness")
 	public static final Item block = null;
 	public DartSlownessItem(WobrModElements instance) {
-		super(instance, 27);
+		super(instance, 31);
 	}
 
 	@Override

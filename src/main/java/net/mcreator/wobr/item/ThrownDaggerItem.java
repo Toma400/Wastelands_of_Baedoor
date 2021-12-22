@@ -54,7 +54,7 @@ public class ThrownDaggerItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletthrown_dagger").setRegistryName("entitybulletthrown_dagger");
 	public ThrownDaggerItem(WobrModElements instance) {
-		super(instance, 2079);
+		super(instance, 14);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class LavaIngotItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lava_ingot")
 	public static final Item block = null;
 	public LavaIngotItem(WobrModElements instance) {
-		super(instance, 49);
+		super(instance, 51);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class GlobalGrowthProcedure extends WobrModElements.ModElement {
 	public GlobalGrowthProcedure(WobrModElements instance) {
-		super(instance, 811);
+		super(instance, 631);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

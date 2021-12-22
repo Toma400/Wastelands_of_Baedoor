@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class DartSlownessUseProcedure extends WobrModElements.ModElement {
 	public DartSlownessUseProcedure(WobrModElements instance) {
-		super(instance, 1572);
+		super(instance, 1317);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

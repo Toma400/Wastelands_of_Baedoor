@@ -17,7 +17,7 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class SpawnEntitiesKillProcedure extends WobrModElements.ModElement {
 	public SpawnEntitiesKillProcedure(WobrModElements instance) {
-		super(instance, 2031);
+		super(instance, 1602);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

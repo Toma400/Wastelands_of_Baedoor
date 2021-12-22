@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ChestLockingStatus2Procedure extends WobrModElements.ModElement {
 	public ChestLockingStatus2Procedure(WobrModElements instance) {
-		super(instance, 1576);
+		super(instance, 1320);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

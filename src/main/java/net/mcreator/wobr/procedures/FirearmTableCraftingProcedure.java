@@ -54,7 +54,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class FirearmTableCraftingProcedure extends WobrModElements.ModElement {
 	public FirearmTableCraftingProcedure(WobrModElements instance) {
-		super(instance, 840);
+		super(instance, 660);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

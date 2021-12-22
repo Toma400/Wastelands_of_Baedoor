@@ -32,7 +32,7 @@ public class PillarCrimsonBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_crimson")
 	public static final Block block = null;
 	public PillarCrimsonBlock(WobrModElements instance) {
-		super(instance, 161);
+		super(instance, 163);
 	}
 
 	@Override

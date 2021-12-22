@@ -29,7 +29,7 @@ public class ChiseledStrippedJungleWoodenSlabBlock extends WobrModElements.ModEl
 	@ObjectHolder("wobr:chiseled_stripped_jungle_wooden_slab")
 	public static final Block block = null;
 	public ChiseledStrippedJungleWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 105);
+		super(instance, 107);
 	}
 
 	@Override

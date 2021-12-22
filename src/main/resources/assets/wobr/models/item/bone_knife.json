@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "wobr:items/bone_knife_2"
+    "layer0": "wobr:items/bone_knife"
   }
 }

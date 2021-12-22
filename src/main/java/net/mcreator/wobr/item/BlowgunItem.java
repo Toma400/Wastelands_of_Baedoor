@@ -30,7 +30,7 @@ public class BlowgunItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:blowgun")
 	public static final Item block = null;
 	public BlowgunItem(WobrModElements instance) {
-		super(instance, 22);
+		super(instance, 26);
 	}
 
 	@Override

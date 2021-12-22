@@ -37,7 +37,7 @@ public class PillarCucturBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_cuctur")
 	public static final Block block = null;
 	public PillarCucturBlock(WobrModElements instance) {
-		super(instance, 743);
+		super(instance, 581);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class CirtainIngotItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cirtain_ingot")
 	public static final Item block = null;
 	public CirtainIngotItem(WobrModElements instance) {
-		super(instance, 50);
+		super(instance, 52);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class OrmathFriendlyFireDefenceProcedure extends WobrModElements.ModElement {
 	public OrmathFriendlyFireDefenceProcedure(WobrModElements instance) {
-		super(instance, 1435);
+		super(instance, 1205);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -16,7 +16,7 @@ import java.util.Iterator;
 @WobrModElements.ModElement.Tag
 public class WalkingOnSoulsProcedure extends WobrModElements.ModElement {
 	public WalkingOnSoulsProcedure(WobrModElements instance) {
-		super(instance, 1811);
+		super(instance, 1521);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

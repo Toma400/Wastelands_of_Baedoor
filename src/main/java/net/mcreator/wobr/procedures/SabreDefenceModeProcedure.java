@@ -45,7 +45,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class SabreDefenceModeProcedure extends WobrModElements.ModElement {
 	public SabreDefenceModeProcedure(WobrModElements instance) {
-		super(instance, 1217);
+		super(instance, 1023);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

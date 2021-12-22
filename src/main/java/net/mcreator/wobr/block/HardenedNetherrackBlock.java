@@ -26,7 +26,7 @@ public class HardenedNetherrackBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:hardened_netherrack")
 	public static final Block block = null;
 	public HardenedNetherrackBlock(WobrModElements instance) {
-		super(instance, 66);
+		super(instance, 68);
 	}
 
 	@Override

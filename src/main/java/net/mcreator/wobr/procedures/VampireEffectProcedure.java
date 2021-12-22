@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class VampireEffectProcedure extends WobrModElements.ModElement {
 	public VampireEffectProcedure(WobrModElements instance) {
-		super(instance, 1288);
+		super(instance, 1078);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -40,7 +40,7 @@ public class NetherShielderBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_shielder")
 	public static final Block block = null;
 	public NetherShielderBlock(WobrModElements instance) {
-		super(instance, 210);
+		super(instance, 211);
 	}
 
 	@Override

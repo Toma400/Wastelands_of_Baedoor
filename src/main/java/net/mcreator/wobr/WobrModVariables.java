@@ -108,7 +108,6 @@ public class WobrModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "wobr_mapvars";
-		public boolean Merchant = false;
 		public boolean KF_Av_Pigman = false;
 		public boolean KF_Av_Villager = true;
 		public double KF_Av_Distance = 50.0;
@@ -130,7 +129,7 @@ public class WobrModVariables {
 		public boolean KF_Ent_Merchant = true;
 		public double KF_Drop_Glister_A = 2.0;
 		public double KF_Drop_Essence_A = 8.0;
-		public double KF_Ent_Merchant_A = 25.0;
+		public double KF_Ent_Merchant_A = 20.0;
 		public boolean KF_Is_Config_Here = false;
 		public MapVariables() {
 			super(DATA_NAME);
@@ -142,7 +141,6 @@ public class WobrModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			Merchant = nbt.getBoolean("Merchant");
 			KF_Av_Pigman = nbt.getBoolean("KF_Av_Pigman");
 			KF_Av_Villager = nbt.getBoolean("KF_Av_Villager");
 			KF_Av_Distance = nbt.getDouble("KF_Av_Distance");
@@ -170,7 +168,6 @@ public class WobrModVariables {
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putBoolean("Merchant", Merchant);
 			nbt.putBoolean("KF_Av_Pigman", KF_Av_Pigman);
 			nbt.putBoolean("KF_Av_Villager", KF_Av_Villager);
 			nbt.putDouble("KF_Av_Distance", KF_Av_Distance);

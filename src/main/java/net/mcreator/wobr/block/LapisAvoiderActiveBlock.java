@@ -79,7 +79,7 @@ public class LapisAvoiderActiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lapis_avoider_active")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LapisAvoiderActiveBlock(WobrModElements instance) {
-		super(instance, 1645);
+		super(instance, 1381);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -217,6 +217,7 @@ public class LapisAvoiderActiveBlock extends WobrModElements.ModElement {
 			Direction direction = hit.getFace();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

@@ -26,7 +26,7 @@ public class PaleGoldIngotItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pale_gold_ingot")
 	public static final Item block = null;
 	public PaleGoldIngotItem(WobrModElements instance) {
-		super(instance, 47);
+		super(instance, 49);
 	}
 
 	@Override

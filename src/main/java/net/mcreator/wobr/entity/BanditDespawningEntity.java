@@ -48,7 +48,7 @@ public class BanditDespawningEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.95f)).build("bandit_despawning").setRegistryName("bandit_despawning");
 	public BanditDespawningEntity(WobrModElements instance) {
-		super(instance, 2142);
+		super(instance, 458);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

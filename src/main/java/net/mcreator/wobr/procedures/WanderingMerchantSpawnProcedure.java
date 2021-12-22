@@ -32,7 +32,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement {
 	public WanderingMerchantSpawnProcedure(WobrModElements instance) {
-		super(instance, 1508);
+		super(instance, 1262);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -67,14 +67,14 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((entity instanceof WanderingTraderEntity) && (WobrModVariables.MapVariables.get(world).Merchant == (false)))) {
+		if ((entity instanceof WanderingTraderEntity)) {
 			if ((WobrModVariables.MapVariables.get(world).KF_Ent_Merchant == (true))) {
 				if ((WobrModVariables.MapVariables.get(world).KF_Ent_Merchant_A >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager().handleCommand(
 								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-								"effect give @e[distance=..50] wobr:anti_wandering_trader 3");
+								"effect give @e[distance=..25] wobr:anti_wandering_trader 3");
 					}
 					if ((75 >= (Math.random() * 100))) {
 						if (world instanceof World && !world.getWorld().isRemote) {
@@ -85,8 +85,6 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 							world.addEntity(entityToSpawn);
 						}
-						WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
-						WobrModVariables.MapVariables.get(world).syncData(world);
 					} else {
 						if (world instanceof World && !world.getWorld().isRemote) {
 							Entity entityToSpawn = new WanderingMerchantFirearmsEntity.CustomEntity(WanderingMerchantFirearmsEntity.entity,
@@ -97,8 +95,6 @@ public class WanderingMerchantSpawnProcedure extends WobrModElements.ModElement 
 										SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 							world.addEntity(entityToSpawn);
 						}
-						WobrModVariables.MapVariables.get(world).Merchant = (boolean) (true);
-						WobrModVariables.MapVariables.get(world).syncData(world);
 					}
 				}
 			}

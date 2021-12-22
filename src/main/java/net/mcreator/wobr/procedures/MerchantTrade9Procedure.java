@@ -24,7 +24,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class MerchantTrade9Procedure extends WobrModElements.ModElement {
 	public MerchantTrade9Procedure(WobrModElements instance) {
-		super(instance, 1916);
+		super(instance, 1566);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

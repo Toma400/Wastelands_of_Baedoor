@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AddOnSandyWaterWalkProcedure extends WobrModElements.ModElement {
 	public AddOnSandyWaterWalkProcedure(WobrModElements instance) {
-		super(instance, 1732);
+		super(instance, 1448);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -25,7 +25,7 @@ public class WarpedWoodenStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warped_wooden_stairs")
 	public static final Block block = null;
 	public WarpedWoodenStairsBlock(WobrModElements instance) {
-		super(instance, 148);
+		super(instance, 150);
 	}
 
 	@Override

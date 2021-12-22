@@ -1102,6 +1102,20 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "byg:sythian_fungus",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     }

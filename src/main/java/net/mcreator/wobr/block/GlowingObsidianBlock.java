@@ -32,7 +32,7 @@ public class GlowingObsidianBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:glowing_obsidian")
 	public static final Block block = null;
 	public GlowingObsidianBlock(WobrModElements instance) {
-		super(instance, 53);
+		super(instance, 55);
 	}
 
 	@Override

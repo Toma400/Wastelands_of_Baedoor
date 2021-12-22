@@ -20,7 +20,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElement {
 	public AirshipLootTablesManagerProcedure(WobrModElements instance) {
-		super(instance, 1890);
+		super(instance, 1546);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -56,13 +56,13 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 						"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_bandit\"} replace");
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AirshipMerchantChestBlock.block)) {
-			if ((net.minecraftforge.fml.ModList.get().isLoaded("farmers_respite"))) {
-				if ((5 >= (Math.random() * 100))) {
+			if ((net.minecraftforge.fml.ModList.get().isLoaded("farmersrespite"))) {
+				if ((9 >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 						world.getWorld().getServer().getCommandManager().handleCommand(
 								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_tea\"} replace");
+								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:airship_merchant_loot_table_tea\"} replace");
 					}
 				} else {
 					if ((net.minecraftforge.fml.ModList.get().isLoaded("byg"))) {
@@ -70,7 +70,7 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 							world.getWorld().getServer().getCommandManager().handleCommand(
 									new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 											new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-									"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_byg\"} replace");
+									"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:airship_merchant_loot_table_byg\"} replace");
 						}
 					} else {
 						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
@@ -87,7 +87,7 @@ public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElemen
 						world.getWorld().getServer().getCommandManager().handleCommand(
 								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:chests/airship_merchant_loot_table_byg\"} replace");
+								"setblock ~ ~ ~ minecraft:chest{LootTable:\"wobr:airship_merchant_loot_table_byg\"} replace");
 					}
 				} else {
 					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

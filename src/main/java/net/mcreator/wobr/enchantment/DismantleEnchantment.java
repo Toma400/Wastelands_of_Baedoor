@@ -15,7 +15,7 @@ public class DismantleEnchantment extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dismantle")
 	public static final Enchantment enchantment = null;
 	public DismantleEnchantment(WobrModElements instance) {
-		super(instance, 1327);
+		super(instance, 1117);
 	}
 
 	@Override

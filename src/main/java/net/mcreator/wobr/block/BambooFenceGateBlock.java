@@ -33,7 +33,7 @@ public class BambooFenceGateBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bamboo_fence_gate")
 	public static final Block block = null;
 	public BambooFenceGateBlock(WobrModElements instance) {
-		super(instance, 175);
+		super(instance, 177);
 	}
 
 	@Override

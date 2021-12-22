@@ -79,7 +79,7 @@ public class GoldenAvoiderActiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:golden_avoider_active")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GoldenAvoiderActiveBlock(WobrModElements instance) {
-		super(instance, 1643);
+		super(instance, 1379);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -218,6 +218,7 @@ public class GoldenAvoiderActiveBlock extends WobrModElements.ModElement {
 			Direction direction = hit.getFace();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

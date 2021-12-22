@@ -25,7 +25,7 @@ public class NetherAvoiderShieldingPotionEffect extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:nether_avoider_shielding")
 	public static final Effect potion = null;
 	public NetherAvoiderShieldingPotionEffect(WobrModElements instance) {
-		super(instance, 2123);
+		super(instance, 1662);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -80,6 +80,10 @@ public class NetherAvoiderShieldingPotionEffect extends WobrModElements.ModEleme
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				NetherAvoiderShieldProcedure.executeProcedure($_dependencies);
 			}
 		}

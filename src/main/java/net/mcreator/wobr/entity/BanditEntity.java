@@ -47,7 +47,7 @@ public class BanditEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.95f)).build("bandit").setRegistryName("bandit");
 	public BanditEntity(WobrModElements instance) {
-		super(instance, 2141);
+		super(instance, 1680);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

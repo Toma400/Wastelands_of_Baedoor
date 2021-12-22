@@ -24,6 +24,7 @@ import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.BlockState;
@@ -48,7 +49,7 @@ public class AddOnSandyWaterBlock extends WobrModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public AddOnSandyWaterBlock(WobrModElements instance) {
-		super(instance, 778);
+		super(instance, 599);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -73,7 +74,8 @@ public class AddOnSandyWaterBlock extends WobrModElements.ModElement {
 								.levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("add_on_sandy_water");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("add_on_sandy_water_flowing");
-		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).lightValue(0)) {
+		elements.blocks.add(() -> new FlowingFluidBlock(still,
+				Block.Properties.create(Material.WATER, MaterialColor.SAND).hardnessAndResistance(100f).lightValue(0)) {
 			@Override
 			public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
 				super.onBlockAdded(blockstate, world, pos, oldState, moving);

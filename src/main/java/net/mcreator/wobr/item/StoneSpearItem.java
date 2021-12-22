@@ -24,7 +24,7 @@ public class StoneSpearItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:stone_spear")
 	public static final Item block = null;
 	public StoneSpearItem(WobrModElements instance) {
-		super(instance, 14);
+		super(instance, 12);
 	}
 
 	@Override

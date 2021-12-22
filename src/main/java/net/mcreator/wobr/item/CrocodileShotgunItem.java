@@ -37,7 +37,7 @@ public class CrocodileShotgunItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:crocodile_shotgun")
 	public static final Item block = null;
 	public CrocodileShotgunItem(WobrModElements instance) {
-		super(instance, 41);
+		super(instance, 43);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class ElephantGunItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:elephant_gun")
 	public static final Item block = null;
 	public ElephantGunItem(WobrModElements instance) {
-		super(instance, 43);
+		super(instance, 45);
 	}
 
 	@Override

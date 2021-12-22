@@ -21,7 +21,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class SabreCooldownProcedure extends WobrModElements.ModElement {
 	public SabreCooldownProcedure(WobrModElements instance) {
-		super(instance, 1282);
+		super(instance, 1073);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

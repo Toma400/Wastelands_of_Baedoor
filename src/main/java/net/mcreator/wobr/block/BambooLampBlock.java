@@ -33,7 +33,7 @@ public class BambooLampBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bamboo_lamp")
 	public static final Block block = null;
 	public BambooLampBlock(WobrModElements instance) {
-		super(instance, 181);
+		super(instance, 183);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class CrackedLavaBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cracked_lava_block")
 	public static final Block block = null;
 	public CrackedLavaBlockBlock(WobrModElements instance) {
-		super(instance, 52);
+		super(instance, 54);
 	}
 
 	@Override

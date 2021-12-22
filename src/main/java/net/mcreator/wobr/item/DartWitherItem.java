@@ -22,7 +22,7 @@ public class DartWitherItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_wither")
 	public static final Item block = null;
 	public DartWitherItem(WobrModElements instance) {
-		super(instance, 26);
+		super(instance, 30);
 	}
 
 	@Override

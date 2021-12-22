@@ -25,7 +25,7 @@ public class AntiWanderingTraderPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:anti_wandering_trader")
 	public static final Effect potion = null;
 	public AntiWanderingTraderPotionEffect(WobrModElements instance) {
-		super(instance, 2122);
+		super(instance, 1661);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

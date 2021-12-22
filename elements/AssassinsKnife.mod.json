@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "assassins_knife_2",
+    "texture": "assassins_knife",
     "customModelName": "Normal",
     "name": "Assassin's Knife",
     "specialInfo": [

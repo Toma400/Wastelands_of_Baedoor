@@ -24,7 +24,7 @@ public class JavelinSackStoneItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:javelin_sack_stone")
 	public static final Item block = null;
 	public JavelinSackStoneItem(WobrModElements instance) {
-		super(instance, 20);
+		super(instance, 24);
 	}
 
 	@Override

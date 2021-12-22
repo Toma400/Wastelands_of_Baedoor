@@ -22,7 +22,7 @@ public class BaedoorGoldIngotItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_gold_ingot")
 	public static final Item block = null;
 	public BaedoorGoldIngotItem(WobrModElements instance) {
-		super(instance, 48);
+		super(instance, 50);
 	}
 
 	@Override

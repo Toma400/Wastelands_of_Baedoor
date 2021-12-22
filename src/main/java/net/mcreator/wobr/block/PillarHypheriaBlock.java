@@ -37,7 +37,7 @@ public class PillarHypheriaBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_hypheria")
 	public static final Block block = null;
 	public PillarHypheriaBlock(WobrModElements instance) {
-		super(instance, 742);
+		super(instance, 580);
 	}
 
 	@Override

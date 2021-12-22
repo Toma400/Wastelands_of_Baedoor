@@ -37,7 +37,7 @@ public class PepperBoxItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pepper_box")
 	public static final Item block = null;
 	public PepperBoxItem(WobrModElements instance) {
-		super(instance, 32);
+		super(instance, 33);
 	}
 
 	@Override

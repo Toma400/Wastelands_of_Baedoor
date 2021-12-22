@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TropicalFishRestorationProcedure extends WobrModElements.ModElement {
 	public TropicalFishRestorationProcedure(WobrModElements instance) {
-		super(instance, 1394);
+		super(instance, 1171);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

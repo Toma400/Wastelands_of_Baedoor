@@ -55,7 +55,7 @@ public class RedBuffaloEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("red_buffalo").setRegistryName("red_buffalo");
 	public RedBuffaloEntity(WobrModElements instance) {
-		super(instance, 2151);
+		super(instance, 465);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

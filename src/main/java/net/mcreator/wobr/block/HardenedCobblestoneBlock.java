@@ -31,7 +31,7 @@ public class HardenedCobblestoneBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:hardened_cobblestone")
 	public static final Block block = null;
 	public HardenedCobblestoneBlock(WobrModElements instance) {
-		super(instance, 64);
+		super(instance, 66);
 	}
 
 	@Override

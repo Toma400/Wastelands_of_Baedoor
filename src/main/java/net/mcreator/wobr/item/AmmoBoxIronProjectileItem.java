@@ -47,7 +47,7 @@ public class AmmoBoxIronProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletammo_box_iron_projectile").setRegistryName("entitybulletammo_box_iron_projectile");
 	public AmmoBoxIronProjectileItem(WobrModElements instance) {
-		super(instance, 2088);
+		super(instance, 1632);
 	}
 
 	@Override

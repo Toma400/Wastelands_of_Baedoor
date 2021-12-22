@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": ""
     },
     "hasGlow": false,
     "animation": "spear",

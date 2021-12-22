@@ -14,7 +14,7 @@ import java.io.BufferedWriter;
 @WobrModElements.ModElement.Tag
 public class ConfigInfoProcedure extends WobrModElements.ModElement {
 	public ConfigInfoProcedure(WobrModElements instance) {
-		super(instance, 2192);
+		super(instance, 1716);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

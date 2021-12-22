@@ -36,7 +36,7 @@ public class AmmoBoxIronItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ammo_box_iron")
 	public static final Item block = null;
 	public AmmoBoxIronItem(WobrModElements instance) {
-		super(instance, 236);
+		super(instance, 238);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class FluidConverterWaterConvertingProcedure extends WobrModElements.ModElement {
 	public FluidConverterWaterConvertingProcedure(WobrModElements instance) {
-		super(instance, 1794);
+		super(instance, 1504);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

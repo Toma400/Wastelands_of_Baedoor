@@ -19,8 +19,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
@@ -47,11 +45,9 @@ import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRangedAttackMob;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -61,10 +57,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
-import net.mcreator.wobr.procedures.WanderingMerchantTradesProcedure;
 import net.mcreator.wobr.procedures.WanderingMerchantDespawnProcedure;
-import net.mcreator.wobr.procedures.WanderingDeathProcedure;
-import net.mcreator.wobr.procedures.MerchantDataMergeProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.item.BulletRangedItem;
 import net.mcreator.wobr.gui.MerchantGUIResourcesGui;
@@ -84,7 +77,7 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("wandering_merchant").setRegistryName("wandering_merchant");
 	public WanderingMerchantEntity(WobrModElements instance) {
-		super(instance, 2153);
+		super(instance, 467);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -175,37 +168,6 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 				return false;
 			return super.attackEntityFrom(source, amount);
 		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("world", world);
-				WanderingDeathProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public ILivingEntityData onInitialSpawn(IWorld world, DifficultyInstance difficulty, SpawnReason reason, ILivingEntityData livingdata,
-				CompoundNBT tag) {
-			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				WanderingMerchantTradesProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
 		private final ItemStackHandler inventory = new ItemStackHandler(9) {
 			@Override
 			public int getSlotLimit(int slot) {
@@ -272,16 +234,6 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 				});
 			}
 			super.processInteract(sourceentity, hand);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("sourceentity", sourceentity);
-				MerchantDataMergeProcedure.executeProcedure($_dependencies);
-			}
 			return retval;
 		}
 
@@ -295,7 +247,6 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				WanderingMerchantDespawnProcedure.executeProcedure($_dependencies);
 			}
 		}

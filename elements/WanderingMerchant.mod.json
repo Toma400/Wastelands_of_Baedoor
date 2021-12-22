@@ -98,17 +98,8 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "whenMobDies": {
-      "name": "WanderingDeath"
-    },
-    "onRightClickedOn": {
-      "name": "MerchantDataMerge"
-    },
     "onMobTickUpdate": {
       "name": "WanderingMerchantDespawn"
-    },
-    "onInitialSpawn": {
-      "name": "WanderingMerchantTrades"
     },
     "hasAI": true,
     "aiBase": "(none)",

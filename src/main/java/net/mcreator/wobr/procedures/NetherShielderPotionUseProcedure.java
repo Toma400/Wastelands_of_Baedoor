@@ -25,7 +25,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherShielderPotionUseProcedure extends WobrModElements.ModElement {
 	public NetherShielderPotionUseProcedure(WobrModElements instance) {
-		super(instance, 1517);
+		super(instance, 1271);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -68,12 +68,12 @@ public class NetherShielderPotionUseProcedure extends WobrModElements.ModElement
 						"effect give @e[distance=..5] wobr:nether_avoider_shielding 10");
 			}
 			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z), (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+						.getValue(new ResourceLocation("block.metal_pressure_plate.click_on")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			} else {
 				world.getWorld().playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+								.getValue(new ResourceLocation("block.metal_pressure_plate.click_on")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		}

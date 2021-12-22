@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class KnifeSneakAttackProcedure extends WobrModElements.ModElement {
 	public KnifeSneakAttackProcedure(WobrModElements instance) {
-		super(instance, 1194);
+		super(instance, 1000);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -33,7 +33,7 @@ public class BambooPanelBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bamboo_panel")
 	public static final Block block = null;
 	public BambooPanelBlock(WobrModElements instance) {
-		super(instance, 180);
+		super(instance, 182);
 	}
 
 	@Override

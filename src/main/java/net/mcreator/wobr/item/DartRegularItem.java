@@ -22,7 +22,7 @@ public class DartRegularItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:dart_regular")
 	public static final Item block = null;
 	public DartRegularItem(WobrModElements instance) {
-		super(instance, 23);
+		super(instance, 27);
 	}
 
 	@Override

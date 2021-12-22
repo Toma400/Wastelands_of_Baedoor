@@ -31,7 +31,7 @@ public class LavaBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lava_block")
 	public static final Block block = null;
 	public LavaBlockBlock(WobrModElements instance) {
-		super(instance, 51);
+		super(instance, 53);
 	}
 
 	@Override

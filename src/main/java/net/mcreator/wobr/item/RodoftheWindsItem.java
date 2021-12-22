@@ -41,7 +41,7 @@ public class RodoftheWindsItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:rodofthe_winds")
 	public static final Item block = null;
 	public RodoftheWindsItem(WobrModElements instance) {
-		super(instance, 21);
+		super(instance, 25);
 	}
 
 	@Override
