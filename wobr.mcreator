@@ -20641,6 +20641,363 @@
           }
         ]
       }
+    },
+    {
+      "name": "ReloadRusticDeif444Carbine",
+      "type": "procedure",
+      "sortid": 1741,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_rustic_deif_444_carbine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShotRusticDeif444Carbine",
+      "type": "procedure",
+      "sortid": 1742,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shot_rustic_deif_444_carbine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RusticDeif444Carbine",
+      "type": "tool",
+      "sortid": 1741,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rustic_deif_444_carbine"
+    },
+    {
+      "name": "LockingCheck",
+      "type": "procedure",
+      "sortid": 1743,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locking_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LockingKey",
+      "type": "keybind",
+      "sortid": 1743,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locking_key"
+    },
+    {
+      "name": "WobrFirearmsOther",
+      "type": "tag",
+      "sortid": 1744,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wobr_firearms_other"
+    },
+    {
+      "name": "ShotHeavyDeif442Carbine",
+      "type": "procedure",
+      "sortid": 1745,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shot_heavy_deif_442_carbine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeavyDeif442Carbine",
+      "type": "tool",
+      "sortid": 1745,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heavy_deif_442_carbine"
+    },
+    {
+      "name": "ReloadHeavyDeif442Carbine",
+      "type": "procedure",
+      "sortid": 1746,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_heavy_deif_442_carbine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReloadCheckRevolvers",
+      "type": "procedure",
+      "sortid": 1747,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_check_revolvers",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReloadCheckShotguns",
+      "type": "procedure",
+      "sortid": 1748,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_check_shotguns",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReloadCheckRifles",
+      "type": "procedure",
+      "sortid": 1749,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_check_rifles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReloadCheckOther",
+      "type": "procedure",
+      "sortid": 1750,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_check_other",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WobrFirearmSmeltable",
+      "type": "tag",
+      "sortid": 1751,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wobr_firearm_smeltable"
+    },
+    {
+      "name": "FirearmSmelting",
+      "type": "recipe",
+      "sortid": 1752,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "firearm_smelting"
+    },
+    {
+      "name": "PodzolRequirements",
+      "type": "procedure",
+      "sortid": 1753,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "podzol_requirements",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -21157,6 +21514,7 @@
       "block.wobr.birch_framed_cyan_stained_glass": "Birch Framed Cyan Stained Glass",
       "item.wobr.sand_dust": "Piaskowy proch",
       "item.wobr.bullet_ranged": "Small Bullet Ranged",
+      "item.wobr.rustic_deif_444_carbine": "Rustic Deif 44/4 Carbine",
       "block.wobr.acacia_framed_light_gray_stained_glass": "Acacia Framed Light Gray Stained Glass",
       "block.wobr.sandy_birch_framed_light_blue_stained_glass": "Sandy Birch Framed Light Blue Stained Glass",
       "item.wobr.wandering_merchant_firearms_spawn_egg": "Wandering Merchant Spawn Egg",
@@ -21170,10 +21528,10 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Nutwood Wooden Slab",
       "item.wobr.rifle_clip_1_2": "Magazynek 12-strza³owy do karabinu",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
       "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
-      "item.wobr.card_club_ace_winfleton": "As trefl Winfletonów",
+      "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
       "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Orange Shroomwood Slab",
+      "item.wobr.card_club_ace_winfleton": "As trefl Winfletonów",
       "advancements.witheric_totem.descr": "Even if scared, you decided to craft this oddly shaped, ancient totem... let\u0027s see what will it bring",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
       "advancements.trappingthe_beast.descr": "Placing that trap, you won\u0027t need to worry about hunting anymore! You ended the path sooner, you cheater! (...or did you?)",
@@ -21202,17 +21560,17 @@
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
       "block.wobr.darkwood_wooden_stairs": "Cuctur Wooden Stairs",
       "item.wobr.ormath_rider_spawn_egg": "Ormath Rider Spawn Egg",
-      "block.wobr.blue_shroomed_wooden_stairs": "Brown Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
+      "block.wobr.blue_shroomed_wooden_stairs": "Brown Shroomwood Stairs",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Hypheria Wooden Slab",
       "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "effect.merchant_block_heartofthe_sea": "[Merchant Trade Blocked]",
-      "entity.wobr.ormath_villager": "Ormath Villager",
       "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Military Airship Spawn Egg",
+      "entity.wobr.ormath_villager": "Ormath Villager",
       "block.wobr.darkwood_wooden_slab": "Cuctur Wooden Slab",
       "block.wobr.hardened_black_sand": "Utwardzony wulkaniczny piasek",
-      "block.wobr.pillar_jungle": "Birch Pillar",
       "item.wobr.totemof_pulsating_placed_spawn_egg": "Totem of Pulsating Spawn Egg",
+      "block.wobr.pillar_jungle": "Birch Pillar",
       "advancements.ormath_betrayer.title": "Zdrajca ormathów",
       "block.wobr.stripped_nutwood_wooden_stairs": "Stripped Juniper Wooden Stairs",
       "block.wobr.birch_framed_black_stained_glass": "Birch Framed Black Stained Glass",
@@ -21236,8 +21594,8 @@
       "item.wobr.wandering_merchant_spawn_egg": "Wandering Merchant Spawn Egg",
       "item.wobr.prismarine_sabre": "Pryzmarynowa szabla",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
-      "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
       "block.wobr.chiseled_darkwood_wood": "Chiseled Cuctur Wood",
+      "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Asha Hypheria Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
@@ -21260,8 +21618,8 @@
       "block.wobr.acacia_framed_green_stained_glass": "Acacia Framed Green Stained Glass",
       "item.wobr.baedoor_gold_ingot": "Baedoor Gold Ingot",
       "block.wobr.birch_framed_magenta_stained_glass": "Birch Framed Magenta Stained Glass",
-      "advancements.guide_book.title": "Uniwersum Baedoor",
       "block.wobr.sandy_birch_framed_white_stained_glass": "Sandy Birch Framed White Stained Glass",
+      "advancements.guide_book.title": "Uniwersum Baedoor",
       "block.wobr.spruce_framed_red_stained_glass": "Spruce Framed Red Stained Glass",
       "block.wobr.chiseled_dark_oak_wood": "Chiseled Dark Oak Wood",
       "block.wobr.cypress_wooden_slab": "Nutwood Wooden Slab",
@@ -21284,8 +21642,8 @@
       "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "item.wobr.white_sabre": "Bia³a szabla",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
-      "block.wobr.chiseled_stripped_acacia_wood": "Chiseled Stripped Acacia Wood",
       "entity.wobr.spawn_entity_bandit_airship": "[Spawn Entity] Bandit Airship",
+      "block.wobr.chiseled_stripped_acacia_wood": "Chiseled Stripped Acacia Wood",
       "block.wobr.sandy_birch_framed_blue_stained_glass": "Sandy Birch Framed Blue Stained Glass",
       "block.wobr.sandy_veil": "Pustynny Ca³un",
       "block.wobr.chiseled_stripped_hypheria_wood": "Chiseled Hypheria Wood",
@@ -21319,16 +21677,16 @@
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.warped_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
-      "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
       "block.wobr.glistering_sandstone": "B³yszcz¹cy piaskowiec",
+      "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
       "enchantment.wobr.quick_draw": "Fast Draw",
       "effect.shaman_ormath_blessing": "Shaman Ormath Blessing",
       "advancements.mobile_firearm_crafting.title": "Mobile Firearm Crafting",
       "block.wobr.lapis_crystal": "Lapis Crystal",
       "block.wobr.wooden_lamp_hypheria": "Asha Hypheria Wooden Lamp",
       "block.wobr.birch_framed_yellow_stained_glass": "Birch Framed Yellow Stained Glass",
-      "block.wobr.chiseled_stripped_cuctur_wooden_slab": "Chiseled Cuctur Wooden Slab",
       "block.wobr.bamboo_trapdoor": "Bamboo Trapdoor",
+      "block.wobr.chiseled_stripped_cuctur_wooden_slab": "Chiseled Cuctur Wooden Slab",
       "block.wobr.smooth_black_sand_slab": "Smooth Vulcanic Sand Slab",
       "block.wobr.oak_wooden_stairs": "Oak Wooden Stairs",
       "block.wobr.jungle_framed_magenta_stained_glass": "Jungle Framed Magenta Stained Glass",
@@ -21357,8 +21715,8 @@
       "advancements.partofthe_gun.title": "Part of the Gun, Let\u0027s Start the Fun",
       "item.wobr.windsweeper": "Windsweeper",
       "block.wobr.baedoor_funt_block_lamp": "Baedoor Golden Lamp",
-      "block.wobr.stripped_spruce_wooden_stairs": "Stripped Spruce Wooden Stairs",
       "block.wobr.chiseled_hypheria_wood": "Chiseled Asha Hypheria Wood",
+      "block.wobr.stripped_spruce_wooden_stairs": "Stripped Spruce Wooden Stairs",
       "block.wobr.leghold_trap_catch": "Wnyki",
       "block.wobr.dark_oak_framed_white_stained_glass": "Dark Oak Framed White Stained Glass",
       "block.wobr.chiseled_stripped_hypheria_wooden_slab": "Chiseled Hypheria Wooden Slab",
@@ -21388,11 +21746,11 @@
       "block.wobr.jungle_framed_lime_stained_glass": "Jungle Framed Lime Stained Glass",
       "block.wobr.orange_horizontal_stained_glass_pane": "Orange Horizontal Stained Glass",
       "item.wobr.bandit_spawn_egg": "Bandit Spawn Egg",
-      "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "item.wobr.javelin_sack_stone": "Javelin Sack (with Stone Javelins)",
+      "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "key.mcreator.ammunition_key": "Ammunition Check Key",
-      "block.wobr.stripped_acacia_wooden_stairs": "Stripped Acacia Wooden Stairs",
       "item.wobr.ammo_box_lava_projectile": "Ammo Box Lava Projectile",
+      "block.wobr.stripped_acacia_wooden_stairs": "Stripped Acacia Wooden Stairs",
       "block.wobr.light_gray_horizontal_stained_glass_pane": "Light Gray Horizontal Stained Glass",
       "key.mcreator.unload_key": "Unload Key",
       "block.wobr.bamboo_panel": "Bamboo Panel",
@@ -21401,8 +21759,8 @@
       "block.wobr.jungle_framed_green_stained_glass": "Jungle Framed Green Stained Glass",
       "item.wobr.firearm_lock": "Zamek do broni",
       "block.wobr.palm_wooden_slab": "Hypheria Wooden Slab",
-      "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "block.wobr.oak_framed_yellow_stained_glass": "Oak Framed Yellow Stained Glass",
+      "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "item.wobr.stone_javelin": "Stone Javelin",
       "entity.wobr.ormath_shaman": "Ormath Shaman",
       "block.wobr.chiseled_cuctur_wood": "Chiseled Asha Hypheria Wood",
@@ -21427,10 +21785,10 @@
       "block.wobr.chiseled_stripped_palm_wooden_slab": "Chiseled Hypheria Wooden Slab",
       "effect.sabre_defence": "[Sabre Defence]",
       "subtitles.ormath_shaman_hurt": "",
-      "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.stripped_darkwood_wooden_stairs": "Darkwood Wooden Stairs",
-      "subtitles.disc_inside_forest": "",
+      "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.chiseled_warped_wooden_slab": "Warped Wooden Slab",
+      "subtitles.disc_inside_forest": "",
       "block.wobr.jungle_wooden_stairs": "Jungle Wooden Stairs",
       "block.wobr.wooden_lamp_cypress": "Nutwood Spicewood Lamp",
       "block.wobr.bamboo_block": "Bamboo Block",
@@ -21471,15 +21829,15 @@
       "key.wobr.reload_key": "Reload Key",
       "block.wobr.dark_oak_wooden_stairs": "Dark Oak Wooden Stairs",
       "block.wobr.bamboo_framed_red_stained_glass": "Bamboo Framed Red Stained Glass",
-      "block.wobr.oak_framed_brown_stained_glass": "Oak Framed Brown Stained Glass",
-      "block.wobr.pillar_shrm_blue": "Juniper Pillar",
       "entity.wobr.spawn_entity_trader_airship": "[Spawn Entity] Bandit Airship",
+      "block.wobr.pillar_shrm_blue": "Juniper Pillar",
+      "block.wobr.oak_framed_brown_stained_glass": "Oak Framed Brown Stained Glass",
       "advancements.witheric_totem.title": "Witheric Totem",
       "block.wobr.dark_chiseled_blue_nether_brick": "Dark Chiseled Blue Nether Brick",
       "block.wobr.orange_shroomed_wooden_stairs": "Brown Shroomwood Stairs",
       "block.wobr.chiseled_stripped_dark_oak_wood": "Chiseled Stripped Dark Oak Wood",
-      "block.wobr.chiseled_nutwood_wood": "Chiseled Juniper Wood",
       "block.wobr.crimson_framed_brown_stained_glass": "Crimson Framed Brown Stained Glass",
+      "block.wobr.chiseled_nutwood_wood": "Chiseled Juniper Wood",
       "block.wobr.polished_black_sand_stairs": "Polished Vulcanic Sand Stairs",
       "block.wobr.stripped_jungle_wooden_slab": "Stripped Jungle Wooden Slab",
       "block.wobr.cyan_horizontal_stained_glass_pane": "Cyan Horizontal Stained Glass",
@@ -21489,8 +21847,8 @@
       "item.wobr.baedoor_funt": "Funt baedoorski",
       "block.wobr.sandy_birch_framed_pink_stained_glass": "Sandy Birch Framed Pink Stained Glass",
       "advancements.letthe_hunt_begin.descr": "You prepared yourself to hunt by making javelin sack. I can almost smell roasted meat of what you will catch...",
-      "block.wobr.smooth_black_sand_stairs": "Smooth Vulcanic Sand Stairs",
       "block.wobr.pillar_acacia": "Jungle Pillar",
+      "block.wobr.smooth_black_sand_stairs": "Smooth Vulcanic Sand Stairs",
       "subtitles.ormath_shaman_trade": "",
       "item.wobr.windsweeper_scheme": "Windsweeper Scheme",
       "block.wobr.lapis_avoider_inactive": "Golden Avoider",
@@ -21722,6 +22080,7 @@
       "advancements.friendof_grand_ormath_clan.title": "Przyjaciel Wielkiego Klanu Ormathów",
       "advancements.shields_is_for_newbies.title": "Tarcze s¹ dla laików",
       "effect.curare_poison": "Curare Poison",
+      "item.wobr.heavy_deif_442_carbine": "Heavy Deif 44/2 Carbine",
       "advancements.witheric_totem_alive.title": "Witheric Totem",
       "block.wobr.stripped_warped_wooden_slab": "Stripped Crimson Wooden Slab",
       "block.wobr.lockable_golden_chest_locked": "Lockable Golden Chest",
@@ -21826,6 +22185,7 @@
       "block.wobr.crimson_framed_green_stained_glass": "Crimson Framed Green Stained Glass",
       "block.wobr.stripped_dark_oak_wooden_slab": "Stripped Dark Oak Wooden Slab",
       "block.wobr.glistering_sandstone_slab": "B³yszcz¹ca piaskowcowa p³yta",
+      "key.wobr.locking_key": "Locking Key",
       "block.wobr.lockable_iron_chest_locked": "Lockable Iron Chest",
       "key.mcreator.reload_key": "Klawisz Prze³adowania",
       "block.wobr.jungle_wooden_slab": "Jungle Wooden Slab",
@@ -21957,6 +22317,7 @@
       "block.wobr.birch_framed_cyan_stained_glass": "Birch Framed Cyan Stained Glass",
       "item.wobr.sand_dust": "Sand Dust",
       "item.wobr.bullet_ranged": "Small Bullet Ranged",
+      "item.wobr.rustic_deif_444_carbine": "Rustic Deif 44/4 Carbine",
       "block.wobr.acacia_framed_light_gray_stained_glass": "Acacia Framed Light Gray Stained Glass",
       "block.wobr.sandy_birch_framed_light_blue_stained_glass": "Sandy Birch Framed Light Blue Stained Glass",
       "item.wobr.wandering_merchant_firearms_spawn_egg": "Wandering Merchant Spawn Egg",
@@ -21970,10 +22331,10 @@
       "block.wobr.chiseled_stripped_cypress_wooden_slab": "Chiseled Stripped Cypress Wooden Slab",
       "item.wobr.rifle_clip_1_2": "12-Rounded Rifle Clip",
       "item.wobr.mushroom_poison": "Mushroom Poison",
-      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
       "block.wobr.spruce_framed_pink_stained_glass": "Spruce Framed Pink Stained Glass",
-      "item.wobr.card_club_ace_winfleton": "Winfleton\u0027s Club Ace Card",
+      "block.wobr.chiseled_black_sand_slab": "Chiseled Vulcanic Sand Slab",
       "block.wobr.chiseled_purple_shroomed_wooden_slab": "Chiseled Purple Shroomwood Slab",
+      "item.wobr.card_club_ace_winfleton": "Winfleton\u0027s Club Ace Card",
       "advancements.witheric_totem.descr": "Even if scared, you decided to craft this oddly shaped, ancient totem... let\u0027s see what will it bring",
       "block.wobr.clean_birch_wood": "Clean Birch Wood",
       "advancements.trappingthe_beast.descr": "Placing that trap, you won\u0027t need to worry about hunting anymore! You ended the path sooner, you cheater! (...or did you?)",
@@ -22002,17 +22363,17 @@
       "block.wobr.jungle_framed_orange_stained_glass": "Jungle Framed Orange Stained Glass",
       "block.wobr.darkwood_wooden_stairs": "Darkwood Wooden Stairs",
       "item.wobr.ormath_rider_spawn_egg": "Ormath Rider Spawn Egg",
-      "block.wobr.blue_shroomed_wooden_stairs": "Blue Shroomwood Stairs",
       "block.wobr.warped_framed_blue_stained_glass": "Warped Framed Blue Stained Glass",
+      "block.wobr.blue_shroomed_wooden_stairs": "Blue Shroomwood Stairs",
       "block.wobr.chiseled_palm_wooden_slab": "Chiseled Palm Wooden Slab",
       "advancements.walking_on_cursed_land.descr": "Stepping on dead souls isn\u0027t the kindest you could do",
       "effect.merchant_block_heartofthe_sea": "[Merchant Trade Blocked]",
-      "entity.wobr.ormath_villager": "Ormath Villager",
       "item.wobr.spawn_entity_mage_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
+      "entity.wobr.ormath_villager": "Ormath Villager",
       "block.wobr.darkwood_wooden_slab": "Darkwood Wooden Slab",
       "block.wobr.hardened_black_sand": "Hardened Vulcanic Sand",
-      "block.wobr.pillar_jungle": "Jungle Pillar",
       "item.wobr.totemof_pulsating_placed_spawn_egg": "Totem of Pulsating Spawn Egg",
+      "block.wobr.pillar_jungle": "Jungle Pillar",
       "advancements.ormath_betrayer.title": "Ormath Betrayer",
       "block.wobr.stripped_nutwood_wooden_stairs": "Stripped Nutwood Wooden Stairs",
       "block.wobr.birch_framed_black_stained_glass": "Birch Framed Black Stained Glass",
@@ -22036,8 +22397,8 @@
       "item.wobr.wandering_merchant_spawn_egg": "Wandering Merchant Spawn Egg",
       "item.wobr.prismarine_sabre": "Prismarine Sabre",
       "advancements.friendof_grand_ormath_clan.descr": "Your dedication to ormaths are known to whole Minecraft and Baedoor universes. There\u0027s not a soul who helped them more!",
-      "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
       "block.wobr.chiseled_darkwood_wood": "Chiseled Darkwood Wood",
+      "block.wobr.brown_horizontal_stained_glass_pane": "Brown Horizontal Stained Glass",
       "advancements.mastermindof_swordsmanship.descr": "When you trained yourself to the very core, you now understand the deepest details of fighting the sabre!",
       "block.wobr.pillar_cuctur": "Cuctur Pillar",
       "item.wobr.ammo_box_iron_projectile": "Ammo Box Iron Projectile",
@@ -22060,8 +22421,8 @@
       "block.wobr.acacia_framed_green_stained_glass": "Acacia Framed Green Stained Glass",
       "item.wobr.baedoor_gold_ingot": "Baedoor Gold Ingot",
       "block.wobr.birch_framed_magenta_stained_glass": "Birch Framed Magenta Stained Glass",
-      "advancements.guide_book.title": "The Baedoor Universe",
       "block.wobr.sandy_birch_framed_white_stained_glass": "Sandy Birch Framed White Stained Glass",
+      "advancements.guide_book.title": "The Baedoor Universe",
       "block.wobr.spruce_framed_red_stained_glass": "Spruce Framed Red Stained Glass",
       "block.wobr.chiseled_dark_oak_wood": "Chiseled Dark Oak Wood",
       "block.wobr.cypress_wooden_slab": "Cypress Wooden Slab",
@@ -22084,8 +22445,8 @@
       "entity.wobr.ormath_ranged_warrior": "Ormath Javelin Warrior",
       "item.wobr.white_sabre": "White Sabre",
       "block.wobr.chiseled_oak_wood": "Chiseled Oak Wood",
-      "block.wobr.chiseled_stripped_acacia_wood": "Chiseled Stripped Acacia Wood",
       "entity.wobr.spawn_entity_bandit_airship": "[Spawn Entity] Bandit Airship",
+      "block.wobr.chiseled_stripped_acacia_wood": "Chiseled Stripped Acacia Wood",
       "block.wobr.sandy_birch_framed_blue_stained_glass": "Sandy Birch Framed Blue Stained Glass",
       "block.wobr.sandy_veil": "Sandy Veil",
       "block.wobr.chiseled_stripped_hypheria_wood": "Chiseled Stripped Hypheria Wood",
@@ -22119,16 +22480,16 @@
       "block.wobr.oak_framed_magenta_stained_glass": "Oak Framed Magenta Stained Glass",
       "block.wobr.warped_wooden_slab": "Warped Wooden Slab",
       "block.wobr.jungle_framed_pink_stained_glass": "Jungle Framed Pink Stained Glass",
-      "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
       "block.wobr.glistering_sandstone": "Glistering Sandstone",
+      "block.wobr.sandy_birch_framed_magenta_stained_glass": "Sandy Birch Framed Magenta Stained Glass",
       "enchantment.wobr.quick_draw": "Fast Draw",
       "effect.shaman_ormath_blessing": "Shaman Ormath Blessing",
       "advancements.mobile_firearm_crafting.title": "Mobile Firearm Crafting",
       "block.wobr.lapis_crystal": "Lapis Crystal",
       "block.wobr.wooden_lamp_hypheria": "Hypheria Wooden Lamp",
       "block.wobr.birch_framed_yellow_stained_glass": "Birch Framed Yellow Stained Glass",
-      "block.wobr.chiseled_stripped_cuctur_wooden_slab": "Chiseled Stripped Cuctur Wooden Slab",
       "block.wobr.bamboo_trapdoor": "Bamboo Trapdoor",
+      "block.wobr.chiseled_stripped_cuctur_wooden_slab": "Chiseled Stripped Cuctur Wooden Slab",
       "block.wobr.smooth_black_sand_slab": "Smooth Vulcanic Sand Slab",
       "block.wobr.oak_wooden_stairs": "Oak Wooden Stairs",
       "block.wobr.jungle_framed_magenta_stained_glass": "Jungle Framed Magenta Stained Glass",
@@ -22157,8 +22518,8 @@
       "advancements.partofthe_gun.title": "Part of the Gun, Let\u0027s Start the Fun",
       "item.wobr.windsweeper": "Windsweeper",
       "block.wobr.baedoor_funt_block_lamp": "Baedoor Golden Lamp",
-      "block.wobr.stripped_spruce_wooden_stairs": "Stripped Spruce Wooden Stairs",
       "block.wobr.chiseled_hypheria_wood": "Chiseled Hypheria Wood",
+      "block.wobr.stripped_spruce_wooden_stairs": "Stripped Spruce Wooden Stairs",
       "block.wobr.leghold_trap_catch": "Leghold Trap",
       "block.wobr.dark_oak_framed_white_stained_glass": "Dark Oak Framed White Stained Glass",
       "block.wobr.chiseled_stripped_hypheria_wooden_slab": "Chiseled Stripped Hypheria Wooden Slab",
@@ -22188,11 +22549,11 @@
       "block.wobr.jungle_framed_lime_stained_glass": "Jungle Framed Lime Stained Glass",
       "block.wobr.orange_horizontal_stained_glass_pane": "Orange Horizontal Stained Glass",
       "item.wobr.bandit_spawn_egg": "Bandit Spawn Egg",
-      "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "item.wobr.javelin_sack_stone": "Javelin Sack (with Stone Javelins)",
+      "block.wobr.dark_oak_framed_orange_stained_glass": "Dark Oak Framed Orange Stained Glass",
       "key.mcreator.ammunition_key": "Ammunition Check Key",
-      "block.wobr.stripped_acacia_wooden_stairs": "Stripped Acacia Wooden Stairs",
       "item.wobr.ammo_box_lava_projectile": "Ammo Box Lava Projectile",
+      "block.wobr.stripped_acacia_wooden_stairs": "Stripped Acacia Wooden Stairs",
       "block.wobr.light_gray_horizontal_stained_glass_pane": "Light Gray Horizontal Stained Glass",
       "key.mcreator.unload_key": "Unload Key",
       "block.wobr.bamboo_panel": "Bamboo Panel",
@@ -22201,8 +22562,8 @@
       "block.wobr.jungle_framed_green_stained_glass": "Jungle Framed Green Stained Glass",
       "item.wobr.firearm_lock": "Firearm Lock",
       "block.wobr.palm_wooden_slab": "Palm Wooden Slab",
-      "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "block.wobr.oak_framed_yellow_stained_glass": "Oak Framed Yellow Stained Glass",
+      "advancements.mastermindof_swordsmanship.title": "Mastermind of Swordsmanship",
       "item.wobr.stone_javelin": "Stone Javelin",
       "entity.wobr.ormath_shaman": "Ormath Shaman",
       "block.wobr.chiseled_cuctur_wood": "Chiseled Cuctur Wood",
@@ -22227,10 +22588,10 @@
       "block.wobr.chiseled_stripped_palm_wooden_slab": "Chiseled Stripped Palm Wooden Slab",
       "effect.sabre_defence": "[Sabre Defence]",
       "subtitles.ormath_shaman_hurt": "",
-      "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.stripped_darkwood_wooden_stairs": "Stripped Darkwood Wooden Stairs",
-      "subtitles.disc_inside_forest": "",
+      "block.wobr.birch_framed_white_stained_glass": "Birch Framed White Stained Glass",
       "block.wobr.chiseled_warped_wooden_slab": "Chiseled Warped Wooden Slab",
+      "subtitles.disc_inside_forest": "",
       "block.wobr.jungle_wooden_stairs": "Jungle Wooden Stairs",
       "block.wobr.wooden_lamp_cypress": "Cypress Wooden Lamp",
       "block.wobr.bamboo_block": "Bamboo Block",
@@ -22271,15 +22632,15 @@
       "key.wobr.reload_key": "Reload Key",
       "block.wobr.dark_oak_wooden_stairs": "Dark Oak Wooden Stairs",
       "block.wobr.bamboo_framed_red_stained_glass": "Bamboo Framed Red Stained Glass",
-      "block.wobr.oak_framed_brown_stained_glass": "Oak Framed Brown Stained Glass",
-      "block.wobr.pillar_shrm_blue": "Blue Shroomwood Pillar",
       "entity.wobr.spawn_entity_trader_airship": "[Spawn Entity] Trader Airship",
+      "block.wobr.pillar_shrm_blue": "Blue Shroomwood Pillar",
+      "block.wobr.oak_framed_brown_stained_glass": "Oak Framed Brown Stained Glass",
       "advancements.witheric_totem.title": "Witheric Totem",
       "block.wobr.dark_chiseled_blue_nether_brick": "Dark Chiseled Blue Nether Brick",
       "block.wobr.orange_shroomed_wooden_stairs": "Orange Shroomwood Stairs",
       "block.wobr.chiseled_stripped_dark_oak_wood": "Chiseled Stripped Dark Oak Wood",
-      "block.wobr.chiseled_nutwood_wood": "Chiseled Nutwood Wood",
       "block.wobr.crimson_framed_brown_stained_glass": "Crimson Framed Brown Stained Glass",
+      "block.wobr.chiseled_nutwood_wood": "Chiseled Nutwood Wood",
       "block.wobr.polished_black_sand_stairs": "Polished Vulcanic Sand Stairs",
       "block.wobr.stripped_jungle_wooden_slab": "Stripped Jungle Wooden Slab",
       "block.wobr.cyan_horizontal_stained_glass_pane": "Cyan Horizontal Stained Glass",
@@ -22289,8 +22650,8 @@
       "item.wobr.baedoor_funt": "Baedoor Coin",
       "block.wobr.sandy_birch_framed_pink_stained_glass": "Sandy Birch Framed Pink Stained Glass",
       "advancements.letthe_hunt_begin.descr": "You prepared yourself to hunt by making javelin sack. I can almost smell roasted meat of what you will catch...",
-      "block.wobr.smooth_black_sand_stairs": "Smooth Vulcanic Sand Stairs",
       "block.wobr.pillar_acacia": "Acacia Pillar",
+      "block.wobr.smooth_black_sand_stairs": "Smooth Vulcanic Sand Stairs",
       "subtitles.ormath_shaman_trade": "",
       "item.wobr.windsweeper_scheme": "Windsweeper Scheme",
       "block.wobr.lapis_avoider_inactive": "Lapis Avoider",
@@ -22522,6 +22883,7 @@
       "advancements.friendof_grand_ormath_clan.title": "Friend of Grand Ormath Clan",
       "advancements.shields_is_for_newbies.title": "Shields Are For Newbies",
       "effect.curare_poison": "Curare Poison",
+      "item.wobr.heavy_deif_442_carbine": "Heavy Deif 44/2 Carbine",
       "advancements.witheric_totem_alive.title": "Totem Awakened",
       "block.wobr.stripped_warped_wooden_slab": "Stripped Warped Wooden Slab",
       "block.wobr.lockable_golden_chest_locked": "Lockable Golden Chest",
@@ -22626,6 +22988,7 @@
       "block.wobr.crimson_framed_green_stained_glass": "Crimson Framed Green Stained Glass",
       "block.wobr.stripped_dark_oak_wooden_slab": "Stripped Dark Oak Wooden Slab",
       "block.wobr.glistering_sandstone_slab": "Glistering Sandstone Slab",
+      "key.wobr.locking_key": "Locking Key",
       "block.wobr.lockable_iron_chest_locked": "Lockable Iron Chest",
       "key.mcreator.reload_key": "Reload Key",
       "block.wobr.jungle_wooden_slab": "Jungle Wooden Slab",

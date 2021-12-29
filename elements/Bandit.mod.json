@@ -53,7 +53,7 @@
     "armorBaseValue": 2.2,
     "trackingRange": 100,
     "health": 20,
-    "xpAmount": 5,
+    "xpAmount": 10,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",

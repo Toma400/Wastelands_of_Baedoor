@@ -11,6 +11,7 @@ import net.minecraft.state.IProperty;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.wobr.block.VulcanicVeilPlantBlock;
@@ -23,6 +24,8 @@ import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class BonemealingProcedure extends WobrModElements.ModElement {
@@ -104,6 +107,15 @@ public class BonemealingProcedure extends WobrModElements.ModElement {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(TsuaBlock.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
+			}
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.COARSE_DIRT)) {
+			if ((PodzolRequirementsProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)) == (true))) {
+				((itemstack)).shrink((int) 1);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = Blocks.PODZOL.getDefaultState();
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 		}
 	}

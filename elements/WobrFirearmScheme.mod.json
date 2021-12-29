@@ -36,10 +36,17 @@
       },
       {
         "value": "CUSTOM:Lefs8"
+      },
+      {
+        "value": "CUSTOM:RusticDeif444Carbine"
+      },
+      {
+        "value": "CUSTOM:HeavyDeif442Carbine"
       }
     ],
     "blocks": [],
     "functions": [],
+    "entities": [],
     "name": "wobr_firearm_scheme",
     "namespace": "mod"
   }

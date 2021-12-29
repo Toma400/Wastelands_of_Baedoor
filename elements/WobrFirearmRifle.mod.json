@@ -12,10 +12,17 @@
       },
       {
         "value": "CUSTOM:SandWanderer"
+      },
+      {
+        "value": "CUSTOM:RusticDeif444Carbine"
+      },
+      {
+        "value": "CUSTOM:HeavyDeif442Carbine"
       }
     ],
     "blocks": [],
     "functions": [],
+    "entities": [],
     "name": "wobr_firearm_rifle",
     "namespace": "mod"
   }

@@ -72,7 +72,8 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof BanditEntity.CustomEntity) || (entity instanceof BanditDespawningEntity.CustomEntity))) {
-			if ((1 >= (Math.random() * 100))) {
+			if (((1 >= (Math.random() * 100)) && ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0)))) {
 				if (!world.getWorld().isRemote) {
 					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MusicDiscOneironautItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
@@ -81,7 +82,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 			}
 			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
-				if (((5 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
+				if (((6 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 						* 2)) >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
@@ -91,7 +92,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 					}
 				}
 			} else {
-				if ((5 >= (Math.random() * 100))) {
+				if ((6 >= (Math.random() * 100))) {
 					if (!world.getWorld().isRemote) {
 						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block));
 						entityToSpawn.setPickupDelay((int) 10);

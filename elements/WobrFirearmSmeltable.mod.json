@@ -1,0 +1,65 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:HandmadeRevolver"
+      },
+      {
+        "value": "CUSTOM:PepperBox"
+      },
+      {
+        "value": "CUSTOM:ShortRevolver"
+      },
+      {
+        "value": "CUSTOM:GoldenShotRevolver"
+      },
+      {
+        "value": "CUSTOM:LongRevolver"
+      },
+      {
+        "value": "CUSTOM:ElephantGun"
+      },
+      {
+        "value": "CUSTOM:CrocodileShotgun"
+      },
+      {
+        "value": "CUSTOM:Lefs9"
+      },
+      {
+        "value": "CUSTOM:AyerShotgun"
+      },
+      {
+        "value": "CUSTOM:AyerSawedOff"
+      },
+      {
+        "value": "CUSTOM:Windsweeper"
+      },
+      {
+        "value": "CUSTOM:RustyReaper"
+      },
+      {
+        "value": "CUSTOM:SandWanderer"
+      },
+      {
+        "value": "CUSTOM:EnhancedPepperBox"
+      },
+      {
+        "value": "CUSTOM:Lefs8"
+      },
+      {
+        "value": "CUSTOM:RusticDeif444Carbine"
+      },
+      {
+        "value": "CUSTOM:HeavyDeif442Carbine"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "wobr_firearms_smeltable",
+    "namespace": "forge"
+  }
+}

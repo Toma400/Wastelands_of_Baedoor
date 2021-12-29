@@ -75,7 +75,7 @@ public class BanditEntity extends WobrModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 5;
+			experienceValue = 10;
 			setNoAI(false);
 			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GoldenShotRevolverItem.block));

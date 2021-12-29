@@ -1,0 +1,12 @@
+{
+  "group": "firearm_smelting",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "tag": "forge:wobr_firearms_smeltable"
+  },
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}

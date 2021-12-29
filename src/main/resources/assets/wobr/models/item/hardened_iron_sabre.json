@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "wobr:items/iron_sabre"
+    "layer0": "wobr:items/iron_sabre_hardened"
   }
 }

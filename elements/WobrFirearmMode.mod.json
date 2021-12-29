@@ -24,10 +24,14 @@
       },
       {
         "value": "CUSTOM:EnhancedPepperBox"
+      },
+      {
+        "value": "CUSTOM:RusticDeif444Carbine"
       }
     ],
     "blocks": [],
     "functions": [],
+    "entities": [],
     "name": "wobr_firearm_mode",
     "namespace": "mod"
   }

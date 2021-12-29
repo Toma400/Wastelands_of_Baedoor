@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "iron_sabre",
+    "texture": "iron_sabre_hardened",
     "customModelName": "Normal",
     "name": "Hardened Iron Sabre",
     "specialInfo": [
