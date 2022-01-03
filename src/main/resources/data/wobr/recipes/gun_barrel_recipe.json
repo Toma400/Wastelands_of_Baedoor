@@ -2,13 +2,16 @@
   "group": "firearm_various_parts",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01"
+    "012"
   ],
   "key": {
     "0": {
       "item": "minecraft:iron_ingot"
     },
     "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
       "item": "minecraft:iron_nugget"
     }
   },

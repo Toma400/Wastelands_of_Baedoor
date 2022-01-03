@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_1": "entity_nether_juggernaut"
+      },
+      "name": "default"
+    }
+  }
+}
