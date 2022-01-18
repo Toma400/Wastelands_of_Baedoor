@@ -5,6 +5,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.wobr.potion.ShamanicTargetPotionEffect;
 import net.mcreator.wobr.potion.CurarePoisonPotionEffect;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
@@ -30,6 +31,8 @@ public class ShamanProjectileEntityProcedure extends WobrModElements.ModElement 
 		if (entity instanceof LivingEntity) {
 			((LivingEntity) entity).removePotionEffect(Effects.LEVITATION);
 		}
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(ShamanicTargetPotionEffect.potion, (int) 600, (int) 1, (false), (true)));
 		WobrModVariables.For_Random_Uses = (double) (Math.random() * 100);
 		if ((WobrModVariables.For_Random_Uses <= 5)) {
 			if (entity instanceof LivingEntity)

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "carpet_lighted_baedoor_gold"
+      },
+      "name": "default"
+    }
+  }
+}

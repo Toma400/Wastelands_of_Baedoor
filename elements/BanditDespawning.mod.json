@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Bandit",
     "mobLabel": "",
-    "mobModelName": "Villager",
-    "mobModelTexture": "bandit.png",
+    "mobModelName": "Modelbandit",
+    "mobModelTexture": "entity_bandit_handmade_rev.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.95,
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:PepperBox"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -108,7 +108,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "BulletRanged",
+    "rangedItemType": "BulletRangedBanditDespawning",
     "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 1,

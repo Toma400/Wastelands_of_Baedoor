@@ -21,7 +21,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -47,7 +46,6 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.wobr.procedures.EntityWindSpiritConditionProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
-import net.mcreator.wobr.item.GlisteringAshItem;
 import net.mcreator.wobr.WobrModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -140,11 +138,6 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEAD;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(GlisteringAshItem.block));
 		}
 
 		@Override

@@ -1,0 +1,16 @@
+{
+  "group": "lighted_plates",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_crystals"
+    },
+    {
+      "item": "wobr:baedoor_golden_plate"
+    }
+  ],
+  "result": {
+    "item": "wobr:lighted_baedoor_golden_plate",
+    "count": 1
+  }
+}

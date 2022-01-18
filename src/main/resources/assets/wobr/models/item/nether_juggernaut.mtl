@@ -1,7 +1,8 @@
-newmtl m_0
+newmtl m_1
 Ka 0.0 0.0 0.0
 Kd 0.0 0.0 0.0
 Ks 0.0 0.0 0.0
+map_Kd wobr:blocks/entity_nether_juggernaut
 Ns 100.0
 d 1.0
 newmtl none

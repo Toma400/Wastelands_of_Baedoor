@@ -67,7 +67,7 @@ public class PulsatingJavelinItem extends WobrModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(WoBCreativeTabItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(WoBCreativeTabItemGroup.tab).maxStackSize(4));
 			setRegistryName("pulsating_javelin");
 		}
 

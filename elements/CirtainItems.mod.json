@@ -5,12 +5,16 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:SandyVeil"
+        "value": "CUSTOM:CirtainIngot"
+      },
+      {
+        "value": "CUSTOM:CirtainBlock"
       }
     ],
     "blocks": [],
     "functions": [],
-    "name": "sandy_veil",
+    "entities": [],
+    "name": "cirtain_items",
     "namespace": "forge"
   }
 }

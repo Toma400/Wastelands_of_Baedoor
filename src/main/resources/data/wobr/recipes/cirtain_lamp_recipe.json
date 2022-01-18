@@ -1,0 +1,30 @@
+{
+  "group": "cirtain_lamp",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "wobr:fake_cirtain_block"
+    },
+    "3": {
+      "item": "wobr:fake_cirtain_block"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "wobr:fake_cirtain_block"
+    },
+    "7": {
+      "item": "wobr:fake_cirtain_block"
+    }
+  },
+  "result": {
+    "item": "wobr:cirtain_lamp",
+    "count": 2
+  }
+}

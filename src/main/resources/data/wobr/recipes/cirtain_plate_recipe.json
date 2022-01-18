@@ -1,0 +1,19 @@
+{
+  "group": "plates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:fake_cirtain_block"
+    },
+    "1": {
+      "item": "wobr:fake_cirtain_block"
+    }
+  },
+  "result": {
+    "item": "wobr:cirtain_plate",
+    "count": 4
+  }
+}

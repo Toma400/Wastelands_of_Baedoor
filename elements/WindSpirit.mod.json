@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:GlisteringAsh"
+      "value": ""
     },
     "livingSound": {
       "value": "CUSTOM:wind_spirit_idle"

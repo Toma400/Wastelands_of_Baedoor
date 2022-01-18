@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Bandit",
     "mobLabel": "",
-    "mobModelName": "Villager",
-    "mobModelTexture": "bandit.png",
+    "mobModelName": "Modelbandit_golden_short_revolver",
+    "mobModelTexture": "entity_bandit_short_rev.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.95,
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:GoldenShotRevolver"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""

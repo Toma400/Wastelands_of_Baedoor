@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Witheric Potion",
+    "splashName": "Splash Witheric Potion",
+    "lingeringName": "Lingering Witheric Potion",
+    "arrowName": "Witheric Arrow",
+    "effects": [
+      {
+        "effect": {
+          "value": "WITHER"
+        },
+        "duration": 600,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -33,6 +33,7 @@ import net.minecraft.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
@@ -48,6 +49,7 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.mcreator.wobr.procedures.TribeAttackValueProcedure;
 import net.mcreator.wobr.procedures.ShamanRegenerationProcedure;
 import net.mcreator.wobr.procedures.ShamanGUITradeProcedure;
+import net.mcreator.wobr.procedures.ShamanAttackerDefenceProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.item.WindShamanProjectileItem;
 import net.mcreator.wobr.item.RodoftheWindsItem;
@@ -112,7 +114,17 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false) {
+			this.targetSelector.addGoal(1, new HurtByTargetGoal(this) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ShamanAttackerDefenceProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();
@@ -122,14 +134,14 @@ public class OrmathShamanEntity extends WobrModElements.ModElement {
 					return super.shouldExecute() && TribeAttackValueProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
-			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
-			this.goalSelector.addGoal(7, new AvoidEntityGoal(this, CreeperEntity.class, (float) 15, 1, 1.2));
-			this.goalSelector.addGoal(8, new OpenDoorGoal(this, true));
-			this.goalSelector.addGoal(9, new OpenDoorGoal(this, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
+			this.goalSelector.addGoal(8, new AvoidEntityGoal(this, CreeperEntity.class, (float) 15, 1, 1.2));
+			this.goalSelector.addGoal(9, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(10, new OpenDoorGoal(this, false));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {

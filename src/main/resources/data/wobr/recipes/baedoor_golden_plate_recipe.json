@@ -1,0 +1,19 @@
+{
+  "group": "plates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "wobr:baedoor_funt_block_polished"
+    },
+    "1": {
+      "item": "wobr:baedoor_funt_block_polished"
+    }
+  },
+  "result": {
+    "item": "wobr:baedoor_golden_plate",
+    "count": 4
+  }
+}

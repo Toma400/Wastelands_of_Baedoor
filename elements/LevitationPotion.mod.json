@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Levitation",
+    "splashName": "Splash Potion of Levitation",
+    "lingeringName": "Lingering Potion of Levitation",
+    "arrowName": "Arrow of Levitation",
+    "effects": [
+      {
+        "effect": {
+          "value": "LEVITATION"
+        },
+        "duration": 1800,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "carpet_lighted_cirtain"
+      },
+      "name": "default"
+    }
+  }
+}

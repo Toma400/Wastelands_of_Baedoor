@@ -30,6 +30,7 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -39,11 +40,14 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.wobr.procedures.ShamanSpiritTargetingProcedure;
 import net.mcreator.wobr.item.GlisteringAshItem;
 import net.mcreator.wobr.WobrModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class ShamanicWindSpiritEntity extends WobrModElements.ModElement {
@@ -93,13 +97,23 @@ public class ShamanicWindSpiritEntity extends WobrModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, VexEntity.class, false, false));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, false));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
-			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.3, true));
-			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, LivingEntity.class, false, false) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ShamanSpiritTargetingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, VexEntity.class, false, false));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, false));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
+			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.3, true));
+			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(8, new HurtByTargetGoal(this));
 		}
 
 		@Override

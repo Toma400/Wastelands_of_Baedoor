@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wobr:blocks/cirtain_lamp",
+    "up": "wobr:blocks/cirtain_lamp",
+    "north": "wobr:blocks/cirtain_lamp",
+    "east": "wobr:blocks/cirtain_lamp",
+    "south": "wobr:blocks/cirtain_lamp",
+    "west": "wobr:blocks/cirtain_lamp",
+    "particle": "wobr:blocks/cirtain_lamp"
+  }
+}

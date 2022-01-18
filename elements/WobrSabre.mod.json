@@ -24,16 +24,11 @@
       },
       {
         "value": "CUSTOM:GoldenScimitar"
-      },
-      {
-        "value": "CUSTOM:StelliumSabre"
-      },
-      {
-        "value": "CUSTOM:CrystalSabre"
       }
     ],
     "blocks": [],
     "functions": [],
+    "entities": [],
     "name": "wobr_sabre",
     "namespace": "forge"
   }

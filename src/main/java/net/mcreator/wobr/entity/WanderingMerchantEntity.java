@@ -73,7 +73,7 @@ import io.netty.buffer.Unpooled;
 
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantEntity extends WobrModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("wandering_merchant").setRegistryName("wandering_merchant");
 	public WanderingMerchantEntity(WobrModElements instance) {

@@ -6,7 +6,6 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.LivingEntity;
@@ -16,9 +15,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.mcreator.wobr.item.MusicDiscOneironautItem;
 import net.mcreator.wobr.item.GlisteringAshItem;
-import net.mcreator.wobr.item.BaedoorFuntItem;
-import net.mcreator.wobr.entity.WindSpiritEntity;
-import net.mcreator.wobr.entity.OrmathRiderEntity;
+import net.mcreator.wobr.entity.ShamanicWindSpiritEntity;
 import net.mcreator.wobr.entity.BanditEntity;
 import net.mcreator.wobr.entity.BanditDespawningEntity;
 import net.mcreator.wobr.WobrModElements;
@@ -80,27 +77,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 					world.addEntity(entityToSpawn);
 				}
 			}
-			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
-				if (((6 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
-						* 2)) >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block));
-						entityToSpawn.setPickupDelay((int) 10);
-						world.addEntity(entityToSpawn);
-					}
-				}
-			} else {
-				if ((6 >= (Math.random() * 100))) {
-					if (!world.getWorld().isRemote) {
-						ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(BaedoorFuntItem.block));
-						entityToSpawn.setPickupDelay((int) 10);
-						world.addEntity(entityToSpawn);
-					}
-				}
-			}
-		} else if ((entity instanceof WindSpiritEntity.CustomEntity)) {
+		} else if ((entity instanceof ShamanicWindSpiritEntity.CustomEntity)) {
 			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
 				if (((10 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
@@ -112,17 +89,6 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 						world.addEntity(entityToSpawn);
 					}
 				}
-			}
-		} else if ((entity instanceof OrmathRiderEntity.CustomEntity)) {
-			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.LEATHER));
-				entityToSpawn.setPickupDelay((int) 10);
-				world.addEntity(entityToSpawn);
-			}
-			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.BEEF));
-				entityToSpawn.setPickupDelay((int) 10);
-				world.addEntity(entityToSpawn);
 			}
 		}
 	}

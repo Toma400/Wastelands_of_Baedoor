@@ -13025,15 +13025,6 @@
       "path": "~/Advancements"
     },
     {
-      "name": "SandyVeilTag",
-      "type": "tag",
-      "sortid": 1275,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sandy_veil_tag"
-    },
-    {
       "name": "BtldsBone1",
       "type": "recipe",
       "sortid": 1276,
@@ -20998,6 +20989,318 @@
           }
         ]
       }
+    },
+    {
+      "name": "Raiders",
+      "type": "tag",
+      "sortid": 1754,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raiders"
+    },
+    {
+      "name": "CirtainItems",
+      "type": "tag",
+      "sortid": 1755,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_items"
+    },
+    {
+      "name": "CirtainResistance",
+      "type": "procedure",
+      "sortid": 1756,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_resistance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cirtain",
+      "type": "tag",
+      "sortid": 1757,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain"
+    },
+    {
+      "name": "MushroomPoisonPotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1758,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mushroom_poison_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "GlisteringAshPotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1759,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "glistering_ash_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "NetherEssencePotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1760,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "nether_essence_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "CurarePoisonPotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1761,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "curare_poison_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "PaleGoldPotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1762,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pale_gold_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "RisingPotionRecipeBrewingRecipe",
+      "type": "code",
+      "sortid": 1763,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "rising_potion_recipe_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "RisingPotionRecipe2BrewingRecipe",
+      "type": "code",
+      "sortid": 1764,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "rising_potion_recipe_2_brewing_recipe",
+      "path": "~/Potion 2021.3 Recipes"
+    },
+    {
+      "name": "LevitationPotion",
+      "type": "potion",
+      "sortid": 1765,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "levitation_potion"
+    },
+    {
+      "name": "WitherPotion",
+      "type": "potion",
+      "sortid": 1766,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wither_potion"
+    },
+    {
+      "name": "WindSpiritLootTable",
+      "type": "loottable",
+      "sortid": 1767,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wind_spirit_loot_table"
+    },
+    {
+      "name": "RedBuffaloLootTable",
+      "type": "loottable",
+      "sortid": 1768,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_buffalo_loot_table"
+    },
+    {
+      "name": "GreenBuffaloLootTable",
+      "type": "loottable",
+      "sortid": 1769,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_buffalo_loot_table"
+    },
+    {
+      "name": "OrmathRaiderLootTable",
+      "type": "loottable",
+      "sortid": 1770,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ormath_raider_loot_table"
+    },
+    {
+      "name": "BulletRangedBanditDespawning",
+      "type": "rangeditem",
+      "sortid": 1771,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet_ranged_bandit_despawning"
+    },
+    {
+      "name": "CirtainLamp",
+      "type": "block",
+      "sortid": 1772,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_lamp"
+    },
+    {
+      "name": "CirtainLampRecipe",
+      "type": "recipe",
+      "sortid": 1773,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_lamp_recipe"
+    },
+    {
+      "name": "CirtainPlate",
+      "type": "block",
+      "sortid": 1774,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_plate"
+    },
+    {
+      "name": "BaedoorGoldenPlate",
+      "type": "block",
+      "sortid": 1775,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baedoor_golden_plate"
+    },
+    {
+      "name": "LightedCirtainPlate",
+      "type": "block",
+      "sortid": 1776,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lighted_cirtain_plate"
+    },
+    {
+      "name": "LightedBaedoorGoldenPlate",
+      "type": "block",
+      "sortid": 1777,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lighted_baedoor_golden_plate"
+    },
+    {
+      "name": "CirtainPlateRecipe",
+      "type": "recipe",
+      "sortid": 1778,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_plate_recipe"
+    },
+    {
+      "name": "BaedoorGoldenPlateRecipe",
+      "type": "recipe",
+      "sortid": 1779,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baedoor_golden_plate_recipe"
+    },
+    {
+      "name": "LightedCirtainPlateRecipe",
+      "type": "recipe",
+      "sortid": 1780,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lighted_cirtain_plate_recipe"
+    },
+    {
+      "name": "LightedBaedoorGoldenPlateRecipe",
+      "type": "recipe",
+      "sortid": 1781,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lighted_baedoor_golden_plate_recipe"
+    },
+    {
+      "name": "ShamanicTarget",
+      "type": "potioneffect",
+      "sortid": 1782,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shamanic_target"
+    },
+    {
+      "name": "ShamanSpiritTargeting",
+      "type": "procedure",
+      "sortid": 1782,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shaman_spirit_targeting",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShamanAttackerDefence",
+      "type": "procedure",
+      "sortid": 1783,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shaman_attacker_defence",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -21612,6 +21915,7 @@
       "block.wobr.wooden_lamp_warped": "Chiseled Warped Stem",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
+      "item.minecraft.lingering_potion.effect.wither_potion": "Lingering Witheric Potion",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
       "block.wobr.chiseled_spruce_wood": "Chiseled Spruce Wood",
       "block.wobr.chiseled_stripped_oak_wood": "Chiseled Stripped Oak Wood",
@@ -21627,7 +21931,9 @@
       "subtitles.disc_oneironaut": "",
       "block.wobr.asha_hypheria_wooden_stairs": "Nutwood Wooden Stairs",
       "block.wobr.pillar_shrm_orange": "Blue Shroomwood Pillar",
+      "item.wobr.bullet_ranged_bandit_despawning": "Small Bullet Ranged",
       "block.wobr.dark_oak_framed_light_gray_stained_glass": "Dark Oak Framed Light Gray Stained Glass",
+      "item.minecraft.potion.effect.wither_potion": "Witheric Potion",
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
@@ -21654,6 +21960,7 @@
       "subtitles.ormath_villager_idle": "",
       "block.wobr.polished_black_sand_wall": "Polished Vulcanic Sand Wall",
       "block.wobr.crimson_framed_white_stained_glass": "Crimson Framed White Stained Glass",
+      "effect.shamanic_target": "Shamanic Target",
       "block.wobr.red_acacia_framed_black_stained_glass": "Red Acacia Framed Black Stained Glass",
       "block.wobr.acacia_framed_blue_stained_glass": "Acacia Framed Blue Stained Glass",
       "item.wobr.stone_spear": "Stone Spear",
@@ -21725,6 +22032,7 @@
       "block.wobr.green_horizontal_stained_glass_pane": "Green Horizontal Stained Glass",
       "block.wobr.baedoor_funt_block_wall": "Baedoor Golden Wall",
       "block.wobr.stripped_spicewood_wooden_slab": "Stripped Nutwood Wooden Slab",
+      "block.wobr.cirtain_lamp": "Cirtain Lamp",
       "block.wobr.chiseled_blue_shroomed_wood": "Chiseled Brown Shroomwood",
       "block.wobr.red_acacia_framed_magenta_stained_glass": "Red Acacia Framed Magenta Stained Glass",
       "block.wobr.chiseled_cuctur_wooden_slab": "Chiseled Asha Hypheria Wooden Slab",
@@ -21775,6 +22083,7 @@
       "block.wobr.cirtain_block": "Blok Cyrtanu",
       "block.wobr.chiseled_stripped_oak_wooden_slab": "Chiseled Stripped Oak Wooden Slab",
       "block.wobr.bamboo_framed_light_blue_stained_glass": "Bamboo Framed Light Blue Stained Glass",
+      "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
       "block.wobr.yellow_horizontal_stained_glass_pane": "Yellow Horizontal Stained Glass",
       "block.wobr.chiseled_orange_shroomed_wood": "Chiseled Brown Shroomwood",
       "block.wobr.chiseled_stripped_spicewood_wooden_slab": "Chiseled Stripped Nutwood Wooden Slab",
@@ -21896,6 +22205,7 @@
       "subtitles.ormath_rider_death": "",
       "block.wobr.lockable_baedoor_golden_chest": "Lockable Baedoor Golden Chest",
       "block.wobr.birch_framed_green_stained_glass": "Birch Framed Green Stained Glass",
+      "item.minecraft.tipped_arrow.effect.wither_potion": "Witheric Arrow",
       "subtitles.ormath_beast_angry": "",
       "block.wobr.jungle_framed_white_stained_glass": "Jungle Framed White Stained Glass",
       "block.wobr.warped_framed_red_stained_glass": "Warped Framed Red Stained Glass",
@@ -21959,6 +22269,7 @@
       "item.wobr.shotgun_barrel": "D³uga lufa",
       "item.wobr.short_revolver": "Krótki rewolwer",
       "item.wobr.crocodile_gun_scheme": "Crocodile Gun Scheme",
+      "block.wobr.cirtain_plate": "Cirtain Plate",
       "block.wobr.birch_framed_brown_stained_glass": "Birch Framed Brown Stained Glass",
       "block.wobr.birch_framed_orange_stained_glass": "Birch Framed Orange Stained Glass",
       "block.wobr.dark_oak_wooden_slab": "Dark Oak Wooden Slab",
@@ -22044,6 +22355,7 @@
       "block.wobr.nether_shielder": "Nether Shielder",
       "block.wobr.cut_blue_shroomed_wood": "Cut Brown Shroomwood",
       "block.wobr.gray_horizontal_stained_glass_pane": "Gray Horizontal Stained Glass",
+      "block.wobr.lighted_cirtain_plate": "Cirtain Plate",
       "advancements.gambled_salvage.descr": "You saved your life with these cards... flipping the coin of death.",
       "block.wobr.leghold_trap_active": "Wnyki",
       "item.wobr.iron_spear": "Iron Spear",
@@ -22084,12 +22396,14 @@
       "advancements.witheric_totem_alive.title": "Witheric Totem",
       "block.wobr.stripped_warped_wooden_slab": "Stripped Crimson Wooden Slab",
       "block.wobr.lockable_golden_chest_locked": "Lockable Golden Chest",
+      "block.wobr.baedoor_golden_plate": "Cirtain Plate",
       "block.wobr.cut_purple_shroomed_wood": "Cut Orange Shroomwood",
       "block.wobr.red_acacia_framed_gray_stained_glass": "Red Acacia Framed Gray Stained Glass",
       "item.wobr.dart_curare_projectile": "Dart Regular Projectile",
       "block.wobr.hardened_endstone": "Utwardzony kamieñ Endu",
       "block.wobr.stripped_crimson_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.wooden_lamp_brown_shroomwood": "Chiseled Purple Shroomwood",
+      "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
       "block.wobr.blockof_mushroom_poison": "Blok Grzybowej Trucizny",
       "block.wobr.birch_framed_purple_stained_glass": "Birch Framed Purple Stained Glass",
       "advancements.ormaths.descr": "You discovered whole new civilisation. These gray-skinned people seem to be strangers to these lands...",
@@ -22145,6 +22459,7 @@
       "block.wobr.wooden_lamp_spruce": "Spruce Wooden Lamp",
       "block.wobr.airship_merchant_chest": "Airship Bandit Chest",
       "block.wobr.red_acacia_framed_brown_stained_glass": "Red Acacia Framed Brown Stained Glass",
+      "block.wobr.lighted_baedoor_golden_plate": "Baedoor Golden Plate",
       "block.wobr.birch_framed_light_blue_stained_glass": "Birch Framed Light Blue Stained Glass",
       "block.wobr.oak_wooden_slab": "Oak Wooden Slab",
       "block.wobr.red_acacia_framed_lime_stained_glass": "Red Acacia Framed Lime Stained Glass",
@@ -22156,6 +22471,8 @@
       "item.wobr.bandit": "Bandit Spawn Egg",
       "block.wobr.chiseled_deadwood_wood": "Chiseled Palm Wood",
       "item.wobr.sand_wanderer_scheme": "Schemat Pustynnego Wêdrowca",
+      "item.minecraft.potion.effect.levitation_potion": "Potion of Levitation",
+      "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
       "block.wobr.red_acacia_framed_yellow_stained_glass": "Red Acacia Framed Yellow Stained Glass",
       "item.wobr.ormath_shaman_spawn_egg": "Ormath Shaman Spawn Egg",
       "block.wobr.smooth_black_sand": "Smooth Vulcanic Sand",
@@ -22198,6 +22515,7 @@
       "block.wobr.stripped_oak_wooden_slab": "Stripped Oak Wooden Slab",
       "block.wobr.baedoor_funt_block_trapdoor": "Baedoor Golden Trapdoor",
       "item.wobr.tsua_straw": "Tsua Straw",
+      "item.minecraft.splash_potion.effect.wither_potion": "Splash Witheric Potion",
       "advancements.against_spiritsof_nature.title": "Przeciw Duchom Natury",
       "block.wobr.stripped_crimson_wooden_stairs": "Crimson Wooden Stairs",
       "item.wobr.wind_projectile": "Wind Projectile",
@@ -22415,6 +22733,7 @@
       "block.wobr.wooden_lamp_warped": "Warped Wooden Lamp",
       "item.wobr.curare": "Curare Poison",
       "block.wobr.jungle_framed_purple_stained_glass": "Jungle Framed Purple Stained Glass",
+      "item.minecraft.lingering_potion.effect.wither_potion": "Lingering Witheric Potion",
       "block.wobr.lockable_obsidian_chest_locked": "Lockable Obsidian Chest",
       "block.wobr.chiseled_spruce_wood": "Chiseled Spruce Wood",
       "block.wobr.chiseled_stripped_oak_wood": "Chiseled Stripped Oak Wood",
@@ -22430,7 +22749,9 @@
       "subtitles.disc_oneironaut": "",
       "block.wobr.asha_hypheria_wooden_stairs": "Asha Hypheria Wooden Stairs",
       "block.wobr.pillar_shrm_orange": "Orange Shroomwood Pillar",
+      "item.wobr.bullet_ranged_bandit_despawning": "Small Bullet Ranged",
       "block.wobr.dark_oak_framed_light_gray_stained_glass": "Dark Oak Framed Light Gray Stained Glass",
+      "item.minecraft.potion.effect.wither_potion": "Witheric Potion",
       "block.wobr.baedoor_funt_block_bars": "Baedoor Golden Bars",
       "entity.wobr.ormath_rider": "Ormath Rider",
       "item.wobr.javelin_sack_bone": "Javelin Sack (with Bone Javelins)",
@@ -22457,6 +22778,7 @@
       "subtitles.ormath_villager_idle": "",
       "block.wobr.polished_black_sand_wall": "Polished Vulcanic Sand Wall",
       "block.wobr.crimson_framed_white_stained_glass": "Crimson Framed White Stained Glass",
+      "effect.shamanic_target": "Shamanic Target",
       "block.wobr.red_acacia_framed_black_stained_glass": "Red Acacia Framed Black Stained Glass",
       "block.wobr.acacia_framed_blue_stained_glass": "Acacia Framed Blue Stained Glass",
       "item.wobr.stone_spear": "Stone Spear",
@@ -22528,6 +22850,7 @@
       "block.wobr.green_horizontal_stained_glass_pane": "Green Horizontal Stained Glass",
       "block.wobr.baedoor_funt_block_wall": "Baedoor Golden Wall",
       "block.wobr.stripped_spicewood_wooden_slab": "Stripped Spicewood Wooden Slab",
+      "block.wobr.cirtain_lamp": "Cirtain Lamp",
       "block.wobr.chiseled_blue_shroomed_wood": "Chiseled Blue Shroomwood",
       "block.wobr.red_acacia_framed_magenta_stained_glass": "Red Acacia Framed Magenta Stained Glass",
       "block.wobr.chiseled_cuctur_wooden_slab": "Chiseled Cuctur Wooden Slab",
@@ -22578,6 +22901,7 @@
       "block.wobr.cirtain_block": "Block of Cirtain",
       "block.wobr.chiseled_stripped_oak_wooden_slab": "Chiseled Stripped Oak Wooden Slab",
       "block.wobr.bamboo_framed_light_blue_stained_glass": "Bamboo Framed Light Blue Stained Glass",
+      "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
       "block.wobr.yellow_horizontal_stained_glass_pane": "Yellow Horizontal Stained Glass",
       "block.wobr.chiseled_orange_shroomed_wood": "Chiseled Orange Shroomwood",
       "block.wobr.chiseled_stripped_spicewood_wooden_slab": "Chiseled Stripped Spicewood Wooden Slab",
@@ -22699,6 +23023,7 @@
       "subtitles.ormath_rider_death": "",
       "block.wobr.lockable_baedoor_golden_chest": "Lockable Baedoor Golden Chest",
       "block.wobr.birch_framed_green_stained_glass": "Birch Framed Green Stained Glass",
+      "item.minecraft.tipped_arrow.effect.wither_potion": "Witheric Arrow",
       "subtitles.ormath_beast_angry": "",
       "block.wobr.jungle_framed_white_stained_glass": "Jungle Framed White Stained Glass",
       "block.wobr.warped_framed_red_stained_glass": "Warped Framed Red Stained Glass",
@@ -22762,6 +23087,7 @@
       "item.wobr.shotgun_barrel": "Long Barrel",
       "item.wobr.short_revolver": "Short Revolver",
       "item.wobr.crocodile_gun_scheme": "Crocodile Gun Scheme",
+      "block.wobr.cirtain_plate": "Cirtain Plate",
       "block.wobr.birch_framed_brown_stained_glass": "Birch Framed Brown Stained Glass",
       "block.wobr.birch_framed_orange_stained_glass": "Birch Framed Orange Stained Glass",
       "block.wobr.dark_oak_wooden_slab": "Dark Oak Wooden Slab",
@@ -22847,6 +23173,7 @@
       "block.wobr.nether_shielder": "Nether Shielder",
       "block.wobr.cut_blue_shroomed_wood": "Cut Blue Shroomwood",
       "block.wobr.gray_horizontal_stained_glass_pane": "Gray Horizontal Stained Glass",
+      "block.wobr.lighted_cirtain_plate": "Lighted Cirtain Plate",
       "advancements.gambled_salvage.descr": "You saved your life with these cards... flipping the coin of death.",
       "block.wobr.leghold_trap_active": "Leghold Trap",
       "item.wobr.iron_spear": "Iron Spear",
@@ -22887,12 +23214,14 @@
       "advancements.witheric_totem_alive.title": "Totem Awakened",
       "block.wobr.stripped_warped_wooden_slab": "Stripped Warped Wooden Slab",
       "block.wobr.lockable_golden_chest_locked": "Lockable Golden Chest",
+      "block.wobr.baedoor_golden_plate": "Baedoor Golden Plate",
       "block.wobr.cut_purple_shroomed_wood": "Cut Purple Shroomwood",
       "block.wobr.red_acacia_framed_gray_stained_glass": "Red Acacia Framed Gray Stained Glass",
       "item.wobr.dart_curare_projectile": "Dart Regular Projectile",
       "block.wobr.hardened_endstone": "Hardened End Stone",
       "block.wobr.stripped_crimson_wooden_slab": "Stripped Crimson Wooden Slab",
       "block.wobr.wooden_lamp_brown_shroomwood": "Brown Shroomwood Lamp",
+      "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
       "block.wobr.blockof_mushroom_poison": "Block of Mushroom Poison",
       "block.wobr.birch_framed_purple_stained_glass": "Birch Framed Purple Stained Glass",
       "advancements.ormaths.descr": "You discovered whole new civilisation. These gray-skinned people seem to be strangers to these lands...",
@@ -22948,6 +23277,7 @@
       "block.wobr.wooden_lamp_spruce": "Spruce Wooden Lamp",
       "block.wobr.airship_merchant_chest": "Airship Merchant Chest",
       "block.wobr.red_acacia_framed_brown_stained_glass": "Red Acacia Framed Brown Stained Glass",
+      "block.wobr.lighted_baedoor_golden_plate": "Lighted Baedoor Golden Plate",
       "block.wobr.birch_framed_light_blue_stained_glass": "Birch Framed Light Blue Stained Glass",
       "block.wobr.oak_wooden_slab": "Oak Wooden Slab",
       "block.wobr.red_acacia_framed_lime_stained_glass": "Red Acacia Framed Lime Stained Glass",
@@ -22959,6 +23289,8 @@
       "item.wobr.bandit": "Bandit Spawn Egg",
       "block.wobr.chiseled_deadwood_wood": "Chiseled Deadwood Wood",
       "item.wobr.sand_wanderer_scheme": "Sand Wanderer Scheme",
+      "item.minecraft.potion.effect.levitation_potion": "Potion of Levitation",
+      "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
       "block.wobr.red_acacia_framed_yellow_stained_glass": "Red Acacia Framed Yellow Stained Glass",
       "item.wobr.ormath_shaman_spawn_egg": "Ormath Shaman Spawn Egg",
       "block.wobr.smooth_black_sand": "Smooth Vulcanic Sand",
@@ -23001,6 +23333,7 @@
       "block.wobr.stripped_oak_wooden_slab": "Stripped Oak Wooden Slab",
       "block.wobr.baedoor_funt_block_trapdoor": "Baedoor Golden Trapdoor",
       "item.wobr.tsua_straw": "Tsua Straw",
+      "item.minecraft.splash_potion.effect.wither_potion": "Splash Witheric Potion",
       "advancements.against_spiritsof_nature.title": "Against Spirits of Nature",
       "block.wobr.stripped_crimson_wooden_stairs": "Stripped Crimson Wooden Stairs",
       "item.wobr.wind_projectile": "Wind Projectile",
@@ -23284,6 +23617,10 @@
       {
         "name": "Firearms Parts",
         "children": []
+      },
+      {
+        "name": "Potion 2021.3 Recipes",
+        "children": []
       }
     ]
   },
@@ -23294,7 +23631,7 @@
     "description": "Mod adding steampunk weapons and blocks, inspired by my own fictional universe, called \u0027Baedoor\u0027. Serves the purpose of upgrading some gameplay features of Minecraft, without changing vanilla gameplay.",
     "author": "Toma400",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/wastelands-of-baedoor",
-    "license": "Not specified",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "wob_logo",
