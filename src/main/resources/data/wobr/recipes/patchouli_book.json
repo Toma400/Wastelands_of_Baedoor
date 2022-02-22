@@ -1,0 +1,17 @@
+{
+  "group": "patchouli_book",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wobr:firearm_lock"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "item": "patchouli:guide_book",
+    "count": 1,
+    "nbt": {"patchouli:book": "wobr:wastelands_guide"}
+  }
+}

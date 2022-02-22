@@ -1,14 +1,19 @@
 package net.mcreator.wobr.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec2f;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
@@ -28,12 +33,30 @@ public class GunMerchantTrade5Procedure extends WobrModElements.ModElement {
 				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GunMerchantTrade5!");
 			return;
 		}
+		if (dependencies.get("x") == null) {
+			if (!dependencies.containsKey("x"))
+				WobrMod.LOGGER.warn("Failed to load dependency x for procedure GunMerchantTrade5!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			if (!dependencies.containsKey("y"))
+				WobrMod.LOGGER.warn("Failed to load dependency y for procedure GunMerchantTrade5!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			if (!dependencies.containsKey("z"))
+				WobrMod.LOGGER.warn("Failed to load dependency z for procedure GunMerchantTrade5!");
+			return;
+		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GunMerchantTrade5!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double money = 0;
 		money = (double) 0;
@@ -54,10 +77,11 @@ public class GunMerchantTrade5Procedure extends WobrModElements.ModElement {
 				ItemStack _stktoremove = new ItemStack(Items.DIAMOND);
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 27);
 			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(Items.DIAMOND);
-				_setstack.setCount((int) 27);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+				world.getWorld().getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+						"/summon item ~ ~ ~ {Item:{id:\"minecraft:diamond\",Count:27b}}");
 			}
 		}
 	}

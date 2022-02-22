@@ -22,6 +22,8 @@ import net.mcreator.wobr.item.CrocodileShotgunItem;
 import net.mcreator.wobr.item.AyerShotgunItem;
 import net.mcreator.wobr.item.AyerSawedOffItem;
 import net.mcreator.wobr.WobrModElements;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.util.ResourceLocation;
 
 @WobrModElements.ModElement.Tag
 public class CylinderInspectionEnchantment extends WobrModElements.ModElement {
@@ -52,31 +54,11 @@ public class CylinderInspectionEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		public boolean canApplyAtEnchantingTable(ItemStack stack) {
-			if (stack.getItem() == HandmadeRevolverItem.block)
+			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobn_firearms")))
+				.contains((stack).getItem()) == true)
 				return true;
-			if (stack.getItem() == PepperBoxItem.block)
-				return true;
-			if (stack.getItem() == ShortRevolverItem.block)
-				return true;
-			if (stack.getItem() == GoldenShotRevolverItem.block)
-				return true;
-			if (stack.getItem() == LongRevolverItem.block)
-				return true;
-			if (stack.getItem() == ElephantGunItem.block)
-				return true;
-			if (stack.getItem() == JitadoShotgunItem.block)
-				return true;
-			if (stack.getItem() == CrocodileShotgunItem.block)
-				return true;
-			if (stack.getItem() == Lefs9Item.block)
-				return true;
-			if (stack.getItem() == AyerShotgunItem.block)
-				return true;
-			if (stack.getItem() == AyerSawedOffItem.block)
-				return true;
-			if (stack.getItem() == WindsweeperItem.block)
-				return true;
-			if (stack.getItem() == RustyReaperItem.block)
+			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_firearms")))
+				.contains((stack).getItem()) == true)
 				return true;
 			return false;
 		}

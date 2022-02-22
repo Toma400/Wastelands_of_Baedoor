@@ -28,6 +28,8 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.Comparator;
 
+import com.google.common.collect.ImmutableMap;
+
 @WobrModElements.ModElement.Tag
 public class PulsatingJavelinTagKillBlockProcedure extends WobrModElements.ModElement {
 	public PulsatingJavelinTagKillBlockProcedure(WobrModElements instance) {
@@ -95,128 +97,7 @@ public class PulsatingJavelinTagKillBlockProcedure extends WobrModElements.ModEl
 												.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 												.contains(entityiterator.getType()))))
 								|| (entityiterator instanceof ZombieEntity))
-								|| (((((((EntityTypeTags.getCollection()
-										.getOrCreate(new ResourceLocation(("forge:avoider_mowzie").toLowerCase(java.util.Locale.ENGLISH)))
-										.contains(entityiterator.getType()))
-										|| (EntityTypeTags.getCollection()
-												.getOrCreate(new ResourceLocation(("forge:avoider_desolat").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType())))
-										|| ((EntityTypeTags.getCollection()
-												.getOrCreate(
-														new ResourceLocation(("forge:avoider_arcaneum_15").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType()))
-												|| (EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_arcaneum").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))))
-										|| ((EntityTypeTags.getCollection()
-												.getOrCreate(new ResourceLocation(("forge:avoider_atum").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType()))
-												|| ((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_infernal_exp").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_better_end").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType())))))
-										|| ((((EntityTypeTags.getCollection()
-												.getOrCreate(new ResourceLocation(("forge:avoider_eidolon").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType()))
-												|| (EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_eternal_tales").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType())))
-												|| ((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_elvenation").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_ice_and_fire").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))))
-												|| (((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_phytolands").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_murky").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType())))
-														|| ((EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_better_nether").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))
-																|| (EntityTypeTags.getCollection()
-																		.getOrCreate(new ResourceLocation(
-																				("forge:avoider_xenoclus").toLowerCase(java.util.Locale.ENGLISH)))
-																		.contains(entityiterator.getType()))))))
-										|| (((((EntityTypeTags.getCollection()
-												.getOrCreate(new ResourceLocation(("forge:avoider_voidcraft").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType()))
-												|| (EntityTypeTags.getCollection()
-														.getOrCreate(
-																new ResourceLocation(("forge:avoider_klsts").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType())))
-												|| ((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_betteranimals").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_afterlight").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))))
-												|| (((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_cazfps_chr").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_midnight").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType())))
-														|| ((EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_quark").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))
-																|| (EntityTypeTags.getCollection()
-																		.getOrCreate(new ResourceLocation(("forge:avoider_refreshed_nether")
-																				.toLowerCase(java.util.Locale.ENGLISH)))
-																		.contains(entityiterator.getType())))))
-												|| ((((EntityTypeTags.getCollection()
-														.getOrCreate(new ResourceLocation(
-																("forge:avoider_undergarden").toLowerCase(java.util.Locale.ENGLISH)))
-														.contains(entityiterator.getType()))
-														|| (EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_neverdark").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType())))
-														|| ((EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_greek_fantasy").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))
-																|| (EntityTypeTags.getCollection()
-																		.getOrCreate(new ResourceLocation(
-																				("forge:avoider_undead_exp").toLowerCase(java.util.Locale.ENGLISH)))
-																		.contains(entityiterator.getType()))))
-														|| (((EntityTypeTags.getCollection()
-																.getOrCreate(new ResourceLocation(
-																		("forge:avoider_rotten_creatures").toLowerCase(java.util.Locale.ENGLISH)))
-																.contains(entityiterator.getType()))
-																|| (EntityTypeTags.getCollection()
-																		.getOrCreate(new ResourceLocation(
-																				("forge:avoider_elementals").toLowerCase(java.util.Locale.ENGLISH)))
-																		.contains(entityiterator.getType())))
-																|| ((EntityTypeTags.getCollection()
-																		.getOrCreate(new ResourceLocation(
-																				("forge:avoider_klsts_15").toLowerCase(java.util.Locale.ENGLISH)))
-																		.contains(entityiterator.getType()))
-																		|| (EntityTypeTags.getCollection()
-																				.getOrCreate(new ResourceLocation(("forge:avoider_elementals_15")
-																						.toLowerCase(java.util.Locale.ENGLISH)))
-																				.contains(entityiterator.getType())))))))
-										|| (EntityTypeTags.getCollection()
-												.getOrCreate(new ResourceLocation(("forge:avoider_blue_skies").toLowerCase(java.util.Locale.ENGLISH)))
-												.contains(entityiterator.getType())))))) {
+								|| (ModdedTagKillIteratorProcedure.executeProcedure(ImmutableMap.of("entityiterator", entityiterator)) == (true))))) {
 					counter = (double) (counter + 1);
 					if (world instanceof ServerWorld)
 						((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entityiterator.getPosX()),

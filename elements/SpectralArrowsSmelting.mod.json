@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "spectral_arrows",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.SPECTRAL_ARROW"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.GLOWSTONE_DUST"
+    },
+    "name": "spectral_arrows_smelting",
+    "namespace": "mod"
+  }
+}

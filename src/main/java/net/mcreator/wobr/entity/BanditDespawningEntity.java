@@ -18,7 +18,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -92,8 +91,8 @@ public class BanditDespawningEntity extends WobrModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, false));
-			this.goalSelector.addGoal(2, new LookAtGoal(this, PlayerEntity.class, (float) 100));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, BanditEntity.CustomEntity.class, true, false));
+			this.goalSelector.addGoal(2, new LookAtGoal(this, BanditEntity.CustomEntity.class, (float) 100));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));

@@ -116,7 +116,7 @@ public class ShotEnhancedPepperBoxProcedure extends WobrModElements.ModElement {
 						if (entity instanceof LivingEntity) {
 							Entity _ent = entity;
 							if (!_ent.world.isRemote) {
-								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 1, (int) 2);
+								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 1, (int) 1);
 							}
 						}
 						if (!world.getWorld().isRemote) {
@@ -130,6 +130,8 @@ public class ShotEnhancedPepperBoxProcedure extends WobrModElements.ModElement {
 											.getValue(new ResourceLocation("wobr:pepper_box_shot")),
 									SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 						}
+						if (entity instanceof PlayerEntity)
+							((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 5);
 					} else {
 						if (!world.getWorld().isRemote) {
 							world.playSound(null, new BlockPos((int) x, (int) y, (int) z),

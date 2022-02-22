@@ -17,7 +17,7 @@
   },
   "criteria": {
     "reveal": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   },
   "rewards": {
@@ -34,7 +34,7 @@
       "wobr:sand_dust_recipe",
       "wobr:ash_dust_recipe",
       "wobr:shotgun_barrel_recipe",
-      "wobr:revolver_grip_procedure",
+      "wobr:deleted_mod_element",
       "wobr:revolver_clip_6_recipe",
       "wobr:revolver_clip_4_recipe",
       "wobr:revolver_clip_2_recipe",

@@ -1,5 +1,6 @@
 package net.mcreator.wobr.procedures;
 
+import net.minecraft.world.IWorld;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -16,7 +17,7 @@ import java.util.Iterator;
 @WobrModElements.ModElement.Tag
 public class GuideBookAdvancementProcedure extends WobrModElements.ModElement {
 	public GuideBookAdvancementProcedure(WobrModElements instance) {
-		super(instance, 1191);
+		super(instance, 1790);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -25,7 +26,13 @@ public class GuideBookAdvancementProcedure extends WobrModElements.ModElement {
 				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure GuideBookAdvancement!");
 			return;
 		}
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				WobrMod.LOGGER.warn("Failed to load dependency world for procedure GuideBookAdvancement!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof ServerPlayerEntity) {
 			Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 					.getAdvancement(new ResourceLocation("wobr:guide_book"));
@@ -35,6 +42,15 @@ public class GuideBookAdvancementProcedure extends WobrModElements.ModElement {
 				while (_iterator.hasNext()) {
 					String _criterion = (String) _iterator.next();
 					((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+				}
+			}
+		}
+		if ((net.minecraftforge.fml.ModList.get().isLoaded("patchouli"))) {
+			{
+				Entity _ent = entity;
+				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+							"/give @s patchouli:guide_book{\"patchouli:book\":\"wobr:wastelands_guide\"}");
 				}
 			}
 		}

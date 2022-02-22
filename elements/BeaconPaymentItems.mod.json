@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:LavaIngot"
+      },
+      {
+        "value": "CUSTOM:CirtainIngot"
+      },
+      {
+        "value": "CUSTOM:BaedoorGoldIngot"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "beacon_payment_items",
+    "namespace": "minecraft"
+  }
+}

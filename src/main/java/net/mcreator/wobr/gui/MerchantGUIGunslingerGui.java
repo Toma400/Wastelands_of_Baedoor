@@ -150,7 +150,7 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 80, this.guiTop + 105, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
-			if (GunMerchantTrade6Procedure.executeProcedure(ImmutableMap.of("entity", entity, "world", world))) {
+			if (GunMerchantTrade6Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
 				this.blit(this.guiLeft + 80, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
 			}
@@ -354,6 +354,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade3Procedure.executeProcedure($_dependencies);
 			}
@@ -362,6 +365,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade2Procedure.executeProcedure($_dependencies);
 			}
@@ -370,6 +376,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade5Procedure.executeProcedure($_dependencies);
 			}
@@ -378,6 +387,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade1Procedure.executeProcedure($_dependencies);
 			}
@@ -386,6 +398,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade4Procedure.executeProcedure($_dependencies);
 			}
@@ -394,6 +409,9 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GunMerchantTrade6Procedure.executeProcedure($_dependencies);
 			}

@@ -7,7 +7,6 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.wobr.item.WindsweeperItem;
 import net.mcreator.wobr.item.SandWandererItem;
-import net.mcreator.wobr.item.HeavyDeif442CarbineItem;
 import net.mcreator.wobr.item.ElephantGunItem;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
@@ -73,28 +72,6 @@ public class ReloadCheckRiflesProcedure extends WobrModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ReloadWindsweeperProcedure.executeProcedure($_dependencies);
-			}
-		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == WindsweeperItem.block)) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ReloadRusticDeif444CarbineProcedure.executeProcedure($_dependencies);
-			}
-		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == HeavyDeif442CarbineItem.block)) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ReloadHeavyDeif442CarbineProcedure.executeProcedure($_dependencies);
 			}
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == SandWandererItem.block)) {

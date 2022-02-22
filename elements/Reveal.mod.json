@@ -672,6 +672,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"68\" y=\"96\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"67\" y=\"78\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

@@ -116,7 +116,7 @@ public class ShotPepperBoxProcedure extends WobrModElements.ModElement {
 						if (entity instanceof LivingEntity) {
 							Entity _ent = entity;
 							if (!_ent.world.isRemote) {
-								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 1, (int) 2);
+								BulletRangedItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 1, (int) 1);
 							}
 						}
 						if (!world.getWorld().isRemote) {

@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CirtainBlock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "grylynen_unbreakable",
+    "namespace": "forge"
+  }
+}

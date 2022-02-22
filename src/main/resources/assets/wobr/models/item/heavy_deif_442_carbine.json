@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "wobr:items/heavy_deif_44_2_carbine"
-  }
-}
