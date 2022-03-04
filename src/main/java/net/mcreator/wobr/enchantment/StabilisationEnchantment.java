@@ -55,6 +55,7 @@ public class StabilisationEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		public boolean canApplyAtEnchantingTable(ItemStack stack) {
+			//.getTagByID <- 1.16
 			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobn_firearms").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((stack).getItem()) == true)
 				return true;
