@@ -88,6 +88,7 @@ public class EnhancedPepperBoxItem extends WobrModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("world", world);
 					GuideBookAdvancementProcedure.executeProcedure($_dependencies);
 				}
 			}

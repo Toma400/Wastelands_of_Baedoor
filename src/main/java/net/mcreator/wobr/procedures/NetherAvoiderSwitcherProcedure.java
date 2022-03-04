@@ -4,8 +4,12 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.wobr.item.GoldenConfiguratorItem;
 import net.mcreator.wobr.block.NetherAvoiderInactiveBlock;
 import net.mcreator.wobr.block.NetherAvoiderBlock;
 import net.mcreator.wobr.block.LapisAvoiderInactiveBlock;
@@ -16,6 +20,7 @@ import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
 import java.util.Map;
+import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
@@ -24,6 +29,11 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure NetherAvoiderSwitcher!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				WobrMod.LOGGER.warn("Failed to load dependency x for procedure NetherAvoiderSwitcher!");
@@ -44,132 +54,146 @@ public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure NetherAvoiderSwitcher!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderInactiveBlock.block)) {
+		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == GoldenConfiguratorItem.block)) {
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = NetherAvoiderBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ConfiguratorCheckProcedure.executeProcedure($_dependencies);
+			}
+		} else {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderInactiveBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = NetherAvoiderBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = NetherAvoiderInactiveBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = NetherAvoiderInactiveBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderInactiveBlock.block)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = GoldenAvoiderActiveBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderInactiveBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = GoldenAvoiderActiveBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = GoldenAvoiderInactiveBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = GoldenAvoiderInactiveBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderInactiveBlock.block)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = LapisAvoiderActiveBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderInactiveBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = LapisAvoiderActiveBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = LapisAvoiderInactiveBlock.block.getDefaultState();
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = LapisAvoiderInactiveBlock.block.getDefaultState();
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}

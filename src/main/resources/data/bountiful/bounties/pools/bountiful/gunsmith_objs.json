@@ -1,0 +1,64 @@
+{
+  "content": [
+    {
+      "type": "item",
+      "content": "minecraft:glowstone_dust",
+      "amountRange": {
+        "min": 4,
+        "max": 32
+      },
+      "unitWorth": 25,
+      "weight": 1000
+    },
+    {
+      "type": "item",
+      "content": "minecraft:flint",
+      "amountRange": {
+        "min": 16,
+        "max": 64
+      },
+      "unitWorth": 25,
+      "weight": 1000
+    },
+    {
+      "type": "item",
+      "content": "minecraft:iron_ingot",
+      "amountRange": {
+        "min": 3,
+        "max": 16
+      },
+      "unitWorth": 56,
+      "weight": 1000
+    },
+    {
+      "type": "item",
+      "content": "wobr:nether_soul_essence",
+      "amountRange": {
+        "min": 4,
+        "max": 20
+      },
+      "unitWorth": 80,
+      "weight": 1000
+    },
+    {
+      "type": "item",
+      "content": "wobr:baedoor_gold_ingot",
+      "amountRange": {
+        "min": 2,
+        "max": 12
+      },
+      "unitWorth": 850,
+      "weight": 1000
+    },
+    {
+      "type": "item",
+      "content": "minecraft:wither_skeleton_skull",
+      "amountRange": {
+        "min": 1,
+        "max": 2
+      },
+      "unitWorth": 2000,
+      "weight": 1000
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "group": "golden_configurator",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz"
+    },
+    "1": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "2": {
+      "item": "minecraft:quartz"
+    },
+    "3": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "4": {
+      "item": "minecraft:clock"
+    },
+    "5": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "6": {
+      "item": "wobr:baedoor_gold_ingot"
+    },
+    "7": {
+      "item": "minecraft:redstone"
+    },
+    "8": {
+      "item": "wobr:baedoor_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "wobr:golden_configurator",
+    "count": 1
+  }
+}

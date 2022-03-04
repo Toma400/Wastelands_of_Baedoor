@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "wobr:glistering_sandstone",
+    "wobr:glistering_sandstone_smooth",
+    "wobr:hardened_black_sand",
+    "wobr:polished_black_sand",
+    "wobr:chiseled_black_sand",
+    "wobr:smooth_black_sand"
+  ]
+}

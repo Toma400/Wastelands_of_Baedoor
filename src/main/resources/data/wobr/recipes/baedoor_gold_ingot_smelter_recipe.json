@@ -4,7 +4,7 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "wobr:pale_gold_ingot"
+    "item": "wobr:unstable_gold_ingot"
   },
   "result": {
     "item": "wobr:baedoor_gold_ingot"

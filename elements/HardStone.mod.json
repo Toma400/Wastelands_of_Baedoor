@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:HardenedCobblestone"
+      },
+      {
+        "value": "Blocks.STONEBRICK#0"
+      },
+      {
+        "value": "Blocks.STONEBRICK#1"
+      },
+      {
+        "value": "Blocks.STONEBRICK#2"
+      },
+      {
+        "value": "Blocks.STONEBRICK#3"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "hard_stone",
+    "namespace": "wobr"
+  }
+}

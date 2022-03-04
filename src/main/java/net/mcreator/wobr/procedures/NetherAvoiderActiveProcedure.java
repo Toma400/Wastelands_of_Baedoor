@@ -20,7 +20,6 @@ import net.mcreator.wobr.block.NetherAvoiderBlock;
 import net.mcreator.wobr.block.LapisAvoiderActiveBlock;
 import net.mcreator.wobr.block.GoldenAvoiderActiveBlock;
 import net.mcreator.wobr.block.AvoiderBlockBlock;
-import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -61,7 +60,9 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)) {
+		if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == NetherAvoiderBlock.block)
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block))) {
 			if (((new Object() {
 				public boolean getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
@@ -71,126 +72,53 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 				}
 			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
 				{
-					List<Entity> _entfound = world
-							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
-									null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).collect(Collectors.toList());
-					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator).addPotionEffect(
-									new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
-					}
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[team=avoider_killable,distance=..50,tag=!Named]");
-				}
-			} else {
-				{
-					List<Entity> _entfound = world
-							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).collect(Collectors.toList());
-					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof PlayerEntity && !entityiterator.world.isRemote) {
-							((PlayerEntity) entityiterator).sendStatusMessage(new StringTextComponent("Avoider is cursed..."), (false));
+					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(x - (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
 						}
-					}
-				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GoldenAvoiderActiveBlock.block)) {
-			if (((new Object() {
-				public boolean getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
-				{
-					List<Entity> _entfound = world
-							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
-									null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).collect(Collectors.toList());
-					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator).addPotionEffect(
-									new EffectInstance(NetherAvoiderPulsatingPotionEffect.potion, (int) 60, (int) 2, (false), (false)));
-					}
-				}
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[team=avoider_killable,distance=..50,tag=!Named]");
-				}
-			} else {
-				{
-					List<Entity> _entfound = world
-							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).collect(Collectors.toList());
-					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof PlayerEntity && !entityiterator.world.isRemote) {
-							((PlayerEntity) entityiterator).sendStatusMessage(new StringTextComponent("Avoider is cursed..."), (false));
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), y - (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
 						}
-					}
-				}
-			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LapisAvoiderActiveBlock.block)) {
-			if (((new Object() {
-				public boolean getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "avoider_cooled")) == (false))) {
-				{
-					List<Entity> _entfound = world
-							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-											z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
-									null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).collect(Collectors.toList());
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), z - (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), x + (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), y + (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), z + (((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d)), null).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof LivingEntity)
 							((LivingEntity) entityiterator).addPotionEffect(
@@ -222,20 +150,53 @@ public class NetherAvoiderActiveProcedure extends WobrModElements.ModElement {
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == AvoiderBlockBlock.block)) {
 			{
-				List<Entity> _entfound = world
-						.getEntitiesWithinAABB(Entity.class,
-								new AxisAlignedBB(x - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-										y - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-										z - ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-										x + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-										y + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d),
-										z + ((WobrModVariables.MapVariables.get(world).KF_Av_Distance * 2) / 2d)),
-								null)
-						.stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-							}
-						}.compareDistOf(x, y, z)).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(x - (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), y - (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), z - (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), x + (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), y + (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d), z + (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "av_distance")) * 2) / 2d)), null).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+					}
+				}.compareDistOf(x, y, z)).collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity)
 						((LivingEntity) entityiterator)

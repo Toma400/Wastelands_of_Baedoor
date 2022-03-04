@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.wobr.potion.AvoiderCursePotionEffect;
+import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -52,6 +53,14 @@ public class AvoiderCooldownBlockProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		if (!world.getWorld().isRemote) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putDouble("av_distance", WobrModVariables.MapVariables.get(world).KF_Av_Distance);
+			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
 		if ((new Object() {
 			boolean check(Entity _entity) {
 				if (_entity instanceof LivingEntity) {

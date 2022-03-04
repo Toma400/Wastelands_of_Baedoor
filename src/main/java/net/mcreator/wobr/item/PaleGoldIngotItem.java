@@ -23,7 +23,7 @@ import java.util.HashMap;
 
 @WobrModElements.ModElement.Tag
 public class PaleGoldIngotItem extends WobrModElements.ModElement {
-	@ObjectHolder("wobr:pale_gold_ingot")
+	@ObjectHolder("wobr:unstable_gold_ingot")
 	public static final Item block = null;
 	public PaleGoldIngotItem(WobrModElements instance) {
 		super(instance, 49);
@@ -36,7 +36,7 @@ public class PaleGoldIngotItem extends WobrModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(WoBCreativeTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("pale_gold_ingot");
+			setRegistryName("unstable_gold_ingot");
 		}
 
 		@Override

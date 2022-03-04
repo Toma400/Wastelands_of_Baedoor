@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "pale_gold_ingot",
     "customModelName": "Normal",
-    "name": "Pale Gold Ingot",
+    "name": "Unstable Gold Ingot",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:WoBCreativeTab"

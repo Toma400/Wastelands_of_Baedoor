@@ -3860,6 +3860,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -16902,7 +16906,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pale_gold_ingot"
+      "registry_name": "unstable_gold_ingot"
     },
     {
       "name": "PaleGoldIngotReturning",
@@ -18751,7 +18755,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pulsating_detector_recipe"
+      "registry_name": "pulsating_detector_recipe",
+      "path": "~/Recipes"
     },
     {
       "name": "SpawnEntitiesUse",
@@ -20438,7 +20443,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pulsating_javelin_recipe"
+      "registry_name": "pulsating_javelin_recipe",
+      "path": "~/Recipes"
     },
     {
       "name": "RideroftheLightning",
@@ -21241,6 +21247,217 @@
       "ids": {},
       "registry_name": "grylynen_unbreakable",
       "path": "~/Compatibility Tags/Bioplethora"
+    },
+    {
+      "name": "AirshipMerchant",
+      "type": "livingentity",
+      "sortid": 1798,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_merchant"
+    },
+    {
+      "name": "GiftsFromAirshipMerchants",
+      "type": "procedure",
+      "sortid": 1799,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gifts_from_airship_merchants",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FanHeaters",
+      "type": "tag",
+      "sortid": 1800,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fan_heaters",
+      "path": "~/Compatibility Tags/Create"
+    },
+    {
+      "name": "CreateIngots",
+      "type": "tag",
+      "sortid": 1801,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "create_ingots",
+      "path": "~/Compatibility Tags/Create"
+    },
+    {
+      "name": "TinIngotRecipe",
+      "type": "recipe",
+      "sortid": 1802,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "tin_ingot_recipe",
+      "path": "~/Compatibility Recipes"
+    },
+    {
+      "name": "PlanksLike",
+      "type": "tag",
+      "sortid": 1803,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planks_like",
+      "path": "~/Compatibility Tags/Tinkers Construct"
+    },
+    {
+      "name": "Sandstone",
+      "type": "tag",
+      "sortid": 1804,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "FluidConverterBaseConverting",
+      "type": "procedure",
+      "sortid": 1805,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fluid_converter_base_converting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HardStone",
+      "type": "tag",
+      "sortid": 1806,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hard_stone"
+    },
+    {
+      "name": "GoldenConfigurator",
+      "type": "item",
+      "sortid": 1807,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_configurator"
+    },
+    {
+      "name": "ConfiguratorCheck",
+      "type": "procedure",
+      "sortid": 1808,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "configurator_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenConfiguratorRecipe",
+      "type": "recipe",
+      "sortid": 1809,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_configurator_recipe",
+      "path": "~/Recipes/Mechanical"
+    },
+    {
+      "name": "ConfiguratorAvoiderReducer",
+      "type": "procedure",
+      "sortid": 1810,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "configurator_avoider_reducer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -21784,6 +22001,7 @@
       "block.wobr.wooden_lamp_nutwood": "Juniper Wooden Lamp",
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
+      "item.wobr.golden_configurator": "Golden Configurator",
       "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
@@ -21822,6 +22040,7 @@
       "block.wobr.chiseled_crimson_wood": "Chiseled Juniper Wood",
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
+      "item.wobr.airship_merchant_spawn_egg": "Airship Merchant Spawn Egg",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
@@ -22213,6 +22432,7 @@
       "subtitles.ormath_beast_death": "",
       "block.wobr.warped_wooden_stairs": "Crimson Wooden Stairs",
       "block.wobr.red_acacia_framed_blue_stained_glass": "Red Acacia Framed Blue Stained Glass",
+      "entity.wobr.airship_merchant": "Airship Merchant",
       "effect.sabre_attack_cooldown": "[Sabre Defence]",
       "block.wobr.sandy_birch_framed_purple_stained_glass": "Sandy Birch Framed Purple Stained Glass",
       "block.wobr.acacia_framed_purple_stained_glass": "Acacia Framed Purple Stained Glass",
@@ -22319,6 +22539,7 @@
       "block.wobr.stripped_palm_wooden_stairs": "Palm Wooden Stairs",
       "block.wobr.crimson_wooden_slab": "Juniper Wooden Slab",
       "block.wobr.hardened_black_sand_slab": "Utwardzona wulkaniczna piaskowa p³yta",
+      "item.wobr.unstable_gold_ingot": "Pale Gold Ingot",
       "advancements.friendof_grand_ormath_clan.title": "Przyjaciel Wielkiego Klanu Ormathów",
       "advancements.shields_is_for_newbies.title": "Tarcze s¹ dla laików",
       "effect.curare_poison": "Curare Poison",
@@ -22539,7 +22760,6 @@
       "block.wobr.oak_framed_orange_stained_glass": "Oak Framed Orange Stained Glass",
       "item.wobr.spawn_entity_jungle_airship_spawn_egg": "[Spawn Entity] Mage Airship Spawn Egg",
       "block.wobr.glistering_sandstone_stairs": "B³yszcz¹ce piaskowcowe schody",
-      "item.wobr.pale_gold_ingot": "Baedoor Gold Ingot",
       "entity.wobr.bandit_despawning": "Bandit",
       "item.wobr.thrown_dagger": "Rzucany Sztylet",
       "key.wobr.ammunition_key": "Ammunition Check Key",
@@ -22589,6 +22809,7 @@
       "block.wobr.wooden_lamp_nutwood": "Nutwood Wooden Lamp",
       "block.wobr.bamboo_framed_cyan_stained_glass": "Bamboo Framed Cyan Stained Glass",
       "block.wobr.dark_oak_framed_gray_stained_glass": "Dark Oak Framed Gray Stained Glass",
+      "item.wobr.golden_configurator": "Golden Configurator",
       "block.wobr.airship_bandit_chest": "Airship Bandit Chest",
       "subtitles.ormath_warrior_death": "",
       "block.wobr.relic_jungle_airship": "Jungle Airship Relic",
@@ -22627,6 +22848,7 @@
       "block.wobr.chiseled_crimson_wood": "Chiseled Crimson Stem",
       "block.wobr.nether_avoider_inactive": "Nether Avoider",
       "block.wobr.dark_oak_framed_brown_stained_glass": "Dark Oak Framed Brown Stained Glass",
+      "item.wobr.airship_merchant_spawn_egg": "Airship Merchant Spawn Egg",
       "item.wobr.bone_throwing_axe": "Bone Throwing Axe",
       "block.wobr.bamboo_slab": "Bamboo Slab",
       "block.wobr.baedoor_funt_block_slab": "Baedoor Golden Slab",
@@ -23018,6 +23240,7 @@
       "subtitles.ormath_beast_death": "",
       "block.wobr.warped_wooden_stairs": "Warped Wooden Stairs",
       "block.wobr.red_acacia_framed_blue_stained_glass": "Red Acacia Framed Blue Stained Glass",
+      "entity.wobr.airship_merchant": "Airship Merchant",
       "effect.sabre_attack_cooldown": "[Sabre Attack Cooldown]",
       "block.wobr.sandy_birch_framed_purple_stained_glass": "Sandy Birch Framed Purple Stained Glass",
       "block.wobr.acacia_framed_purple_stained_glass": "Acacia Framed Purple Stained Glass",
@@ -23124,6 +23347,7 @@
       "block.wobr.stripped_palm_wooden_stairs": "Stripped Palm Wooden Stairs",
       "block.wobr.crimson_wooden_slab": "Crimson Wooden Slab",
       "block.wobr.hardened_black_sand_slab": "Hardened Vulcanic Sand Slab",
+      "item.wobr.unstable_gold_ingot": "Unstable Gold Ingot",
       "advancements.friendof_grand_ormath_clan.title": "Friend of Grand Ormath Clan",
       "advancements.shields_is_for_newbies.title": "Shields Are For Newbies",
       "effect.curare_poison": "Curare Poison",
@@ -23344,7 +23568,6 @@
       "block.wobr.oak_framed_orange_stained_glass": "Oak Framed Orange Stained Glass",
       "item.wobr.spawn_entity_jungle_airship_spawn_egg": "[Spawn Entity] Jungle Airship Spawn Egg",
       "block.wobr.glistering_sandstone_stairs": "Glistering Sandstone Stairs",
-      "item.wobr.pale_gold_ingot": "Pale Gold Ingot",
       "entity.wobr.bandit_despawning": "Bandit",
       "item.wobr.thrown_dagger": "Throwing Dagger",
       "key.wobr.ammunition_key": "Ammunition Check Key",
@@ -23459,6 +23682,14 @@
           {
             "name": "Bioplethora",
             "children": []
+          },
+          {
+            "name": "Create",
+            "children": []
+          },
+          {
+            "name": "Tinkers Construct",
+            "children": []
           }
         ]
       },
@@ -23554,6 +23785,10 @@
           {
             "name": "Renewabilities",
             "children": []
+          },
+          {
+            "name": "Mechanical",
+            "children": []
           }
         ]
       },
@@ -23566,7 +23801,7 @@
   "workspaceSettings": {
     "modid": "wobr",
     "modName": "Wastelands of Baedoor",
-    "version": "v0.a11s5",
+    "version": "v0.a11s6",
     "description": "Mod adding steampunk weapons and blocks, inspired by my own fictional universe, called \u0027Baedoor\u0027. Serves the purpose of upgrading some gameplay features of Minecraft, without changing vanilla gameplay.",
     "author": "Toma400",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/wastelands-of-baedoor",
@@ -23579,7 +23814,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Toma400 - everything except contributions",
     "modElementsPackage": "net.mcreator.wobr",
     "lockBaseModFiles": false
   },

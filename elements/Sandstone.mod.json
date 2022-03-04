@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GlisteringSandstone"
+      },
+      {
+        "value": "CUSTOM:GlisteringSandstoneSmooth"
+      },
+      {
+        "value": "CUSTOM:HardenedBlackSand"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackSand"
+      },
+      {
+        "value": "CUSTOM:ChiseledBlackSand"
+      },
+      {
+        "value": "CUSTOM:SmoothBlackSand"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "sandstone",
+    "namespace": "forge"
+  }
+}
