@@ -32,12 +32,8 @@ public class PreConfigManagerProcedure extends WobrModElements.ModElement {
 		WobrModVariables.MapVariables.get(world).syncData(world);
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
-			ConfigInfoProcedure.executeProcedure($_dependencies);
-		}
-		{
-			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("world", world);
-			ConfigManagerProcedure.executeProcedure($_dependencies);
+			ConfigCreatorProcedure.executeProcedure($_dependencies);
 		}
 	}
 
