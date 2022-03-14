@@ -57,8 +57,11 @@ public class FluidConverterBaseConvertingProcedure extends WobrModElements.ModEl
 		for (int index0 = 0; index0 < (int) (3); index0++) {
 			sz = (double) (-1);
 			for (int index1 = 0; index1 < (int) (3); index1++) {
-				if ((BlockTags.getCollection().getOrCreate(new ResourceLocation(("forge:stone").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x + sx), (int) (y - 2), (int) (z + sz)))).getBlock()))) {
+				if (((BlockTags.getCollection().getOrCreate(new ResourceLocation(("forge:stone").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) (x + sx), (int) (y - 2), (int) (z + sz)))).getBlock()))
+						&& (!(BlockTags.getCollection()
+								.getOrCreate(new ResourceLocation(("forge:invulnerable_stone").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) (x + sx), (int) (y - 2), (int) (z + sz)))).getBlock()))))) {
 					{
 						BlockPos _bp = new BlockPos((int) (x + sx), (int) (y - 2), (int) (z + sz));
 						BlockState _bs = Blocks.NETHERRACK.getDefaultState();
@@ -105,7 +108,7 @@ public class FluidConverterBaseConvertingProcedure extends WobrModElements.ModEl
 					if ((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs"))) {
 						if (!world.getWorld().isRemote) {
 							Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_deepslate"));
+									.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
 							if (template != null) {
 								template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings()
 										.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));

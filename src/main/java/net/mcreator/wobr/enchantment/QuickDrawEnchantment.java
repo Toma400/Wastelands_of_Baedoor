@@ -55,13 +55,15 @@ public class QuickDrawEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		public boolean canApplyAtEnchantingTable(ItemStack stack) {
-			//commented is 1.16 code
+			//commented is 1.16/1.17 code
 			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobn_firearms").toLowerCase(java.util.Locale.ENGLISH)))
 			//if (ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:wobn_firearms").toLowerCase(java.util.Locale.ENGLISH)))
+			//if(stack.getTag().contains("forge:wobn_firearms"))
 				.contains((stack).getItem()) == true)
 				return true;
 			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_firearms").toLowerCase(java.util.Locale.ENGLISH)))
 			//if (ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:wobr_firearms").toLowerCase(java.util.Locale.ENGLISH)))
+			//if(stack.getTag().contains("forge:wobr_firearms"))
 				.contains((stack).getItem()) == true)
 				return true;
 			return false;

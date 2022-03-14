@@ -28,8 +28,6 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.Comparator;
 
-import com.google.common.collect.ImmutableMap;
-
 @WobrModElements.ModElement.Tag
 public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement {
 	public PulsatingJavelinTagKillProcedure(WobrModElements instance) {
@@ -84,7 +82,7 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 			for (Entity entityiterator : _entfound) {
 				if ((((world.canBlockSeeSky(new BlockPos((int) (entityiterator.getPosX()), (int) (entityiterator.getPosY()),
 						(int) (entityiterator.getPosZ())))) == (true))
-						&& (((((EntityTypeTags.getCollection()
+						&& ((((EntityTypeTags.getCollection()
 								.getOrCreate(new ResourceLocation(("forge:avoider_killable").toLowerCase(java.util.Locale.ENGLISH)))
 								.contains(entityiterator.getType()))
 								|| (EntityTypeTags.getCollection()
@@ -96,8 +94,7 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 										|| (EntityTypeTags.getCollection()
 												.getOrCreate(new ResourceLocation(("forge:avoider_vanilla_16").toLowerCase(java.util.Locale.ENGLISH)))
 												.contains(entityiterator.getType()))))
-								|| (entityiterator instanceof ZombieEntity))
-								|| (ModdedTagKillIteratorProcedure.executeProcedure(ImmutableMap.of("entityiterator", entityiterator)) == (true))))) {
+								|| (entityiterator instanceof ZombieEntity)))) {
 					counter = (double) (counter + 1);
 					if (world instanceof ServerWorld)
 						((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entityiterator.getPosX()),

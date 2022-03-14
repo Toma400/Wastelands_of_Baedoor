@@ -16,7 +16,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.wobr.block.HardenedBlackSandBlock;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -93,21 +92,6 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 		}
 		if (((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs")) == (true))) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRAVEL)) {
-				if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA)
-						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA)
-								&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA)))) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_tuff"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings()
-									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
-						}
-					}
-				}
-			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == HardenedBlackSandBlock.block)) {
 				if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA)
 						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA))
 						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA)
@@ -115,7 +99,7 @@ public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModEl
 						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.OBSIDIAN))) {
 					if (!world.getWorld().isRemote) {
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_deepslate"));
+								.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_tuff"));
 						if (template != null) {
 							template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings()
 									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
