@@ -1,0 +1,27 @@
+{
+    "key": "cirtain",
+    "category": "metal",
+    "primary": "15",
+    "secondary": "3",
+    "tertiary": "3.5",
+    "durability": "4000",
+    "integrityCost": "3",
+    "integrityGain": "10",
+    "magicCapacity": "152",
+    "toolLevel": "7",
+    "toolEfficiency": "12",
+    "tints": {
+        "glyph": "6da628",
+        "texture": "6da628"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "item": "wobr:cirtain_ingot"
+    },
+    "requiredTools": {
+        "hammer": 7
+    }
+}

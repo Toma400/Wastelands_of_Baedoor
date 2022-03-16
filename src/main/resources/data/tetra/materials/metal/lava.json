@@ -1,0 +1,27 @@
+{
+    "key": "lava",
+    "category": "metal",
+    "primary": "6",
+    "secondary": "4.5",
+    "tertiary": "4",
+    "durability": "440",
+    "integrityCost": "3",
+    "integrityGain": "6",
+    "magicCapacity": "30",
+    "toolLevel": "4",
+    "toolEfficiency": "6",
+    "tints": {
+        "glyph": "a11818",
+        "texture": "a11818"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "item": "wobr:lava_ingot"
+    },
+    "requiredTools": {
+        "hammer": 3
+    }
+}

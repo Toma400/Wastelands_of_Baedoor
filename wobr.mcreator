@@ -20398,10 +20398,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -20450,10 +20446,6 @@
       "registry_name": "pulsating_javelin_tag_kill_block",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
