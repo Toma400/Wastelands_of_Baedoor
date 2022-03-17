@@ -76,7 +76,7 @@ public class AirshipMilitaryStructure extends WobrModElements.ModElement {
 		}
 	};
 	public AirshipMilitaryStructure(WobrModElements instance) {
-		super(instance, 1604);
+		super(instance, 1595);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

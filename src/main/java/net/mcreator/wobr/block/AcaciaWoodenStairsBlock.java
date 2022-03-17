@@ -28,7 +28,7 @@ public class AcaciaWoodenStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:acacia_wooden_stairs")
 	public static final Block block = null;
 	public AcaciaWoodenStairsBlock(WobrModElements instance) {
-		super(instance, 118);
+		super(instance, 119);
 	}
 
 	@Override

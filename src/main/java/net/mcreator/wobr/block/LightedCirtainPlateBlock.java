@@ -34,7 +34,7 @@ public class LightedCirtainPlateBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lighted_cirtain_plate")
 	public static final Block block = null;
 	public LightedCirtainPlateBlock(WobrModElements instance) {
-		super(instance, 1776);
+		super(instance, 221);
 	}
 
 	@Override

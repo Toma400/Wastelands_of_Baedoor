@@ -23,7 +23,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadCheckProcedure extends WobrModElements.ModElement {
 	public ReloadCheckProcedure(WobrModElements instance) {
-		super(instance, 714);
+		super(instance, 717);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

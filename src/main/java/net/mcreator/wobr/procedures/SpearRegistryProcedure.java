@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SpearRegistryProcedure extends WobrModElements.ModElement {
 	public SpearRegistryProcedure(WobrModElements instance) {
-		super(instance, 1300);
+		super(instance, 1293);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -32,7 +32,7 @@ public class AcaciaFramedMagentaStainedGlassBlock extends WobrModElements.ModEle
 	@ObjectHolder("wobr:acacia_framed_magenta_stained_glass")
 	public static final Block block = null;
 	public AcaciaFramedMagentaStainedGlassBlock(WobrModElements instance) {
-		super(instance, 291);
+		super(instance, 295);
 	}
 
 	@Override

@@ -11,7 +11,7 @@ import net.mcreator.wobr.WobrModElements;
 @WobrModElements.ModElement.Tag
 public class CharcoalBlockFuelFuel extends WobrModElements.ModElement {
 	public CharcoalBlockFuelFuel(WobrModElements instance) {
-		super(instance, 769);
+		super(instance, 772);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -37,7 +37,7 @@ public class PillarPalmBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_palm")
 	public static final Block block = null;
 	public PillarPalmBlock(WobrModElements instance) {
-		super(instance, 570);
+		super(instance, 574);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class AvoiderReaperModeGameRule extends WobrModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("avoiderReaperMode", create(false));
 	public AvoiderReaperModeGameRule(WobrModElements instance) {
-		super(instance, 1649);
+		super(instance, 1638);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

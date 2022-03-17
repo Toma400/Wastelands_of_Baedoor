@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class FirearmTableResettingProcedure extends WobrModElements.ModElement {
 	public FirearmTableResettingProcedure(WobrModElements instance) {
-		super(instance, 659);
+		super(instance, 662);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

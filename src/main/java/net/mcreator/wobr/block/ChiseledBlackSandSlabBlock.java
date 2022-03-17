@@ -26,7 +26,7 @@ public class ChiseledBlackSandSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:chiseled_black_sand_slab")
 	public static final Block block = null;
 	public ChiseledBlackSandSlabBlock(WobrModElements instance) {
-		super(instance, 86);
+		super(instance, 87);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ReloadRustyReaperProcedure extends WobrModElements.ModElement {
 	public ReloadRustyReaperProcedure(WobrModElements instance) {
-		super(instance, 1131);
+		super(instance, 1133);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -27,7 +27,7 @@ public class BambooBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bamboo_block")
 	public static final Block block = null;
 	public BambooBlockBlock(WobrModElements instance) {
-		super(instance, 173);
+		super(instance, 174);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LegholdTrapTransitionProcedure extends WobrModElements.ModElement {
 	public LegholdTrapTransitionProcedure(WobrModElements instance) {
-		super(instance, 1041);
+		super(instance, 1044);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

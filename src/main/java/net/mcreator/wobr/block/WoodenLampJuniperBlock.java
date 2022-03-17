@@ -38,7 +38,7 @@ public class WoodenLampJuniperBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wooden_lamp_juniper")
 	public static final Block block = null;
 	public WoodenLampJuniperBlock(WobrModElements instance) {
-		super(instance, 585);
+		super(instance, 589);
 	}
 
 	@Override

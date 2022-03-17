@@ -37,7 +37,7 @@ public class GlisteringSandBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:glistering_sand")
 	public static final Block block = null;
 	public GlisteringSandBlock(WobrModElements instance) {
-		super(instance, 69);
+		super(instance, 70);
 	}
 
 	@Override

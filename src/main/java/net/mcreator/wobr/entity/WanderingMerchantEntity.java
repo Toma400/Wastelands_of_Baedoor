@@ -77,7 +77,7 @@ public class WanderingMerchantEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("wandering_merchant").setRegistryName("wandering_merchant");
 	public WanderingMerchantEntity(WobrModElements instance) {
-		super(instance, 467);
+		super(instance, 471);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

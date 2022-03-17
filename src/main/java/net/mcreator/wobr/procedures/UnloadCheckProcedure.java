@@ -24,7 +24,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class UnloadCheckProcedure extends WobrModElements.ModElement {
 	public UnloadCheckProcedure(WobrModElements instance) {
-		super(instance, 750);
+		super(instance, 753);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

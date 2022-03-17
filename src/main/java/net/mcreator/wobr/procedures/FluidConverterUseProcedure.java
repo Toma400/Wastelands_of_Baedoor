@@ -18,7 +18,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class FluidConverterUseProcedure extends WobrModElements.ModElement {
 	public FluidConverterUseProcedure(WobrModElements instance) {
-		super(instance, 1811);
+		super(instance, 1784);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

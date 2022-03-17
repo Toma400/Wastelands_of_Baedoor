@@ -29,7 +29,7 @@ public class PulsatingDetectorItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pulsating_detector")
 	public static final Item block = null;
 	public PulsatingDetectorItem(WobrModElements instance) {
-		super(instance, 237);
+		super(instance, 241);
 	}
 
 	@Override

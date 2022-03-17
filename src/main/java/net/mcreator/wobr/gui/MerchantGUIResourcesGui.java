@@ -53,7 +53,7 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public MerchantGUIResourcesGui(WobrModElements instance) {
-		super(instance, 1556);
+		super(instance, 1549);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

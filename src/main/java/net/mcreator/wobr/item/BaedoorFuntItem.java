@@ -22,7 +22,7 @@ public class BaedoorFuntItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt")
 	public static final Item block = null;
 	public BaedoorFuntItem(WobrModElements instance) {
-		super(instance, 241);
+		super(instance, 245);
 	}
 
 	@Override

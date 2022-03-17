@@ -50,7 +50,7 @@ public class AirshipMerchantEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2f))
 					.build("airship_merchant").setRegistryName("airship_merchant");
 	public AirshipMerchantEntity(WobrModElements instance) {
-		super(instance, 1798);
+		super(instance, 475);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

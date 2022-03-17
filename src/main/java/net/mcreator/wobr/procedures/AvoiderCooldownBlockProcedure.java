@@ -19,7 +19,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class AvoiderCooldownBlockProcedure extends WobrModElements.ModElement {
 	public AvoiderCooldownBlockProcedure(WobrModElements instance) {
-		super(instance, 1535);
+		super(instance, 1528);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

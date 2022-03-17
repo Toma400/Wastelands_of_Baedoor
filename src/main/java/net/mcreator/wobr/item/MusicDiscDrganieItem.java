@@ -16,7 +16,7 @@ public class MusicDiscDrganieItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:music_disc_drganie")
 	public static final Item block = null;
 	public MusicDiscDrganieItem(WobrModElements instance) {
-		super(instance, 222);
+		super(instance, 227);
 	}
 
 	@Override

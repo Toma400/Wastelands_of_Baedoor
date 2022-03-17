@@ -20,7 +20,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class AdditionalMessageOverlayOverlay extends WobrModElements.ModElement {
 	public AdditionalMessageOverlayOverlay(WobrModElements instance) {
-		super(instance, 1049);
+		super(instance, 1051);
 	}
 
 	@Override

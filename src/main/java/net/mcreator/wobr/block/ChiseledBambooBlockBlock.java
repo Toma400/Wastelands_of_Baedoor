@@ -33,7 +33,7 @@ public class ChiseledBambooBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:chiseled_bamboo_block")
 	public static final Block block = null;
 	public ChiseledBambooBlockBlock(WobrModElements instance) {
-		super(instance, 180);
+		super(instance, 181);
 	}
 
 	@Override

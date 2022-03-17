@@ -34,7 +34,6 @@
       "wobr:sand_dust_recipe",
       "wobr:ash_dust_recipe",
       "wobr:shotgun_barrel_recipe",
-      "wobr:deleted_mod_element",
       "wobr:revolver_clip_6_recipe",
       "wobr:revolver_clip_4_recipe",
       "wobr:revolver_clip_2_recipe",
@@ -641,7 +640,6 @@
       "wobr:coral_horn_recipe",
       "wobr:gilded_blackstone_recipe",
       "wobr:renewable_diamonds",
-      "wobr:calcite_renewability",
       "wobr:renewable_quartzite_sand_byg",
       "wobr:warped_coral_recipe_byg",
       "wobr:renewable_black_ice_byg",
@@ -672,8 +670,18 @@
       "wobr:toriscite_renewability",
       "wobr:nether_bricks_from_popped_netherrack",
       "wobr:blue_nether_bricks_from_wob",
-      "wobr:deleted_mod_element",
-      "wobr:pulsating_javelin_recipe"
+      "wobr:pulsating_javelin_recipe",
+      "wobr:firearm_smelting",
+      "wobr:cirtain_lamp_recipe",
+      "wobr:cirtain_plate_recipe",
+      "wobr:baedoor_golden_plate_recipe",
+      "wobr:lighted_cirtain_plate_recipe",
+      "wobr:lighted_baedoor_golden_plate_recipe",
+      "wobr:revolver_grip_recipe",
+      "wobr:patchouli_book",
+      "wobr:spectral_arrows_smelting",
+      "wobr:tin_ingot_recipe",
+      "wobr:golden_configurator_recipe"
     ]
   }
 }

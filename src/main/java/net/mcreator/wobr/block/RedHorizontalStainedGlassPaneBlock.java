@@ -32,7 +32,7 @@ public class RedHorizontalStainedGlassPaneBlock extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:red_horizontal_stained_glass_pane")
 	public static final Block block = null;
 	public RedHorizontalStainedGlassPaneBlock(WobrModElements instance) {
-		super(instance, 268);
+		super(instance, 272);
 	}
 
 	@Override

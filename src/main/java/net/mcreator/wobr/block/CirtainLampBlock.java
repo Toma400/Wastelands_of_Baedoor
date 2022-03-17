@@ -26,7 +26,7 @@ public class CirtainLampBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cirtain_lamp")
 	public static final Block block = null;
 	public CirtainLampBlock(WobrModElements instance) {
-		super(instance, 1772);
+		super(instance, 58);
 	}
 
 	@Override

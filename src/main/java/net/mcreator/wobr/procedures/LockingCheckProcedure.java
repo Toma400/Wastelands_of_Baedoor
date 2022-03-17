@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class LockingCheckProcedure extends WobrModElements.ModElement {
 	public LockingCheckProcedure(WobrModElements instance) {
-		super(instance, 1743);
+		super(instance, 1725);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -36,7 +36,7 @@ public class LockingCheckProcedure extends WobrModElements.ModElement {
 					.getDouble("Gun_Locked")) == 0)) {
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.putDouble("Gun_Locked", 1);
-				entity.getPersistentData().putString("Message", "          Weapon locked!");
+				entity.getPersistentData().putString("Message", "                 Weapon locked!");
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -46,7 +46,7 @@ public class LockingCheckProcedure extends WobrModElements.ModElement {
 					.getDouble("Gun_Locked")) == 1)) {
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.putDouble("Gun_Locked", 0);
-				entity.getPersistentData().putString("Message", "           Weapon unlocked!");
+				entity.getPersistentData().putString("Message", "                Weapon unlocked!");
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);

@@ -47,7 +47,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletdart_curare_projectile").setRegistryName("entitybulletdart_curare_projectile");
 	public DartCurareProjectileItem(WobrModElements instance) {
-		super(instance, 1643);
+		super(instance, 1632);
 	}
 
 	@Override

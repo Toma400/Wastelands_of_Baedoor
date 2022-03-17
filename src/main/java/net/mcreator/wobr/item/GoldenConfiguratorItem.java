@@ -22,7 +22,7 @@ public class GoldenConfiguratorItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:golden_configurator")
 	public static final Item block = null;
 	public GoldenConfiguratorItem(WobrModElements instance) {
-		super(instance, 1807);
+		super(instance, 240);
 	}
 
 	@Override

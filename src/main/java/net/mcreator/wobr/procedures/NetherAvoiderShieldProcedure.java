@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderShieldProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderShieldProcedure(WobrModElements instance) {
-		super(instance, 1272);
+		super(instance, 1266);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

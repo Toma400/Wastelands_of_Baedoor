@@ -32,7 +32,7 @@ public class BirchFramedWhiteStainedGlassBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:birch_framed_white_stained_glass")
 	public static final Block block = null;
 	public BirchFramedWhiteStainedGlassBlock(WobrModElements instance) {
-		super(instance, 328);
+		super(instance, 332);
 	}
 
 	@Override

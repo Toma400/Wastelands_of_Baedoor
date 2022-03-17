@@ -26,7 +26,7 @@ public class LapisLampBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lapis_lamp")
 	public static final Block block = null;
 	public LapisLampBlock(WobrModElements instance) {
-		super(instance, 206);
+		super(instance, 207);
 	}
 
 	@Override

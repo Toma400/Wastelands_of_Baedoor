@@ -26,7 +26,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ConfiguratorCheckProcedure extends WobrModElements.ModElement {
 	public ConfiguratorCheckProcedure(WobrModElements instance) {
-		super(instance, 1808);
+		super(instance, 1781);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

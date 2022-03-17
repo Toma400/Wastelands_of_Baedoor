@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BaedoorGoldenPressurePlateCreatureCheckProcedure extends WobrModElements.ModElement {
 	public BaedoorGoldenPressurePlateCreatureCheckProcedure(WobrModElements instance) {
-		super(instance, 1721);
+		super(instance, 1710);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

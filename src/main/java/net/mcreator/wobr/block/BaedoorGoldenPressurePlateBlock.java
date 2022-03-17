@@ -69,7 +69,7 @@ public class BaedoorGoldenPressurePlateBlock extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:baedoor_golden_pressure_plate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BaedoorGoldenPressurePlateBlock(WobrModElements instance) {
-		super(instance, 194);
+		super(instance, 195);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

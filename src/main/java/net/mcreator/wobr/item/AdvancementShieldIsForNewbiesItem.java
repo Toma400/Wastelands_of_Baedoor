@@ -15,7 +15,7 @@ public class AdvancementShieldIsForNewbiesItem extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:advancement_shield_is_for_newbies")
 	public static final Item block = null;
 	public AdvancementShieldIsForNewbiesItem(WobrModElements instance) {
-		super(instance, 1097);
+		super(instance, 1099);
 	}
 
 	@Override

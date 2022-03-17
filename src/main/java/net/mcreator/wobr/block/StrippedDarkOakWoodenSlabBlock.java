@@ -29,7 +29,7 @@ public class StrippedDarkOakWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:stripped_dark_oak_wooden_slab")
 	public static final Block block = null;
 	public StrippedDarkOakWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 137);
+		super(instance, 138);
 	}
 
 	@Override

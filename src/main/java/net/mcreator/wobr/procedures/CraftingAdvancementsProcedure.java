@@ -26,7 +26,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class CraftingAdvancementsProcedure extends WobrModElements.ModElement {
 	public CraftingAdvancementsProcedure(WobrModElements instance) {
-		super(instance, 1788);
+		super(instance, 1765);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -25,7 +25,7 @@ public class BlockofMushroomPoisonBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:blockof_mushroom_poison")
 	public static final Block block = null;
 	public BlockofMushroomPoisonBlock(WobrModElements instance) {
-		super(instance, 58);
+		super(instance, 59);
 	}
 
 	@Override

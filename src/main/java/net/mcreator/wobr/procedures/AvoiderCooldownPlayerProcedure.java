@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AvoiderCooldownPlayerProcedure extends WobrModElements.ModElement {
 	public AvoiderCooldownPlayerProcedure(WobrModElements instance) {
-		super(instance, 1534);
+		super(instance, 1527);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

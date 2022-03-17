@@ -26,7 +26,7 @@ public class BaedoorFuntBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block")
 	public static final Block block = null;
 	public BaedoorFuntBlockBlock(WobrModElements instance) {
-		super(instance, 184);
+		super(instance, 185);
 	}
 
 	@Override

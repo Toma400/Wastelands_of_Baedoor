@@ -34,7 +34,7 @@ public class LightedBaedoorGoldenPlateBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lighted_baedoor_golden_plate")
 	public static final Block block = null;
 	public LightedBaedoorGoldenPlateBlock(WobrModElements instance) {
-		super(instance, 1777);
+		super(instance, 223);
 	}
 
 	@Override

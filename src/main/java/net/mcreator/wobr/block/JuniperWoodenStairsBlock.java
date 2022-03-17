@@ -33,7 +33,7 @@ public class JuniperWoodenStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:juniper_wooden_stairs")
 	public static final Block block = null;
 	public JuniperWoodenStairsBlock(WobrModElements instance) {
-		super(instance, 491);
+		super(instance, 495);
 	}
 
 	@Override

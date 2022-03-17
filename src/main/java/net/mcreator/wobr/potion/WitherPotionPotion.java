@@ -17,7 +17,7 @@ public class WitherPotionPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wither_potion")
 	public static final Potion potionType = null;
 	public WitherPotionPotion(WobrModElements instance) {
-		super(instance, 1766);
+		super(instance, 1748);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

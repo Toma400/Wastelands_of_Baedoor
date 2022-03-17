@@ -20,7 +20,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AirshipLootTablesManagerProcedure extends WobrModElements.ModElement {
 	public AirshipLootTablesManagerProcedure(WobrModElements instance) {
-		super(instance, 1546);
+		super(instance, 1539);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

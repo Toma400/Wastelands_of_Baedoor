@@ -18,7 +18,7 @@ public class SingleReloadTypePotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:single_reload_type")
 	public static final Effect potion = null;
 	public SingleReloadTypePotionEffect(WobrModElements instance) {
-		super(instance, 1658);
+		super(instance, 1647);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

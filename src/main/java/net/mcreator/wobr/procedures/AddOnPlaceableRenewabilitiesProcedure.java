@@ -25,7 +25,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class AddOnPlaceableRenewabilitiesProcedure extends WobrModElements.ModElement {
 	public AddOnPlaceableRenewabilitiesProcedure(WobrModElements instance) {
-		super(instance, 1491);
+		super(instance, 1484);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

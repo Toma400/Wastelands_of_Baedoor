@@ -47,7 +47,7 @@ public class BulletRangedBanditDespawningItem extends WobrModElements.ModElement
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletbullet_ranged_bandit_despawning").setRegistryName("entitybulletbullet_ranged_bandit_despawning");
 	public BulletRangedBanditDespawningItem(WobrModElements instance) {
-		super(instance, 1771);
+		super(instance, 1753);
 	}
 
 	@Override

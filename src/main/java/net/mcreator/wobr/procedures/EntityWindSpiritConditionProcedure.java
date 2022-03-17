@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class EntityWindSpiritConditionProcedure extends WobrModElements.ModElement {
 	public EntityWindSpiritConditionProcedure(WobrModElements instance) {
-		super(instance, 1626);
+		super(instance, 1615);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

@@ -34,7 +34,7 @@ public class CirtainPlateBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cirtain_plate")
 	public static final Block block = null;
 	public CirtainPlateBlock(WobrModElements instance) {
-		super(instance, 1774);
+		super(instance, 220);
 	}
 
 	@Override

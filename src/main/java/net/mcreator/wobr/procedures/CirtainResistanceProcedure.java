@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class CirtainResistanceProcedure extends WobrModElements.ModElement {
 	public CirtainResistanceProcedure(WobrModElements instance) {
-		super(instance, 1756);
+		super(instance, 1738);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -47,7 +47,7 @@ public class LegholdTrapActiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:leghold_trap_active")
 	public static final Block block = null;
 	public LegholdTrapActiveBlock(WobrModElements instance) {
-		super(instance, 1037);
+		super(instance, 1040);
 	}
 
 	@Override

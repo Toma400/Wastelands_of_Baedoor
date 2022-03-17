@@ -16,7 +16,7 @@ public class WindsweeperSchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:windsweeper_scheme")
 	public static final Item block = null;
 	public WindsweeperSchemeItem(WobrModElements instance) {
-		super(instance, 231);
+		super(instance, 236);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class PillarJuniperBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_juniper")
 	public static final Block block = null;
 	public PillarJuniperBlock(WobrModElements instance) {
-		super(instance, 571);
+		super(instance, 575);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AdditionalMessageManagerProcedure extends WobrModElements.ModElement {
 	public AdditionalMessageManagerProcedure(WobrModElements instance) {
-		super(instance, 1048);
+		super(instance, 1050);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

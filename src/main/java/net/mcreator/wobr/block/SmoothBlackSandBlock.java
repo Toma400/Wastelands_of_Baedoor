@@ -26,7 +26,7 @@ public class SmoothBlackSandBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:smooth_black_sand")
 	public static final Block block = null;
 	public SmoothBlackSandBlock(WobrModElements instance) {
-		super(instance, 87);
+		super(instance, 88);
 	}
 
 	@Override

@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AirshipTraderConditionProcedure extends WobrModElements.ModElement {
 	public AirshipTraderConditionProcedure(WobrModElements instance) {
-		super(instance, 1622);
+		super(instance, 1611);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

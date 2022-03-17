@@ -25,7 +25,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderSwitcherProcedure(WobrModElements instance) {
-		super(instance, 788);
+		super(instance, 791);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

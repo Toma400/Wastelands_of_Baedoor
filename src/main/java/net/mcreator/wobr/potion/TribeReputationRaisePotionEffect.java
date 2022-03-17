@@ -18,7 +18,7 @@ public class TribeReputationRaisePotionEffect extends WobrModElements.ModElement
 	@ObjectHolder("wobr:tribe_reputation_raise")
 	public static final Effect potion = null;
 	public TribeReputationRaisePotionEffect(WobrModElements instance) {
-		super(instance, 1659);
+		super(instance, 1648);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

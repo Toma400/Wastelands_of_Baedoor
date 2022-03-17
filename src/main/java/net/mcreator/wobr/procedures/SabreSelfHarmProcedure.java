@@ -18,7 +18,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SabreSelfHarmProcedure extends WobrModElements.ModElement {
 	public SabreSelfHarmProcedure(WobrModElements instance) {
-		super(instance, 1099);
+		super(instance, 1101);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

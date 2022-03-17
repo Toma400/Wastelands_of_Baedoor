@@ -36,7 +36,7 @@ public class SandyVeilBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sandy_veil")
 	public static final Block block = null;
 	public SandyVeilBlock(WobrModElements instance) {
-		super(instance, 62);
+		super(instance, 63);
 	}
 
 	@Override

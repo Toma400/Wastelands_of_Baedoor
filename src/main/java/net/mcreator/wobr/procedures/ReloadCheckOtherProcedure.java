@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadCheckOtherProcedure extends WobrModElements.ModElement {
 	public ReloadCheckOtherProcedure(WobrModElements instance) {
-		super(instance, 1750);
+		super(instance, 1732);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

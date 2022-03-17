@@ -11,7 +11,7 @@ import net.mcreator.wobr.WobrModElements;
 @WobrModElements.ModElement.Tag
 public class BambooBlockFuelFuel extends WobrModElements.ModElement {
 	public BambooBlockFuelFuel(WobrModElements instance) {
-		super(instance, 770);
+		super(instance, 773);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

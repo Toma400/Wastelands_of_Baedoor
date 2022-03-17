@@ -74,7 +74,7 @@ public class AirshipJungleStructure extends WobrModElements.ModElement {
 		}
 	};
 	public AirshipJungleStructure(WobrModElements instance) {
-		super(instance, 1606);
+		super(instance, 1597);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

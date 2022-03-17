@@ -19,7 +19,7 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class GiftsFromAirshipMerchantsProcedure extends WobrModElements.ModElement {
 	public GiftsFromAirshipMerchantsProcedure(WobrModElements instance) {
-		super(instance, 1799);
+		super(instance, 1773);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

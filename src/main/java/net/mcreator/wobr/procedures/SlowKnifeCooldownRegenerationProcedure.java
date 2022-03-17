@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SlowKnifeCooldownRegenerationProcedure extends WobrModElements.ModElement {
 	public SlowKnifeCooldownRegenerationProcedure(WobrModElements instance) {
-		super(instance, 1003);
+		super(instance, 1006);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

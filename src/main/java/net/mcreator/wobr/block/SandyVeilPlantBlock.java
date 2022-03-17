@@ -40,7 +40,7 @@ public class SandyVeilPlantBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sandy_veil_plant")
 	public static final Block block = null;
 	public SandyVeilPlantBlock(WobrModElements instance) {
-		super(instance, 710);
+		super(instance, 713);
 	}
 
 	@Override

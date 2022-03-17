@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BulletGroundHitProcedure extends WobrModElements.ModElement {
 	public BulletGroundHitProcedure(WobrModElements instance) {
-		super(instance, 1543);
+		super(instance, 1536);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

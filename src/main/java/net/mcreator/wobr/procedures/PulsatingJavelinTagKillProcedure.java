@@ -26,7 +26,7 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement {
 	public PulsatingJavelinTagKillProcedure(WobrModElements instance) {
-		super(instance, 1734);
+		super(instance, 1720);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

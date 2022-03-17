@@ -33,7 +33,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class GunAddOnReloadProcedure extends WobrModElements.ModElement {
 	public GunAddOnReloadProcedure(WobrModElements instance) {
-		super(instance, 1303);
+		super(instance, 1296);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

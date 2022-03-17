@@ -32,7 +32,7 @@ public class BambooFramedGrayStainedGlassBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:bamboo_framed_gray_stained_glass")
 	public static final Block block = null;
 	public BambooFramedGrayStainedGlassBlock(WobrModElements instance) {
-		super(instance, 302);
+		super(instance, 306);
 	}
 
 	@Override

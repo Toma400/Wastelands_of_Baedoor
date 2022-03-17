@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class GunAddOnShotSoundProcedure extends WobrModElements.ModElement {
 	public GunAddOnShotSoundProcedure(WobrModElements instance) {
-		super(instance, 1311);
+		super(instance, 1304);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

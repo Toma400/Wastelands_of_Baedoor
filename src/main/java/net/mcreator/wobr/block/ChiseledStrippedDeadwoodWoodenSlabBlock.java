@@ -34,7 +34,7 @@ public class ChiseledStrippedDeadwoodWoodenSlabBlock extends WobrModElements.Mod
 	@ObjectHolder("wobr:chiseled_stripped_deadwood_wooden_slab")
 	public static final Block block = null;
 	public ChiseledStrippedDeadwoodWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 488);
+		super(instance, 492);
 	}
 
 	@Override

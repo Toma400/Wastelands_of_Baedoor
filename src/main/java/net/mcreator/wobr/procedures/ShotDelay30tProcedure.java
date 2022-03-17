@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ShotDelay30tProcedure extends WobrModElements.ModElement {
 	public ShotDelay30tProcedure(WobrModElements instance) {
-		super(instance, 731);
+		super(instance, 734);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

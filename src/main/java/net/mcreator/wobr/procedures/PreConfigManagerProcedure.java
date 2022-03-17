@@ -17,7 +17,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class PreConfigManagerProcedure extends WobrModElements.ModElement {
 	public PreConfigManagerProcedure(WobrModElements instance) {
-		super(instance, 1730);
+		super(instance, 1719);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -24,7 +24,7 @@ public class CurarePoisonPotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:curare_poison")
 	public static final Effect potion = null;
 	public CurarePoisonPotionEffect(WobrModElements instance) {
-		super(instance, 1653);
+		super(instance, 1642);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
