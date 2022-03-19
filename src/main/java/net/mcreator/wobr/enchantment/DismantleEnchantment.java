@@ -39,19 +39,13 @@ public class DismantleEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		protected boolean canApplyTogether(Enchantment ench) {
-			if (ench == Enchantments.MENDING)
-				return true;
-			if (ench == Enchantments.UNBREAKING)
-				return true;
-			if (ench == Enchantments.FIRE_ASPECT)
-				return true;
-			if (ench == Enchantments.LOOTING)
-				return true;
-			if (ench == Enchantments.KNOCKBACK)
-				return true;
-			if (ench == Enchantments.SWEEPING)
-				return true;
-			return false;
+			if (ench == Enchantments.SMITE)
+				return false;
+			if (ench == Enchantments.SHARPNESS)
+				return false;
+			if (ench == Enchantments.BANE_OF_ARTHROPODS)
+				return false;
+			return true;
 		}
 
 		@Override
