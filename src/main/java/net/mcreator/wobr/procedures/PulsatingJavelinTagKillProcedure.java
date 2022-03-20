@@ -9,9 +9,13 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
@@ -21,6 +25,7 @@ import java.util.stream.Collectors;
 import java.util.function.Function;
 import java.util.Map;
 import java.util.List;
+import java.util.Iterator;
 import java.util.Comparator;
 
 @WobrModElements.ModElement.Tag
@@ -30,6 +35,11 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure PulsatingJavelinTagKill!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				WobrMod.LOGGER.warn("Failed to load dependency x for procedure PulsatingJavelinTagKill!");
@@ -50,6 +60,7 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure PulsatingJavelinTagKill!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
@@ -97,6 +108,20 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 						world.getWorld().playSound((entityiterator.getPosX()), (entityiterator.getPosY()), (entityiterator.getPosZ()),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
+				}
+			}
+		}
+		if ((counter > 4)) {
+			if (entity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+						.getAdvancement(new ResourceLocation("wobr:riderofthe_lightning"));
+				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+				if (!_ap.isDone()) {
+					Iterator _iterator = _ap.getRemaningCriteria().iterator();
+					while (_iterator.hasNext()) {
+						String _criterion = (String) _iterator.next();
+						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}

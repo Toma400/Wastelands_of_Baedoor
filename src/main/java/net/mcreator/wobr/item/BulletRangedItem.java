@@ -32,6 +32,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.wobr.procedures.HurtTimeResetProcedure;
 import net.mcreator.wobr.procedures.BulletGroundHitProcedure;
 import net.mcreator.wobr.WobrModElements;
 
@@ -138,6 +139,17 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			Entity imediatesourceentity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				HurtTimeResetProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
