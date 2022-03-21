@@ -32,7 +32,7 @@ public class WarpedFramedPinkStainedGlassBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:warped_framed_pink_stained_glass")
 	public static final Block block = null;
 	public WarpedFramedPinkStainedGlassBlock(WobrModElements instance) {
-		super(instance, 457);
+		super(instance, 458);
 	}
 
 	@Override

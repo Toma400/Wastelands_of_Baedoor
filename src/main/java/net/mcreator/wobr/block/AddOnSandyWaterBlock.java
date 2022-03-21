@@ -49,7 +49,7 @@ public class AddOnSandyWaterBlock extends WobrModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public AddOnSandyWaterBlock(WobrModElements instance) {
-		super(instance, 603);
+		super(instance, 604);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

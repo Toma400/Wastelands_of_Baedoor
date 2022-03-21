@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class EntityOrmathRaiderConditionProcedure extends WobrModElements.ModElement {
 	public EntityOrmathRaiderConditionProcedure(WobrModElements instance) {
-		super(instance, 1616);
+		super(instance, 1612);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

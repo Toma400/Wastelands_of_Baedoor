@@ -33,7 +33,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class GunAddOnShotProcedure extends WobrModElements.ModElement {
 	public GunAddOnShotProcedure(WobrModElements instance) {
-		super(instance, 1303);
+		super(instance, 1304);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -16,7 +16,7 @@ public class FirearmLockItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:firearm_lock")
 	public static final Item block = null;
 	public FirearmLockItem(WobrModElements instance) {
-		super(instance, 249);
+		super(instance, 250);
 	}
 
 	@Override

@@ -44,7 +44,7 @@ public class DartRegularProjectileItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletdart_regular_projectile").setRegistryName("entitybulletdart_regular_projectile");
 	public DartRegularProjectileItem(WobrModElements instance) {
-		super(instance, 1631);
+		super(instance, 1626);
 	}
 
 	@Override

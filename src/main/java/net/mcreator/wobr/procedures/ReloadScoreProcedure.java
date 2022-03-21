@@ -20,7 +20,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ReloadScoreProcedure extends WobrModElements.ModElement {
 	public ReloadScoreProcedure(WobrModElements instance) {
-		super(instance, 720);
+		super(instance, 721);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

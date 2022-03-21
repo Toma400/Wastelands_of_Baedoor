@@ -48,7 +48,7 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletbullet_ranged").setRegistryName("entitybulletbullet_ranged");
 	public BulletRangedItem(WobrModElements instance) {
-		super(instance, 1614);
+		super(instance, 1610);
 	}
 
 	@Override

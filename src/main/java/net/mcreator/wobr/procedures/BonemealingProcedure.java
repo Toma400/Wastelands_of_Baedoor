@@ -30,7 +30,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class BonemealingProcedure extends WobrModElements.ModElement {
 	public BonemealingProcedure(WobrModElements instance) {
-		super(instance, 1245);
+		super(instance, 1246);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

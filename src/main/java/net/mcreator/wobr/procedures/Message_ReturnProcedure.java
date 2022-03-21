@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class Message_ReturnProcedure extends WobrModElements.ModElement {
 	public Message_ReturnProcedure(WobrModElements instance) {
-		super(instance, 1087);
+		super(instance, 1088);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

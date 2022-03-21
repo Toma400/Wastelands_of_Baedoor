@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TsuaPlantingProcedure extends WobrModElements.ModElement {
 	public TsuaPlantingProcedure(WobrModElements instance) {
-		super(instance, 1012);
+		super(instance, 1013);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -55,7 +55,7 @@ public class ShamanicWindSpiritEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("shamanic_wind_spirit").setRegistryName("shamanic_wind_spirit");
 	public ShamanicWindSpiritEntity(WobrModElements instance) {
-		super(instance, 474);
+		super(instance, 475);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

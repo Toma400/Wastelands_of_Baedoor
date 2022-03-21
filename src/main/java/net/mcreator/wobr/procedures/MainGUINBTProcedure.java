@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class MainGUINBTProcedure extends WobrModElements.ModElement {
 	public MainGUINBTProcedure(WobrModElements instance) {
-		super(instance, 1264);
+		super(instance, 1265);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

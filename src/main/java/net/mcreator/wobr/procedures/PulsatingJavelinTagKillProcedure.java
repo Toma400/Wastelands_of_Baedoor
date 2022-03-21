@@ -31,13 +31,13 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement {
 	public PulsatingJavelinTagKillProcedure(WobrModElements instance) {
-		super(instance, 1720);
+		super(instance, 1707);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure PulsatingJavelinTagKill!");
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure PulsatingJavelinTagKill!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -60,7 +60,7 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure PulsatingJavelinTagKill!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
@@ -113,15 +113,15 @@ public class PulsatingJavelinTagKillProcedure extends WobrModElements.ModElement
 			}
 		}
 		if ((counter > 4)) {
-			if (entity instanceof ServerPlayerEntity) {
-				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+			if (sourceentity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("wobr:riderofthe_lightning"));
-				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();
 					while (_iterator.hasNext()) {
 						String _criterion = (String) _iterator.next();
-						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}

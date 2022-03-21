@@ -22,7 +22,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ShamanOrmathBlessingEffectProcedure extends WobrModElements.ModElement {
 	public ShamanOrmathBlessingEffectProcedure(WobrModElements instance) {
-		super(instance, 1319);
+		super(instance, 1320);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

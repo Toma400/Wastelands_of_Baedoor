@@ -50,7 +50,7 @@ public class SpawnEntityJungleAirshipEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(1f, 1f)).build("spawn_entity_jungle_airship").setRegistryName("spawn_entity_jungle_airship");
 	public SpawnEntityJungleAirshipEntity(WobrModElements instance) {
-		super(instance, 1674);
+		super(instance, 1667);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

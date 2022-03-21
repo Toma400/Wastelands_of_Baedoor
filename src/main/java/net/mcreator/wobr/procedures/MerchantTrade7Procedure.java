@@ -33,7 +33,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class MerchantTrade7Procedure extends WobrModElements.ModElement {
 	public MerchantTrade7Procedure(WobrModElements instance) {
-		super(instance, 1557);
+		super(instance, 1558);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

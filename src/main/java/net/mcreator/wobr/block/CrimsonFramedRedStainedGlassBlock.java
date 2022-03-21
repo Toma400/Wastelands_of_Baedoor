@@ -32,7 +32,7 @@ public class CrimsonFramedRedStainedGlassBlock extends WobrModElements.ModElemen
 	@ObjectHolder("wobr:crimson_framed_red_stained_glass")
 	public static final Block block = null;
 	public CrimsonFramedRedStainedGlassBlock(WobrModElements instance) {
-		super(instance, 347);
+		super(instance, 348);
 	}
 
 	@Override

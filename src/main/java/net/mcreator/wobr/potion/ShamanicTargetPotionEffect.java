@@ -18,7 +18,7 @@ public class ShamanicTargetPotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:shamanic_target")
 	public static final Effect potion = null;
 	public ShamanicTargetPotionEffect(WobrModElements instance) {
-		super(instance, 1759);
+		super(instance, 1746);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -21,7 +21,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadShortRevolverProcedure extends WobrModElements.ModElement {
 	public ReloadShortRevolverProcedure(WobrModElements instance) {
-		super(instance, 728);
+		super(instance, 729);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

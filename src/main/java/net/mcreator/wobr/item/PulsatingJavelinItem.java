@@ -155,6 +155,7 @@ public class PulsatingJavelinItem extends WobrModElements.ModElement {
 			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("sourceentity", sourceentity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -175,6 +176,7 @@ public class PulsatingJavelinItem extends WobrModElements.ModElement {
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);

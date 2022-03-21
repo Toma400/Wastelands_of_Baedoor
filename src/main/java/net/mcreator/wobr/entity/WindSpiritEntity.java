@@ -59,7 +59,7 @@ public class WindSpiritEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("wind_spirit").setRegistryName("wind_spirit");
 	public WindSpiritEntity(WobrModElements instance) {
-		super(instance, 473);
+		super(instance, 474);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

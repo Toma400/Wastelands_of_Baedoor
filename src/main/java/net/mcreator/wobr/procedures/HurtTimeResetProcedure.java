@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class HurtTimeResetProcedure extends WobrModElements.ModElement {
 	public HurtTimeResetProcedure(WobrModElements instance) {
-		super(instance, 1787);
+		super(instance, 1774);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

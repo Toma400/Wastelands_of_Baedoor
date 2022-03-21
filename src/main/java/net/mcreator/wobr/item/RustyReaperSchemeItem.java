@@ -16,7 +16,7 @@ public class RustyReaperSchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:rusty_reaper_scheme")
 	public static final Item block = null;
 	public RustyReaperSchemeItem(WobrModElements instance) {
-		super(instance, 237);
+		super(instance, 238);
 	}
 
 	@Override

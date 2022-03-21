@@ -79,7 +79,7 @@ public class LapisAvoiderActiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lapis_avoider_active")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LapisAvoiderActiveBlock(WobrModElements instance) {
-		super(instance, 1374);
+		super(instance, 1375);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

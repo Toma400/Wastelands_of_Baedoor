@@ -37,7 +37,7 @@ public class PillarDarkwoodBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_darkwood")
 	public static final Block block = null;
 	public PillarDarkwoodBlock(WobrModElements instance) {
-		super(instance, 586);
+		super(instance, 587);
 	}
 
 	@Override

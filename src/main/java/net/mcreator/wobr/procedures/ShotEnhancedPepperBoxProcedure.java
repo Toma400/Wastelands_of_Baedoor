@@ -28,7 +28,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ShotEnhancedPepperBoxProcedure extends WobrModElements.ModElement {
 	public ShotEnhancedPepperBoxProcedure(WobrModElements instance) {
-		super(instance, 1531);
+		super(instance, 1532);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

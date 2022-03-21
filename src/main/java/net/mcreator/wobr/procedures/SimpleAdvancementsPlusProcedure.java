@@ -36,7 +36,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class SimpleAdvancementsPlusProcedure extends WobrModElements.ModElement {
 	public SimpleAdvancementsPlusProcedure(WobrModElements instance) {
-		super(instance, 1764);
+		super(instance, 1751);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

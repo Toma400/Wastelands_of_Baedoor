@@ -18,7 +18,7 @@ public class TribeReputationDropPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:tribe_reputation_drop")
 	public static final Effect potion = null;
 	public TribeReputationDropPotionEffect(WobrModElements instance) {
-		super(instance, 1649);
+		super(instance, 1642);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

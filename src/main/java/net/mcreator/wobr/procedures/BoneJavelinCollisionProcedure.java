@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BoneJavelinCollisionProcedure extends WobrModElements.ModElement {
 	public BoneJavelinCollisionProcedure(WobrModElements instance) {
-		super(instance, 1028);
+		super(instance, 1029);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

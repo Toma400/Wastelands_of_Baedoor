@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WindProjectileGroundProcedure extends WobrModElements.ModElement {
 	public WindProjectileGroundProcedure(WobrModElements instance) {
-		super(instance, 1309);
+		super(instance, 1310);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -24,7 +24,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class NetherSoulEssenceDropProcedure extends WobrModElements.ModElement {
 	public NetherSoulEssenceDropProcedure(WobrModElements instance) {
-		super(instance, 1168);
+		super(instance, 1169);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

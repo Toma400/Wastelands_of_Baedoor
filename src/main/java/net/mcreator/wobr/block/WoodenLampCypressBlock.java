@@ -38,7 +38,7 @@ public class WoodenLampCypressBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:wooden_lamp_cypress")
 	public static final Block block = null;
 	public WoodenLampCypressBlock(WobrModElements instance) {
-		super(instance, 596);
+		super(instance, 597);
 	}
 
 	@Override

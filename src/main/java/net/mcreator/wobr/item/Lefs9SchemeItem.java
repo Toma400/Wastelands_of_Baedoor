@@ -16,7 +16,7 @@ public class Lefs9SchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lefs_9_scheme")
 	public static final Item block = null;
 	public Lefs9SchemeItem(WobrModElements instance) {
-		super(instance, 235);
+		super(instance, 236);
 	}
 
 	@Override

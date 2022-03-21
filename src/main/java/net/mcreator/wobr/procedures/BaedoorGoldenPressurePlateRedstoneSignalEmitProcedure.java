@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BaedoorGoldenPressurePlateRedstoneSignalEmitProcedure extends WobrModElements.ModElement {
 	public BaedoorGoldenPressurePlateRedstoneSignalEmitProcedure(WobrModElements instance) {
-		super(instance, 1709);
+		super(instance, 1697);
 	}
 
 	public static double executeProcedure(Map<String, Object> dependencies) {

@@ -34,7 +34,7 @@ public class PurpleShroomedWoodenSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:purple_shroomed_wooden_slab")
 	public static final Block block = null;
 	public PurpleShroomedWoodenSlabBlock(WobrModElements instance) {
-		super(instance, 518);
+		super(instance, 519);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class SmallBulletItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:small_bullet")
 	public static final Item block = null;
 	public SmallBulletItem(WobrModElements instance) {
-		super(instance, 246);
+		super(instance, 247);
 	}
 
 	@Override

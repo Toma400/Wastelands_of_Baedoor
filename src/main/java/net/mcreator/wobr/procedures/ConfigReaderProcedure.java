@@ -21,7 +21,7 @@ import com.google.gson.Gson;
 @WobrModElements.ModElement.Tag
 public class ConfigReaderProcedure extends WobrModElements.ModElement {
 	public ConfigReaderProcedure(WobrModElements instance) {
-		super(instance, 1786);
+		super(instance, 1773);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

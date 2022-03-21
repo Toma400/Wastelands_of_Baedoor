@@ -30,7 +30,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class GunAddOnRldSingleProcedure extends WobrModElements.ModElement {
 	public GunAddOnRldSingleProcedure(WobrModElements instance) {
-		super(instance, 1298);
+		super(instance, 1299);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

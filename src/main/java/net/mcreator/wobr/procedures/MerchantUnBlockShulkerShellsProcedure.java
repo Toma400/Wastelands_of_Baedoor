@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class MerchantUnBlockShulkerShellsProcedure extends WobrModElements.ModElement {
 	public MerchantUnBlockShulkerShellsProcedure(WobrModElements instance) {
-		super(instance, 1567);
+		super(instance, 1568);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

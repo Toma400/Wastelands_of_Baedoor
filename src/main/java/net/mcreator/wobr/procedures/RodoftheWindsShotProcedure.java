@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class RodoftheWindsShotProcedure extends WobrModElements.ModElement {
 	public RodoftheWindsShotProcedure(WobrModElements instance) {
-		super(instance, 1178);
+		super(instance, 1179);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

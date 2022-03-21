@@ -18,7 +18,7 @@ public class SabreAttackCooldownPotionEffect extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:sabre_attack_cooldown")
 	public static final Effect potion = null;
 	public SabreAttackCooldownPotionEffect(WobrModElements instance) {
-		super(instance, 1646);
+		super(instance, 1639);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

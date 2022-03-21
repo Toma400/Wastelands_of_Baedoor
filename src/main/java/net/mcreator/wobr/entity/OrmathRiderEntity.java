@@ -66,7 +66,7 @@ public class OrmathRiderEntity extends WobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(120).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.5f, 2f)).build("ormath_rider").setRegistryName("ormath_rider");
 	public OrmathRiderEntity(WobrModElements instance) {
-		super(instance, 466);
+		super(instance, 467);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

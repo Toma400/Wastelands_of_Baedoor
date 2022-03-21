@@ -18,7 +18,7 @@ public class MerchantBlockShulkerShellsPotionEffect extends WobrModElements.ModE
 	@ObjectHolder("wobr:merchant_block_shulker_shells")
 	public static final Effect potion = null;
 	public MerchantBlockShulkerShellsPotionEffect(WobrModElements instance) {
-		super(instance, 1657);
+		super(instance, 1650);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -16,7 +16,7 @@ public class RevolverClip6Item extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:revolver_clip_6")
 	public static final Item block = null;
 	public RevolverClip6Item(WobrModElements instance) {
-		super(instance, 258);
+		super(instance, 259);
 	}
 
 	@Override

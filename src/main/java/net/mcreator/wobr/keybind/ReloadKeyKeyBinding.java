@@ -31,7 +31,7 @@ public class ReloadKeyKeyBinding extends WobrModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public ReloadKeyKeyBinding(WobrModElements instance) {
-		super(instance, 721);
+		super(instance, 722);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -31,7 +31,7 @@ public class UnloadKeyKeyBinding extends WobrModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public UnloadKeyKeyBinding(WobrModElements instance) {
-		super(instance, 755);
+		super(instance, 756);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -18,7 +18,7 @@ public class SabreDefencePotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sabre_defence")
 	public static final Effect potion = null;
 	public SabreDefencePotionEffect(WobrModElements instance) {
-		super(instance, 1645);
+		super(instance, 1638);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

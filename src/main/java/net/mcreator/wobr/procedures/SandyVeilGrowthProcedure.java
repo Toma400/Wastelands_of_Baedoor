@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SandyVeilGrowthProcedure extends WobrModElements.ModElement {
 	public SandyVeilGrowthProcedure(WobrModElements instance) {
-		super(instance, 635);
+		super(instance, 636);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

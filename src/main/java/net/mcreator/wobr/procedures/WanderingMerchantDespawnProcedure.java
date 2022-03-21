@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantDespawnProcedure extends WobrModElements.ModElement {
 	public WanderingMerchantDespawnProcedure(WobrModElements instance) {
-		super(instance, 1263);
+		super(instance, 1264);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

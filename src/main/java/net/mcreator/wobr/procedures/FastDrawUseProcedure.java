@@ -26,7 +26,7 @@ import java.util.Iterator;
 @WobrModElements.ModElement.Tag
 public class FastDrawUseProcedure extends WobrModElements.ModElement {
 	public FastDrawUseProcedure(WobrModElements instance) {
-		super(instance, 1155);
+		super(instance, 1156);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

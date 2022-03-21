@@ -49,7 +49,7 @@ public class VillagerTradeGUI1Gui extends WobrModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public VillagerTradeGUI1Gui(WobrModElements instance) {
-		super(instance, 1219);
+		super(instance, 1220);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

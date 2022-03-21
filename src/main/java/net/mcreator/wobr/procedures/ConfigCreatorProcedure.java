@@ -22,7 +22,7 @@ import com.google.gson.Gson;
 @WobrModElements.ModElement.Tag
 public class ConfigCreatorProcedure extends WobrModElements.ModElement {
 	public ConfigCreatorProcedure(WobrModElements instance) {
-		super(instance, 1785);
+		super(instance, 1772);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -16,7 +16,7 @@ public class CrocodileGunSchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:crocodile_gun_scheme")
 	public static final Item block = null;
 	public CrocodileGunSchemeItem(WobrModElements instance) {
-		super(instance, 234);
+		super(instance, 235);
 	}
 
 	@Override

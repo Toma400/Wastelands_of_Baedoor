@@ -15,7 +15,7 @@ public class ThrownDaggerProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:thrown_dagger_projectile")
 	public static final Item block = null;
 	public ThrownDaggerProjectileItem(WobrModElements instance) {
-		super(instance, 607);
+		super(instance, 608);
 	}
 
 	@Override

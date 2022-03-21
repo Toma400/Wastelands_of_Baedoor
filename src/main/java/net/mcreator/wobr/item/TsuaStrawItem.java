@@ -26,7 +26,7 @@ public class TsuaStrawItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:tsua_straw")
 	public static final Item block = null;
 	public TsuaStrawItem(WobrModElements instance) {
-		super(instance, 602);
+		super(instance, 603);
 	}
 
 	@Override

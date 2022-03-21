@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ConfiguratorAvoiderReducerProcedure extends WobrModElements.ModElement {
 	public ConfiguratorAvoiderReducerProcedure(WobrModElements instance) {
-		super(instance, 1783);
+		super(instance, 1770);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

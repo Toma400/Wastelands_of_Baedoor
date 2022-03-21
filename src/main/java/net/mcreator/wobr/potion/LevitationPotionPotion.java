@@ -17,7 +17,7 @@ public class LevitationPotionPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:levitation_potion")
 	public static final Potion potionType = null;
 	public LevitationPotionPotion(WobrModElements instance) {
-		super(instance, 1747);
+		super(instance, 1734);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

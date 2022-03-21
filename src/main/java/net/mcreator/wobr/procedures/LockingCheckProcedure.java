@@ -15,7 +15,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class LockingCheckProcedure extends WobrModElements.ModElement {
 	public LockingCheckProcedure(WobrModElements instance) {
-		super(instance, 1725);
+		super(instance, 1712);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

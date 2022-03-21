@@ -14,7 +14,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ShamanSpiritTargetingProcedure extends WobrModElements.ModElement {
 	public ShamanSpiritTargetingProcedure(WobrModElements instance) {
-		super(instance, 1760);
+		super(instance, 1747);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

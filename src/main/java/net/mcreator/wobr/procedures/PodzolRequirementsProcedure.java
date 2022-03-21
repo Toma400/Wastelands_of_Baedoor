@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class PodzolRequirementsProcedure extends WobrModElements.ModElement {
 	public PodzolRequirementsProcedure(WobrModElements instance) {
-		super(instance, 1735);
+		super(instance, 1722);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

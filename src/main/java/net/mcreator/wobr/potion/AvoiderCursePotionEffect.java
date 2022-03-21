@@ -18,7 +18,7 @@ public class AvoiderCursePotionEffect extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:avoider_curse")
 	public static final Effect potion = null;
 	public AvoiderCursePotionEffect(WobrModElements instance) {
-		super(instance, 1655);
+		super(instance, 1648);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

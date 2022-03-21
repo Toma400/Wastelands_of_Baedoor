@@ -32,7 +32,7 @@ public class LockingKeyKeyBinding extends WobrModElements.ModElement {
 	private KeyBinding keys;
 	private long lastpress = 0;
 	public LockingKeyKeyBinding(WobrModElements instance) {
-		super(instance, 1726);
+		super(instance, 1713);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

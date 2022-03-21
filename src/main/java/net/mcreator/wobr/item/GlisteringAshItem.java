@@ -22,7 +22,7 @@ public class GlisteringAshItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:glistering_ash")
 	public static final Item block = null;
 	public GlisteringAshItem(WobrModElements instance) {
-		super(instance, 267);
+		super(instance, 268);
 	}
 
 	@Override

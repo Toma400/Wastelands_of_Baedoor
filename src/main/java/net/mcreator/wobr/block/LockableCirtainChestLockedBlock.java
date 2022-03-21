@@ -81,7 +81,7 @@ public class LockableCirtainChestLockedBlock extends WobrModElements.ModElement 
 	@ObjectHolder("wobr:lockable_cirtain_chest_locked")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockableCirtainChestLockedBlock(WobrModElements instance) {
-		super(instance, 1102);
+		super(instance, 1103);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

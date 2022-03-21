@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderTagKillProcedure(WobrModElements instance) {
-		super(instance, 1115);
+		super(instance, 1116);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

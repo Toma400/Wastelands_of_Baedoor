@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ShamanRegenerationProcedure extends WobrModElements.ModElement {
 	public ShamanRegenerationProcedure(WobrModElements instance) {
-		super(instance, 1188);
+		super(instance, 1189);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

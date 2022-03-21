@@ -16,7 +16,7 @@ public class CrackedBoneItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:cracked_bone")
 	public static final Item block = null;
 	public CrackedBoneItem(WobrModElements instance) {
-		super(instance, 269);
+		super(instance, 270);
 	}
 
 	@Override

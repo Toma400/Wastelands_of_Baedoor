@@ -16,7 +16,7 @@ public class LargeBulletItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:large_bullet")
 	public static final Item block = null;
 	public LargeBulletItem(WobrModElements instance) {
-		super(instance, 247);
+		super(instance, 248);
 	}
 
 	@Override

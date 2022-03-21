@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ReverseOffhandProcedure extends WobrModElements.ModElement {
 	public ReverseOffhandProcedure(WobrModElements instance) {
-		super(instance, 611);
+		super(instance, 612);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

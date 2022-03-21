@@ -31,13 +31,13 @@ import java.util.Comparator;
 @WobrModElements.ModElement.Tag
 public class PulsatingJavelinTagKillBlockProcedure extends WobrModElements.ModElement {
 	public PulsatingJavelinTagKillBlockProcedure(WobrModElements instance) {
-		super(instance, 1723);
+		super(instance, 1710);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("sourceentity") == null) {
-			if (!dependencies.containsKey("sourceentity"))
-				WobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure PulsatingJavelinTagKillBlock!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure PulsatingJavelinTagKillBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -60,7 +60,7 @@ public class PulsatingJavelinTagKillBlockProcedure extends WobrModElements.ModEl
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure PulsatingJavelinTagKillBlock!");
 			return;
 		}
-		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
@@ -102,26 +102,26 @@ public class PulsatingJavelinTagKillBlockProcedure extends WobrModElements.ModEl
 					if (!world.getWorld().isRemote) {
 						world.playSound(null,
 								new BlockPos((int) (entityiterator.getPosX()), (int) (entityiterator.getPosY()), (int) (entityiterator.getPosZ())),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:revolver_reload_1")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1);
 					} else {
 						world.getWorld().playSound((entityiterator.getPosX()), (entityiterator.getPosY()), (entityiterator.getPosZ()),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wobr:revolver_reload_1")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 					}
 				}
 			}
 		}
 		if ((counter > 4)) {
-			if (sourceentity instanceof ServerPlayerEntity) {
-				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
+			if (entity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("wobr:riderofthe_lightning"));
-				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
+				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();
 					while (_iterator.hasNext()) {
 						String _criterion = (String) _iterator.next();
-						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
+						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}
