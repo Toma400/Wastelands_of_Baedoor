@@ -107,6 +107,11 @@ public class GunAddOnShotProcedure extends WobrModElements.ModElement {
 					$_dependencies.put("world", world);
 					FirearmJammingProcedure.executeProcedure($_dependencies);
 				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					FastDrawUseProcedure.executeProcedure($_dependencies);
+				}
 				if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
 						.getBoolean("jammed")) == (false))) {
 					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()

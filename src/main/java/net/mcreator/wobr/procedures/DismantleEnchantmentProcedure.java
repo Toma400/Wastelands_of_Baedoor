@@ -18,6 +18,8 @@ import net.mcreator.wobr.WobrModElements;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.google.common.collect.ImmutableMap;
+
 @WobrModElements.ModElement.Tag
 public class DismantleEnchantmentProcedure extends WobrModElements.ModElement {
 	public DismantleEnchantmentProcedure(WobrModElements instance) {
@@ -40,7 +42,8 @@ public class DismantleEnchantmentProcedure extends WobrModElements.ModElement {
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if ((((EnchantmentHelper.getEnchantmentLevel(DismantleEnchantment.enchantment,
 				((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))
-				&& ((entity instanceof GolemEntity) || ((entity.getPersistentData().getBoolean("automaton_type")) == (true))))) {
+				&& (((entity instanceof GolemEntity) || AutomatonTypeTagProcedure.executeProcedure(ImmutableMap.of()))
+						|| ((entity.getPersistentData().getBoolean("automaton_type")) == (true))))) {
 			entity.attackEntityFrom(DamageSource.GENERIC,
 					(float) ((EnchantmentHelper.getEnchantmentLevel(DismantleEnchantment.enchantment,
 							((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))

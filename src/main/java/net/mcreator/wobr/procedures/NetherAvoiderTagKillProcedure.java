@@ -6,31 +6,17 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.DamageSource;
-import net.minecraft.entity.monster.ZombiePigmanEntity;
-import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.entity.monster.WitherSkeletonEntity;
-import net.minecraft.entity.monster.WitchEntity;
-import net.minecraft.entity.monster.StrayEntity;
-import net.minecraft.entity.monster.SpiderEntity;
-import net.minecraft.entity.monster.SlimeEntity;
-import net.minecraft.entity.monster.SkeletonEntity;
-import net.minecraft.entity.monster.MagmaCubeEntity;
-import net.minecraft.entity.monster.GhastEntity;
-import net.minecraft.entity.monster.EndermiteEntity;
-import net.minecraft.entity.monster.EndermanEntity;
-import net.minecraft.entity.monster.CreeperEntity;
-import net.minecraft.entity.monster.BlazeEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.wobr.entity.WindSpiritEntity;
-import net.mcreator.wobr.entity.BanditDespawningEntity;
 import net.mcreator.wobr.WobrModVariables;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Map;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
@@ -70,13 +56,8 @@ public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((WobrModVariables.WorldVariables.get(world).Avoider_Reapering) == (false))) {
-			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true)) || (((((entity instanceof SlimeEntity)
-					|| (entity instanceof BlazeEntity)) || ((entity instanceof GhastEntity) || (entity instanceof MagmaCubeEntity)))
-					|| ((entity instanceof WitchEntity) || (entity instanceof WitherSkeletonEntity)))
-					|| ((((entity instanceof BanditDespawningEntity.CustomEntity) || (entity instanceof WindSpiritEntity.CustomEntity))
-							|| (((entity instanceof SkeletonEntity) || (entity instanceof StrayEntity)) || (entity instanceof SpiderEntity)))
-							|| ((((entity instanceof ZombieEntity) && (!(entity instanceof ZombiePigmanEntity))) || (entity instanceof CreeperEntity))
-									|| ((entity instanceof EndermiteEntity) || (entity instanceof EndermanEntity))))))
+			if (((((entity.getPersistentData().getBoolean("avoider_killable")) == (true))
+					|| (ModdedTagKillProcedure.executeProcedure(ImmutableMap.of()) == (true)))
 					&& ((entity.getPersistentData().getBoolean("avoider_proof")) == (false)))) {
 				entity.attackEntityFrom(DamageSource.GENERIC, (float) 1000);
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {

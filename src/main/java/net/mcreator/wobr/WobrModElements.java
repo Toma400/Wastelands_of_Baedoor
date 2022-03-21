@@ -66,10 +66,6 @@ public class WobrModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "failed_shot_rifle")));
 		sounds.put(new ResourceLocation("wobr", "short_revolver_shot"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "short_revolver_shot")));
-		sounds.put(new ResourceLocation("wobr", "disc_oneironaut"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_oneironaut")));
-		sounds.put(new ResourceLocation("wobr", "disc_inside_forest"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_inside_forest")));
 		sounds.put(new ResourceLocation("wobr", "failed_shot"), new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "failed_shot")));
 		sounds.put(new ResourceLocation("wobr", "long_revolver_shot"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "long_revolver_shot")));
@@ -120,6 +116,10 @@ public class WobrModElements {
 		sounds.put(new ResourceLocation("wobr", "bandit_idle"), new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "bandit_idle")));
 		sounds.put(new ResourceLocation("wobr", "sabre_clash"), new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "sabre_clash")));
 		sounds.put(new ResourceLocation("wobr", "sabre_whoosh"), new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "sabre_whoosh")));
+		sounds.put(new ResourceLocation("wobr", "disc_oneironaut"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_oneironaut")));
+		sounds.put(new ResourceLocation("wobr", "disc_inside_forest"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_inside_forest")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("wobr").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

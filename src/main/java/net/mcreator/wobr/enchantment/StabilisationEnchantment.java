@@ -22,6 +22,8 @@ import net.mcreator.wobr.item.CrocodileShotgunItem;
 import net.mcreator.wobr.item.AyerShotgunItem;
 import net.mcreator.wobr.item.AyerSawedOffItem;
 import net.mcreator.wobr.WobrModElements;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 
 @WobrModElements.ModElement.Tag
 public class StabilisationEnchantment extends WobrModElements.ModElement {
@@ -52,31 +54,11 @@ public class StabilisationEnchantment extends WobrModElements.ModElement {
 
 		@Override
 		public boolean canApplyAtEnchantingTable(ItemStack stack) {
-			if (stack.getItem() == new ItemStack(HandmadeRevolverItem.block, (int) (1)).getItem())
+			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobn_firearms")))
+				.contains((stack).getItem()) == true)
 				return true;
-			if (stack.getItem() == new ItemStack(PepperBoxItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(ShortRevolverItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(GoldenShotRevolverItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(LongRevolverItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(ElephantGunItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(JitadoShotgunItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(CrocodileShotgunItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(Lefs9Item.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(AyerShotgunItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(AyerSawedOffItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(WindsweeperItem.block, (int) (1)).getItem())
-				return true;
-			if (stack.getItem() == new ItemStack(RustyReaperItem.block, (int) (1)).getItem())
+			if (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_firearms")))
+				.contains((stack).getItem()) == true)
 				return true;
 			return false;
 		}

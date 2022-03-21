@@ -35,6 +35,9 @@
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
       "name": "BulletGroundHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "HurtTimeReset"
     }
   }
 }

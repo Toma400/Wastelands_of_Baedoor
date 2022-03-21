@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "blaze",
+    "slime",
+    "enderman",
+    "ghast",
+    "magma_cube",
+    "cave_spider",
+    "creeper",
+    "endermite",
+    "spider",
+    "skeleton",
+    "stray",
+    "vex",
+    "witch",
+    "wither_skeleton",
+    "zombie",
+    "drowned",
+    "husk"
+  ]
+}
