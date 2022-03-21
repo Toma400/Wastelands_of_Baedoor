@@ -23,7 +23,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SpearResistanceManagerProcedure extends WobrModElements.ModElement {
 	public SpearResistanceManagerProcedure(WobrModElements instance) {
-		super(instance, 1218);
+		super(instance, 878);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

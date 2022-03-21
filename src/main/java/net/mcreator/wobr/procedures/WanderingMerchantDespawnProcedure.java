@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WanderingMerchantDespawnProcedure extends WobrModElements.ModElement {
 	public WanderingMerchantDespawnProcedure(WobrModElements instance) {
-		super(instance, 1512);
+		super(instance, 1145);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

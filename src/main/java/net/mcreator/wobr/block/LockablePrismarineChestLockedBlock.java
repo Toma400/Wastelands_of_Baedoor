@@ -78,7 +78,7 @@ public class LockablePrismarineChestLockedBlock extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:lockable_prismarine_chest_locked")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockablePrismarineChestLockedBlock(WobrModElements instance) {
-		super(instance, 1471);
+		super(instance, 1117);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

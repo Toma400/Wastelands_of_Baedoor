@@ -10,7 +10,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class TestModeReturnsProcedure extends WobrModElements.ModElement {
 	public TestModeReturnsProcedure(WobrModElements instance) {
-		super(instance, 1388);
+		super(instance, 1039);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

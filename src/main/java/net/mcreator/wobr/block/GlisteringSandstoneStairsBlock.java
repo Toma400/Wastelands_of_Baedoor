@@ -27,7 +27,7 @@ public class GlisteringSandstoneStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:glistering_sandstone_stairs")
 	public static final Block block = null;
 	public GlisteringSandstoneStairsBlock(WobrModElements instance) {
-		super(instance, 71);
+		super(instance, 72);
 	}
 
 	@Override

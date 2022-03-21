@@ -24,7 +24,7 @@ public class MushroomPoisonItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:mushroom_poison")
 	public static final Item block = null;
 	public MushroomPoisonItem(WobrModElements instance) {
-		super(instance, 259);
+		super(instance, 238);
 	}
 
 	@Override

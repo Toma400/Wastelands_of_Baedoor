@@ -26,7 +26,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SabreExperienceGainProcedure extends WobrModElements.ModElement {
 	public SabreExperienceGainProcedure(WobrModElements instance) {
-		super(instance, 1299);
+		super(instance, 950);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

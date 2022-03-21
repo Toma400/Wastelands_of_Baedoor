@@ -30,7 +30,7 @@ public class StarofRisingDayItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:starof_rising_day")
 	public static final Item block = null;
 	public StarofRisingDayItem(WobrModElements instance) {
-		super(instance, 59);
+		super(instance, 60);
 	}
 
 	@Override

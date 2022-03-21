@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @WobrModElements.ModElement.Tag
 public class AvoiderReaperCommand extends WobrModElements.ModElement {
 	public AvoiderReaperCommand(WobrModElements instance) {
-		super(instance, 1365);
+		super(instance, 1016);
 	}
 
 	@Override

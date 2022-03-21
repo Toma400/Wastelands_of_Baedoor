@@ -18,7 +18,7 @@ public class RodoftheWindsGlowPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:rodofthe_winds_glow")
 	public static final Effect potion = null;
 	public RodoftheWindsGlowPotion(WobrModElements instance) {
-		super(instance, 1550);
+		super(instance, 1183);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

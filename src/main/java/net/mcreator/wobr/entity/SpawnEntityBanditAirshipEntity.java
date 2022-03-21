@@ -46,7 +46,7 @@ import java.util.HashMap;
 public class SpawnEntityBanditAirshipEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public SpawnEntityBanditAirshipEntity(WobrModElements instance) {
-		super(instance, 2024);
+		super(instance, 1335);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

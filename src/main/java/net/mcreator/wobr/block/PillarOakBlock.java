@@ -32,7 +32,7 @@ public class PillarOakBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_oak")
 	public static final Block block = null;
 	public PillarOakBlock(WobrModElements instance) {
-		super(instance, 155);
+		super(instance, 140);
 	}
 
 	@Override

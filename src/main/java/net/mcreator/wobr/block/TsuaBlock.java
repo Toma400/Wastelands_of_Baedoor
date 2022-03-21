@@ -33,7 +33,7 @@ public class TsuaBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:tsua")
 	public static final Block block = null;
 	public TsuaBlock(WobrModElements instance) {
-		super(instance, 58);
+		super(instance, 59);
 	}
 
 	@Override

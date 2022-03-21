@@ -20,7 +20,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class LockableChestLockingProcedure extends WobrModElements.ModElement {
 	public LockableChestLockingProcedure(WobrModElements instance) {
-		super(instance, 1303);
+		super(instance, 954);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

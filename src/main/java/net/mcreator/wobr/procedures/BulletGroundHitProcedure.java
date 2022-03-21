@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BulletGroundHitProcedure extends WobrModElements.ModElement {
 	public BulletGroundHitProcedure(WobrModElements instance) {
-		super(instance, 1887);
+		super(instance, 1298);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

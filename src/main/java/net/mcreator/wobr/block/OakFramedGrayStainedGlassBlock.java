@@ -30,7 +30,7 @@ public class OakFramedGrayStainedGlassBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:oak_framed_gray_stained_glass")
 	public static final Block block = null;
 	public OakFramedGrayStainedGlassBlock(WobrModElements instance) {
-		super(instance, 382);
+		super(instance, 359);
 	}
 
 	@Override

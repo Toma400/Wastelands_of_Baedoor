@@ -20,7 +20,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class SpearCooldownMathProcedure extends WobrModElements.ModElement {
 	public SpearCooldownMathProcedure(WobrModElements instance) {
-		super(instance, 1216);
+		super(instance, 876);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -34,7 +34,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class OrmathTrade3Procedure extends WobrModElements.ModElement {
 	public OrmathTrade3Procedure(WobrModElements instance) {
-		super(instance, 1457);
+		super(instance, 1103);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

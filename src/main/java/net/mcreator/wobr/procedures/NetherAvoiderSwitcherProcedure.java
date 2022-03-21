@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderSwitcherProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderSwitcherProcedure(WobrModElements instance) {
-		super(instance, 975);
+		super(instance, 641);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

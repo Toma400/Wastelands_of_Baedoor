@@ -17,7 +17,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class CoinIteratorProcedure extends WobrModElements.ModElement {
 	public CoinIteratorProcedure(WobrModElements instance) {
-		super(instance, 1494);
+		super(instance, 1127);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

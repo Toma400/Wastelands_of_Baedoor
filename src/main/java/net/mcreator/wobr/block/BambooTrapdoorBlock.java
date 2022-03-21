@@ -31,7 +31,7 @@ public class BambooTrapdoorBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:bamboo_trapdoor")
 	public static final Block block = null;
 	public BambooTrapdoorBlock(WobrModElements instance) {
-		super(instance, 176);
+		super(instance, 157);
 	}
 
 	@Override

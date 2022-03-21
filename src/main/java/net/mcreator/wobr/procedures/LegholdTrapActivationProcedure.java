@@ -18,7 +18,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LegholdTrapActivationProcedure extends WobrModElements.ModElement {
 	public LegholdTrapActivationProcedure(WobrModElements instance) {
-		super(instance, 1235);
+		super(instance, 895);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

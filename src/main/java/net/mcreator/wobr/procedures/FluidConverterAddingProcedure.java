@@ -12,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.wobr.WobrModElements;
 
@@ -23,7 +22,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 	public FluidConverterAddingProcedure(WobrModElements instance) {
-		super(instance, 1783);
+		super(instance, 1270);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -84,68 +83,14 @@ public class FluidConverterAddingProcedure extends WobrModElements.ModElement {
 		}
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY)
 				.getItem())) {
-			if (((new Object() {
-				public int getEnergyStored(BlockPos pos) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					TileEntity _ent = world.getTileEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-					return _retval.get();
-				}
-			}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) >= 12)) {
-				if ((((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER.getDefaultState()
-						.getBlock())
-						&& ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock()))
-						&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState()
-								.getBlock())
-								&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock())))
-						&& ((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER
-								.getDefaultState().getBlock())
-								&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock()))
-								&& (((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.WATER
-										.getDefaultState().getBlock())
-										&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1))))
-												.getBlock() == Blocks.WATER.getDefaultState().getBlock()))))) {
-					{
-						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-						int _amount = (int) 12;
-						if (_ent != null)
-							_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
-					}
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("x", x);
-						$_dependencies.put("y", y);
-						$_dependencies.put("z", z);
-						$_dependencies.put("world", world);
-						FluidConverterRemovalProcedure.executeProcedure($_dependencies);
-					}
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						$_dependencies.put("x", x);
-						$_dependencies.put("y", y);
-						$_dependencies.put("z", z);
-						$_dependencies.put("world", world);
-						FluidConverterWaterConvertingProcedure.executeProcedure($_dependencies);
-					}
-				}
-			}
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
-				((PlayerEntity) entity).sendStatusMessage(
-						new StringTextComponent(("Converter energy: NULL".replace("NULL", (new java.text.DecimalFormat("###").format((new Object() {
-							public int getEnergyStored(BlockPos pos) {
-								AtomicInteger _retval = new AtomicInteger(0);
-								TileEntity _ent = world.getTileEntity(pos);
-								if (_ent != null)
-									_ent.getCapability(CapabilityEnergy.ENERGY, null)
-											.ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-								return _retval.get();
-							}
-						}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z)))))))), (false));
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FluidConverterUseProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

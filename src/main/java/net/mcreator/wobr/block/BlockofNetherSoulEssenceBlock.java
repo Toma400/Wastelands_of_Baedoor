@@ -24,7 +24,7 @@ public class BlockofNetherSoulEssenceBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:blockof_nether_soul_essence")
 	public static final Block block = null;
 	public BlockofNetherSoulEssenceBlock(WobrModElements instance) {
-		super(instance, 2037);
+		super(instance, 90);
 	}
 
 	@Override

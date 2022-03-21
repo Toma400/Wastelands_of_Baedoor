@@ -17,7 +17,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class AvoiderCooldownBlockProcedure extends WobrModElements.ModElement {
 	public AvoiderCooldownBlockProcedure(WobrModElements instance) {
-		super(instance, 1828);
+		super(instance, 1290);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

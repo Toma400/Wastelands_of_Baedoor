@@ -33,7 +33,7 @@ public class VulcanicVeilBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:vulcanic_veil")
 	public static final Block block = null;
 	public VulcanicVeilBlock(WobrModElements instance) {
-		super(instance, 61);
+		super(instance, 62);
 	}
 
 	@Override

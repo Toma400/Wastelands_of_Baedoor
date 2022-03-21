@@ -23,7 +23,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class DismantleEnchantmentProcedure extends WobrModElements.ModElement {
 	public DismantleEnchantmentProcedure(WobrModElements instance) {
-		super(instance, 1328);
+		super(instance, 979);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

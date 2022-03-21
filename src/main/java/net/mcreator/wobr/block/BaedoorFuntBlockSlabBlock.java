@@ -31,7 +31,7 @@ public class BaedoorFuntBlockSlabBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:baedoor_funt_block_slab")
 	public static final Block block = null;
 	public BaedoorFuntBlockSlabBlock(WobrModElements instance) {
-		super(instance, 187);
+		super(instance, 168);
 	}
 
 	@Override

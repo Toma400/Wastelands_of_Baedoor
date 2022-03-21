@@ -18,7 +18,7 @@ public class MerchantBlockElytraPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:merchant_block_elytra")
 	public static final Effect potion = null;
 	public MerchantBlockElytraPotion(WobrModElements instance) {
-		super(instance, 1923);
+		super(instance, 1327);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

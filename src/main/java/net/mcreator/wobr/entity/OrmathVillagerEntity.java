@@ -51,7 +51,7 @@ import java.util.HashMap;
 public class OrmathVillagerEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public OrmathVillagerEntity(WobrModElements instance) {
-		super(instance, 463);
+		super(instance, 440);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

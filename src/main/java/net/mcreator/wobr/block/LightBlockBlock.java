@@ -44,7 +44,7 @@ public class LightBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:light_block")
 	public static final Block block = null;
 	public LightBlockBlock(WobrModElements instance) {
-		super(instance, 1292);
+		super(instance, 943);
 	}
 
 	@Override

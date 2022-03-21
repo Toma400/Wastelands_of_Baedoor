@@ -9,7 +9,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class LockableChestKeyChangeProcedure extends WobrModElements.ModElement {
 	public LockableChestKeyChangeProcedure(WobrModElements instance) {
-		super(instance, 1579);
+		super(instance, 1211);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

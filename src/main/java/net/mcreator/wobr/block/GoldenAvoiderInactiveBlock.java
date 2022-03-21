@@ -77,7 +77,7 @@ public class GoldenAvoiderInactiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:golden_avoider_inactive")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GoldenAvoiderInactiveBlock(WobrModElements instance) {
-		super(instance, 207);
+		super(instance, 186);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

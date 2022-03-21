@@ -42,7 +42,7 @@ public class LapisTowerBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:lapis_tower")
 	public static final Block block = null;
 	public LapisTowerBlock(WobrModElements instance) {
-		super(instance, 218);
+		super(instance, 197);
 	}
 
 	@Override

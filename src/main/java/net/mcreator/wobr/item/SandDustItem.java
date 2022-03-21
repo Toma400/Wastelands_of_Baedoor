@@ -30,7 +30,7 @@ public class SandDustItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sand_dust")
 	public static final Item block = null;
 	public SandDustItem(WobrModElements instance) {
-		super(instance, 62);
+		super(instance, 63);
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class MerchantBlockBuddingAmethystPotion extends WobrModElements.ModEleme
 	@ObjectHolder("wobr:merchant_block_budding_amethyst")
 	public static final Effect potion = null;
 	public MerchantBlockBuddingAmethystPotion(WobrModElements instance) {
-		super(instance, 1910);
+		super(instance, 1316);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

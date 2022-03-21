@@ -18,7 +18,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ShamanProjectileSpiritProcedure extends WobrModElements.ModElement {
 	public ShamanProjectileSpiritProcedure(WobrModElements instance) {
-		super(instance, 1407);
+		super(instance, 1057);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

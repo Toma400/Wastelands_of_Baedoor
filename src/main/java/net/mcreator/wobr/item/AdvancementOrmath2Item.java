@@ -21,7 +21,7 @@ public class AdvancementOrmath2Item extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:advancement_ormath_2")
 	public static final Item block = null;
 	public AdvancementOrmath2Item(WobrModElements instance) {
-		super(instance, 1431);
+		super(instance, 1079);
 	}
 
 	@Override

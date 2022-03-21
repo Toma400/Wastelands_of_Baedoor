@@ -26,7 +26,7 @@ public class AlwaysLitLampBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:always_lit_lamp")
 	public static final Block block = null;
 	public AlwaysLitLampBlock(WobrModElements instance) {
-		super(instance, 201);
+		super(instance, 182);
 	}
 
 	@Override

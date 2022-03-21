@@ -16,7 +16,7 @@ public class MusicDiscOneironautItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:music_disc_oneironaut")
 	public static final Item block = null;
 	public MusicDiscOneironautItem(WobrModElements instance) {
-		super(instance, 221);
+		super(instance, 199);
 	}
 
 	@Override

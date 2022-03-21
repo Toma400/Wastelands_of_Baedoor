@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableMap;
 @WobrModElements.ModElement.Tag
 public class NetherAvoiderTagKillProcedure extends WobrModElements.ModElement {
 	public NetherAvoiderTagKillProcedure(WobrModElements instance) {
-		super(instance, 1323);
+		super(instance, 974);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -13,7 +13,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class StoneThrowingAxeCollisionProcedure extends WobrModElements.ModElement {
 	public StoneThrowingAxeCollisionProcedure(WobrModElements instance) {
-		super(instance, 1260);
+		super(instance, 912);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -27,7 +27,7 @@ public class CharcoalBlockBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:charcoal_block")
 	public static final Block block = null;
 	public CharcoalBlockBlock(WobrModElements instance) {
-		super(instance, 88);
+		super(instance, 89);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @WobrModElements.ModElement.Tag
 public class TickerFeatureCommand extends WobrModElements.ModElement {
 	public TickerFeatureCommand(WobrModElements instance) {
-		super(instance, 1589);
+		super(instance, 1219);
 	}
 
 	@Override

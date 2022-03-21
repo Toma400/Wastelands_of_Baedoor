@@ -25,7 +25,7 @@ public class NetherAvoiderPulsatingPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_avoider_pulsating")
 	public static final Effect potion = null;
 	public NetherAvoiderPulsatingPotion(WobrModElements instance) {
-		super(instance, 978);
+		super(instance, 644);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

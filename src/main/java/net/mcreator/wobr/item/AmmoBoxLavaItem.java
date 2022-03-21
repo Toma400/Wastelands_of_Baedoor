@@ -36,7 +36,7 @@ public class AmmoBoxLavaItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ammo_box_lava")
 	public static final Item block = null;
 	public AmmoBoxLavaItem(WobrModElements instance) {
-		super(instance, 237);
+		super(instance, 216);
 	}
 
 	@Override

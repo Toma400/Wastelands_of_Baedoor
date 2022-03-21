@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class FluidConverterStatesProcedure extends WobrModElements.ModElement {
 	public FluidConverterStatesProcedure(WobrModElements instance) {
-		super(instance, 1784);
+		super(instance, 1271);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

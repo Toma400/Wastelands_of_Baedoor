@@ -19,7 +19,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class AntiWanderingTraderPotionProcedure extends WobrModElements.ModElement {
 	public AntiWanderingTraderPotionProcedure(WobrModElements instance) {
-		super(instance, 1506);
+		super(instance, 1139);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

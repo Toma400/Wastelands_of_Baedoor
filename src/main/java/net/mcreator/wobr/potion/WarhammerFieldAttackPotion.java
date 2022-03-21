@@ -25,7 +25,7 @@ public class WarhammerFieldAttackPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warhammer_field_attack")
 	public static final Effect potion = null;
 	public WarhammerFieldAttackPotion(WobrModElements instance) {
-		super(instance, 1708);
+		super(instance, 1253);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

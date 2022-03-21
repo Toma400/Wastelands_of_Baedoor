@@ -47,7 +47,7 @@ public class BulletRangedItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:entitybulletbullet_ranged")
 	public static final EntityType arrow = null;
 	public BulletRangedItem(WobrModElements instance) {
-		super(instance, 916);
+		super(instance, 586);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ShamanTreatmentProcedure extends WobrModElements.ModElement {
 	public ShamanTreatmentProcedure(WobrModElements instance) {
-		super(instance, 1498);
+		super(instance, 1131);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

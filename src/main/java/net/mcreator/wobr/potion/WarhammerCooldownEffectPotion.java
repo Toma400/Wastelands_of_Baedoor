@@ -18,7 +18,7 @@ public class WarhammerCooldownEffectPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warhammer_cooldown_effect")
 	public static final Effect potion = null;
 	public WarhammerCooldownEffectPotion(WobrModElements instance) {
-		super(instance, 1710);
+		super(instance, 1255);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class BuffaloRideProcedure extends WobrModElements.ModElement {
 	public BuffaloRideProcedure(WobrModElements instance) {
-		super(instance, 1480);
+		super(instance, 1126);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

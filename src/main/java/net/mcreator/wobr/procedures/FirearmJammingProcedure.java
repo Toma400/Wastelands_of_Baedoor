@@ -23,7 +23,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class FirearmJammingProcedure extends WobrModElements.ModElement {
 	public FirearmJammingProcedure(WobrModElements instance) {
-		super(instance, 1329);
+		super(instance, 980);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

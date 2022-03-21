@@ -28,7 +28,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class TribeHurtProcedure extends WobrModElements.ModElement {
 	public TribeHurtProcedure(WobrModElements instance) {
-		super(instance, 1423);
+		super(instance, 1071);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

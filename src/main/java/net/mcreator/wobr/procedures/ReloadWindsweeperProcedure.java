@@ -20,7 +20,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class ReloadWindsweeperProcedure extends WobrModElements.ModElement {
 	public ReloadWindsweeperProcedure(WobrModElements instance) {
-		super(instance, 1267);
+		super(instance, 919);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

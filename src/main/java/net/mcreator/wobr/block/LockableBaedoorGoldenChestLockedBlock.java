@@ -78,7 +78,7 @@ public class LockableBaedoorGoldenChestLockedBlock extends WobrModElements.ModEl
 	@ObjectHolder("wobr:lockable_baedoor_golden_chest_locked")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LockableBaedoorGoldenChestLockedBlock(WobrModElements instance) {
-		super(instance, 1305);
+		super(instance, 956);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

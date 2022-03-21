@@ -71,7 +71,7 @@ public class GoldenFluidConverterTankBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:golden_fluid_converter_tank")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GoldenFluidConverterTankBlock(WobrModElements instance) {
-		super(instance, 472);
+		super(instance, 448);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

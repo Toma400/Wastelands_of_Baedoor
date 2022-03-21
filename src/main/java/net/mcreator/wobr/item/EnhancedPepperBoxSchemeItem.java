@@ -16,7 +16,7 @@ public class EnhancedPepperBoxSchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:enhanced_pepper_box_scheme")
 	public static final Item block = null;
 	public EnhancedPepperBoxSchemeItem(WobrModElements instance) {
-		super(instance, 234);
+		super(instance, 212);
 	}
 
 	@Override

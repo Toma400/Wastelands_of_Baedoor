@@ -24,7 +24,7 @@ public class WarhammerNauseaWalkPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:warhammer_nausea_walk")
 	public static final Effect potion = null;
 	public WarhammerNauseaWalkPotion(WobrModElements instance) {
-		super(instance, 1712);
+		super(instance, 1257);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

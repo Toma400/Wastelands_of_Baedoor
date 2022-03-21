@@ -20,7 +20,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class KnifeSneakingDoubleProcedure extends WobrModElements.ModElement {
 	public KnifeSneakingDoubleProcedure(WobrModElements instance) {
-		super(instance, 1841);
+		super(instance, 1292);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

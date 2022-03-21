@@ -77,7 +77,7 @@ public class NetherAvoiderInactiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_avoider_inactive")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public NetherAvoiderInactiveBlock(WobrModElements instance) {
-		super(instance, 208);
+		super(instance, 187);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

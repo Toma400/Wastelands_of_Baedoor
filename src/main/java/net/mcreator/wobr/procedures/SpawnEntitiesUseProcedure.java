@@ -22,7 +22,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class SpawnEntitiesUseProcedure extends WobrModElements.ModElement {
 	public SpawnEntitiesUseProcedure(WobrModElements instance) {
-		super(instance, 2025);
+		super(instance, 1336);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -33,7 +33,7 @@ public class NetherTickerBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:nether_ticker")
 	public static final Block block = null;
 	public NetherTickerBlock(WobrModElements instance) {
-		super(instance, 209);
+		super(instance, 188);
 	}
 
 	@Override

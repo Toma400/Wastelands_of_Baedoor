@@ -24,7 +24,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class GlisteringAshDropProcedure extends WobrModElements.ModElement {
 	public GlisteringAshDropProcedure(WobrModElements instance) {
-		super(instance, 1368);
+		super(instance, 1019);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -46,7 +46,7 @@ public class DartCurareProjectileItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:entitybulletdart_curare_projectile")
 	public static final EntityType arrow = null;
 	public DartCurareProjectileItem(WobrModElements instance) {
-		super(instance, 1530);
+		super(instance, 1163);
 	}
 
 	@Override

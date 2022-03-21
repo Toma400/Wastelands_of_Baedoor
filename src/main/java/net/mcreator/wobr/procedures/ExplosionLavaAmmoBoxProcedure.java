@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ExplosionLavaAmmoBoxProcedure extends WobrModElements.ModElement {
 	public ExplosionLavaAmmoBoxProcedure(WobrModElements instance) {
-		super(instance, 943);
+		super(instance, 609);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

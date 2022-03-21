@@ -77,7 +77,7 @@ public class GoldenAvoiderActiveBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:golden_avoider_active")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GoldenAvoiderActiveBlock(WobrModElements instance) {
-		super(instance, 1643);
+		super(instance, 1239);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -17,7 +17,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class OrmathHuntersSpawnProcedure extends WobrModElements.ModElement {
 	public OrmathHuntersSpawnProcedure(WobrModElements instance) {
-		super(instance, 1462);
+		super(instance, 1108);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

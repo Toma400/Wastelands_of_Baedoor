@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ReloadLefs9Procedure extends WobrModElements.ModElement {
 	public ReloadLefs9Procedure(WobrModElements instance) {
-		super(instance, 1209);
+		super(instance, 869);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -27,7 +27,7 @@ import java.util.HashMap;
 @WobrModElements.ModElement.Tag
 public class GunAddOnRldAllOnceProcedure extends WobrModElements.ModElement {
 	public GunAddOnRldAllOnceProcedure(WobrModElements instance) {
-		super(instance, 1560);
+		super(instance, 1193);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

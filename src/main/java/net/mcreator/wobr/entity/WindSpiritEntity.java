@@ -55,7 +55,7 @@ import net.mcreator.wobr.WobrModElements;
 public class WindSpiritEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public WindSpiritEntity(WobrModElements instance) {
-		super(instance, 461);
+		super(instance, 438);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

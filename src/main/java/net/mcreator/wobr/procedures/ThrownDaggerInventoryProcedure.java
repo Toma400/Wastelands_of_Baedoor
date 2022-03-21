@@ -11,7 +11,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ThrownDaggerInventoryProcedure extends WobrModElements.ModElement {
 	public ThrownDaggerInventoryProcedure(WobrModElements instance) {
-		super(instance, 784);
+		super(instance, 454);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

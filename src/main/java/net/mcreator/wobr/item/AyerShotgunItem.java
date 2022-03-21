@@ -37,7 +37,7 @@ public class AyerShotgunItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:ayer_shotgun")
 	public static final Item block = null;
 	public AyerShotgunItem(WobrModElements instance) {
-		super(instance, 38);
+		super(instance, 39);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class JavelinSackBoneUnloadProcedure extends WobrModElements.ModElement {
 	public JavelinSackBoneUnloadProcedure(WobrModElements instance) {
-		super(instance, 1224);
+		super(instance, 884);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

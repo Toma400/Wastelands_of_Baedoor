@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WindShieldResetProcedure extends WobrModElements.ModElement {
 	public WindShieldResetProcedure(WobrModElements instance) {
-		super(instance, 1410);
+		super(instance, 1060);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

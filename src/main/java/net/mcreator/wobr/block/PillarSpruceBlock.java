@@ -32,7 +32,7 @@ public class PillarSpruceBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:pillar_spruce")
 	public static final Block block = null;
 	public PillarSpruceBlock(WobrModElements instance) {
-		super(instance, 159);
+		super(instance, 144);
 	}
 
 	@Override

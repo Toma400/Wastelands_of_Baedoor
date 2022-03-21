@@ -12,7 +12,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class WindProjectileLevitationProcedure extends WobrModElements.ModElement {
 	public WindProjectileLevitationProcedure(WobrModElements instance) {
-		super(instance, 1404);
+		super(instance, 1054);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

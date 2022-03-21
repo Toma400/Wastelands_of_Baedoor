@@ -27,7 +27,7 @@ public class BlueNetherBrickStairsBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:blue_nether_brick_stairs")
 	public static final Block block = null;
 	public BlueNetherBrickStairsBlock(WobrModElements instance) {
-		super(instance, 214);
+		super(instance, 193);
 	}
 
 	@Override

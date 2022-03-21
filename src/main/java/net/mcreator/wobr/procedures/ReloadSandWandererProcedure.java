@@ -23,7 +23,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class ReloadSandWandererProcedure extends WobrModElements.ModElement {
 	public ReloadSandWandererProcedure(WobrModElements instance) {
-		super(instance, 1418);
+		super(instance, 1068);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -16,7 +16,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class ChunkTickerSwitchProcedure extends WobrModElements.ModElement {
 	public ChunkTickerSwitchProcedure(WobrModElements instance) {
-		super(instance, 1587);
+		super(instance, 1217);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

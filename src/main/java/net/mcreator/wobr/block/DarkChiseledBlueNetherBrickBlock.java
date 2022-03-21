@@ -26,7 +26,7 @@ public class DarkChiseledBlueNetherBrickBlock extends WobrModElements.ModElement
 	@ObjectHolder("wobr:dark_chiseled_blue_nether_brick")
 	public static final Block block = null;
 	public DarkChiseledBlueNetherBrickBlock(WobrModElements instance) {
-		super(instance, 217);
+		super(instance, 196);
 	}
 
 	@Override

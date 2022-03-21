@@ -51,7 +51,7 @@ import java.util.HashMap;
 public class GreenBuffaloEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public GreenBuffaloEntity(WobrModElements instance) {
-		super(instance, 462);
+		super(instance, 439);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

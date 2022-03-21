@@ -31,7 +31,7 @@ import java.util.Random;
 @WobrModElements.ModElement.Tag
 public class AirshipJungleStructure extends WobrModElements.ModElement {
 	public AirshipJungleStructure(WobrModElements instance) {
-		super(instance, 2035);
+		super(instance, 1346);
 	}
 
 	@Override

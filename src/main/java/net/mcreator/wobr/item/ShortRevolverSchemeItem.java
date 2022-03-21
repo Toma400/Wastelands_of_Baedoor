@@ -16,7 +16,7 @@ public class ShortRevolverSchemeItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:short_revolver_scheme")
 	public static final Item block = null;
 	public ShortRevolverSchemeItem(WobrModElements instance) {
-		super(instance, 227);
+		super(instance, 205);
 	}
 
 	@Override

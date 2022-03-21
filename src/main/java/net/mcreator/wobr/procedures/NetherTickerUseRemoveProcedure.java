@@ -15,7 +15,7 @@ import java.util.Map;
 @WobrModElements.ModElement.Tag
 public class NetherTickerUseRemoveProcedure extends WobrModElements.ModElement {
 	public NetherTickerUseRemoveProcedure(WobrModElements instance) {
-		super(instance, 1503);
+		super(instance, 1136);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -33,7 +33,7 @@ public class RelicJungleAirshipBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:relic_jungle_airship")
 	public static final Block block = null;
 	public RelicJungleAirshipBlock(WobrModElements instance) {
-		super(instance, 220);
+		super(instance, 198);
 	}
 
 	@Override

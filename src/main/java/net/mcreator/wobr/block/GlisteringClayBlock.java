@@ -25,7 +25,7 @@ public class GlisteringClayBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:glistering_clay")
 	public static final Block block = null;
 	public GlisteringClayBlock(WobrModElements instance) {
-		super(instance, 68);
+		super(instance, 69);
 	}
 
 	@Override

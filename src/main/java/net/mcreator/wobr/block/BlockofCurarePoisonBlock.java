@@ -23,7 +23,7 @@ public class BlockofCurarePoisonBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:blockof_curare_poison")
 	public static final Block block = null;
 	public BlockofCurarePoisonBlock(WobrModElements instance) {
-		super(instance, 57);
+		super(instance, 58);
 	}
 
 	@Override

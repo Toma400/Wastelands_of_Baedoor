@@ -15,7 +15,7 @@ import java.util.Iterator;
 @WobrModElements.ModElement.Tag
 public class GuideBookAdvancementProcedure extends WobrModElements.ModElement {
 	public GuideBookAdvancementProcedure(WobrModElements instance) {
-		super(instance, 1416);
+		super(instance, 1066);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

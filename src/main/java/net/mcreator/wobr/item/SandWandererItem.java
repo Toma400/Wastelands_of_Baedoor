@@ -37,7 +37,7 @@ public class SandWandererItem extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:sand_wanderer")
 	public static final Item block = null;
 	public SandWandererItem(WobrModElements instance) {
-		super(instance, 44);
+		super(instance, 45);
 	}
 
 	@Override

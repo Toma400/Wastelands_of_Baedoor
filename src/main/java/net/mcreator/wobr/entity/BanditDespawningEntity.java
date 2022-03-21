@@ -52,7 +52,7 @@ import net.mcreator.wobr.WobrModElements;
 public class BanditDespawningEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public BanditDespawningEntity(WobrModElements instance) {
-		super(instance, 466);
+		super(instance, 443);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

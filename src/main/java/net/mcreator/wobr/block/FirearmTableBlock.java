@@ -73,7 +73,7 @@ public class FirearmTableBlock extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:firearm_table")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FirearmTableBlock(WobrModElements instance) {
-		super(instance, 200);
+		super(instance, 181);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -31,7 +31,7 @@ public class AmmunitionKeyKeyBinding extends WobrModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public AmmunitionKeyKeyBinding(WobrModElements instance) {
-		super(instance, 933);
+		super(instance, 599);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -26,7 +26,7 @@ public class PlayerMessagePotionPotion extends WobrModElements.ModElement {
 	@ObjectHolder("wobr:player_message_potion")
 	public static final Effect potion = null;
 	public PlayerMessagePotionPotion(WobrModElements instance) {
-		super(instance, 1246);
+		super(instance, 898);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

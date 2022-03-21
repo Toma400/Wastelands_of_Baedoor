@@ -13,7 +13,7 @@ import java.util.Collection;
 @WobrModElements.ModElement.Tag
 public class WarhammerFieldAttackResultProcedure extends WobrModElements.ModElement {
 	public WarhammerFieldAttackResultProcedure(WobrModElements instance) {
-		super(instance, 1717);
+		super(instance, 1262);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

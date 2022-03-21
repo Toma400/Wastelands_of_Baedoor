@@ -82,7 +82,7 @@ import io.netty.buffer.Unpooled;
 public class WanderingMerchantEntity extends WobrModElements.ModElement {
 	public static EntityType entity = null;
 	public WanderingMerchantEntity(WobrModElements instance) {
-		super(instance, 469);
+		super(instance, 446);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
