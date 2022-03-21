@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc_nostalgia",
+    "name": "Music Disc",
+    "description": "The Book of Seth - Nostalgia of Forgotten Dreams",
+    "creativeTab": {
+      "value": "CUSTOM:WoBCreativeTab"
+    },
+    "music": {
+      "value": "CUSTOM:disc_nostalgia"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

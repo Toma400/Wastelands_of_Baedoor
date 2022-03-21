@@ -120,6 +120,7 @@ public class WobrModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_inside_forest")));
 		sounds.put(new ResourceLocation("wobr", "disc_oneironaut"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_oneironaut")));
+		sounds.put(new ResourceLocation("wobr", "disc_nostalgia"), new net.minecraft.util.SoundEvent(new ResourceLocation("wobr", "disc_nostalgia")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("wobr").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

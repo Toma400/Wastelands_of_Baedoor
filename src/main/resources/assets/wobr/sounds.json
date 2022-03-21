@@ -333,20 +333,29 @@
     ]
   },
   "disc_inside_forest": {
-    "category": "block",
+    "category": "record",
     "sounds": [
       {
-        "name": "wobr:4._inside_the_hidden_forest_temple",
-        "stream": false
+        "name": "wobr:disc_inside_forest",
+        "stream": true
       }
     ]
   },
   "disc_oneironaut": {
-    "category": "block",
+    "category": "record",
     "sounds": [
       {
-        "name": "wobr:1._oneironaut",
-        "stream": false
+        "name": "wobr:disc_oneironaut",
+        "stream": true
+      }
+    ]
+  },
+  "disc_nostalgia": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wobr:disc_nostalgia",
+        "stream": true
       }
     ]
   }
