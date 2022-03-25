@@ -14,6 +14,8 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.wobr.entity.SpawnEntityMageAirshipEntity;
 import net.mcreator.wobr.WobrModElements;
@@ -21,6 +23,7 @@ import net.mcreator.wobr.WobrMod;
 
 import java.util.function.Function;
 import java.util.Map;
+import java.util.Iterator;
 import java.util.Comparator;
 
 @WobrModElements.ModElement.Tag
@@ -115,6 +118,42 @@ public class SpawnEntitiesKillProcedure extends WobrModElements.ModElement {
 																			.getAdvancement(new ResourceLocation("wobr:message_from_xaine")))
 															.isDone()
 											: false))))) {
+				if (((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+						new AxisAlignedBB(x - (200 / 2d), y - (200 / 2d), z - (200 / 2d), x + (200 / 2d), y + (200 / 2d), z + (200 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof ServerPlayerEntity) {
+					Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) ((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (200 / 2d), y - (200 / 2d), z - (200 / 2d), x + (200 / 2d), y + (200 / 2d), z + (200 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null))).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("wobr:message_from_xaine"));
+					AdvancementProgress _ap = ((ServerPlayerEntity) ((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (200 / 2d), y - (200 / 2d), z - (200 / 2d), x + (200 / 2d), y + (200 / 2d), z + (200 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null))).getAdvancements().getProgress(_adv);
+					if (!_ap.isDone()) {
+						Iterator _iterator = _ap.getRemaningCriteria().iterator();
+						while (_iterator.hasNext()) {
+							String _criterion = (String) _iterator.next();
+							((ServerPlayerEntity) ((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - (200 / 2d), y - (200 / 2d), z - (200 / 2d), x + (200 / 2d), y + (200 / 2d), z + (200 / 2d)),
+									null).stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null))).getAdvancements().grantCriterion(_adv, _criterion);
+						}
+					}
+				}
 				if (!world.getWorld().isRemote) {
 					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("wobr", "xaine_note"));
