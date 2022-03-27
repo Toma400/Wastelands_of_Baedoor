@@ -9027,7 +9027,7 @@
       "type": "procedure",
       "sortid": 931,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "sabre_defence_trigger",
       "metadata": {
@@ -16454,6 +16454,36 @@
       "ids": {},
       "registry_name": "fluid_converter_base_converting",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirshipJungleCondition",
+      "type": "procedure",
+      "sortid": 1369,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "airship_jungle_condition",
+      "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "x",

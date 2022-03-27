@@ -13,11 +13,13 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface",
-      "End"
+      "Surface"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "AirshipJungleCondition"
+    }
   }
 }

@@ -24,9 +24,12 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
+import net.mcreator.wobr.procedures.AirshipJungleConditionProcedure;
 import net.mcreator.wobr.WobrModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @WobrModElements.ModElement.Tag
 public class AirshipJungleStructure extends WobrModElements.ModElement {
@@ -45,8 +48,6 @@ public class AirshipJungleStructure extends WobrModElements.ModElement {
 				boolean dimensionCriteria = false;
 				if (dimensionType == DimensionType.OVERWORLD)
 					dimensionCriteria = true;
-				if (dimensionType == DimensionType.THE_END)
-					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
 				if ((random.nextInt(1000000) + 1) <= 240) {
@@ -62,6 +63,8 @@ public class AirshipJungleStructure extends WobrModElements.ModElement {
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!AirshipJungleConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("wobr", "spawn_entity_airship_jungle"));
 						if (template == null)
