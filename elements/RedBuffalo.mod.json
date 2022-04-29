@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Red Maned Buffalo",
+    "mobName": "Red Maned Truffur",
     "mobLabel": "",
     "mobModelName": "ModelOrmath_Beast",
     "mobModelTexture": "buffalo_red_maned.png",
@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "onRightClickedOn": {
+      "name": "BuffaloMilking"
+    },
     "onMobTickUpdate": {
       "name": "BuffaloRide"
     },

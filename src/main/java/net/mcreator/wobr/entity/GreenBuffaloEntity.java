@@ -40,6 +40,7 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
 import net.mcreator.wobr.procedures.BuffaloRideProcedure;
+import net.mcreator.wobr.procedures.BuffaloMilkingProcedure;
 import net.mcreator.wobr.itemgroup.WoBCreativeTabItemGroup;
 import net.mcreator.wobr.WobrModElements;
 
@@ -141,6 +142,15 @@ public class GreenBuffaloEntity extends WobrModElements.ModElement {
 			boolean retval = true;
 			super.processInteract(sourceentity, hand);
 			sourceentity.startRiding(this);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("sourceentity", sourceentity);
+				BuffaloMilkingProcedure.executeProcedure($_dependencies);
+			}
 			return retval;
 		}
 
