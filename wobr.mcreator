@@ -18102,7 +18102,6 @@
       "ids": {},
       "registry_name": "merchant_trade_5",
       "metadata": {
-        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -18169,7 +18168,6 @@
       "ids": {},
       "registry_name": "merchant_trade_7",
       "metadata": {
-        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -18203,7 +18201,6 @@
       "ids": {},
       "registry_name": "merchant_trade_8",
       "metadata": {
-        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -21269,6 +21266,63 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "elytra_showing",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Merchant Procedures"
+    },
+    {
+      "name": "BuddingAmethystShowing",
+      "type": "procedure",
+      "sortid": 1780,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "budding_amethyst_showing",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Merchant Procedures"
+    },
+    {
+      "name": "ShulkerBoxesShowing",
+      "type": "procedure",
+      "sortid": 1781,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shulker_boxes_showing",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Merchant Procedures"
+    },
+    {
+      "name": "HeartOfTheSeaShowing",
+      "type": "procedure",
+      "sortid": 1782,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heart_of_the_sea_showing",
       "metadata": {
         "return_type": "logic",
         "dependencies": [

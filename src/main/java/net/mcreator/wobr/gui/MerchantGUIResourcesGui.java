@@ -27,6 +27,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.wobr.procedures.ShulkerBoxesShowingProcedure;
 import net.mcreator.wobr.procedures.MerchantTrade9Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade8Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade7Procedure;
@@ -37,6 +38,8 @@ import net.mcreator.wobr.procedures.MerchantTrade3Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade2Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade1Procedure;
 import net.mcreator.wobr.procedures.MerchantTrade10Procedure;
+import net.mcreator.wobr.procedures.HeartOfTheSeaShowingProcedure;
+import net.mcreator.wobr.procedures.BuddingAmethystShowingProcedure;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -140,7 +143,7 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 0, this.guiTop + 63, 0, 0, 150, 150, 150, 150);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/glistering_ash.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
-			if (MerchantTrade5Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+			if (BuddingAmethystShowingProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/budding_amethyst.png"));
 				this.blit(this.guiLeft + 80, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			}
@@ -150,11 +153,11 @@ public class MerchantGUIResourcesGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 16, this.guiTop + 80, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/32vulc_veil.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 104, 0, 0, 16, 16, 16, 16);
-			if (MerchantTrade8Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+			if (HeartOfTheSeaShowingProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/heart_of_the_sea.png"));
 				this.blit(this.guiLeft + 80, this.guiTop + 152, 0, 0, 16, 16, 16, 16);
 			}
-			if (MerchantTrade7Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+			if (ShulkerBoxesShowingProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/shulker_shell.png"));
 				this.blit(this.guiLeft + 80, this.guiTop + 128, 0, 0, 16, 16, 16, 16);
 			}

@@ -176,7 +176,7 @@
           "image": "budding_amethyst.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MerchantTrade5"
+            "name": "BuddingAmethystShowing"
           },
           "name": "budding_amethyst.png",
           "x": 219,
@@ -219,7 +219,7 @@
           "image": "heart_of_the_sea.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MerchantTrade8"
+            "name": "HeartOfTheSeaShowing"
           },
           "name": "heart_of_the_sea.png",
           "x": 219,
@@ -232,7 +232,7 @@
           "image": "shulker_shell.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MerchantTrade7"
+            "name": "ShulkerBoxesShowing"
           },
           "name": "shulker_shell.png",
           "x": 219,

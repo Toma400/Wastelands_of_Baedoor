@@ -32,31 +32,31 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 		super(instance, 1556);
 	}
 
-	public static boolean executeProcedure(Map<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				WobrMod.LOGGER.warn("Failed to load dependency entity for procedure MerchantTrade5!");
-			return false;
+			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				WobrMod.LOGGER.warn("Failed to load dependency x for procedure MerchantTrade5!");
-			return false;
+			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
 				WobrMod.LOGGER.warn("Failed to load dependency y for procedure MerchantTrade5!");
-			return false;
+			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
 				WobrMod.LOGGER.warn("Failed to load dependency z for procedure MerchantTrade5!");
-			return false;
+			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				WobrMod.LOGGER.warn("Failed to load dependency world for procedure MerchantTrade5!");
-			return false;
+			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -150,17 +150,5 @@ public class MerchantTrade5Procedure extends WobrModElements.ModElement {
 				}
 			}
 		}
-		return (!(new Object() {
-			boolean check(Entity _entity) {
-				if (_entity instanceof LivingEntity) {
-					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == MerchantBlockBuddingAmethystPotionEffect.potion)
-							return true;
-					}
-				}
-				return false;
-			}
-		}.check(entity)));
 	}
 }
