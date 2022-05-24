@@ -273,7 +273,7 @@
           "image": "elytra.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "GunMerchantTrade6"
+            "name": "ElytraShowing"
           },
           "name": "elytra.png",
           "x": 219,

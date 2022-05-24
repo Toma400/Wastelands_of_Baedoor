@@ -33,6 +33,7 @@ import net.mcreator.wobr.procedures.GunMerchantTrade4Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade3Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade2Procedure;
 import net.mcreator.wobr.procedures.GunMerchantTrade1Procedure;
+import net.mcreator.wobr.procedures.ElytraShowingProcedure;
 import net.mcreator.wobr.WobrModElements;
 import net.mcreator.wobr.WobrMod;
 
@@ -150,7 +151,7 @@ public class MerchantGUIGunslingerGui extends WobrModElements.ModElement {
 			this.blit(this.guiLeft + 80, this.guiTop + 105, 0, 0, 16, 16, 16, 16);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/light_block.png"));
 			this.blit(this.guiLeft + 16, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
-			if (GunMerchantTrade6Procedure.executeProcedure(ImmutableMap.of("entity", entity, "x", x, "y", y, "z", z, "world", world))) {
+			if (ElytraShowingProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("wobr:textures/elytra.png"));
 				this.blit(this.guiLeft + 80, this.guiTop + 176, 0, 0, 16, 16, 16, 16);
 			}
