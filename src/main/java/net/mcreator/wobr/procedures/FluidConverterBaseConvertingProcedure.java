@@ -108,7 +108,7 @@ public class FluidConverterBaseConvertingProcedure extends WobrModElements.ModEl
 					if ((net.minecraftforge.fml.ModList.get().isLoaded("cavesandcliffs"))) {
 						if (!world.getWorld().isRemote) {
 							Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("wobr", "addon_atum_alabaster"));
+									.getTemplateDefaulted(new ResourceLocation("wobr", "addon_cc_deepslate"));
 							if (template != null) {
 								template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings()
 										.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
