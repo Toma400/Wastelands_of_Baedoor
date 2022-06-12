@@ -67,7 +67,9 @@ public class SabreDefenceTriggerProcedure extends WobrModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((!(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() instanceof ShieldItem))
+		if (((!((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() instanceof ShieldItem)
+				|| (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:shields").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem()))))
 				&& (ItemTags.getCollection().getOrCreate(new ResourceLocation(("forge:wobr_sabre").toLowerCase(java.util.Locale.ENGLISH)))
 						.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem())))) {
 			if ((!(new Object() {

@@ -70,23 +70,25 @@ public class DreamOnAdvancementProcedure extends WobrModElements.ModElement {
 								.getAdvancement(new ResourceLocation("wobr:dream_on")))
 						.isDone()
 				: false))) {
-			if (entity instanceof ServerPlayerEntity) {
-				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-						.getAdvancement(new ResourceLocation("wobr:dream_on"));
-				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
-				if (!_ap.isDone()) {
-					Iterator _iterator = _ap.getRemaningCriteria().iterator();
-					while (_iterator.hasNext()) {
-						String _criterion = (String) _iterator.next();
-						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+			if ((Math.random() <= 5)) {
+				if (entity instanceof ServerPlayerEntity) {
+					Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+							.getAdvancement(new ResourceLocation("wobr:dream_on"));
+					AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+					if (!_ap.isDone()) {
+						Iterator _iterator = _ap.getRemaningCriteria().iterator();
+						while (_iterator.hasNext()) {
+							String _criterion = (String) _iterator.next();
+							((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+						}
 					}
 				}
-			}
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"/give @p written_book{pages:['{\"text\":\"Hello, wanderer of dreams\\n\\nMy name is... Xaine.\\n\\nEnter the dimension of phantasm, and find cirtain chest I left for you. I left you some gift there.\"}'],title:\"Unknown Note\",author:Xaine}");
+				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+					world.getWorld().getServer().getCommandManager().handleCommand(
+							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+							"/give @p written_book{pages:['{\"text\":\"Hello, wanderer of dreams\n\nMy name is... Xaine.\n\nEnter the dimension of phantasm, and find cirtain chest I left for you. I left you some gift there.\"}'],title:\"Unknown Note\",author:Xaine}");
+				}
 			}
 		}
 	}

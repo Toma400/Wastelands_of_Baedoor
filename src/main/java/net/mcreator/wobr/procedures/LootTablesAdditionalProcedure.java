@@ -7,6 +7,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.monster.StrayEntity;
+import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
@@ -69,8 +71,7 @@ public class LootTablesAdditionalProcedure extends WobrModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof BanditEntity.CustomEntity) || (entity instanceof BanditDespawningEntity.CustomEntity))) {
-			if (((1 >= (Math.random() * 100)) && ((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOOTING,
-					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0)))) {
+			if (((sourceentity instanceof SkeletonEntity) || (sourceentity instanceof StrayEntity))) {
 				if (!world.getWorld().isRemote) {
 					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MusicDiscOneironautItem.block));
 					entityToSpawn.setPickupDelay((int) 10);

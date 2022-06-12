@@ -20778,7 +20778,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "CraftingAdvancements",
