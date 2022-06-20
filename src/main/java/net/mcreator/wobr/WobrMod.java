@@ -42,6 +42,11 @@ import net.minecraft.block.Block;
 
 import java.util.function.Supplier;
 
+import net.mcreator.wobr.Config; // config added
+import net.minecraftforge.fml.ModLoadingContext; // config added
+import net.minecraftforge.fml.config.ModConfig.Type; // config added
+import net.minecraftforge.fml.config.ModConfig; // config added
+
 @Mod("wobr")
 public class WobrMod {
 	public static final Logger LOGGER = LogManager.getLogger(WobrMod.class);
@@ -50,9 +55,11 @@ public class WobrMod {
 			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public WobrModElements elements;
 	public WobrMod() {
+		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.WORLD_CONFIG); // config added
 		elements = new WobrModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		Config.loadConfigFile(Config.WORLD_CONFIG, Config.WORLD_CONFIG_PATH); // config added
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

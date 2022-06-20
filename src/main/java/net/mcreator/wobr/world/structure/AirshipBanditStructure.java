@@ -29,6 +29,7 @@ import net.minecraft.util.Mirror;
 
 import net.mcreator.wobr.procedures.AirshipBanditConditionProcedure;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.Config;
 
 import java.util.Random;
 
@@ -47,7 +48,7 @@ public class AirshipBanditStructure extends WobrModElements.ModElement {
 				dimensionCriteria = true;
 			if (!dimensionCriteria)
 				return false;
-			if ((random.nextInt(1000000) + 1) <= 200) {
+			if ((random.nextInt(1000000) + 1) <= Config.AIRSHIP_BANDIT_CHANCE.get()) { // config
 				int count = random.nextInt(1) + 1;
 				for (int a = 0; a < count; a++) {
 					int i = ci + random.nextInt(16);

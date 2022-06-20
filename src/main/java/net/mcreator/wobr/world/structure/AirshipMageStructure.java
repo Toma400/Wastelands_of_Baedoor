@@ -29,6 +29,7 @@ import net.minecraft.util.Mirror;
 
 import net.mcreator.wobr.procedures.AirshipMageConditionProcedure;
 import net.mcreator.wobr.WobrModElements;
+import net.mcreator.wobr.Config;
 
 import java.util.Random;
 
@@ -49,7 +50,7 @@ public class AirshipMageStructure extends WobrModElements.ModElement {
 				dimensionCriteria = true;
 			if (!dimensionCriteria)
 				return false;
-			if ((random.nextInt(1000000) + 1) <= 170) {
+			if ((random.nextInt(1000000) + 1) <= Config.AIRSHIP_MAGE_CHANCE.get()) { // config
 				int count = random.nextInt(1) + 1;
 				for (int a = 0; a < count; a++) {
 					int i = ci + random.nextInt(16);
