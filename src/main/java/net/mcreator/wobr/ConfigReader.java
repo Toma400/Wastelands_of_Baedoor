@@ -25,7 +25,8 @@ import java.util.HashMap;
 
 import net.mcreator.wobr.Config;
 import net.mcreator.wobr.WobrModVariables;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraftforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent; //imported
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ConfigReader {
@@ -38,7 +39,7 @@ public class ConfigReader {
 		public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 
 			Entity entity = event.getPlayer();
-			World world = entity.world;
+			IWorld world = entity.world;
 
 			// AIRSHIPS
 			WobrModVariables.MapVariables.get(world).KF_Str_Airship_General = Config.DO_AIRSHIPS_SPAWN.get();
@@ -71,7 +72,6 @@ public class ConfigReader {
 			WobrModVariables.MapVariables.get(world).KF_Xp_Structures = Config.ADDITIONAL_STRUCTURES_GENERATING.get();			
 			
 			WobrModVariables.MapVariables.get(world).syncData(world);
-
 
 			System.out.println((new java.text.DecimalFormat("####").format(WobrModVariables.MapVariables.get(world).KF_Av_Distance)));
 		}
