@@ -20533,7 +20533,7 @@
       "type": "loottable",
       "sortid": 1737,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "red_buffalo_loot_table"
     },
@@ -20542,7 +20542,7 @@
       "type": "loottable",
       "sortid": 1738,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "green_buffalo_loot_table"
     },
@@ -20551,7 +20551,7 @@
       "type": "loottable",
       "sortid": 1739,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "ormath_raider_loot_table"
     },

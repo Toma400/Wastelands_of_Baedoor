@@ -27,6 +27,7 @@ import net.mcreator.wobr.Config;
 import net.mcreator.wobr.WobrModVariables;
 import net.minecraft.world.IWorld;
 import net.minecraftforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent; //imported
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber; //imported
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ConfigReader {
