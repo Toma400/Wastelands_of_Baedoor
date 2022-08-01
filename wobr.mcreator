@@ -21265,15 +21265,6 @@
       "registry_name": "config"
     },
     {
-      "name": "ConfigReader",
-      "type": "code",
-      "sortid": 1784,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "config_reader"
-    },
-    {
       "name": "X",
       "type": "procedure",
       "sortid": 1785,
@@ -21281,6 +21272,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "x",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConfigDeepReader",
+      "type": "procedure",
+      "sortid": 1786,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "config_deep_reader",
       "metadata": {
         "dependencies": [
           {
