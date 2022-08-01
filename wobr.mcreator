@@ -142,7 +142,7 @@
       "type": "loottable",
       "sortid": 614,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "bandit_loot_table"
     },
@@ -11874,7 +11874,7 @@
       "type": "loottable",
       "sortid": 1218,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "bandit_2_loot_table"
     },
