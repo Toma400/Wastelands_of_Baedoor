@@ -1,0 +1,16 @@
+[
+{
+  "modid": "wobr",
+  "name": "Wastelands of Baedoor",
+  "description": "Mod adding steampunk universe to world of Minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/wastelands-of-baedoor",
+  "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/wastelands-of-baedoor",
+  "authorList": ["Toma400"],
+  "credits": "Toma400 - author",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
