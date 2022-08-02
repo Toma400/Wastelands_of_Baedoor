@@ -32,7 +32,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:long_revolver",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
@@ -54,7 +54,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:short_revolver",
-          "weight": 10,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -76,7 +76,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:rusty_reaper",
-          "weight": 9,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -98,7 +98,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:short_revolver_scheme",
-          "weight": 50,
+          "weight": 18,
           "functions": [
             {
               "function": "set_count",
@@ -112,7 +112,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:long_revolver_scheme",
-          "weight": 30,
+          "weight": 12,
           "functions": [
             {
               "function": "set_count",
@@ -126,12 +126,20 @@
         {
           "type": "minecraft:item",
           "name": "wobr:lefs_8",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 0,
                 "max": 1
               }
             }
@@ -149,12 +157,12 @@
         {
           "type": "minecraft:item",
           "name": "wobr:pepper_box",
-          "weight": 35,
+          "weight": 18,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 2
               }
             }
@@ -163,12 +171,12 @@
         {
           "type": "minecraft:item",
           "name": "wobr:enhanced_pepper_box",
-          "weight": 15,
+          "weight": 9,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -177,7 +185,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:ayer_shotgun",
-          "weight": 8,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -191,12 +199,12 @@
         {
           "type": "minecraft:item",
           "name": "wobr:hardened_iron_sabre",
-          "weight": 25,
+          "weight": 12,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             },
@@ -213,12 +221,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 20,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             },
@@ -235,12 +243,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:leather_leggings",
-          "weight": 15,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -258,7 +266,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
-          "weight": 5,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -277,7 +285,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -286,7 +294,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:porkchop",
-          "weight": 25,
+          "weight": 15,
           "functions": [
             {
               "function": "set_count",
@@ -300,7 +308,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:beef",
-          "weight": 25,
+          "weight": 15,
           "functions": [
             {
               "function": "set_count",
@@ -314,7 +322,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cod",
-          "weight": 75,
+          "weight": 65,
           "functions": [
             {
               "function": "set_count",
@@ -328,7 +336,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:tropical_fish",
-          "weight": 25,
+          "weight": 20,
           "functions": [
             {
               "function": "set_count",
@@ -356,7 +364,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 2,
                 "max": 5
               }
             }
@@ -365,7 +373,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:baedoor_gold_ingot",
-          "weight": 55,
+          "weight": 60,
           "functions": [
             {
               "function": "set_count",
@@ -384,8 +392,8 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 6
+                "min": 3,
+                "max": 8
               }
             }
           ]
@@ -393,7 +401,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:small_bullet",
-          "weight": 100,
+          "weight": 90,
           "functions": [
             {
               "function": "set_count",
@@ -407,7 +415,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:large_bullet",
-          "weight": 75,
+          "weight": 65,
           "functions": [
             {
               "function": "set_count",
@@ -421,7 +429,7 @@
         {
           "type": "minecraft:item",
           "name": "wobr:slug",
-          "weight": 25,
+          "weight": 18,
           "functions": [
             {
               "function": "set_count",
@@ -435,13 +443,13 @@
         {
           "type": "minecraft:item",
           "name": "wobr:baedoor_funt",
-          "weight": 15,
+          "weight": 18,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 4
+                "min": 2,
+                "max": 5
               }
             }
           ]

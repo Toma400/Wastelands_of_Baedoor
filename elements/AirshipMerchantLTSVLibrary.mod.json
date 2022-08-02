@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "loottable",
+  "definition": {
+    "type": "Chest",
+    "pools": [
+      {
+        "minrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": true,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "Items.ENCHANTED_BOOK"
+            },
+            "weight": 100,
+            "minCount": 1,
+            "maxCount": 6,
+            "minEnchantmentLevel": 1,
+            "maxEnchantmentLevel": 5,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          }
+        ]
+      }
+    ],
+    "name": "chests/airship_merchant_library",
+    "namespace": "mod"
+  }
+}
