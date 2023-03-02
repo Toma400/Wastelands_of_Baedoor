@@ -1,0 +1,26 @@
+modLoader     = "javafml"
+loaderVersion = "[43,)"
+license       = "Baedoor Mod License"
+[[mods]]
+    modId       = "wobr"
+    version     = "${file.jarVersion}"
+    displayName = "Wastelands of Baedoor"
+    logoFile    = "wobr.png"
+    credits     = "Toma400 - author, DylanVHS - texturer"
+    authors     = "Toma400"
+    description = '''
+    Vanilla-friendly mod on steampunk, airships and firearms, having also some other QoL features.
+    '''
+[[dependencies.wobr]]
+    modId        = "forge"
+    mandatory    = true
+    versionRange = "[43,)"
+    ordering     = "NONE"
+    side         = "BOTH"
+
+[[dependencies.wobr]]
+    modId        = "minecraft"
+    mandatory    = true
+    versionRange = "[1.19.2,1.20)"
+    ordering     = "NONE"
+    side         = "BOTH"
