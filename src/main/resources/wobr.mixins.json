@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "toma400.wobr.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "WobrMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

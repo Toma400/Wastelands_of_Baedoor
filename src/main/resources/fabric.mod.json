@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id":            "wobr",
+  "version":       "${version}",
+
+  "name": "Wastelands of Baedoor",
+  "description": "Vanilla-friendly mod on steampunk, airships and firearms, having also some other QoL features.",
+  "authors": [
+    "Toma400"
+  ],
+  "contact": {
+    "homepage": "https://linktr.ee/toma400",
+    "sources":  "https://github.com/Toma400/Wastelands_of_Baedoor"
+  },
+
+  "license": "Baedoor Mod License",
+  "icon":    "assets/wobr/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "toma400.wobr.Wobr"
+    ]
+  },
+  "mixins": [
+    "wobr.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api":   "*",
+    "minecraft":    "~1.19.3",
+    "java":         ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
