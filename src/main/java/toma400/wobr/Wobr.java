@@ -1,5 +1,6 @@
 package toma400.wobr;
 
+import toma400.wobr.core.WobrItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,5 +11,6 @@ public class Wobr implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		WobrItems.registerItems();
 	}
 }
